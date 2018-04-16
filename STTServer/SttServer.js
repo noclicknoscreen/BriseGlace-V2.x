@@ -98,10 +98,10 @@ function givePlayerNumber(ip){
   var playerNr;
 
   switch (ip) {
-    case '192.168.1.146':
+    case '192.168.1.102':
     playerNr = 1;
     break;
-    case '192.168.1.102':
+    case '192.168.1.103':
     playerNr = 2;
     break;
     default:
