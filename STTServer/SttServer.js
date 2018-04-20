@@ -63,6 +63,7 @@ const options = {
 
 // --------------------------------------------
 // Socket section
+
 var nspReco = io.of('/recognition');
 nspReco.on('connection', (socket) => {
 
@@ -94,11 +95,20 @@ nspDisplay.on('connection', (socket) => {
 
 });
 
+var displaySocket = io.on('connection', (socket) => {
+  console.log('AllOver connected : ' + socket.id);
+
+  // Send all players to Display
+  sendPlayersToDisplay();
+  
+});
+
 function sendPlayersToDisplay() {
   // Send all players
   console.log("Players sent to display : ");
   console.log(playerManager.players());
   nspDisplay.emit('players', playerManager.players());
+  // displaySocket.emit('players', playerManager.players());
 }
 
 function sendPlayerToRecognition(player){

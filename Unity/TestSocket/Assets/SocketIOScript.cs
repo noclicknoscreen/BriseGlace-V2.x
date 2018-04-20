@@ -5,10 +5,24 @@ using UnityEngine.UI;
 using Quobject.SocketIoClientDotNet.Client;
 using Newtonsoft.Json;
 
-public class ChatData {
-	public string id;
-	public string msg;
+public class Players {
+	public Player[] players;
+}
+public class Player {
+	
+	public string 	ip;
+	public int		nr;
+	public string	socketId;
+	public bool		isAvailable;
+	public string	lastMessage;
+	public Message[]	messages;
 };
+
+public class Message {
+	public string time;
+	public string text;
+};
+
 
 public class SocketIOScript : MonoBehaviour {
 	public string serverURL;
@@ -58,19 +72,30 @@ public class SocketIOScript : MonoBehaviour {
 					chatLog.Add("Socket.IO connected.");
 				}
 			});
-			socket.On ("chat", (data) => {
+
+			socket.On ("players", (data) => {
+
 				string str = data.ToString();
 
-				ChatData chat = JsonConvert.DeserializeObject<ChatData> (str);
-				string strChatLog = "user#" + chat.id + ": " + chat.msg;
+				Debug.Log("Players received.");
+				//Debug.Log(str);
 
-				// Access to Unity UI is not allowed in a background thread, so let's put into a shared variable
-				lock(chatLog) {
-					chatLog.Add(strChatLog);
+				Players players = JsonConvert.DeserializeObject<Players> (str);
+				foreach(Player onePlayer in players.players)
+				{
+					Debug.Log(onePlayer.ip);
 				}
+//				string strChatLog = "user#" + chat.id + ": " + chat.msg;
+//
+//				// Access to Unity UI is not allowed in a background thread, so let's put into a shared variable
+//				lock(chatLog) {
+//					chatLog.Add(strChatLog);
+//				}
 			});
 		}
 	}
+
+	
 
 	void DoClose() {
 		if (socket != null) {

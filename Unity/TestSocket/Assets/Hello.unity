@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0768c791effac46ec890451fd3a5fe40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serverURL: http://localhost:8080
+  serverURL: http://192.168.1.104:8080
   uiInput: {fileID: 396399884}
   uiSend: {fileID: 1213611877}
   uiChatLog: {fileID: 230207427}
