@@ -11,30 +11,67 @@ socketClient.on('disconnect', () => {
   socketClient.connect();
 });
 
-socketClient.on('wordsToDisplay', (sender, words) => {
+socketClient.on('players', (datas) => {
+
+  // Get the div for all players
+  var divPlayers = document.getElementById("players");
+  divPlayers.innerHTML = "";
+
   // send a private message to the socket with the given id
-  console.log("New words to display  from player " + sender + "=[" + words + "]");
-  updateList(sender, words);
+  // console.log("Players received :");
+  // console.log(datas);
+
+  for (var indx in datas) {
+    addPlayer(datas[indx], datas.length, divPlayers);
+  }
 
 });
 
-function updateList(sender, message) {
-  var txt = "";
-  var ul = document.getElementById("messagesList" + sender);
-  var li=document.createElement('li');
+// -------------------------------------------------------
+// Add a player
+// --------------------------------------------------------
+function addPlayer(player, nbPlayers, divPlayers){
 
-  li.innerHTML = (new Date).toLocaleString() + " : " + sender + " : " + message;
-  ul.appendChild(li);
+  var playerDiv = document.createElement('div');
+  playerDiv.classList.add("player");
+  playerDiv.style.width = (95 / nbPlayers) + "%";
 
-  // Waiting for correct bidimentionnal messages, or dictionnary instead of array
-  // ul.innerHTML = "";
-  //
-  // messagesToDisplay.push((new Date).toLocaleString() + " : " + sender + " : " + message);
-  //
-  // for( var i = messagesToDisplay.length - 1; i >=0; i--) {
-  //   var li=document.createElement('li');
-  //   li.innerHTML = messagesToDisplay[i];
-  //   ul.appendChild(li);
-  // }
+  console.log("Add player");
+  console.log(player);
+
+  // ---------------------------------------------------------------------
+  // Display IP of each player
+  if (player.hasOwnProperty('ip')) {
+    var p = document.createElement('p');
+    var t = document.createTextNode("ip : " + player.ip);     // Create a text node
+    p.appendChild(t);
+    playerDiv.appendChild(p);
+  }
+
+  // ---------------------------------------------------------------------
+  // Display number of each player
+  if (player.hasOwnProperty('nr')) {
+    // One Title : Player number
+    var p = document.createElement('p');
+    var t = document.createTextNode("nr : " + player.nr);     // Create a text node
+    p.appendChild(t);
+    playerDiv.appendChild(p);
+  }
+
+  // ---------------------------------------------------------------------
+  // Display whole message
+  if (player.hasOwnProperty('messages')) {
+    var ul = document.createElement('ul');
+    for(var indx in player.messages){
+        var li = document.createElement('li');
+        playerDiv.classList.add("message");
+        li.innerHTML = player.messages[indx].time + " : " + player.messages[indx].text;
+        ul.appendChild(li);
+    }
+    playerDiv.appendChild(ul);
+  }
+
+  // add whole bunch ------------------------------------------
+  divPlayers.appendChild(playerDiv);
 
 }

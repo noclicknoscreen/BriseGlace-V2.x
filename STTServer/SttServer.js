@@ -16,7 +16,15 @@ var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
 
 //var http = require('http').Server(app);
-var io = require('socket.io')(httpsServer);
+var ioServer = require('socket.io')
+var io = new ioServer();
+io.attach(httpServer);
+io.attach(httpsServer);
+
+// Home made modules -----------------------------------
+var playerManager = require('./modules/playerManager');
+var socketHelper = require('./modules/socketHelper');
+
 
 httpServer.listen(8080, function(){
   console.log('listening http STT Server on port 8080');
@@ -59,18 +67,20 @@ var nspReco = io.of('/recognition');
 nspReco.on('connection', (socket) => {
 
   console.log('recognition connected : ' + socket.id);
-  var ipAddr = decodeIp(socket);
-  socket.emit('myIpMyName', {ip:ipAddr, nr:givePlayerNumber(ipAddr)});
+  // Add player
+  var player = playerManager.addPlayer(socket);
+  // Send to client who he is
+  sendPlayerToRecognition(player);
 
+  // Send all players to Display
+  sendPlayersToDisplay();
+
+  // Get the words speech detected
   socket.on('words', (data) => {
-
-    var ipAddr = decodeIp(socket);
-    var playerNr = givePlayerNumber(ipAddr);
-
-    // send a private message to the socket with the given id
-    console.log("New words from player " + playerNr + " : " + data);
-    nspDisplay.emit('wordsToDisplay', playerNr, data);
-
+    // Nouveau message
+    playerManager.addMessage(socket, data);
+    // Send all players to Display
+    sendPlayersToDisplay();
   });
 
 });
@@ -78,44 +88,25 @@ nspReco.on('connection', (socket) => {
 var nspDisplay = io.of('/display');
 nspDisplay.on('connection', (socket) => {
   console.log('display connected : ' + socket.id);
+
+  // Send all players to Display
+  sendPlayersToDisplay();
+
 });
 
-function decodeIp(socket){
-
-  var ipAddr = socket.handshake.address;
-
-  if (ipAddr.substr(0, 7) == "::ffff:") {
-    ipAddr = ipAddr.substr(7)
-  }
-  console.log('New connection from ' + socket.id + " : " + ipAddr);
-
-  return ipAddr;
-
+function sendPlayersToDisplay() {
+  // Send all players
+  console.log("Players sent to display : ");
+  console.log(playerManager.players());
+  nspDisplay.emit('players', playerManager.players());
 }
 
-function givePlayerNumber(ip){
-
-  var playerNr;
-
-  switch (ip) {
-    case '192.168.1.102':
-    playerNr = 1;
-    break;
-    case '192.168.1.103':
-    playerNr = 2;
-    break;
-    default:
-    playerNr = 0;
-    break;
-
-  }
-
-  console.log('Giving player number : [Number]=' + playerNr + '; [IP]=' + ip);
-  return playerNr;
-
+function sendPlayerToRecognition(player){
+  // Send to client who he is
+  console.log("Player sent to recognition : ");
+  console.log(player);
+  nspReco.emit('myPlayer', player);
 }
-
-
 // mySocket.on('connection', (socket) => {
 //
 //   console.log("New socket connection: " + socket.id);

@@ -1,0 +1,24 @@
+body{
+  font-family: "Helvetica";
+}
+
+h1{
+  font-size: 24px;
+}
+h2{
+  font-size: 14px;
+}
+
+.messagesList{
+
+  border-radius: 25px;
+  border: 2px solid #000000;
+
+  display: inline-block;
+  width: 100%;
+  padding: 0px;
+  height: 250px;
+  background-color: #eee;
+  overflow: scroll;
+
+}

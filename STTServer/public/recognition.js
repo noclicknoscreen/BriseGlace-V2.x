@@ -95,8 +95,8 @@ socketClient.on('disconnect', () => {
   recognition.stop();
 });
 
-socketClient.on('myIpMyName', (datas) => {
-  console.log('IP & Name received : ')
+socketClient.on('myPlayer', (datas) => {
+  console.log('Player received : ')
   console.log(datas);
 
   updateMyIp(datas.ip);

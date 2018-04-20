@@ -1,0 +1,42 @@
+{
+  "players": [
+    {
+      "ip": "192.168.1.103",
+      "socketId": "dHhj3Dej5khd67kjeDEdsXY",
+      "lastMessage": "salut",
+      "messages": [
+        {
+          "time": "28/10/2017 19:16:02:356",
+          "text": "salut"
+        },
+        {
+          "time": "28/10/2017 19:16:02:356",
+          "text": "salut"
+        }
+      ]
+    },
+    {
+      "ip": "192.168.1.104",
+      "socketId": "DE56yuk6rt5oli64jj21",
+      "lastMessage": "taxidermie",
+      "messages": [
+        {
+          "time": "28/10/2017 19:16:02:356",
+          "text": "salut"
+        },
+        {
+          "time": "28/10/2017 19:16:02:356",
+          "text": "salut"
+        },
+        {
+          "time": "28/10/2017 19:16:02:356",
+          "text": "salut"
+        },
+        {
+          "time": "28/10/2017 19:16:02:356",
+          "text": "salut"
+        }
+      ]
+    }
+  ]
+}
