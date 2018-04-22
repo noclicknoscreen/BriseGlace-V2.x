@@ -66,7 +66,7 @@ function updateMyPlayerName(nr){
 // ===========================================================
 // Socket section
 // ===========================================================
-var socketClient = io('/recognition', {
+var socketClient = io({
   reconnection: true,
   reconnectionDelay: 1000,
   reconnectionDelayMax : 5000,
@@ -115,4 +115,12 @@ function sendWords(words){
 setInterval(resetVoiceRecog, 10000);
 function resetVoiceRecog() {
   recognition.stop();
+}
+
+function forceSend(){
+    sendWords(document.getElementById("wordToSend").value);
+}
+function forceSendRnd(){
+    var rndString = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+    sendWords(rndString);
 }

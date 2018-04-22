@@ -1,5 +1,5 @@
 var messagesToDisplay = [];
-var socketClient = io('/display', {
+var socketClient = io({
   reconnection: true,
   reconnectionDelay: 1000,
   reconnectionDelayMax : 5000,

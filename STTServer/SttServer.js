@@ -64,58 +64,40 @@ const options = {
 // --------------------------------------------
 // Socket section
 
-var nspReco = io.of('/recognition');
-nspReco.on('connection', (socket) => {
+var socketServer = io.on('connection', (socket) => {
 
   console.log('recognition connected : ' + socket.id);
   // Add player
   var player = playerManager.addPlayer(socket);
   // Send to client who he is
-  sendPlayerToRecognition(player);
+  sendPlayerToRecognition(socket, player);
 
   // Send all players to Display
-  sendPlayersToDisplay();
+  sendPlayersToDisplay(socket);
 
   // Get the words speech detected
   socket.on('words', (data) => {
     // Nouveau message
     playerManager.addMessage(socket, data);
     // Send all players to Display
-    sendPlayersToDisplay();
+    sendPlayersToDisplay(socket);
   });
 
 });
 
-var nspDisplay = io.of('/display');
-nspDisplay.on('connection', (socket) => {
-  console.log('display connected : ' + socket.id);
-
-  // Send all players to Display
-  sendPlayersToDisplay();
-
-});
-
-var displaySocket = io.on('connection', (socket) => {
-  console.log('AllOver connected : ' + socket.id);
-
-  // Send all players to Display
-  sendPlayersToDisplay();
-  
-});
-
-function sendPlayersToDisplay() {
+function sendPlayersToDisplay(socket) {
   // Send all players
   console.log("Players sent to display : ");
   console.log(playerManager.players());
-  nspDisplay.emit('players', playerManager.players());
+  socket.emit('players', playerManager.players());
   // displaySocket.emit('players', playerManager.players());
 }
 
-function sendPlayerToRecognition(player){
+function sendPlayerToRecognition(socket, player){
   // Send to client who he is
   console.log("Player sent to recognition : ");
   console.log(player);
-  nspReco.emit('myPlayer', player);
+  socket.emit('myPlayer', player);
 }
 // mySocket.on('connection', (socket) => {
 //
