@@ -69,34 +69,51 @@ var socketServer = io.on('connection', (socket) => {
   console.log('recognition connected : ' + socket.id);
   // Add player
   var player = playerManager.addPlayer(socket);
-  // Send to client who he is
-  sendPlayerToRecognition(socket, player);
 
-  // Send all players to Display
-  sendPlayersToDisplay(socket);
+  if(player != null){
+    // Send to client who he is
+    sendPlayerToRecognition(socket, player);
 
-  // Get the words speech detected
-  socket.on('words', (data) => {
-    // Nouveau message
-    playerManager.addMessage(socket, data);
     // Send all players to Display
     sendPlayersToDisplay(socket);
-  });
+
+    // Get the words speech detected
+    socket.on('words', (data) => {
+      // Nouveau message
+      var foundPlayer = playerManager.addMessage(socket, data);
+      console.log("New message from " + foundPlayer.nr + ":" + foundPlayer.ip);
+      console.log(data);
+      // Wait for availability to go down
+      setTimeout(function(){
+        foundPlayer.isAvailable = false;
+        sendPlayersToDisplay(socket);
+      }, 5000);
+      // Send all players to Display
+      sendPlayersToDisplay(socket);
+    });
+
+    // Get the words speech detected
+    socket.on('volume', (nr, volume) => {
+        console.log('Volume informations from player n°' + nr + " : " + volume);
+        socket.broadcast.emit('volume', {nr:nr, volume:volume});
+    });
+
+  }
 
 });
 
 function sendPlayersToDisplay(socket) {
   // Send all players
   console.log("Players sent to display : ");
-  console.log(playerManager.players());
-  socket.emit('players', playerManager.players());
+  //console.log(playerManager.strPlayers());
+  socket.broadcast.emit('players', playerManager.strPlayers());
   // displaySocket.emit('players', playerManager.players());
 }
 
 function sendPlayerToRecognition(socket, player){
   // Send to client who he is
   console.log("Player sent to recognition : ");
-  console.log(player);
+  //console.log(player);
   socket.emit('myPlayer', player);
 }
 // mySocket.on('connection', (socket) => {

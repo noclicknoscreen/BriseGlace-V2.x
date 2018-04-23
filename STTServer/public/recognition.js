@@ -1,6 +1,9 @@
+
+//var volume = require('./recognitionVolume');
+
 var messages  = [];
 var myIp = "";
-var myPlayerName = "";
+var myPlayerNr = 0;
 
 var SpeechRecognition = window.webkitSpeechRecognition;
 var recognition = new SpeechRecognition();
@@ -123,4 +126,10 @@ function forceSend(){
 function forceSendRnd(){
     var rndString = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
     sendWords(rndString);
+}
+
+// Volume Section =================================================================
+setInterval(sendVolume, 10);
+function sendVolume() {
+  socketClient.emit('volume', myPlayerNr, meter.volume);
 }

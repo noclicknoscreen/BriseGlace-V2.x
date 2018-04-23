@@ -11,7 +11,7 @@ socketClient.on('disconnect', () => {
   socketClient.connect();
 });
 
-socketClient.on('players', (datas) => {
+socketClient.on('players', (jsonDatas) => {
 
   // Get the div for all players
   var divPlayers = document.getElementById("players");
@@ -20,9 +20,9 @@ socketClient.on('players', (datas) => {
   // send a private message to the socket with the given id
   // console.log("Players received :");
   // console.log(datas);
-
-  for (var indx in datas) {
-    addPlayer(datas[indx], datas.length, divPlayers);
+  // var jsonDatas = JSON.parse(datas);
+  for (var indx in jsonDatas) {
+    addPlayer(jsonDatas[indx], jsonDatas.length, divPlayers);
   }
 
 });

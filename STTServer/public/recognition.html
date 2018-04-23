@@ -10,20 +10,27 @@
   <link rel="stylesheet" type="text/css" href="../public/css/fonts.css">
   <link rel="stylesheet" type="text/css" href="../public/css/main.css">
   <link rel="stylesheet" type="text/css" href="../public/css/recognition.css">
+
+  <script type="text/javascript" src="../public/recognitionVolume.js"></script>
   <script type="text/javascript" src="../public/recognition.js"></script>
 
   <h1>Recognition Page</h1>
 
   <h2 id="myIp">my ip is unknown</h2>
   <h2 id="myPlayerNr">my name is unknown</h2>
+
   <div>
-       <input type="text" name="fname" value="Type a word" id="wordToSend">
-       <input type="submit" value="Send rnd" onclick="forceSendRnd()">
-       <input type="submit" value="Send" onclick="forceSend()">
+    <canvas id="meter" width="500" height="50"></canvas>
+  </div>
+
+  <div>
+    <input type="text" name="fname" value="Type a word" id="wordToSend">
+    <input type="submit" value="Send rnd" onclick="forceSendRnd()">
+    <input type="submit" value="Send" onclick="forceSend()">
   </div>
   <div>
     <ul id="messagesList" class="messagesList"><ul>
-  </div>
+    </div>
 
-</body>
-</html>
+  </body>
+  </html>

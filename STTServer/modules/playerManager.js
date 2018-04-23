@@ -12,6 +12,10 @@ module.exports = {
 
     var myIpAddr = socketHelper.decodeIp(socket);
     var myNumber = socketHelper.playerNr(socket);
+    if(myNumber <= 0){
+      console.log('IP undefined ('+myIpAddr+'): no player added');
+      return null;
+    }
     var foundPlayer = findPlayerByIp(myIpAddr);
 
     if (foundPlayer === undefined) {
@@ -23,11 +27,12 @@ module.exports = {
         ip:myIpAddr,
         nr:myNumber,
         socketId:socket.id,
-        isAvailable:false,
+        isAvailable:true,
         lastMessage:"",
         messages:[]
       };
-
+      // Make it available
+      setTimeout(function(){ newPlayer.isAvailable = false; }, 20000);
       // Add it
       players.push(newPlayer);
       return newPlayer;
@@ -49,8 +54,9 @@ module.exports = {
 
   },
 
-  players: function(){
-    return players;
+  strPlayers: function(){
+    var thosePlayers = {players:players};
+    return thosePlayers;
   },
 
   // Add messsage to the player
@@ -70,8 +76,10 @@ module.exports = {
         foundPlayer.messages.push(newMessage);
         // Change last message
         foundPlayer.lastMessage = message;
+        // Make it available
+        foundPlayer.isAvailable = true;
     }
-
+    return foundPlayer;
   }
 
 };

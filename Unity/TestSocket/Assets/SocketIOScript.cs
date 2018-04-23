@@ -5,34 +5,41 @@ using UnityEngine.UI;
 using Quobject.SocketIoClientDotNet.Client;
 using Newtonsoft.Json;
 
-public class Players {
-	public Player[] players;
-}
-public class Player {
+public class dataPlayers {
+	public dataPlayer[] players;
+};
+
+public class dataPlayer {
 	
 	public string 	ip;
 	public int		nr;
 	public string	socketId;
 	public bool		isAvailable;
 	public string	lastMessage;
-	public Message[]	messages;
+	public dataMessage[]	messages;
 };
 
-public class Message {
+public class dataMessage {
 	public string time;
 	public string text;
 };
 
+public class dataVolume{
+	public int nr;
+	public float volume;
+};
 
 public class SocketIOScript : MonoBehaviour {
 	public string serverURL;
 
-	public InputField uiInput = null;
-	public Button uiSend = null;
-	public Text uiChatLog = null;
+	public Text uiLog = null;
+	public Player P1 = null;
+	public Player P2 = null;
+	public Player P3 = null;
+	public Player[] Players = null;
 
 	protected Socket socket = null;
-	protected List<string> chatLog = new List<string> (); 
+	protected List<string> logList = new List<string> (); 
 
 	void Destroy() {
 		DoClose ();
@@ -41,24 +48,18 @@ public class SocketIOScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		DoOpen ();
-
-		uiSend.onClick.AddListener(() => {
-			SendChat(uiInput.text);
-			uiInput.text = "";
-			uiInput.ActivateInputField();
-		});
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		lock (chatLog) {
-			if (chatLog.Count > 0) {
-				string str = uiChatLog.text;
-				foreach (var s in chatLog) {
+		lock (logList) {
+			if (logList.Count > 0) {
+				string str = uiLog.text;
+				foreach (var s in logList) {
 					str = str + "\n" + s;
 				}
-				uiChatLog.text = str;
-				chatLog.Clear ();
+				uiLog.text = str;
+				logList.Clear ();
 			}
 		}
 	}
@@ -67,35 +68,74 @@ public class SocketIOScript : MonoBehaviour {
 		if (socket == null) {
 			socket = IO.Socket (serverURL);
 			socket.On (Socket.EVENT_CONNECT, () => {
-				lock(chatLog) {
+				lock(logList) {
 					// Access to Unity UI is not allowed in a background thread, so let's put into a shared variable
-					chatLog.Add("Socket.IO connected.");
+					logList.Add("Socket.IO connected.");
 				}
 			});
 
 			socket.On ("players", (data) => {
-
 				string str = data.ToString();
 
-				Debug.Log("Players received.");
-				//Debug.Log(str);
-
-				Players players = JsonConvert.DeserializeObject<Players> (str);
-				foreach(Player onePlayer in players.players)
+				dataPlayers players = JsonConvert.DeserializeObject<dataPlayers> (str);
+				foreach(dataPlayer onePlayer in players.players)
 				{
-					Debug.Log(onePlayer.ip);
+					Debug.Log(onePlayer.nr + ":" + onePlayer.ip 
+						+ " [LastMessage:" + onePlayer.lastMessage +"]" 
+						+ " [isAvailable:" + onePlayer.isAvailable +"]");
+					updatePlayer(onePlayer);
 				}
-//				string strChatLog = "user#" + chat.id + ": " + chat.msg;
-//
-//				// Access to Unity UI is not allowed in a background thread, so let's put into a shared variable
-//				lock(chatLog) {
-//					chatLog.Add(strChatLog);
-//				}
+
 			});
+
+			socket.On ("volume", (data) => {
+				//string str = data.ToString();
+				//Debug.Log("Volume data : " + str);
+				dataVolume volume = JsonConvert.DeserializeObject<dataVolume> (data.ToString());
+				updateVolume(volume.nr, volume.volume);
+			});
+
 		}
 	}
 
-	
+	Player getPlayer (int nr)
+	{
+		Player playerToUpdate = null;
+		switch (nr) {
+		case 1:
+			playerToUpdate = P1;
+			break;
+		case 2:
+			playerToUpdate = P2;
+			break;
+		case 3:
+			playerToUpdate = P3;
+			break;
+		default:
+			Debug.Log ("Player number not available : " + nr);
+			break;
+		}
+		return playerToUpdate;
+	}
+
+	private void updateVolume(int playerNum, float playerVolume){
+		var playerToUpdate = getPlayer (playerNum);
+
+		if (playerToUpdate != null) {
+			playerToUpdate.setVolume (playerVolume);
+		};
+	}
+
+	private void updatePlayer(dataPlayer dtPlayer){
+
+		var playerToUpdate = getPlayer (dtPlayer.nr);
+
+		if (playerToUpdate != null) {
+			playerToUpdate.setMessage (dtPlayer.lastMessage);
+			playerToUpdate.setAvailable (dtPlayer.isAvailable);
+		};
+
+	}
 
 	void DoClose() {
 		if (socket != null) {
@@ -104,9 +144,4 @@ public class SocketIOScript : MonoBehaviour {
 		}
 	}
 
-	void SendChat(string str) {
-		if (socket != null) {
-			socket.Emit ("chat", str);
-		}
-	}
 }
