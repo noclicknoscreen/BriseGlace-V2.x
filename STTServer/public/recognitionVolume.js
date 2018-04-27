@@ -67,8 +67,10 @@ window.onload = function() {
 }
 
 
-function didntGetStream() {
-    alert('Stream generation failed.');
+function didntGetStream(mediaStreamError) {
+    alert('Stream generation failed, see the console to know more about this failure. Try pickup a audio device available.');
+		console.error(mediaStreamError);
+
 }
 
 var mediaStreamSource = null;
