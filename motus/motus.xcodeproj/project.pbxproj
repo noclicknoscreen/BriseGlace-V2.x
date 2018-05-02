@@ -9,7 +9,7 @@
 		<string>46</string>
 		<key>objects</key>
 		<dict>
-			<key>421AE6B12A471C803A69EB2B</key>
+			<key>C74C9A6E6E79957B401A3261</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -20,11 +20,11 @@
 				<key>name</key>
 				<string>MSAPhysicsParticleUpdater.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/obselete/MSAPhysicsParticleUpdater.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/obselete/MSAPhysicsParticleUpdater.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>380F5BBA994DFC85DA0A2024</key>
+			<key>EB2236D22DF16170CB8B7F33</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -35,11 +35,11 @@
 				<key>name</key>
 				<string>MSAPhysicsParticleDrawer.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/obselete/MSAPhysicsParticleDrawer.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/obselete/MSAPhysicsParticleDrawer.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>75BA0FB7AB5664A3D437DD6C</key>
+			<key>62F2E43E1A5E57F852578DAD</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -50,18 +50,18 @@
 				<key>name</key>
 				<string>MSAPhysicsDataRecorder.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/obselete/MSAPhysicsDataRecorder.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/obselete/MSAPhysicsDataRecorder.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>E5A062E61030CCE95AFDF747</key>
+			<key>A3C968A3F37800D146252F6B</key>
 			<dict>
 				<key>children</key>
 				<array>
-					<string>7776BD75E250D3BA1668B0FC</string>
-					<string>75BA0FB7AB5664A3D437DD6C</string>
-					<string>380F5BBA994DFC85DA0A2024</string>
-					<string>421AE6B12A471C803A69EB2B</string>
+					<string>0A3CCA669018CFF24B106C6A</string>
+					<string>62F2E43E1A5E57F852578DAD</string>
+					<string>EB2236D22DF16170CB8B7F33</string>
+					<string>C74C9A6E6E79957B401A3261</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -70,7 +70,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>7776BD75E250D3BA1668B0FC</key>
+			<key>0A3CCA669018CFF24B106C6A</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -81,11 +81,11 @@
 				<key>name</key>
 				<string>MSAPhysicsCallbacks.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/obselete/MSAPhysicsCallbacks.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/obselete/MSAPhysicsCallbacks.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>07C1F4A14D9704A41D46D6AE</key>
+			<key>D0B839A50A622A8FB095A0D4</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -96,11 +96,11 @@
 				<key>name</key>
 				<string>MSAPhysicsWorld.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/MSAPhysicsWorld.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/MSAPhysicsWorld.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>5ACAFA63AF2DC5A62E9B0E70</key>
+			<key>689515DC5401B85B8EE38870</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -111,11 +111,11 @@
 				<key>name</key>
 				<string>MSAPhysicsTypes.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/MSAPhysicsTypes.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/MSAPhysicsTypes.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>02E170866819A307C5D55AE0</key>
+			<key>2ACD183BFDC92283ECCF27DA</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -126,11 +126,11 @@
 				<key>name</key>
 				<string>MSAPhysicsSpring.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/MSAPhysicsSpring.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/MSAPhysicsSpring.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>F9DB6AD2AFA1B11732EC4A54</key>
+			<key>FB79F4F97B7801FF51F43733</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -141,11 +141,11 @@
 				<key>name</key>
 				<string>MSAPhysicsSector.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/MSAPhysicsSector.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/MSAPhysicsSector.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>193BC2436477F5FA01AB5532</key>
+			<key>1B7394228935EC892B224435</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -156,11 +156,11 @@
 				<key>name</key>
 				<string>MSAPhysicsParticle.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/MSAPhysicsParticle.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/MSAPhysicsParticle.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>ECE8E14CFF5592D43484AE65</key>
+			<key>91B9946AD61CB2D7D94477D6</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -171,11 +171,11 @@
 				<key>name</key>
 				<string>MSAPhysicsParams.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/MSAPhysicsParams.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/MSAPhysicsParams.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>24A87CB72DD1BD3BD9F319BF</key>
+			<key>35AA54A6DFAF95252EDCC3F8</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -186,11 +186,11 @@
 				<key>name</key>
 				<string>MSAPhysicsConstraint.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/MSAPhysicsConstraint.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/MSAPhysicsConstraint.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>FD471448C21DBDCB05A94218</key>
+			<key>B9D38288DA32DD412A477F7C</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -201,11 +201,11 @@
 				<key>name</key>
 				<string>MSAPhysicsAttraction.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/MSAPhysicsAttraction.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/MSAPhysicsAttraction.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>3DA47B6D714C8D59D8A98191</key>
+			<key>F0F5848741DBB0C8CCA7E1C0</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -216,11 +216,11 @@
 				<key>name</key>
 				<string>MSAPhysics3D.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/MSAPhysics3D.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/MSAPhysics3D.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>1261AF0A746513F55F6C5CC2</key>
+			<key>4436D71CE6442E6E1C783A2E</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -231,26 +231,26 @@
 				<key>name</key>
 				<string>MSAPhysics2D.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/MSAPhysics2D.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/MSAPhysics2D.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>003BE9AD959FC5FDA449E63B</key>
+			<key>22FA2197DD0EF6E7C3C497B7</key>
 			<dict>
 				<key>children</key>
 				<array>
-					<string>DB297983B1B185CB38B2F6AB</string>
-					<string>1261AF0A746513F55F6C5CC2</string>
-					<string>3DA47B6D714C8D59D8A98191</string>
-					<string>FD471448C21DBDCB05A94218</string>
-					<string>24A87CB72DD1BD3BD9F319BF</string>
-					<string>ECE8E14CFF5592D43484AE65</string>
-					<string>193BC2436477F5FA01AB5532</string>
-					<string>F9DB6AD2AFA1B11732EC4A54</string>
-					<string>02E170866819A307C5D55AE0</string>
-					<string>5ACAFA63AF2DC5A62E9B0E70</string>
-					<string>07C1F4A14D9704A41D46D6AE</string>
-					<string>E5A062E61030CCE95AFDF747</string>
+					<string>B6A449D2EF649012F712E2A1</string>
+					<string>4436D71CE6442E6E1C783A2E</string>
+					<string>F0F5848741DBB0C8CCA7E1C0</string>
+					<string>B9D38288DA32DD412A477F7C</string>
+					<string>35AA54A6DFAF95252EDCC3F8</string>
+					<string>91B9946AD61CB2D7D94477D6</string>
+					<string>1B7394228935EC892B224435</string>
+					<string>FB79F4F97B7801FF51F43733</string>
+					<string>2ACD183BFDC92283ECCF27DA</string>
+					<string>689515DC5401B85B8EE38870</string>
+					<string>D0B839A50A622A8FB095A0D4</string>
+					<string>A3C968A3F37800D146252F6B</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -259,20 +259,20 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>A2D51AA86FE4B3AAC3DF4719</key>
+			<key>BBB46ED124BAFF9F2EAD9484</key>
 			<dict>
 				<key>children</key>
 				<array>
-					<string>003BE9AD959FC5FDA449E63B</string>
+					<string>22FA2197DD0EF6E7C3C497B7</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
 				<key>name</key>
-				<string>ofxMSAPhysics-master</string>
+				<string>ofxMSAPhysics</string>
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>DB297983B1B185CB38B2F6AB</key>
+			<key>B6A449D2EF649012F712E2A1</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -283,11 +283,11 @@
 				<key>name</key>
 				<string>MSAPhysics.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSAPhysics-master/src/MSAPhysics.h</string>
+				<string>../../../addons/ofxMSAPhysics/src/MSAPhysics.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>6AEC4C8643AAB38FBA166D75</key>
+			<key>BF409A6581828B276295569E</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -298,11 +298,11 @@
 				<key>name</key>
 				<string>MSACoreMath.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSACore-master/src/MSACoreMath.h</string>
+				<string>../../../addons/ofxMSACore/src/MSACoreMath.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>2327218A509216E7071ECF51</key>
+			<key>742419098E2A7CC7A7F877BA</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -313,18 +313,18 @@
 				<key>name</key>
 				<string>MSACoreGL.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSACore-master/src/MSACoreGL.h</string>
+				<string>../../../addons/ofxMSACore/src/MSACoreGL.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>74308738DAC8DED7C088E632</key>
+			<key>A854A26C873CB7CB18844F73</key>
 			<dict>
 				<key>fileRef</key>
-				<string>36618DD396B84714567F8E67</string>
+				<string>CBA1268BC95928A23E347221</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>36618DD396B84714567F8E67</key>
+			<key>CBA1268BC95928A23E347221</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -335,11 +335,11 @@
 				<key>name</key>
 				<string>MSACoreGL.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSACore-master/src/MSACoreGL.cpp</string>
+				<string>../../../addons/ofxMSACore/src/MSACoreGL.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>97B55F6829F7BD9383904DC2</key>
+			<key>EF872612718328680A4B9D64</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -350,11 +350,11 @@
 				<key>name</key>
 				<string>MSACoreCommon.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSACore-master/src/MSACoreCommon.h</string>
+				<string>../../../addons/ofxMSACore/src/MSACoreCommon.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>E70EA4693970E7C6F0A38A2E</key>
+			<key>F89CFA9BBD18E54CE8F75DFE</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -365,11 +365,11 @@
 				<key>name</key>
 				<string>MSACore.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSACore-master/src/MSACore.h</string>
+				<string>../../../addons/ofxMSACore/src/MSACore.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>A85936CB81E8D69C32AFEC79</key>
+			<key>0008007737C566356F0EF517</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -380,21 +380,21 @@
 				<key>name</key>
 				<string>MSACore-OF.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSACore-master/src/MSACore-OF.h</string>
+				<string>../../../addons/ofxMSACore/src/MSACore-OF.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>EB8FEDDDAB8913C385426B52</key>
+			<key>3D01193DCC93E22EB67D71C0</key>
 			<dict>
 				<key>children</key>
 				<array>
-					<string>1364A0A1FCECE5362145F803</string>
-					<string>A85936CB81E8D69C32AFEC79</string>
-					<string>E70EA4693970E7C6F0A38A2E</string>
-					<string>97B55F6829F7BD9383904DC2</string>
-					<string>36618DD396B84714567F8E67</string>
-					<string>2327218A509216E7071ECF51</string>
-					<string>6AEC4C8643AAB38FBA166D75</string>
+					<string>779DD745A53BDF4B7E895832</string>
+					<string>0008007737C566356F0EF517</string>
+					<string>F89CFA9BBD18E54CE8F75DFE</string>
+					<string>EF872612718328680A4B9D64</string>
+					<string>CBA1268BC95928A23E347221</string>
+					<string>742419098E2A7CC7A7F877BA</string>
+					<string>BF409A6581828B276295569E</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -403,20 +403,20 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>B4EE5D75C0BD33FCDB491457</key>
+			<key>F8790DCD2E062DF9AA47E810</key>
 			<dict>
 				<key>children</key>
 				<array>
-					<string>EB8FEDDDAB8913C385426B52</string>
+					<string>3D01193DCC93E22EB67D71C0</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
 				<key>name</key>
-				<string>ofxMSACore-master</string>
+				<string>ofxMSACore</string>
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>1364A0A1FCECE5362145F803</key>
+			<key>779DD745A53BDF4B7E895832</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -427,7 +427,7 @@
 				<key>name</key>
 				<string>MSACore-Cinder.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxMSACore-master/src/MSACore-Cinder.h</string>
+				<string>../../../addons/ofxMSACore/src/MSACore-Cinder.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -949,206 +949,6 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>CCDC6F9CCF925CC402160B85</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>21BDE665988474F1B1F4D302</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>src</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>FB84AAF8D1B7A95266DB5C09</key>
-			<dict>
-				<key>fileRef</key>
-				<string>21BDE665988474F1B1F4D302</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>21BDE665988474F1B1F4D302</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>jsoncpp.cpp</string>
-				<key>path</key>
-				<string>../../../addons/ofxJSON/libs/jsoncpp/src/jsoncpp.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>2C7CF000B7B4F782C187C353</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>json.h</string>
-				<key>path</key>
-				<string>../../../addons/ofxJSON/libs/jsoncpp/include/json/json.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>58AD3BD71B781D9BC25763C8</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>61313493CDB52744E22A604D</string>
-					<string>2C7CF000B7B4F782C187C353</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>json</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>D486FC87F063317BB47E9FAC</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>58AD3BD71B781D9BC25763C8</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>include</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>977A836DD2C489CCC5E330FF</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>D486FC87F063317BB47E9FAC</string>
-					<string>CCDC6F9CCF925CC402160B85</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>jsoncpp</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>F40E80CB2D443CBA9581DD03</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>977A836DD2C489CCC5E330FF</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>libs</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>61313493CDB52744E22A604D</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>json-forwards.h</string>
-				<key>path</key>
-				<string>../../../addons/ofxJSON/libs/jsoncpp/include/json/json-forwards.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>26A541233BC6F736E758F718</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxJSONElement.h</string>
-				<key>path</key>
-				<string>../../../addons/ofxJSON/src/ofxJSONElement.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>BEDFEE7400C58EA4E412B757</key>
-			<dict>
-				<key>fileRef</key>
-				<string>F2B099E6BD1199664C48B177</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>F2B099E6BD1199664C48B177</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxJSONElement.cpp</string>
-				<key>path</key>
-				<string>../../../addons/ofxJSON/src/ofxJSONElement.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>292AF6148769654D0DF26018</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>1645F56257269CD0356320BD</string>
-					<string>F2B099E6BD1199664C48B177</string>
-					<string>26A541233BC6F736E758F718</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>src</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>2865DAEF86B1907A704CA70B</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>292AF6148769654D0DF26018</string>
-					<string>F40E80CB2D443CBA9581DD03</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>ofxJSON</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>1645F56257269CD0356320BD</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxJSON.h</string>
-				<key>path</key>
-				<string>../../../addons/ofxJSON/src/ofxJSON.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
 			<key>0A1DAC09F322AE313A40706D</key>
 			<dict>
 				<key>explicitFileType</key>
@@ -1555,10 +1355,9 @@
 				<key>children</key>
 				<array>
 					<string>480A780D8D0308AE4A368801</string>
-					<string>2865DAEF86B1907A704CA70B</string>
 					<string>AAE50E341C7382A4EF10AF5A</string>
-					<string>B4EE5D75C0BD33FCDB491457</string>
-					<string>A2D51AA86FE4B3AAC3DF4719</string>
+					<string>F8790DCD2E062DF9AA47E810</string>
+					<string>BBB46ED124BAFF9F2EAD9484</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -1723,12 +1522,6 @@
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
 						<string>../../../addons/ofxGui/src</string>
-						<string>../../../addons/ofxJSON/libs</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp/include</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp/include/json</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp/src</string>
-						<string>../../../addons/ofxJSON/src</string>
 						<string>../../../addons/ofxLibwebsockets/libs/jsoncpp</string>
 						<string>../../../addons/ofxLibwebsockets/libs/jsoncpp/json</string>
 						<string>../../../addons/ofxLibwebsockets/libs/libwebsockets/include/</string>
@@ -1738,9 +1531,9 @@
 						<string>../../../addons/ofxLibwebsockets/src</string>
 						<string>../../../libs/openssl/include</string>
 						<string>../../../libs/openssl/include</string>
-						<string>../../../addons/ofxMSACore-master/src</string>
-						<string>../../../addons/ofxMSAPhysics-master/src</string>
-						<string>../../../addons/ofxMSAPhysics-master/src/obselete</string>
+						<string>../../../addons/ofxMSACore/src</string>
+						<string>../../../addons/ofxMSAPhysics/src</string>
+						<string>../../../addons/ofxMSAPhysics/src/obselete</string>
 					</array>
 					<key>CONFIGURATION_BUILD_DIR</key>
 					<string>$(SRCROOT)/bin/</string>
@@ -1809,12 +1602,6 @@
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
 						<string>../../../addons/ofxGui/src</string>
-						<string>../../../addons/ofxJSON/libs</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp/include</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp/include/json</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp/src</string>
-						<string>../../../addons/ofxJSON/src</string>
 						<string>../../../addons/ofxLibwebsockets/libs/jsoncpp</string>
 						<string>../../../addons/ofxLibwebsockets/libs/jsoncpp/json</string>
 						<string>../../../addons/ofxLibwebsockets/libs/libwebsockets/include/</string>
@@ -1824,9 +1611,9 @@
 						<string>../../../addons/ofxLibwebsockets/src</string>
 						<string>../../../libs/openssl/include</string>
 						<string>../../../libs/openssl/include</string>
-						<string>../../../addons/ofxMSACore-master/src</string>
-						<string>../../../addons/ofxMSAPhysics-master/src</string>
-						<string>../../../addons/ofxMSAPhysics-master/src/obselete</string>
+						<string>../../../addons/ofxMSACore/src</string>
+						<string>../../../addons/ofxMSAPhysics/src</string>
+						<string>../../../addons/ofxMSAPhysics/src/obselete</string>
 					</array>
 					<key>CONFIGURATION_BUILD_DIR</key>
 					<string>$(SRCROOT)/bin/</string>
@@ -1892,8 +1679,6 @@
 					<string>837220E80EB56CD44AD27F2A</string>
 					<string>B56FE57CC35806596D38118C</string>
 					<string>1CD33E884D9E3358252E82A1</string>
-					<string>BEDFEE7400C58EA4E412B757</string>
-					<string>FB84AAF8D1B7A95266DB5C09</string>
 					<string>9EF1133BC23669A5C94FE30F</string>
 					<string>C6C3882A0B0872D1485F3874</string>
 					<string>A78C77753D562AE8F0E928ED</string>
@@ -1902,7 +1687,7 @@
 					<string>6D73A566CFEC0B462FE6E43C</string>
 					<string>F3AD9E2A2E56B6AF32A0BDAF</string>
 					<string>CCD326ED8E01272042317DD2</string>
-					<string>74308738DAC8DED7C088E632</string>
+					<string>A854A26C873CB7CB18844F73</string>
 				</array>
 				<key>isa</key>
 				<string>PBXSourcesBuildPhase</string>
@@ -1997,12 +1782,6 @@
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
 						<string>../../../addons/ofxGui/src</string>
-						<string>../../../addons/ofxJSON/libs</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp/include</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp/include/json</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp/src</string>
-						<string>../../../addons/ofxJSON/src</string>
 						<string>../../../addons/ofxLibwebsockets/libs/jsoncpp</string>
 						<string>../../../addons/ofxLibwebsockets/libs/jsoncpp/json</string>
 						<string>../../../addons/ofxLibwebsockets/libs/libwebsockets/include/</string>
@@ -2012,9 +1791,9 @@
 						<string>../../../addons/ofxLibwebsockets/src</string>
 						<string>../../../libs/openssl/include</string>
 						<string>../../../libs/openssl/include</string>
-						<string>../../../addons/ofxMSACore-master/src</string>
-						<string>../../../addons/ofxMSAPhysics-master/src</string>
-						<string>../../../addons/ofxMSAPhysics-master/src/obselete</string>
+						<string>../../../addons/ofxMSACore/src</string>
+						<string>../../../addons/ofxMSAPhysics/src</string>
+						<string>../../../addons/ofxMSAPhysics/src/obselete</string>
 					</array>
 					<key>COMBINE_HIDPI_IMAGES</key>
 					<string>YES</string>
@@ -2073,12 +1852,6 @@
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
 						<string>../../../addons/ofxGui/src</string>
-						<string>../../../addons/ofxJSON/libs</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp/include</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp/include/json</string>
-						<string>../../../addons/ofxJSON/libs/jsoncpp/src</string>
-						<string>../../../addons/ofxJSON/src</string>
 						<string>../../../addons/ofxLibwebsockets/libs/jsoncpp</string>
 						<string>../../../addons/ofxLibwebsockets/libs/jsoncpp/json</string>
 						<string>../../../addons/ofxLibwebsockets/libs/libwebsockets/include/</string>
@@ -2088,9 +1861,9 @@
 						<string>../../../addons/ofxLibwebsockets/src</string>
 						<string>../../../libs/openssl/include</string>
 						<string>../../../libs/openssl/include</string>
-						<string>../../../addons/ofxMSACore-master/src</string>
-						<string>../../../addons/ofxMSAPhysics-master/src</string>
-						<string>../../../addons/ofxMSAPhysics-master/src/obselete</string>
+						<string>../../../addons/ofxMSACore/src</string>
+						<string>../../../addons/ofxMSAPhysics/src</string>
+						<string>../../../addons/ofxMSAPhysics/src/obselete</string>
 					</array>
 					<key>COMBINE_HIDPI_IMAGES</key>
 					<string>YES</string>

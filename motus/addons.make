@@ -1,2 +1,4 @@
-ofxMSACore-master
-ofxMSAPhysics-master
+ofxGui
+ofxLibwebsockets
+ofxMSACore
+ofxMSAPhysics
