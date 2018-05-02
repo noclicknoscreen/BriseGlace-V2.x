@@ -30,7 +30,7 @@ void ofApp::draw(){
     ofTranslate(width/2, 0, -width / 3);	 // center scene
     ofRotate(rotX, 0, 1, 0);                 // rotate scene
     ofRotate(rotY, 1, 0, 0);                 // rotate scene
- 
+    
     //applyRandomForces();  //makes the screen and walls move with forces applied
     drawRoom();
     drawSprings();
@@ -59,28 +59,10 @@ void ofApp::keyPressed(int key){
         }
         case 'f': addRandomForce(FORCE_AMOUNT); break;
         case 'F': addRandomForce(FORCE_AMOUNT * 3); break;
-
+            
         case 'm': myParticules[0]->me->moveTo(ofVec3f(-400,100,100)); myParticules[0]->me->makeFixed(); break;
             
-        case 'a': {
-            //attraction point
-            particule* ppp = new particule(world, 1, myParticules[0]->getInitPos(), "S");
-            ppp->me->makeFixed();
-            ppp->me->enablePassiveCollision();
-            myParticules.push_back(ppp);
-            
-            myParticules[0]->me->setBounce(0);
-            world->makeAttraction(ppp->me, myParticules[0]->me, 50);
-            break;
-        }
-            
-        case 'A': {
-            //destroy attraction forces
-            for(int i=0; i<world->numberOfAttractions(); i++) world->getAttraction(i)->kill();
-            break;
-        }
-            
-            case 's':
+        case 's':
         {
             
             for(int i=0; i<myParticules.size(); i++)
@@ -91,8 +73,6 @@ void ofApp::keyPressed(int key){
                 //myParticules.push_back(ppp);
                 world->makeSpring(ppp->me, myParticules[i]->me, SPRING_MIN_STRENGTH, 300);
             }
-            
-
             break;
         }
             
@@ -102,6 +82,7 @@ void ofApp::keyPressed(int key){
             {
                 world->getSpring(i)->kill();
             }
+            break;
         }
     }
 }
@@ -118,7 +99,7 @@ void ofApp::mouseMoved(int x, int y ){
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
-
+    
     rotX = (x - mouseClickPos.x)/2;
     rotY = (mouseClickPos.y - y)/2;
     
@@ -148,7 +129,7 @@ void ofApp::mouseExited(int x, int y){
 
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h){
-
+    
 }
 
 //--------------------------------------------------------------
