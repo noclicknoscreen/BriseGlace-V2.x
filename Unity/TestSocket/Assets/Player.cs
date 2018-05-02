@@ -30,12 +30,12 @@ public class Player : MonoBehaviour {
 				myText.GetComponent<TextMesh> ().text = message;
 
 				Vector3 thisScale;
-				if(isAvailable){
+//				if(isAvailable){
 					float myScale = Mathf.Lerp(1.0F, 10.0F, volume);
 					thisScale = new Vector3(myScale, myScale, myScale);
-				}else{
-					thisScale = new Vector3(1.0F, 1.0F, 1.0F);
-				}
+//				}else{
+//					thisScale = new Vector3(1.0F, 1.0F, 1.0F);
+//				}
 				myVolumeMarker.transform.localScale = thisScale;
 			}
 		}

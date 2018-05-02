@@ -29,6 +29,9 @@ module.exports = {
       case '192.168.1.103':
       nr = 2;
       break;
+      case '192.168.1.68':
+      nr = 3;
+      break;
       default:
       nr = 0;
       break;
