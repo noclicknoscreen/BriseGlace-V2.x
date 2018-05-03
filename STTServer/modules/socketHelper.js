@@ -23,13 +23,13 @@ module.exports = {
     var ip = this.decodeIp(socket);
 
     switch (ip) {
-      case '192.168.1.102':
+      case '192.168.2.21':
       nr = 1;
       break;
-      case '192.168.1.103':
+      case '192.168.2.22':
       nr = 2;
       break;
-      case '192.168.1.68':
+      case '192.168.2.23':
       nr = 3;
       break;
       default:

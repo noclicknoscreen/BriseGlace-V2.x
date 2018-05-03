@@ -3,6 +3,8 @@
 var socketHelper = require('./socketHelper');
 
 var players = [];
+var lastMessage = {time:new Date().toLocaleString(), text:""};
+var lastNumber = 0;
 
 module.exports = {
   // Reset all players, empty datas
@@ -28,7 +30,8 @@ module.exports = {
         nr:myNumber,
         socketId:socket.id,
         isAvailable:true,
-        lastMessage:"",
+        lastMessage:lastMessage,
+        volume:0,
         messages:[]
       };
       // Make it available
@@ -55,7 +58,7 @@ module.exports = {
   },
 
   strPlayers: function(){
-    var thosePlayers = {players:players};
+    var thosePlayers = {lastMessage:lastMessage, lastNumber:lastNumber, players:players};
     return thosePlayers;
   },
 
@@ -71,13 +74,32 @@ module.exports = {
 
     if (foundPlayer != undefined) {
         console.log("Old player found =============");
-        var newMessage = {time:new Date().toLocaleString(), text:message};
+        lastMessage = {time:new Date().toLocaleString(), text:message};
+        lastNumber = foundPlayer.nr;
         // Add message to the list
-        foundPlayer.messages.push(newMessage);
+        foundPlayer.messages.push(lastMessage);
         // Change last message
-        foundPlayer.lastMessage = message;
+        foundPlayer.lastMessage = lastMessage;
         // Make it available
         foundPlayer.isAvailable = true;
+    }
+    return foundPlayer;
+  },
+
+  // Update the volume of the player
+  // inputs :
+  // (Socket) Identified socket
+  // (Float) Volume value
+  updateVolume: function (socket, volume){
+
+    // Check if existing playerNr / socketId
+    var myIpAddr = socketHelper.decodeIp(socket);
+    var foundPlayer = findPlayerByIp(myIpAddr);
+
+    if (foundPlayer != undefined) {
+        //console.log("Old player found =============");
+        // Add message to the list
+        foundPlayer.volume = volume;
     }
     return foundPlayer;
   }
