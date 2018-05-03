@@ -10,6 +10,7 @@
 
 #include "ofMain.h"
 #include "ofxJSON.h"
+#include "player.h"
 
 class playerManager : public ofBaseApp{
     
@@ -17,17 +18,18 @@ public:
     void setup();
     void update();
     void draw();
-    void urlResponse(ofHttpResponse & response);
     
     int getLastNumber(){return mLastNumber;};
     string getLastMessage(){return mLastMessage;};
     
 private:
-    bool mHttpLoading;
     
     int mLastNumber;
     string mLastMessage;
     
-    ofxJSONElement response;
+    ofxJSONElement mResponse;
+    
+    map<int, player> mPlayers;
+    map<int, ofColor> mColors;
     
 };

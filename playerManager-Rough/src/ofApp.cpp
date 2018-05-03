@@ -3,7 +3,6 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     
-    ofBackgroundGradient(ofColor::lightGrey, ofColor::black);
     myPlayerManager.setup();
     
     
@@ -22,6 +21,9 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    
+    ofBackgroundGradient(ofColor::lightGrey, ofColor::black);
+
     myPlayerManager.draw();
     
     ofPushMatrix();
