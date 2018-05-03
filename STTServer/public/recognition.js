@@ -129,7 +129,7 @@ function forceSendRnd(){
 }
 
 // Volume Section =================================================================
-setInterval(sendVolume, 10);
+setInterval(sendVolume, 50);
 function sendVolume() {
-  socketClient.emit('volume', myPlayerNr, meter.volume);
+  socketClient.emit('volume', meter.volume);
 }

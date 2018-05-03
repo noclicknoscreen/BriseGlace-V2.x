@@ -54,6 +54,13 @@ app.get('/recognition', function(req, res) {
 app.get('/display', function(req, res) {
   res.sendFile(__dirname + '/public/display.html');
 });
+app.get('/players', function(req, res) {
+
+  console.log("Players sent to HTTP : ");
+
+  res.setHeader('Content-Type', 'application/json');
+  res.send(JSON.stringify(playerManager.strPlayers()));
+});
 
 const options = {
   key: fs.readFileSync(__dirname + '/public/certificates/key.pem'),
@@ -93,9 +100,9 @@ var socketServer = io.on('connection', (socket) => {
     });
 
     // Get the words speech detected
-    socket.on('volume', (nr, volume) => {
-        console.log('Volume informations from player n°' + nr + " : " + volume);
-        socket.broadcast.emit('volume', {nr:nr, volume:volume});
+    socket.on('volume', (volume) => {
+        //console.log('Volume informations from player n°' + nr + " : " + volume);
+        playerManager.updateVolume(socket, volume);
     });
 
   }
