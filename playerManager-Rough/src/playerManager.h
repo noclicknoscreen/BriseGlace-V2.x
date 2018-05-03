@@ -9,6 +9,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxJSON.h"
 
 class playerManager : public ofBaseApp{
     
@@ -26,5 +27,7 @@ private:
     
     int mLastNumber;
     string mLastMessage;
+    
+    ofxJSONElement response;
     
 };

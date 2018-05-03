@@ -73,7 +73,8 @@ module.exports = {
     var foundPlayer = findPlayerByIp(myIpAddr);
 
     if (foundPlayer != undefined) {
-        console.log("Old player found =============");
+        console.log("Old player found, Id:" + socket.id + " IP:" + myIpAddr);
+
         lastMessage = {time:new Date().toLocaleString(), text:message};
         lastNumber = foundPlayer.nr;
         // Add message to the list
@@ -109,7 +110,7 @@ module.exports = {
 function findPlayerByIp(existingIp){
 
   var foundPlayer = players.find(function (foundPlayer) {
-      console.log(existingIp);
+      //console.log(existingIp);
       return foundPlayer.ip === existingIp;
    });
 

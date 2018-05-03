@@ -26,11 +26,11 @@ void ofApp::draw(){
     
     ofPushMatrix();
     
-    string message = ofToString(myPlayerManager.getLastNumber()) + " : " + myPlayerManager.getLastMessage();
-    ofRectangle bounds = myFont.getStringBoundingBox(message, 0, 0);
-    
-    ofTranslate(0.5 * (ofGetWidth() + bounds.width), 0.5 * (ofGetHeight() + bounds.height));
-    myFont.drawString(message, 0, 0);
+        string message = ofToString(myPlayerManager.getLastNumber()) + " : " + myPlayerManager.getLastMessage();
+        ofRectangle bounds = myFont.getStringBoundingBox(message, 0, 0);
+        
+        ofTranslate(0.5 * (ofGetWidth() - bounds.width), 0.5 * (ofGetHeight() - bounds.height));
+        myFont.drawString(message, 0, 0);
     
     ofPopMatrix();
     

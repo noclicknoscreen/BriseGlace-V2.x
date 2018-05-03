@@ -10,34 +10,23 @@
 
 //--------------------------------------------------------------
 void playerManager::setup(){
-    // Register callback
-    ofRegisterURLNotification(this);
-    
-}
-
-//--------------------------------------------------------------
-void playerManager::urlResponse(ofHttpResponse & response){
-    // Get the response and do the job
-    if(response.status==200 && response.request.name == "players"){
-        // We get something
-        ofLog() << "HTTP Response : ";
-        ofLog() << response.data;
-        // Flag off
-        mHttpLoading=false;
-    }else{
-        ofLogError() << ofToString(response.status) << " " << response.error;
-        if(response.status!=-1) mHttpLoading=false;
-    }
 }
 
 //--------------------------------------------------------------
 void playerManager::update(){
     
-    // If flagged off, send request each update
-    if(mHttpLoading == false){
-        ofLoadURLAsync("https://localhost:8443/players","players");
-        mHttpLoading = true;
+    string url = "https://localhost:8443/players";
+    
+    if (response.open(url)){
+        // update variables
+        mLastMessage = response["lastMessage"]["text"].asString();
+        mLastNumber = response["lastNumber"].asInt();
+        // The log because we're happy
+        ofLogNotice() << "Open Successful : [" << mLastNumber << ":" << mLastMessage << "]";
+    }else{
+        ofLogError() << "Unable to parse file";
     }
+
 }
 
 //--------------------------------------------------------------

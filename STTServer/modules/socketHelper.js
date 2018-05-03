@@ -12,7 +12,6 @@ module.exports = {
       ipAddr = ipAddr.substr(7)
     }
 
-    console.log("Decoding, Id:" + socket.id + " IP:" + ipAddr);
     return ipAddr;
 
   },
