@@ -1,0 +1,3 @@
+ofxAnimatable
+ofxSceneManager
+ofxScreenCurtain

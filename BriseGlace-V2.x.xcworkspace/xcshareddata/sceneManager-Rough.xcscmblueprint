@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1B22365D6094E80AFED4B44C2E24585B39F3C390",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0BFD22BF342184E5C01175F9CA03A6F9E3272AA0" : 9223372036854775807,
+    "43E5ECF8F8C8BA9B93A5E1A795FBF0BD870AF719" : 9223372036854775807,
+    "32C9357E6BFA4C30CF0000521A92DF84B7FBC79F" : 9223372036854775807,
+    "1B22365D6094E80AFED4B44C2E24585B39F3C390" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "75EF3126-496B-433A-90C9-8B5EF7573038",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0BFD22BF342184E5C01175F9CA03A6F9E3272AA0" : "..\/addons\/ofxSceneManager",
+    "43E5ECF8F8C8BA9B93A5E1A795FBF0BD870AF719" : "..\/addons\/ofxScreenCurtain",
+    "32C9357E6BFA4C30CF0000521A92DF84B7FBC79F" : "..\/addons\/ofxAnimatable",
+    "1B22365D6094E80AFED4B44C2E24585B39F3C390" : "BriseGlace-V2.x\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "sceneManager-Rough",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "sceneManager-Rough\/sceneManager-Rough.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/armadillu\/ofxSceneManager.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0BFD22BF342184E5C01175F9CA03A6F9E3272AA0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/noclicknoscreen\/BriseGlace-V2.x.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1B22365D6094E80AFED4B44C2E24585B39F3C390"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/armadillu\/ofxAnimatable.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "32C9357E6BFA4C30CF0000521A92DF84B7FBC79F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/armadillu\/ofxScreenCurtain.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "43E5ECF8F8C8BA9B93A5E1A795FBF0BD870AF719"
+    }
+  ]
+}
