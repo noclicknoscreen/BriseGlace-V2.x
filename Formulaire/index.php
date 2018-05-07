@@ -27,7 +27,7 @@
         </p>
         <p>
             <label for="photo1">Photo indice 1</label> :
-            <input type="text" name="photo1" id="photo1" required>
+            <input type="url" name="photo1" id="photo1" required>
         </p>
         <p>
         <p>
@@ -36,7 +36,7 @@
         </p>
         <p>
             <label for="photo2">Photo indice 2</label> :
-            <input type="text" name="photo2" id="photo2" required>
+            <input type="url" name="photo2" id="photo2" required>
         </p>
         <p>
             <label for="indice3">Indice 3</label> :
@@ -44,15 +44,15 @@
         </p>
         <p>
             <label for="photo3">Photo indice 3</label> :
-            <input type="text" name="photo3" id="photo3" required>
+            <input type="url" name="photo3" id="photo3" required>
         </p>
         <p>
             <label for="recompense">Recompense</label> :
             <input type="text" name="recompense" id="recompense" required >
         </p>
         <p>
-            <label for="photoR">Photo Recompense</label> :
-            <input type="text" name="photoR" id="photoR" required>
+            <label for="photo4">Photo Recompense</label> :
+            <input type="url" name="photo4" id="photo4" required>
         </p>
         <div class="button">
         <button type="submit">Envoyer le message</button>
