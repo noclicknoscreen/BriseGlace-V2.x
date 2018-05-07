@@ -1,0 +1,4 @@
+ofxGui
+ofxLibwebsockets
+ofxMSACore
+ofxMSAPhysics
