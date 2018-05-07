@@ -11,36 +11,53 @@
 // header('Content-type: text/javascript');
 
 $jsonFormat = array(
-    "Jeux" => $_GET['jeux'],
-    "mot" => $_GET['mot'],
+    "Jeux" => $_POST['jeux'],
+    "mot" => $_POST['mot'],
     "indice1"=>array(
-        "nom"=>$_GET['indice1'],
-        "photo"=>$_GET['photo1'],
+        "nom"=>$_POST['indice1'],
+        "photo"=>$_POST['photo1'],
     ),
     "indice2"=>array(
-        "nom"=>$_GET['indice2'],
-        "photo"=>$_GET['photo1'],
+        "nom"=>$_POST['indice2'],
+        "photo"=>$_POST['photo1'],
     ),
     "indice3"=>array(
-        "nom"=>$_GET['indice3'],
-        "photo"=>$_GET['photo1'],
+        "nom"=>$_POST['indice3'],
+        "photo"=>$_POST['photo1'],
     ),
     "recompense"=>array(
-        "description"=>$_GET['recompense'],
-        "photo"=>$_GET['photoR'],
+        "description"=>$_POST['recompense'],
+        "photo"=>$_POST['photoR'],
     )
 );
 
-// echo json_encode($jsonFormat, JSON_PRETTY_PRINT);
-
-if (file_exists ("enigme1") == false) {
-    mkdir("./enigme1", 0777, true);
+$tmp = $_POST['jeux'];
+if (file_exists ($tmp) == false) {
+    mkdir("./" . $tmp, 0777, true);
 }
-$fichier = fopen("enigme1/test.json", "w+");
 
+$num = file_get_contents($tmp . "/info.txt");
+
+
+if (file_exists ($tmp . "/" . $num) == false) {
+    mkdir("./" . $tmp . "/" . $num, 0777, true);
+}
+
+if (file_exists ($tmp . "/" . $num . "/image") == false) {
+    mkdir("./" . $tmp . "/" . $num . "/image", 0777, true);
+}
+
+$fichier = fopen($tmp . "/" . $num . "/enigme.json", "w+");
 fputs($fichier, $json_string = json_encode($jsonFormat, JSON_PRETTY_PRINT));
-
 fclose($fichier);
+
+
+$num = $num + 1;
+$text = fopen($tmp . "/info.txt", "w+");
+fputs($text, $num);
+fclose($text);
+
+echo $num;
 
 ?>
 

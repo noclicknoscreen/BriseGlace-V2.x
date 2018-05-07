@@ -3,18 +3,18 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Manipulation des formulaires</title>
+    <title>Formulaire</title>
 </head>
 
 <body>
-    <form action="cible.php">
+    <form action="cible.php" method="POST">
         <h1>Enigme</h1>
         <p>
             <label for="jeux">Jeux :</label>
             <select name="jeux" id="jeux">
-                <option selected>Motus</option>
-                <option>Labyrinthe</option>
-                <option>Rebu</option>
+                <option value = "motus" selected>Motus</option>
+                <option value = "labyrinthe">Labyrinthe</option>
+                <option value = "rebu">Rebu</option>
             </select>
         </p>
         <p>
