@@ -14,20 +14,36 @@
 #include "scHint.h"
 #include "scVictory.h"
 
+#include "ofEvent.h"
+
+#include "playerManager.h"
+
 class ofApp : public ofBaseApp{
-
-	enum Scenes{ INTRO = 1, INITIALIZE, SELECT_GAME, GAME1, GAME2, GAME3, HINT, VICTORY };
-	
-	public:
-		void setup();
-		void update();
-		void draw();
-
-		void keyPressed  (int key);
-		void mousePressed( int x, int y, int button );
-
-
-		void windowResized(int w, int h);
-	
-		ofxSceneManager *		sceneManager;
+    
+    enum Scenes{ INTRO = 1, INITIALIZE, SELECT_GAME, GAME1, GAME2, GAME3, HINT, VICTORY };
+    
+    void setup();
+    void update();
+    void draw();
+    
+    void keyPressed  (int key);
+    void mousePressed( int x, int y, int button );
+    
+    void nextSceneAuto();
+    
+    void windowResized(int w, int h);
+    
+    void goToNextScene();
+    void goToPrevScene();
+    
+    ofxSceneManager *		sceneManager;
+    
+    ofTrueTypeFont myFont;
+    
+    ofEvent<void>        nextSceneEvent;
+    ofEvent<player>      someoneSpokeEvent;
+    
+    playerManager myPlayerManager;
+    void someoneSpoke(player & _player);
+    
 };

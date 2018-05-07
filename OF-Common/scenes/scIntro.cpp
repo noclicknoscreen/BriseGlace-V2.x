@@ -8,28 +8,29 @@
 
 #include "scIntro.h"
 
+
+
 void scIntro::setup(){  //load your scene 1 assets here...
+    scScene::setup();
     ofLogNotice() << "Introduction : Setup !";
-    myFont.load("Folktale.ttf", 28, true, true);
-    
 };
 
 
-void scIntro::update(){ //update scene 1 here
+void scIntro::update(float dt){ //update scene 1 here
 };
 
 void scIntro::draw(){ //draw scene 1 here
     
-    string message = "Introduction : Mot caché";
+    string message = "Vous êtes joueur ? moi oui !";
     
     ofPushStyle();
     // Style setup
     ofSetColor(ofColor::black);
     ofPushMatrix();
     
-    ofRectangle bounds = myFont.getStringBoundingBox(message, 0, 0);
+    ofRectangle bounds = myFont24.getStringBoundingBox(message, 0, 0);
     ofTranslate(0.5 * (ofGetWidth() - bounds.width), 0.5 * (ofGetHeight() - bounds.height));
-    myFont.drawString(message, 0, 0);
+    myFont24.drawString(message, 0, 0);
     
     ofPopMatrix();
     ofPopStyle();
@@ -38,7 +39,6 @@ void scIntro::draw(){ //draw scene 1 here
 
 //scene notifications
 void scIntro::sceneWillAppear( ofxScene * fromScreen ){
-    // reset our scene when we appear
 };
 
 //scene notifications

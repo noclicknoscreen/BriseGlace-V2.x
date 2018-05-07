@@ -9,13 +9,12 @@
 #include "scHint.h"
 
 void scHint::setup(){  //load your scene 1 assets here...
+    scScene::setup();
     ofLogNotice() << "Indice : Setup !";
-    myFont.load("Folktale.ttf", 28, true, true);
-    
 };
 
 
-void scHint::update(){ //update scene 1 here
+void scHint::update(float dt){ //update scene 1 here
 };
 
 void scHint::draw(){ //draw scene 1 here
@@ -27,9 +26,9 @@ void scHint::draw(){ //draw scene 1 here
     ofSetColor(ofColor::black);
     ofPushMatrix();
     
-    ofRectangle bounds = myFont.getStringBoundingBox(message, 0, 0);
+    ofRectangle bounds = myFont24.getStringBoundingBox(message, 0, 0);
     ofTranslate(0.5 * (ofGetWidth() - bounds.width), 0.5 * (ofGetHeight() - bounds.height));
-    myFont.drawString(message, 0, 0);
+    myFont24.drawString(message, 0, 0);
     
     ofPopMatrix();
     ofPopStyle();

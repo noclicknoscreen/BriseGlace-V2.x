@@ -9,13 +9,23 @@
 #include "scInitialize.h"
 
 void scInitialize::setup(){  //load your scene 1 assets here...
+    scScene::setup();
     ofLogNotice() << "Initialisation : Setup !";
-    myFont.load("Folktale.ttf", 28, true, true);
-    
 };
 
 
-void scInitialize::update(){ //update scene 1 here
+void scInitialize::update(float dt){ //update scene 1 here
+    
+    // update the timer this frame
+    dt = ofGetElapsedTimeMillis() - startTime;
+    timerValue = 10000 - dt;
+    
+    if(timerValue <= 0 && !bTimerReached) {
+        bTimerReached = true;
+        ofNotifyEvent(endSceneEvent, this);
+        ofLogNotice() << "End of Timer !!!";
+    }
+
 };
 
 void scInitialize::draw(){ //draw scene 1 here
@@ -27,9 +37,10 @@ void scInitialize::draw(){ //draw scene 1 here
     ofSetColor(ofColor::black);
     ofPushMatrix();
     
-    ofRectangle bounds = myFont.getStringBoundingBox(message, 0, 0);
+    ofRectangle bounds = myFont24.getStringBoundingBox(message, 0, 0);
     ofTranslate(0.5 * (ofGetWidth() - bounds.width), 0.5 * (ofGetHeight() - bounds.height));
-    myFont.drawString(message, 0, 0);
+    myFont24.drawString(message, 0, 0);
+    myFont24.drawString(ofToString(timerValue), 0, 50);
     
     ofPopMatrix();
     ofPopStyle();
@@ -38,7 +49,9 @@ void scInitialize::draw(){ //draw scene 1 here
 
 //scene notifications
 void scInitialize::sceneWillAppear( ofxScene * fromScreen ){
-    // reset our scene when we appear
+    // reset timer
+    startTime = ofGetElapsedTimeMillis();  // get the start time
+    bTimerReached = false;
 };
 
 //scene notifications

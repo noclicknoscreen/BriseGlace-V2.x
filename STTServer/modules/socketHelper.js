@@ -3,6 +3,8 @@
 // Socket Helper : IP Decoder, Player number management
 // ===========================================================================
 
+var autoAttributedNr = 4;
+
 module.exports = {
 
   decodeIp: function(socket){
@@ -32,7 +34,10 @@ module.exports = {
       nr = 3;
       break;
       default:
-      nr = 0;
+      // It may be the test connection...
+      // Take number 4
+      nr = autoAttributedNr;
+      // autoAttributedNr += 1;
       break;
 
     }

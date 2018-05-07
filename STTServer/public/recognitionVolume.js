@@ -22,6 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 var audioContext = null;
+var mediaStreamSource = null;
 var meter = null;
 var canvasContext = null;
 var WIDTH=500;
@@ -32,12 +33,18 @@ window.onload = function() {
 
     // grab our canvas
 	  canvasContext = document.getElementById( "meter" ).getContext("2d");
-
-    // monkeypatch Web Audio
+		// monkeypatch Web Audio
     window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
     // grab an audio context
     audioContext = new AudioContext();
+
+		// One-liner to resume playback when user interacted with the page.
+		document.getElementById('resume').addEventListener('click', function() {
+		  audioContext.resume().then( () => {
+		    console.log('Playback resumed successfully');
+		  });
+		});
 
     // Attempt to get audio input
     try {
@@ -73,18 +80,22 @@ function didntGetStream(mediaStreamError) {
 
 }
 
-var mediaStreamSource = null;
+
 
 function gotStream(stream) {
-    // Create an AudioNode from the stream.
-    mediaStreamSource = audioContext.createMediaStreamSource(stream);
+	try {
+		// Create an AudioNode from the stream.
+		mediaStreamSource = audioContext.createMediaStreamSource(stream);
+		// Create a new volume meter and connect it.
+		meter = createAudioMeter(audioContext);
+		mediaStreamSource.connect(meter);
+		// kick off the visual updating
+		drawLoop();
 
-    // Create a new volume meter and connect it.
-    meter = createAudioMeter(audioContext);
-    mediaStreamSource.connect(meter);
+	} catch (e) {
+			alert('gotStream threw exception :' + e);
+	}
 
-    // kick off the visual updating
-    drawLoop();
 }
 
 function drawLoop( time ) {

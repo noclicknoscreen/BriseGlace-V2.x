@@ -7,21 +7,19 @@
 //
 
 #pragma once
+#include "scScene.h"
 
-#include "ofMain.h"
-#include "ofxScene.h"
-#include "ofxAnimatableFloat.h"
+class scHint : public scScene{
 
-class scHint : public ofxScene{
-
-	void setup();
-	void update();
+public:
+    scHint(ofEvent<void> _event) : scScene(_event){
+    };
+    void setup();
+    void update(float dt);
 	void draw();
     
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
     
-    ofTrueTypeFont myFont;
-
 };
 

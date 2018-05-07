@@ -19,6 +19,9 @@ public:
     void update(bool _isAvailable, string _message, float _volume);
     void draw(ofVec2f _pos);
     
+    int getVolume(){return mVolume;};
+    string getLastMessage(){return mLastMessage;};
+    
 private:
     float mVolume;
     string mLastMessage;

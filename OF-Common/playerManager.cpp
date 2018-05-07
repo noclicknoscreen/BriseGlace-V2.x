@@ -9,11 +9,14 @@
 #include "playerManager.h"
 
 //--------------------------------------------------------------
-void playerManager::setup(){
+void playerManager::setup(ofEvent<player> _someoneSpoke){
     
     mColors[1] = ofColor::red;
     mColors[2] = ofColor::green;
     mColors[3] = ofColor::blue;
+    mColors[4] = ofColor::white;
+    
+    someoneSpoke = _someoneSpoke;
     
 }
 
@@ -23,9 +26,6 @@ void playerManager::update(){
     string url = "https://localhost:8443/players";
     
     if (mResponse.open(url)){
-        // update variables
-        mLastMessage = mResponse["lastMessage"]["text"].asString();
-        mLastNumber = mResponse["lastNumber"].asInt();
         
         int nbPlayers = mResponse["players"].size();
         for (int idxPlayer = 0; idxPlayer < nbPlayers; ++idxPlayer)
@@ -34,11 +34,11 @@ void playerManager::update(){
             int realNr = mResponse["players"][idxPlayer]["nr"].asInt();
             std::map<int, player>::iterator onePlayer = mPlayers.find(realNr);
             if (onePlayer != mPlayers.end()){
-                ofLogNotice() << "Update player : " << mResponse["players"][idxPlayer]["nr"].asInt() <<
-                ":" << mResponse["players"][idxPlayer]["isAvailable"].asBool() <<
-                ":" << mResponse["players"][idxPlayer]["lastMessage"]["text"].asString() <<
-                ":" << mResponse["players"][idxPlayer]["volume"].asFloat();
-                // If yes, then update
+//                ofLogNotice() << "Update player : " << mResponse["players"][idxPlayer]["nr"].asInt() <<
+//                ":" << mResponse["players"][idxPlayer]["isAvailable"].asBool() <<
+//                ":" << mResponse["players"][idxPlayer]["lastMessage"]["text"].asString() <<
+//                ":" << mResponse["players"][idxPlayer]["volume"].asFloat();
+//                // If yes, then update
                 onePlayer->second.update(mResponse["players"][idxPlayer]["isAvailable"].asBool(),
                                          mResponse["players"][idxPlayer]["lastMessage"]["text"].asString(),
                                          mResponse["players"][idxPlayer]["volume"].asFloat());
@@ -58,7 +58,20 @@ void playerManager::update(){
             
         }
 
-        
+        // Throw event when someone new spoke
+        if(mLastTime != mResponse["lastMessage"]["time"].asString()){
+            // update variables
+            mLastMessage = mResponse["lastMessage"]["text"].asString();
+            mLastTime = mResponse["lastMessage"]["time"].asString();
+            mLastNumber = mResponse["lastNumber"].asInt();
+            
+            // Throw event
+            std::map<int, player>::iterator onePlayer = mPlayers.find(mLastNumber);
+            if (onePlayer != mPlayers.end()){
+                ofNotifyEvent(someoneSpoke, onePlayer->second, this);
+            }
+            
+        }
         // The log because we're happy
         //ofLogNotice() << "Open Successful : [" << mLastNumber << ":" << mLastMessage << "] [nbPlayers:" << nbPlayers << "]";
         
@@ -77,7 +90,13 @@ void playerManager::draw(){
     
     for (onePlayer=mPlayers.begin(); onePlayer!=mPlayers.end(); ++onePlayer){
         // Position is nearby middle, bottom
-        float x = ofMap((float)count/(float)(mPlayers.size() - 1), 0, 1, border, ofGetWidth() - border);
+        float x;
+        if(mPlayers.size() > 1){
+            x = ofMap((float)(count)/(float)(mPlayers.size() -1), 0, 1, border, ofGetWidth() - border);
+        }else{
+            x = ofMap(0.5, 0, 1, border, ofGetWidth() - border);
+        }
+
         ofVec2f pos = ofVec2f(x, ofGetHeight());
         // Second is value (aka player)
         onePlayer->second.draw(pos);

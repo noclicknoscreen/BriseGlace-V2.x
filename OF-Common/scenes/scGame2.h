@@ -8,20 +8,19 @@
 
 #pragma once
 
-#include "ofMain.h"
-#include "ofxScene.h"
-#include "ofxAnimatableFloat.h"
+#include "scScene.h"
 
-class scGame1 : public ofxScene{
+class scGame2 : public scScene{
 
-	void setup();
-	void update();
+public:
+    scGame2(ofEvent<void> _event) : scScene(_event){
+    };
+    void setup();
+    void update(float dt);
 	void draw();
     
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
-    
-    ofTrueTypeFont myFont;
 
 };
 

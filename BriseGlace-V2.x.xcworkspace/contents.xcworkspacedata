@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:"
+      name = "examples">
+      <FileRef
+         location = "group:../../examples/events/simpleTimer/simpleTimer.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/events/advancedEventsExample/advancedEventsExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/graphics/fontsExample/fontsExample.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "container:sceneManager-Rough/sceneManager-Rough.xcodeproj">
    </FileRef>
