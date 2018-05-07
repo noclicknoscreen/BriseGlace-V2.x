@@ -2,16 +2,19 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
-    X=0; currentRot = 0;
-        
+    
     gui.setup();
     //gui.add
     gui.add(lightPosX.set("lightPosX", 850, -1000, 1000));
     gui.add(lightPosY.set("lightPosY", 120, -1000, 1000));
     gui.add(lightPosZ.set("lightPosZ", 0, -100, 100));
     gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
+    
+    //cubes
     myCubeManager.setup();
+    
+    //inputs
+    myInputManager.setup();
     
 }
 
@@ -19,13 +22,16 @@ void ofApp::setup(){
 void ofApp::update(){
 
     ofSetWindowTitle(ofToString(ofGetFrameRate()));
+    
     myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), cubesRotationSpeed);
+    myInputManager.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     
     myCubeManager.draw();
+    myInputManager.draw();
     
     ofDisableLighting();
     ofDisableDepthTest();
@@ -46,6 +52,16 @@ void ofApp::keyPressed(int key){
     
     if(key==' ')
         myCubeManager.getWord("antoine");
+    
+    if(key=='p')
+    {
+        myInputManager.getNewText(1, "choucroute");
+    }
+    
+    if(key=='c')
+    {
+        myInputManager.compareInput("antoine");
+    }
 
 }
 

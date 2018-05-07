@@ -3,7 +3,7 @@
 #include "ofMain.h"
 #include "cubeManager.h"
 #include "ofxGui.h"
-
+#include "inputHandler.h"
 
 
 class ofApp : public ofBaseApp{
@@ -27,14 +27,15 @@ class ofApp : public ofBaseApp{
         void renderScene();
     
     
-    float X;
-    int currentRot;
-    
     //gui
     ofxPanel gui;
     ofParameter<float> lightPosX, lightPosY, lightPosZ;
     ofParameter<int> cubesRotationSpeed;
     
+    //cubeManager
     cubeManager myCubeManager;
+    
+    //inputManager
+    inputHandler myInputManager;
     
 };
