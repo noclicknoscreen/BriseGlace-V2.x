@@ -14,7 +14,7 @@ void playerManager::setup(ofEvent<player> _someoneSpoke){
     mColors[1] = ofColor::red;
     mColors[2] = ofColor::green;
     mColors[3] = ofColor::blue;
-    mColors[4] = ofColor::white;
+    mColors[4] = ofColor::gray;
     
     someoneSpoke = _someoneSpoke;
     

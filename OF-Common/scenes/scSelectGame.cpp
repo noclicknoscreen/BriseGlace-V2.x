@@ -11,6 +11,9 @@
 void scSelectGame::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Select a game : Setup !";
+    
+    myTitle = "Choix du jeu";
+    
 };
 
 
@@ -19,18 +22,14 @@ void scSelectGame::update(float dt){ //update scene 1 here
 
 void scSelectGame::draw(){ //draw scene 1 here
     
-    string message = "Choix du jeu";
-    
     ofPushStyle();
     // Style setup
     ofSetColor(ofColor::black);
-    ofPushMatrix();
     
-    ofRectangle bounds = myFont24.getStringBoundingBox(message, 0, 0);
-    ofTranslate(0.5 * (ofGetWidth() - bounds.width), 0.5 * (ofGetHeight() - bounds.height));
-    myFont24.drawString(message, 0, 0);
+    scScene::draw();            // Draw title
+    myPlayerManager->draw();    // Draw players
+    drawCenterText(myPlayerManager->getLastMessage(), 0, 50); // Draw last message
     
-    ofPopMatrix();
     ofPopStyle();
     
 };

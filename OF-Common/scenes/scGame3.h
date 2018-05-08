@@ -12,7 +12,7 @@
 class scGame3 : public scScene{
 
 public:
-    scGame3(ofEvent<void> _event) : scScene(_event){
+    scGame3(ofEvent<void> _endSceneEvent, playerManager &_manager) : scScene(_endSceneEvent, _manager){
     };
     void setup();
     void update(float dt);

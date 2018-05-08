@@ -11,6 +11,7 @@
 void scInitialize::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Initialisation : Setup !";
+    myTitle = "Initialisation...";
 };
 
 
@@ -30,19 +31,16 @@ void scInitialize::update(float dt){ //update scene 1 here
 
 void scInitialize::draw(){ //draw scene 1 here
     
-    string message = "Initialisation...";
     
     ofPushStyle();
     // Style setup
     ofSetColor(ofColor::black);
-    ofPushMatrix();
     
-    ofRectangle bounds = myFont24.getStringBoundingBox(message, 0, 0);
-    ofTranslate(0.5 * (ofGetWidth() - bounds.width), 0.5 * (ofGetHeight() - bounds.height));
-    myFont24.drawString(message, 0, 0);
-    myFont24.drawString(ofToString(timerValue), 0, 50);
+    scScene::draw();            // Draw title
+    myPlayerManager->draw();    // Draw players
     
-    ofPopMatrix();
+    drawCenterText(ofToString(timerValue), 0, 50);
+    
     ofPopStyle();
     
 };

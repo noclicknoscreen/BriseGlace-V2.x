@@ -11,6 +11,7 @@
 void scGame2::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Game 2 : Setup !";
+    myTitle = "Game 2 : Grille / Labyrinthe";
 };
 
 
@@ -19,18 +20,15 @@ void scGame2::update(float dt){ //update scene 1 here
 
 void scGame2::draw(){ //draw scene 1 here
     
-    string message = "Game 2 : Grille / Labyrinthe";
     
     ofPushStyle();
     // Style setup
     ofSetColor(ofColor::green);
-    ofPushMatrix();
     
-    ofRectangle bounds = myFont24.getStringBoundingBox(message, 0, 0);
-    ofTranslate(0.5 * (ofGetWidth() - bounds.width), 0.5 * (ofGetHeight() - bounds.height));
-    myFont24.drawString(message, 0, 0);
+    scScene::draw();            // Draw title
+    myPlayerManager->draw();    // Draw players
+    drawCenterText(myPlayerManager->getLastMessage(), 0, 50); // Draw last message
     
-    ofPopMatrix();
     ofPopStyle();
     
 };

@@ -17,16 +17,21 @@ void ofApp::setup(){
     ofAddListener(nextSceneEvent,this,&ofApp::nextSceneAuto);
     ofAddListener(someoneSpokeEvent,this,&ofApp::someoneSpoke);
 
+    ///////////////////////////////////////
+    myPlayerManager.setup(someoneSpokeEvent);
+    
+    ///////////////////////////////////////
 	sceneManager = ofxSceneManager::instance();
     sceneManager->setupCurtain(ofColor::white, ofRectangle(0,0, ofGetWidth(), ofGetHeight()) );
-    sceneManager->addScene( new scIntro(nextSceneEvent), INTRO);
-    sceneManager->addScene( new scInitialize(nextSceneEvent), INITIALIZE);
-    sceneManager->addScene( new scSelectGame(nextSceneEvent), SELECT_GAME);
-    sceneManager->addScene( new scGame1(nextSceneEvent), GAME1);
-    sceneManager->addScene( new scGame2(nextSceneEvent), GAME2);
-    sceneManager->addScene( new scGame3(nextSceneEvent), GAME3);
-    sceneManager->addScene( new scHint(nextSceneEvent), HINT);
-    sceneManager->addScene( new scVictory(nextSceneEvent), VICTORY);
+    
+    sceneManager->addScene( new scIntro(nextSceneEvent, myPlayerManager), INTRO);
+    sceneManager->addScene( new scInitialize(nextSceneEvent, myPlayerManager), INITIALIZE);
+    sceneManager->addScene( new scSelectGame(nextSceneEvent, myPlayerManager), SELECT_GAME);
+    sceneManager->addScene( new scGame1(nextSceneEvent, myPlayerManager), GAME1);
+    sceneManager->addScene( new scGame2(nextSceneEvent, myPlayerManager), GAME2);
+    sceneManager->addScene( new scGame3(nextSceneEvent, myPlayerManager), GAME3);
+    sceneManager->addScene( new scHint(nextSceneEvent, myPlayerManager), HINT);
+    sceneManager->addScene( new scVictory(nextSceneEvent, myPlayerManager), VICTORY);
     
     sceneManager->setDrawDebug(true);
 	sceneManager->setCurtainDropTime(1.0);
@@ -34,18 +39,15 @@ void ofApp::setup(){
 	sceneManager->setCurtainRiseTime(1.0);
 	sceneManager->setOverlapUpdate(true);
     
-    ///////////////////////////////////////
-    myPlayerManager.setup(someoneSpokeEvent);
-    
 }
 
 void ofApp::update(){
 	
-	float dt = 0.016666666;
-	sceneManager->update( dt );
+    float dt = 0.016666666;
     
-    myPlayerManager.update();
-		
+	myPlayerManager.update();
+    sceneManager->update( dt );
+    
 }
 
 

@@ -12,7 +12,7 @@
 class scHint : public scScene{
 
 public:
-    scHint(ofEvent<void> _event) : scScene(_event){
+    scHint(ofEvent<void> _endSceneEvent, playerManager &_manager) : scScene(_endSceneEvent, _manager){
     };
     void setup();
     void update(float dt);

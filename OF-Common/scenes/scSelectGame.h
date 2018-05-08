@@ -12,7 +12,7 @@
 class scSelectGame : public scScene{
 
 public:
-    scSelectGame(ofEvent<void> _event) : scScene(_event){
+    scSelectGame(ofEvent<void> _endSceneEvent, playerManager &_manager) : scScene(_endSceneEvent, _manager){
     };
     
     void setup();

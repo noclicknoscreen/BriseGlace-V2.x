@@ -17,6 +17,7 @@
 		1C1A43DB20A087E30041886A /* scIntro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A43CD20A087E20041886A /* scIntro.cpp */; };
 		1C1A43DC20A087E30041886A /* scSelectGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A43D020A087E20041886A /* scSelectGame.cpp */; };
 		1C1A43DD20A087E30041886A /* scVictory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A43D220A087E20041886A /* scVictory.cpp */; };
+		1C35A71B20A1B26800DEC2D8 /* scScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C35A71A20A1B26800DEC2D8 /* scScene.cpp */; };
 		263D043F32BCC3BB077BB351 /* ofxScreenCurtain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2725100619E6426F975DDAD7 /* ofxScreenCurtain.cpp */; };
 		2C61E47DDBFD642D87E63940 /* ofxAnimatableQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E5B92DA6F38EA1F474E3EB7 /* ofxAnimatableQueue.cpp */; };
 		52C77060FBB9307AEFDAE8C6 /* ofxAnimatable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7CFEE77982205D3F1496C03 /* ofxAnimatable.cpp */; };
@@ -83,6 +84,7 @@
 		1C1A43D120A087E20041886A /* scSelectGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scSelectGame.h; sourceTree = "<group>"; };
 		1C1A43D220A087E20041886A /* scVictory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scVictory.cpp; sourceTree = "<group>"; };
 		1C1A43D320A087E20041886A /* scVictory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scVictory.h; sourceTree = "<group>"; };
+		1C35A71A20A1B26800DEC2D8 /* scScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scScene.cpp; sourceTree = "<group>"; };
 		1C9E4AC6CF4626BA74F7E994 /* ofxAnimatableFloat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAnimatableFloat.cpp; path = ../../../addons/ofxAnimatable/src/ofxAnimatableFloat.cpp; sourceTree = SOURCE_ROOT; };
 		21BDE665988474F1B1F4D302 /* jsoncpp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = jsoncpp.cpp; path = ../../../addons/ofxJSON/libs/jsoncpp/src/jsoncpp.cpp; sourceTree = SOURCE_ROOT; };
 		26A541233BC6F736E758F718 /* ofxJSONElement.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJSONElement.h; path = ../../../addons/ofxJSON/src/ofxJSONElement.h; sourceTree = SOURCE_ROOT; };
@@ -151,6 +153,8 @@
 		1C1A43C220A087E20041886A /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1C35A71A20A1B26800DEC2D8 /* scScene.cpp */,
+				1C1A43CF20A087E20041886A /* scScene.h */,
 				1C1A43C320A087E20041886A /* scGame1.cpp */,
 				1C1A43C420A087E20041886A /* scGame1.h */,
 				1C1A43C520A087E20041886A /* scGame2.cpp */,
@@ -163,7 +167,6 @@
 				1C1A43CC20A087E20041886A /* scInitialize.h */,
 				1C1A43CD20A087E20041886A /* scIntro.cpp */,
 				1C1A43CE20A087E20041886A /* scIntro.h */,
-				1C1A43CF20A087E20041886A /* scScene.h */,
 				1C1A43D020A087E20041886A /* scSelectGame.cpp */,
 				1C1A43D120A087E20041886A /* scSelectGame.h */,
 				1C1A43D220A087E20041886A /* scVictory.cpp */,
@@ -443,6 +446,7 @@
 				1C1A43DD20A087E30041886A /* scVictory.cpp in Sources */,
 				BEDFEE7400C58EA4E412B757 /* ofxJSONElement.cpp in Sources */,
 				1C1A43D420A087E20041886A /* player.cpp in Sources */,
+				1C35A71B20A1B26800DEC2D8 /* scScene.cpp in Sources */,
 				1C1A43DC20A087E30041886A /* scSelectGame.cpp in Sources */,
 				FB84AAF8D1B7A95266DB5C09 /* jsoncpp.cpp in Sources */,
 				EEBE0E386AA0A4E9C4ABD070 /* ofxSceneManager.cpp in Sources */,

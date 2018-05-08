@@ -13,6 +13,8 @@
 void scIntro::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Introduction : Setup !";
+    
+    myTitle = "Vous êtes joueur ? moi oui !";
 };
 
 
@@ -20,19 +22,12 @@ void scIntro::update(float dt){ //update scene 1 here
 };
 
 void scIntro::draw(){ //draw scene 1 here
-    
-    string message = "Vous êtes joueur ? moi oui !";
+
     
     ofPushStyle();
     // Style setup
     ofSetColor(ofColor::black);
-    ofPushMatrix();
-    
-    ofRectangle bounds = myFont24.getStringBoundingBox(message, 0, 0);
-    ofTranslate(0.5 * (ofGetWidth() - bounds.width), 0.5 * (ofGetHeight() - bounds.height));
-    myFont24.drawString(message, 0, 0);
-    
-    ofPopMatrix();
+    scScene::draw();
     ofPopStyle();
     
 };
