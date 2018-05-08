@@ -83,6 +83,8 @@ void ofApp::keyPressed(int key){
         if (key == OF_KEY_LEFT)
             goToPrevScene();
     }
+    
+    sceneManager->keyPressed(key);
 
 }
 
