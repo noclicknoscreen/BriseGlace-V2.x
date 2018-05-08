@@ -10,6 +10,11 @@
 
 #include "scScene.h"
 
+#include "cubeManager.h"
+//#include "ofxGui.h"
+#include "inputHandler.h"
+
+
 class scGame1 : public scScene{
     
 public:
