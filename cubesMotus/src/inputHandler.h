@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include "ofMain.h"
+#include "cubeManager.h"
 
 #define inputTextYPosition 400
 #define movementSmoothingValue 15
@@ -23,6 +24,7 @@ typedef struct
     ofPoint sourcePos, destination, currentPos;
     ofColor textColor;
     float alpha;
+    vector<int> correspondingCubes;
 } letterElement;
 
 
@@ -30,16 +32,19 @@ class inputHandler
 {
 public:
     void setup();
-    void getNewText(int userId, string txt);
+    void getNewText(int _userId, string txt);
     void update();
     void draw();
     void compareInput(string wantedWord);
-    
+    void rotateCorrespondingCubes(string wantedWord, cubeManager* cm);
+    void clearDuplicatesLettersHistory();
     
 private:
     string text;
     ofTrueTypeFont font;
     vector<letterElement> splittedString;
+    int userId;
+    vector<string> duplicatesLetters;
 };
 
 #endif /* inputHandler_hpp */

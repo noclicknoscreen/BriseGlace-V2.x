@@ -15,6 +15,7 @@
 #include "ofxShadowSimple.h"
 
 #define cubesPositionY 200
+#define consignesPositionY 100
 
 class cubeManager
 {
@@ -54,6 +55,9 @@ class cubeManager
         //cubes size
         float                       cubeSize;
     
+        //consigne
+        string consigne;
+        float consigneWidth;
 };
 
 

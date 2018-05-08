@@ -40,7 +40,7 @@ void cubeManager::setup()
     //texture
     texture.load("contreplaque.png");
     
-    cubeSize = 40;
+    cubeSize = 80;
     
     //testing
     cube cube1;
@@ -64,7 +64,7 @@ void cubeManager::update(ofPoint _lightPos, int cubesRotationSpeed)
     spotLight.setOrientation( ofVec3f( 0, 45, 30) );
     lightColor.setHue(0);
     spotLight.setDiffuseColor(lightColor);
-    materialColor.setHue(0);
+    //materialColor.setHue(0);
     material.setSpecularColor(materialColor);
     
 };
@@ -76,7 +76,7 @@ void cubeManager::draw(){
     ofEnableDepthTest();
     
     //fond
-    ofSetColor(150);
+    ofSetColor(200);
     ofPushMatrix();
     ofTranslate(0,0,-200);
     ofDrawBox(0, 0, 0, ofGetWidth()*3, ofGetHeight()*3, 1);
@@ -91,10 +91,16 @@ void cubeManager::draw(){
     {
         ofPushMatrix();
         
+            material.setAmbientColor(myCubes[i].materialColor);
+            //material.setDiffuseColor(myCubes[i].materialColor);
+            //material.setSpecularColor(myCubes[i].materialColor);
+        
             ofTranslate(myCubes[i].position.x, myCubes[i].position.y, myCubes[i].position.z);
             ofRotate(myCubes[i].currentRot, 1.0, 0.0, 0.0);
-            
+        
+        
             material.begin();
+            //myCubes[i].ma
             texture.bind();
                ofDrawBox(myCubes[i].size, myCubes[i].size ,myCubes[i].size);
             material.end();
@@ -136,6 +142,10 @@ void cubeManager::draw(){
     spotLight.disable();
     ofDisableLighting();
     spotLight.draw();
+    
+    ofSetColor(0);
+    font.drawString(consigne , ofGetWidth()/2 - consigneWidth/2, consignesPositionY);
+    ofSetColor(255);
 
 }
 
@@ -155,6 +165,12 @@ void cubeManager::getWord(string word)
         tmpCube->setLetter(ofToString(word[i]));
         myCubes.push_back(*tmpCube);
     }
+    
+    
+    consigne = "Derrière ces " + ofToString(word.size()) + " lettres se cache un mot";
+    consigneWidth = font.getStringBoundingBox(consigne, 0, 0).getWidth();
+    
+    
 }
 
 
@@ -176,6 +192,8 @@ void cubeManager::rotateToLetter(int i)
 
 void cubeManager::colorizeCube(int cubeId, int userId)
 {
+    //cout << "colorize cube " << cubeId << " with userId " << userId << endl;
+    
     switch(userId)
     {
         case 0:

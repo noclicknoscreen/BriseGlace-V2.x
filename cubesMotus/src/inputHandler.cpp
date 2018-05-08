@@ -13,13 +13,15 @@ void inputHandler::setup()
     font.load("Avenir.ttc", 24);
 }
 
-void inputHandler::getNewText(int userId, string txt)
+void inputHandler::getNewText(int _userId, string txt)
 {
     cout << "got new input from user " << userId << " : " << txt << endl;
     text = txt;
     
     ofPoint source;
     ofColor textColor;
+    
+    userId = _userId;
     
     switch(userId)
     {
@@ -83,19 +85,19 @@ void inputHandler::update()
         //color
         if(splittedString[i].textColor.a >= splittedString[i].alpha)
         {
-            splittedString[i].textColor.a -= 0.1;
+            splittedString[i].textColor.a -= 0.5;
         }
     }
 }
 
 void inputHandler::compareInput(string wantedWord)
 {
-    vector<string> duplicatesLetters;
+    
     
     for(int i=0; i<splittedString.size(); i++)
     {
         size_t found = wantedWord.find(splittedString[i].letter);
-        //cout << "try to find : " << splittedString[i].letter << endl;
+
         if (found!=string::npos)
         {
             cout << "found " << endl;
@@ -108,6 +110,7 @@ void inputHandler::compareInput(string wantedWord)
             else
             {
                 splittedString[i].alpha = 255;
+                splittedString[i].correspondingCubes.push_back((int)found);
             }
             
             duplicatesLetters.push_back(splittedString[i].letter);
@@ -120,5 +123,23 @@ void inputHandler::compareInput(string wantedWord)
     }
 }
 
+void inputHandler::clearDuplicatesLettersHistory()
+{
+    duplicatesLetters.clear();
+}
 
+void inputHandler::rotateCorrespondingCubes(string wantedWord, cubeManager* cm)
+{
+    for(int i=0; i<splittedString.size(); i++)
+    {
+        for(int j=0; j<splittedString[i].correspondingCubes.size(); j++)
+        {
+            splittedString[i].alpha = 0;
+            
+            cm->colorizeCube(splittedString[i].correspondingCubes[j], userId);
+            cm->rotateToLetter(splittedString[i].correspondingCubes[j]);
+        }
+         //ofSleepMillis(1000);
+    }
+}
 

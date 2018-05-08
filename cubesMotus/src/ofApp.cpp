@@ -51,16 +51,29 @@ void ofApp::keyPressed(int key){
         myCubeManager.rotateToWhite(0);
     
     if(key==' ')
-        myCubeManager.getWord("antoine");
+    {
+        myCubeManager.getWord("bonheur");
+        myInputManager.clearDuplicatesLettersHistory();
+    }
     
     if(key=='p')
     {
         myInputManager.getNewText(1, "choucroute");
     }
     
+    if(key=='P')
+    {
+        myInputManager.getNewText(1, "bonnet");
+    }
+    
     if(key=='c')
     {
-        myInputManager.compareInput("antoine");
+        myInputManager.compareInput("bonheur");
+    }
+    
+    if(key == 'C')
+    {
+        myInputManager.rotateCorrespondingCubes("bonheur", &myCubeManager);
     }
 
 }
