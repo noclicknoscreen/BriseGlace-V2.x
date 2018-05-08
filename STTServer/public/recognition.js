@@ -131,5 +131,10 @@ function forceSendRnd(){
 // Volume Section =================================================================
 setInterval(sendVolume, 50);
 function sendVolume() {
-  socketClient.emit('volume', meter.volume);
+  if(meter != undefined){
+      socketClient.emit('volume', meter.volume);
+  }else{
+    console.error("The meter is undefined. Can not send Volume.");
+  }
+
 }

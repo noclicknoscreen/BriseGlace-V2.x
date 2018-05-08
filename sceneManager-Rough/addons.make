@@ -1,3 +1,4 @@
 ofxAnimatable
+ofxJSON
 ofxSceneManager
 ofxScreenCurtain

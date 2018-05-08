@@ -56,7 +56,7 @@ app.get('/display', function(req, res) {
 });
 app.get('/players', function(req, res) {
 
-  console.log("Players sent to HTTP : ");
+  //console.log("Players sent to HTTP : ");
 
   res.setHeader('Content-Type', 'application/json');
   res.send(JSON.stringify(playerManager.strPlayers()));

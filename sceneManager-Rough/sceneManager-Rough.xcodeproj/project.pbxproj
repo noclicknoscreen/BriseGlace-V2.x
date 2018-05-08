@@ -7,24 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CD166E0209CE008001AF562 /* scGame1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CD166D0209CE008001AF562 /* scGame1.cpp */; };
-		1CD166E1209CE008001AF562 /* scGame2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CD166D2209CE008001AF562 /* scGame2.cpp */; };
-		1CD166E2209CE008001AF562 /* scGame3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CD166D4209CE008001AF562 /* scGame3.cpp */; };
-		1CD166E3209CE008001AF562 /* scHint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CD166D6209CE008001AF562 /* scHint.cpp */; };
-		1CD166E4209CE008001AF562 /* scInitialize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CD166D8209CE008001AF562 /* scInitialize.cpp */; };
-		1CD166E5209CE008001AF562 /* scIntro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CD166DA209CE008001AF562 /* scIntro.cpp */; };
-		1CD166E6209CE008001AF562 /* scSelectGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CD166DC209CE008001AF562 /* scSelectGame.cpp */; };
-		1CD166E7209CE008001AF562 /* scVictory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CD166DE209CE008001AF562 /* scVictory.cpp */; };
+		1C1A43D420A087E20041886A /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A43BE20A087E20041886A /* player.cpp */; };
+		1C1A43D520A087E20041886A /* playerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A43C020A087E20041886A /* playerManager.cpp */; };
+		1C1A43D620A087E20041886A /* scGame1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A43C320A087E20041886A /* scGame1.cpp */; };
+		1C1A43D720A087E30041886A /* scGame2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A43C520A087E20041886A /* scGame2.cpp */; };
+		1C1A43D820A087E30041886A /* scGame3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A43C720A087E20041886A /* scGame3.cpp */; };
+		1C1A43D920A087E30041886A /* scHint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A43C920A087E20041886A /* scHint.cpp */; };
+		1C1A43DA20A087E30041886A /* scInitialize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A43CB20A087E20041886A /* scInitialize.cpp */; };
+		1C1A43DB20A087E30041886A /* scIntro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A43CD20A087E20041886A /* scIntro.cpp */; };
+		1C1A43DC20A087E30041886A /* scSelectGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A43D020A087E20041886A /* scSelectGame.cpp */; };
+		1C1A43DD20A087E30041886A /* scVictory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A43D220A087E20041886A /* scVictory.cpp */; };
+		1C35A71B20A1B26800DEC2D8 /* scScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C35A71A20A1B26800DEC2D8 /* scScene.cpp */; };
 		263D043F32BCC3BB077BB351 /* ofxScreenCurtain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2725100619E6426F975DDAD7 /* ofxScreenCurtain.cpp */; };
 		2C61E47DDBFD642D87E63940 /* ofxAnimatableQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E5B92DA6F38EA1F474E3EB7 /* ofxAnimatableQueue.cpp */; };
 		52C77060FBB9307AEFDAE8C6 /* ofxAnimatable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7CFEE77982205D3F1496C03 /* ofxAnimatable.cpp */; };
 		5D067CF087427621DD1E64B8 /* ofxAnimatableFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E4AC6CF4626BA74F7E994 /* ofxAnimatableFloat.cpp */; };
 		74D31933EE82E12834DB3B06 /* ofxAnimatableOfColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777D89F9EECAC3FE2405D5D1 /* ofxAnimatableOfColor.cpp */; };
 		BC054B7D3B48B395B1D87F2E /* ofxAnimatableOfPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 904CD301F7BB14F91235B2E8 /* ofxAnimatableOfPoint.cpp */; };
+		BEDFEE7400C58EA4E412B757 /* ofxJSONElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2B099E6BD1199664C48B177 /* ofxJSONElement.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 		EEBE0E386AA0A4E9C4ABD070 /* ofxSceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEE8BA53089306E6AFE63E /* ofxSceneManager.cpp */; };
+		FB84AAF8D1B7A95266DB5C09 /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21BDE665988474F1B1F4D302 /* jsoncpp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,29 +62,40 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1645F56257269CD0356320BD /* ofxJSON.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJSON.h; path = ../../../addons/ofxJSON/src/ofxJSON.h; sourceTree = SOURCE_ROOT; };
+		1C1A43BE20A087E20041886A /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
+		1C1A43BF20A087E20041886A /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		1C1A43C020A087E20041886A /* playerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = playerManager.cpp; sourceTree = "<group>"; };
+		1C1A43C120A087E20041886A /* playerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playerManager.h; sourceTree = "<group>"; };
+		1C1A43C320A087E20041886A /* scGame1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scGame1.cpp; sourceTree = "<group>"; };
+		1C1A43C420A087E20041886A /* scGame1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scGame1.h; sourceTree = "<group>"; };
+		1C1A43C520A087E20041886A /* scGame2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scGame2.cpp; sourceTree = "<group>"; };
+		1C1A43C620A087E20041886A /* scGame2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scGame2.h; sourceTree = "<group>"; };
+		1C1A43C720A087E20041886A /* scGame3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scGame3.cpp; sourceTree = "<group>"; };
+		1C1A43C820A087E20041886A /* scGame3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scGame3.h; sourceTree = "<group>"; };
+		1C1A43C920A087E20041886A /* scHint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scHint.cpp; sourceTree = "<group>"; };
+		1C1A43CA20A087E20041886A /* scHint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scHint.h; sourceTree = "<group>"; };
+		1C1A43CB20A087E20041886A /* scInitialize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scInitialize.cpp; sourceTree = "<group>"; };
+		1C1A43CC20A087E20041886A /* scInitialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scInitialize.h; sourceTree = "<group>"; };
+		1C1A43CD20A087E20041886A /* scIntro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scIntro.cpp; sourceTree = "<group>"; };
+		1C1A43CE20A087E20041886A /* scIntro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scIntro.h; sourceTree = "<group>"; };
+		1C1A43CF20A087E20041886A /* scScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scScene.h; sourceTree = "<group>"; };
+		1C1A43D020A087E20041886A /* scSelectGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scSelectGame.cpp; sourceTree = "<group>"; };
+		1C1A43D120A087E20041886A /* scSelectGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scSelectGame.h; sourceTree = "<group>"; };
+		1C1A43D220A087E20041886A /* scVictory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scVictory.cpp; sourceTree = "<group>"; };
+		1C1A43D320A087E20041886A /* scVictory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scVictory.h; sourceTree = "<group>"; };
+		1C35A71A20A1B26800DEC2D8 /* scScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scScene.cpp; sourceTree = "<group>"; };
 		1C9E4AC6CF4626BA74F7E994 /* ofxAnimatableFloat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAnimatableFloat.cpp; path = ../../../addons/ofxAnimatable/src/ofxAnimatableFloat.cpp; sourceTree = SOURCE_ROOT; };
-		1CD166D0209CE008001AF562 /* scGame1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scGame1.cpp; sourceTree = "<group>"; };
-		1CD166D1209CE008001AF562 /* scGame1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scGame1.h; sourceTree = "<group>"; };
-		1CD166D2209CE008001AF562 /* scGame2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scGame2.cpp; sourceTree = "<group>"; };
-		1CD166D3209CE008001AF562 /* scGame2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scGame2.h; sourceTree = "<group>"; };
-		1CD166D4209CE008001AF562 /* scGame3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scGame3.cpp; sourceTree = "<group>"; };
-		1CD166D5209CE008001AF562 /* scGame3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scGame3.h; sourceTree = "<group>"; };
-		1CD166D6209CE008001AF562 /* scHint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scHint.cpp; sourceTree = "<group>"; };
-		1CD166D7209CE008001AF562 /* scHint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scHint.h; sourceTree = "<group>"; };
-		1CD166D8209CE008001AF562 /* scInitialize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scInitialize.cpp; sourceTree = "<group>"; };
-		1CD166D9209CE008001AF562 /* scInitialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scInitialize.h; sourceTree = "<group>"; };
-		1CD166DA209CE008001AF562 /* scIntro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scIntro.cpp; sourceTree = "<group>"; };
-		1CD166DB209CE008001AF562 /* scIntro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scIntro.h; sourceTree = "<group>"; };
-		1CD166DC209CE008001AF562 /* scSelectGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scSelectGame.cpp; sourceTree = "<group>"; };
-		1CD166DD209CE008001AF562 /* scSelectGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scSelectGame.h; sourceTree = "<group>"; };
-		1CD166DE209CE008001AF562 /* scVictory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scVictory.cpp; sourceTree = "<group>"; };
-		1CD166DF209CE008001AF562 /* scVictory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scVictory.h; sourceTree = "<group>"; };
+		21BDE665988474F1B1F4D302 /* jsoncpp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = jsoncpp.cpp; path = ../../../addons/ofxJSON/libs/jsoncpp/src/jsoncpp.cpp; sourceTree = SOURCE_ROOT; };
+		26A541233BC6F736E758F718 /* ofxJSONElement.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJSONElement.h; path = ../../../addons/ofxJSON/src/ofxJSONElement.h; sourceTree = SOURCE_ROOT; };
 		2725100619E6426F975DDAD7 /* ofxScreenCurtain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxScreenCurtain.cpp; path = ../../../addons/ofxScreenCurtain/src/ofxScreenCurtain.cpp; sourceTree = SOURCE_ROOT; };
+		2C7CF000B7B4F782C187C353 /* json.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = json.h; path = ../../../addons/ofxJSON/libs/jsoncpp/include/json/json.h; sourceTree = SOURCE_ROOT; };
 		36B9B6CD565C4C6A5BE96680 /* ofxAnimatable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAnimatable.h; path = ../../../addons/ofxAnimatable/src/ofxAnimatable.h; sourceTree = SOURCE_ROOT; };
 		3E5B92DA6F38EA1F474E3EB7 /* ofxAnimatableQueue.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAnimatableQueue.cpp; path = ../../../addons/ofxAnimatable/src/ofxAnimatableQueue.cpp; sourceTree = SOURCE_ROOT; };
 		5A6936A5770BEB310F3826AD /* ofxAnimatableOfColor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAnimatableOfColor.h; path = ../../../addons/ofxAnimatable/src/ofxAnimatableOfColor.h; sourceTree = SOURCE_ROOT; };
 		5FCA34E402E9C3A0C48F9FA9 /* ofxAnimatableOfPoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAnimatableOfPoint.h; path = ../../../addons/ofxAnimatable/src/ofxAnimatableOfPoint.h; sourceTree = SOURCE_ROOT; };
 		60781851E0B71C3031D1B3F8 /* ofxScreenCurtain.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxScreenCurtain.h; path = ../../../addons/ofxScreenCurtain/src/ofxScreenCurtain.h; sourceTree = SOURCE_ROOT; };
+		61313493CDB52744E22A604D /* json-forwards.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "json-forwards.h"; path = "../../../addons/ofxJSON/libs/jsoncpp/include/json/json-forwards.h"; sourceTree = SOURCE_ROOT; };
 		6C6A6CF2AD309C3B58922071 /* ofxAnimatableFloat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAnimatableFloat.h; path = ../../../addons/ofxAnimatable/src/ofxAnimatableFloat.h; sourceTree = SOURCE_ROOT; };
 		6CAEE8BA53089306E6AFE63E /* ofxSceneManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSceneManager.cpp; path = ../../../addons/ofxSceneManager/src/ofxSceneManager.cpp; sourceTree = SOURCE_ROOT; };
 		777D89F9EECAC3FE2405D5D1 /* ofxAnimatableOfColor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAnimatableOfColor.cpp; path = ../../../addons/ofxAnimatable/src/ofxAnimatableOfColor.cpp; sourceTree = SOURCE_ROOT; };
@@ -94,6 +110,7 @@
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		F2B099E6BD1199664C48B177 /* ofxJSONElement.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxJSONElement.cpp; path = ../../../addons/ofxJSON/src/ofxJSONElement.cpp; sourceTree = SOURCE_ROOT; };
 		F7CFEE77982205D3F1496C03 /* ofxAnimatable.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAnimatable.cpp; path = ../../../addons/ofxAnimatable/src/ofxAnimatable.cpp; sourceTree = SOURCE_ROOT; };
 		F85914DABCB335C508BB4238 /* ofxAnimatableQueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAnimatableQueue.h; path = ../../../addons/ofxAnimatable/src/ofxAnimatableQueue.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -120,6 +137,63 @@
 			name = src;
 			sourceTree = "<group>";
 		};
+		1C1A43BD20A087E20041886A /* OF-Common */ = {
+			isa = PBXGroup;
+			children = (
+				1C1A43BE20A087E20041886A /* player.cpp */,
+				1C1A43BF20A087E20041886A /* player.h */,
+				1C1A43C020A087E20041886A /* playerManager.cpp */,
+				1C1A43C120A087E20041886A /* playerManager.h */,
+				1C1A43C220A087E20041886A /* scenes */,
+			);
+			name = "OF-Common";
+			path = "../../OF-Common";
+			sourceTree = "<group>";
+		};
+		1C1A43C220A087E20041886A /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1C35A71A20A1B26800DEC2D8 /* scScene.cpp */,
+				1C1A43CF20A087E20041886A /* scScene.h */,
+				1C1A43C320A087E20041886A /* scGame1.cpp */,
+				1C1A43C420A087E20041886A /* scGame1.h */,
+				1C1A43C520A087E20041886A /* scGame2.cpp */,
+				1C1A43C620A087E20041886A /* scGame2.h */,
+				1C1A43C720A087E20041886A /* scGame3.cpp */,
+				1C1A43C820A087E20041886A /* scGame3.h */,
+				1C1A43C920A087E20041886A /* scHint.cpp */,
+				1C1A43CA20A087E20041886A /* scHint.h */,
+				1C1A43CB20A087E20041886A /* scInitialize.cpp */,
+				1C1A43CC20A087E20041886A /* scInitialize.h */,
+				1C1A43CD20A087E20041886A /* scIntro.cpp */,
+				1C1A43CE20A087E20041886A /* scIntro.h */,
+				1C1A43D020A087E20041886A /* scSelectGame.cpp */,
+				1C1A43D120A087E20041886A /* scSelectGame.h */,
+				1C1A43D220A087E20041886A /* scVictory.cpp */,
+				1C1A43D320A087E20041886A /* scVictory.h */,
+			);
+			path = scenes;
+			sourceTree = "<group>";
+		};
+		2865DAEF86B1907A704CA70B /* ofxJSON */ = {
+			isa = PBXGroup;
+			children = (
+				292AF6148769654D0DF26018 /* src */,
+				F40E80CB2D443CBA9581DD03 /* libs */,
+			);
+			name = ofxJSON;
+			sourceTree = "<group>";
+		};
+		292AF6148769654D0DF26018 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1645F56257269CD0356320BD /* ofxJSON.h */,
+				F2B099E6BD1199664C48B177 /* ofxJSONElement.cpp */,
+				26A541233BC6F736E758F718 /* ofxJSONElement.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 		54F5C03126EF2DA913AC2FFF /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +201,15 @@
 				60781851E0B71C3031D1B3F8 /* ofxScreenCurtain.h */,
 			);
 			name = src;
+			sourceTree = "<group>";
+		};
+		58AD3BD71B781D9BC25763C8 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				61313493CDB52744E22A604D /* json-forwards.h */,
+				2C7CF000B7B4F782C187C353 /* json.h */,
+			);
+			name = json;
 			sourceTree = "<group>";
 		};
 		6948EE371B920CB800B5AC1A /* local_addons */ = {
@@ -150,6 +233,15 @@
 				B8118C79E563998DA9D23B17 /* src */,
 			);
 			name = ofxAnimatable;
+			sourceTree = "<group>";
+		};
+		977A836DD2C489CCC5E330FF /* jsoncpp */ = {
+			isa = PBXGroup;
+			children = (
+				D486FC87F063317BB47E9FAC /* include */,
+				CCDC6F9CCF925CC402160B85 /* src */,
+			);
+			name = jsoncpp;
 			sourceTree = "<group>";
 		};
 		9DC3A602A27156C0D5D85AF7 /* ofxScreenCurtain */ = {
@@ -181,10 +273,27 @@
 			isa = PBXGroup;
 			children = (
 				8D83D7AC476703EBECC1932D /* ofxAnimatable */,
+				2865DAEF86B1907A704CA70B /* ofxJSON */,
 				8D82EBF7DBCF242EC80B1CFF /* ofxSceneManager */,
 				9DC3A602A27156C0D5D85AF7 /* ofxScreenCurtain */,
 			);
 			name = addons;
+			sourceTree = "<group>";
+		};
+		CCDC6F9CCF925CC402160B85 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				21BDE665988474F1B1F4D302 /* jsoncpp.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		D486FC87F063317BB47E9FAC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				58AD3BD71B781D9BC25763C8 /* json */,
+			);
+			name = include;
 			sourceTree = "<group>";
 		};
 		E4328144138ABC890047C5CB /* Products */ = {
@@ -211,25 +320,10 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				1C1A43BD20A087E20041886A /* OF-Common */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				1CD166D0209CE008001AF562 /* scGame1.cpp */,
-				1CD166D1209CE008001AF562 /* scGame1.h */,
-				1CD166D2209CE008001AF562 /* scGame2.cpp */,
-				1CD166D3209CE008001AF562 /* scGame2.h */,
-				1CD166D4209CE008001AF562 /* scGame3.cpp */,
-				1CD166D5209CE008001AF562 /* scGame3.h */,
-				1CD166D6209CE008001AF562 /* scHint.cpp */,
-				1CD166D7209CE008001AF562 /* scHint.h */,
-				1CD166D8209CE008001AF562 /* scInitialize.cpp */,
-				1CD166D9209CE008001AF562 /* scInitialize.h */,
-				1CD166DA209CE008001AF562 /* scIntro.cpp */,
-				1CD166DB209CE008001AF562 /* scIntro.h */,
-				1CD166DC209CE008001AF562 /* scSelectGame.cpp */,
-				1CD166DD209CE008001AF562 /* scSelectGame.h */,
-				1CD166DE209CE008001AF562 /* scVictory.cpp */,
-				1CD166DF209CE008001AF562 /* scVictory.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -241,6 +335,14 @@
 				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
 			);
 			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		F40E80CB2D443CBA9581DD03 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				977A836DD2C489CCC5E330FF /* jsoncpp */,
+			);
+			name = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,22 +433,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
-				1CD166E6209CE008001AF562 /* scSelectGame.cpp in Sources */,
+				1C1A43D620A087E20041886A /* scGame1.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
-				1CD166E1209CE008001AF562 /* scGame2.cpp in Sources */,
-				1CD166E4209CE008001AF562 /* scInitialize.cpp in Sources */,
+				1C1A43DA20A087E30041886A /* scInitialize.cpp in Sources */,
 				52C77060FBB9307AEFDAE8C6 /* ofxAnimatable.cpp in Sources */,
-				1CD166E7209CE008001AF562 /* scVictory.cpp in Sources */,
+				1C1A43D720A087E30041886A /* scGame2.cpp in Sources */,
 				5D067CF087427621DD1E64B8 /* ofxAnimatableFloat.cpp in Sources */,
+				1C1A43D920A087E30041886A /* scHint.cpp in Sources */,
 				74D31933EE82E12834DB3B06 /* ofxAnimatableOfColor.cpp in Sources */,
-				1CD166E3209CE008001AF562 /* scHint.cpp in Sources */,
-				1CD166E0209CE008001AF562 /* scGame1.cpp in Sources */,
-				1CD166E2209CE008001AF562 /* scGame3.cpp in Sources */,
 				BC054B7D3B48B395B1D87F2E /* ofxAnimatableOfPoint.cpp in Sources */,
 				2C61E47DDBFD642D87E63940 /* ofxAnimatableQueue.cpp in Sources */,
-				1CD166E5209CE008001AF562 /* scIntro.cpp in Sources */,
+				1C1A43DD20A087E30041886A /* scVictory.cpp in Sources */,
+				BEDFEE7400C58EA4E412B757 /* ofxJSONElement.cpp in Sources */,
+				1C1A43D420A087E20041886A /* player.cpp in Sources */,
+				1C35A71B20A1B26800DEC2D8 /* scScene.cpp in Sources */,
+				1C1A43DC20A087E30041886A /* scSelectGame.cpp in Sources */,
+				FB84AAF8D1B7A95266DB5C09 /* jsoncpp.cpp in Sources */,
 				EEBE0E386AA0A4E9C4ABD070 /* ofxSceneManager.cpp in Sources */,
+				1C1A43D520A087E20041886A /* playerManager.cpp in Sources */,
 				263D043F32BCC3BB077BB351 /* ofxScreenCurtain.cpp in Sources */,
+				1C1A43D820A087E30041886A /* scGame3.cpp in Sources */,
+				1C1A43DB20A087E30041886A /* scIntro.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +489,14 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
+					src,
 					../../../addons/ofxAnimatable/src,
+					../../../addons/ofxJSON/libs,
+					../../../addons/ofxJSON/libs/jsoncpp,
+					../../../addons/ofxJSON/libs/jsoncpp/include,
+					../../../addons/ofxJSON/libs/jsoncpp/include/json,
+					../../../addons/ofxJSON/libs/jsoncpp/src,
+					../../../addons/ofxJSON/src,
 					../../../addons/ofxSceneManager/src,
 					../../../addons/ofxScreenCurtain/src,
 				);
@@ -418,7 +532,14 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
+					src,
 					../../../addons/ofxAnimatable/src,
+					../../../addons/ofxJSON/libs,
+					../../../addons/ofxJSON/libs/jsoncpp,
+					../../../addons/ofxJSON/libs/jsoncpp/include,
+					../../../addons/ofxJSON/libs/jsoncpp/include/json,
+					../../../addons/ofxJSON/libs/jsoncpp/src,
+					../../../addons/ofxJSON/src,
 					../../../addons/ofxSceneManager/src,
 					../../../addons/ofxScreenCurtain/src,
 				);
@@ -447,7 +568,14 @@
 				GCC_MODEL_TUNING = NONE;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
+					src,
 					../../../addons/ofxAnimatable/src,
+					../../../addons/ofxJSON/libs,
+					../../../addons/ofxJSON/libs/jsoncpp,
+					../../../addons/ofxJSON/libs/jsoncpp/include,
+					../../../addons/ofxJSON/libs/jsoncpp/include/json,
+					../../../addons/ofxJSON/libs/jsoncpp/src,
+					../../../addons/ofxJSON/src,
 					../../../addons/ofxSceneManager/src,
 					../../../addons/ofxScreenCurtain/src,
 				);
@@ -476,7 +604,14 @@
 				GCC_MODEL_TUNING = NONE;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
+					src,
 					../../../addons/ofxAnimatable/src,
+					../../../addons/ofxJSON/libs,
+					../../../addons/ofxJSON/libs/jsoncpp,
+					../../../addons/ofxJSON/libs/jsoncpp/include,
+					../../../addons/ofxJSON/libs/jsoncpp/include/json,
+					../../../addons/ofxJSON/libs/jsoncpp/src,
+					../../../addons/ofxJSON/src,
 					../../../addons/ofxSceneManager/src,
 					../../../addons/ofxScreenCurtain/src,
 				);
