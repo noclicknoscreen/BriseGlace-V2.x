@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include "ofMain.h"
 #include "cube.h"
-#include "ofxShadowSimple.h"
+//#include "ofxShadowSimple.h"
 
 #define cubesPositionY 200
 #define consignesPositionY 100
