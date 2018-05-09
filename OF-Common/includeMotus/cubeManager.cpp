@@ -39,15 +39,7 @@ void cubeManager::setup()
     //texture
     texture.load("contreplaque.png");
     
-    cubeSize = 80;
-    
-    //testing
-    cube cube1;
-    cube1.setup(ofPoint(ofGetWidth()/2,ofGetHeight()/2,-150), cubeSize);
-    cube1.setLetter("A");
-
-    myCubes.push_back(cube1);
-    
+    cubeSize = 80;    
 
 };
 

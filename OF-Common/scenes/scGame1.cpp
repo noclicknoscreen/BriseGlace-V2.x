@@ -76,6 +76,7 @@ void scGame1::keyPressed(int key){
     {
         myCubeManager.getWord("bonheur");
         myInputManager.clearDuplicatesLettersHistory();
+        myInputManager.setReadyForNewText();
     }
     
     if(key=='p')
@@ -105,7 +106,8 @@ void scGame1::keyPressed(int key){
 void scGame1::someoneSpoke(player & _player){
     scScene::someoneSpoke(_player);
     
-    myInputManager.getNewText(_player.getNumber(), _player.getLastMessage());
+    if(myInputManager.isReadyForNewText())
+        myInputManager.getNewText(_player.getNumber(), _player.getLastMessage());
     
 }
 

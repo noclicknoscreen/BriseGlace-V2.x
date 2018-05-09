@@ -15,10 +15,14 @@ void inputHandler::setup()
     revealMode = false;
     currentRevealCube = 0;
     currentRevealLetter = 0;
+    
+    
 }
 
 void inputHandler::getNewText(int _userId, string txt)
 {
+    readyForNewText = false;
+    
     cout << "got new input from user " << userId << " : " << txt << endl;
     text = txt;
     
@@ -65,20 +69,25 @@ void inputHandler::getNewText(int _userId, string txt)
         
         splittedString.push_back(elt);
     }
+    
+    compareInput("bonheur");
+    setRevealMode();
+    
 }
 
 void inputHandler::draw()
 {
-    for(int i=0; i<splittedString.size(); i++)
-    {
-        ofSetColor(splittedString[i].textColor);
-        font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
-    }
+        for(int i=0; i<splittedString.size(); i++)
+        {
+            ofSetColor(splittedString[i].textColor);
+            font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
+        }
 }
 
 void inputHandler::update(cubeManager* cm)
 {
     
+    bool lettersAreFading = false;
     
     for(int i=0; i<splittedString.size(); i++)
     {
@@ -89,15 +98,16 @@ void inputHandler::update(cubeManager* cm)
         }
         
         //color
-        if(splittedString[i].textColor.a >= splittedString[i].alpha)
+        if(splittedString[i].textColor.a > splittedString[i].alpha)
         {
+            lettersAreFading = true;
             splittedString[i].textColor.a -= 0.9;
         }
         
     }
     
     //reveal corresponding cubes
-    if(revealMode)
+    if(revealMode && !lettersAreFading)
     {
         bool next = true;
         bool somebodyRotating = false;
@@ -138,6 +148,8 @@ void inputHandler::update(cubeManager* cm)
                 else
                 {
                     cout << "reveal finished, ready to get another proposal from user " << endl;
+                    revealMode = false;
+                    readyForNewText = true;
                 }
             }
     }
