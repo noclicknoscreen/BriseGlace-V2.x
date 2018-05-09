@@ -15,10 +15,10 @@ void ofApp::setup(){
 	///////////////////////////////////////
     // add the newFloat method to listen for eventsAddon newFloatEvent
     ofAddListener(nextSceneEvent,this,&ofApp::nextSceneAuto);
-    ofAddListener(someoneSpokeEvent,this,&ofApp::someoneSpoke);
+    ofAddListener(myPlayerManager.someoneSpoke,this,&ofApp::someoneSpoke);
 
     ///////////////////////////////////////
-    myPlayerManager.setup(someoneSpokeEvent);
+    myPlayerManager.setup();
     
     ///////////////////////////////////////
 	sceneManager = ofxSceneManager::instance();

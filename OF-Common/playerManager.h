@@ -15,7 +15,8 @@
 class playerManager : public ofBaseApp{
     
 public:
-    void setup(ofEvent<player> _someoneSpoke);
+//    void setup(ofEvent<player> _someoneSpoke);
+    void setup();
     void update();
     void draw();
     
