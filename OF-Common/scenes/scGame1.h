@@ -10,6 +10,11 @@
 
 #include "scScene.h"
 
+#include "cubeManager.h"
+#include "ofxGui.h"
+#include "inputHandler.h"
+
+
 class scGame1 : public scScene{
     
 public:
@@ -21,6 +26,19 @@ public:
 
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
+    
+    void keyPressed(int key);
+    
+    //gui
+    ofxPanel gui;
+    ofParameter<float> lightPosX, lightPosY, lightPosZ;
+    ofParameter<int> cubesRotationSpeed;
+    
+    //cubeManager
+    cubeManager myCubeManager;
+    
+    //inputManager
+    inputHandler myInputManager;
     
 };
 
