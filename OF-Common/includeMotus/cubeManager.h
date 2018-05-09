@@ -15,6 +15,7 @@
 
 #define cubesPositionY 200
 #define consignesPositionY 100
+#define espacementCubes 15
 
 class cubeManager
 {

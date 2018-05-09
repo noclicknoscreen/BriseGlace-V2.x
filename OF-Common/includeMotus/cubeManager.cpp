@@ -89,14 +89,15 @@ void cubeManager::draw(){
     {
         ofPushMatrix();
         
-            material.setAmbientColor(myCubes[i].materialColor);
-            //material.setDiffuseColor(myCubes[i].materialColor);
-            //material.setSpecularColor(myCubes[i].materialColor);
         
             ofTranslate(myCubes[i].position.x, myCubes[i].position.y, myCubes[i].position.z);
             ofRotate(myCubes[i].currentRot, 1.0, 0.0, 0.0);
         
-        
+            materialColor.setHue(0);
+            material.setAmbientColor(materialColor);
+            material.setDiffuseColor(materialColor);
+            //material.setSpecularColor(materialColor);
+
             material.begin();
             texture.bind();
                ofDrawBox(myCubes[i].size, myCubes[i].size ,myCubes[i].size);
@@ -105,14 +106,19 @@ void cubeManager::draw(){
             
             
             //FACE BLANCHE
+            material.setAmbientColor(myCubes[i].materialColor);
+            material.setDiffuseColor(myCubes[i].materialColor);
+            //material.setSpecularColor(myCubes[i].materialColor);
             material.begin();
-            ofPushMatrix();
-
+        
             for(int i=0; i<myCubes.size(); i++)
             {
-                ofDrawRectangle(-myCubes[i].size/2, -myCubes[i].size/2, ((myCubes[i].size/2)+1), myCubes[i].size, myCubes[i].size);
+                ofPushMatrix();
+                ofRotate(180,1,0,0);
+                ofDrawRectangle(-myCubes[i].size/2, -myCubes[i].size/2, ((myCubes[i].size/2)+0.1), myCubes[i].size, myCubes[i].size);
+                ofPopMatrix();
             }
-            ofPopMatrix();
+        
             
             material.end();
             //END FACE BLANCHE
@@ -151,14 +157,14 @@ void cubeManager::getWord(string word)
     cout << "new word : " << word << endl;
     
     //compute offset between letters
-    float wordWidth = word.size()*cubeSize + (word.size()-1) * cubeSize + 2*cubeSize;
+    float wordWidth = (word.size()*cubeSize) + ((word.size()+1) * espacementCubes);
     
     myCubes.clear();
     
     for(int i=0; i<word.size(); i++)
     {
         cube* tmpCube = new cube();
-        tmpCube->setup(ofPoint((ofGetWidth()-wordWidth)/2 + 2*i*cubeSize + cubeSize,cubesPositionY,-300), cubeSize);
+        tmpCube->setup(ofPoint((ofGetWidth()-wordWidth)/2 + i*(espacementCubes + cubeSize) + cubeSize/2 + espacementCubes, cubesPositionY,-300), cubeSize);
         tmpCube->setLetter(ofToString(word[i]));
         myCubes.push_back(*tmpCube);
     }
