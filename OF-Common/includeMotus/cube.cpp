@@ -15,6 +15,8 @@ void cube::setup(ofPoint _position, float _size)
     size = _size;
     currentRot = 0;
     desiredRot = 0;
+    
+    isRotating = false;
 };
 
 void cube::update(int rotationSpeed)
@@ -28,6 +30,7 @@ void cube::update(int rotationSpeed)
     //rotation vers la face désirée
     if(currentRot < desiredRot)
     {
+        isRotating = true;
         if(currentRot+rotationSpeed <= desiredRot)
         {
             currentRot+=rotationSpeed;
@@ -35,10 +38,14 @@ void cube::update(int rotationSpeed)
         else
             currentRot +=  (currentRot - desiredRot);
     }
+    
+    else
+        isRotating = false;
 };
 
 void cube::rotateToWhite()
 {
+    isRotating = true;
     
     if(int(currentRot)%360 == 0) //white
         desiredRot += 0;
@@ -53,6 +60,8 @@ void cube::rotateToWhite()
 
 void cube::rotateToWood()
 {
+    isRotating = true;
+    
     if(int(currentRot)%360 == 0) //white
         desiredRot += 90;
     
@@ -65,6 +74,8 @@ void cube::rotateToWood()
 
 void cube::rotateToLetter()
 {
+    isRotating = true;
+    
     if(int(currentRot)%360 == 0) //white
         desiredRot += 180;
     

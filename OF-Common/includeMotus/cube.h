@@ -30,7 +30,7 @@ public:
     bool letterFace, whiteFace, woodFace;
     string myLetter;
     ofColor materialColor;
-    
+    bool isRotating;
     
 };
 #endif /* cube_hpp */

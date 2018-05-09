@@ -33,11 +33,11 @@ class inputHandler
 public:
     void setup();
     void getNewText(int _userId, string txt);
-    void update();
+    void update(cubeManager* cm);
     void draw();
     void compareInput(string wantedWord);
-    void rotateCorrespondingCubes(string wantedWord, cubeManager* cm);
     void clearDuplicatesLettersHistory();
+    void setRevealMode(){revealMode = true; currentRevealCube=0;}
     
 private:
     string text;
@@ -45,6 +45,10 @@ private:
     vector<letterElement> splittedString;
     int userId;
     vector<string> duplicatesLetters;
+    
+    int currentRevealLetter, currentRevealCube;
+    bool revealMode;
+    
 };
 
 #endif /* inputHandler_hpp */

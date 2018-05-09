@@ -11,6 +11,10 @@
 void inputHandler::setup()
 {
     font.load("Avenir.ttc", 24);
+    
+    revealMode = false;
+    currentRevealCube = 0;
+    currentRevealLetter = 0;
 }
 
 void inputHandler::getNewText(int _userId, string txt)
@@ -72,8 +76,10 @@ void inputHandler::draw()
     }
 }
 
-void inputHandler::update()
+void inputHandler::update(cubeManager* cm)
 {
+    
+    
     for(int i=0; i<splittedString.size(); i++)
     {
         //movement to center
@@ -85,8 +91,55 @@ void inputHandler::update()
         //color
         if(splittedString[i].textColor.a >= splittedString[i].alpha)
         {
-            splittedString[i].textColor.a -= 0.5;
+            splittedString[i].textColor.a -= 0.9;
         }
+        
+    }
+    
+    //reveal corresponding cubes
+    if(revealMode)
+    {
+        bool next = true;
+        bool somebodyRotating = false;
+        
+        //iterate through letters forming the user proposal
+        if(splittedString[currentRevealCube].correspondingCubes.size() > 0)
+        {
+            int index = splittedString[currentRevealCube].correspondingCubes[currentRevealLetter];
+            
+                //check if a cube is already rotating
+                for(int c=0; c<cm->myCubes.size(); c++)
+                {
+                    if(cm->myCubes[c].isRotating)
+                        somebodyRotating = true;
+                }
+            
+            if(somebodyRotating)
+            {
+                next = false; //wait
+            }
+            else
+            {
+                cm->myCubes[index].rotateToLetter(); //rotate the corresponding cube
+                splittedString[currentRevealCube].alpha = 0;
+            }
+        }
+            if(next)
+            {
+                if(currentRevealLetter+1 < splittedString[currentRevealCube].correspondingCubes.size())
+                {
+                    currentRevealLetter++;
+                }
+                else if(currentRevealCube+1 < splittedString.size())
+                {
+                    currentRevealCube++;
+                    currentRevealLetter = 0;
+                }
+                else
+                {
+                    cout << "reveal finished, ready to get another proposal from user " << endl;
+                }
+            }
     }
 }
 
@@ -94,49 +147,36 @@ void inputHandler::compareInput(string wantedWord)
 {
     for(int i=0; i<splittedString.size(); i++)
     {
-        size_t found = wantedWord.find(splittedString[i].letter);
+        size_t found = wantedWord.find(splittedString[i].letter, 0);
 
-        if (found!=string::npos)
+        if(found==string::npos)
         {
-            cout << "found " << endl;
+            splittedString[i].alpha = 0;
+        }
+        
+        while (found!=string::npos)
+        {
             
             if(std::find(duplicatesLetters.begin(), duplicatesLetters.end(), splittedString[i].letter) != duplicatesLetters.end())
             {
                 splittedString[i].alpha = 0;
-                cout << "duplicate entry " << endl;
             }
             else
             {
                 splittedString[i].alpha = 255;
                 splittedString[i].correspondingCubes.push_back((int)found);
+                
             }
-            
-            duplicatesLetters.push_back(splittedString[i].letter);
+            found = wantedWord.find(splittedString[i].letter, found+1);
         }
-        else
-        {
-            splittedString[i].alpha = 0;
-            cout << "not found" << endl;
-        }
+        duplicatesLetters.push_back(splittedString[i].letter);
+
     }
+
 }
 
 void inputHandler::clearDuplicatesLettersHistory()
 {
     duplicatesLetters.clear();
-}
-
-void inputHandler::rotateCorrespondingCubes(string wantedWord, cubeManager* cm)
-{
-    for(int i=0; i<splittedString.size(); i++)
-    {
-        for(int j=0; j<splittedString[i].correspondingCubes.size(); j++)
-        {
-            splittedString[i].alpha = 0;
-            
-            cm->colorizeCube(splittedString[i].correspondingCubes[j], userId);
-            cm->rotateToLetter(splittedString[i].correspondingCubes[j]);
-        }
-    }
 }
 

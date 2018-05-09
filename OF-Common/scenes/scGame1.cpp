@@ -32,7 +32,7 @@ void scGame1::setup(){  //load your scene 1 assets here...
 void scGame1::update(float dt){ //update scene 1 here
     
     myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), cubesRotationSpeed);
-    myInputManager.update();
+    myInputManager.update(&myCubeManager);
     
 };
 
@@ -92,7 +92,8 @@ void scGame1::keyPressed(int key){
     
     if(key == 'C')
     {
-        myInputManager.rotateCorrespondingCubes("bonheur", &myCubeManager);
+        //myInputManager.rotateCorrespondingCubes("bonheur", &myCubeManager);
+        myInputManager.setRevealMode();
     }
     
 }
