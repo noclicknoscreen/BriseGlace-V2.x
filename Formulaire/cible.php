@@ -8,8 +8,6 @@
 
 <body>
 <?php
-// header('Content-type: text/javascript');
-
 $tmp = $_POST['jeux'];
 if (file_exists ($tmp) == false) {
     mkdir("./" . $tmp, 0777, true);
@@ -82,8 +80,9 @@ $text = fopen($tmp . "/info.txt", "w+");
 fputs($text, $num);
 fclose($text);
 
-// Fonction
+echo "<p>Enigme enregistrer !</p>";
 
+// Fonction
 function urlExist($url) {
     $file_headers = @get_headers($url);
     if($file_headers[0] == 'HTTP/1.1 404 Not Found')
@@ -92,8 +91,5 @@ function urlExist($url) {
     return true;
 }
 ?>
-
-<p>Enigme enregistrer !</p>
-
 </body>
 </html>
