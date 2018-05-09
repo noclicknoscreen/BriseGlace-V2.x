@@ -9,14 +9,16 @@
 #include "playerManager.h"
 
 //--------------------------------------------------------------
-void playerManager::setup(ofEvent<player> _someoneSpoke){
+//void playerManager::setup(ofEvent<player> _someoneSpoke){
+void playerManager::setup(){
     
     mColors[1] = ofColor::red;
     mColors[2] = ofColor::green;
     mColors[3] = ofColor::blue;
     mColors[4] = ofColor::gray;
     
-    someoneSpoke = _someoneSpoke;
+//    someoneSpoke = _someoneSpoke;
+    ofHttpRequest myRequest = ofHttpRequest("https://localhost:8443/resetPlayers", "reset");
     
 }
 

@@ -13,6 +13,10 @@ void scSelectGame::setup(){  //load your scene 1 assets here...
     ofLogNotice() << "Select a game : Setup !";
     
     myTitle = "Choix du jeu";
+    mText = "";
+    
+    // Player manager events
+    ofAddListener(myPlayerManager->someoneSpoke,this,&scSelectGame::someoneSpoke);
     
 };
 
@@ -28,7 +32,7 @@ void scSelectGame::draw(){ //draw scene 1 here
     
     scScene::draw();            // Draw title
     myPlayerManager->draw();    // Draw players
-    drawCenterText(myPlayerManager->getLastMessage(), 0, 50); // Draw last message
+    drawCenterText(mText, 0, 50); // Draw last message
     
     ofPopStyle();
     
@@ -41,4 +45,10 @@ void scSelectGame::sceneWillAppear( ofxScene * fromScreen ){
 
 //scene notifications
 void scSelectGame::sceneWillDisappear( ofxScene * toScreen ){
+}
+
+// Speaking event
+void scSelectGame::someoneSpoke(player & _player){
+    scScene::someoneSpoke(_player);
+    mText = _player.getLastMessage();
 }

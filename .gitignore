@@ -1,2 +1,3 @@
-
+## Top of the hill git ignore
 *.img
+.DS_Store

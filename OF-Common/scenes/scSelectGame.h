@@ -22,5 +22,10 @@ public:
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
 
+    void someoneSpoke(player & _player);
+    
+private:
+    string mText;
+    
 };
 

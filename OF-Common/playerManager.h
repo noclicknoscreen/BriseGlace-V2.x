@@ -15,7 +15,8 @@
 class playerManager : public ofBaseApp{
     
 public:
-    void setup(ofEvent<player> _someoneSpoke);
+//    void setup(ofEvent<player> _someoneSpoke);
+    void setup();
     void update();
     void draw();
     
@@ -29,6 +30,8 @@ private:
     string mLastTime;
     
     ofxJSONElement mResponse;
+    
+    ofHttpRequest request;
     
     map<int, player> mPlayers;
     map<int, ofColor> mColors;
