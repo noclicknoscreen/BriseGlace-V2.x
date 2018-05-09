@@ -15,12 +15,17 @@
 #include "ofEvents.h"
 #include "playerManager.h"
 
-class scScene : public ofxScene {
+enum Scenes{ INTRO = 1, INITIALIZE, SELECT_GAME, GAME1, GAME2, GAME3, HINT, VICTORY };
+
+class scScene : public ofxScene, ofBaseApp {
+    
     
 public:
     void setup();
     void draw();    // Constructor
     scScene(ofEvent<void> _endSceneEvent, playerManager &_manager);
+    
+    void someoneSpoke(player & _player);
     
 protected:
     ///////////// MEMBERS /////////////////////
@@ -31,5 +36,8 @@ protected:
     
     ///////////// METHODS /////////////////////
     void drawCenterText(string _message, int _plusX=0, int _plusY=0);
+    
+    ofEvent<player> evt;
+    
 };
 

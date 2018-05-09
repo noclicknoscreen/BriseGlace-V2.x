@@ -27,6 +27,9 @@ void scGame1::setup(){  //load your scene 1 assets here...
     //inputs
     myInputManager.setup();
     
+    // Player manager events
+    ofAddListener(myPlayerManager->someoneSpoke,this,&scGame1::someoneSpoke);
+    
 };
 
 void scGame1::update(float dt){ //update scene 1 here
@@ -53,7 +56,7 @@ void scGame1::draw(){ //draw scene 1 here
     
     scScene::draw();            // Draw title
     myPlayerManager->draw();    // Draw players
-    drawCenterText(myPlayerManager->getLastMessage(), 0, 50); // Draw last message
+    //drawCenterText(myPlayerManager->getLastMessage(), 0, 50); // Draw last message
 
     ofPopStyle();
     
@@ -97,7 +100,13 @@ void scGame1::keyPressed(int key){
     
 }
 
-
+// Speaking event
+void scGame1::someoneSpoke(player & _player){
+    scScene::someoneSpoke(_player);
+    
+    myInputManager.getNewText(_player.getNumber(), _player.getLastMessage());
+    
+}
 
 //scene notifications
 void scGame1::sceneWillAppear( ofxScene * fromScreen ){

@@ -20,8 +20,6 @@
 
 class ofApp : public ofBaseApp{
     
-    enum Scenes{ INTRO = 1, INITIALIZE, SELECT_GAME, GAME1, GAME2, GAME3, HINT, VICTORY };
-    
     void setup();
     void update();
     void draw();
@@ -41,7 +39,6 @@ class ofApp : public ofBaseApp{
     ofTrueTypeFont myFont;
     
     ofEvent<void>        nextSceneEvent;
-    ofEvent<player>      someoneSpokeEvent;
     
     playerManager myPlayerManager;
     void someoneSpoke(player & _player);

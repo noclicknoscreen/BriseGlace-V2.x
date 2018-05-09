@@ -29,6 +29,8 @@ public:
     
     void keyPressed(int key);
     
+    void someoneSpoke(player & _player);
+    
     //gui
     ofxPanel gui;
     ofParameter<float> lightPosX, lightPosY, lightPosZ;

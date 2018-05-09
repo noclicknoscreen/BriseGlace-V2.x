@@ -61,6 +61,10 @@ app.get('/players', function(req, res) {
   res.setHeader('Content-Type', 'application/json');
   res.send(JSON.stringify(playerManager.strPlayers()));
 });
+app.get('/resetPlayers', function(req, res) {
+  console.log("resetPlayers");
+});
+
 
 const options = {
   key: fs.readFileSync(__dirname + '/public/certificates/key.pem'),

@@ -31,6 +31,8 @@ private:
     
     ofxJSONElement mResponse;
     
+    ofHttpRequest request;
+    
     map<int, player> mPlayers;
     map<int, ofColor> mColors;
     

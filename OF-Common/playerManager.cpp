@@ -18,6 +18,7 @@ void playerManager::setup(){
     mColors[4] = ofColor::gray;
     
 //    someoneSpoke = _someoneSpoke;
+    ofHttpRequest myRequest = ofHttpRequest("https://localhost:8443/resetPlayers", "reset");
     
 }
 

@@ -31,3 +31,7 @@ void scScene::drawCenterText(string _message, int _plusX, int _plusY){
     myFont24.drawString(_message, 0, 0);
     ofPopMatrix();
 }
+
+void scScene::someoneSpoke(player & _player){
+    ofLogNotice() << "[Scene " << getSceneID()<< "] SomeOne Spoke : " << _player.getNumber() << ":" << _player.getLastMessage();
+}

@@ -114,7 +114,7 @@ void ofApp::nextSceneAuto(){
 
 // There we'll manage which scene will go next when the previous ends
 void ofApp::someoneSpoke(player & _player){
-    ofLogNotice() << "Someone spoke ! What do yu wanna do ?";
+    ofLogNotice() << "[ofApp] Someone spoke ! What do yu wanna do ?";
     
     switch (sceneManager->getCurrentSceneID()) {
         case INTRO:

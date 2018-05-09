@@ -21,10 +21,13 @@ public:
     
     int getVolume(){return mVolume;};
     string getLastMessage(){return mLastMessage;};
+    int getNumber(){return mNumber;};
     
 private:
     float mVolume;
     string mLastMessage;
+    int mNumber;
+    
     bool mIsAvailable;
     
     ofColor mColor;
