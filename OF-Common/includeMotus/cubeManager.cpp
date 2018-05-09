@@ -18,6 +18,7 @@ void cubeManager::setup()
     ofSetSphereResolution(32);
     ofEnableLighting();
  
+    //lumiere
     spotLight.setSpotlight();
     spotLight.setSpotlightCutOff(200);
     spotLight.setAttenuation(0.3,0,0); //puissance de la light = inverse de l'attenuation
@@ -25,9 +26,7 @@ void cubeManager::setup()
     spotLight.setDiffuseColor( ofColor(255.f, 255.f, 255.f));
     spotLight.setSpecularColor( ofColor(255.f, 255.f, 255.f));
     spotLight.setPosition(ofGetWidth()/2, ofGetHeight()/2, 0);
-    
     spotLight.setPosition(ofGetWidth()-300, 100, 0);
-    
     material.setShininess( 128);
     lightColor.setBrightness( 255.0f);
     lightColor.setSaturation( 0.f );
@@ -64,7 +63,6 @@ void cubeManager::update(ofPoint _lightPos, int cubesRotationSpeed)
     spotLight.setOrientation( ofVec3f( 0, 45, 30) );
     lightColor.setHue(0);
     spotLight.setDiffuseColor(lightColor);
-    //materialColor.setHue(0);
     material.setSpecularColor(materialColor);
     
 };
@@ -100,7 +98,6 @@ void cubeManager::draw(){
         
         
             material.begin();
-            //myCubes[i].ma
             texture.bind();
                ofDrawBox(myCubes[i].size, myCubes[i].size ,myCubes[i].size);
             material.end();

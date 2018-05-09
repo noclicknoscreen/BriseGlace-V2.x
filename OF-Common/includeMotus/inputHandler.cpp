@@ -92,8 +92,6 @@ void inputHandler::update()
 
 void inputHandler::compareInput(string wantedWord)
 {
-    
-    
     for(int i=0; i<splittedString.size(); i++)
     {
         size_t found = wantedWord.find(splittedString[i].letter);
@@ -139,7 +137,6 @@ void inputHandler::rotateCorrespondingCubes(string wantedWord, cubeManager* cm)
             cm->colorizeCube(splittedString[i].correspondingCubes[j], userId);
             cm->rotateToLetter(splittedString[i].correspondingCubes[j]);
         }
-         //ofSleepMillis(1000);
     }
 }
 
