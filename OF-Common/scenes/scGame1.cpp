@@ -32,9 +32,6 @@ void scGame1::setup(){  //load your scene 1 assets here...
     myInputManager.clearDuplicatesLettersHistory();
     myInputManager.setReadyForNewText();
     
-    // Player manager events
-    ofAddListener(myPlayerManager->someoneSpoke,this,&scGame1::someoneSpoke);
-    
 };
 
 void scGame1::update(float dt){ //update scene 1 here
@@ -96,8 +93,12 @@ void scGame1::someoneSpoke(player & _player){
 void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
+    // Player manager events
+    ofAddListener(myPlayerManager->someoneSpoke,this,&scGame1::someoneSpoke);
 };
 
 //scene notifications
 void scGame1::sceneWillDisappear( ofxScene * toScreen ){
+    // Player manager events
+    ofRemoveListener(myPlayerManager->someoneSpoke,this,&scGame1::someoneSpoke);
 }
