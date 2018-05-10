@@ -260,6 +260,11 @@ void scGame3::createParticules(string _word)
     {
         particule* pp = new particule(world, 100, ofVec3f(ofRandom(-ofGetWidth()/2, ofGetWidth()/2),-250,100), ofToString(_word[i]));
         pp->me->makeFree();
+        
+        //adjust mass and bounce
+        pp->me->setMass(15);
+        pp->me->setBounce(0.7);
+        
         myParticules.push_back(pp);
     }
 }
