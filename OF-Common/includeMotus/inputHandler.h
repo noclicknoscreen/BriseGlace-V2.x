@@ -38,6 +38,8 @@ public:
     void compareInput(string wantedWord);
     void clearDuplicatesLettersHistory();
     void setRevealMode(){revealMode = true; currentRevealCube=0;}
+    bool isReadyForNewText(){return readyForNewText;}
+    void setReadyForNewText(){readyForNewText = true;}
     
 private:
     string text;
@@ -48,6 +50,7 @@ private:
     
     int currentRevealLetter, currentRevealCube;
     bool revealMode;
+    bool readyForNewText;
     
 };
 

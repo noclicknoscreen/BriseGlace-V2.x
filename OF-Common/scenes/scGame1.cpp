@@ -78,27 +78,7 @@ void scGame1::keyPressed(int key){
     {
         myCubeManager.getWord("bonheur");
         myInputManager.clearDuplicatesLettersHistory();
-    }
-    
-    if(key=='p')
-    {
-        myInputManager.getNewText(1, "choucroute");
-    }
-    
-    if(key=='P')
-    {
-        myInputManager.getNewText(1, "bonnet");
-    }
-    
-    if(key=='c')
-    {
-        myInputManager.compareInput("bonheur");
-    }
-    
-    if(key == 'C')
-    {
-        //myInputManager.rotateCorrespondingCubes("bonheur", &myCubeManager);
-        myInputManager.setRevealMode();
+        myInputManager.setReadyForNewText();
     }
     
 }
