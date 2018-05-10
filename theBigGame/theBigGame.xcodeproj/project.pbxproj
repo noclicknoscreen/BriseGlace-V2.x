@@ -24,9 +24,6 @@
 		BEDFEE7400C58EA4E412B757 /* ofxJSONElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2B099E6BD1199664C48B177 /* ofxJSONElement.cpp */; };
 		D2462BEE20A1FD97007EE1E3 /* ReadMe.md in Sources */ = {isa = PBXBuildFile; fileRef = D2462BCB20A1FD97007EE1E3 /* ReadMe.md */; };
 		D2462BEF20A1FD97007EE1E3 /* ofxSceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2462BCE20A1FD97007EE1E3 /* ofxSceneManager.cpp */; };
-		D2462BF020A1FD97007EE1E3 /* cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2462BD120A1FD97007EE1E3 /* cube.cpp */; };
-		D2462BF120A1FD97007EE1E3 /* cubeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2462BD320A1FD97007EE1E3 /* cubeManager.cpp */; };
-		D2462BF220A1FD97007EE1E3 /* inputHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2462BD520A1FD97007EE1E3 /* inputHandler.cpp */; };
 		D2462BF320A1FD97007EE1E3 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2462BD720A1FD97007EE1E3 /* player.cpp */; };
 		D2462BF420A1FD97007EE1E3 /* playerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2462BD920A1FD97007EE1E3 /* playerManager.cpp */; };
 		D2462BF520A1FD97007EE1E3 /* scGame1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2462BDC20A1FD97007EE1E3 /* scGame1.cpp */; };
@@ -38,6 +35,9 @@
 		D2462BFB20A1FD97007EE1E3 /* scScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2462BE820A1FD97007EE1E3 /* scScene.cpp */; };
 		D2462BFC20A1FD97007EE1E3 /* scSelectGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2462BEA20A1FD97007EE1E3 /* scSelectGame.cpp */; };
 		D2462BFD20A1FD97007EE1E3 /* scVictory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2462BEC20A1FD97007EE1E3 /* scVictory.cpp */; };
+		D272DB9520A46FD1001B05DD /* cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D272DB8F20A46FD1001B05DD /* cube.cpp */; };
+		D272DB9620A46FD1001B05DD /* cubeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D272DB9120A46FD1001B05DD /* cubeManager.cpp */; };
+		D272DB9720A46FD1001B05DD /* inputHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D272DB9320A46FD1001B05DD /* inputHandler.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
@@ -112,12 +112,6 @@
 		D2462BCD20A1FD97007EE1E3 /* ofxScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxScene.h; sourceTree = "<group>"; };
 		D2462BCE20A1FD97007EE1E3 /* ofxSceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSceneManager.cpp; sourceTree = "<group>"; };
 		D2462BCF20A1FD97007EE1E3 /* ofxSceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSceneManager.h; sourceTree = "<group>"; };
-		D2462BD120A1FD97007EE1E3 /* cube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cube.cpp; sourceTree = "<group>"; };
-		D2462BD220A1FD97007EE1E3 /* cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cube.h; sourceTree = "<group>"; };
-		D2462BD320A1FD97007EE1E3 /* cubeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cubeManager.cpp; sourceTree = "<group>"; };
-		D2462BD420A1FD97007EE1E3 /* cubeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeManager.h; sourceTree = "<group>"; };
-		D2462BD520A1FD97007EE1E3 /* inputHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inputHandler.cpp; sourceTree = "<group>"; };
-		D2462BD620A1FD97007EE1E3 /* inputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputHandler.h; sourceTree = "<group>"; };
 		D2462BD720A1FD97007EE1E3 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
 		D2462BD820A1FD97007EE1E3 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		D2462BD920A1FD97007EE1E3 /* playerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = playerManager.cpp; sourceTree = "<group>"; };
@@ -140,6 +134,12 @@
 		D2462BEB20A1FD97007EE1E3 /* scSelectGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scSelectGame.h; sourceTree = "<group>"; };
 		D2462BEC20A1FD97007EE1E3 /* scVictory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scVictory.cpp; sourceTree = "<group>"; };
 		D2462BED20A1FD97007EE1E3 /* scVictory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scVictory.h; sourceTree = "<group>"; };
+		D272DB8F20A46FD1001B05DD /* cube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cube.cpp; sourceTree = "<group>"; };
+		D272DB9020A46FD1001B05DD /* cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cube.h; sourceTree = "<group>"; };
+		D272DB9120A46FD1001B05DD /* cubeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cubeManager.cpp; sourceTree = "<group>"; };
+		D272DB9220A46FD1001B05DD /* cubeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeManager.h; sourceTree = "<group>"; };
+		D272DB9320A46FD1001B05DD /* inputHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inputHandler.cpp; sourceTree = "<group>"; };
+		D272DB9420A46FD1001B05DD /* inputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputHandler.h; sourceTree = "<group>"; };
 		E112B3AEBEA2C091BF2B40AE /* ofxPanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPanel.cpp; path = ../../../addons/ofxGui/src/ofxPanel.cpp; sourceTree = SOURCE_ROOT; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* theBigGameDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theBigGameDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -307,8 +307,8 @@
 		D2462BC720A1FD97007EE1E3 /* OF-Common */ = {
 			isa = PBXGroup;
 			children = (
+				D272DB8E20A46FD1001B05DD /* cubes */,
 				D2462BC820A1FD97007EE1E3 /* addons */,
-				D2462BD020A1FD97007EE1E3 /* includeMotus */,
 				1C35A75120A449AF00DEC2D8 /* enigmaManager.cpp */,
 				1C35A75220A449AF00DEC2D8 /* enigmaManager.h */,
 				D2462BD720A1FD97007EE1E3 /* player.cpp */,
@@ -349,19 +349,6 @@
 			path = src;
 			sourceTree = "<group>";
 		};
-		D2462BD020A1FD97007EE1E3 /* includeMotus */ = {
-			isa = PBXGroup;
-			children = (
-				D2462BD120A1FD97007EE1E3 /* cube.cpp */,
-				D2462BD220A1FD97007EE1E3 /* cube.h */,
-				D2462BD320A1FD97007EE1E3 /* cubeManager.cpp */,
-				D2462BD420A1FD97007EE1E3 /* cubeManager.h */,
-				D2462BD520A1FD97007EE1E3 /* inputHandler.cpp */,
-				D2462BD620A1FD97007EE1E3 /* inputHandler.h */,
-			);
-			path = includeMotus;
-			sourceTree = "<group>";
-		};
 		D2462BDB20A1FD97007EE1E3 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +372,19 @@
 				D2462BED20A1FD97007EE1E3 /* scVictory.h */,
 			);
 			path = scenes;
+			sourceTree = "<group>";
+		};
+		D272DB8E20A46FD1001B05DD /* cubes */ = {
+			isa = PBXGroup;
+			children = (
+				D272DB8F20A46FD1001B05DD /* cube.cpp */,
+				D272DB9020A46FD1001B05DD /* cube.h */,
+				D272DB9120A46FD1001B05DD /* cubeManager.cpp */,
+				D272DB9220A46FD1001B05DD /* cubeManager.h */,
+				D272DB9320A46FD1001B05DD /* inputHandler.cpp */,
+				D272DB9420A46FD1001B05DD /* inputHandler.h */,
+			);
+			path = cubes;
 			sourceTree = "<group>";
 		};
 		D486FC87F063317BB47E9FAC /* include */ = {
@@ -542,6 +542,7 @@
 				1C35A75320A449AF00DEC2D8 /* enigmaManager.cpp in Sources */,
 				5D067CF087427621DD1E64B8 /* ofxAnimatableFloat.cpp in Sources */,
 				74D31933EE82E12834DB3B06 /* ofxAnimatableOfColor.cpp in Sources */,
+				D272DB9620A46FD1001B05DD /* cubeManager.cpp in Sources */,
 				D2462BF720A1FD97007EE1E3 /* scGame3.cpp in Sources */,
 				D2462BF920A1FD97007EE1E3 /* scInitialize.cpp in Sources */,
 				BC054B7D3B48B395B1D87F2E /* ofxAnimatableOfPoint.cpp in Sources */,
@@ -551,8 +552,8 @@
 				2C61E47DDBFD642D87E63940 /* ofxAnimatableQueue.cpp in Sources */,
 				D2462BF320A1FD97007EE1E3 /* player.cpp in Sources */,
 				856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */,
+				D272DB9520A46FD1001B05DD /* cube.cpp in Sources */,
 				5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */,
-				D2462BF120A1FD97007EE1E3 /* cubeManager.cpp in Sources */,
 				B266578FC55D23BFEBC042E7 /* ofxGuiGroup.cpp in Sources */,
 				483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */,
 				F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */,
@@ -560,12 +561,11 @@
 				B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */,
 				D2462BFA20A1FD97007EE1E3 /* scIntro.cpp in Sources */,
 				1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */,
-				D2462BF220A1FD97007EE1E3 /* inputHandler.cpp in Sources */,
 				D2462BEE20A1FD97007EE1E3 /* ReadMe.md in Sources */,
 				BEDFEE7400C58EA4E412B757 /* ofxJSONElement.cpp in Sources */,
 				FB84AAF8D1B7A95266DB5C09 /* jsoncpp.cpp in Sources */,
+				D272DB9720A46FD1001B05DD /* inputHandler.cpp in Sources */,
 				263D043F32BCC3BB077BB351 /* ofxScreenCurtain.cpp in Sources */,
-				D2462BF020A1FD97007EE1E3 /* cube.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
