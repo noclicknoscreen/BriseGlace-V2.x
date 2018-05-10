@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:theBigGame/theBigGame.xcodeproj">
-   </FileRef>
    <Group
       location = "container:"
       name = "examples">
+      <FileRef
+         location = "group:../../examples/utils/dirListExample/dirListExample.xcodeproj">
+      </FileRef>
       <FileRef
          location = "group:../../examples/graphics/imageLoaderWebExample/imageLoaderWebExample.xcodeproj">
       </FileRef>
@@ -20,4 +20,7 @@
          location = "group:../../examples/graphics/fontsExample/fontsExample.xcodeproj">
       </FileRef>
    </Group>
+   <FileRef
+      location = "group:theBigGame/theBigGame.xcodeproj">
+   </FileRef>
 </Workspace>

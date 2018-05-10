@@ -1,4 +1,6 @@
 ofxAnimatable
 ofxGui
 ofxJSON
+ofxMSACore
+ofxMSAPhysics
 ofxScreenCurtain

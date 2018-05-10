@@ -8,16 +8,50 @@
 
 #include "enigmaManager.h"
 
+#define GLOBAL_PATH "../../../_enigmas"
+
 void enigmaManager::setup(){
     ofLogNotice() << "Setup enigma manager as SINGLETON, Sick !";
 }
+
 void enigmaManager::update(){
     ofLogNotice() << "Update enigma manager !";
 }
 
-string enigmaManager::getEnigmaName(){
-    return "C'est moi!";
+void enigmaManager::pickNewEnigma(gameType _type){
+    
+    
+    string path = GLOBAL_PATH;
+    
+    switch (_type) {
+        case MOTUS:
+            path += "/MOTUS";
+            break;
+        case IMAGE_GRID:
+            path += "/IMAGE_GRID";
+            break;
+        case BOGGLE:
+            path += "/BOGGLE";
+            break;
+        default:
+            break;
+    }
+    
+    // First, know all folder of one game type
+    dir.listDir(path);
+    dir.sort(); // in linux the file system doesn't return file lists ordered in alphabetical order
+    
+    //allocate the vector to have as many ofImages as files
+    if( dir.size() ){
+        // Ok, we have some folders
+        // you can now iterate through the files and load them into the ofImage vector
+        for (int idxFolder; idxFolder < (int)dir.size(); idxFolder++) {
+            ofLogNotice() << "Path n° " << ofToString(idxFolder) << "] " << dir.getPath(idxFolder);
+        }
+    }
+    
 }
+
 //void enigmaManager::draw(){
 //    
 //}

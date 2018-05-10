@@ -59,8 +59,6 @@ void scGame1::draw(){ //draw scene 1 here
     // Style setup
     ofSetColor(ofColor::red);
     
-    ofDrawBitmapString(bigEnigmaManager().getEnigmaName(), 0.5 * ofGetWidth(), 0.5 * ofGetHeight());
-    
     scScene::draw();            // Draw title
     myPlayerManager->draw();    // Draw players
     //drawCenterText(myPlayerManager->getLastMessage(), 0, 50); // Draw last message

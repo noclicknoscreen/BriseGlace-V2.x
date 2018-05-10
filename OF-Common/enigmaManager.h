@@ -9,6 +9,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "enigma.h"
 
 enum gameType {MOTUS = 1, IMAGE_GRID, BOGGLE};
 
@@ -21,10 +22,12 @@ public:
     void update();
     //void draw();
     
-    string getEnigmaName();
+    void pickNewEnigma(gameType _type);
+    enigma* getCurrentEnigma(){return &mCurrentEnigma;};
     
 private:
-    
+    enigma mCurrentEnigma;
+    ofDirectory dir;
     
 public:
     static enigmaManager& get(){
@@ -39,19 +42,4 @@ inline enigmaManager& bigEnigmaManager()
     return enigmaManager::get();
 }
 
-////////////////////////////////////////////////////////////////////////////////////
-//class enigma{
-//
-//private:
-//    vector<hint>    mHints;
-//    hint            mReward;
-//    
-//};
-//
-////////////////////////////////////////////////////////////////////////////////////
-//struct hint{
-//    
-//    string  mDescription,
-//    ofImage mImage;
-//    
-//};
+

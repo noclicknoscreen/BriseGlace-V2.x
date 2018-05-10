@@ -51,4 +51,7 @@ void scSelectGame::sceneWillDisappear( ofxScene * toScreen ){
 void scSelectGame::someoneSpoke(player & _player){
     scScene::someoneSpoke(_player);
     mText = _player.getLastMessage();
+    
+    bigEnigmaManager().pickNewEnigma(MOTUS);
+    
 }
