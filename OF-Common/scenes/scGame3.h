@@ -25,6 +25,9 @@ using namespace msa::physics;
 #define SPRING_MAX_WIDTH		UNITS(3)
 
 
+#define depthDivide 2
+
+
 class scGame3 : public scScene{
 
 public:
@@ -46,6 +49,7 @@ public:
     void drawSprings();
     void applyRandomForces();
     void createTestParticules();
+    void createParticules(string _word);
     
     void keyPressed(int key);
     

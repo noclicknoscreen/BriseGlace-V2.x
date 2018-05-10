@@ -14,10 +14,11 @@ player::player(ofColor _color){
     mColor = _color;
 }
 
-void player::update(bool _isAvailable, string _message, float _volume){
+void player::update(bool _isAvailable, string _message, float _volume, int _number){
     mVolume = 0.5*mVolume + 0.5*ofMap(_volume, 0.0001, .001, 0, 1, true);
     mLastMessage = _message;
     mIsAvailable = _isAvailable;
+    mNumber = _number;
 }
 
 void player::draw(ofVec2f _pos){
