@@ -71,9 +71,9 @@ void scGame3::draw(){
 
 //scene notifications
 void scGame3::sceneWillAppear( ofxScene * fromScreen ){
+    scScene::sceneWillAppear(fromScreen);
     // reset our scene when we appear
     setupLighting();
-    
 };
 
 //scene notifications

@@ -95,6 +95,7 @@ void scGame1::someoneSpoke(player & _player){
 //scene notifications
 void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
+    scScene::sceneWillAppear(fromScreen);
 };
 
 //scene notifications

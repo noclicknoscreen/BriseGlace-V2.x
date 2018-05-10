@@ -33,7 +33,7 @@ void scIntro::draw(){ //draw scene 1 here
 
 //scene notifications
 void scIntro::sceneWillAppear( ofxScene * fromScreen ){
-    myPlayerManager->freshRestart();
+    scScene::sceneWillAppear(fromScreen);
 };
 
 //scene notifications

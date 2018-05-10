@@ -81,7 +81,7 @@ void playerManager::loadPlayers(ofBuffer _datas){
         }
         
         // Throw event when someone new spoke
-        if(mLastTime != mResponse["lastMessage"]["time"].asString() && mResponse["lastMessage"]["text"] != ""){
+        if(mLastTime != mResponse["lastMessage"]["time"].asString()){
             
             // update variables
             mLastMessage = mResponse["lastMessage"]["text"].asString();
@@ -132,7 +132,7 @@ void playerManager::draw(){
 void playerManager::urlResponse(ofHttpResponse & response){
     
     if(response.status==200){
-        ofLogNotice() << "Request answer received : " << response.request.name;
+        //ofLogNotice() << "Request answer received : " << response.request.name;
         //        if(response.request.name == "players"){
         loadPlayers(response.data);
         bLoadingPlayers = false;
