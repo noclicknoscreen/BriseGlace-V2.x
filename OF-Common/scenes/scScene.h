@@ -41,7 +41,5 @@ protected:
     ///////////// METHODS /////////////////////
     void drawCenterText(string _message, int _plusX=0, int _plusY=0);
     
-    ofEvent<player> evt;
-    
 };
 

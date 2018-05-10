@@ -7,6 +7,7 @@
 //
 
 #include "inputHandler.h"
+#include <algorithm>
 
 void inputHandler::setup()
 {
@@ -15,15 +16,18 @@ void inputHandler::setup()
     revealMode = false;
     currentRevealCube = 0;
     currentRevealLetter = 0;
+    
+    nbCubesRotated = 0;
 }
 
 void inputHandler::getNewText(player _player)
 {
     readyForNewText = false;
     
-    cout << "got new input from user " << userId << " : " << _player.getLastMessage() << endl;
-    text = _player.getLastMessage();
+    cout << "got new input from user " << userId << " : " << _player.getLastMessageToCompare() << endl;
     
+    text = _player.getLastMessageToCompare();
+
     ofPoint source;
     ofColor textColor;
     
@@ -38,21 +42,24 @@ void inputHandler::getNewText(player _player)
     for(int i=0; i<text.size(); i++)
     {
         letterElement elt;
-        elt.letter = ofToString(text[i]);
+        elt.letter = text.substr(i,1);//ofToString(text[i]);
         elt.textColor = textColor;
         
         elt.sourcePos = source;
         elt.currentPos = source;
         elt.destination = ofPoint(cumulatedOffset + ofGetWidth()/2 - font.getStringBoundingBox(text, 0, 0).getWidth(), inputTextYPosition);
         
-        elt.alpha = 255;
+        elt.alpha = 1.0;
         
         cumulatedOffset += font.getStringBoundingBox(elt.letter, 0, 0).getWidth() + spaceBetweenLetters;
         
         splittedString.push_back(elt);
     }
     
-    compareInput("bonheur");
+    
+    //TODO : GET IT FROM THE ENIGMA SINGLETON
+    wordToFind = "bonheur";
+    compareInput(wordToFind);
     setRevealMode();
     
 }
@@ -66,7 +73,7 @@ void inputHandler::draw()
         }
 }
 
-void inputHandler::update(cubeManager* cm)
+bool inputHandler::update(cubeManager* cm)
 {
     
     bool lettersAreFading = false;
@@ -83,7 +90,7 @@ void inputHandler::update(cubeManager* cm)
         if(splittedString[i].textColor.a > splittedString[i].alpha)
         {
             lettersAreFading = true;
-            splittedString[i].textColor.a -= 0.9;
+            splittedString[i].textColor.a -= 0.01;
         }
         
     }
@@ -103,7 +110,7 @@ void inputHandler::update(cubeManager* cm)
                 for(int c=0; c<cm->myCubes.size(); c++)
                 {
                     if(cm->myCubes[c].isRotating)
-                        somebodyRotating = true;
+                        somebodyRotating = true;        
                 }
             
             if(somebodyRotating)
@@ -113,6 +120,7 @@ void inputHandler::update(cubeManager* cm)
             else
             {
                 cm->myCubes[index].rotateToLetter(); //rotate the corresponding cube
+                nbCubesRotated ++;                   //count one letter found more
                 splittedString[currentRevealCube].alpha = 0;
             }
         }
@@ -132,20 +140,29 @@ void inputHandler::update(cubeManager* cm)
                     cout << "reveal finished, ready to get another proposal from user " << endl;
                     revealMode = false;
                     readyForNewText = true;
+                    if(nbCubesRotated == wordToFind.size())
+                    {
+                        return true;
+                    }
                 }
             }
     }
+    return false;
 }
 
 void inputHandler::compareInput(string wantedWord)
 {
+    //supression des accents :
+    wantedWord.erase (std::remove (wantedWord.begin(), wantedWord.end(), ' '), wantedWord.end());
+    
     for(int i=0; i<splittedString.size(); i++)
     {
         size_t found = wantedWord.find(splittedString[i].letter, 0);
-
+        cout << "compare this letter : " << splittedString[i].letter << endl;
         if(found==string::npos)
         {
             splittedString[i].alpha = 0;
+            cout << "not found => alpha=0" << endl;
         }
         
         while (found!=string::npos)
@@ -154,15 +171,18 @@ void inputHandler::compareInput(string wantedWord)
             if(std::find(duplicatesLetters.begin(), duplicatesLetters.end(), splittedString[i].letter) != duplicatesLetters.end())
             {
                 splittedString[i].alpha = 0;
+                cout << "found DUPLICATE => alpha=0" << endl;
             }
             else
             {
-                splittedString[i].alpha = 255;
+                splittedString[i].alpha = 1.0;
                 splittedString[i].correspondingCubes.push_back((int)found);
+                cout << "found correspondance => alpha=1.0" << endl;
                 
             }
             found = wantedWord.find(splittedString[i].letter, found+1);
         }
+        cout << "add to duplicates list " << endl;
         duplicatesLetters.push_back(splittedString[i].letter);
 
     }

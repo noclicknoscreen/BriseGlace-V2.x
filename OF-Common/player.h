@@ -21,6 +21,7 @@ public:
     
     int getVolume(){return mVolume;};
     string getLastMessage(){return mLastMessage;};
+    string getLastMessageToCompare(){return mLastMessageToCompare;};
     int getNumber(){return mNumber;};
     ofColor getColor(){return mColor;};
     void setPositionHistogram(ofPoint _pos){positionHistogram = _pos;};
