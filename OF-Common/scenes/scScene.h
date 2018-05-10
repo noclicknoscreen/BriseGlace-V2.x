@@ -8,6 +8,8 @@
 
 #pragma once
 
+#include "ofxSceneManager.h"
+
 #include "ofMain.h"
 #include "ofxScene.h"
 #include "ofxAnimatableFloat.h"

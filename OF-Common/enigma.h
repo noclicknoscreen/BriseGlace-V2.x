@@ -9,29 +9,21 @@
 #pragma once
 
 #include "ofMain.h"
-
-//////////////////////////////////////////////////////////////////////////////////
-class hint{
-    
-private:
-    string  mDesc;
-    ofImage mImg;
-    
-    // Getters & setters
-private:
-    string getDesc(){return mDesc;}
-    void setDesc(string _desc){mDesc = _desc;};
-    
-    ofImage* getImgRef(){return &mImg;};
-    void setImg(ofImage _img){mImg = _img;};
-    
-};
+#include "ofxJson.h"
 
 //////////////////////////////////////////////////////////////////////////////////
 class enigma{
     
+public:
+    bool load(string path);
+
 private:
-    vector<hint>    mHints;
-    hint            mReward;
+    string  mDesc;
+    
+    vector<ofImage*>    hintImages;
+    vector<string>      hintTexts;
+    
+    ofImage*            rewImage;
+    string              rewText;
     
 };
