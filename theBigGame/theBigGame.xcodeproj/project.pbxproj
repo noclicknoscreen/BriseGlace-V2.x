@@ -38,6 +38,8 @@
 		D272DB9520A46FD1001B05DD /* cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D272DB8F20A46FD1001B05DD /* cube.cpp */; };
 		D272DB9620A46FD1001B05DD /* cubeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D272DB9120A46FD1001B05DD /* cubeManager.cpp */; };
 		D272DB9720A46FD1001B05DD /* inputHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D272DB9320A46FD1001B05DD /* inputHandler.cpp */; };
+		D272DB9C20A472D7001B05DD /* particule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D272DB9A20A472D7001B05DD /* particule.cpp */; };
+		D272DBC720A4733F001B05DD /* MSACoreGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D272DBA620A4733F001B05DD /* MSACoreGL.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
@@ -140,6 +142,30 @@
 		D272DB9220A46FD1001B05DD /* cubeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeManager.h; sourceTree = "<group>"; };
 		D272DB9320A46FD1001B05DD /* inputHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inputHandler.cpp; sourceTree = "<group>"; };
 		D272DB9420A46FD1001B05DD /* inputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputHandler.h; sourceTree = "<group>"; };
+		D272DB9A20A472D7001B05DD /* particule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = particule.cpp; sourceTree = "<group>"; };
+		D272DB9B20A472D7001B05DD /* particule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = particule.h; sourceTree = "<group>"; };
+		D272DBA220A4733F001B05DD /* MSACore-Cinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSACore-Cinder.h"; sourceTree = "<group>"; };
+		D272DBA320A4733F001B05DD /* MSACore-OF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSACore-OF.h"; sourceTree = "<group>"; };
+		D272DBA420A4733F001B05DD /* MSACore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSACore.h; sourceTree = "<group>"; };
+		D272DBA520A4733F001B05DD /* MSACoreCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSACoreCommon.h; sourceTree = "<group>"; };
+		D272DBA620A4733F001B05DD /* MSACoreGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSACoreGL.cpp; sourceTree = "<group>"; };
+		D272DBA720A4733F001B05DD /* MSACoreGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSACoreGL.h; sourceTree = "<group>"; };
+		D272DBA820A4733F001B05DD /* MSACoreMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSACoreMath.h; sourceTree = "<group>"; };
+		D272DBB520A4733F001B05DD /* MSAPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysics.h; sourceTree = "<group>"; };
+		D272DBB620A4733F001B05DD /* MSAPhysics2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysics2D.h; sourceTree = "<group>"; };
+		D272DBB720A4733F001B05DD /* MSAPhysics3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysics3D.h; sourceTree = "<group>"; };
+		D272DBB820A4733F001B05DD /* MSAPhysicsAttraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysicsAttraction.h; sourceTree = "<group>"; };
+		D272DBB920A4733F001B05DD /* MSAPhysicsConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysicsConstraint.h; sourceTree = "<group>"; };
+		D272DBBA20A4733F001B05DD /* MSAPhysicsParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysicsParams.h; sourceTree = "<group>"; };
+		D272DBBB20A4733F001B05DD /* MSAPhysicsParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysicsParticle.h; sourceTree = "<group>"; };
+		D272DBBC20A4733F001B05DD /* MSAPhysicsSector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysicsSector.h; sourceTree = "<group>"; };
+		D272DBBD20A4733F001B05DD /* MSAPhysicsSpring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysicsSpring.h; sourceTree = "<group>"; };
+		D272DBBE20A4733F001B05DD /* MSAPhysicsTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysicsTypes.h; sourceTree = "<group>"; };
+		D272DBBF20A4733F001B05DD /* MSAPhysicsWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysicsWorld.h; sourceTree = "<group>"; };
+		D272DBC120A4733F001B05DD /* MSAPhysicsCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysicsCallbacks.h; sourceTree = "<group>"; };
+		D272DBC220A4733F001B05DD /* MSAPhysicsDataRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysicsDataRecorder.h; sourceTree = "<group>"; };
+		D272DBC320A4733F001B05DD /* MSAPhysicsParticleDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysicsParticleDrawer.h; sourceTree = "<group>"; };
+		D272DBC420A4733F001B05DD /* MSAPhysicsParticleUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAPhysicsParticleUpdater.h; sourceTree = "<group>"; };
 		E112B3AEBEA2C091BF2B40AE /* ofxPanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPanel.cpp; path = ../../../addons/ofxGui/src/ofxPanel.cpp; sourceTree = SOURCE_ROOT; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* theBigGameDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theBigGameDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -288,6 +314,8 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				D272DB9D20A4733F001B05DD /* ofxMSACore */,
+				D272DBA920A4733F001B05DD /* ofxMSAPhysics */,
 				8D83D7AC476703EBECC1932D /* ofxAnimatable */,
 				480A780D8D0308AE4A368801 /* ofxGui */,
 				2865DAEF86B1907A704CA70B /* ofxJSON */,
@@ -307,6 +335,7 @@
 		D2462BC720A1FD97007EE1E3 /* OF-Common */ = {
 			isa = PBXGroup;
 			children = (
+				D272DB9920A472D7001B05DD /* cubes3D */,
 				D272DB8E20A46FD1001B05DD /* cubes */,
 				D2462BC820A1FD97007EE1E3 /* addons */,
 				1C35A75120A449AF00DEC2D8 /* enigmaManager.cpp */,
@@ -385,6 +414,77 @@
 				D272DB9420A46FD1001B05DD /* inputHandler.h */,
 			);
 			path = cubes;
+			sourceTree = "<group>";
+		};
+		D272DB9920A472D7001B05DD /* cubes3D */ = {
+			isa = PBXGroup;
+			children = (
+				D272DB9A20A472D7001B05DD /* particule.cpp */,
+				D272DB9B20A472D7001B05DD /* particule.h */,
+			);
+			path = cubes3D;
+			sourceTree = "<group>";
+		};
+		D272DB9D20A4733F001B05DD /* ofxMSACore */ = {
+			isa = PBXGroup;
+			children = (
+				D272DBA120A4733F001B05DD /* src */,
+			);
+			name = ofxMSACore;
+			path = ../../../addons/ofxMSACore;
+			sourceTree = "<group>";
+		};
+		D272DBA120A4733F001B05DD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D272DBA220A4733F001B05DD /* MSACore-Cinder.h */,
+				D272DBA320A4733F001B05DD /* MSACore-OF.h */,
+				D272DBA420A4733F001B05DD /* MSACore.h */,
+				D272DBA520A4733F001B05DD /* MSACoreCommon.h */,
+				D272DBA620A4733F001B05DD /* MSACoreGL.cpp */,
+				D272DBA720A4733F001B05DD /* MSACoreGL.h */,
+				D272DBA820A4733F001B05DD /* MSACoreMath.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D272DBA920A4733F001B05DD /* ofxMSAPhysics */ = {
+			isa = PBXGroup;
+			children = (
+				D272DBB420A4733F001B05DD /* src */,
+			);
+			name = ofxMSAPhysics;
+			path = ../../../addons/ofxMSAPhysics;
+			sourceTree = "<group>";
+		};
+		D272DBB420A4733F001B05DD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D272DBB520A4733F001B05DD /* MSAPhysics.h */,
+				D272DBB620A4733F001B05DD /* MSAPhysics2D.h */,
+				D272DBB720A4733F001B05DD /* MSAPhysics3D.h */,
+				D272DBB820A4733F001B05DD /* MSAPhysicsAttraction.h */,
+				D272DBB920A4733F001B05DD /* MSAPhysicsConstraint.h */,
+				D272DBBA20A4733F001B05DD /* MSAPhysicsParams.h */,
+				D272DBBB20A4733F001B05DD /* MSAPhysicsParticle.h */,
+				D272DBBC20A4733F001B05DD /* MSAPhysicsSector.h */,
+				D272DBBD20A4733F001B05DD /* MSAPhysicsSpring.h */,
+				D272DBBE20A4733F001B05DD /* MSAPhysicsTypes.h */,
+				D272DBBF20A4733F001B05DD /* MSAPhysicsWorld.h */,
+				D272DBC020A4733F001B05DD /* obselete */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D272DBC020A4733F001B05DD /* obselete */ = {
+			isa = PBXGroup;
+			children = (
+				D272DBC120A4733F001B05DD /* MSAPhysicsCallbacks.h */,
+				D272DBC220A4733F001B05DD /* MSAPhysicsDataRecorder.h */,
+				D272DBC320A4733F001B05DD /* MSAPhysicsParticleDrawer.h */,
+				D272DBC420A4733F001B05DD /* MSAPhysicsParticleUpdater.h */,
+			);
+			path = obselete;
 			sourceTree = "<group>";
 		};
 		D486FC87F063317BB47E9FAC /* include */ = {
@@ -538,10 +638,12 @@
 				52C77060FBB9307AEFDAE8C6 /* ofxAnimatable.cpp in Sources */,
 				D2462BF420A1FD97007EE1E3 /* playerManager.cpp in Sources */,
 				D2462BFD20A1FD97007EE1E3 /* scVictory.cpp in Sources */,
+				D272DB9C20A472D7001B05DD /* particule.cpp in Sources */,
 				D2462BF820A1FD97007EE1E3 /* scHint.cpp in Sources */,
 				1C35A75320A449AF00DEC2D8 /* enigmaManager.cpp in Sources */,
 				5D067CF087427621DD1E64B8 /* ofxAnimatableFloat.cpp in Sources */,
 				74D31933EE82E12834DB3B06 /* ofxAnimatableOfColor.cpp in Sources */,
+				D272DBC720A4733F001B05DD /* MSACoreGL.cpp in Sources */,
 				D272DB9620A46FD1001B05DD /* cubeManager.cpp in Sources */,
 				D2462BF720A1FD97007EE1E3 /* scGame3.cpp in Sources */,
 				D2462BF920A1FD97007EE1E3 /* scInitialize.cpp in Sources */,
