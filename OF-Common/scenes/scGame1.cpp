@@ -95,6 +95,8 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     scScene::sceneWillAppear(fromScreen);
     // Player manager events
     ofAddListener(myPlayerManager->someoneSpoke,this,&scGame1::someoneSpoke);
+    // Load the next enigma
+    bigEnigmaManager().pickNewEnigma(MOTUS);
 };
 
 //scene notifications
