@@ -16,7 +16,6 @@ void cubeManager::setup()
     ofSetBoxResolution(50);
     ofSetSmoothLighting(true);
     ofSetSphereResolution(32);
-    ofEnableLighting();
  
     //lumiere
     spotLight.setSpotlight();
