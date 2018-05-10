@@ -16,7 +16,7 @@ void scGame3::setup(){
     
     //setup the 3D scene
     initScene();
-    setupLighting();
+    
     
     //test particles ;)
     createTestParticules();
@@ -71,6 +71,8 @@ void scGame3::draw(){
 //scene notifications
 void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
+    setupLighting();
+    
 };
 
 //scene notifications

@@ -27,6 +27,11 @@ void scGame1::setup(){  //load your scene 1 assets here...
     //inputs
     myInputManager.setup();
     
+    //TODO :: bonheur ecrit en dur => lu dans le JSON 
+    myCubeManager.getWord("bonheur");
+    myInputManager.clearDuplicatesLettersHistory();
+    myInputManager.setReadyForNewText();
+    
     // Player manager events
     ofAddListener(myPlayerManager->someoneSpoke,this,&scGame1::someoneSpoke);
     
@@ -74,9 +79,7 @@ void scGame1::keyPressed(int key){
     
     if(key==' ')
     {
-        myCubeManager.getWord("bonheur");
-        myInputManager.clearDuplicatesLettersHistory();
-        myInputManager.setReadyForNewText();
+
     }
     
 }
@@ -85,7 +88,7 @@ void scGame1::keyPressed(int key){
 void scGame1::someoneSpoke(player & _player){
     scScene::someoneSpoke(_player);
     
-    myInputManager.getNewText(_player.getNumber(), _player.getLastMessage());
+    myInputManager.getNewText(_player);
     
 }
 

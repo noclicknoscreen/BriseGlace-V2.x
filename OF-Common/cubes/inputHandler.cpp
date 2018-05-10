@@ -15,40 +15,22 @@ void inputHandler::setup()
     revealMode = false;
     currentRevealCube = 0;
     currentRevealLetter = 0;
-    
-    
 }
 
-void inputHandler::getNewText(int _userId, string txt)
+void inputHandler::getNewText(player _player)
 {
     readyForNewText = false;
     
-    cout << "got new input from user " << userId << " : " << txt << endl;
-    text = txt;
+    cout << "got new input from user " << userId << " : " << _player.getLastMessage() << endl;
+    text = _player.getLastMessage();
     
     ofPoint source;
     ofColor textColor;
     
-    userId = _userId;
+    userId = _player.getNumber();
+    textColor = _player.getColor();
+    source = _player.getPositionHistogram();
     
-    switch(userId)
-    {
-        case 0:
-            source = ofPoint(0, ofGetHeight());
-            textColor = ofColor::green;
-            break;
-        case 1:
-            source = ofPoint(ofGetWidth()/2, ofGetHeight());
-            textColor = ofColor::red;
-            break;
-        case 2:
-            source = ofPoint(ofGetWidth(), ofGetHeight());
-            textColor = ofColor::blue;
-            break;
-        default:
-            textColor = ofColor::black;
-            break;
-    }
     
     splittedString.clear();
     float cumulatedOffset = 0;

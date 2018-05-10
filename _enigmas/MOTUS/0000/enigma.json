@@ -1,0 +1,20 @@
+{
+    "Jeux": "motus",
+    "mot": "Chateau",
+    "indice1": {
+        "nom": "Fort",
+        "photo": "image1.png"
+    },
+    "indice2": {
+        "nom": "Historique",
+        "photo": "image2.jpg"
+    },
+    "indice3": {
+        "nom": "Pierre",
+        "photo": "image3.jpg"
+    },
+    "recompense": {
+        "description": "Un ch\u00e2teau est \u00e0 l'origine une construction m\u00e9di\u00e9vale destin\u00e9e \u00e0 prot\u00e9ger le seigneur et \u00e0 symboliser son autorit\u00e9 au sein du fief. Les premiers ch\u00e2teaux \u00e9taient construits en bois souvent sur une \u00e9l\u00e9vation de terre (motte castrale ou f\u00e9odale), puis en pierre afin de r\u00e9sister aux nouvelles armes de guerre. On les appela les ch\u00e2teaux forts.",
+        "photo": "image4.jpg"
+    }
+}
