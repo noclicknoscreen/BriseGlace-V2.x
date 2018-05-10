@@ -91,7 +91,9 @@ void playerManager::loadPlayers(ofBuffer _datas){
             // Throw event
             std::map<int, player>::iterator onePlayer = mPlayers.find(mLastNumber);
             if (onePlayer != mPlayers.end()){
-                ofNotifyEvent(someoneSpoke, onePlayer->second, this);
+                if(onePlayer->second.getLastMessage() != ""){
+                    ofNotifyEvent(someoneSpoke, onePlayer->second, this);
+                }
             }
             
         }
