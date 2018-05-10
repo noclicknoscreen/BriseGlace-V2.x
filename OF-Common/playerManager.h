@@ -23,6 +23,8 @@ public:
     int getLastNumber(){return mLastNumber;};
     string getLastMessage(){return mLastMessage;};
     
+    void urlResponse(ofHttpResponse & response);
+    
 private:
     
     int mLastNumber;
@@ -35,6 +37,9 @@ private:
     
     map<int, player> mPlayers;
     map<int, ofColor> mColors;
+    
+    bool bLoadingPlayers = false;
+    void loadPlayers(ofBuffer _datas);
     
 public:
     ofEvent<player> someoneSpoke;
