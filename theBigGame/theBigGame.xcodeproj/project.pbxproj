@@ -142,7 +142,7 @@
 		D2462BED20A1FD97007EE1E3 /* scVictory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scVictory.h; sourceTree = "<group>"; };
 		E112B3AEBEA2C091BF2B40AE /* ofxPanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPanel.cpp; path = ../../../addons/ofxGui/src/ofxPanel.cpp; sourceTree = SOURCE_ROOT; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
-		E4B69B5B0A3A1756003C02F2 /* sceneManager-RoughDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sceneManager-RoughDebug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69B5B0A3A1756003C02F2 /* theBigGameDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theBigGameDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
@@ -309,10 +309,10 @@
 			children = (
 				D2462BC820A1FD97007EE1E3 /* addons */,
 				D2462BD020A1FD97007EE1E3 /* includeMotus */,
-				D2462BD720A1FD97007EE1E3 /* player.cpp */,
-				D2462BD820A1FD97007EE1E3 /* player.h */,
 				1C35A75120A449AF00DEC2D8 /* enigmaManager.cpp */,
 				1C35A75220A449AF00DEC2D8 /* enigmaManager.h */,
+				D2462BD720A1FD97007EE1E3 /* player.cpp */,
+				D2462BD820A1FD97007EE1E3 /* player.h */,
 				D2462BD920A1FD97007EE1E3 /* playerManager.cpp */,
 				D2462BDA20A1FD97007EE1E3 /* playerManager.h */,
 				D2462BDB20A1FD97007EE1E3 /* scenes */,
@@ -412,7 +412,7 @@
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
 				6948EE371B920CB800B5AC1A /* local_addons */,
-				E4B69B5B0A3A1756003C02F2 /* sceneManager-RoughDebug.app */,
+				E4B69B5B0A3A1756003C02F2 /* theBigGameDebug.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -447,9 +447,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4B69B5A0A3A1756003C02F2 /* sceneManager-Rough */ = {
+		E4B69B5A0A3A1756003C02F2 /* theBigGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "sceneManager-Rough" */;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "theBigGame" */;
 			buildPhases = (
 				E4B69B580A3A1756003C02F2 /* Sources */,
 				E4B69B590A3A1756003C02F2 /* Frameworks */,
@@ -461,9 +461,9 @@
 			dependencies = (
 				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
 			);
-			name = "sceneManager-Rough";
+			name = theBigGame;
 			productName = myOFApp;
-			productReference = E4B69B5B0A3A1756003C02F2 /* sceneManager-RoughDebug.app */;
+			productReference = E4B69B5B0A3A1756003C02F2 /* theBigGameDebug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -474,7 +474,7 @@
 			attributes = {
 				LastUpgradeCheck = 0600;
 			};
-			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "sceneManager-Rough" */;
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "theBigGame" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -495,7 +495,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				E4B69B5A0A3A1756003C02F2 /* sceneManager-Rough */,
+				E4B69B5A0A3A1756003C02F2 /* theBigGame */,
 			);
 		};
 /* End PBXProject section */
@@ -741,7 +741,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "sceneManager-Rough" */ = {
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "theBigGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B4E0A3A1720003C02F2 /* Debug */,
@@ -750,7 +750,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "sceneManager-Rough" */ = {
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "theBigGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B600A3A1757003C02F2 /* Debug */,

@@ -12,6 +12,7 @@
 
 enum gameType {MOTUS = 1, IMAGE_GRID, BOGGLE};
 
+//////////////////////////////////////////////////////////////////////////////////
 class enigmaManager : public ofBaseApp{
     
 public:
@@ -22,6 +23,10 @@ public:
     
     string getEnigmaName();
     
+private:
+    
+    
+public:
     static enigmaManager& get(){
         static enigmaManager myEnigmaManager;
         return myEnigmaManager;
@@ -34,3 +39,19 @@ inline enigmaManager& bigEnigmaManager()
     return enigmaManager::get();
 }
 
+////////////////////////////////////////////////////////////////////////////////////
+//class enigma{
+//
+//private:
+//    vector<hint>    mHints;
+//    hint            mReward;
+//    
+//};
+//
+////////////////////////////////////////////////////////////////////////////////////
+//struct hint{
+//    
+//    string  mDescription,
+//    ofImage mImage;
+//    
+//};
