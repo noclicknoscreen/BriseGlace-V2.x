@@ -20,6 +20,9 @@ void ofApp::setup(){
     ///////////////////////////////////////
     myPlayerManager.setup();
     
+    /////////////////////////////////////
+    bigEnigmaManager().setup();
+    
     ///////////////////////////////////////
 	sceneManager = ofxSceneManager::instance();
     sceneManager->setupCurtain(ofColor::white, ofRectangle(0,0, ofGetWidth(), ofGetHeight()) );

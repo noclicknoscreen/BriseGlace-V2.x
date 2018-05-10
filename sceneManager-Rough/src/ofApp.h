@@ -18,6 +18,8 @@
 
 #include "playerManager.h"
 
+#include "enigmaManager.h"
+
 class ofApp : public ofBaseApp{
     
     void setup();

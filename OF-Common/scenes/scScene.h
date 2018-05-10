@@ -14,6 +14,7 @@
 
 #include "ofEvents.h"
 #include "playerManager.h"
+#include "enigmaManager.h"
 
 enum Scenes{ INTRO = 1, INITIALIZE, SELECT_GAME, GAME1, GAME2, GAME3, HINT, VICTORY };
 

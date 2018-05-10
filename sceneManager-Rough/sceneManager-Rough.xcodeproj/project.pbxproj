@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C35A75320A449AF00DEC2D8 /* enigmaManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C35A75120A449AF00DEC2D8 /* enigmaManager.cpp */; };
 		1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 907C5B5E104864A2D3A25745 /* ofxToggle.cpp */; };
 		263D043F32BCC3BB077BB351 /* ofxScreenCurtain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2725100619E6426F975DDAD7 /* ofxScreenCurtain.cpp */; };
 		2C61E47DDBFD642D87E63940 /* ofxAnimatableQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E5B92DA6F38EA1F474E3EB7 /* ofxAnimatableQueue.cpp */; };
@@ -79,6 +80,8 @@
 		1645F56257269CD0356320BD /* ofxJSON.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJSON.h; path = ../../../addons/ofxJSON/src/ofxJSON.h; sourceTree = SOURCE_ROOT; };
 		17E65988300FBD9AAA2CD0CA /* ofxGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGui.h; path = ../../../addons/ofxGui/src/ofxGui.h; sourceTree = SOURCE_ROOT; };
 		1C0DA2561397A7DE0246858B /* ofxGuiGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGuiGroup.h; path = ../../../addons/ofxGui/src/ofxGuiGroup.h; sourceTree = SOURCE_ROOT; };
+		1C35A75120A449AF00DEC2D8 /* enigmaManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = enigmaManager.cpp; sourceTree = "<group>"; };
+		1C35A75220A449AF00DEC2D8 /* enigmaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enigmaManager.h; sourceTree = "<group>"; };
 		1C9E4AC6CF4626BA74F7E994 /* ofxAnimatableFloat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAnimatableFloat.cpp; path = ../../../addons/ofxAnimatable/src/ofxAnimatableFloat.cpp; sourceTree = SOURCE_ROOT; };
 		21BDE665988474F1B1F4D302 /* jsoncpp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = jsoncpp.cpp; path = ../../../addons/ofxJSON/libs/jsoncpp/src/jsoncpp.cpp; sourceTree = SOURCE_ROOT; };
 		26A541233BC6F736E758F718 /* ofxJSONElement.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJSONElement.h; path = ../../../addons/ofxJSON/src/ofxJSONElement.h; sourceTree = SOURCE_ROOT; };
@@ -308,6 +311,8 @@
 				D2462BD020A1FD97007EE1E3 /* includeMotus */,
 				D2462BD720A1FD97007EE1E3 /* player.cpp */,
 				D2462BD820A1FD97007EE1E3 /* player.h */,
+				1C35A75120A449AF00DEC2D8 /* enigmaManager.cpp */,
+				1C35A75220A449AF00DEC2D8 /* enigmaManager.h */,
 				D2462BD920A1FD97007EE1E3 /* playerManager.cpp */,
 				D2462BDA20A1FD97007EE1E3 /* playerManager.h */,
 				D2462BDB20A1FD97007EE1E3 /* scenes */,
@@ -534,6 +539,7 @@
 				D2462BF420A1FD97007EE1E3 /* playerManager.cpp in Sources */,
 				D2462BFD20A1FD97007EE1E3 /* scVictory.cpp in Sources */,
 				D2462BF820A1FD97007EE1E3 /* scHint.cpp in Sources */,
+				1C35A75320A449AF00DEC2D8 /* enigmaManager.cpp in Sources */,
 				5D067CF087427621DD1E64B8 /* ofxAnimatableFloat.cpp in Sources */,
 				74D31933EE82E12834DB3B06 /* ofxAnimatableOfColor.cpp in Sources */,
 				D2462BF720A1FD97007EE1E3 /* scGame3.cpp in Sources */,
