@@ -17,6 +17,7 @@ class playerManager : public ofBaseApp{
 public:
 //    void setup(ofEvent<player> _someoneSpoke);
     void setup();
+    void freshRestart(); // Reset messages for fresh restart
     void update();
     void draw();
     

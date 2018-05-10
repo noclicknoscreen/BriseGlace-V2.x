@@ -19,9 +19,13 @@ void playerManager::setup(){
     
     //    someoneSpoke = _someoneSpoke;
     ofRegisterURLNotification(this);
+    freshRestart();
+    
+}
+
+void playerManager::freshRestart(){
     ofLoadURLAsync("https://localhost:8443/resetPlayers","resetPlayers");
     bLoadingPlayers = true;
-    
 }
 
 //--------------------------------------------------------------
@@ -77,7 +81,8 @@ void playerManager::loadPlayers(ofBuffer _datas){
         }
         
         // Throw event when someone new spoke
-        if(mLastTime != mResponse["lastMessage"]["time"].asString()){
+        if(mLastTime != mResponse["lastMessage"]["time"].asString() && mResponse["lastMessage"]["text"] != ""){
+            
             // update variables
             mLastMessage = mResponse["lastMessage"]["text"].asString();
             mLastTime = mResponse["lastMessage"]["time"].asString();

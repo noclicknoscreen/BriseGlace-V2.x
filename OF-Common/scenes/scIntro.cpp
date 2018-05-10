@@ -23,7 +23,6 @@ void scIntro::update(float dt){ //update scene 1 here
 
 void scIntro::draw(){ //draw scene 1 here
 
-    
     ofPushStyle();
     // Style setup
     ofSetColor(ofColor::black);
@@ -34,6 +33,7 @@ void scIntro::draw(){ //draw scene 1 here
 
 //scene notifications
 void scIntro::sceneWillAppear( ofxScene * fromScreen ){
+    myPlayerManager->freshRestart();
 };
 
 //scene notifications
