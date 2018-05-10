@@ -92,9 +92,9 @@ void scGame3::someoneSpoke(player & _player){
 
 //scene notifications
 void scGame3::sceneWillAppear( ofxScene * fromScreen ){
+    scScene::sceneWillAppear(fromScreen);
     // reset our scene when we appear
     setupLighting();
-    
 };
 
 //scene notifications

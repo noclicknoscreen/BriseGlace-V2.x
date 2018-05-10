@@ -41,6 +41,7 @@ void scSelectGame::draw(){ //draw scene 1 here
 //scene notifications
 void scSelectGame::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
+    scScene::sceneWillAppear(fromScreen);
 };
 
 //scene notifications

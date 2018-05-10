@@ -47,6 +47,7 @@ void scInitialize::draw(){ //draw scene 1 here
 
 //scene notifications
 void scInitialize::sceneWillAppear( ofxScene * fromScreen ){
+    scScene::sceneWillAppear(fromScreen);
     // reset timer
     startTime = ofGetElapsedTimeMillis();  // get the start time
     bTimerReached = false;

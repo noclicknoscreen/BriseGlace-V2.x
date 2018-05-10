@@ -35,3 +35,10 @@ void scScene::drawCenterText(string _message, int _plusX, int _plusY){
 void scScene::someoneSpoke(player & _player){
     ofLogNotice() << "[Scene " << getSceneID()<< "] SomeOne Spoke : " << _player.getNumber() << ":" << _player.getLastMessage();
 }
+
+void scScene::sceneWillAppear( ofxScene * fromScreen ){
+    myPlayerManager->freshRestart();
+}
+void scScene::sceneWillDisappear( ofxScene * fromScreen ){
+    
+}

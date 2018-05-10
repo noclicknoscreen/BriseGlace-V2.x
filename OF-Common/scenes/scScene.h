@@ -28,6 +28,9 @@ public:
     
     void someoneSpoke(player & _player);
     
+    void sceneWillAppear( ofxScene * fromScreen );
+    void sceneWillDisappear( ofxScene * fromScreen );
+    
 protected:
     ///////////// MEMBERS /////////////////////
     ofTrueTypeFont myFont24;        // Draw text
