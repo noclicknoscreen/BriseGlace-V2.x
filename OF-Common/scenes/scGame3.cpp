@@ -136,7 +136,7 @@ void scGame3::initScene() {
     
     world = World3D::create();
     world->setGravity(ofVec3f(0, GRAVITY, 0));
-    world->setWorldSize(ofVec3f(-width/2, -height, -width/2), ofVec3f(width/2, height, width/2));
+    world->setWorldSize(ofVec3f(-width/2, -height, -width/(2*depthDivide)), ofVec3f(width/2, height, width/(2*depthDivide)));
     world->setSectorCount(SECTOR_COUNT);
     world->enableCollision();
 }
@@ -170,10 +170,10 @@ void scGame3::drawRoom()
     glColor3f(.85, 0.85, 0.85);		glVertex3f(width/2, height+1, -width/2);
     
     // back wall
-    glColor3f(.9, 0.9, 0.9);		glVertex3f(width/2, height+1, -width/2);
-    glColor3f(1, 1, 1);				glVertex3f(width/2, -height, -width/2);
-    glColor3f(0.95, 0.95, 0.95);	glVertex3f(-width/2, -height, -width/2);
-    glColor3f(.85, 0.85, 0.85);		glVertex3f(-width/2, height+1, -width/2);
+    glColor3f(.9, 0.9, 0.9);		glVertex3f(width/2, height+1, -width/(2*depthDivide));
+    glColor3f(1, 1, 1);				glVertex3f(width/2, -height, -width/(2*depthDivide));
+    glColor3f(0.95, 0.95, 0.95);	glVertex3f(-width/2, -height, -width/(2*depthDivide));
+    glColor3f(.85, 0.85, 0.85);		glVertex3f(-width/2, height+1, -width/(2*depthDivide));
     
     // left wall
     glColor3f(.9, 0.9, 0.9);		glVertex3f(-width/2, height+1, -width/2);
