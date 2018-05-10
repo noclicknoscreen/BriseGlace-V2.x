@@ -55,14 +55,16 @@ app.get('/display', function(req, res) {
   res.sendFile(__dirname + '/public/display.html');
 });
 app.get('/players', function(req, res) {
-
-  //console.log("Players sent to HTTP : ");
-
   res.setHeader('Content-Type', 'application/json');
   res.send(JSON.stringify(playerManager.strPlayers()));
 });
 app.get('/resetPlayers', function(req, res) {
   console.log("resetPlayers");
+  // Reset the players
+  playerManager.resetPlayers();
+  // Then send
+  res.setHeader('Content-Type', 'application/json');
+  res.send(JSON.stringify(playerManager.strPlayers()));
 });
 
 

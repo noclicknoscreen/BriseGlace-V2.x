@@ -103,6 +103,17 @@ module.exports = {
         foundPlayer.volume = volume;
     }
     return foundPlayer;
+  },
+
+  // Reset players (basically, last messages)
+  resetPlayers: function (){
+
+      lastMessage = {time:new Date().toLocaleString(), text:""};
+
+      for (var idxPlayer in players) {
+        players[idxPlayer].lastMessage = {time:new Date().toLocaleString(), text:""};
+      }
+
   }
 
 };
