@@ -22,7 +22,7 @@ particule::particule(World3D_ptr _world, float _size, ofVec3f pos, string _lette
     me->moveTo(pos);
     me->setRadius(size/2);
     texture.load("contreplaque.png");
-    font.load("Arial.ttf", 34);
+    font.load("Avenir.ttc", 34);
     letter = _letter;
     initPos = pos;
 }
