@@ -17,10 +17,15 @@ void scGame3::setup(){
     //setup the 3D scene
     initScene();
     
+    // Player manager events
+    ofAddListener(myPlayerManager->someoneSpoke,this,&scGame3::someoneSpoke);
     
     //test particles ;)
     //createTestParticules();
-    createParticules("BONHEUR");
+    
+    //TODO : word to be taken from enigma Singleton
+    wantedWord = "BONHEUR";
+    createParticules(wantedWord);
 };
 
 
@@ -69,6 +74,22 @@ void scGame3::draw(){
     
 };
 
+
+// Speaking event
+void scGame3::someoneSpoke(player & _player){
+    scScene::someoneSpoke(_player);
+   
+    if(toUpperCase(_player.getLastMessage()) == toUpperCase(wantedWord))
+    {
+        cout << "c'est gagné !!! " << endl;
+    }
+    else
+    {
+        addRandomForce(FORCE_AMOUNT * 3);
+    }
+    
+}
+
 //scene notifications
 void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
@@ -79,6 +100,20 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
 //scene notifications
 void scGame3::sceneWillDisappear( ofxScene * toScreen ){
 }
+
+string scGame3::toUpperCase(string str)
+{
+    string strUpper = "";
+    
+    for( int i=0; i<str.length(); i++ )
+    {
+        strUpper += toupper( str[ i ] );
+    }
+    return strUpper;
+}  
+
+
+
 
 
 //--------------------------------------------------------------

@@ -37,6 +37,7 @@ public:
     void update(float dt);
 	void draw();
     
+    void someoneSpoke(player & _player);
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
     
@@ -50,6 +51,8 @@ public:
     void applyRandomForces();
     void createTestParticules();
     void createParticules(string _word);
+    string toUpperCase(string str);
+
     
     void keyPressed(int key);
     
@@ -69,6 +72,9 @@ public:
     
     //mouse (view rotation)
     ofPoint mouseClickPos;
+    
+    //the word to find
+    string wantedWord;
 
 
 };
