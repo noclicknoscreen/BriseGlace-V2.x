@@ -259,7 +259,7 @@ void scGame3::createParticules(string _word)
     for (int i=0; i<_word.size(); i++)
     {
         particule* pp = new particule(world, 100, ofVec3f(ofRandom(-ofGetWidth()/2, ofGetWidth()/2),-250,100), ofToString(_word[i]));
-        pp->me->makeFixed();
+        pp->me->makeFree();
         myParticules.push_back(pp);
     }
 }
