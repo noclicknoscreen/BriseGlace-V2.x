@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "ofMain.h"
 #include "cubeManager.h"
+#include "player.h"
 
 #define inputTextYPosition 400
 #define movementSmoothingValue 15
@@ -32,7 +33,7 @@ class inputHandler
 {
 public:
     void setup();
-    void getNewText(int _userId, string txt);
+    void getNewText(player _player);//int _userId, string txt);
     void update(cubeManager* cm);
     void draw();
     void compareInput(string wantedWord);

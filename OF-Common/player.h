@@ -22,6 +22,9 @@ public:
     int getVolume(){return mVolume;};
     string getLastMessage(){return mLastMessage;};
     int getNumber(){return mNumber;};
+    ofColor getColor(){return mColor;};
+    void setPositionHistogram(ofPoint _pos){positionHistogram = _pos;};
+    ofPoint getPositionHistogram(){return positionHistogram;};
     
 private:
     float mVolume;
@@ -33,5 +36,7 @@ private:
     ofColor mColor;
     
     ofTrueTypeFont myFont;
+    
+    ofPoint positionHistogram;
     
 };
