@@ -46,6 +46,7 @@ public:
     void drawSprings();
     void applyRandomForces();
     void createTestParticules();
+    void createParticules(string _word);
     
     void keyPressed(int key);
     
