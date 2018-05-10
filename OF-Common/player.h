@@ -16,7 +16,7 @@ public:
     
     player(ofColor _color);
     
-    void update(bool _isAvailable, string _message, float _volume, int _number);
+    void update(bool _isAvailable, string _message, string _messageToCompare, float _volume, int _number);
     void draw(ofVec2f _pos);
     
     int getVolume(){return mVolume;};
@@ -29,8 +29,8 @@ public:
 private:
     float mVolume;
     string mLastMessage;
+    string mLastMessageToCompare;
     int mNumber;
-    
     bool mIsAvailable;
     
     ofColor mColor;

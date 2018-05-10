@@ -15,7 +15,7 @@ scScene::scScene(ofEvent<void> _endSceneEvent, playerManager &_manager){
 }
 
 void scScene::setup(){
-    myFont24.load("Folktale.ttf", 24, true, true);
+    myFont24.load("Avenir.ttc", 24, true, true);
 }
 
 void scScene::draw(){

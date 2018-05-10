@@ -61,6 +61,7 @@ void playerManager::loadPlayers(ofBuffer _datas){
                 //                // If yes, then update
                 onePlayer->second.update(mResponse["players"][idxPlayer]["isAvailable"].asBool(),
                                          mResponse["players"][idxPlayer]["lastMessage"]["text"].asString(),
+                                         mResponse["players"][idxPlayer]["lastMessage"]["textToCompare"].asString(),
                                          mResponse["players"][idxPlayer]["volume"].asFloat(),
                                          mResponse["players"][idxPlayer]["nr"].asInt());
                 
@@ -72,6 +73,7 @@ void playerManager::loadPlayers(ofBuffer _datas){
                 
                 newPlayer.update(mResponse["players"][idxPlayer]["isAvailable"].asBool(),
                                  mResponse["players"][idxPlayer]["lastMessage"]["text"].asString(),
+                                 mResponse["players"][idxPlayer]["lastMessage"]["textToCompare"].asString(),
                                  mResponse["players"][idxPlayer]["volume"].asFloat(),
                                  mResponse["players"][idxPlayer]["nr"].asInt());
                 mPlayers.insert( std::pair<int,player>(realNr,newPlayer) );

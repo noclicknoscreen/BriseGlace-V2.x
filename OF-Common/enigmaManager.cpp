@@ -46,7 +46,10 @@ void enigmaManager::pickNewEnigma(gameType _type){
         // Ok, we have some folders
         // you can now iterate through the files and load them into the ofImage vector
         for (int idxFolder=0; idxFolder < (int)dir.size(); idxFolder++) {
-            ofLogNotice() << "Path n° " << ofToString(idxFolder) << "] " << dir.getPath(idxFolder);
+            ofFile oneFile = dir.getFile(idxFolder);
+            if(oneFile.isDirectory()){
+                ofLogNotice() << "Path n° " << ofToString(idxFolder) << "] " << dir.getPath(idxFolder);
+            }
         }
     }
     

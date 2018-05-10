@@ -3,7 +3,7 @@
 var socketHelper = require('./socketHelper');
 
 var players = [];
-var lastMessage = {time:new Date().toLocaleString(), text:""};
+var lastMessage = {time:new Date().toLocaleString(), text:"", textToCompare:""};
 var lastNumber = 0;
 
 module.exports = {
@@ -75,7 +75,7 @@ module.exports = {
     if (foundPlayer != undefined) {
         console.log("Old player found, Id:" + socket.id + " IP:" + myIpAddr);
 
-        lastMessage = {time:new Date().toLocaleString(), text:message};
+        lastMessage = {time:new Date().toLocaleString(), text:message, textToCompare:suppressAccents(message)};
         lastNumber = foundPlayer.nr;
         // Add message to the list
         foundPlayer.messages.push(lastMessage);
@@ -126,5 +126,43 @@ function findPlayerByIp(existingIp){
    });
 
   return foundPlayer;
+
+}
+
+function suppressAccents(word){
+
+  word = word.toString();
+
+  word=word.replace("á","a");
+  word=word.replace("â","a");
+  word=word.replace("Á","A");
+
+  word=word.replace("ç","c");
+
+  word=word.replace("é","e");
+  word=word.replace("è","e");
+  word=word.replace("ê","e");
+  word=word.replace("É","E");
+
+  word=word.replace("í","i");
+  word=word.replace("Í","I");
+  word=word.replace("î","i");
+
+  word=word.replace("ó","o");
+  word=word.replace("Ó","O");
+  word=word.replace("ô","o");
+
+  word=word.replace("œ","oe");
+
+  word=word.replace("ú","u");
+  word=word.replace("Ú","U");
+  word=word.replace("û","U");
+
+  word=word.replace("ñ","n");
+  word=word.replace("Ñ","N");
+
+  word=word.toLowerCase();
+
+  return word;
 
 }
