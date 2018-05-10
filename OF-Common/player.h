@@ -16,7 +16,7 @@ public:
     
     player(ofColor _color);
     
-    void update(bool _isAvailable, string _message, float _volume);
+    void update(bool _isAvailable, string _message, float _volume, int _number);
     void draw(ofVec2f _pos);
     
     int getVolume(){return mVolume;};

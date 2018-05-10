@@ -43,7 +43,8 @@ void playerManager::update(){
 //                // If yes, then update
                 onePlayer->second.update(mResponse["players"][idxPlayer]["isAvailable"].asBool(),
                                          mResponse["players"][idxPlayer]["lastMessage"]["text"].asString(),
-                                         mResponse["players"][idxPlayer]["volume"].asFloat());
+                                         mResponse["players"][idxPlayer]["volume"].asFloat(),
+                                         mResponse["players"][idxPlayer]["nr"].asInt());
                 
             }else{
                 
@@ -53,7 +54,8 @@ void playerManager::update(){
                 
                 newPlayer.update(mResponse["players"][idxPlayer]["isAvailable"].asBool(),
                                  mResponse["players"][idxPlayer]["lastMessage"]["text"].asString(),
-                                 mResponse["players"][idxPlayer]["volume"].asFloat());
+                                 mResponse["players"][idxPlayer]["volume"].asFloat(),
+                                 mResponse["players"][idxPlayer]["nr"].asInt());
                 mPlayers.insert( std::pair<int,player>(realNr,newPlayer) );
             }
             
