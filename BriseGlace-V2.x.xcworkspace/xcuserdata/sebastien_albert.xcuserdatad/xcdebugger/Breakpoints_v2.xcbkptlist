@@ -76,7 +76,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "107"
-            endingLineNumber = "107">
+            endingLineNumber = "107"
+            landmarkName = "scGame1::sceneWillDisappear( ofxScene * toScreen )"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

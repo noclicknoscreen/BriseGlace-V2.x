@@ -21,6 +21,9 @@
       </FileRef>
    </Group>
    <FileRef
+      location = "group:theBigGame/../theEnigmaTest/theEnigmaTest.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:theBigGame/theBigGame.xcodeproj">
    </FileRef>
 </Workspace>
