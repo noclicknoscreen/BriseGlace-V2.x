@@ -1,22 +1,26 @@
 {
-  "Jeux": "motus",
-  "mot": "Chateau",
+  "jeu": "motus",
+  "mot": "Château",
   "indices": [
     {
       "description": "Historique",
+      "link": "http://sqdlkqsdlkqsdmlkqsmdlkqsdml.jpg",
       "image": "image2.jpg"
     },
     {
       "description": "Pierre",
+      "link": "http://sqdlkqsdlkqsdmlkqsmdlkqsdml.jpg",
       "image": "image3.jpg"
     },
     {
       "description": "Fort",
+      "link": "http://sqdlkqsdlkqsdmlkqsmdlkqsdml.jpg",
       "image": "image1.png"
     }
   ],
   "recompense": {
     "description": "Un château est à l'origine une construction médiévale destinée à protéger le seigneur et à symboliser son autorité au sein du fief. Les premiers châteaux étaient construits en bois souvent sur une élévation de terre (motte castrale ou féodale), puis en pierre afin de résister aux nouvelles armes de guerre. On les appela les châteaux forts.",
+    "link": "http://sqdlkqsdlkqsdmlkqsmdlkqsdml.jpg",
     "image": "image4.jpg"
   }
 }
