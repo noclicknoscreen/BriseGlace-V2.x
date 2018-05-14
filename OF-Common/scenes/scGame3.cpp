@@ -29,6 +29,7 @@ void scGame3::setup(){
     gui.add(zLight.set("zLight", 0, -1000, 1000));
     gui.add(drawDebug.set("drawDebug", 0));
     gui.loadFromFile("gui.xml");
+    drawGui = false;
     
     //OF
     ofSetFrameRate(60);
@@ -122,6 +123,8 @@ void scGame3::update(float dt){
         //cout << amount << " not mapped : " << myPlayerManager->getPlayerVolume(4) << endl;
         applyForce(amount);
     }
+    
+
 };
 
 //--------------------------------------------------------------
@@ -171,7 +174,9 @@ void scGame3::draw(){
     
     
     ofDisableDepthTest();
-    gui.draw();
+    
+    if(drawGui)
+        gui.draw();
     
     
     ofPushStyle();
@@ -251,6 +256,11 @@ void scGame3::keyPressed(int key){
 
     if(key==' ')
     {
+        drawGui = !drawGui;
+    }
+    
+    if(key == 'f')
+    {
         for(int i=0; i<myCubes.size(); i++)
         {
             //myCubes[i]->applyTorque(0.0, 1.0, 0.0);
@@ -258,8 +268,18 @@ void scGame3::keyPressed(int key){
             myCubes[i]->applyForce(randomForce, /*box->getPosition()*/ofVec3f(-500,0,0));
         }
     }
+    
+    if(key=='c') //VIEW FROM TOP
+    {
+        camPosX = 0;
+        camPosY = 550;
+        camPosZ = 0;
+        
+        camera.rotate(-90, ofVec3f(1,0,0));
+    }
 };
 
+//--------------------------------------------------------------
 void scGame3::applyForce(float amount)
 {
     for(int i=0; i<myCubes.size(); i++)
@@ -269,24 +289,4 @@ void scGame3::applyForce(float amount)
         myCubes[i]->applyForce(randomForce, /*box->getPosition()*/ofVec3f(-500,0,0));
     }
 }
-//
-////--------------------------------------------------------------
-//void scGame3::applyRandomForces()
-//{
-//    if(forceTimer) {
-//        float translateMax = forceTimer;
-//        glTranslatef(ofRandom(-translateMax, translateMax), ofRandom(-translateMax, translateMax), ofRandom(-translateMax, translateMax));
-//        forceTimer--;
-//    }
-//}
-//
-////--------------------------------------------------------------
-//void scGame3::addRandomForce(float f) {
-//    forceTimer = f;
-//    for(int i=0; i<world->numberOfParticles(); i++) {
-//        Particle3D_ptr p = world->getParticle(i);
-//        if(p->isFree()) p->addVelocity(ofVec3f(ofRandom(-f, f), ofRandom(-f, f), ofRandom(-f, f)));
-//    }
-//}
-//
-//
+

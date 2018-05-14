@@ -133,6 +133,7 @@ public:
     
     //parameters
     ofxPanel                     gui;
+    bool                         drawGui;
     ofParameter<float>           camPosX, camPosY, camPosZ, gravity, angularDamping, damping, friction;
     ofParameter<ofVec3f>         forceAmount;
     ofParameter<bool>            drawDebug;
