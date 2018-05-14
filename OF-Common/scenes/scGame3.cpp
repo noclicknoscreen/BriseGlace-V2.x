@@ -26,6 +26,7 @@ void scGame3::setup(){
     gui.add(angularDamping.set("angularDamping", .98, 0.0, 1.0));
     gui.add(damping.set("damping", .93, 0.0, 1.0));
     gui.add(friction.set("friction", .93, 0.0, 1.0));
+    gui.add(zLight.set("zLight", 0, -1000, 1000));
     gui.add(drawDebug.set("drawDebug", 0));
     gui.loadFromFile("gui.xml");
     
@@ -65,6 +66,24 @@ void scGame3::setup(){
         bottom.add();
     
     
+    
+    //light
+    //lumiere
+    spotLight.setSpotlight();
+    spotLight.setSpotlightCutOff(200);
+    spotLight.setAttenuation(0.3,0,0); //puissance de la light = inverse de l'attenuation
+    spotLight.setSpotConcentration(0.15);
+    spotLight.setDiffuseColor( ofColor(255.f, 255.f, 255.f));
+    spotLight.setSpecularColor( ofColor(255.f, 255.f, 255.f));
+    spotLight.setPosition(ofGetWidth()/2, ofGetHeight()/2, 0);
+    spotLight.setPosition(ofGetWidth()-300, 100, 0);
+    material.setShininess( 128);
+    lightColor.setBrightness( 255.0f);
+    lightColor.setSaturation( 0.f );
+    materialColor.setBrightness(255);
+    materialColor.setSaturation(0);
+    
+    
     // Player manager events
     ofAddListener(myPlayerManager->someoneSpoke,this,&scGame3::someoneSpoke);
     
@@ -87,6 +106,13 @@ void scGame3::update(float dt){
     {
         myCubes[i]->setActivationState(1);
     }
+    
+    //light
+    spotLight.setOrientation( ofVec3f( 0, 45, 30) );
+    spotLight.setPosition(ofGetMouseX(), ofGetMouseY(), 0);
+    lightColor.setHue(0);
+    spotLight.setDiffuseColor(lightColor);
+    material.setSpecularColor(materialColor);
 };
 
 //--------------------------------------------------------------
@@ -99,6 +125,12 @@ void scGame3::draw(){
     
     ofSetBackgroundColor(255);
     
+    ofEnableLighting();
+    spotLight.enable();
+    materialColor.setHue(0);
+    material.setAmbientColor(materialColor);
+    material.setDiffuseColor(materialColor);
+    
     camera.begin();
     
     if(drawDebug)
@@ -110,12 +142,17 @@ void scGame3::draw(){
         leftFace.draw();
         bottom.draw();
         ofFill();
+        
+        spotLight.draw();
     }
     
+    material.begin();
     for(int i=0; i<myCubes.size(); i++)
     {
         myCubes[i]->customDraw();
     }
+    material.end();
+    ofDisableLighting();
     
     if(drawDebug)
         world.drawDebug();

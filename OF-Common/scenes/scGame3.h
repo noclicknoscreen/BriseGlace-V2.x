@@ -58,7 +58,9 @@ public:
         ofRotate(180, 0,0,1);
         ofTranslate(-textWidth/2.0,  -textHeight/2, float(size.z/2 +1));
         
+        ofDisableLighting();
         font.drawString(letter, 0, 0);
+        ofEnableLighting();
         
         ofPopMatrix();
 
@@ -132,5 +134,12 @@ public:
     ofParameter<float>           camPosX, camPosY, camPosZ, gravity, angularDamping, damping, friction;
     ofParameter<ofVec3f>         forceAmount;
     ofParameter<bool>            drawDebug;
+    ofParameter<float>           zLight;
+    
+    //lumiere
+    ofLight spotLight;
+    ofColor lightColor;
+    ofColor materialColor;
+    ofMaterial material;
 };
 
