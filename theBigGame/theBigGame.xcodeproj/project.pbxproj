@@ -175,6 +175,7 @@
 		D2CF8C3820A98E700035B780 /* scSelectGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C2320A98E700035B780 /* scSelectGame.cpp */; };
 		D2CF8C3920A98E700035B780 /* scVictory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C2520A98E700035B780 /* scVictory.cpp */; };
 		D2CF8C4820A9FBA70035B780 /* ofxTextBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C4220A9FBA70035B780 /* ofxTextBlock.cpp */; };
+		D2CF8C4D20AA01380035B780 /* indice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C4B20AA01380035B780 /* indice.cpp */; };
 		D4BDD55A35C18F38B22587B3 /* btGjkPairDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FF1568D65B599A79347289E /* btGjkPairDetector.cpp */; };
 		D596B4C0EA4546DB259B3326 /* btMultiSapBroadphase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10CEFF5A81E961FC291E86C2 /* btMultiSapBroadphase.cpp */; };
 		D67C2A715397417907555FC0 /* btConvexHullComputer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40946A9FD58F227B0D0443B7 /* btConvexHullComputer.cpp */; };
@@ -646,6 +647,8 @@
 		D2CF8C4220A9FBA70035B780 /* ofxTextBlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTextBlock.cpp; sourceTree = "<group>"; };
 		D2CF8C4320A9FBA70035B780 /* ofxTextBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTextBlock.h; sourceTree = "<group>"; };
 		D2CF8C4420A9FBA70035B780 /* ofxTextSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTextSuite.h; sourceTree = "<group>"; };
+		D2CF8C4B20AA01380035B780 /* indice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = indice.cpp; sourceTree = "<group>"; };
+		D2CF8C4C20AA01380035B780 /* indice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = indice.h; sourceTree = "<group>"; };
 		D2D1D47D5A2A1B5AC097B14F /* btDefaultMotionState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btDefaultMotionState.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/LinearMath/btDefaultMotionState.h; sourceTree = SOURCE_ROOT; };
 		D2F2DC31B30F78A69C7E766C /* btActionInterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btActionInterface.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletDynamics/Dynamics/btActionInterface.h; sourceTree = SOURCE_ROOT; };
 		D2F63572987E44FAFD60CA6A /* btPoolAllocator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btPoolAllocator.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/LinearMath/btPoolAllocator.h; sourceTree = SOURCE_ROOT; };
@@ -1411,6 +1414,7 @@
 		D2CF8BF520A98E6F0035B780 /* OF-Common */ = {
 			isa = PBXGroup;
 			children = (
+				D2CF8C4A20AA01380035B780 /* indice */,
 				D2CF8BF620A98E700035B780 /* .gitignore */,
 				D2CF8BF720A98E700035B780 /* addons */,
 				D2CF8C0120A98E700035B780 /* cubes */,
@@ -1514,6 +1518,15 @@
 				D2CF8C4420A9FBA70035B780 /* ofxTextSuite.h */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		D2CF8C4A20AA01380035B780 /* indice */ = {
+			isa = PBXGroup;
+			children = (
+				D2CF8C4B20AA01380035B780 /* indice.cpp */,
+				D2CF8C4C20AA01380035B780 /* indice.h */,
+			);
+			path = indice;
 			sourceTree = "<group>";
 		};
 		D486FC87F063317BB47E9FAC /* include */ = {
@@ -1893,6 +1906,7 @@
 				B75013A0364FF11A0E5874F6 /* btTetrahedronShape.cpp in Sources */,
 				88C3BC62F05B80E295F6AF70 /* btTriangleBuffer.cpp in Sources */,
 				341677E415F88E404B7F932D /* btTriangleCallback.cpp in Sources */,
+				D2CF8C4D20AA01380035B780 /* indice.cpp in Sources */,
 				B68A789D3C215D6412CB0100 /* btTriangleIndexVertexArray.cpp in Sources */,
 				D2CF8C3420A98E700035B780 /* scHint.cpp in Sources */,
 				193FE4A2A5663A54AAE0216E /* btTriangleIndexVertexMaterialArray.cpp in Sources */,
