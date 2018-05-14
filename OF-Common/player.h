@@ -14,6 +14,7 @@ class player : public ofBaseApp{
     
 public:
     
+    player(){};
     player(ofColor _color);
     
     void update(bool _isAvailable, string _message, string _messageToCompare, float _volume, int _number);

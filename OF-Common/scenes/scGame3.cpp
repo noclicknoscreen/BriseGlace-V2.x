@@ -113,6 +113,15 @@ void scGame3::update(float dt){
     lightColor.setHue(0);
     spotLight.setDiffuseColor(lightColor);
     material.setSpecularColor(materialColor);
+    
+    //apply forces after 5 seconds
+    if(ofGetElapsedTimef() - timer > 5)
+    for(int i=0; i<myPlayerManager->getNumberOfPlayers(); i++)
+    {
+        float amount = ofMap(myPlayerManager->getPlayerVolume(4), 0, 1, 0, 1);
+        //cout << amount << " not mapped : " << myPlayerManager->getPlayerVolume(4) << endl;
+        applyForce(amount);
+    }
 };
 
 //--------------------------------------------------------------
@@ -164,6 +173,16 @@ void scGame3::draw(){
     ofDisableDepthTest();
     gui.draw();
     
+    
+    ofPushStyle();
+    // Style setup
+    ofSetColor(255,0,0);
+    
+    scScene::draw();            // Draw title
+    myPlayerManager->draw();    // Draw players
+    
+    ofPopStyle();
+    
 };
 
 //--------------------------------------------------------------
@@ -204,6 +223,8 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
         
         myCubes.push_back(box);
     }
+    
+    timer = ofGetElapsedTimef();
 };
 
 //--------------------------------------------------------------
@@ -239,7 +260,15 @@ void scGame3::keyPressed(int key){
     }
 };
 
-
+void scGame3::applyForce(float amount)
+{
+    for(int i=0; i<myCubes.size(); i++)
+    {
+        //myCubes[i]->applyTorque(0.0, 1.0, 0.0);
+        ofVec3f randomForce = ofVec3f(ofRandom(-forceAmount->x, forceAmount->x), ofRandom(-forceAmount->y, forceAmount->y), ofRandom(-forceAmount->z, forceAmount->z)) * amount;
+        myCubes[i]->applyForce(randomForce, /*box->getPosition()*/ofVec3f(-500,0,0));
+    }
+}
 //
 ////--------------------------------------------------------------
 //void scGame3::applyRandomForces()

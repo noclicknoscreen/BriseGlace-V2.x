@@ -112,9 +112,11 @@ public:
     //utils
     string toUpperCase(string str);
     
+    //physics
     ofxBulletWorldRigid			world;
     ofxBulletBox				ground, rightFace, leftFace, bottom;
     specialBox*                 box;
+    void applyForce(float amuont);
     
     //camera
     //ofEasyCam					camera;
@@ -141,5 +143,8 @@ public:
     ofColor lightColor;
     ofColor materialColor;
     ofMaterial material;
+    
+    //timer
+    float timer;
 };
 
