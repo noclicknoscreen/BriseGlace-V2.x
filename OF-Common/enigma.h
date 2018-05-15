@@ -24,21 +24,24 @@ typedef enum {
 class enigma{
     
 public:
-    
-    enigma() : mReward("", ""){
-    };
 
     bool load(string path);
     
-    enigmaHint*  getHint(enigmaType _type);
-    string      getDesc(){return mDesc;};
-    string      getPath(){return mPath;};
-
+    ofImage     getImage(enigmaType _type);
+    string      getTitre(enigmaType _type);
+    bool        getIsAvailable(enigmaType _type);
+    
+    string       getSolution(){return mSolution;};
+    string       getLegende(){return mLegende;};
+    
 private:
-    string  mDesc;
-    string  mPath;
+    string  mLegende;
+    string  mSolution;
     
     vector<enigmaHint>     mHints;
     enigmaHint             mReward;
+    
+    enigmaHint*  getHint(enigmaType _type);
+
     
 };

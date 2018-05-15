@@ -1,28 +1,29 @@
 {
-  "jeu": "motus",
-  "mot": "Château",
-  "isAvailable" : true,
-  "indices": [
+  "jeux": "motus",
+  "mot": "chateau",
+  "indice": [
     {
-      "description": "Historique",
-      "link": "http://sqdlkqsdlkqsdmlkqsmdlkqsdml.jpg",
-      "image": "image2.jpg"
+      "titre": "je suis l'indice 0",
+      "image": "image1.png",
+      "url": "https:\/\/cdn.pixabay.com\/photo\/2018\/05\/08\/13\/08\/cobblestone-3383004_1280.jpg"
     },
     {
-      "description": "Pierre",
-      "link": "http://sqdlkqsdlkqsdmlkqsmdlkqsdml.jpg",
-      "image": "image3.jpg"
+      "titre": "je suis l'indice 1",
+      "image": "image2.jpg",
+      "url": "https:\/\/cdn.pixabay.com\/photo\/2018\/05\/08\/13\/08\/cobblestone-3383004_1280.jpg"
     },
     {
-      "description": "Fort",
-      "link": "http://sqdlkqsdlkqsdmlkqsmdlkqsdml.jpg",
-      "image": "image1.png"
+      "titre": "je suis l'indice 2",
+      "image": "image3.jpg",
+      "url": "https:\/\/cdn.pixabay.com\/photo\/2018\/05\/08\/13\/08\/cobblestone-3383004_1280.jpg"
     }
   ],
   "recompense": {
-    "titre": "Fort",
-    "description": "Un château est à l'origine une construction médiévale destinée à protéger le seigneur et à symboliser son autorité au sein du fief. Les premiers châteaux étaient construits en bois souvent sur une élévation de terre (motte castrale ou féodale), puis en pierre afin de résister aux nouvelles armes de guerre. On les appela les châteaux forts.",
-    "link": "http://sqdlkqsdlkqsdmlkqsmdlkqsdml.jpg",
-    "image": "image4.jpg"
+    "legende": "légende légende légende légende légende légende légende légende légende légende légende légende légende légende ",
+    "indice": {
+      "titre": "Recompense",
+      "image": "image4.jpg",
+      "url": "https:\/\/cdn.pixabay.com\/photo\/2018\/05\/08\/13\/08\/cobblestone-3383004_1280.jpg"
+    }
   }
 }
