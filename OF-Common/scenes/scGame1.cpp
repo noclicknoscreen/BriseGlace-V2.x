@@ -72,7 +72,6 @@ void scGame1::someoneSpoke(player & _player){
     
     myInputManager.getNewText(_player);
     
-    bigEnigmaManager().getCurrentEnigma()
     
 }
 
@@ -101,7 +100,7 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     myInputManager.setup();
     
     //TODO :: bonheur ecrit en dur => lu dans le JSON
-    myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getDesc());
+    myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
     
     myInputManager.clearDuplicatesLettersHistory();
     myInputManager.setReadyForNewText();
