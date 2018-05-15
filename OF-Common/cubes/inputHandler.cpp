@@ -24,7 +24,7 @@ void inputHandler::getNewText(player _player)
 {
     readyForNewText = false;
     
-    cout << "got new input from user " << userId << " : " << _player.getLastMessageToCompare() << endl;
+    ofLogNotice() << "got new input from user " << userId << " : " << _player.getLastMessageToCompare() << endl;
     
     //TODO A REMETTRE !
     text = utils::toUpperCase(_player.getLastMessageToCompare());
@@ -139,7 +139,7 @@ void inputHandler::update(cubeManager* cm)
                 }
                 else
                 {
-                    cout << "reveal finished, ready to get another proposal from user " << endl;
+                    ofLogNotice() << "reveal finished, ready to get another proposal from user " << endl;
                     revealMode = false;
                     readyForNewText = true;
                     if(nbCubesRotated == wordToFind.size())
@@ -160,11 +160,11 @@ void inputHandler::compareInput(string wantedWord)
     for(int i=0; i<splittedString.size(); i++)
     {
         size_t found = wantedWord.find(splittedString[i].letter, 0);
-        cout << "compare this letter : " << splittedString[i].letter << endl;
+        ofLogNotice() << "compare this letter : " << splittedString[i].letter << endl;
         if(found==string::npos)
         {
             splittedString[i].alpha = 0;
-            cout << "not found => alpha=0" << endl;
+            ofLogNotice() << "not found => alpha=0" << endl;
         }
         
         while (found!=string::npos)
@@ -173,18 +173,18 @@ void inputHandler::compareInput(string wantedWord)
             if(std::find(duplicatesLetters.begin(), duplicatesLetters.end(), splittedString[i].letter) != duplicatesLetters.end())
             {
                 splittedString[i].alpha = 0;
-                cout << "found DUPLICATE => alpha=0" << endl;
+                ofLogNotice() << "found DUPLICATE => alpha=0" << endl;
             }
             else
             {
                 splittedString[i].alpha = 1.0;
                 splittedString[i].correspondingCubes.push_back((int)found);
-                cout << "found correspondance => alpha=1.0" << endl;
+                ofLogNotice() << "found correspondance => alpha=1.0" << endl;
                 
             }
             found = wantedWord.find(splittedString[i].letter, found+1);
         }
-        cout << "add to duplicates list " << endl;
+        ofLogNotice() << "add to duplicates list " << endl;
         duplicatesLetters.push_back(splittedString[i].letter);
 
     }
