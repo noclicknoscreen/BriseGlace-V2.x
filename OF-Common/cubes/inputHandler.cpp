@@ -58,8 +58,7 @@ void inputHandler::getNewText(player _player)
     }
     
     
-    //TODO : GET IT FROM THE ENIGMA SINGLETON
-    //wordToFind = "bonheur";
+    //GET THE WANTED WORD FROM THE ENIGMA SINGLETON
     compareInput(wordToFind);
     setRevealMode();
     
