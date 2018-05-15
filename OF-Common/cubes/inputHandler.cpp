@@ -141,11 +141,11 @@ void inputHandler::update(cubeManager* cm)
                     cout << "reveal finished, ready to get another proposal from user " << endl;
                     revealMode = false;
                     readyForNewText = true;
-//                    if(nbCubesRotated == wordToFind.size())
-//                    {
-//                        return true;
-//                    }
-                    ofxSceneManager::instance()->goToScene(8);
+                    if(nbCubesRotated == wordToFind.size())
+                    {
+                        ofxSceneManager::instance()->goToScene(8);
+                    }
+                    
                 }
             }
     }

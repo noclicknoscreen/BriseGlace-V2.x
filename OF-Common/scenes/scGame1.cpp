@@ -20,7 +20,7 @@ void scGame1::setup(){  //load your scene 1 assets here...
     //inputs
     myInputManager.setup();
     
-    //TODO :: bonheur ecrit en dur => lu dans le JSON
+    //word to find
     myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
     myInputManager.clearDuplicatesLettersHistory();
     myInputManager.setReadyForNewText();
@@ -78,19 +78,6 @@ void scGame1::someoneSpoke(player & _player){
     
     
 }
-
-
-//--------------------------------------------------------------
-//string scGame1::toUpperCase(string str)
-//{
-//    string strUpper = "";
-//    
-//    for( int i=0; i<str.length(); i++ )
-//    {
-//        strUpper += toupper( str[ i ] );
-//    }
-//    return strUpper;
-//};
 
 
 //scene notifications
