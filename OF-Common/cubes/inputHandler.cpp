@@ -119,6 +119,7 @@ void inputHandler::update(cubeManager* cm)
             }
             else
             {
+                cm->colorizeCube(index, userId);
                 cm->myCubes[index].rotateToLetter(); //rotate the corresponding cube
                 nbCubesRotated ++;                   //count one letter found more
                 splittedString[currentRevealCube].alpha = 0;
