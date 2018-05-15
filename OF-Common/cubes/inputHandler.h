@@ -59,6 +59,7 @@ private:
     string wordToFind;
     int nbCubesRotated;
     
+    player* lastPlayerToTalk;
 };
 
 #endif /* inputHandler_hpp */

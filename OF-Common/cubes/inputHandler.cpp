@@ -32,6 +32,7 @@ void inputHandler::getNewText(player _player)
     ofPoint source;
     ofColor textColor;
     
+    lastPlayerToTalk = & _player;
     userId = _player.getNumber();
     textColor = _player.getColor();
     source = _player.getPositionHistogram();
@@ -119,7 +120,7 @@ void inputHandler::update(cubeManager* cm)
             }
             else
             {
-                cm->colorizeCube(index, userId);
+                cm->colorizeCube(index, lastPlayerToTalk->getColor());
                 cm->myCubes[index].rotateToLetter(); //rotate the corresponding cube
                 nbCubesRotated ++;                   //count one letter found more
                 splittedString[currentRevealCube].alpha = 0;

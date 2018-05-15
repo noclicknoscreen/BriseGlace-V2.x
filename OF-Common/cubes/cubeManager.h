@@ -32,7 +32,7 @@ class cubeManager
         void rotateToWhite(int i);
         void rotateToWood(int i);
         void rotateToLetter(int i);
-        void colorizeCube(int cubeId, int userId);
+        void colorizeCube(int cubeId, ofColor _color);
         int getNumberOfCubes() {return myCubes.size();}
     
     private:

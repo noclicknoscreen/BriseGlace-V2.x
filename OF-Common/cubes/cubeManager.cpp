@@ -188,25 +188,9 @@ void cubeManager::rotateToLetter(int i)
     myCubes[i].rotateToLetter();
 }
 
-void cubeManager::colorizeCube(int cubeId, int userId)
+void cubeManager::colorizeCube(int cubeId, ofColor _color)
 {
-    //cout << "colorize cube " << cubeId << " with userId " << userId << endl;
-    
-    switch(userId)
-    {
-        case 0:
-            myCubes[cubeId].setMaterialColor(ofColor::green);
-            break;
-        case 1:
-            myCubes[cubeId].setMaterialColor(ofColor::red);
-            break;
-        case 2:
-            myCubes[cubeId].setMaterialColor(ofColor::blue);
-            break;
-        default:
-            myCubes[cubeId].setMaterialColor(ofColor::white);
-            break;
-    }
+    myCubes[cubeId].setMaterialColor(_color);
 }
 
 
