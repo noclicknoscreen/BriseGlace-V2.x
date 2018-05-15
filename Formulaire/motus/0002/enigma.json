@@ -1,0 +1,29 @@
+{
+    "jeux": "motus",
+    "mot": "Gare",
+    "indice": [
+        {
+            "titre": "Tunnel",
+            "image": "image1.JPG",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/f4\/Lyon_Gorges_de_Loup_II.JPG"
+        },
+        {
+            "titre": "Tram-train",
+            "image": "image2.JPG",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/2e\/Tramtrain_in_l%27Arbresle_III.JPG"
+        },
+        {
+            "titre": "Horloger",
+            "image": "image3.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/3\/2853\/11139667303_c0cc36843a_b.jpg"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "la gare Saint-Paul ",
+            "image": "image4.JPG",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/96\/GareStPaulLyon.JPG"
+        },
+        "legende": "Chaque jour, 5 500 voyageurs passent par la gare Saint-Paul située dans le vieux Lyon ou fut tourné le film de Bertran Tavernier « L'horloger de Saint Paul » en 1974. Le premier tram-train fut inauguré en septembre 2012."
+    }
+}

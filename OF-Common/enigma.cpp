@@ -32,16 +32,18 @@ bool enigma::load(string _path){
     }else{
         ofxJSONElement content;
         if(content.open(fileJson.getAbsolutePath())){
-            ofLogNotice() << "Le mot est : " << content[tagMot];
             
+            // Head of the enigma (Solution, legend) --
             mSolution = content[tagMot].asString();
+            mLegende = content[tagRecompense][tagLegende].asString();
             
+            ofLogNotice() << "Enigma : " << mSolution << "," << mLegende;
+            
+            
+            // Load all hints -------------------------
             int nbHints = content[tagIndice].size();
             for (int idxHint = 0; idxHint < nbHints; idxHint++)
             {
-                // Does player exists ?
-//                ofLogNotice() << "Indice [" << ofToString(idxHint) << "] : " << content[tagIndice][idxHint][tagTitre] << " - " << content[tagIndice][idxHint][tagImage];
-                
                 string fullPath;
                 fullPath += _path;
                 fullPath += "/image/";
@@ -56,6 +58,7 @@ bool enigma::load(string _path){
                 }
             }
             
+            // Load reward ------------------------------
             string rewImgPath;
             rewImgPath += _path;
             rewImgPath += "/image/";
@@ -66,7 +69,7 @@ bool enigma::load(string _path){
                 mReward = enigmaHint(rewImgPath, content[tagRecompense][tagIndice][tagTitre].asString());
             }
             
-            mLegende = content[tagRecompense][tagLegende].asString();
+            
             
         }
     };

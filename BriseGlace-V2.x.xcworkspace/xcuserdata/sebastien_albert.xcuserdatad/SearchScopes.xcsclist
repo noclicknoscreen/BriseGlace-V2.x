@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchScopes
+   version = "1.1">
+   <Scope
+      name = "theBigGame - myCode"
+      predicate = "(location_workspace_group == &quot;{\&quot;IDEValuesAsTree\&quot;:{\&quot;BriseGlace-V2.x\&quot;:{\&quot;theBigGame\&quot;:{\&quot;OF-Common\&quot;:\&quot;\&quot;}}}}&quot;) OR (location_workspace_group == &quot;{\&quot;IDEValuesAsTree\&quot;:{\&quot;BriseGlace-V2.x\&quot;:{\&quot;theBigGame\&quot;:{\&quot;src\&quot;:\&quot;\&quot;}}}}&quot;)"
+      uuid = "51AC990A-D98B-4EE3-BE70-AA48BB7F2848">
+   </Scope>
+</SearchScopes>

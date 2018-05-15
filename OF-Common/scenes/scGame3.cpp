@@ -34,7 +34,6 @@ void scGame3::setup(){
     //OF
     ofSetFrameRate(60);
     ofSetVerticalSync(true);
-    //ofBackground( 10, 10, 10);
     ofEnableAntiAliasing();
     ofSetBoxResolution(30);
     
@@ -186,6 +185,20 @@ void scGame3::draw(){
     if(drawGui)
         gui.draw();
     
+<<<<<<< HEAD
+=======
+    
+    ofPushStyle();
+    
+    // Style setup
+    ofSetColor(255,0,0);
+    
+    scScene::draw();            // Draw title
+    myPlayerManager->draw();    // Draw players
+    
+    ofPopStyle();
+    
+>>>>>>> 46347e48058cda4034369b3f87def0670f7fb911
 };
 
 //--------------------------------------------------------------
