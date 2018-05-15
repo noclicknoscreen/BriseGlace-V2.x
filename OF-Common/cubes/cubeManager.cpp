@@ -37,6 +37,8 @@ void cubeManager::setup()
     
     //texture
     texture.load("contreplaque.png");
+    //ofDisableNormalizedTexCoords();
+    //ofDisableArbTex();
     
     cubeSize = 80;    
 
@@ -76,6 +78,7 @@ void cubeManager::draw(){
     spotLight.enable();
     
     
+    
     for(int i=0; i<myCubes.size(); i++)
     {
         ofPushMatrix();
@@ -90,6 +93,7 @@ void cubeManager::draw(){
             //material.setSpecularColor(materialColor);
 
             material.begin();
+            ofEnableNormalizedTexCoords();
             texture.bind();
                ofDrawBox(myCubes[i].size, myCubes[i].size ,myCubes[i].size);
             material.end();
