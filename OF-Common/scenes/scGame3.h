@@ -38,11 +38,11 @@ public:
         ofDrawBox(0, 0, 0, size.x, size.y, size.z);
 
         //contour
-        ofNoFill();
-        ofSetLineWidth(2);
-        ofSetColor(0);
-        ofDrawBox(0, 0, 0, size.x, size.y, size.z);
-        ofFill();
+//        ofNoFill();
+//        ofSetLineWidth(2);
+//        ofSetColor(0);
+//        ofDrawBox(0, 0, 0, size.x, size.y, size.z);
+//        ofFill();
         
         texture.unbind();
         ofDisableNormalizedTexCoords();
