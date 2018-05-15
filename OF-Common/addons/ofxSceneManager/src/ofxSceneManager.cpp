@@ -97,8 +97,13 @@ void ofxSceneManager::update( float dt ){
 
 
 void ofxSceneManager::draw(){
-
-	if (currentScene != NULL){
+    
+    ofPushStyle();
+	
+    ofDisableDepthTest();
+//    ofDisableLighting();
+    
+    if (currentScene != NULL){
 		
 		vector <ofxScene*> scenesToDraw;
 		scenesToDraw.push_back(currentScene);
@@ -122,6 +127,9 @@ void ofxSceneManager::draw(){
 		ofSetColor(255, 0, 0);
 		drawDebug();
 	}
+    
+    ofPopStyle();
+    
 }
 
 void ofxSceneManager::drawDebug(){

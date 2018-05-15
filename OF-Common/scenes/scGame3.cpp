@@ -34,7 +34,6 @@ void scGame3::setup(){
     //OF
     ofSetFrameRate(60);
     ofSetVerticalSync(true);
-    ofBackground( 10, 10, 10);
     ofEnableAntiAliasing();
     ofSetBoxResolution(30);
     
@@ -181,6 +180,7 @@ void scGame3::draw(){
     
     
     ofPushStyle();
+    
     // Style setup
     ofSetColor(255,0,0);
     
