@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame1.cpp"
-            timestampString = "547469174.680387"
+            timestampString = "548074635.348594"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "scGame1::update(float dt)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "scGame1::setup()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame1.cpp"
-            timestampString = "548066306.564196"
+            timestampString = "548074635.348594"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "scGame1::sceneWillDisappear( ofxScene * toScreen )"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "scGame1::sceneWillAppear( ofxScene * fromScreen )"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame1.cpp"
-            timestampString = "548066306.564196"
+            timestampString = "548074635.348594"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "scGame1::sceneWillAppear( ofxScene * fromScreen )"
             landmarkType = "7">
          </BreakpointContent>

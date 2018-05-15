@@ -27,14 +27,14 @@ void ofApp::setup(){
 	sceneManager = ofxSceneManager::instance();
     sceneManager->setupCurtain(ofColor::white, ofRectangle(0,0, ofGetWidth(), ofGetHeight()) );
     
-    sceneManager->addScene( new scIntro(nextSceneEvent, myPlayerManager), INTRO);
-    sceneManager->addScene( new scInitialize(nextSceneEvent, myPlayerManager), INITIALIZE);
-    sceneManager->addScene( new scSelectGame(nextSceneEvent, myPlayerManager), SELECT_GAME);
-    sceneManager->addScene( new scGame1(nextSceneEvent, myPlayerManager), GAME1);
-    sceneManager->addScene( new scGame2(nextSceneEvent, myPlayerManager), GAME2);
-    sceneManager->addScene( new scGame3(nextSceneEvent, myPlayerManager), GAME3);
-    sceneManager->addScene( new scHint(nextSceneEvent, myPlayerManager), HINT);
-    sceneManager->addScene( new scVictory(nextSceneEvent, myPlayerManager), VICTORY);
+    sceneManager->addScene( new scIntro(myPlayerManager), INTRO);
+    sceneManager->addScene( new scInitialize(myPlayerManager), INITIALIZE);
+    sceneManager->addScene( new scSelectGame(myPlayerManager), SELECT_GAME);
+    sceneManager->addScene( new scGame1(myPlayerManager), GAME1);
+    sceneManager->addScene( new scGame2(myPlayerManager), GAME2);
+    sceneManager->addScene( new scGame3(myPlayerManager), GAME3);
+    sceneManager->addScene( new scHint(myPlayerManager), HINT);
+    sceneManager->addScene( new scVictory(myPlayerManager), VICTORY);
     
     sceneManager->setDrawDebug(true);
 	sceneManager->setCurtainDropTime(1.0);

@@ -1,0 +1,29 @@
+{
+  "jeux": "motus",
+  "mot": "chateau",
+  "indice": [
+    {
+      "titre": "je suis l'indice 0",
+      "image": "image1.png",
+      "url": "https:\/\/cdn.pixabay.com\/photo\/2018\/05\/08\/13\/08\/cobblestone-3383004_1280.jpg"
+    },
+    {
+      "titre": "je suis l'indice 1",
+      "image": "image2.jpg",
+      "url": "https:\/\/cdn.pixabay.com\/photo\/2018\/05\/08\/13\/08\/cobblestone-3383004_1280.jpg"
+    },
+    {
+      "titre": "je suis l'indice 2",
+      "image": "image3.jpg",
+      "url": "https:\/\/cdn.pixabay.com\/photo\/2018\/05\/08\/13\/08\/cobblestone-3383004_1280.jpg"
+    }
+  ],
+  "recompense": {
+    "legende": "légende légende légende légende légende légende légende légende légende légende légende légende légende légende ",
+    "indice": {
+      "titre": "Recompense",
+      "image": "image4.jpg",
+      "url": "https:\/\/cdn.pixabay.com\/photo\/2018\/05\/08\/13\/08\/cobblestone-3383004_1280.jpg"
+    }
+  }
+}

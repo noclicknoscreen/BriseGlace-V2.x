@@ -21,11 +21,10 @@ void scGame1::setup(){  //load your scene 1 assets here...
     myInputManager.setup();
     
     //TODO :: bonheur ecrit en dur => lu dans le JSON
-    myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getDesc());
-    
+    myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
     myInputManager.clearDuplicatesLettersHistory();
     myInputManager.setReadyForNewText();
-    myInputManager.setWordToFind(bigEnigmaManager().getCurrentEnigma()->getDesc());
+    myInputManager.setWordToFind(bigEnigmaManager().getCurrentEnigma()->getSolution());
     
 };
 
@@ -119,15 +118,10 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     myInputManager.setup();
     
     //TODO :: bonheur ecrit en dur => lu dans le JSON
-<<<<<<< HEAD
     myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
-=======
-    myCubeManager.getWord(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getDesc()));
->>>>>>> b60ddc7ba4802a905f70ce745d79d52422b6b2f0
-    
     myInputManager.clearDuplicatesLettersHistory();
     myInputManager.setReadyForNewText();
-    myInputManager.setWordToFind(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getDesc()));
+    myInputManager.setWordToFind(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
     
     
 };
