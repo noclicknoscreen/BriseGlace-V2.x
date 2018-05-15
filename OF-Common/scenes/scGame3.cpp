@@ -34,7 +34,7 @@ void scGame3::setup(){
     //OF
     ofSetFrameRate(60);
     ofSetVerticalSync(true);
-    ofBackground( 10, 10, 10);
+    //ofBackground( 10, 10, 10);
     ofEnableAntiAliasing();
     ofSetBoxResolution(30);
     
@@ -90,8 +90,15 @@ void scGame3::setup(){
     ofAddListener(myPlayerManager->someoneSpoke,this,&scGame3::someoneSpoke);
     
    
-    //TODO : word to be taken from enigma Singleton
+    //now comes from enigma Singleton
     wantedWord = "BONHEUR";
+    
+    //VIEW FROM TOP
+    camPosX = 0;
+    camPosY = 550;
+    camPosZ = 95;
+    
+    camera.rotate(-80, ofVec3f(1,0,0));
 
 };
 
@@ -111,7 +118,7 @@ void scGame3::update(float dt){
     
     //light
     spotLight.setOrientation( ofVec3f( 0, 45, 30) );
-    spotLight.setPosition(ofGetMouseX(), ofGetMouseY(), 0);
+    spotLight.setPosition(ofGetWidth()-100, 100, 0);
     lightColor.setHue(0);
     spotLight.setDiffuseColor(lightColor);
     material.setSpecularColor(materialColor);
@@ -179,16 +186,6 @@ void scGame3::draw(){
     if(drawGui)
         gui.draw();
     
-    
-    ofPushStyle();
-    // Style setup
-    ofSetColor(255,0,0);
-    
-    scScene::draw();            // Draw title
-    myPlayerManager->draw();    // Draw players
-    
-    ofPopStyle();
-    
 };
 
 //--------------------------------------------------------------
@@ -205,6 +202,7 @@ void scGame3::someoneSpoke(player & _player){
     if(utils::toUpperCase(_player.getLastMessage()) == utils::toUpperCase(wantedWord))
     {
         cout << "c'est gagné !!! " << endl;
+        ofxSceneManager::instance()->goToScene(7);
     }
     else
     {
@@ -218,6 +216,11 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
     scScene::sceneWillAppear(fromScreen);
     
+    //now comes from enigma Singleton
+    bigEnigmaManager().pickNewEnigma(MOTUS);
+    wantedWord = bigEnigmaManager().getCurrentEnigma()->getSolution();
+    cout << "setting wantedWord to : " << wantedWord << endl;
+    
     for(int i=0; i<wantedWord.size(); i++)
     {
         box = new specialBox();
@@ -225,7 +228,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
         box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
  
         box->add();
-        //box->applyForce(START_FORCE_FACTOR*ofVec3f(ofRandom(-1, 1), ofRandom(-1, 1), ofRandom(-1, 1)), box->getPosition());
+        box->applyForce(START_FORCE_FACTOR*ofVec3f(ofRandom(-1, 1), ofRandom(-1, 1), ofRandom(-1, 1)), box->getPosition());
         
         myCubes.push_back(box);
     }
@@ -235,21 +238,9 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
 
 //--------------------------------------------------------------
 void scGame3::sceneWillDisappear( ofxScene * toScreen ){
+    
 };
 
-
-
-////--------------------------------------------------------------
-//string scGame3::toUpperCase(string str)
-//{
-//    string strUpper = "";
-//    
-//    for( int i=0; i<str.length(); i++ )
-//    {
-//        strUpper += toupper( str[ i ] );
-//    }
-//    return strUpper;
-//};
 
 
 //--------------------------------------------------------------
@@ -276,7 +267,7 @@ void scGame3::keyPressed(int key){
         camPosY = 550;
         camPosZ = 0;
         
-        camera.rotate(-90, ofVec3f(1,0,0));
+        camera.rotate(-80, ofVec3f(1,0,0));
     }
 };
 

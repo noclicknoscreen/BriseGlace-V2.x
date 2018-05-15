@@ -650,6 +650,7 @@
 		D2CF8C4B20AA01380035B780 /* indice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = indice.cpp; sourceTree = "<group>"; };
 		D2CF8C4C20AA01380035B780 /* indice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = indice.h; sourceTree = "<group>"; };
 		D2CF8C5020AAEAAC0035B780 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		D2CF8C5120AB141B0035B780 /* scGame3BIS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scGame3BIS.h; sourceTree = "<group>"; };
 		D2D1D47D5A2A1B5AC097B14F /* btDefaultMotionState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btDefaultMotionState.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/LinearMath/btDefaultMotionState.h; sourceTree = SOURCE_ROOT; };
 		D2F2DC31B30F78A69C7E766C /* btActionInterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btActionInterface.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletDynamics/Dynamics/btActionInterface.h; sourceTree = SOURCE_ROOT; };
 		D2F63572987E44FAFD60CA6A /* btPoolAllocator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btPoolAllocator.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/LinearMath/btPoolAllocator.h; sourceTree = SOURCE_ROOT; };
@@ -1487,6 +1488,7 @@
 				D2CF8C1820A98E700035B780 /* scGame2.h */,
 				D2CF8C1920A98E700035B780 /* scGame3.cpp */,
 				D2CF8C1A20A98E700035B780 /* scGame3.h */,
+				D2CF8C5120AB141B0035B780 /* scGame3BIS.h */,
 				D2CF8C1B20A98E700035B780 /* scHint.cpp */,
 				D2CF8C1C20A98E700035B780 /* scHint.h */,
 				D2CF8C1D20A98E700035B780 /* scInitialize.cpp */,

@@ -25,45 +25,46 @@ public:
     void customDraw()
     {
         transformGL();
-        ofVec3f size = getSize();
         
-        //apply texture
-        ofEnableNormalizedTexCoords();
-        texture.bind();
-        
-        //3d box
-        ofSetColor(255);
-        
-        ofFill();
-        ofDrawBox(0, 0, 0, size.x, size.y, size.z);
-
-        //contour
-//        ofNoFill();
-//        ofSetLineWidth(2);
-//        ofSetColor(0);
-//        ofDrawBox(0, 0, 0, size.x, size.y, size.z);
-//        ofFill();
-        
-        texture.unbind();
-        ofDisableNormalizedTexCoords();
-        
-        
-        //letter
-        float textHeight, textWidth;
-        textWidth = font.getStringBoundingBox(letter, 0, 0).getWidth();
-        textHeight = font.getStringBoundingBox(letter, 0, 0).getHeight();
-        
-        ofSetColor(0);
         ofPushMatrix();
-        ofRotate(180, 0,0,1);
-        ofTranslate(-textWidth/2.0,  -textHeight/2, float(size.z/2 +1));
+        ofRotate(-90, 1, 0, 0);
         
-        ofDisableLighting();
-        font.drawString(letter, 0, 0);
-        ofEnableLighting();
+            ofVec3f size = getSize();
+            
+            //apply texture
+            ofEnableNormalizedTexCoords();
+            texture.bind();
+            
+            //3d box
+            ofSetColor(255);
+            
+            ofFill();
+            ofDrawBox(0, 0, 0, size.x, size.y, size.z);
         
-        ofPopMatrix();
+            texture.unbind();
+            ofDisableNormalizedTexCoords();
+            
+            
+            //letter
+            float textHeight, textWidth;
+            textWidth = font.getStringBoundingBox(letter, 0, 0).getWidth();
+            textHeight = font.getStringBoundingBox(letter, 0, 0).getHeight();
+            
+            ofSetColor(0);
+            ofPushMatrix();
+                ofRotate(180, 0, 0, 1);
+                ofRotate(180, 0, 1, 0);
+                ofRotate(180, 1, 0, 0);
+        
+                ofTranslate(-textWidth/2.0,  -textHeight/2, float(size.z/2 +1));
+                
+                ofDisableLighting();
+                font.drawString(letter, 0, 0);
+                ofEnableLighting();
+            ofPopMatrix();
 
+        ofPopMatrix();
+        
         //restore gl state
         restoreTransformGL();
         
@@ -108,9 +109,6 @@ public:
     
     void keyPressed(int key);
     void exit();
-    
-    //utils
-    //string toUpperCase(string str);
     
     //physics
     ofxBulletWorldRigid			world;

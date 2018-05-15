@@ -11,6 +11,7 @@
 #include "scGame1.h"
 #include "scGame2.h"
 #include "scGame3.h"
+#include "scGame3BIS.h"
 #include "scHint.h"
 #include "scVictory.h"
 

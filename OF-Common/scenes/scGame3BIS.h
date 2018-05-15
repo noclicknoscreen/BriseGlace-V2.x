@@ -23,9 +23,7 @@ public:
         scScene::sceneWillAppear(fromScreen);
         
         //now comes from enigma Singleton
-        bigEnigmaManager().pickNewEnigma(MOTUS);
         wantedWord = bigEnigmaManager().getCurrentEnigma()->getSolution();
-        cout << "setting wantedWord to : " << wantedWord << endl;
         
         for(int i=0; i<wantedWord.size(); i++)
         {
@@ -34,7 +32,6 @@ public:
             box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
             
             box->add();
-            //box->applyForce(START_FORCE_FACTOR*ofVec3f(ofRandom(-1, 1), ofRandom(-1, 1), ofRandom(-1, 1)), box->getPosition());
             
             myCubes.push_back(box);
         }

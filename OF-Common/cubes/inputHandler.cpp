@@ -144,7 +144,7 @@ void inputHandler::update(cubeManager* cm)
                     readyForNewText = true;
                     if(nbCubesRotated == wordToFind.size())
                     {
-                        ofxSceneManager::instance()->goToScene(8);
+                        ofxSceneManager::instance()->goToScene(9);
                     }
                     
                 }
