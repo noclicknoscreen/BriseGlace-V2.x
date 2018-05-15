@@ -1,4 +1,5 @@
 <!-- Input MOT -->
+<p> --------------------------------------------------------------------------------------------------------------------</p>
 <p>
     <label for="mot">Mot à trouver</label> : <br>
     <input type="text" name="mot" id="mot" value="<?php if (isset($_POST['mot'])){echo $_POST['mot'];} ?>">
@@ -6,6 +7,10 @@
 
 <details open>
 <summary>ÉDITER</summary>
+<?php
+if ($_POST['jeux'] == "motus")
+{
+?>
 <!-- Input INDICE 1 -->
 <p>
     <label for="indice1">Indice 1</label> : <br>
@@ -36,6 +41,9 @@
     <label for="image3">image indice 3</label> : <br>
     <input type="url" name="image3" id="image3" class="url_input" value="<?php if (isset($_POST['image3'])){echo $_POST['image3'];} ?>">
 </p>
+<?php
+}
+?>
 <!-- Input RECOMPENSE -->
 <p>
     <label for="recompense">Recompense</label> : <br>
@@ -52,4 +60,3 @@
     <input type="text" name="legende" id="legende" class="legende_input" value="<?php if (isset($_POST['legende'])){echo $_POST['legende'];} ?>">
 </p>
 </details>
-<p> --------------------------------------------------------------------------------------------------------------------</p>

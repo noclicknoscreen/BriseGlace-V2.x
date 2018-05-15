@@ -8,39 +8,64 @@
   </head>
   <body>
     <form action="?" method="POST">
+
     <h1>Enigme</h1>
     <!-- Input JEUX  -->
     <p>
+
+      <?php
+          $selected = isset( $_POST['jeux'] ) ? $_POST['jeux'] : "" ;
+          $selectedValue = 'selected="selected"';
+      ?>
+
         <label for="jeux">Jeux :</label>
-        <select name="jeux" id="jeux" value="<?php if (isset($_POST['jeux'])){echo $_POST['jeux'];} ?>">
+        <select name="jeux" id="jeux" value="boggle">
             <!-- choix du jeux  -->
-            <option value = "motus">Motus</option>
-            <option value = "boggle">Boggle</option>
-            <option value = "memory">Memory</option>
+            <option value = "motus" <?php if( $selected == "motus" ) echo $selectedValue ?>>Motus</option>
+            <option value = "boggle" <?php if( $selected == "boggle" ) echo $selectedValue ?>>Boggle</option>
+            <option value = "memory" <?php if( $selected == "memory" ) echo $selectedValue ?>>Memory</option>
         </select>
+        <input type="submit" name="select" id="selects" value="Select" />
     </p>
 
-<p> --------------------------------------------------------------------------------------------------------------------</p>
-
   <?php
-    require('script/front/old.php');
-    // NOUVELLE ENIGME
-    if (isset($_POST['plus']))
-    {
-      require('script/front/new.php');
-    }
-    // SI BOUTTON ENVOYER
-    else if (isset($_POST['submit']))
-    {
-      require('script/back/create.php');
-    }
-     ?>
+  require('script/utile/function.php');
+  if (isset($_POST['jeux']))
+  {
+      require('script/front/old.php');
+
+      ?>
 
       <!-- BOUTTON -->
       <div class="button">
-      <input type="submit" name="submit" value="Envoyer" />
-      <input type="submit" name="plus" id="plus" value="+" />
+      </br>
+        <input type="submit" name="plus" id="plus" value="+"/>
+        <input type="submit" name="update" id="update" value="update" />
       </div>
-      </form>
+
+      <?php
+
+      // NOUVELLE ENIGME
+      if (isset($_POST['plus']))
+      {
+        require('script/front/new.php');
+        // SI BOUTTON ENVOYER
+        ?>
+        <input type="submit" name="submit" value="Envoyer" />
+        <p> --------------------------------------------------------------------------------------------------------------------</p>
+        <?php
+      }
+      else if (isset($_POST['submit']))
+      {
+        require('script/back/create.php');
+      }
+      else if (isset($_POST['update']))
+      {
+        require('script/back/update.php');
+      }
+
+    } ?>
+
+</form>
 </body>
 </html>
