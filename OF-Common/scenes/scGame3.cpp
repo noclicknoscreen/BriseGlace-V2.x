@@ -185,9 +185,6 @@ void scGame3::draw(){
     if(drawGui)
         gui.draw();
     
-<<<<<<< HEAD
-=======
-    
     ofPushStyle();
     
     // Style setup
@@ -198,7 +195,6 @@ void scGame3::draw(){
     
     ofPopStyle();
     
->>>>>>> 46347e48058cda4034369b3f87def0670f7fb911
 };
 
 //--------------------------------------------------------------
