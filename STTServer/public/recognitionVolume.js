@@ -39,12 +39,12 @@ window.onload = function() {
     // grab an audio context
     audioContext = new AudioContext();
 
-		// One-liner to resume playback when user interacted with the page.
-		document.getElementById('resume').addEventListener('click', function() {
-		  audioContext.resume().then( () => {
-		    console.log('Playback resumed successfully');
-		  });
-		});
+		// // One-liner to resume playback when user interacted with the page.
+		// document.getElementById('resume').addEventListener('click', function() {
+		//   audioContext.resume().then( () => {
+		//     console.log('Playback resumed successfully');
+		//   });
+		// });
 
     // Attempt to get audio input
     try {
