@@ -40,6 +40,8 @@ private:
     
     map<int, player> mPlayers;
     map<int, ofColor> mColors;
+    map<int, string> mSequences;
+    map<int, ofPoint> mPositions;
     
     bool bLoadingPlayers = false;
     void loadPlayers(ofBuffer _datas);

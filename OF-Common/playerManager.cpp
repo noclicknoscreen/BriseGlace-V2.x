@@ -12,10 +12,22 @@
 //void playerManager::setup(ofEvent<player> _someoneSpoke){
 void playerManager::setup(){
     
+    // 1st player is red
     mColors[1] = ofColor::red;
+    mSequences[1] = "Cube-Rouge";
+    mPositions[1] = ofPoint(200, ofGetHeight());
+    // Green
     mColors[2] = ofColor::green;
+    mSequences[2] = "Cube-Vert";
+    mPositions[2] = ofPoint(0.5 * ofGetWidth(), ofGetHeight());
+    // Blue
     mColors[3] = ofColor::blue;
+    mSequences[3] = "Cube-Bleu";
+    mPositions[3] = ofPoint(ofGetWidth() - 200, ofGetHeight());
+    // MySelf = Gray
     mColors[4] = ofColor::gray;
+    mSequences[4] = "Cube-Rouge";
+    mPositions[4] = ofPoint(0.5 * ofGetWidth(), ofGetHeight());
     
     //    someoneSpoke = _someoneSpoke;
     ofRegisterURLNotification(this);
@@ -35,10 +47,6 @@ void playerManager::update(){
         ofLoadURLAsync("https://localhost:8443/players","players");
         bLoadingPlayers = true;
     }
-    //    else
-    //    {
-    //        ofLogError() << "Already loading, waiting for connection";
-    //    }
     
 }
 
@@ -69,7 +77,7 @@ void playerManager::loadPlayers(ofBuffer _datas){
                 
                 ofLogNotice() << "Add player : " << mResponse["players"][idxPlayer]["nr"].asInt();
                 // Else add
-                player newPlayer = player(mColors[realNr]);
+                player newPlayer = player(mColors[realNr], mSequences[realNr]);
                 
                 newPlayer.update(mResponse["players"][idxPlayer]["isAvailable"].asBool(),
                                  mResponse["players"][idxPlayer]["lastMessage"]["text"].asString(),
@@ -117,16 +125,16 @@ void playerManager::draw(){
     
     for (onePlayer=mPlayers.begin(); onePlayer!=mPlayers.end(); ++onePlayer){
         // Position is nearby middle, bottom
-        float x;
-        if(mPlayers.size() > 1){
-            x = ofMap((float)(count)/(float)(mPlayers.size() -1), 0, 1, border, ofGetWidth() - border);
-        }else{
-            x = ofMap(0.5, 0, 1, border, ofGetWidth() - border);
-        }
-        
-        ofVec2f pos = ofVec2f(x, ofGetHeight());
+//        float x;
+//        if(mPlayers.size() > 1){
+//            x = ofMap((float)(count)/(float)(mPlayers.size() -1), 0, 1, border, ofGetWidth() - border);
+//        }else{
+//            x = ofMap(0.5, 0, 1, border, ofGetWidth() - border);
+//        }
+//        
+//        ofVec2f pos = ofVec2f(x, ofGetHeight());
         // Second is value (aka player)
-        onePlayer->second.draw(pos);
+        onePlayer->second.draw(mPositions[onePlayer->second.getNumber()]);
         // Then increase
         count++;
     }
