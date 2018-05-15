@@ -28,6 +28,7 @@ public:
     bool load(string path);
     
     ofImage     getImage(enigmaType _type);
+    ofImage     getCurrentImage(){getImage(enigmaType(currentImageId)); currentImageId++;};
     string      getTitre(enigmaType _type);
     bool        getIsAvailable(enigmaType _type);
     
@@ -42,6 +43,8 @@ private:
     enigmaHint             mReward;
     
     enigmaHint*  getHint(enigmaType _type);
-
+    
+    int currentImageId=0;
+    
     
 };
