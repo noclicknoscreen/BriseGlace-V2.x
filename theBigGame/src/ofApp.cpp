@@ -89,7 +89,8 @@ void ofApp::keyPressed(int key){
     }
     
     sceneManager->keyPressed(key);
-
+    myPlayerManager.keyPressed(key);
+    
 }
 
 
