@@ -14,21 +14,26 @@ void scGame1::setup(){  //load your scene 1 assets here...
     myTitle = "Game 1 : Mot caché";
     
     
-
+    //cubes
+    myCubeManager.setup();
+    
+    //inputs
+    myInputManager.setup();
+    
+    //TODO :: bonheur ecrit en dur => lu dans le JSON
+    myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getDesc());
+    
+    myInputManager.clearDuplicatesLettersHistory();
+    myInputManager.setReadyForNewText();
+    myInputManager.setWordToFind(bigEnigmaManager().getCurrentEnigma()->getDesc());
     
 };
 
 void scGame1::update(float dt){ //update scene 1 here
     
     myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), cubesRotationSpeed);
-    
-    
-    //TODO re-ecrire ca
-    if(myInputManager.update(&myCubeManager) == true)
-    {
-         //ofNotifyEvent(endSceneEvent);
-    }
-    //, VICTORY, <#SenderType *sender#>)
+    myInputManager.update(&myCubeManager);
+
 };
 
 void scGame1::draw(){ //draw scene 1 here
@@ -44,7 +49,7 @@ void scGame1::draw(){ //draw scene 1 here
     
     ofPushStyle();
     // Style setup
-    ofSetColor(ofColor::red);
+    ofSetColor(ofColor(255,0,0));
     
     scScene::draw();            // Draw title
     myPlayerManager->draw();    // Draw players
@@ -75,6 +80,20 @@ void scGame1::someoneSpoke(player & _player){
     
 }
 
+
+//--------------------------------------------------------------
+//string scGame1::toUpperCase(string str)
+//{
+//    string strUpper = "";
+//    
+//    for( int i=0; i<str.length(); i++ )
+//    {
+//        strUpper += toupper( str[ i ] );
+//    }
+//    return strUpper;
+//};
+
+
 //scene notifications
 void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
@@ -100,10 +119,15 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     myInputManager.setup();
     
     //TODO :: bonheur ecrit en dur => lu dans le JSON
+<<<<<<< HEAD
     myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
+=======
+    myCubeManager.getWord(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getDesc()));
+>>>>>>> b60ddc7ba4802a905f70ce745d79d52422b6b2f0
     
     myInputManager.clearDuplicatesLettersHistory();
     myInputManager.setReadyForNewText();
+    myInputManager.setWordToFind(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getDesc()));
     
     
 };

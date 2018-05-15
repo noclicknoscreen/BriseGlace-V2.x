@@ -26,7 +26,8 @@ void inputHandler::getNewText(player _player)
     
     cout << "got new input from user " << userId << " : " << _player.getLastMessageToCompare() << endl;
     
-    text = _player.getLastMessageToCompare();
+    //TODO A REMETTRE !
+    text = utils::toUpperCase(_player.getLastMessageToCompare());
 
     ofPoint source;
     ofColor textColor;
@@ -58,7 +59,7 @@ void inputHandler::getNewText(player _player)
     
     
     //TODO : GET IT FROM THE ENIGMA SINGLETON
-    wordToFind = "bonheur";
+    //wordToFind = "bonheur";
     compareInput(wordToFind);
     setRevealMode();
     
@@ -73,7 +74,7 @@ void inputHandler::draw()
         }
 }
 
-bool inputHandler::update(cubeManager* cm)
+void inputHandler::update(cubeManager* cm)
 {
     
     bool lettersAreFading = false;
@@ -140,14 +141,14 @@ bool inputHandler::update(cubeManager* cm)
                     cout << "reveal finished, ready to get another proposal from user " << endl;
                     revealMode = false;
                     readyForNewText = true;
-                    if(nbCubesRotated == wordToFind.size())
-                    {
-                        return true;
-                    }
+//                    if(nbCubesRotated == wordToFind.size())
+//                    {
+//                        return true;
+//                    }
+                    ofxSceneManager::instance()->goToScene(8);
                 }
             }
     }
-    return false;
 }
 
 void inputHandler::compareInput(string wantedWord)
@@ -188,6 +189,7 @@ void inputHandler::compareInput(string wantedWord)
     }
 
 }
+
 
 void inputHandler::clearDuplicatesLettersHistory()
 {

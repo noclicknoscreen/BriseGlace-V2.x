@@ -202,7 +202,7 @@ void scGame3::exit()
 void scGame3::someoneSpoke(player & _player){
     scScene::someoneSpoke(_player);
    
-    if(toUpperCase(_player.getLastMessage()) == toUpperCase(wantedWord))
+    if(utils::toUpperCase(_player.getLastMessage()) == utils::toUpperCase(wantedWord))
     {
         cout << "c'est gagné !!! " << endl;
     }
@@ -239,17 +239,17 @@ void scGame3::sceneWillDisappear( ofxScene * toScreen ){
 
 
 
-//--------------------------------------------------------------
-string scGame3::toUpperCase(string str)
-{
-    string strUpper = "";
-    
-    for( int i=0; i<str.length(); i++ )
-    {
-        strUpper += toupper( str[ i ] );
-    }
-    return strUpper;
-};
+////--------------------------------------------------------------
+//string scGame3::toUpperCase(string str)
+//{
+//    string strUpper = "";
+//    
+//    for( int i=0; i<str.length(); i++ )
+//    {
+//        strUpper += toupper( str[ i ] );
+//    }
+//    return strUpper;
+//};
 
 
 //--------------------------------------------------------------

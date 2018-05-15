@@ -13,6 +13,8 @@
 #include "ofMain.h"
 #include "cubeManager.h"
 #include "player.h"
+#include "ofxSceneManager.h"
+#include "utils.h"
 
 #define inputTextYPosition 400
 #define movementSmoothingValue 15
@@ -34,13 +36,14 @@ class inputHandler
 public:
     void setup();
     void getNewText(player _player);//int _userId, string txt);
-    bool update(cubeManager* cm);
+    void update(cubeManager* cm);
     void draw();
     void compareInput(string wantedWord);
     void clearDuplicatesLettersHistory();
     void setRevealMode(){revealMode = true; currentRevealCube=0;}
     bool isReadyForNewText(){return readyForNewText;}
     void setReadyForNewText(){readyForNewText = true;}
+    void setWordToFind(string _wantedWord){wordToFind = _wantedWord;};
     
 private:
     string text;
