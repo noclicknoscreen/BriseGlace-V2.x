@@ -23,7 +23,6 @@ void scInitialize::update(float dt){ //update scene 1 here
     
     if(timerValue <= 0 && !bTimerReached) {
         bTimerReached = true;
-        ofNotifyEvent(endSceneEvent, this);
         ofLogNotice() << "End of Timer !!!";
     }
 

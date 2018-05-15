@@ -12,7 +12,7 @@
 class scVictory : public scScene{
 
 public:
-    scVictory(ofEvent<void> _endSceneEvent, playerManager &_manager) : scScene(_endSceneEvent, _manager){
+    scVictory(playerManager &_manager) : scScene(_manager){
     };
     
     void setup();

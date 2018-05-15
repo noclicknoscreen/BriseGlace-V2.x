@@ -13,7 +13,7 @@ class scIntro : public scScene{
 
 public:
     // Constructor
-    scIntro(ofEvent<void> _endSceneEvent, playerManager &_manager) : scScene(_endSceneEvent, _manager){
+    scIntro(playerManager &_manager) : scScene(_manager){
     }
 	void setup();
 	void update(float dt);

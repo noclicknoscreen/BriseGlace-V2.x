@@ -26,7 +26,7 @@ class scScene : public ofxScene, ofBaseApp {
 public:
     void setup();
     void draw();    // Constructor
-    scScene(ofEvent<void> _endSceneEvent, playerManager &_manager);
+    scScene(playerManager &_manager);
     
     void someoneSpoke(player & _player);
     
@@ -36,7 +36,6 @@ public:
 protected:
     ///////////// MEMBERS /////////////////////
     ofTrueTypeFont myFont24;        // Draw text
-    ofEvent<void> endSceneEvent;    // Throw this event to pass the scene from
     playerManager *myPlayerManager;  // Player
     string        myTitle;
     

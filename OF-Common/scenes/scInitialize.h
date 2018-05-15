@@ -12,7 +12,7 @@
 class scInitialize : public scScene{
 
 public:
-    scInitialize(ofEvent<void> _endSceneEvent, playerManager &_manager) : scScene(_endSceneEvent, _manager){
+    scInitialize(playerManager &_manager) : scScene(_manager){
     };
 
     void setup();
