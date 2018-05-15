@@ -13,12 +13,13 @@
 #include "ofMain.h"
 #include "cube.h"
 #include "ofxTextSuite.h"
+#include "enigma.h"
 
 class indice
 {
 public:
     
-    void setup(string photoFilename="test.jpg");
+    void setup(enigma* _enigme);
     void update();
     void draw();
     
@@ -43,9 +44,6 @@ private :
     //utils
     bool revealMode;
     int cubeIndex;
-    
-    //font
-    ofTrueTypeFont font;
     
     //fbo to draw text, to be used as texture
     ofFbo textFbo;

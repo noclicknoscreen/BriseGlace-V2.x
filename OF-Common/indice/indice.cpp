@@ -10,12 +10,16 @@
 #include "cube.h"
 
 
-void indice::setup(string photoFilename)
+//void indice::setup(string photoFilename)
+void indice::setup(enigma* _enigme)
 {
+    
     ofEnableDepthTest();
     
     //load texture
-    texture.load(photoFilename);
+    texture = _enigme->getImage(HINT1);
+    texture.resize(3*cubeSize, 3*cubeSize);
+
     
     cubeSize = 120;
     totalWidth = cubeSize * 3;
@@ -44,21 +48,20 @@ void indice::setup(string photoFilename)
     revealMode = false;
     
     //load font
-    font.load("Avenir.ttc", 12);
     textFbo.allocate(3*cubeSize, 3*cubeSize);
     textFbo.setUseTexture(true);
     
     
     //wrap text
-    myText.init("Avenir.ttc", 12);
-    myText.setText("Un château est à l'origine une construction médiévale destinée à protéger le seigneur et à symboliser son autorité au sein du fief. Les premiers châteaux étaient construits en bois souvent sur une élévation de terre (motte castrale ou féodale), puis en pierre afin de résister aux nouvelles armes de guerre. On les appela les châteaux forts.");
+    myText.init("Avenir.ttc", 16);
+    myText.setText(_enigme->getLegende());
     myText.wrapTextX(cubeSize*3);
     
     //fill fbo and put it into an image
     textFbo.begin();
-        ofClear(255);
-        ofSetColor(0);
-        myText.draw(0,0);
+    ofClear(255);
+    ofSetColor(0);
+    myText.draw(0,0);
     textFbo.end();
     
     //put fbo in an image
@@ -68,16 +71,12 @@ void indice::setup(string photoFilename)
     
     //lumiere
     ofEnableLighting();
-    
-    //lumiere
     spotLight.setSpotlight();
     spotLight.setSpotlightCutOff(200);
     spotLight.setAttenuation(0.3,0,0); //puissance de la light = inverse de l'attenuation
     spotLight.setSpotConcentration(0.15);
     spotLight.setDiffuseColor( ofColor(255.f, 255.f, 255.f));
     spotLight.setSpecularColor( ofColor(255.f, 255.f, 255.f));
-    spotLight.setPosition(ofGetWidth()/2, ofGetHeight()/2, 0);
-    spotLight.setPosition(ofGetWidth()-300, 100, 0);
     material.setShininess( 128);
     lightColor.setBrightness( 255.0f);
     lightColor.setSaturation( 0.f );
@@ -89,7 +88,6 @@ void indice::setup(string photoFilename)
 
 void indice::update()
 {
-
     //reveal corresponding cubes
     if(revealMode)
     {
@@ -113,11 +111,11 @@ void indice::update()
     //update cubes
     for(int i=0; i<myCubes.size(); i++)
     {
-        myCubes[i].update(1);
+        myCubes[i].update(5);
     }
     
     //lumiere
-    spotLight.setPosition(ofGetMouseX(), ofGetMouseY(),100);
+    spotLight.setPosition(ofGetWidth()*5/6, ofGetHeight()/2,100);
     spotLight.setOrientation( ofVec3f( 0, 45, 30) );
     lightColor.setHue(0);
     spotLight.setDiffuseColor(lightColor);
@@ -140,24 +138,26 @@ void indice::draw()
         int line = i%3;
         int row = i/3;
         
+        ofDisableNormalizedTexCoords();
         drawTexturedCube(i,
                          float(line*texture.getWidth()/3),
                          float((line+1)*texture.getWidth()/3),
                          float(row*texture.getHeight()/3),
                          float((row+1)*texture.getHeight()/3)
                          );
+        
         drawTexturedCubeTEXT(i,
-                             float(line*texture.getWidth()/3),
-                             float((line+1)*texture.getWidth()/3),
-                             float(row*texture.getHeight()/3),
-                             float((row+1)*texture.getHeight()/3)
+                             float(line*textImageFromFbo.getWidth()/3),
+                             float((line+1)*textImageFromFbo.getWidth()/3),
+                             float(row*textImageFromFbo.getHeight()/3),
+                             float((row+1)*textImageFromFbo.getHeight()/3)
                              );
     }
     
     material.end();
     spotLight.disable();
     ofDisableLighting();
-    spotLight.draw();
+    //spotLight.draw();
    
 }
 
