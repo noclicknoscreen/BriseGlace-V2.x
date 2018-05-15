@@ -102,17 +102,20 @@ void cubeManager::draw(){
             
             //FACE BLANCHE
             material.setAmbientColor(myCubes[i].materialColor);
-            material.setDiffuseColor(myCubes[i].materialColor);
-            //material.setSpecularColor(myCubes[i].materialColor);
+        
+            material.setDiffuseColor(ofColor(myCubes[i].materialColor, 140)); //add some transparency here, to keep the texture visible ;)
             material.begin();
         
+            ofEnableNormalizedTexCoords();
+            //texture.bind();
             for(int i=0; i<myCubes.size(); i++)
             {
                 ofPushMatrix();
                 ofRotate(180,1,0,0);
-                ofDrawRectangle(-myCubes[i].size/2, -myCubes[i].size/2, ((myCubes[i].size/2)+0.1), myCubes[i].size, myCubes[i].size);
+                ofDrawRectangle(-myCubes[i].size/2, -myCubes[i].size/2, (myCubes[i].size/2)+0.2, myCubes[i].size, myCubes[i].size);
                 ofPopMatrix();
             }
+            //texture.unbind();
         
             
             material.end();
