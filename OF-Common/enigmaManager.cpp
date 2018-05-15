@@ -25,13 +25,13 @@ void enigmaManager::pickNewEnigma(gameType _type){
     
     switch (_type) {
         case MOTUS:
-            path += "/MOTUS";
+            path += "/motus";
             break;
         case IMAGE_GRID:
-            path += "/IMAGE_GRID";
+            path += "/memory";
             break;
         case BOGGLE:
-            path += "/BOGGLE";
+            path += "/boggle";
             break;
         default:
             break;
@@ -45,16 +45,14 @@ void enigmaManager::pickNewEnigma(gameType _type){
     if( dir.size() ){
         // Ok, we have some folders
         // you can now iterate through the files and load them into the ofImage vector
-        for (int idxFolder=0; idxFolder < (int)dir.size(); idxFolder++) {
-            ofFile oneFile = dir.getFile(idxFolder);
-            
-            if(oneFile.isDirectory()){
-                enigma newEnigma;
-                if(newEnigma.load(oneFile.getAbsolutePath())){
-                    mCurrentEnigma = newEnigma;
-                }
+        int idxFolder = (int) ofRandom(dir.size());
+        ofFile oneFile = dir.getFile(idxFolder);
+        
+        if(oneFile.isDirectory()){
+            enigma newEnigma;
+            if(newEnigma.load(oneFile.getAbsolutePath())){
+                mCurrentEnigma = newEnigma;
             }
-            
         }
     }
     
