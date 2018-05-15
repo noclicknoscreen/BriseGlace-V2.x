@@ -54,6 +54,10 @@ void enigmaManager::pickNewEnigma(gameType _type){
                 mCurrentEnigma = newEnigma;
             }
         }
+        else
+        {
+            pickNewEnigma(_type);
+        }
     }
     
 }
