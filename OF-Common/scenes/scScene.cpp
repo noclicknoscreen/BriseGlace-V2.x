@@ -9,8 +9,7 @@
 #include "scScene.h"
 
 // Constructor
-scScene::scScene(ofEvent<void> _endSceneEvent, playerManager &_manager){
-    endSceneEvent = _endSceneEvent;
+scScene::scScene(playerManager &_manager){
     myPlayerManager = &_manager;
 }
 

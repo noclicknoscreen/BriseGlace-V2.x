@@ -14,32 +14,19 @@ void scGame1::setup(){  //load your scene 1 assets here...
     myTitle = "Game 1 : Mot caché";
     
     
-    gui.setup();
-    //gui.add
-    gui.add(lightPosX.set("lightPosX", 850, -1000, 1000));
-    gui.add(lightPosY.set("lightPosY", 120, -1000, 1000));
-    gui.add(lightPosZ.set("lightPosZ", 0, -100, 100));
-    gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
-    
-    //cubes
-    myCubeManager.setup();
-    
-    //inputs
-    myInputManager.setup();
-    
-    //TODO :: bonheur ecrit en dur => lu dans le JSON 
-    myCubeManager.getWord("bonheur");
-    myInputManager.clearDuplicatesLettersHistory();
-    myInputManager.setReadyForNewText();
+
     
 };
 
 void scGame1::update(float dt){ //update scene 1 here
     
     myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), cubesRotationSpeed);
+    
+    
+    //TODO re-ecrire ca
     if(myInputManager.update(&myCubeManager) == true)
     {
-         ofNotifyEvent(endSceneEvent);
+         //ofNotifyEvent(endSceneEvent);
     }
     //, VICTORY, <#SenderType *sender#>)
 };
@@ -77,11 +64,6 @@ void scGame1::keyPressed(int key){
     if(key=='W')
         myCubeManager.rotateToWhite(0);
     
-    if(key==' ')
-    {
-        ofNotifyEvent(endSceneEvent);
-    }
-    
 }
 
 // Speaking event
@@ -102,6 +84,29 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     ofAddListener(myPlayerManager->someoneSpoke,this,&scGame1::someoneSpoke);
     // Load the next enigma
     bigEnigmaManager().pickNewEnigma(MOTUS);
+    
+    
+    
+    gui.setup();
+    //gui.add
+    gui.add(lightPosX.set("lightPosX", 850, -1000, 1000));
+    gui.add(lightPosY.set("lightPosY", 120, -1000, 1000));
+    gui.add(lightPosZ.set("lightPosZ", 0, -100, 100));
+    gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
+    
+    //cubes
+    myCubeManager.setup();
+    
+    //inputs
+    myInputManager.setup();
+    
+    //TODO :: bonheur ecrit en dur => lu dans le JSON
+    myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getDesc());
+    
+    myInputManager.clearDuplicatesLettersHistory();
+    myInputManager.setReadyForNewText();
+    
+    
 };
 
 //scene notifications

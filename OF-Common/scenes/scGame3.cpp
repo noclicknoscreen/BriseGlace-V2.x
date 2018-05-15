@@ -53,7 +53,8 @@ void scGame3::setup(){
         ground.create( world.world,     ofVec3f(0, 0, 0),       0., 1000.f, 1.f, 1000.f );
         ground.setProperties(.25, .55);
         ground.add();
-        
+    
+    
         rightFace.create( world.world,  ofVec3f(450, 0, 0),    0., 1, 1000, 1000 );
         rightFace.setProperties(.25, .95);
         rightFace.add();
@@ -224,7 +225,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
         box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
  
         box->add();
-        box->applyForce(START_FORCE_FACTOR*ofVec3f(ofRandom(-1, 1), ofRandom(-1, 1), ofRandom(-1, 1)), box->getPosition());
+        //box->applyForce(START_FORCE_FACTOR*ofVec3f(ofRandom(-1, 1), ofRandom(-1, 1), ofRandom(-1, 1)), box->getPosition());
         
         myCubes.push_back(box);
     }
