@@ -18,6 +18,9 @@
 #include "playerManager.h"
 #include "enigmaManager.h"
 
+#include "utils.h"
+
+
 enum Scenes{ INTRO = 1, INITIALIZE, SELECT_GAME, GAME1, GAME2, GAME3, HINT, VICTORY };
 
 class scScene : public ofxScene, ofBaseApp {

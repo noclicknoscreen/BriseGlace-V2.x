@@ -30,6 +30,7 @@ public:
     void keyPressed(int key);
     
     void someoneSpoke(player & _player);
+    //string toUpperCase(string str);
     
     //gui
     ofxPanel gui;

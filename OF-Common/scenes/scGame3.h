@@ -110,7 +110,7 @@ public:
     void exit();
     
     //utils
-    string toUpperCase(string str);
+    //string toUpperCase(string str);
     
     //physics
     ofxBulletWorldRigid			world;
