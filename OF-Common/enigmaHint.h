@@ -13,20 +13,30 @@
 class enigmaHint {
     
 public:
+    enigmaHint(){
+        
+    };
     
-    enigmaHint(string _imagePath, string _desc){
-        image.load(_imagePath);
-        description = _desc;
+    enigmaHint(string _imagePath, string _titre){
+        
+        ofFile img(_imagePath);
+        if(_imagePath!= "" && img.exists()){
+            image.load(_imagePath);
+        }else{
+            ofLogWarning() << "Image file does not exist :"  << _imagePath;
+        }
+        titre = _titre;
+        
     };
     bool isAvailable(){
-        return (image.isAllocated() && (description != ""));
+        return (image.isAllocated() && (titre != ""));
     };
     
     ofImage     getImage(){return image;};
-    string      getDescription(){return description;};
+    string      getTitre(){return titre;};
     
 private:
     ofImage image;
-    string  description;
+    string  titre;
     
 };

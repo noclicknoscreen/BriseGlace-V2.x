@@ -17,47 +17,43 @@ void ofApp::draw(){
     string display;
     
     display += "Current Enigma : \n";
-    display += bigEnigmaManager().getCurrentEnigma()->getDesc() + "\n";
-    display += bigEnigmaManager().getCurrentEnigma()->getPath();
+    display += "Solution : " + bigEnigmaManager().getCurrentEnigma()->getSolution() + "\n";
+    display += "Legende : " + bigEnigmaManager().getCurrentEnigma()->getLegende() + "\n";
     
     ofDrawBitmapString(display, 0.1 * ofGetWidth(), 0.1 * ofGetHeight());
     
-    enigmaHint myReward = *bigEnigmaManager().getCurrentEnigma()->getHint(REWARD);
-    enigmaHint myHint1 = *bigEnigmaManager().getCurrentEnigma()->getHint(HINT1);
-    enigmaHint myHint2 = *bigEnigmaManager().getCurrentEnigma()->getHint(HINT2);
-    enigmaHint myHint3 = *bigEnigmaManager().getCurrentEnigma()->getHint(HINT3);
     ofImage myImage;
     
     // --- --- Reward --- --- //
     ofPushMatrix();
     ofTranslate(0.15 * ofGetWidth(), 0.3 * ofGetHeight());
-    if(myReward.isAvailable()){
-        myImage = myReward.getImage();
+    if(bigEnigmaManager().getCurrentEnigma()->getIsAvailable(REWARD)){
+        myImage = bigEnigmaManager().getCurrentEnigma()->getImage(REWARD);
         
         myImage.draw(0,0, 0.25 * myImage.getWidth(), 0.25 * myImage.getHeight());
-        ofDrawBitmapString(myReward.getDescription(), 0, 25 +  0.25 * myImage.getHeight());
+        ofDrawBitmapString(bigEnigmaManager().getCurrentEnigma()->getTitre(REWARD), 0, 25 +  0.25 * myImage.getHeight());
     }
     ofPopMatrix();
     
     // --- --- HINT 1 --- --- //
     ofPushMatrix();
     ofTranslate(0.15 * ofGetWidth(), 0.6 * ofGetHeight());
-    if(myHint1.isAvailable()){
-        myImage = myHint1.getImage();
+    if(bigEnigmaManager().getCurrentEnigma()->getIsAvailable(HINT1)){
+        myImage = bigEnigmaManager().getCurrentEnigma()->getImage(HINT1);
         
         myImage.draw(0,0, 0.25 * myImage.getWidth(), 0.25 * myImage.getHeight());
-        ofDrawBitmapString(myHint1.getDescription(), 0, 25 +  0.25 * myImage.getHeight());
+        ofDrawBitmapString(bigEnigmaManager().getCurrentEnigma()->getTitre(HINT1), 0, 25 +  0.25 * myImage.getHeight());
     }
     ofPopMatrix();
     
     // --- --- HINT 2 --- --- //
     ofPushMatrix();
     ofTranslate(0.4 * ofGetWidth(), 0.6 * ofGetHeight());
-    if(myHint2.isAvailable()){
-        myImage = myHint2.getImage();
+    if(bigEnigmaManager().getCurrentEnigma()->getIsAvailable(HINT2)){
+        myImage = bigEnigmaManager().getCurrentEnigma()->getImage(HINT2);
         
         myImage.draw(0,0, 0.25 * myImage.getWidth(), 0.25 * myImage.getHeight());
-        ofDrawBitmapString(myHint2.getDescription(), 0, 25 +  0.25 * myImage.getHeight());
+        ofDrawBitmapString(bigEnigmaManager().getCurrentEnigma()->getTitre(HINT2), 0, 25 +  0.25 * myImage.getHeight());
     }
     ofPopMatrix();
     
@@ -65,11 +61,11 @@ void ofApp::draw(){
     // --- --- HINT 3 --- --- //
     ofPushMatrix();
     ofTranslate(0.65 * ofGetWidth(), 0.6 * ofGetHeight());
-    if(myHint3.isAvailable()){
-        myImage = myHint3.getImage();
+    if(bigEnigmaManager().getCurrentEnigma()->getIsAvailable(HINT3)){
+        myImage = bigEnigmaManager().getCurrentEnigma()->getImage(HINT3);
         
         myImage.draw(0,0, 0.25 * myImage.getWidth(), 0.25 * myImage.getHeight());
-        ofDrawBitmapString(myHint3.getDescription(), 0, 25 +  0.25 * myImage.getHeight());
+        ofDrawBitmapString(bigEnigmaManager().getCurrentEnigma()->getTitre(HINT3), 0, 25 +  0.25 * myImage.getHeight());
     }
     ofPopMatrix();
     

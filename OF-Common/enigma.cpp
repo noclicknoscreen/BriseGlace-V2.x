@@ -8,6 +8,17 @@
 
 #include "enigma.h"
 
+const string tagJeu = "jeux";
+const string tagMot = "mot";
+const string tagIndice = "indice";
+const string tagRecompense = "recompense";
+
+const string tagTitre = "titre";
+const string tagImage = "image";
+const string tagURL = "url";
+
+const string tagLegende = "legende";
+
 bool enigma::load(string _path){
     
     ofFile fileJson(_path + "/enigma.json");
@@ -21,46 +32,57 @@ bool enigma::load(string _path){
     }else{
         ofxJSONElement content;
         if(content.open(fileJson.getAbsolutePath())){
-            ofLogNotice() << "Le mot est : " << content["mot"];
+            ofLogNotice() << "Le mot est : " << content[tagMot];
             
-            mDesc = content["mot"].asString();
-            mPath = fileJson.getAbsolutePath();
+            mSolution = content[tagMot].asString();
             
-            int nbHints = content["indices"].size();
-            for (int idxHint = 0; idxHint < nbHints; ++idxHint)
+            int nbHints = content[tagIndice].size();
+            for (int idxHint = 0; idxHint < nbHints; idxHint++)
             {
                 // Does player exists ?
-                ofLogNotice() << "Indice [" << ofToString(idxHint + 1) << "] : " << content["indices"][idxHint]["description"] << " - " << content["indices"][idxHint]["image"];
+//                ofLogNotice() << "Indice [" << ofToString(idxHint) << "] : " << content[tagIndice][idxHint][tagTitre] << " - " << content[tagIndice][idxHint][tagImage];
                 
                 string fullPath;
                 fullPath += _path;
                 fullPath += "/image/";
-                fullPath += content["indices"][idxHint]["image"].asString();
+                fullPath += content[tagIndice][idxHint][tagImage].asString();
                 
-                imgFile = ofFile(fullPath);
+                imgFile = ofFile(imgFile);
                 if(imgFile.exists()){
-        
-                    enigmaHint newHint(fullPath, content["indices"][idxHint]["description"].asString());
+                    enigmaHint newHint(fullPath, content[tagIndice][idxHint][tagTitre].asString());
                     mHints.push_back(newHint);
-                    
+                }else{
+                    ofLogError() << "Image file does not exists : "  << fullPath;
                 }
             }
             
             string rewImgPath;
             rewImgPath += _path;
             rewImgPath += "/image/";
-            rewImgPath += content["recompense"]["image"].asString();
+            rewImgPath += content[tagRecompense][tagIndice][tagImage].asString();
             
             imgFile = ofFile(rewImgPath);
             if(imgFile.exists()){
-                mReward = enigmaHint(rewImgPath, content["recompense"]["description"].asString());
+                mReward = enigmaHint(rewImgPath, content[tagRecompense][tagIndice][tagTitre].asString());
             }
+            
+            mLegende = content[tagRecompense][tagLegende].asString();
             
         }
     };
     
     return true;
     
+}
+
+ofImage enigma::getImage(enigmaType _type){
+    return getHint(_type)->getImage();
+}
+string enigma::getTitre(enigmaType _type){
+    return getHint(_type)->getTitre();
+}
+bool enigma::getIsAvailable(enigmaType _type){
+    return getHint(_type)->isAvailable();
 }
 
 enigmaHint* enigma::getHint(enigmaType _type){

@@ -77,6 +77,8 @@ void scGame1::someoneSpoke(player & _player){
     
     myInputManager.getNewText(_player);
     
+    bigEnigmaManager().getCurrentEnigma()
+    
 }
 
 
