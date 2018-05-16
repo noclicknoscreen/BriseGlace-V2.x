@@ -107,6 +107,10 @@ void scGame3::setup(){
     camPosZ = 95;
     
     camera.rotate(-80, ofVec3f(1,0,0));
+    
+    
+    //load background
+    background.load("Decor_SS-Sol.png");
 
 };
 
@@ -141,7 +145,7 @@ void scGame3::update(float dt){
         //add the top of the physical box after 5 seconds ;)
         //top.add();
 
-        amount = bigPlayerManager().getSumVolume();
+        amount = ofMap(bigPlayerManager().getAverageVolume(), 0.0, 1.0, 0.0, 0.6);
         if(amount < 120 && amount > -120 )
             applyForceOnCubes(amount);
     }
@@ -151,6 +155,18 @@ void scGame3::update(float dt){
 
 //--------------------------------------------------------------
 void scGame3::draw(){
+    
+    
+    //draw du background
+    ofSetColor(255);
+    ofPushMatrix();
+        ofTranslate(0,0,-200);
+        ofEnableNormalizedTexCoords();
+        background.bind();
+        ofDrawBox(ofGetWidth()/2, ofGetHeight()/2, 0, ofGetWidth()*1.3, ofGetHeight()*1.3, 1);
+        background.unbind();
+    ofPopMatrix();
+    
     
     ofEnableAntiAliasing();
     ofEnableSmoothing();

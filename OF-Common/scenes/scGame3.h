@@ -131,6 +131,9 @@ public:
     //the cubes
     vector<specialBox*>          myCubes;
     
+    //background image
+    ofImage background;
+    
     //parameters
     ofxPanel                     gui;
     bool                         drawGui;
