@@ -80,8 +80,8 @@ void playerManager::loadPlayers(ofBuffer _datas){
                 //                ":" << mResponse["players"][idxPlayer]["isAvailable"].asBool() <<
                 //                ":" << mResponse["players"][idxPlayer]["lastMessage"]["text"].asString() <<
                 //                ":" << mResponse["players"][idxPlayer]["volume"].asFloat();
-                //                // If yes, then update
                 
+                // If yes, then update
                 onePlayer->second.update(mResponse["players"][idxPlayer]["isAvailable"].asBool(),
                                          mResponse["players"][idxPlayer]["lastMessage"]["text"].asString(),
                                          mResponse["players"][idxPlayer]["lastMessage"]["textToCompare"].asString(),
