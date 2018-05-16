@@ -112,9 +112,11 @@ public:
     
     //physics
     ofxBulletWorldRigid			world;
-    ofxBulletBox				ground, rightFace, leftFace, bottom;
+    ofxBulletBox				ground, rightFace, leftFace, bottom, front, top;
     specialBox*                 box;
-    void applyForce(float amuont);
+    
+    void applyForceOnCubes(float amount);
+    
     
     //camera
     //ofEasyCam					camera;

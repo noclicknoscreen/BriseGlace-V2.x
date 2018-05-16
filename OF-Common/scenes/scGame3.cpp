@@ -49,22 +49,31 @@ void scGame3::setup(){
     world.setCamera(&camera);
     world.setGravity(ofVec3f(0,50,0));
    
-        ground.create( world.world,     ofVec3f(0, 0, 0),       0., 1000.f, 1.f, 1000.f );
+     float boxSize = 1000.0;
+    
+        ground.create( world.world,     ofVec3f(0, 0, 0),      0., boxSize, 1.f, boxSize );
         ground.setProperties(.25, .55);
         ground.add();
-    
-    
-        rightFace.create( world.world,  ofVec3f(450, 0, 0),    0., 1, 1000, 1000 );
+        
+        rightFace.create( world.world,  ofVec3f(boxSize/2 - 100, 0, 0),    0., 1, boxSize, boxSize );
         rightFace.setProperties(.25, .95);
         rightFace.add();
         
-        leftFace.create( world.world,  ofVec3f(-400, 0, 0),    0., 1, 1000, 1000 );
+        leftFace.create( world.world,  ofVec3f(-(boxSize/2 - 100), 0, 0),    0., 1, boxSize, boxSize );
         leftFace.setProperties(.25, .95);
         leftFace.add();
         
-        bottom.create( world.world,  ofVec3f(0, 0, -500),    0., 1000, 1000, 1 );
+        bottom.create( world.world,  ofVec3f(0, 0, -boxSize/2),      0., boxSize, boxSize, 1 );
         bottom.setProperties(.25, .95);
         bottom.add();
+    
+        front.create(world.world,  ofVec3f(0, 0, boxSize/2),      0., boxSize, boxSize, 1 );
+        front.setProperties(.25, .95);
+        front.add();
+    
+        top.create(world.world,  ofVec3f(0, boxSize/2, 0),      0., boxSize, 1, boxSize );
+        top.setProperties(.25, .95);
+        //top.add();
     
     
     
@@ -107,6 +116,10 @@ void scGame3::update(float dt){
     
     ofSetWindowTitle(ofToString(ofGetFrameRate()));
   
+    ofSetWindowTitle(ofToString(ofGetFrameRate()));
+    
+    myPlayerManager->update();
+    
     camera.setPosition(ofVec3f(camPosX, camPosY, camPosZ));
     world.setGravity(ofVec3f(0,gravity, 0));
 
@@ -126,11 +139,18 @@ void scGame3::update(float dt){
     
     //apply forces after 5 seconds
     if(ofGetElapsedTimef() - timer > 5)
-    for(int i=0; i<myPlayerManager->getNumberOfPlayers(); i++)
     {
-        float amount = ofMap(myPlayerManager->getPlayerVolume(4), 0, 1, 0, 1);
-        //cout << amount << " not mapped : " << myPlayerManager->getPlayerVolume(4) << endl;
-        applyForce(amount);
+        //add the top of the physical box after 5 seconds ;)
+        //top.add();
+
+        float amount = 0;
+        for(int i=0; i<myPlayerManager->getNumberOfPlayers(); i++)
+        {
+            amount += ofMap(myPlayerManager->getPlayerVolume(i), 0, 1, 0, 0.9);
+        }
+
+        if(amount < 120 && amount > -120 )
+            applyForceOnCubes(amount);
     }
     
 
@@ -213,7 +233,7 @@ void scGame3::someoneSpoke(player & _player){
     if(utils::toUpperCase(_player.getLastMessage()) == utils::toUpperCase(wantedWord))
     {
         cout << "c'est gagné !!! " << endl;
-        ofxSceneManager::instance()->goToScene(7);
+        ofxSceneManager::instance()->goToScene(7, true, false);
     }
     else
     {
@@ -283,7 +303,7 @@ void scGame3::keyPressed(int key){
 };
 
 //--------------------------------------------------------------
-void scGame3::applyForce(float amount)
+void scGame3::applyForceOnCubes(float amount)
 {
     for(int i=0; i<myCubes.size(); i++)
     {

@@ -10,13 +10,16 @@ function verif_image($image)
   $url=$image;
   $info = new SplFileInfo($url);
   if (urlExist($url)) {
-    $data = @file_get_contents($url);
-    if ($info->getExtension() == "jpg" || $info->getExtension() == "jpeg" || $info->getExtension() == "png"|| $info->getExtension() == "gif" || $info->getExtension() == "JPG")
-    {
-      return true;
-    }
-      else { return false; }
-    }
+      $data = @file_get_contents($url);
+      if ($data != NULL) {
+          if ($info->getExtension() == "jpg" || $info->getExtension() == "jpeg" || $info->getExtension() == "png"|| $info->getExtension() == "gif" || $info->getExtension() == "JPG")
+          {
+            return true;
+          }
+            else { return false; }
+        }
+        else {return false; }
+      }
     else { return false; }
 }
 
@@ -26,13 +29,17 @@ function error_mess($image, $nbimage)
   $url=$image;
   $info = new SplFileInfo($url);
   if (urlExist($url)) {
-    $data = @file_get_contents($url);
-    if ($info->getExtension() == "jpg" || $info->getExtension() == "jpeg" || $info->getExtension() == "png"|| $info->getExtension() == "gif" || $info->getExtension() == "JPG") {
-        return true;
-      }
-      else { echo "Echec du Chargement de la image " . $nbimage . " : ce n'est pas une image !<br>"; }
+      $data = @file_get_contents($url);
+      if ($data != NULL)
+        {
+          if ($info->getExtension() == "jpg" || $info->getExtension() == "jpeg" || $info->getExtension() == "png"|| $info->getExtension() == "gif" || $info->getExtension() == "JPG") {
+            return true;
+          }
+          else { echo "Echec du Chargement de la image " . $nbimage . " : ce n'est pas une image !<br>"; }
+        }
+      else { echo "Echec du Chargement de la image " . $nbimage . " : image vide !<br>"; }
     }
-    else { echo "Echec du Chargement de la image " . $nbimage . " : le lien n'existe pas !<br>"; }
+   else { echo "Echec du Chargement de la image " . $nbimage . " : le lien n'existe pas !<br>"; }
 }
 
 // Verifie si le lien existe

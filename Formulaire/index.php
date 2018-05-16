@@ -32,15 +32,12 @@
   require('script/utile/function.php');
   if (isset($_POST['jeux']))
   {
-      require('script/front/old.php');
-
       ?>
 
       <!-- BOUTTON -->
       <div class="button">
       </br>
         <input type="submit" name="plus" id="plus" value="+"/>
-        <input type="submit" name="update" id="update" value="update" />
       </div>
 
       <?php
@@ -52,7 +49,6 @@
         // SI BOUTTON ENVOYER
         ?>
         <input type="submit" name="submit" value="Envoyer" />
-        <p> --------------------------------------------------------------------------------------------------------------------</p>
         <?php
       }
       else if (isset($_POST['submit']))
@@ -63,7 +59,12 @@
       {
         require('script/back/update.php');
       }
-
+      require('script/front/old.php');
+      ?>
+      <p> --------------------------------------------------------------------------------------------------------------------</p>
+      <input type="submit" name="update" id="update" value="update" />
+      <p> --------------------------------------------------------------------------------------------------------------------</p>
+      <?php
     } ?>
 
 </form>
