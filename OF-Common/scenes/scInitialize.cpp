@@ -17,6 +17,7 @@ void scInitialize::setup(){  //load your scene 1 assets here...
 
 void scInitialize::update(float dt){ //update scene 1 here
     scScene::update(dt);
+    mTimer.update(dt);
 };
 
 void scInitialize::draw(){ //draw scene 1 here
