@@ -26,7 +26,7 @@ void scGame3::setup(){
     gui.add(volumeBorneMin.set("volumeBorneMin", 0, 0.0, 1.0));
     gui.add(volumeBorneMax.set("volumeBorneMax", 0.6, 0.0, 1.0));
     
-    //gui.add(forceAmount.set("forceAmount", ofVec3f(100,200,100), ofVec3f(0,0,0), ofVec3f(300,300,300)));
+    gui.add(forceAmount.set("forceAmount", ofVec3f(100,200,100), ofVec3f(0,0,0), ofVec3f(300,300,300)));
     
     gui.add(angularDamping.set("angularDamping", 0.0, 0.0, 1.0));
     gui.add(damping.set("damping", 0.25, 0.0, 1.0));
@@ -150,7 +150,7 @@ void scGame3::update(float dt){
         //add the top of the physical box after 5 seconds ;)
         //top.add();
 
-        amount = ofMap(bigPlayerManager().getAverageVolume(), 0.0, 1.0, 0.0, 0.6);
+        amount = ofMap(bigPlayerManager().getAverageVolume(), 0.0, 1.0, volumeBorneMin, volumeBorneMax);
         if(amount < 120 && amount > -120 )
             applyForceOnCubes(amount);
     }
