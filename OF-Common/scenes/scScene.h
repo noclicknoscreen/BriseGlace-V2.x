@@ -13,6 +13,7 @@
 #include "ofMain.h"
 #include "ofxScene.h"
 #include "ofxAnimatableFloat.h"
+#include "ofxTextSuite.h"
 
 #include "ofEvents.h"
 #include "playerManager.h"
@@ -38,12 +39,10 @@ public:
     
 protected:
     ///////////// MEMBERS /////////////////////
-    ofTrueTypeFont myFont24;        // Draw text
+    ofxTextBlock myText;
+
     playerManager *myPlayerManager;  // Player
     string        myTitle;
-    
-    ///////////// METHODS /////////////////////
-    void drawCenterText(string _message, int _plusX=0, int _plusY=0);
     
 };
 

@@ -38,7 +38,8 @@ void scInitialize::draw(){ //draw scene 1 here
     scScene::draw();            // Draw title
     myPlayerManager->draw();    // Draw players
     
-    drawCenterText(ofToString(timerValue), 0, 50);
+    myText.setText(ofToString(timerValue));
+    myText.drawCenter(0.5 * ofGetWidth(), 0.5 * ofGetHeight() + 50);
     
     ofPopStyle();
     

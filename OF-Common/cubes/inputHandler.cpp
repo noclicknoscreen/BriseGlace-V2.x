@@ -11,7 +11,7 @@
 
 void inputHandler::setup()
 {
-    font.load("Avenir.ttc", 24);
+    font.load(globalFontName, 24);
     
     revealMode = false;
     currentRevealCube = 0;
@@ -27,7 +27,7 @@ void inputHandler::getNewText(player _player)
     ofLogNotice() << "got new input from user " << userId << " : " << _player.getLastMessageToCompare() << endl;
     
     //TODO A REMETTRE !
-    text = utils::toUpperCase(_player.getLastMessageToCompare());
+//    text = utils::toUpperCase(_player.getLastMessageToCompare());
 
     ofPoint source;
     ofColor textColor;

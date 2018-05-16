@@ -10,6 +10,7 @@
 
 #include "ofMain.h"
 #include "ofxTextSuite.h"
+#include "utils.h"
 
 class player : public ofBaseApp{
     
@@ -37,9 +38,6 @@ private:
     bool mIsAvailable;
     
     ofColor mColor;
-    
-    ofTrueTypeFont myFont;
-    
     ofPoint positionHistogram;
     
     // Gestion de la sequence des petits bonhommes

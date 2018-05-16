@@ -53,7 +53,7 @@ void indice::setup(enigma* _enigme)
     
     
     //wrap text
-    myText.init("Avenir.ttc", 16);
+    myText.init(globalFontName, 16);
     myText.setText(_enigme->getLegende());
     myText.wrapTextX(cubeSize*3);
     

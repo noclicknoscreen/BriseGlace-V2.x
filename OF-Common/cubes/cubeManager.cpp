@@ -33,7 +33,7 @@ void cubeManager::setup()
     materialColor.setSaturation(0);
 
     //font
-    font.load("Avenir.ttc", 24);
+    font.load(globalFontName, 24);
     
     //texture
     texture.load("contreplaque.png");
