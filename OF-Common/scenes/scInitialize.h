@@ -22,10 +22,7 @@ public:
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
     
-    // Timer to not wait too long
-    float startTime;        // store when we start time timer
-    float timerValue;
-    bool bTimerReached;
+    void timerEnd();
 
 };
 

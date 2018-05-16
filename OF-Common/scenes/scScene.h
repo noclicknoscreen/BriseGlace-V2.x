@@ -29,6 +29,7 @@ class scScene : public ofxScene, ofBaseApp {
     
 public:
     void setup();
+    void update(float dt);
     void draw();    // Constructor
 //    scScene(playerManager &_manager);
     
@@ -40,16 +41,10 @@ public:
 protected:
     ///////////// MEMBERS /////////////////////
     ofxTextBlock myText;
-
-//    playerManager *myPlayerManager;  // Player
     string        myTitle;
-    
-    // global timer available at anyTime
-    ofxAnimatableFloat myTimer;
-    void startTimer(int _seconds);
-    void stopTimer();
-    
-//    ofEvent timerEnd;
+
+    ///////////// TIMER /////////////////////
+    timer mTimer;
     
 };
 

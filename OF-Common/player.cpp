@@ -32,7 +32,9 @@ player::player(ofColor _color, string _characterSeqPath){
         
     }
     
+    // ----------
     myText.init(globalFontName, 74);
+    
 }
 
 void player::update(bool _isAvailable, string _message, string _messageToCompare, float _volume, int _number){

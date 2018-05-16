@@ -18,21 +18,23 @@ void scScene::setup(){
     myText.init(globalFontName, 24);
 }
 
+void scScene::update(float dt){
+    mTimer.update(dt);
+}
+
 void scScene::draw(){
     // Draw title
     myText.setText(utils::toUpperCase(myTitle));
     myText.drawCenter(0.5 * ofGetWidth(), 0.5 * ofGetHeight());
 }
 
-
 void scScene::someoneSpoke(player & _player){
     ofLogNotice() << "[Scene " << getSceneID()<< "] SomeOne Spoke : " << _player.getNumber() << ":" << _player.getLastMessage();
 }
 
 void scScene::sceneWillAppear( ofxScene * fromScreen ){
-//    myPlayerManager->freshRestart();
     bigPlayerManager().freshRestart();
 }
+
 void scScene::sceneWillDisappear( ofxScene * fromScreen ){
-    
 }

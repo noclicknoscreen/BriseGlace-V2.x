@@ -57,7 +57,8 @@ void ofApp::setup(){
 
 void ofApp::update(){
 	
-    float dt = 0.016666666;
+    //app timebase, to send to all animatable objects
+    float dt = 1.0f / (float)ofGetFrameRate();
     
 	bigPlayerManager().update();
     sceneManager->update( dt );
