@@ -116,7 +116,7 @@ public:
     specialBox*                 box;
     
     void applyForceOnCubes(float amount);
-    
+    float amount;
     
     //camera
     //ofEasyCam					camera;
