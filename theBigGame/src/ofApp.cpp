@@ -37,7 +37,7 @@ void ofApp::setup(){
     sceneManager->addScene( new scHint(myPlayerManager), HINT);
     sceneManager->addScene( new scVictory(myPlayerManager), VICTORY);
     
-    sceneManager->setDrawDebug(true);
+    sceneManager->setDrawDebug(false);
 	sceneManager->setCurtainDropTime(1.0);
 	sceneManager->setCurtainStayTime(0.0);
 	sceneManager->setCurtainRiseTime(1.0);

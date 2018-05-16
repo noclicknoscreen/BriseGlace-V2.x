@@ -104,6 +104,8 @@ void scGame3::setup(){
 
 //--------------------------------------------------------------
 void scGame3::update(float dt){
+    
+    ofSetWindowTitle(ofToString(ofGetFrameRate()));
   
     camera.setPosition(ofVec3f(camPosX, camPosY, camPosZ));
     world.setGravity(ofVec3f(0,gravity, 0));

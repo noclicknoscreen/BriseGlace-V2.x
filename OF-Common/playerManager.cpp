@@ -48,20 +48,20 @@ void playerManager::setup(){
 
 //--------------------------------------------------------------
 void playerManager::freshRestart(){
-    string url = "https://" + ipAdress.get() + ":8443/resetPlayers";
-    ofLoadURLAsync(url,"resetPlayers");
-    bLoadingPlayers = true;
+    if(bLoadingPlayers == false){
+        string url = "https://" + ipAdress.get() + ":8443/resetPlayers";
+        ofLoadURLAsync(url,"resetPlayers");
+        bLoadingPlayers = true;
+    }
 }
 
 //--------------------------------------------------------------
 void playerManager::update(){
-    
     if(bLoadingPlayers == false){
         string url = "https://" + ipAdress.get() + ":8443/players";
         ofLoadURLAsync(url,"players");
         bLoadingPlayers = true;
     }
-    
 }
 
 //--------------------------------------------------------------
@@ -75,6 +75,7 @@ void playerManager::loadPlayers(ofBuffer _datas){
             // Does player exists ?
             int realNr = mResponse["players"][idxPlayer]["nr"].asInt();
             std::map<int, player>::iterator onePlayer = mPlayers.find(realNr);
+            
             if (onePlayer != mPlayers.end()){
                 //                ofLogNotice() << "Update player : " << mResponse["players"][idxPlayer]["nr"].asInt() <<
                 //                ":" << mResponse["players"][idxPlayer]["isAvailable"].asBool() <<
@@ -153,12 +154,15 @@ void playerManager::draw(){
 //--------------------------------------------------------------
 void playerManager::urlResponse(ofHttpResponse & response){
     
-    if(response.status==200){
-        //ofLogNotice() << "Request answer received : " << response.request.name;
-        //        if(response.request.name == "players"){
-        loadPlayers(response.data);
+    if(response.status == 200){
+        if(response.request.name == "players"){
+            loadPlayers(response.data);
+        }else{
+            ofLogNotice() << "Request answer received : " << response.request.name;
+        }
+        
         bLoadingPlayers = false;
-        //        }
+        
     }else{
         ofLogError() << response.status << " " << response.error << endl;
     }
