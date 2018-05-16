@@ -44,7 +44,12 @@ protected:
     playerManager *myPlayerManager;  // Player
     string        myTitle;
     
-    //
+    // global timer available at anyTime
+    ofxAnimatableFloat myTimer;
+    void startTimer(int _seconds);
+    void stopTimer();
+    
+//    ofEvent timerEnd;
     
 };
 

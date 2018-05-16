@@ -113,6 +113,8 @@ void scGame3::setup(){
 
 //--------------------------------------------------------------
 void scGame3::update(float dt){
+    
+    ofSetWindowTitle(ofToString(ofGetFrameRate()));
   
     ofSetWindowTitle(ofToString(ofGetFrameRate()));
     
