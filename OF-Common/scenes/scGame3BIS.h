@@ -25,10 +25,16 @@ public:
         //now comes from enigma Singleton
         wantedWord = bigEnigmaManager().getCurrentEnigma()->getSolution();
         
+        for(int i=0; i<myCubes.size(); i++)
+        {
+            myCubes[i]->remove();
+        }
+        myCubes.clear();
+        
         for(int i=0; i<wantedWord.size(); i++)
         {
             box = new specialBox();
-            box->setup(texture, ofToString(wantedWord[i]), 40);
+            box->setup(texture, ofToString(wantedWord[wantedWord.size()-(i+1)]), 40);
             box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
             
             box->add();
