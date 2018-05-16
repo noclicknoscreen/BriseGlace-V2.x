@@ -105,7 +105,6 @@ void playerManager::loadPlayers(ofBuffer _datas){
             
             
         }
-        cout << mPlayers.size() << endl;
         
         // Throw event when someone new spoke
         if(mLastTime != mResponse["lastMessage"]["time"].asString()){
