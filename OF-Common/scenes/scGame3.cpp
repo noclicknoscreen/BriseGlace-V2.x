@@ -141,7 +141,7 @@ void scGame3::update(float dt){
         //add the top of the physical box after 5 seconds ;)
         //top.add();
 
-        float amount = 0;
+        amount = 0;
         for(int i=0; i<myPlayerManager->getNumberOfPlayers(); i++)
         {
             amount += ofMap(myPlayerManager->getPlayerVolume(i), 0, 1, 0, 0.9);
@@ -205,6 +205,7 @@ void scGame3::draw(){
     if(drawGui)
         gui.draw();
     
+    ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(myPlayerManager->getNumberOfPlayers()), 100, 100);
     ofPushStyle();
     
     // Style setup
