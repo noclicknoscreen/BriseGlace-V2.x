@@ -14,22 +14,16 @@ scScene::scScene(playerManager &_manager){
 }
 
 void scScene::setup(){
-    myFont24.load("Avenir.ttc", 24, true, true);
+    // Set the text
+    myText.init(globalFontName, 24);
 }
 
 void scScene::draw(){
     // Draw title
-    drawCenterText(myTitle);
+    myText.setText(utils::toUpperCase(myTitle));
+    myText.drawCenter(0.5 * ofGetWidth(), 0.5 * ofGetHeight());
 }
 
-
-void scScene::drawCenterText(string _message, int _plusX, int _plusY){
-    ofPushMatrix();
-    ofRectangle bounds = myFont24.getStringBoundingBox(_message, 0, 0);
-    ofTranslate(0.5 * (ofGetWidth() - bounds.width) + _plusX, 0.5 * (ofGetHeight() - bounds.height) + _plusY);
-    myFont24.drawString(_message, 0, 0);
-    ofPopMatrix();
-}
 
 void scScene::someoneSpoke(player & _player){
     ofLogNotice() << "[Scene " << getSceneID()<< "] SomeOne Spoke : " << _player.getNumber() << ":" << _player.getLastMessage();

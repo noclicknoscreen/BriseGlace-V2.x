@@ -9,23 +9,34 @@
 #include "playerManager.h"
 
 //--------------------------------------------------------------
-//void playerManager::setup(ofEvent<player> _someoneSpoke){
 void playerManager::setup(){
     
+    //gui
+    gui.setup("panel"); // most of the time you don't need a name but don't forget to call setup
+    
+    gui.add(player1.set("player1",ofColor(000,228,255),ofColor(0,0),ofColor(255,255)));
+    gui.add(player2.set("player2",ofColor(255,042,140),ofColor(0,0),ofColor(255,255)));
+    gui.add(player3.set("player3",ofColor(182,064,167),ofColor(0,0),ofColor(255,255)));
+    gui.add(ipAdress.set("ipAdress", "localhost"));
+    
+    gui.loadFromFile("settingsPlayers.xml");
+    drawGui = false;
+
+    
     // 1st player is red
-    mColors[1] = ofColor::red;
-    mSequences[1] = "Cube-Rouge";
+    mColors[1] = player1;
+    mSequences[1] = "Cube-Bleu";
     mPositions[1] = ofPoint(200, ofGetHeight());
     // Green
-    mColors[2] = ofColor::green;
-    mSequences[2] = "Cube-Vert";
+    mColors[2] = player2;
+    mSequences[2] = "Cube-Rouge";
     mPositions[2] = ofPoint(0.5 * ofGetWidth(), ofGetHeight());
     // Blue
-    mColors[3] = ofColor::blue;
-    mSequences[3] = "Cube-Bleu";
+    mColors[3] = player3;
+    mSequences[3] = "Cube-Vert";
     mPositions[3] = ofPoint(ofGetWidth() - 200, ofGetHeight());
     // MySelf = Gray
-    mColors[4] = ofColor::gray;
+    mColors[4] = player1;
     mSequences[4] = "Cube-Rouge";
     mPositions[4] = ofPoint(0.5 * ofGetWidth(), ofGetHeight());
     
@@ -35,8 +46,10 @@ void playerManager::setup(){
     
 }
 
+//--------------------------------------------------------------
 void playerManager::freshRestart(){
-    ofLoadURLAsync("https://localhost:8443/resetPlayers","resetPlayers");
+    string url = "https://" + ipAdress.get() + ":8443/resetPlayers";
+    ofLoadURLAsync(url,"resetPlayers");
     bLoadingPlayers = true;
 }
 
@@ -44,7 +57,8 @@ void playerManager::freshRestart(){
 void playerManager::update(){
     
     if(bLoadingPlayers == false){
-        ofLoadURLAsync("https://localhost:8443/players","players");
+        string url = "https://" + ipAdress.get() + ":8443/players";
+        ofLoadURLAsync(url,"players");
         bLoadingPlayers = true;
     }
     
@@ -124,19 +138,14 @@ void playerManager::draw(){
     int border = 200;
     
     for (onePlayer=mPlayers.begin(); onePlayer!=mPlayers.end(); ++onePlayer){
-        // Position is nearby middle, bottom
-//        float x;
-//        if(mPlayers.size() > 1){
-//            x = ofMap((float)(count)/(float)(mPlayers.size() -1), 0, 1, border, ofGetWidth() - border);
-//        }else{
-//            x = ofMap(0.5, 0, 1, border, ofGetWidth() - border);
-//        }
-//        
-//        ofVec2f pos = ofVec2f(x, ofGetHeight());
         // Second is value (aka player)
         onePlayer->second.draw(mPositions[onePlayer->second.getNumber()]);
         // Then increase
         count++;
+    }
+    
+    if(drawGui){
+        gui.draw();
     }
 }
 
@@ -151,6 +160,23 @@ void playerManager::urlResponse(ofHttpResponse & response){
         //        }
     }else{
         ofLogError() << response.status << " " << response.error << endl;
+    }
+}
+
+//--------------------------------------------------------------
+void playerManager::keyPressed(int key){
+    
+    if( key == 'h' ){
+        ofLog() << "M'entends tu ???????";
+        drawGui = !drawGui;
+    }
+    
+    if(key == 's') {
+        gui.saveToFile("settingsPlayers.xml");
+    }
+    
+    if(key == 'l') {
+        gui.loadFromFile("settingsPlayers");
     }
 }
 

@@ -10,7 +10,7 @@
 
 
 player::player(ofColor _color, string _characterSeqPath){
-    myFont.load("Folktale.ttf", 16, true, true);
+    
     mColor = _color;
     
     // Check the path of the sequence and do some coffee
@@ -47,8 +47,8 @@ void player::update(bool _isAvailable, string _message, string _messageToCompare
     loadNewSequenceImage((int)ofMap(mVolume, 0, 1, 0, mSequenceLen - 1, true));
     
     // Set the text
-    myText.init("Avenir.ttc", 74);
-    myText.setText(mLastMessage);
+    myText.init(globalFontName, 74);
+    myText.setText(utils::toUpperCase(mLastMessage));
     myText.wrapTextArea(400, 300);
     
 }

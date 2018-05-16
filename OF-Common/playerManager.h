@@ -9,6 +9,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxGui.h"
 #include "ofxJSON.h"
 #include "player.h"
 
@@ -20,6 +21,8 @@ public:
     void freshRestart(); // Reset messages for fresh restart
     void update();
     void draw();
+    
+    void keyPressed(int key);
     
     int getLastNumber(){return mLastNumber;};
     string getLastMessage(){return mLastMessage;};
@@ -45,6 +48,13 @@ private:
     
     bool bLoadingPlayers = false;
     void loadPlayers(ofBuffer _datas);
+    
+    // GUI, settings
+    //parameters
+    ofxPanel                     gui;
+    bool                         drawGui;
+    ofParameter<ofColor>         player1, player2, player3, player4;
+    ofParameter<string>          ipAdress;
     
 public:
     ofEvent<player> someoneSpoke;

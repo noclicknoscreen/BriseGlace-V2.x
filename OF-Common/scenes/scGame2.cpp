@@ -27,7 +27,6 @@ void scGame2::draw(){ //draw scene 1 here
     
     scScene::draw();            // Draw title
     myPlayerManager->draw();    // Draw players
-    drawCenterText(myPlayerManager->getLastMessage(), 0, 50); // Draw last message
     
     ofPopStyle();
     

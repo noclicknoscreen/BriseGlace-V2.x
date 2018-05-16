@@ -87,7 +87,7 @@ public:
     {
         setTexture(_image);
         setLetter(_letter);
-        font.load("Avenir.ttc", 34);
+        font.load(globalFontName, 34);
         
         //setSize(_size);
     }

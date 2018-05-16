@@ -29,7 +29,10 @@ void scSelectGame::draw(){ //draw scene 1 here
     
     scScene::draw();            // Draw title
     myPlayerManager->draw();    // Draw players
-    drawCenterText(mText, 0, 50); // Draw last message
+    
+    // Draw some
+    myText.setText(ofToString(mText));
+    myText.drawCenter(0.5 * ofGetWidth(), 0.5 * ofGetHeight() + 50);
     
     ofPopStyle();
     

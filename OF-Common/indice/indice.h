@@ -14,6 +14,7 @@
 #include "cube.h"
 #include "ofxTextSuite.h"
 #include "enigma.h"
+#include "utils.h"
 
 class indice
 {
