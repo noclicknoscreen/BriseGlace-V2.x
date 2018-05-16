@@ -68,8 +68,7 @@ while ($donnees = $reponse->fetch())
       <!-- Input legende RECOMPENSE -->
       <p>
           <label for="legende">Légende</label> : <br>
-          <input type="text" name="sqllegende<?php echo $i?>" id="sqllegende<?php echo $i?>" class="legende_input" value="<?php if (isset($_POST['sqllegende' . $i])){echo $_POST['sqllegende' . $i];} else {echo $donnees['legende'];} ?>">
-      </p>
+          <textarea name="sqllegende<?php echo $i?>" id="sqllegende<?php echo $i?>" class="legende_input"><?php if (isset($_POST['sqllegende' . $i])){echo $_POST['sqllegende' . $i];} else {echo $donnees['legende'];} ?></textarea>      </p>
       </details>
   <?php
 $i++;
