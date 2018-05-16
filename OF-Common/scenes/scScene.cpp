@@ -19,7 +19,7 @@ void scScene::setup(){
 }
 
 void scScene::update(float dt){
-    mTimer.update(dt);
+//    mTimer.update(dt);
 }
 
 void scScene::draw(){

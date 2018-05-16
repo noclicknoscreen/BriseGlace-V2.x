@@ -27,5 +27,8 @@ public:
     
     float timer;
 
+    void someoneSpoke(player & _player);
+    
+    
 };
 

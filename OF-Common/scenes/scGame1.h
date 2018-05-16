@@ -29,7 +29,9 @@ public:
     
     void keyPressed(int key);
     
+    // Events callback
     void someoneSpoke(player & _player);
+    void timerEnd();
     
     //gui
     ofxPanel gui;
@@ -41,6 +43,9 @@ public:
     
     //inputManager
     inputHandler myInputManager;
+    
+    // Draw the overlay of hint
+    bool bHintOverlay;
     
 };
 

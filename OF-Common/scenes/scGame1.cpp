@@ -26,6 +26,9 @@ void scGame1::setup(){  //load your scene 1 assets here...
     myInputManager.setReadyForNewText();
     myInputManager.setWordToFind(bigEnigmaManager().getCurrentEnigma()->getSolution());
     
+    // Overlay with hint
+    bHintOverlay = false;
+    
 };
 
 void scGame1::update(float dt){ //update scene 1 here
@@ -33,6 +36,8 @@ void scGame1::update(float dt){ //update scene 1 here
     myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), cubesRotationSpeed);
     myInputManager.update(&myCubeManager);
 
+    mTimer.update(dt);
+    
 };
 
 void scGame1::draw(){ //draw scene 1 here
@@ -63,6 +68,10 @@ void scGame1::draw(){ //draw scene 1 here
 
     ofPopStyle();
     
+    // Draw Timer
+    myText.setText(utils::toUpperCase("Il vous reste " + mTimer.toString() + " secondes avant l'indice."));
+    myText.drawCenter(0.5 * ofGetWidth(), 0.55 * ofGetHeight());
+
 };
 
 //--------------------------------------------------------------
@@ -77,26 +86,15 @@ void scGame1::keyPressed(int key){
     
 }
 
-// Speaking event
-void scGame1::someoneSpoke(player & _player){
-    scScene::someoneSpoke(_player);
-    
-    if(myInputManager.isReadyForNewText())
-        myInputManager.getNewText(_player);
-    
-    
-}
-
-
 //scene notifications
 void scGame1::sceneWillAppear( ofxScene * fromScreen ){
+    
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
     // Load the next enigma
     bigEnigmaManager().pickNewEnigma(MOTUS);
-    
     
     gui.setup();
     //gui.add
@@ -105,23 +103,49 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     gui.add(lightPosZ.set("lightPosZ", 0, -100, 100));
     gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
     
-    //cubes
-    myCubeManager.setup();
+    // On ne refiat pas ca si on vient de l'indice
+    if(fromScreen->getSceneID() == HINT){
+        //cubes
+        myCubeManager.setup();
+        
+        //inputs
+        myInputManager.setup();
+        
+        //TODO :: bonheur ecrit en dur => lu dans le JSON
+        myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
+        myInputManager.clearDuplicatesLettersHistory();
+        myInputManager.setReadyForNewText();
+        myInputManager.setWordToFind(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
+    }
     
-    //inputs
-    myInputManager.setup();
-    
-    //TODO :: bonheur ecrit en dur => lu dans le JSON
-    myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
-    myInputManager.clearDuplicatesLettersHistory();
-    myInputManager.setReadyForNewText();
-    myInputManager.setWordToFind(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
-    
-    
+    // -- -- -- -- --
+    mTimer.startTimer(45);
+    // Player manager events
+    ofAddListener(mTimer.timerEnd,this,&scGame1::timerEnd);
+
 };
 
 //scene notifications
 void scGame1::sceneWillDisappear( ofxScene * toScreen ){
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
+    ofRemoveListener(mTimer.timerEnd,this,&scGame1::timerEnd);
 }
+
+// Events callback -----------------------------------
+// Speaking event
+void scGame1::someoneSpoke(player & _player){
+    scScene::someoneSpoke(_player);
+    
+    if(myInputManager.isReadyForNewText())
+        myInputManager.getNewText(_player);
+    
+    
+    mTimer.startTimer(45);
+    
+}
+void scGame1::timerEnd(){
+    // --------------------------------
+    ofxSceneManager::instance()->goToScene(HINT);
+}
+

@@ -81,7 +81,7 @@ public:
         mTimer.setCurve(LINEAR);
         mTimer.setRepeatType(PLAY_ONCE);
         mTimer.setDuration(_seconds);
-        mTimer.stopAutoUpdate();
+//        mTimer.startAutoUpdate();
         mTimer.animateTo(0.0f);
     }
     
