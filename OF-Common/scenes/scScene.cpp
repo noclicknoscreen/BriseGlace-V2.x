@@ -25,7 +25,7 @@ void scScene::update(float dt){
 void scScene::draw(){
     // Draw title
     myText.setText(utils::toUpperCase(myTitle));
-    myText.drawCenter(0.5 * ofGetWidth(), 0.5 * ofGetHeight());
+    myText.drawCenter(0.5 * ofGetWidth(), 0.25 * ofGetHeight());
 }
 
 void scScene::someoneSpoke(player & _player){

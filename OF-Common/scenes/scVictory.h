@@ -21,6 +21,10 @@ public:
     
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
+    
+    // What happens when timer ends
+    void timerEnd();
+
 
 };
 
