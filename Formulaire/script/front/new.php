@@ -57,6 +57,6 @@ if ($_POST['jeux'] == "motus")
 <!-- Input legende RECOMPENSE -->
 <p>
     <label for="legende">Légende</label> : <br>
-    <input type="text" name="legende" id="legende" class="legende_input" value="<?php if (isset($_POST['legende'])){echo $_POST['legende'];} ?>">
+    <textarea name="legende" id="legende" class="legende_input" rows="4" cols="50"><?php if (isset($_POST['image4'])){echo $_POST['image4'];} ?></textarea>
 </p>
 </details>

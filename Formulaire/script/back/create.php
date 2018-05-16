@@ -1,5 +1,16 @@
 
 <?php
+try
+{
+  $bdd = new PDO('mysql:host=localhost;dbname=formulaire;charset=utf8', 'root', 'root');
+}
+catch (Exception $e)
+{
+  die('Erreur : ' . $e->getMessage());
+}
+
+// On récupère tout le contenu de la table motus
+$reponse = $bdd->query('SELECT * FROM motus ORDER BY id');
 // Verifie si les images sont valable
 error_mess($_POST['image1'], 1);
 error_mess($_POST['image2'], 2);
@@ -123,5 +134,7 @@ else {
 // SI NON Echec de l'enregistrement
 echo "Echec de l'enregistrement.";
 }
+
+$reponse->closeCursor(); // Termine le traitement de la requête
 
 ?>
