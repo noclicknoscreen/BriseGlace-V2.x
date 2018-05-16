@@ -60,7 +60,13 @@ void player::loadNewSequenceImage(int _newSequenceIdx){
         mSequenceIdx = _newSequenceIdx;
         string imgPath = mSequencePath+"/"+mSequencePath+"_"+ ofToString(mSequenceIdx,5,'0') +".png";
 //        ofLogNotice() << "Image path = " << imgPath;
-        mSequenceImg.load(imgPath);
+        if(ofFile(imgPath).exists()){
+            mSequenceImg.load(imgPath);
+        }else{
+            ofLogError() << "Image path [" + imgPath + "] not exists.";
+            mSequenceImg.load("void.jpg");
+        }
+        
     }else{
 //        ofLogNotice() << "Something happened with the sequence index : " << _newSequenceIdx;
     }
