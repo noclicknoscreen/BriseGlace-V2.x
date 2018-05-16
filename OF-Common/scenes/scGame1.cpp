@@ -37,22 +37,29 @@ void scGame1::update(float dt){ //update scene 1 here
 
 void scGame1::draw(){ //draw scene 1 here
     
-    myCubeManager.draw();
-    myInputManager.draw();
-    
-    ofDisableLighting();
-    ofDisableDepthTest();
-    ofSetColor(255);
-    gui.draw();
-    
-    
     ofPushStyle();
-    // Style setup
-    ofSetColor(ofColor(255,0,0));
+        ofPushMatrix();
+        
+            myCubeManager.draw();
+            myInputManager.draw();
+            
+            ofDisableLighting();
+            ofDisableDepthTest();
+            ofSetColor(255);
+            gui.draw();
+        ofPopStyle();
+    ofPopMatrix();
     
-    scScene::draw();            // Draw title
-    bigPlayerManager().draw();    // Draw players
-    //drawCenterText(myPlayerManager->getLastMessage(), 0, 50); // Draw last message
+
+    ofPushStyle();
+ 
+        ofSetColor(ofColor(255,0,0));
+    
+    //debug
+    //    ofDrawCircle(200, 200, 200);
+        
+        scScene::draw();            // Draw title
+        bigPlayerManager().draw();    // Draw players
 
     ofPopStyle();
     
