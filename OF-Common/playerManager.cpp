@@ -144,6 +144,23 @@ float playerManager::getSumVolume()
     return sumVolume;
 }
 
+//--------------------------------------------------------------
+float playerManager::getAverageVolume()
+{
+    float sumVolume=0;
+    int nbP=0;
+    
+    for(std::map<int,player>::iterator it=mPlayers.begin(); it!=mPlayers.end(); it++)
+    {
+        sumVolume += it->second.getVolume();
+        nbP++;
+    }
+    if(!(nbP>0))
+        return 0;
+    else
+        return sumVolume/nbP;
+}
+
 
 //--------------------------------------------------------------
 void playerManager::draw(){
