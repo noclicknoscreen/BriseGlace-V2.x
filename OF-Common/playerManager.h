@@ -28,6 +28,7 @@ public:
     string getLastMessage(){return mLastMessage;};
     
     float getSumVolume();
+    float getAverageVolume();
     
     int getNumberOfPlayers(){return mPlayers.size();}
     

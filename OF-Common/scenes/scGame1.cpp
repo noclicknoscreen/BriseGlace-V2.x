@@ -26,8 +26,8 @@ void scGame1::setup(){  //load your scene 1 assets here...
     myInputManager.setReadyForNewText();
     myInputManager.setWordToFind(bigEnigmaManager().getCurrentEnigma()->getSolution());
     
-    // Overlay with hint
-    bHintOverlay = false;
+
+    //gui
     
 };
 
@@ -51,7 +51,9 @@ void scGame1::draw(){ //draw scene 1 here
             ofDisableLighting();
             ofDisableDepthTest();
             ofSetColor(255);
-            gui.draw();
+            //GUI
+            if(bDrawGui)
+                gui.draw();
         ofPopStyle();
     ofPopMatrix();
     
@@ -83,6 +85,8 @@ void scGame1::keyPressed(int key){
         myCubeManager.rotateToWood(0);
     if(key=='W')
         myCubeManager.rotateToWhite(0);
+    if(key==' ' )
+        bDrawGui = !bDrawGui;
     
 }
 
@@ -101,7 +105,7 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     gui.add(lightPosX.set("lightPosX", 1600, -1000, ofGetWidth()*2));
     gui.add(lightPosY.set("lightPosY", 120, -1000, 1000));
     gui.add(lightPosZ.set("lightPosZ", 0, -100, 100));
-    gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
+    //gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
     
     // On ne refiat pas ca si on vient de l'indice
     if(fromScreen->getSceneID() == HINT){

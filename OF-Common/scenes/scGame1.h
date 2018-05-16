@@ -37,6 +37,7 @@ public:
     ofxPanel gui;
     ofParameter<float> lightPosX, lightPosY, lightPosZ;
     ofParameter<int> cubesRotationSpeed;
+    bool bDrawGui;
     
     //cubeManager
     cubeManager myCubeManager;

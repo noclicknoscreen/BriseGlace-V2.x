@@ -40,7 +40,10 @@ void cubeManager::setup()
     //ofDisableNormalizedTexCoords();
     //ofDisableArbTex();
     
-    cubeSize = 80;    
+    cubeSize = 80;
+    
+    //load background
+    background.load("Decor_MurEtSol.png");
 
 };
 
@@ -66,18 +69,18 @@ void cubeManager::draw(){
 
     ofEnableDepthTest();
     
-    //fond
-    ofSetColor(200);
+    //draw du background
+    ofSetColor(255);
     ofPushMatrix();
-    ofTranslate(0,0,-200);
-    ofDrawBox(0, 0, 0, ofGetWidth()*3, ofGetHeight()*3, 1);
+        ofTranslate(0,0,-200);
+        background.bind();
+        ofDrawBox(ofGetWidth()/2, ofGetHeight()/2, 0, ofGetWidth()*1.3, ofGetHeight()*1.3, 1);
+        background.unbind();
     ofPopMatrix();
     
-    
+
     ofEnableLighting();
     spotLight.enable();
-    
-    
     
     for(int i=0; i<myCubes.size(); i++)
     {

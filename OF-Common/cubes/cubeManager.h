@@ -56,6 +56,9 @@ class cubeManager
         //consigne
         string consigne;
         float consigneWidth;
+    
+        //backgroundImage
+        ofImage background;
 };
 
 

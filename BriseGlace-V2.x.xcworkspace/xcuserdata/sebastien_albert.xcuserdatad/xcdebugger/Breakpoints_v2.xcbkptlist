@@ -399,7 +399,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "146"
             endingLineNumber = "146"
-            landmarkName = "scGame1::timerEnd()"
+            landmarkName = "scGame1::someoneSpoke(player &amp; _player)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
