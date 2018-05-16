@@ -1,6 +1,5 @@
 
 <?php
-require('utile/function.php');
 // Verifie si les images sont valable
 error_mess($_POST['image1'], 1);
 error_mess($_POST['image2'], 2);

@@ -74,7 +74,8 @@ void scGame1::keyPressed(int key){
 void scGame1::someoneSpoke(player & _player){
     scScene::someoneSpoke(_player);
     
-    myInputManager.getNewText(_player);
+    if(myInputManager.isReadyForNewText())
+        myInputManager.getNewText(_player);
     
     
 }

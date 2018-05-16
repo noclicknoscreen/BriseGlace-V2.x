@@ -11,7 +11,10 @@ function verif_image($image)
   $info = new SplFileInfo($url);
   if (urlExist($url)) {
     $data = @file_get_contents($url);
-    if ($info->getExtension() == "jpg" || $info->getExtension() == "jpeg" || $info->getExtension() == "png"|| $info->getExtension() == "gif" || $info->getExtension() == "JPG") { return true; }
+    if ($info->getExtension() == "jpg" || $info->getExtension() == "jpeg" || $info->getExtension() == "png"|| $info->getExtension() == "gif" || $info->getExtension() == "JPG")
+    {
+      return true;
+    }
       else { return false; }
     }
     else { return false; }
@@ -36,8 +39,9 @@ function error_mess($image, $nbimage)
 function urlExist($url) {
     $file_headers = @get_headers($url);
     if($file_headers[0] == 'HTTP/1.1 404 Not Found')
+    {
        return false;
-
+     }
     return true;
 }
 

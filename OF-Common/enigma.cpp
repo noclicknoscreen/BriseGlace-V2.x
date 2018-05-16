@@ -115,6 +115,7 @@ enigmaHint* enigma::getHint(enigmaType _type){
             return nullptr;
             break;
     };
-
 }
+
+
 

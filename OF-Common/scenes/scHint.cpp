@@ -41,9 +41,7 @@ void scHint::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
     
-    ofEnableDepthTest();
-    ofEnableLighting();
-     myIndice.setup();
+    myIndice.setup(bigEnigmaManager().getCurrentEnigma());
     
     timer = ofGetElapsedTimef();
 };
