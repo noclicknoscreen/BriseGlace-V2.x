@@ -44,5 +44,7 @@ protected:
     playerManager *myPlayerManager;  // Player
     string        myTitle;
     
+    //
+    
 };
 

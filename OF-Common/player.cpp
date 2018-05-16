@@ -88,7 +88,9 @@ void player::draw(ofVec2f _pos){
     
     ofPushStyle();
     ofSetColor(ofColor::white);
-    mSequenceImg.draw(0, 0);
+    if(mSequenceImg.isAllocated()){
+        mSequenceImg.draw(0, 0);
+    }
     ofPopStyle();
     
     // Draw the text
