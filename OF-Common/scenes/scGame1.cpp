@@ -91,7 +91,6 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     bigEnigmaManager().pickNewEnigma(MOTUS);
     
     
-    
     gui.setup();
     //gui.add
     gui.add(lightPosX.set("lightPosX", 1600, -1000, ofGetWidth()*2));

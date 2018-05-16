@@ -16,16 +16,7 @@ void scInitialize::setup(){  //load your scene 1 assets here...
 
 
 void scInitialize::update(float dt){ //update scene 1 here
-    
-    // update the timer this frame
-    dt = ofGetElapsedTimeMillis() - startTime;
-    timerValue = 10000 - dt;
-    
-    if(timerValue <= 0 && !bTimerReached) {
-        bTimerReached = true;
-        ofLogNotice() << "End of Timer !!!";
-    }
-
+    scScene::update(dt);
 };
 
 void scInitialize::draw(){ //draw scene 1 here
@@ -38,8 +29,10 @@ void scInitialize::draw(){ //draw scene 1 here
     scScene::draw();            // Draw title
     bigPlayerManager().draw();    // Draw players
     
-    myText.setText(ofToString(timerValue));
-    myText.drawCenter(0.5 * ofGetWidth(), 0.5 * ofGetHeight() + 50);
+    
+    // Draw Timer
+    myText.setText(utils::toUpperCase("Il vous reste " + mTimer.toString() + " secondes pour jouer avec nous."));
+    myText.drawCenter(0.5 * ofGetWidth(), 0.55 * ofGetHeight());
     
     ofPopStyle();
     
@@ -48,11 +41,20 @@ void scInitialize::draw(){ //draw scene 1 here
 //scene notifications
 void scInitialize::sceneWillAppear( ofxScene * fromScreen ){
     scScene::sceneWillAppear(fromScreen);
-    // reset timer
-    startTime = ofGetElapsedTimeMillis();  // get the start time
-    bTimerReached = false;
+    
+    // --
+    mTimer.startTimer(20);
+    // Player manager events
+    ofAddListener(mTimer.timerEnd,this,&scInitialize::timerEnd);
+    
 };
 
 //scene notifications
 void scInitialize::sceneWillDisappear( ofxScene * toScreen ){
+    ofRemoveListener(mTimer.timerEnd,this,&scInitialize::timerEnd);
+};
+
+// If the time is ended, we go further ---------------------------------------
+void scInitialize::timerEnd(){
+    ofxSceneManager::instance()->goToScene(SELECT_GAME);
 }
