@@ -94,7 +94,7 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     
     gui.setup();
     //gui.add
-    gui.add(lightPosX.set("lightPosX", 850, -1000, 1000));
+    gui.add(lightPosX.set("lightPosX", 1600, -1000, ofGetWidth()*2));
     gui.add(lightPosY.set("lightPosY", 120, -1000, 1000));
     gui.add(lightPosZ.set("lightPosZ", 0, -100, 100));
     gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));

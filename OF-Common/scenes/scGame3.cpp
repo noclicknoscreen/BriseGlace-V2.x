@@ -130,7 +130,7 @@ void scGame3::update(float dt){
     
     //light
     spotLight.setOrientation( ofVec3f( 0, 45, 30) );
-    spotLight.setPosition(ofGetWidth()-100, 100, 0);
+    spotLight.setPosition(1600, 483,0);
     lightColor.setHue(0);
     spotLight.setDiffuseColor(lightColor);
     material.setSpecularColor(materialColor);
