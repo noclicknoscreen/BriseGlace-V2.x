@@ -33,7 +33,7 @@ void playerManager::setup(){
     mPositions[2] = ofPoint(0.5 * ofGetWidth(), ofGetHeight());
     // Blue
     mColors[3] = player3;
-    mSequences[3] = "Cube-Vert";
+    mSequences[3] = "Cube-Violet";
     mPositions[3] = ofPoint(ofGetWidth() - 200, ofGetHeight());
     // MySelf = Gray
     mColors[4] = player1;
@@ -81,6 +81,7 @@ void playerManager::loadPlayers(ofBuffer _datas){
                 //                ":" << mResponse["players"][idxPlayer]["lastMessage"]["text"].asString() <<
                 //                ":" << mResponse["players"][idxPlayer]["volume"].asFloat();
                 //                // If yes, then update
+                
                 onePlayer->second.update(mResponse["players"][idxPlayer]["isAvailable"].asBool(),
                                          mResponse["players"][idxPlayer]["lastMessage"]["text"].asString(),
                                          mResponse["players"][idxPlayer]["lastMessage"]["textToCompare"].asString(),
