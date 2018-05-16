@@ -59,4 +59,16 @@ private:
 public:
     ofEvent<player> someoneSpoke;
     
+    // SINGLETON //
+public:
+    static playerManager& get(){
+        static playerManager myPlayerManager;
+        return myPlayerManager;
+    }
+    
 };
+
+inline playerManager& bigPlayerManager()
+{
+    return playerManager::get();
+}

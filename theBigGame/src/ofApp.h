@@ -43,7 +43,7 @@ class ofApp : public ofBaseApp{
     
     ofEvent<void>        nextSceneEvent;
     
-    playerManager myPlayerManager;
+//    playerManager myPlayerManager;
     void someoneSpoke(player & _player);
     
 };

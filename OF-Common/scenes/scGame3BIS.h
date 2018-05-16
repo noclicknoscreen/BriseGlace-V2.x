@@ -14,8 +14,8 @@
 class scGame3BIS : public scGame3
 {
 public:
-    scGame3BIS(playerManager &_manager) : scGame3(_manager){
-    };
+//    scGame3BIS(playerManager &_manager) : scGame3(_manager){
+//    };
     
     //--------------------------------------------------------------
     void sceneWillAppear( ofxScene * fromScreen ){
@@ -45,7 +45,7 @@ public:
     //--------------------------------------------------------------
     void update(float dt){
         
-        myPlayerManager->update();
+//        bigPlayerManager().update();
         
         camera.setPosition(ofVec3f(camPosX, camPosY, camPosZ));
         world.setGravity(ofVec3f(0,gravity, 0));
@@ -71,9 +71,9 @@ public:
             //top.add();
             
             float amount = 0;
-            for(int i=0; i<myPlayerManager->getNumberOfPlayers(); i++)
+            for(int i=0; i<bigPlayerManager().getNumberOfPlayers(); i++)
             {
-                amount += ofMap(myPlayerManager->getPlayerVolume(i), 0, 1, 0, 0.9);
+                amount += ofMap(bigPlayerManager().getPlayerVolume(i), 0, 1, 0, 0.9);
             }
             
             if(amount < 120 && amount > -120 )

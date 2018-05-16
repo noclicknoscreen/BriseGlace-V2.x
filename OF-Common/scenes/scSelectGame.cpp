@@ -28,7 +28,7 @@ void scSelectGame::draw(){ //draw scene 1 here
     ofSetColor(ofColor::black);
     
     scScene::draw();            // Draw title
-    myPlayerManager->draw();    // Draw players
+    bigPlayerManager().draw();    // Draw players
     
     // Draw some
     myText.setText(ofToString(mText));
@@ -43,13 +43,13 @@ void scSelectGame::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
     // Player manager events
-    ofAddListener(myPlayerManager->someoneSpoke,this,&scSelectGame::someoneSpoke);
+    ofAddListener(bigPlayerManager().someoneSpoke,this,&scSelectGame::someoneSpoke);
 };
 
 //scene notifications
 void scSelectGame::sceneWillDisappear( ofxScene * toScreen ){
     // Player manager events
-    ofRemoveListener(myPlayerManager->someoneSpoke,this,&scSelectGame::someoneSpoke);
+    ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scSelectGame::someoneSpoke);
 }
 
 // Speaking event

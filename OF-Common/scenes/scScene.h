@@ -30,7 +30,7 @@ class scScene : public ofxScene, ofBaseApp {
 public:
     void setup();
     void draw();    // Constructor
-    scScene(playerManager &_manager);
+//    scScene(playerManager &_manager);
     
     void someoneSpoke(player & _player);
     
@@ -41,7 +41,7 @@ protected:
     ///////////// MEMBERS /////////////////////
     ofxTextBlock myText;
 
-    playerManager *myPlayerManager;  // Player
+//    playerManager *myPlayerManager;  // Player
     string        myTitle;
     
     // global timer available at anyTime

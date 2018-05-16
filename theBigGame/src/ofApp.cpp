@@ -15,10 +15,10 @@ void ofApp::setup(){
 	///////////////////////////////////////
     // add the newFloat method to listen for eventsAddon newFloatEvent
     ofAddListener(nextSceneEvent,this,&ofApp::nextSceneAuto);
-    ofAddListener(myPlayerManager.someoneSpoke,this,&ofApp::someoneSpoke);
+    ofAddListener(bigPlayerManager().someoneSpoke,this,&ofApp::someoneSpoke);
 
     ///////////////////////////////////////
-    myPlayerManager.setup();
+    bigPlayerManager().setup();
     
     /////////////////////////////////////
     bigEnigmaManager().setup();
@@ -27,15 +27,25 @@ void ofApp::setup(){
 	sceneManager = ofxSceneManager::instance();
     sceneManager->setupCurtain(ofColor::white, ofRectangle(0,0, ofGetWidth(), ofGetHeight()) );
     
-    sceneManager->addScene( new scIntro(myPlayerManager), INTRO);
-    sceneManager->addScene( new scInitialize(myPlayerManager), INITIALIZE);
-    sceneManager->addScene( new scSelectGame(myPlayerManager), SELECT_GAME);
-    sceneManager->addScene( new scGame1(myPlayerManager), GAME1);
-    sceneManager->addScene( new scGame2(myPlayerManager), GAME2);
-    sceneManager->addScene( new scGame3(myPlayerManager), GAME3);
-    sceneManager->addScene( new scGame3BIS(myPlayerManager), GAME3_BIS);
-    sceneManager->addScene( new scHint(myPlayerManager), HINT);
-    sceneManager->addScene( new scVictory(myPlayerManager), VICTORY);
+    sceneManager->addScene( new scIntro(), INTRO);
+    sceneManager->addScene( new scInitialize(), INITIALIZE);
+    sceneManager->addScene( new scSelectGame(), SELECT_GAME);
+    sceneManager->addScene( new scGame1(), GAME1);
+    sceneManager->addScene( new scGame2(), GAME2);
+    sceneManager->addScene( new scGame3(), GAME3);
+    sceneManager->addScene( new scGame3BIS(), GAME3_BIS);
+    sceneManager->addScene( new scHint(), HINT);
+    sceneManager->addScene( new scVictory(), VICTORY);
+//    
+//    sceneManager->addScene( new scIntro(myPlayerManager), INTRO);
+//    sceneManager->addScene( new scInitialize(myPlayerManager), INITIALIZE);
+//    sceneManager->addScene( new scSelectGame(myPlayerManager), SELECT_GAME);
+//    sceneManager->addScene( new scGame1(myPlayerManager), GAME1);
+//    sceneManager->addScene( new scGame2(myPlayerManager), GAME2);
+//    sceneManager->addScene( new scGame3(myPlayerManager), GAME3);
+//    sceneManager->addScene( new scGame3BIS(myPlayerManager), GAME3_BIS);
+//    sceneManager->addScene( new scHint(myPlayerManager), HINT);
+//    sceneManager->addScene( new scVictory(myPlayerManager), VICTORY);
     
     sceneManager->setDrawDebug(false);
 	sceneManager->setCurtainDropTime(1.0);
@@ -49,7 +59,7 @@ void ofApp::update(){
 	
     float dt = 0.016666666;
     
-	myPlayerManager.update();
+	bigPlayerManager().update();
     sceneManager->update( dt );
     
 }
@@ -89,7 +99,7 @@ void ofApp::keyPressed(int key){
     }
     
     sceneManager->keyPressed(key);
-    myPlayerManager.keyPressed(key);
+    bigPlayerManager().keyPressed(key);
     
 }
 

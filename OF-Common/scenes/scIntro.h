@@ -13,8 +13,8 @@ class scIntro : public scScene{
 
 public:
     // Constructor
-    scIntro(playerManager &_manager) : scScene(_manager){
-    }
+//    scIntro(playerManager &_manager) : scScene(_manager){
+//    }
 	void setup();
 	void update(float dt);
 	void draw();
