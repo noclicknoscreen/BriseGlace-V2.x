@@ -19,14 +19,20 @@ void scGame3::setup(){
     //gui
     gui.setup();
     gui.add(camPosX.set("camPosX", 0, -1000, 1000));
-    gui.add(camPosY.set("camPosY", 150, -1000, 1000));
-    gui.add(camPosZ.set("camPosZ", 545, -1000, 2000));
+    gui.add(camPosY.set("camPosY", 800, -1000, 1000));
+    gui.add(camPosZ.set("camPosZ", 155, -1000, 2000));
     gui.add(gravity.set("gravity", -250, -500, 250));
-    gui.add(forceAmount.set("forceAmount", ofVec3f(100,200,100), ofVec3f(0,0,0), ofVec3f(300,300,300)));
-    gui.add(angularDamping.set("angularDamping", .98, 0.0, 1.0));
-    gui.add(damping.set("damping", .93, 0.0, 1.0));
-    gui.add(friction.set("friction", .93, 0.0, 1.0));
-    gui.add(zLight.set("zLight", 0, -1000, 1000));
+    
+    gui.add(volumeBorneMin.set("volumeBorneMin", 0, 0.0, 1.0));
+    gui.add(volumeBorneMax.set("volumeBorneMax", 0.6, 0.0, 1.0));
+    
+    //gui.add(forceAmount.set("forceAmount", ofVec3f(100,200,100), ofVec3f(0,0,0), ofVec3f(300,300,300)));
+    
+    gui.add(angularDamping.set("angularDamping", 0.0, 0.0, 1.0));
+    gui.add(damping.set("damping", 0.25, 0.0, 1.0));
+    gui.add(friction.set("friction", 0.75, 0.0, 1.0));
+    
+    //gui.add(zLight.set("zLight", 0, -1000, 1000));
     gui.add(drawDebug.set("drawDebug", 0));
     gui.loadFromFile("gui.xml");
     drawGui = false;
@@ -101,13 +107,8 @@ void scGame3::setup(){
     //now comes from enigma Singleton
     wantedWord = "BONHEUR";
     
-    //VIEW FROM TOP
-    camPosX = 0;
-    camPosY = 550;
-    camPosZ = 95;
-    
+    //view from top
     camera.rotate(-80, ofVec3f(1,0,0));
-    
     
     //load background
     background.load("Decor_SS-Sol.png");
@@ -130,6 +131,10 @@ void scGame3::update(float dt){
     for(int i=0; i<myCubes.size(); i++)
     {
         myCubes[i]->setActivationState(1);
+        
+        myCubes[i]->setDamping(damping);
+        myCubes[i]->setAngularDamping(angularDamping);
+        myCubes[i]->setFriction(friction);
     }
     
     //light
