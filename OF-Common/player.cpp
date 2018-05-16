@@ -32,6 +32,7 @@ player::player(ofColor _color, string _characterSeqPath){
         
     }
     
+    myText.init(globalFontName, 74);
 }
 
 void player::update(bool _isAvailable, string _message, string _messageToCompare, float _volume, int _number){
@@ -47,7 +48,7 @@ void player::update(bool _isAvailable, string _message, string _messageToCompare
     loadNewSequenceImage((int)ofMap(mVolume, 0, 1, 0, mSequenceLen - 1, true));
     
     // Set the text
-    myText.init(globalFontName, 74);
+    
     myText.setText(utils::toUpperCase(mLastMessage));
     myText.wrapTextArea(400, 300);
     

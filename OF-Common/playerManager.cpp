@@ -105,6 +105,7 @@ void playerManager::loadPlayers(ofBuffer _datas){
             
             
         }
+        cout << mPlayers.size() << endl;
         
         // Throw event when someone new spoke
         if(mLastTime != mResponse["lastMessage"]["time"].asString()){
@@ -132,6 +133,9 @@ void playerManager::loadPlayers(ofBuffer _datas){
     
 }
 
+
+
+
 //--------------------------------------------------------------
 void playerManager::draw(){
     
@@ -156,7 +160,11 @@ void playerManager::urlResponse(ofHttpResponse & response){
     
     if(response.status == 200){
         if(response.request.name == "players"){
-            loadPlayers(response.data);
+            
+            //if(ofGetFrameNum() %5 == 0)
+            //{
+                loadPlayers(response.data);
+            //}
         }else{
             ofLogNotice() << "Request answer received : " << response.request.name;
         }
