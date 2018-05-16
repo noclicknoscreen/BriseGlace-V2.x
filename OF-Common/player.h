@@ -22,7 +22,7 @@ public:
     void update(bool _isAvailable, string _message, string _messageToCompare, float _volume, int _number);
     void draw(ofVec2f _pos);
     
-    int getVolume(){return mVolume;};
+    float getVolume(){return mVolume;};
     string getLastMessage(){return mLastMessage;};
     string getLastMessageToCompare(){return mLastMessageToCompare;};
     int getNumber(){return mNumber;};
