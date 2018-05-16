@@ -141,12 +141,7 @@ void scGame3::update(float dt){
         //add the top of the physical box after 5 seconds ;)
         //top.add();
 
-        amount = 0;
-        for(int i=0; i<bigPlayerManager().getNumberOfPlayers(); i++)
-        {
-            amount += ofMap(bigPlayerManager().getPlayerVolume(i), 0, 1, 0, 0.9);
-        }
-
+        amount = bigPlayerManager().getSumVolume();
         if(amount < 120 && amount > -120 )
             applyForceOnCubes(amount);
     }

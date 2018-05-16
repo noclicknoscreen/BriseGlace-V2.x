@@ -26,7 +26,9 @@ public:
     
     int getLastNumber(){return mLastNumber;};
     string getLastMessage(){return mLastMessage;};
-    float getPlayerVolume(int idPlayer){return mPlayers[idPlayer].getVolume();}
+    
+    float getSumVolume();
+    
     int getNumberOfPlayers(){return mPlayers.size();}
     
     void urlResponse(ofHttpResponse & response);

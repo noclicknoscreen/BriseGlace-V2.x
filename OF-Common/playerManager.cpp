@@ -134,6 +134,16 @@ void playerManager::loadPlayers(ofBuffer _datas){
 }
 
 
+//--------------------------------------------------------------
+float playerManager::getSumVolume()
+{
+    float sumVolume=0;
+    for(std::map<int,player>::iterator it=mPlayers.begin(); it!=mPlayers.end(); it++)
+    {
+        sumVolume += it->second.getVolume();
+    }
+    return sumVolume;
+}
 
 
 //--------------------------------------------------------------
