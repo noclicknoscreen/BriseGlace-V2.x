@@ -95,7 +95,7 @@ void scGame3::setup(){
     
     
     // Player manager events
-    ofAddListener(myPlayerManager->someoneSpoke,this,&scGame3::someoneSpoke);
+    ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
     
    
     //now comes from enigma Singleton
@@ -116,7 +116,7 @@ void scGame3::update(float dt){
     
     ofSetWindowTitle(ofToString(ofGetFrameRate()));
     
-    myPlayerManager->update();
+//    bigPlayerManager().update();
     
     camera.setPosition(ofVec3f(camPosX, camPosY, camPosZ));
     world.setGravity(ofVec3f(0,gravity, 0));
@@ -142,9 +142,9 @@ void scGame3::update(float dt){
         //top.add();
 
         amount = 0;
-        for(int i=0; i<myPlayerManager->getNumberOfPlayers(); i++)
+        for(int i=0; i<bigPlayerManager().getNumberOfPlayers(); i++)
         {
-            amount += ofMap(myPlayerManager->getPlayerVolume(i), 0, 1, 0, 0.9);
+            amount += ofMap(bigPlayerManager().getPlayerVolume(i), 0, 1, 0, 0.9);
         }
 
         if(amount < 120 && amount > -120 )
@@ -205,14 +205,14 @@ void scGame3::draw(){
     if(drawGui)
         gui.draw();
     
-    ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(myPlayerManager->getNumberOfPlayers()), 100, 100);
+    ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
     ofPushStyle();
     
     // Style setup
     ofSetColor(255,0,0);
     
     scScene::draw();            // Draw title
-    myPlayerManager->draw();    // Draw players
+    bigPlayerManager().draw();    // Draw players
     
     ofPopStyle();
     

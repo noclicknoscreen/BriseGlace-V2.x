@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/playerManager.cpp"
-            timestampString = "548170009.216882"
+            timestampString = "548171489.383208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "playerManager::loadPlayers(ofBuffer _datas)"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/playerManager.cpp"
-            timestampString = "548170009.216882"
+            timestampString = "548171489.383208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "playerManager::loadPlayers(ofBuffer _datas)"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/playerManager.cpp"
-            timestampString = "548170009.216882"
+            timestampString = "548171489.383208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "playerManager::draw()"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/playerManager.cpp"
-            timestampString = "548170009.216882"
+            timestampString = "548171489.383208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "playerManager::loadPlayers(ofBuffer _datas)"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/playerManager.cpp"
-            timestampString = "548170009.216882"
+            timestampString = "548171489.383208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "playerManager::draw()"
             landmarkType = "7">
          </BreakpointContent>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/playerManager.cpp"
-            timestampString = "548170009.216882"
+            timestampString = "548171489.383208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "playerManager::loadPlayers(ofBuffer _datas)"
             landmarkType = "7">
          </BreakpointContent>
@@ -271,7 +271,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "142"
             endingLineNumber = "142"
-            landmarkName = "scGame3::draw()"
+            landmarkName = "scGame3::update(float dt)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -282,13 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/playerManager.cpp"
-            timestampString = "548170009.216882"
+            timestampString = "548171489.383208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "playerManager::draw()"
-            landmarkType = "7">
+            startingLineNumber = "139"
+            endingLineNumber = "139">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -298,12 +296,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/playerManager.cpp"
-            timestampString = "548170009.216882"
+            timestampString = "548171489.383208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "playerManager::urlResponse(ofHttpResponse &amp; response)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OF-Common/scenes/scGame3.cpp"
+            timestampString = "548171579.961985"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "250"
+            endingLineNumber = "250"
+            landmarkName = "scGame3::sceneWillAppear( ofxScene * fromScreen )"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

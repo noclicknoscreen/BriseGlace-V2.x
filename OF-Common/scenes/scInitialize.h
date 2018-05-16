@@ -12,8 +12,8 @@
 class scInitialize : public scScene{
 
 public:
-    scInitialize(playerManager &_manager) : scScene(_manager){
-    };
+//    scInitialize(playerManager &_manager) : scScene(_manager){
+//    };
 
     void setup();
     void update(float dt);

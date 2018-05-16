@@ -12,8 +12,8 @@
 class scSelectGame : public scScene{
 
 public:
-    scSelectGame(playerManager &_manager) : scScene(_manager){
-    };
+//    scSelectGame(playerManager &_manager) : scScene(_manager){
+//    };
     
     void setup();
     void update(float dt);

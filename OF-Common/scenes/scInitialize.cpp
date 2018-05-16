@@ -36,7 +36,7 @@ void scInitialize::draw(){ //draw scene 1 here
     ofSetColor(ofColor::black);
     
     scScene::draw();            // Draw title
-    myPlayerManager->draw();    // Draw players
+    bigPlayerManager().draw();    // Draw players
     
     myText.setText(ofToString(timerValue));
     myText.drawCenter(0.5 * ofGetWidth(), 0.5 * ofGetHeight() + 50);

@@ -51,7 +51,7 @@ void scGame1::draw(){ //draw scene 1 here
     ofSetColor(ofColor(255,0,0));
     
     scScene::draw();            // Draw title
-    myPlayerManager->draw();    // Draw players
+    bigPlayerManager().draw();    // Draw players
     //drawCenterText(myPlayerManager->getLastMessage(), 0, 50); // Draw last message
 
     ofPopStyle();
@@ -86,7 +86,7 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
     // Player manager events
-    ofAddListener(myPlayerManager->someoneSpoke,this,&scGame1::someoneSpoke);
+    ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
     // Load the next enigma
     bigEnigmaManager().pickNewEnigma(MOTUS);
     
@@ -117,5 +117,5 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
 //scene notifications
 void scGame1::sceneWillDisappear( ofxScene * toScreen ){
     // Player manager events
-    ofRemoveListener(myPlayerManager->someoneSpoke,this,&scGame1::someoneSpoke);
+    ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
 }

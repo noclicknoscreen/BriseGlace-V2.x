@@ -26,7 +26,7 @@ void scGame2::draw(){ //draw scene 1 here
     ofSetColor(ofColor::green);
     
     scScene::draw();            // Draw title
-    myPlayerManager->draw();    // Draw players
+    bigPlayerManager().draw();
     
     ofPopStyle();
     

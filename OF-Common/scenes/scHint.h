@@ -14,8 +14,8 @@
 class scHint : public scScene{
 
 public:
-    scHint(playerManager &_manager) : scScene(_manager){
-    };
+//    scHint(playerManager &_manager) : scScene(_manager){
+//    };
     void setup();
     void update(float dt);
 	void draw();

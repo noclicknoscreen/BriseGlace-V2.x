@@ -8,10 +8,10 @@
 
 #include "scScene.h"
 
-// Constructor
-scScene::scScene(playerManager &_manager){
-    myPlayerManager = &_manager;
-}
+//// Constructor
+//scScene::scScene(playerManager &_manager){
+//    myPlayerManager = &_manager;
+//}
 
 void scScene::setup(){
     // Set the text
@@ -30,7 +30,8 @@ void scScene::someoneSpoke(player & _player){
 }
 
 void scScene::sceneWillAppear( ofxScene * fromScreen ){
-    myPlayerManager->freshRestart();
+//    myPlayerManager->freshRestart();
+    bigPlayerManager().freshRestart();
 }
 void scScene::sceneWillDisappear( ofxScene * fromScreen ){
     

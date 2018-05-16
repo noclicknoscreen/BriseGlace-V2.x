@@ -97,8 +97,8 @@ public:
 class scGame3 : public scScene{
 
 public:
-    scGame3(playerManager &_manager) : scScene(_manager){
-    };
+//    scGame3(playerManager &_manager) : scScene(_manager){
+//    };
     void setup();
     void update(float dt);
 	void draw();

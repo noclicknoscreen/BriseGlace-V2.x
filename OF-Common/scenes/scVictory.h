@@ -12,8 +12,8 @@
 class scVictory : public scScene{
 
 public:
-    scVictory(playerManager &_manager) : scScene(_manager){
-    };
+//    scVictory(playerManager &_manager) : scScene(_manager){
+//    };
     
     void setup();
     void update(float dt);

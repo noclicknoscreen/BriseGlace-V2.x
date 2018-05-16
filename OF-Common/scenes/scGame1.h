@@ -18,8 +18,8 @@
 class scGame1 : public scScene{
     
 public:
-    scGame1(playerManager &_manager) : scScene(_manager){
-    };
+//    scGame1(playerManager &_manager) : scScene(_manager){
+//    };
     void setup();
     void update(float dt);
 	void draw();
