@@ -109,7 +109,7 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     //gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
     
     // On ne refiat pas ca si on vient de l'indice
-    if(fromScreen->getSceneID() == HINT){
+    if(fromScreen->getSceneID() != HINT){
         //cubes
         myCubeManager.setup();
         
