@@ -28,6 +28,7 @@ void scGame1::setup(){  //load your scene 1 assets here...
     
 
     //gui
+    bDrawGui=false;
     
 };
 
