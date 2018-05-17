@@ -21,8 +21,10 @@ class specialBox : public ofxBulletBox
     ofImage texture;
     ofTrueTypeFont font;
     
+    ofMaterial materialForFaceColor;
+    
 public:
-    void customDraw()
+    void customDraw(ofColor winnerColor=ofColor::white)
     {
         transformGL();
         
@@ -50,13 +52,34 @@ public:
             textWidth = font.getStringBoundingBox(letter, 0, 0).getWidth();
             textHeight = font.getStringBoundingBox(letter, 0, 0).getHeight();
             
-            ofSetColor(0);
+        
+        
+        if(winnerColor != ofColor::white)
+        {
             ofPushMatrix();
+
+            materialForFaceColor.setAmbientColor(winnerColor);
+            materialForFaceColor.setDiffuseColor(ofColor(winnerColor, 140));
+            
+            materialForFaceColor.begin();
+            
+            ofTranslate(0,0, size.z/2 + 1);
+            ofDrawRectangle(-size.x/2, -size.y/2, size.x, size.y);
+            
+            materialForFaceColor.end();
+            ofSetColor(255);
+            
+            ofPopMatrix();
+        }
+
+        
+        ofSetColor(0);
+        ofPushMatrix();
                 ofRotate(180, 0, 0, 1);
                 ofRotate(180, 0, 1, 0);
                 ofRotate(180, 1, 0, 0);
         
-                ofTranslate(-textWidth/2.0,  -textHeight/2, float(size.z/2 +1));
+                ofTranslate(-textWidth/2.0,  -textHeight/2, float(size.z/2 +2));
                 
                 ofDisableLighting();
                 font.drawString(letter, 0, 0);
@@ -158,6 +181,7 @@ public:
     
     //winner color (for game3BIS ;)
     ofColor winnerColor;
+    bool colorizeCubes;
     
 };
 

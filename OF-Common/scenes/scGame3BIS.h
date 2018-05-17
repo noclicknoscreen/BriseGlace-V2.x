@@ -77,9 +77,73 @@ public:
         }
         
 
-        materialColor = winnerColor;
+        //materialColor = winnerColor;
         
     };
+    
+    
+    //--------------------------------------------------------------
+    void draw(){
+
+        ofEnableAntiAliasing();
+        ofEnableSmoothing();
+        ofEnableAlphaBlending();
+        ofEnableDepthTest();
+        
+        ofSetBackgroundColor(255);
+        
+        ofEnableLighting();
+        spotLight.enable();
+        
+        material.setAmbientColor(materialColor);
+        material.setDiffuseColor(materialColor);
+        
+        camera.begin();
+        
+        if(drawDebug)
+        {
+            ofSetColor(100, 100, 100);
+            ofNoFill();
+            ground.draw();
+            rightFace.draw();
+            leftFace.draw();
+            bottom.draw();
+            ofFill();
+            
+            spotLight.draw();
+        }
+        
+        material.begin();
+        for(int i=0; i<myCubes.size(); i++)
+        {
+            myCubes[i]->customDraw(winnerColor);
+        }
+        material.end();
+        ofDisableLighting();
+        
+        if(drawDebug)
+            world.drawDebug();
+        
+        
+        camera.end();
+        
+        
+        ofDisableDepthTest();
+        
+        if(drawGui)
+            gui.draw();
+        
+        ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
+        
+        // Draw title
+        scScene::drawTitle("Game 3 : Boggle");
+        // Draw players
+        bigPlayerManager().draw();
+        
+    };
+    
+    
+    
 };
 
 #endif /* scGame3BIS_h */
