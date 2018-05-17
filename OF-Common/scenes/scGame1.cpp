@@ -63,8 +63,9 @@ void scGame1::draw(){ //draw scene 1 here
 //    ofDrawCircle(200, 200, 200);
 //    ofPopStyle();
     
-    scScene::drawTitle("Game 1 : Mot caché");            // Draw title
-    scScene::drawSpokenWord("Il vous reste " + mTimer.toString() + " secondes avant l'indice.");
+    // Draw title
+    scScene::drawTitle("Game 1 : Mot caché");
+    scScene::drawSpokenWord("Derrière ces " + ofToString(bigEnigmaManager().getCurrentEnigma()->getSolution().size()) + " lettres se cache un mot");
     
     bigPlayerManager().draw();    // Draw players
     
