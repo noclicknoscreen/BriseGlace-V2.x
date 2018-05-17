@@ -23,7 +23,7 @@ public:
         scScene::sceneWillAppear(fromScreen);
         
         //now comes from enigma Singleton
-        wantedWord = bigEnigmaManager().getCurrentEnigma()->getSolution();
+        wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
         
         for(int i=0; i<myCubes.size(); i++)
         {
