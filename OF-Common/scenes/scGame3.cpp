@@ -202,6 +202,15 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
     cout << "setting wantedWord to : " << wantedWord << endl;
     
+    
+    //clean potentially previous session
+    for(int i=0; i<myCubes.size(); i++)
+    {
+        myCubes[i]->remove();
+    }
+    myCubes.clear();
+    
+    
     for(int i=0; i<wantedWord.size(); i++)
     {
         box = new specialBox();
