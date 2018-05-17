@@ -58,7 +58,7 @@ void scGame3::setup(){
      float boxSize = 1000.0;
      float yOffset = 150.0; //so the bottom of the simulation is above the avatars
     
-        ground.create( world.world,     ofVec3f(0, 0, 0- yOffset),      0., boxSize, 1.f, boxSize );
+        ground.create( world.world,     ofVec3f(0, 0, 0- yOffset    ),      0., boxSize, 1.f, boxSize );
         ground.setProperties(.25, .55);
         ground.add();
         
@@ -265,7 +265,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
     //now comes from enigma Singleton
     bigEnigmaManager().pickNewEnigma(MOTUS);
-    wantedWord = bigEnigmaManager().getCurrentEnigma()->getSolution();
+    wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
     cout << "setting wantedWord to : " << wantedWord << endl;
     
     for(int i=0; i<wantedWord.size(); i++)
