@@ -36,6 +36,10 @@ void scGame2::draw(){ //draw scene 1 here
 void scGame2::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
+    
+    // Erase all words of every one
+    bigPlayerManager().freshRestart();
+
 };
 
 //scene notifications

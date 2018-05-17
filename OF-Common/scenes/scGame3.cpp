@@ -195,7 +195,11 @@ void scGame3::someoneSpoke(player & _player){
 //--------------------------------------------------------------
 void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
-    scScene::sceneWillAppear(fromScreen);
+    scScene::sceneWillAppear(fromScreen);    
+    
+    // Erase all words of every one
+    bigPlayerManager().freshRestart();
+
     
     //now comes from enigma Singleton
     bigEnigmaManager().pickNewEnigma(MOTUS);

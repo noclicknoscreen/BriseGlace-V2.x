@@ -56,10 +56,10 @@ void playerManager::setup(){
 
 //--------------------------------------------------------------
 void playerManager::freshRestart(){
-    if(bLoadingPlayers == false){
+    if(bResetPlayers == false){
         string url = "https://" + ipAdress.get() + ":8443/resetPlayers";
         ofLoadURLAsync(url,"resetPlayers");
-        bLoadingPlayers = true;
+        bResetPlayers = true;
     }
 }
 
@@ -218,19 +218,16 @@ void playerManager::urlResponse(ofHttpResponse & response){
     
     if(response.status == 200){
         if(response.request.name == "players"){
-            
-            //if(ofGetFrameNum() %5 == 0)
-            //{
-                loadPlayers(response.data);
-            //}
-        }else{
-            ofLogNotice() << "Request answer received : " << response.request.name;
+            loadPlayers(response.data);
+            bLoadingPlayers = false;
         }
-        
-        bLoadingPlayers = false;
-        
+        if(response.request.name == "resetPlayers"){
+            loadPlayers(response.data);
+            bResetPlayers = false;
+        }
     }else{
         ofLogError() << response.status << " " << response.error << endl;
+        
     }
 }
 

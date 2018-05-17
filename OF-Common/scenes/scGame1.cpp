@@ -95,6 +95,9 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // Load the next enigma
     bigEnigmaManager().pickNewEnigma(MOTUS);
     
+    // Erase all words of every one
+    bigPlayerManager().freshRestart();
+    
     gui.setup();
     //gui.add
     gui.add(lightPosX.set("lightPosX", 1600, -1000, ofGetWidth()*2));
@@ -138,7 +141,6 @@ void scGame1::someoneSpoke(player & _player){
     
     if(myInputManager.isReadyForNewText())
         myInputManager.getNewText(_player);
-    
     
     mTimer.startTimer(45);
     
