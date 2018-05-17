@@ -245,17 +245,12 @@ void scGame3::exit()
 //--------------------------------------------------------------
 void scGame3::someoneSpoke(player & _player){
     scScene::someoneSpoke(_player);
-   
-    if(utils::toUpperCase(_player.getLastMessage()) == utils::toUpperCase(wantedWord))
+
+    if(std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord)))
     {
         cout << "c'est gagné !!! " << endl;
         ofxSceneManager::instance()->goToScene(7, true, false);
-    }
-    else
-    {
-        //addRandomForce(FORCE_AMOUNT * 3);
-    }
-    
+    }    
 }
 
 //--------------------------------------------------------------
