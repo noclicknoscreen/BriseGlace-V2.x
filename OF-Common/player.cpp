@@ -107,31 +107,44 @@ void player::draw(ofVec2f _pos, ofPoint _bulleCorrection){
     // Draw the character
     ofPushStyle();
     
-    
+    // DRAW PANCARTE + MOT ////////////////////////////////////////////////////////////////
     ofPushMatrix();
     ofTranslate(-0.5 * mSequenceImg.getWidth() + _bulleCorrection.x, -1 * mSequenceImg.getHeight() - 200  + _bulleCorrection.y);
     //            ofScale(0.75, 0.75);
     
-    if(mBulleImg.isAllocated()){
-        ofFill();
-        ofSetColor(255,255,255,255);
-        ofDisableNormalizedTexCoords();
-        mBulleImg.draw(0, 0);
-        ofEnableNormalizedTexCoords();
+    if(mIsAvailable){
+    
+        if(mBulleImg.isAllocated()){
+            ofFill();
+            ofSetColor(255,255,255,255);
+            ofDisableNormalizedTexCoords();
+            mBulleImg.draw(0, 0);
+            ofEnableNormalizedTexCoords();
+        }
+        
+        // Draw the text
+        ofSetColor(mColor);
+        ofNoFill();
+        
+        
+        // Little trick to always be into the frame
+        float correction = 0.15;
+        if(myText.getHeight() > 120){
+            correction = -0.25;
+        }
+        
+        ofPoint whereTheTextIs(internalBullePos.x + 0.5*internalBulleSize.x, internalBullePos.y + correction * myText.getHeight(), 10);
+        
+//        ofDrawBitmapString(ofToString(myText.getHeight()) + ":" + ofToString(correction), whereTheTextIs.x, whereTheTextIs.y);
+        myText.drawCenter(whereTheTextIs.x , whereTheTextIs.y);
+//        ofDrawRectangle(whereTheTextIs.x - 0.5 * myText.getWidth(), whereTheTextIs.y, myText.getWidth(), myText.getHeight());
+//        ofDrawCircle(whereTheTextIs.x , whereTheTextIs.y, 10);
+        
     }
-    
-    // Draw the text
-    ofSetColor(mColor);
-    ofNoFill();
-    //            ofDrawRectangle(internalBullePos.x, internalBullePos.y, internalBulleSize.x, internalBulleSize.y);
-    
-    
-    ofPoint whereTheTextIs(internalBullePos.x + 0.5*internalBulleSize.x, internalBullePos.y + 0.15*myText.getHeight(), 10);
-    //            ofDrawCircle(whereTheTextIs.x , whereTheTextIs.y, 10);
-    myText.drawCenter(whereTheTextIs.x , whereTheTextIs.y);
-    
     ofPopMatrix();
+    //////////////////////////////////////////////////////////////////
     
+    // DRAW BONHOMME ////////////////////////////////////////////////////////////////
     ofPushMatrix();
     ofScale(0.5, 0.5);
     
@@ -147,7 +160,7 @@ void player::draw(ofVec2f _pos, ofPoint _bulleCorrection){
         ofEnableNormalizedTexCoords();
     }
     ofPopMatrix();
-    
+    //////////////////////////////////////////////////////////////////
     
     ofPopStyle();
     
