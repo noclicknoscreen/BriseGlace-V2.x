@@ -112,7 +112,8 @@ module.exports = {
       lastMessage = {time:new Date().toLocaleString(), text:""};
 
       for (var idxPlayer in players) {
-        players[idxPlayer].lastMessage = {time:new Date().toLocaleString(), text:""};
+          players[idxPlayer].lastMessage = {time:new Date().toLocaleString(), text:""};
+          players[idxPlayer].isAvailable = false;
       }
 
   }

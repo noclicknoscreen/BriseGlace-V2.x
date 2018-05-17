@@ -112,6 +112,9 @@ void ofApp::keyPressed(int key){
             goToPrevScene();
     }
     
+    if(key== 'f')
+        ofToggleFullscreen();
+    
     sceneManager->keyPressed(key);
     bigPlayerManager().keyPressed(key);
     
