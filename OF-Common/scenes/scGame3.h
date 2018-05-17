@@ -155,5 +155,8 @@ public:
     //timer
     float timer;
     
+    //winner color (for game3BIS ;)
+    ofColor winnerColor;
+    
 };
 

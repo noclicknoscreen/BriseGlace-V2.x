@@ -76,6 +76,8 @@ public:
             ofxSceneManager::instance()->goToScene(9);
         }
         
+
+        materialColor = winnerColor;
         
     };
 };

@@ -116,7 +116,7 @@ void scGame3::draw(){
     
     ofEnableLighting();
     spotLight.enable();
-    materialColor.setHue(0);
+    //materialColor.setHue(0);
     material.setAmbientColor(materialColor);
     material.setDiffuseColor(materialColor);
     
@@ -175,9 +175,11 @@ void scGame3::exit()
 void scGame3::someoneSpoke(player & _player){
     scScene::someoneSpoke(_player);
 
-    if(std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord)))
+    std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord));
+    if(index != std::string::npos)
     {
         cout << "c'est gagné !!! " << endl;
+        winnerColor = _player.getColor();
         ofxSceneManager::instance()->goToScene(7, true, false);
     }    
 }
@@ -334,6 +336,8 @@ void scGame3::setupLight()
     lightColor.setSaturation( 0.f );
     materialColor.setBrightness(255);
     materialColor.setSaturation(0);
+    
+    materialColor.setHue(0);
 };
 
 
