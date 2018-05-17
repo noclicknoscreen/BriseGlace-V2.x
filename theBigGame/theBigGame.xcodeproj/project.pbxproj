@@ -176,8 +176,6 @@
 		D2CF8C3920A98E700035B780 /* scVictory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C2520A98E700035B780 /* scVictory.cpp */; };
 		D2CF8C4820A9FBA70035B780 /* ofxTextBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C4220A9FBA70035B780 /* ofxTextBlock.cpp */; };
 		D2CF8C4D20AA01380035B780 /* indice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C4B20AA01380035B780 /* indice.cpp */; };
-		D2CF8C7420ADE89E0035B780 /* HapSupport.c in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C6A20ADE89E0035B780 /* HapSupport.c */; };
-		D2CF8C7620ADE89E0035B780 /* ofxHapPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C6F20ADE89E0035B780 /* ofxHapPlayer.cpp */; };
 		D4BDD55A35C18F38B22587B3 /* btGjkPairDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FF1568D65B599A79347289E /* btGjkPairDetector.cpp */; };
 		D596B4C0EA4546DB259B3326 /* btMultiSapBroadphase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10CEFF5A81E961FC291E86C2 /* btMultiSapBroadphase.cpp */; };
 		D67C2A715397417907555FC0 /* btConvexHullComputer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40946A9FD58F227B0D0443B7 /* btConvexHullComputer.cpp */; };
@@ -653,10 +651,6 @@
 		D2CF8C4C20AA01380035B780 /* indice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = indice.h; sourceTree = "<group>"; };
 		D2CF8C5020AAEAAC0035B780 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 		D2CF8C5120AB141B0035B780 /* scGame3BIS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scGame3BIS.h; sourceTree = "<group>"; };
-		D2CF8C6A20ADE89E0035B780 /* HapSupport.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HapSupport.c; sourceTree = "<group>"; };
-		D2CF8C6B20ADE89E0035B780 /* HapSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HapSupport.h; sourceTree = "<group>"; };
-		D2CF8C6F20ADE89E0035B780 /* ofxHapPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxHapPlayer.cpp; sourceTree = "<group>"; };
-		D2CF8C7020ADE89E0035B780 /* ofxHapPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxHapPlayer.h; sourceTree = "<group>"; };
 		D2D1D47D5A2A1B5AC097B14F /* btDefaultMotionState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btDefaultMotionState.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/LinearMath/btDefaultMotionState.h; sourceTree = SOURCE_ROOT; };
 		D2F2DC31B30F78A69C7E766C /* btActionInterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btActionInterface.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletDynamics/Dynamics/btActionInterface.h; sourceTree = SOURCE_ROOT; };
 		D2F63572987E44FAFD60CA6A /* btPoolAllocator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btPoolAllocator.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/LinearMath/btPoolAllocator.h; sourceTree = SOURCE_ROOT; };
@@ -1284,7 +1278,6 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
-				D2CF8C5220ADE89E0035B780 /* ofxHapPlayer */,
 				D2CF8C3A20A9FBA70035B780 /* ofxTextSuite */,
 				8D83D7AC476703EBECC1932D /* ofxAnimatable */,
 				CDA47165D96F2059C5206BBD /* ofxBullet */,
@@ -1538,50 +1531,6 @@
 				D2CF8C4C20AA01380035B780 /* indice.h */,
 			);
 			path = indice;
-			sourceTree = "<group>";
-		};
-		D2CF8C5220ADE89E0035B780 /* ofxHapPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				D2CF8C6720ADE89E0035B780 /* libs */,
-				D2CF8C6E20ADE89E0035B780 /* src */,
-			);
-			name = ofxHapPlayer;
-			path = ../../../addons/ofxHapPlayer;
-			sourceTree = "<group>";
-		};
-		D2CF8C6720ADE89E0035B780 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				D2CF8C6820ADE89E0035B780 /* HapSupport */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		D2CF8C6820ADE89E0035B780 /* HapSupport */ = {
-			isa = PBXGroup;
-			children = (
-				D2CF8C6920ADE89E0035B780 /* src */,
-			);
-			path = HapSupport;
-			sourceTree = "<group>";
-		};
-		D2CF8C6920ADE89E0035B780 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				D2CF8C6A20ADE89E0035B780 /* HapSupport.c */,
-				D2CF8C6B20ADE89E0035B780 /* HapSupport.h */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		D2CF8C6E20ADE89E0035B780 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				D2CF8C6F20ADE89E0035B780 /* ofxHapPlayer.cpp */,
-				D2CF8C7020ADE89E0035B780 /* ofxHapPlayer.h */,
-			);
-			path = src;
 			sourceTree = "<group>";
 		};
 		D486FC87F063317BB47E9FAC /* include */ = {
@@ -1979,7 +1928,6 @@
 				8F394A15C7AFBE962F881C5F /* gim_box_set.cpp in Sources */,
 				54C818A70CE26A93EFAF92E7 /* gim_contact.cpp in Sources */,
 				D2CF8C4820A9FBA70035B780 /* ofxTextBlock.cpp in Sources */,
-				D2CF8C7420ADE89E0035B780 /* HapSupport.c in Sources */,
 				F51B637CCC58451EF11593B1 /* gim_memory.cpp in Sources */,
 				D2CF8C3220A98E700035B780 /* scGame2.cpp in Sources */,
 				7B8291FE11D2EDCAC7759CE6 /* gim_tri_collision.cpp in Sources */,
@@ -2032,7 +1980,6 @@
 				2BC8140B4E5145D68696F9B5 /* btSoftBody.cpp in Sources */,
 				3344A6F4E498DB7B750F3A3E /* btSoftBodyConcaveCollisionAlgorithm.cpp in Sources */,
 				2251C952DA9775B84EB61158 /* btSoftBodyHelpers.cpp in Sources */,
-				D2CF8C7620ADE89E0035B780 /* ofxHapPlayer.cpp in Sources */,
 				D2CF8C2D20A98E700035B780 /* enigma.cpp in Sources */,
 				00E83C2BF3CCF69D1AF53827 /* btSoftBodyRigidBodyCollisionConfiguration.cpp in Sources */,
 				969EA8FAE1BF0949CD33E10E /* btSoftRigidCollisionAlgorithm.cpp in Sources */,
