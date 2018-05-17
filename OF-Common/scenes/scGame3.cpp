@@ -55,8 +55,6 @@ void scGame3::update(float dt){
     
     ofSetWindowTitle(ofToString(ofGetFrameRate()));
     
-//    bigPlayerManager().update();
-    
     camera.setPosition(ofVec3f(camPosX, camPosY, camPosZ));
     world.setGravity(ofVec3f(0,gravity, 0));
 
@@ -81,12 +79,22 @@ void scGame3::update(float dt){
     //apply forces after 5 seconds
     if(ofGetElapsedTimef() - timer > 5)
     {
-        //add the top of the physical box after 5 seconds ;)
-        //top.add();
 
-        amount = ofMap(bigPlayerManager().getAverageVolume(), 0.0, 1.0, volumeBorneMin, volumeBorneMax);
-        if(amount < 120 && amount > -120 )
-            applyForceOnCubes(amount);
+        ofVec3f randomForce;
+        
+        float amountPlayer1 = ofMap(bigPlayerManager().getUserVolume(1), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
+        randomForce = ofVec3f(forceAmount->x, ofRandom(-forceAmount->y, forceAmount->y), ofRandom(-forceAmount->z, forceAmount->z)) * amountPlayer1;
+        applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
+        
+        
+        float amountPlayer2 = ofMap(bigPlayerManager().getUserVolume(2), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
+        randomForce = ofVec3f(ofRandom(-forceAmount->x, forceAmount->x), ofRandom(-forceAmount->y, forceAmount->y), -forceAmount->z) * amountPlayer2;
+        applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
+        
+        float amountPlayer3 = ofMap(bigPlayerManager().getUserVolume(3), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
+        randomForce = ofVec3f(-forceAmount->x, ofRandom(-forceAmount->y, forceAmount->y), ofRandom(-forceAmount->z, forceAmount->z)) * amountPlayer3;
+        applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
+
     }
     
 
@@ -116,7 +124,7 @@ void scGame3::draw(){
     
     ofEnableLighting();
     spotLight.enable();
-    //materialColor.setHue(0);
+
     material.setAmbientColor(materialColor);
     material.setDiffuseColor(materialColor);
     
@@ -228,9 +236,8 @@ void scGame3::keyPressed(int key){
     {
         for(int i=0; i<myCubes.size(); i++)
         {
-            //myCubes[i]->applyTorque(0.0, 1.0, 0.0);
             ofVec3f randomForce = ofVec3f(ofRandom(-forceAmount->x, forceAmount->x), ofRandom(-forceAmount->y, forceAmount->y), ofRandom(-forceAmount->z, forceAmount->z));
-            myCubes[i]->applyForce(randomForce, /*box->getPosition()*/ofVec3f(-500,0,0));
+            myCubes[i]->applyForce(randomForce, ofVec3f(-500,0,0));
         }
     }
     
@@ -245,16 +252,13 @@ void scGame3::keyPressed(int key){
 };
 
 //--------------------------------------------------------------
-void scGame3::applyForceOnCubes(float amount)
+void scGame3::applyForceOnCubes(ofVec3f force, ofPoint _frcPos)
 {
     for(int i=0; i<myCubes.size(); i++)
     {
-        //myCubes[i]->applyTorque(0.0, 1.0, 0.0);
-        ofVec3f randomForce = ofVec3f(ofRandom(-forceAmount->x, forceAmount->x), ofRandom(-forceAmount->y, forceAmount->y), ofRandom(-forceAmount->z, forceAmount->z)) * amount;
-        myCubes[i]->applyForce(randomForce, /*box->getPosition()*/ofVec3f(-500,0,0));
+        myCubes[i]->applyForce(force, _frcPos);
     }
 }
-
 
 //--------------------------------------------------------------
 void scGame3::setupGui()
@@ -267,11 +271,11 @@ void scGame3::setupGui()
     gui.add(gravity.set("gravity", -250, -500, 250));
     
     gui.add(volumeBorneMin.set("volumeBorneMin", 0, 0.0, 1.0));
-    gui.add(volumeBorneMax.set("volumeBorneMax", 0.6, 0.0, 1.0));
+    gui.add(volumeBorneMax.set("volumeBorneMax", 0.29, 0.0, 1.0));
     
     gui.add(forceAmount.set("forceAmount", ofVec3f(100,200,100), ofVec3f(0,0,0), ofVec3f(300,300,300)));
     
-    gui.add(angularDamping.set("angularDamping", 0.0, 0.0, 1.0));
+    gui.add(angularDamping.set("angularDamping", 0.815, 0.0, 1.0));
     gui.add(damping.set("damping", 0.25, 0.0, 1.0));
     gui.add(friction.set("friction", 0.75, 0.0, 1.0));
     
@@ -309,7 +313,7 @@ void scGame3::setupPhysics()
     bottom.setProperties(.25, .95);
     bottom.add();
     
-    front.create(world.world,  ofVec3f(0, 0, boxSize/2 - yOffset),      0., boxSize, boxSize, 1 );
+    front.create(world.world,  ofVec3f(0, 0, boxSize/2 - yOffset - 150),      0., boxSize, boxSize, 1 );
     front.setProperties(.25, .95);
     front.add();
     

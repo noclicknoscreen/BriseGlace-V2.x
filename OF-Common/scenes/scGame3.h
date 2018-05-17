@@ -12,7 +12,7 @@
 #include "ofxBullet.h"
 
 
-#define START_FORCE_FACTOR 100
+#define START_FORCE_FACTOR 300//250//100
 #define PLAY_FORCE_FACTOR  7
 
 class specialBox : public ofxBulletBox
@@ -97,8 +97,8 @@ public:
 class scGame3 : public scScene{
 
 public:
-//    scGame3(playerManager &_manager) : scScene(_manager){
-//    };
+
+    
     void setup();
     void update(float dt);
 	void draw();
@@ -118,7 +118,7 @@ public:
     ofxBulletBox				ground, rightFace, leftFace, bottom, front, top;
     specialBox*                 box;
     
-    void applyForceOnCubes(float amount);
+    void applyForceOnCubes(ofVec3f force, ofPoint _frcPos);
     float amount;
     
     //camera
