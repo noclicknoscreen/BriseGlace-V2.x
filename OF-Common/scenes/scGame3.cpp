@@ -46,6 +46,8 @@ void scGame3::setup(){
     
     //load background
 //    background.load("Decor_SS-Sol.png");
+    
+    colorizeCubes=false;
 
 };
 
@@ -88,7 +90,7 @@ void scGame3::update(float dt){
         
         
         float amountPlayer2 = ofMap(bigPlayerManager().getUserVolume(2), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
-        randomForce = ofVec3f(ofRandom(-forceAmount->x, forceAmount->x), ofRandom(-forceAmount->y, forceAmount->y), -forceAmount->z) * amountPlayer2;
+        randomForce = ofVec3f(ofRandom(-forceAmount->x, forceAmount->x), ofRandom(-forceAmount->y, forceAmount->y), -forceAmount->z) * amountPlayer2 * forceMicro2_multiplier;
         applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
         
         float amountPlayer3 = ofMap(bigPlayerManager().getUserVolume(3), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
@@ -102,19 +104,7 @@ void scGame3::update(float dt){
 
 //--------------------------------------------------------------
 void scGame3::draw(){
-    
-    
-    //draw du background
-    ofSetColor(255);
-//    ofPushMatrix();
-//        ofTranslate(0,0,-200);
-//        ofEnableNormalizedTexCoords();
-//        background.bind();
-//        ofDrawBox(ofGetWidth()/2, ofGetHeight()/2, 0, ofGetWidth()*1.3, ofGetHeight()*1.3, 1);
-//        background.unbind();
-//    ofPopMatrix();
-    
-    
+
     ofEnableAntiAliasing();
     ofEnableSmoothing();
     ofEnableAlphaBlending();
@@ -195,12 +185,25 @@ void scGame3::someoneSpoke(player & _player){
 //--------------------------------------------------------------
 void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
-    scScene::sceneWillAppear(fromScreen);
+    scScene::sceneWillAppear(fromScreen);    
+    
+    // Erase all words of every one
+    bigPlayerManager().freshRestart();
+
     
     //now comes from enigma Singleton
     bigEnigmaManager().pickNewEnigma(MOTUS);
     wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
     cout << "setting wantedWord to : " << wantedWord << endl;
+    
+    
+    //clean potentially previous session
+    for(int i=0; i<myCubes.size(); i++)
+    {
+        myCubes[i]->remove();
+    }
+    myCubes.clear();
+    
     
     for(int i=0; i<wantedWord.size(); i++)
     {
@@ -274,6 +277,8 @@ void scGame3::setupGui()
     gui.add(volumeBorneMax.set("volumeBorneMax", 0.29, 0.0, 1.0));
     
     gui.add(forceAmount.set("forceAmount", ofVec3f(100,200,100), ofVec3f(0,0,0), ofVec3f(300,300,300)));
+    
+    gui.add(forceMicro2_multiplier.set("forceMicro2_multiplier", 0.6, 0.1, 1.0));
     
     gui.add(angularDamping.set("angularDamping", 0.815, 0.0, 1.0));
     gui.add(damping.set("damping", 0.25, 0.0, 1.0));

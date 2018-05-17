@@ -54,7 +54,8 @@ private:
     map<int, ofPoint> mBullesPos;
     map<int, ofPoint> mPositions;
     
-    bool bLoadingPlayers = false;
+    bool bLoadingPlayers    = false;
+    bool bResetPlayers      = false;
     void loadPlayers(ofBuffer _datas);
     
     // GUI, settings

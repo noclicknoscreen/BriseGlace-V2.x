@@ -113,7 +113,11 @@ void ofApp::keyPressed(int key){
     }
     
     if(key== 'f')
+    {
         ofToggleFullscreen();
+        ofHideCursor();
+    }
+
     
     sceneManager->keyPressed(key);
     bigPlayerManager().keyPressed(key);
