@@ -78,6 +78,9 @@ void player::loadNewSequenceImage(int _newSequenceIdx){
 
 void player::draw(ofVec2f _pos){
     
+    //store the position so the spoken words come from the little avatar
+    setPositionHistogram(_pos);
+    
     ofPushStyle();
     ofSetColor(mColor);
     ofFill();

@@ -55,28 +55,29 @@ void scGame3::setup(){
     world.setGravity(ofVec3f(0,50,0));
    
      float boxSize = 1000.0;
+     float yOffset = 150.0; //so the bottom of the simulation is above the avatars
     
-        ground.create( world.world,     ofVec3f(0, 0, 0),      0., boxSize, 1.f, boxSize );
+        ground.create( world.world,     ofVec3f(0, 0, 0- yOffset    ),      0., boxSize, 1.f, boxSize );
         ground.setProperties(.25, .55);
         ground.add();
         
-        rightFace.create( world.world,  ofVec3f(boxSize/2 - 100, 0, 0),    0., 1, boxSize, boxSize );
+        rightFace.create( world.world,  ofVec3f(boxSize/2 - 100, 0, 0- yOffset),    0., 1, boxSize, boxSize );
         rightFace.setProperties(.25, .95);
         rightFace.add();
         
-        leftFace.create( world.world,  ofVec3f(-(boxSize/2 - 100), 0, 0),    0., 1, boxSize, boxSize );
+        leftFace.create( world.world,  ofVec3f(-(boxSize/2 - 100), 0, 0- yOffset),    0., 1, boxSize, boxSize );
         leftFace.setProperties(.25, .95);
         leftFace.add();
         
-        bottom.create( world.world,  ofVec3f(0, 0, -boxSize/2),      0., boxSize, boxSize, 1 );
+        bottom.create( world.world,  ofVec3f(0, 0, -boxSize/2- yOffset),      0., boxSize, boxSize, 1 );
         bottom.setProperties(.25, .95);
         bottom.add();
     
-        front.create(world.world,  ofVec3f(0, 0, boxSize/2),      0., boxSize, boxSize, 1 );
+        front.create(world.world,  ofVec3f(0, 0, boxSize/2 - yOffset),      0., boxSize, boxSize, 1 );
         front.setProperties(.25, .95);
         front.add();
     
-        top.create(world.world,  ofVec3f(0, boxSize/2, 0),      0., boxSize, 1, boxSize );
+        top.create(world.world,  ofVec3f(0, boxSize/2, 0- yOffset),      0., boxSize, 1, boxSize );
         top.setProperties(.25, .95);
         //top.add();
     
@@ -239,17 +240,12 @@ void scGame3::exit()
 //--------------------------------------------------------------
 void scGame3::someoneSpoke(player & _player){
     scScene::someoneSpoke(_player);
-   
-    if(utils::toUpperCase(_player.getLastMessage()) == utils::toUpperCase(wantedWord))
+
+    if(std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord)))
     {
         cout << "c'est gagné !!! " << endl;
         ofxSceneManager::instance()->goToScene(7, true, false);
-    }
-    else
-    {
-        //addRandomForce(FORCE_AMOUNT * 3);
-    }
-    
+    }    
 }
 
 //--------------------------------------------------------------
@@ -259,7 +255,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
     //now comes from enigma Singleton
     bigEnigmaManager().pickNewEnigma(MOTUS);
-    wantedWord = bigEnigmaManager().getCurrentEnigma()->getSolution();
+    wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
     cout << "setting wantedWord to : " << wantedWord << endl;
     
     for(int i=0; i<wantedWord.size(); i++)
