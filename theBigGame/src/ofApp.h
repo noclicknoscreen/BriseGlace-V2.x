@@ -44,6 +44,6 @@ class ofApp : public ofBaseApp{
     ofEvent<void>        nextSceneEvent;
     
 //    playerManager myPlayerManager;
-    void someoneSpoke(player & _player);
+//    void someoneSpoke(player & _player);
     
 };

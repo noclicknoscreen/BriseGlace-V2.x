@@ -26,8 +26,19 @@ void scIntro::draw(){ //draw scene 1 here
 //scene notifications
 void scIntro::sceneWillAppear( ofxScene * fromScreen ){
     scScene::sceneWillAppear(fromScreen);
+    // Player manager events
+    ofAddListener(bigPlayerManager().someoneSpoke,this,&scIntro::someoneSpoke);
 };
 
 //scene notifications
 void scIntro::sceneWillDisappear( ofxScene * toScreen ){
+    // Player manager events
+    ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scIntro::someoneSpoke);
 }
+
+// Speaking event
+void scIntro::someoneSpoke(player & _player){
+    ofxSceneManager::instance()->goToScene(INITIALIZE);
+}
+
+

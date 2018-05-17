@@ -51,4 +51,18 @@ void scSelectGame::someoneSpoke(player & _player){
     mPlayerMessage = _player.getLastMessage();
     mPlayerColor = _player.getColor();
     
+    ofLogNotice() << "Last spoken word is : " << _player.getLastMessage();
+    // Choix du jeu 1
+    if(ofStringTimesInString(mPlayerMessage, "motus") > 0){
+        ofxSceneManager::instance()->goToScene(GAME1);
+    }
+    // Choix du jeu 2
+    if(ofStringTimesInString(mPlayerMessage, "labyrinthe") > 0){
+        ofxSceneManager::instance()->goToScene(GAME2);
+    }
+    // Choix du jeu 3
+    if(ofStringTimesInString(mPlayerMessage, "Google") > 0){
+        ofxSceneManager::instance()->goToScene(GAME3);
+    }
+    
 }
