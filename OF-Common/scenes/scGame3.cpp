@@ -254,6 +254,7 @@ void scGame3::applyForceOnCubes(float amount)
 }
 
 
+//--------------------------------------------------------------
 void scGame3::setupGui()
 {
     //gui
@@ -279,6 +280,7 @@ void scGame3::setupGui()
 };
 
 
+//--------------------------------------------------------------
 void scGame3::setupPhysics()
 {
     world.setup();
@@ -316,6 +318,7 @@ void scGame3::setupPhysics()
 };
 
 
+//--------------------------------------------------------------
 void scGame3::setupLight()
 {
     spotLight.setSpotlight();
