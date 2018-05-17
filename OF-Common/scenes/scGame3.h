@@ -102,6 +102,9 @@ public:
     void setup();
     void update(float dt);
 	void draw();
+    void setupGui();
+    void setupPhysics();
+    void setupLight();
     
     void someoneSpoke(player & _player);
     void sceneWillAppear( ofxScene * fromScreen );
