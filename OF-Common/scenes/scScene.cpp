@@ -15,10 +15,10 @@
 
 void scScene::setup(){
     // Set the texts
-    myTextTitle.init(globalFontName, globalFontSize);
+    myTextTitle.init(globalFontName, globalFontSizeBig);
     myTextTitle.setColor(0, 0, 0, 0);
     //
-    myTextSpokenWord.init(globalFontName, globalFontSize);
+    myTextSpokenWord.init(globalFontName, globalFontSizeSmall);
     myTextSpokenWord.setColor(0, 0, 0, 0);
 }
 
@@ -30,8 +30,9 @@ void scScene::update(float dt){
 void scScene::drawTitle(string _title, ofColor _color){
     // Draw title
     myTextTitle.setText(utils::toUpperCase(_title));
+    myTextTitle.wrapTextX(0.7 * ofGetWidth());
     myTextTitle.setColor(_color.r, _color.g, _color.b, _color.a);
-    myTextTitle.drawCenter(0.5 * ofGetWidth(), 0.25 * ofGetHeight());
+    myTextTitle.drawCenter(0.5 * ofGetWidth(), 0.05 * ofGetHeight());
 }
 
 void scScene::drawSpokenWord(string _spokenWord, ofColor _color){
@@ -39,7 +40,7 @@ void scScene::drawSpokenWord(string _spokenWord, ofColor _color){
     myTextSpokenWord.setText(utils::toUpperCase(_spokenWord));
     myTextSpokenWord.wrapTextX(0.7 * ofGetWidth());
     myTextSpokenWord.setColor(_color.r, _color.g, _color.b, _color.a);
-    myTextSpokenWord.drawCenter(0.5 * ofGetWidth(), 0.65 * ofGetHeight());
+    myTextSpokenWord.drawCenter(0.5 * ofGetWidth(), 0.55 * ofGetHeight());
 }
 
 void scScene::someoneSpoke(player & _player){

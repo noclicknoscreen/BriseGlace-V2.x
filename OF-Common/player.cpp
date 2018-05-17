@@ -49,7 +49,7 @@ player::player(ofColor _color, string _characterSeqPath, string _bullePath){
     mBulleImg.load(mBullePath);
     
     // ----------
-    myText.init(globalFontName, globalFontSize * 3);
+    myText.init(globalFontName, globalFontSizeBig);
     
 }
 

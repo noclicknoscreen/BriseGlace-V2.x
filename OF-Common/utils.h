@@ -15,7 +15,8 @@
 
 
 const string    globalFontName = "KGTenThousandReasons.ttf";
-const int       globalFontSize = 24;
+const int       globalFontSizeSmall = 24;
+const int       globalFontSizeBig   = 48;
 
 class utils
 {
