@@ -132,7 +132,19 @@ void playerManager::loadPlayers(ofBuffer _datas){
     
 }
 
-
+//--------------------------------------------------------------
+float playerManager::getUserVolume(int id)
+{
+    std::map<int, player>::iterator onePlayer = mPlayers.find(id);
+    if (onePlayer != mPlayers.end())
+    {
+        return onePlayer->second.getVolume();
+    }
+    else
+        return 0;
+    
+    
+}
 //--------------------------------------------------------------
 float playerManager::getSumVolume()
 {
@@ -160,6 +172,18 @@ float playerManager::getAverageVolume()
     else
         return sumVolume/nbP;
 }
+
+//--------------------------------------------------------------
+ofPoint playerManager::getHistogrammPosition(int id)
+{
+    std::map<int, player>::iterator onePlayer = mPlayers.find(id);
+    if (onePlayer != mPlayers.end())
+    {
+        return onePlayer->second.getPositionHistogram();// getVolume();
+    }
+    else
+        return ofPoint(0,0,0);
+};
 
 
 //--------------------------------------------------------------
