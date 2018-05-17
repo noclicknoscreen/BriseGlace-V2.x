@@ -37,8 +37,6 @@ void cubeManager::setup()
     
     //texture
     texture.load("contreplaque.png");
-    //ofDisableNormalizedTexCoords();
-    //ofDisableArbTex();
     
     cubeSize = 80;
     
@@ -146,11 +144,8 @@ void cubeManager::draw(){
     spotLight.disable();
     ofDisableLighting();
     spotLight.draw();
-    
-//    ofSetColor(0);
-//    font.drawString(consigne , ofGetWidth()/2 - consigneWidth/2, consignesPositionY);
-    ofSetColor(255);
 
+    ofSetColor(255);
 }
 
 void cubeManager::getWord(string word)
@@ -166,15 +161,9 @@ void cubeManager::getWord(string word)
     {
         cube* tmpCube = new cube();
         tmpCube->setup(ofPoint((ofGetWidth()-wordWidth)/2 + i*(espacementCubes + cubeSize) + cubeSize/2 + espacementCubes, cubesPositionY,-300), cubeSize);
-        tmpCube->setLetter(ofToString(word[i]));
+        tmpCube->setLetter(utils::toUpperCase(ofToString(word[i])));
         myCubes.push_back(*tmpCube);
     }
-    
-    
-//    consigne = "Derrière ces " + ofToString(word.size()) + " lettres se cache un mot";
-//    consigneWidth = font.getStringBoundingBox(consigne, 0, 0).getWidth();
-    
-    
 }
 
 
