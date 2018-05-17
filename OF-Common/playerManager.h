@@ -29,6 +29,9 @@ public:
     
     float getSumVolume();
     float getAverageVolume();
+    float getUserVolume(int id);
+    ofPoint getHistogrammPosition(int id);
+    
     
     int getNumberOfPlayers(){return mPlayers.size();}
     
