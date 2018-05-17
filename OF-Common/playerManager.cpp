@@ -25,20 +25,28 @@ void playerManager::setup(){
     
     // 1st player is red
     mColors[1] = player1;
-    mSequences[1] = "Cube-Bleu";
-    mPositions[1] = ofPoint(400, ofGetHeight());
+    mSequencesPath[1] = "Cube-Bleu";
+    mBullesPath[1] = "Bulles/BulleGauche.png";
+    mPositions[1] = ofPoint(450, ofGetHeight());
+    mBullesPos[1] = ofPoint(- 325, 170);
     // Green
     mColors[2] = player2;
-    mSequences[2] = "Cube-Rouge";
-    mPositions[2] = ofPoint(0.5 * ofGetWidth(), ofGetHeight());
+    mSequencesPath[2] = "Cube-Rouge";
+    mBullesPath[2] = "Bulles/BulleGauche.png";
+    mPositions[2] = ofPoint(0.5 * ofGetWidth() + 75, ofGetHeight());
+    mBullesPos[2] = ofPoint(- 310, 180);
     // Blue
     mColors[3] = player3;
-    mSequences[3] = "Cube-Violet";
-    mPositions[3] = ofPoint(ofGetWidth() - 400, ofGetHeight());
+    mSequencesPath[3] = "Cube-Violet";
+    mBullesPath[3] = "Bulles/BulleDroite.png";
+    mPositions[3] = ofPoint(ofGetWidth() - 450, ofGetHeight());
+    mBullesPos[3] = ofPoint(120, 150);
     // MySelf = Gray
     mColors[4] = player1;
-    mSequences[4] = "Cube-Rouge";
+    mSequencesPath[4] = "Cube-Rouge";
+    mBullesPath[4] = "Bulles/BulleCentre.png";
     mPositions[4] = ofPoint(0.5 * ofGetWidth(), ofGetHeight());
+    mBullesPos[4] = ofPoint(0, 100);
     
     //    someoneSpoke = _someoneSpoke;
     ofRegisterURLNotification(this);
@@ -93,7 +101,7 @@ void playerManager::loadPlayers(ofBuffer _datas){
                 
                 ofLogNotice() << "Add player : " << mResponse["players"][idxPlayer]["nr"].asInt();
                 // Else add
-                player newPlayer = player(mColors[realNr], mSequences[realNr]);
+                player newPlayer = player(mColors[realNr], mSequencesPath[realNr], mBullesPath[realNr]);
                 
                 newPlayer.update(mResponse["players"][idxPlayer]["isAvailable"].asBool(),
                                  mResponse["players"][idxPlayer]["lastMessage"]["text"].asString(),
@@ -171,7 +179,7 @@ void playerManager::draw(){
     
     for (onePlayer=mPlayers.begin(); onePlayer!=mPlayers.end(); ++onePlayer){
         // Second is value (aka player)
-        onePlayer->second.draw(mPositions[onePlayer->second.getNumber()]);
+        onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()]);
         // Then increase
         count++;
     }

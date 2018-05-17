@@ -17,10 +17,10 @@ class player : public ofBaseApp{
 public:
     
     player(){};
-    player(ofColor _color, string _characterSeqPath);
+    player(ofColor _color, string _characterSeqPath, string _bullePath);
     
     void update(bool _isAvailable, string _message, string _messageToCompare, float _volume, int _number);
-    void draw(ofVec2f _pos);
+    void draw(ofVec2f _pos, ofPoint _bulleCorrection);
     
     float getVolume(){return mVolume;};
     string getLastMessage(){return mLastMessage;};
@@ -46,6 +46,10 @@ private:
     ofImage mSequenceImg;
     int     mSequenceIdx;
     int     mSequenceLen;
+    
+    // Gestion des bulles
+    ofImage mBulleImg;
+    string  mBullePath;
     
     //text
     ofxTextBlock myText;
