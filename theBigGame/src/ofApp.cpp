@@ -53,6 +53,10 @@ void ofApp::setup(){
 	sceneManager->setCurtainRiseTime(1.0);
 	sceneManager->setOverlapUpdate(true);
     
+    ///////////////////////////////////////
+    background.load("Decor_MurEtSol.png");
+    
+    
 }
 
 void ofApp::update(){
@@ -67,11 +71,20 @@ void ofApp::update(){
 
 
 void ofApp::draw(){
-
+    
+    // A background to rule them all
+    ofSetColor(255);
+    ofPushView();
+    ofDisableNormalizedTexCoords();
+    background.draw(0,0);
+    ofEnableNormalizedTexCoords();
+    ofPopView();
+    
 	sceneManager->draw();
     
     ofSetColor(255,0,0);
-	ofDrawBitmapString( "press 1, 2, or 3 to change scene", ofGetWidth() - 290, ofGetHeight() - 10);	
+	ofDrawBitmapString( "press 1, 2, or 3 to change scene", ofGetWidth() - 290, ofGetHeight() - 10);
+    
 }
 
 

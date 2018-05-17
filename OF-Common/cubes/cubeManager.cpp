@@ -147,8 +147,8 @@ void cubeManager::draw(){
     ofDisableLighting();
     spotLight.draw();
     
-    ofSetColor(0);
-    font.drawString(consigne , ofGetWidth()/2 - consigneWidth/2, consignesPositionY);
+//    ofSetColor(0);
+//    font.drawString(consigne , ofGetWidth()/2 - consigneWidth/2, consignesPositionY);
     ofSetColor(255);
 
 }
@@ -171,8 +171,8 @@ void cubeManager::getWord(string word)
     }
     
     
-    consigne = "Derrière ces " + ofToString(word.size()) + " lettres se cache un mot";
-    consigneWidth = font.getStringBoundingBox(consigne, 0, 0).getWidth();
+//    consigne = "Derrière ces " + ofToString(word.size()) + " lettres se cache un mot";
+//    consigneWidth = font.getStringBoundingBox(consigne, 0, 0).getWidth();
     
     
 }

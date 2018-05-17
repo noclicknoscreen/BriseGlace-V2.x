@@ -31,6 +31,7 @@ void scHint::draw(){ //draw scene 1 here
     myIndice.draw();
     
     // Draw Timer
+    ofDisableDepthTest();
     scScene::drawTitle("Voici l'indice.");
     scScene::drawSpokenWord("Il vous reste " + mTimer.toString() + " secondes pour jouer avec nous.");
     
