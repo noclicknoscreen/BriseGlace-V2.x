@@ -70,22 +70,14 @@ public:
         spotLight.setDiffuseColor(lightColor);
         material.setSpecularColor(materialColor);
         
-        //apply forces after 5 seconds
-        if(ofGetElapsedTimef() - timer > 5)
-        {
-            //add the top of the physical box after 5 seconds ;)
-            //top.add();
-            
-            amount = bigPlayerManager().getSumVolume();
-            if(amount < 120 && amount > -120 )
-                applyForceOnCubes(amount);
-        }
-        
+        //display result for 10 seconds and go to winner screen
         if(ofGetElapsedTimef() - timer > 10)
         {
             ofxSceneManager::instance()->goToScene(9);
         }
         
+
+        materialColor = winnerColor;
         
     };
 };
