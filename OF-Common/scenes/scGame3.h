@@ -142,6 +142,7 @@ public:
     bool                         drawGui;
     ofParameter<float>           camPosX, camPosY, camPosZ, gravity, angularDamping, damping, friction;
     ofParameter<float>           volumeBorneMin, volumeBorneMax;
+    ofParameter<float> forceMicro2_multiplier;
     ofParameter<ofVec3f>         forceAmount;
     ofParameter<bool>            drawDebug;
     ofParameter<float>           zLight;

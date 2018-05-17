@@ -88,7 +88,7 @@ void scGame3::update(float dt){
         
         
         float amountPlayer2 = ofMap(bigPlayerManager().getUserVolume(2), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
-        randomForce = ofVec3f(ofRandom(-forceAmount->x, forceAmount->x), ofRandom(-forceAmount->y, forceAmount->y), -forceAmount->z) * amountPlayer2;
+        randomForce = ofVec3f(ofRandom(-forceAmount->x, forceAmount->x), ofRandom(-forceAmount->y, forceAmount->y), -forceAmount->z) * amountPlayer2 * forceMicro2_multiplier;
         applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
         
         float amountPlayer3 = ofMap(bigPlayerManager().getUserVolume(3), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
@@ -274,6 +274,8 @@ void scGame3::setupGui()
     gui.add(volumeBorneMax.set("volumeBorneMax", 0.29, 0.0, 1.0));
     
     gui.add(forceAmount.set("forceAmount", ofVec3f(100,200,100), ofVec3f(0,0,0), ofVec3f(300,300,300)));
+    
+    gui.add(forceMicro2_multiplier.set("forceMicro2_multiplier", 0.6, 0.1, 1.0));
     
     gui.add(angularDamping.set("angularDamping", 0.815, 0.0, 1.0));
     gui.add(damping.set("damping", 0.25, 0.0, 1.0));
