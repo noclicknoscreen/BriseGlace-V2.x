@@ -13,7 +13,6 @@ void scGame3::setup(){
     
     scScene::setup();
     ofLogNotice() << "Game 3 : Setup !";
-    myTitle = "Game 3 : Boggle";
 
     
     //gui
@@ -222,15 +221,11 @@ void scGame3::draw(){
         gui.draw();
     
     ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
-    ofPushStyle();
     
-    // Style setup
-    ofSetColor(255,0,0);
-    
-    scScene::draw();            // Draw title
-    bigPlayerManager().draw();    // Draw players
-    
-    ofPopStyle();
+    // Draw title
+    scScene::drawTitle("Game 3 : Boggle");
+    // Draw players
+    bigPlayerManager().draw();
     
 };
 

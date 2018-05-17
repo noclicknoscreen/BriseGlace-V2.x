@@ -29,6 +29,5 @@ public:
 
     void someoneSpoke(player & _player);
     
-    
 };
 

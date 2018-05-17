@@ -13,8 +13,6 @@
 void scIntro::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Introduction : Setup !";
-    
-    myTitle = "Vous êtes joueur ? moi oui !";
 };
 
 
@@ -22,13 +20,7 @@ void scIntro::update(float dt){ //update scene 1 here
 };
 
 void scIntro::draw(){ //draw scene 1 here
-
-    ofPushStyle();
-    // Style setup
-    ofSetColor(ofColor::black);
-    scScene::draw();
-    ofPopStyle();
-    
+    scScene::drawTitle("Vous êtes joueur ? moi oui !");
 };
 
 //scene notifications

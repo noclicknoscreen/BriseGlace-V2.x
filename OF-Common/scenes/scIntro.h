@@ -21,7 +21,7 @@ public:
     
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
-    
+
     
 };
 

@@ -11,7 +11,7 @@
 void scVictory::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Victory : Setup !";
-    myTitle = "Gagné !";
+    
 };
 
 
@@ -26,10 +26,8 @@ void scVictory::draw(){ //draw scene 1 here
     
         // Style setup
         ofSetColor(ofColor::black);
-        scScene::draw();
-        // Draw Timer
-        myText.setText(utils::toUpperCase("Nouveau jeu dans " + mTimer.toString() + " secondes."));
-        myText.drawCenter(0.5 * ofGetWidth(), 0.55 * ofGetHeight());
+        scScene::drawTitle("Gagné !");
+        scScene::drawSpokenWord("Nouveau jeu dans " + mTimer.toString() + " secondes.");
     
     ofPopStyle();
     

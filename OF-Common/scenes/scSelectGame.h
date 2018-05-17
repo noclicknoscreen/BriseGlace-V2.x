@@ -7,6 +7,7 @@
 //
 
 #pragma once
+
 #include "scScene.h"
 
 class scSelectGame : public scScene{
@@ -25,7 +26,8 @@ public:
     void someoneSpoke(player & _player);
     
 private:
-    string mText;
+    string  mPlayerMessage;
+    ofColor mPlayerColor;
     
 };
 

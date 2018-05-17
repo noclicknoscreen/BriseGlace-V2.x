@@ -11,7 +11,6 @@
 void scGame1::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Game 1 : Setup !";
-    myTitle = "Game 1 : Mot caché";
     
     
     //cubes
@@ -25,7 +24,6 @@ void scGame1::setup(){  //load your scene 1 assets here...
     myInputManager.clearDuplicatesLettersHistory();
     myInputManager.setReadyForNewText();
     myInputManager.setWordToFind(bigEnigmaManager().getCurrentEnigma()->getSolution());
-    
 
     //gui
     bDrawGui=false;
@@ -59,22 +57,17 @@ void scGame1::draw(){ //draw scene 1 here
     ofPopMatrix();
     
 
-    ofPushStyle();
- 
-        ofSetColor(ofColor(255,0,0));
+//    DEBUG
+//    ofPushStyle();
+//    ofSetColor(ofColor(255,0,0));
+//    ofDrawCircle(200, 200, 200);
+//    ofPopStyle();
     
-    //debug
-    //    ofDrawCircle(200, 200, 200);
-        
-        scScene::draw();            // Draw title
-        bigPlayerManager().draw();    // Draw players
-
-    ofPopStyle();
+    scScene::drawTitle("Game 1 : Mot caché");            // Draw title
+    scScene::drawSpokenWord("Il vous reste " + mTimer.toString() + " secondes avant l'indice.");
     
-    // Draw Timer
-    myText.setText(utils::toUpperCase("Il vous reste " + mTimer.toString() + " secondes avant l'indice."));
-    myText.drawCenter(0.5 * ofGetWidth(), 0.55 * ofGetHeight());
-
+    bigPlayerManager().draw();    // Draw players
+    
 };
 
 //--------------------------------------------------------------

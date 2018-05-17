@@ -69,8 +69,8 @@ void ofApp::update(){
 void ofApp::draw(){
 
 	sceneManager->draw();
-	
-	ofSetColor(255,0,0);
+    
+    ofSetColor(255,0,0);
 	ofDrawBitmapString( "press 1, 2, or 3 to change scene", ofGetWidth() - 290, ofGetHeight() - 10);	
 }
 

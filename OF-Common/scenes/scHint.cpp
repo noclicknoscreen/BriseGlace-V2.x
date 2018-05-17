@@ -12,8 +12,6 @@ void scHint::setup(){  //load your scene 1 assets here...
     
     scScene::setup();
     ofLogNotice() << "Indice : Setup !";
-    myTitle = "Ecran d'indices";
-    
 
 };
 
@@ -33,9 +31,8 @@ void scHint::draw(){ //draw scene 1 here
     myIndice.draw();
     
     // Draw Timer
-    myText.setText(utils::toUpperCase("Voici l'indice."));
-    myText.drawCenter(0.5 * ofGetWidth(), 0.25 * ofGetHeight());
-    
+    scScene::drawTitle("Voici l'indice.");
+    scScene::drawSpokenWord("Il vous reste " + mTimer.toString() + " secondes pour jouer avec nous.");
     
 };
 

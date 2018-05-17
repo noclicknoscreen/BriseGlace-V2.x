@@ -14,7 +14,8 @@
 #include "ofEvents.h"
 
 
-const string globalFontName = "KGTenThousandReasons.ttf";
+const string    globalFontName = "KGTenThousandReasons.ttf";
+const int       globalFontSize = 24;
 
 class utils
 {

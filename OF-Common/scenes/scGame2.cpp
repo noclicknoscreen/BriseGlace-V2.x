@@ -11,7 +11,7 @@
 void scGame2::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Game 2 : Setup !";
-    myTitle = "Game 2 : Grille / Labyrinthe";
+
 };
 
 
@@ -25,7 +25,7 @@ void scGame2::draw(){ //draw scene 1 here
     // Style setup
     ofSetColor(ofColor::green);
     
-    scScene::draw();            // Draw title
+    scScene::drawTitle("Game 2 : Grille / Labyrinthe");            // Draw title
     bigPlayerManager().draw();
     
     ofPopStyle();

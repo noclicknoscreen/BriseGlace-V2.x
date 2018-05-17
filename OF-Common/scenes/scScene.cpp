@@ -14,18 +14,30 @@
 //}
 
 void scScene::setup(){
-    // Set the text
-    myText.init(globalFontName, 24);
+    // Set the texts
+    myTextTitle.init(globalFontName, globalFontSize);
+    myTextTitle.setColor(0, 0, 0, 0);
+    //
+    myTextSpokenWord.init(globalFontName, globalFontSize);
+    myTextSpokenWord.setColor(0, 0, 0, 0);
 }
 
 void scScene::update(float dt){
 //    mTimer.update(dt);
 }
 
-void scScene::draw(){
+void scScene::drawTitle(string _title, ofColor _color){
     // Draw title
-    myText.setText(utils::toUpperCase(myTitle));
-    myText.drawCenter(0.5 * ofGetWidth(), 0.25 * ofGetHeight());
+    myTextTitle.setText(utils::toUpperCase(_title));
+    myTextTitle.setColor(_color.r, _color.g, _color.b, _color.a);
+    myTextTitle.drawCenter(0.5 * ofGetWidth(), 0.25 * ofGetHeight());
+}
+
+void scScene::drawSpokenWord(string _spokenWord, ofColor _color){
+    // Draw title
+    myTextSpokenWord.setText(utils::toUpperCase(_spokenWord));
+    myTextSpokenWord.setColor(_color.r, _color.g, _color.b, _color.a);
+    myTextSpokenWord.drawCenter(0.5 * ofGetWidth(), 0.65 * ofGetHeight());
 }
 
 void scScene::someoneSpoke(player & _player){

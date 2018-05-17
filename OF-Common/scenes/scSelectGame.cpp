@@ -12,8 +12,7 @@ void scSelectGame::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Select a game : Setup !";
     
-    myTitle = "Choix du jeu";
-    mText = "";
+    mPlayerMessage = "";
     
 };
 
@@ -22,19 +21,12 @@ void scSelectGame::update(float dt){ //update scene 1 here
 };
 
 void scSelectGame::draw(){ //draw scene 1 here
+    // Draw title
+    scScene::drawTitle("Choix du jeu");
+    scScene::drawSpokenWord(mPlayerMessage, mPlayerColor);
     
-    ofPushStyle();
-    // Style setup
-    ofSetColor(ofColor::black);
-    
-    scScene::draw();            // Draw title
-    bigPlayerManager().draw();    // Draw players
-    
-    // Draw some
-    myText.setText(ofToString(mText));
-    myText.drawCenter(0.5 * ofGetWidth(), 0.5 * ofGetHeight() + 50);
-    
-    ofPopStyle();
+    // Draw players
+    bigPlayerManager().draw();
     
 };
 
@@ -55,5 +47,8 @@ void scSelectGame::sceneWillDisappear( ofxScene * toScreen ){
 // Speaking event
 void scSelectGame::someoneSpoke(player & _player){
     scScene::someoneSpoke(_player);
-    mText = _player.getLastMessage();
+    
+    mPlayerMessage = _player.getLastMessage();
+    mPlayerColor = _player.getColor();
+    
 }

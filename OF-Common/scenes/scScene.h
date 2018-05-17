@@ -30,7 +30,10 @@ class scScene : public ofxScene, ofBaseApp {
 public:
     void setup();
     void update(float dt);
-    void draw();    // Constructor
+    
+    void drawTitle(string _spokenWord, ofColor _color = ofColor::black);
+    void drawSpokenWord(string _spokenWord, ofColor _color = ofColor::black);
+    
 //    scScene(playerManager &_manager);
     
     void someoneSpoke(player & _player);
@@ -38,11 +41,12 @@ public:
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
     
-protected:
     ///////////// MEMBERS /////////////////////
-    ofxTextBlock myText;
-    string        myTitle;
+private:
+    ofxTextBlock myTextTitle;
+    ofxTextBlock myTextSpokenWord;
 
+protected:
     ///////////// TIMER /////////////////////
     timer mTimer;
     
