@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/player.cpp"
-            timestampString = "548180298.3838871"
+            timestampString = "548235659.549585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/player.cpp"
-            timestampString = "548180298.3838871"
+            timestampString = "548235571.037481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "player::draw(ofVec2f _pos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/player.cpp"
-            timestampString = "548180298.3838871"
+            timestampString = "548235659.549585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -143,7 +143,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "156"
             endingLineNumber = "156"
-            landmarkName = "playerManager::draw()"
+            landmarkName = "playerManager::getAverageVolume()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/player.cpp"
-            timestampString = "548180298.3838871"
+            timestampString = "548235659.549585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "player::draw(ofVec2f _pos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/player.cpp"
-            timestampString = "548180298.3838871"
+            timestampString = "548235659.549585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/player.cpp"
-            timestampString = "548180298.3838871"
+            timestampString = "548235659.549585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "player::draw(ofVec2f _pos)"
             landmarkType = "7">
          </BreakpointContent>
@@ -223,7 +223,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "158"
             endingLineNumber = "158"
-            landmarkName = "playerManager::draw()"
+            landmarkName = "playerManager::getAverageVolume()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -287,7 +287,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "150"
             endingLineNumber = "150"
-            landmarkName = "playerManager::draw()"
+            landmarkName = "playerManager::getAverageVolume()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -303,7 +303,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "171"
             endingLineNumber = "171"
-            landmarkName = "playerManager::urlResponse(ofHttpResponse &amp; response)"
+            landmarkName = "playerManager::draw()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -319,7 +319,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "250"
             endingLineNumber = "250"
-            landmarkName = "scGame3::sceneWillAppear( ofxScene * fromScreen )"
+            landmarkName = "scGame3::someoneSpoke(player &amp; _player)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -335,7 +335,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "230"
             endingLineNumber = "230"
-            landmarkName = "scGame3::someoneSpoke(player &amp; _player)"
+            landmarkName = "scGame3::draw()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -351,7 +351,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "247"
             endingLineNumber = "247"
-            landmarkName = "scGame3::sceneWillAppear( ofxScene * fromScreen )"
+            landmarkName = "scGame3::someoneSpoke(player &amp; _player)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -394,11 +394,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame1.cpp"
-            timestampString = "548185882.448138"
+            timestampString = "548186975.513378"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139">
+            startingLineNumber = "136"
+            endingLineNumber = "136">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OF-Common/player.cpp"
+            timestampString = "548235659.549585"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "player::draw(ofVec2f _pos)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OF-Common/player.cpp"
+            timestampString = "548235659.549585"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "player::loadNewSequenceImage(int _newSequenceIdx)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OF-Common/playerManager.cpp"
+            timestampString = "548235351.845979"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "playerManager::setup()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

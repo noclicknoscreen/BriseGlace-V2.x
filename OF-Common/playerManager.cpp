@@ -26,7 +26,7 @@ void playerManager::setup(){
     // 1st player is red
     mColors[1] = player1;
     mSequences[1] = "Cube-Bleu";
-    mPositions[1] = ofPoint(200, ofGetHeight());
+    mPositions[1] = ofPoint(400, ofGetHeight());
     // Green
     mColors[2] = player2;
     mSequences[2] = "Cube-Rouge";
@@ -34,7 +34,7 @@ void playerManager::setup(){
     // Blue
     mColors[3] = player3;
     mSequences[3] = "Cube-Violet";
-    mPositions[3] = ofPoint(ofGetWidth() - 200, ofGetHeight());
+    mPositions[3] = ofPoint(ofGetWidth() - 400, ofGetHeight());
     // MySelf = Gray
     mColors[4] = player1;
     mSequences[4] = "Cube-Rouge";

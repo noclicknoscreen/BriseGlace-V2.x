@@ -78,6 +78,10 @@ void player::loadNewSequenceImage(int _newSequenceIdx){
 
 void player::draw(ofVec2f _pos){
     
+    ofPushStyle();
+    ofSetColor(mColor);
+    ofFill();
+    
     ofPushMatrix();
     ofTranslate(_pos);
     ofScale(0.5, 0.5);
@@ -87,22 +91,23 @@ void player::draw(ofVec2f _pos){
 //    ofDrawRectangle(-100, -300, 200, 300);
     
     // Draw the character
-    ofTranslate(-0.5 * mSequenceImg.getWidth(), -1 * mSequenceImg.getHeight());
+//    ofTranslate(-0.5 * mSequenceImg.getWidth(), -1 * mSequenceImg.getHeight());
     
     ofPushStyle();
-    ofSetColor(ofColor::white);
+    ofSetColor(255,255,255,255);
     if(mSequenceImg.isAllocated()){
-        mSequenceImg.draw(0, 0);
+        ofDisableNormalizedTexCoords();
+        mSequenceImg.draw(-0.5 * mSequenceImg.getWidth(), -1 * mSequenceImg.getHeight());
+        ofEnableNormalizedTexCoords();
     }
     ofPopStyle();
     
     // Draw the text
-    ofPushStyle();
-    ofFill();
-    ofSetColor(mColor);
-    myText.drawLeft(mSequenceImg.getWidth(), -0.5 * mSequenceImg.getHeight());
-    ofPopStyle();
+    myText.setColor(mColor.r, mColor.g, mColor.b, mColor.a);
+    myText.drawCenter(0.5 * mSequenceImg.getWidth(), -1 * mSequenceImg.getHeight() - 200);
     
     ofPopMatrix();
+    
+    ofPopStyle();
     
 }
