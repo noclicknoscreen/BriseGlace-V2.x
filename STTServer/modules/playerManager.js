@@ -31,8 +31,9 @@ module.exports = {
         socketId:socket.id,
         isAvailable:true,
         lastMessage:lastMessage,
-        volume:0,
-        messages:[]
+        volume:0
+        // History of messages are now useless
+        //messages:[]
       };
       // Make it available
       setTimeout(function(){ newPlayer.isAvailable = false; }, 20000);
@@ -77,8 +78,8 @@ module.exports = {
 
         lastMessage = {time:new Date().toLocaleString(), text:message, textToCompare:suppressAccents(message)};
         lastNumber = foundPlayer.nr;
-        // Add message to the list
-        foundPlayer.messages.push(lastMessage);
+        // Add message to the list (nope, we don't send all message any more
+        //foundPlayer.messages.push(lastMessage);
         // Change last message
         foundPlayer.lastMessage = lastMessage;
         // Make it available
