@@ -45,7 +45,7 @@ void scGame3::setup(){
     camera.rotate(-80, ofVec3f(1,0,0));
     
     //load background
-    background.load("Decor_SS-Sol.png");
+//    background.load("Decor_SS-Sol.png");
 
 };
 
@@ -98,13 +98,13 @@ void scGame3::draw(){
     
     //draw du background
     ofSetColor(255);
-    ofPushMatrix();
-        ofTranslate(0,0,-200);
-        ofEnableNormalizedTexCoords();
-        background.bind();
-        ofDrawBox(ofGetWidth()/2, ofGetHeight()/2, 0, ofGetWidth()*1.3, ofGetHeight()*1.3, 1);
-        background.unbind();
-    ofPopMatrix();
+//    ofPushMatrix();
+//        ofTranslate(0,0,-200);
+//        ofEnableNormalizedTexCoords();
+//        background.bind();
+//        ofDrawBox(ofGetWidth()/2, ofGetHeight()/2, 0, ofGetWidth()*1.3, ofGetHeight()*1.3, 1);
+//        background.unbind();
+//    ofPopMatrix();
     
     
     ofEnableAntiAliasing();

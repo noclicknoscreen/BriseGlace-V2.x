@@ -24,6 +24,7 @@ void scScene::setup(){
 
 void scScene::update(float dt){
 //    mTimer.update(dt);
+    ofSetWindowTitle(ofToString(ofGetFrameRate()));
 }
 
 void scScene::drawTitle(string _title, ofColor _color){
