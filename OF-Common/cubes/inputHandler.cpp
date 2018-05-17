@@ -43,12 +43,12 @@ void inputHandler::getNewText(player _player)
     for(int i=0; i<text.size(); i++)
     {
         letterElement elt;
-        elt.letter = text.substr(i,1);//ofToString(text[i]);
+        elt.letter = text.substr(i,1);
         elt.textColor = textColor;
-        
         elt.sourcePos = source;
         elt.currentPos = source;
         elt.destination = ofPoint(cumulatedOffset + ofGetWidth()/2 - font.getStringBoundingBox(text, 0, 0).getWidth(), inputTextYPosition);
+        elt.destination.y += ofRandom(0.0, 15.0); //add some random so the text isn't a line block
         
         elt.alpha = 1.0;
         
