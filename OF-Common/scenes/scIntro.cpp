@@ -38,7 +38,7 @@ void scIntro::sceneWillDisappear( ofxScene * toScreen ){
 
 // Speaking event
 void scIntro::someoneSpoke(player & _player){
-    ofxSceneManager::instance()->goToScene(INITIALIZE);
+    ofxSceneManager::instance()->goToScene(SELECT_GAME);
 }
 
 
