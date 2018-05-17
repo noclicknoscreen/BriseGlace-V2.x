@@ -49,7 +49,9 @@ private:
     
     map<int, player> mPlayers;
     map<int, ofColor> mColors;
-    map<int, string> mSequences;
+    map<int, string> mSequencesPath;
+    map<int, string> mBullesPath;
+    map<int, ofPoint> mBullesPos;
     map<int, ofPoint> mPositions;
     
     bool bLoadingPlayers = false;

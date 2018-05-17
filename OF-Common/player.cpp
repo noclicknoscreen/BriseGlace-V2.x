@@ -8,8 +8,10 @@
 
 #include "player.h"
 
+#define internalBulleSize ofPoint(365, 172)
+#define internalBullePos ofPoint(15,19)
 
-player::player(ofColor _color, string _characterSeqPath){
+player::player(ofColor _color, string _characterSeqPath, string _bullePath){
     
     mColor = _color;
     
@@ -32,8 +34,22 @@ player::player(ofColor _color, string _characterSeqPath){
         
     }
     
+    // Check the path of the bulle
+    ofFile _bulle(_bullePath);
+    if(!_bulle.exists()){
+        ofLogError() << "Bulle Path [" << _bullePath << "] does not exist.";
+        mBullePath = "void.jpg";
+    }else if(_bulle.getExtension() != "png" && _bulle.getExtension() != "jpg" && _bulle.getExtension() != "jpeg"){
+        ofLogError() << "Bulle Path [" << _bullePath << "] is not image.";
+        mBullePath = "void.jpg";
+    }else{
+        mBullePath = _bullePath;
+        ofLogNotice() << "Bulle Path [" << _bullePath << "] seems good :)";
+    }
+    mBulleImg.load(mBullePath);
+    
     // ----------
-    myText.init(globalFontName, 74);
+    myText.init(globalFontName, globalFontSize * 3);
     
 }
 
@@ -52,7 +68,8 @@ void player::update(bool _isAvailable, string _message, string _messageToCompare
     // Set the text
     
     myText.setText(utils::toUpperCase(mLastMessage));
-    myText.wrapTextArea(400, 300);
+    myText.wrapTextArea(0.9 * internalBulleSize.x, 0.9 * internalBulleSize.y);
+    myText.setColor(0, 0, 0, 255);
     
 }
 
@@ -62,7 +79,7 @@ void player::loadNewSequenceImage(int _newSequenceIdx){
         
         mSequenceIdx = _newSequenceIdx;
         string imgPath = mSequencePath+"/"+mSequencePath+"_"+ ofToString(mSequenceIdx,5,'0') +".png";
-//        ofLogNotice() << "Image path = " << imgPath;
+        //        ofLogNotice() << "Image path = " << imgPath;
         if(ofFile(imgPath).exists()){
             mSequenceImg.load(imgPath);
         }else{
@@ -71,14 +88,13 @@ void player::loadNewSequenceImage(int _newSequenceIdx){
         }
         
     }else{
-//        ofLogNotice() << "Something happened with the sequence index : " << _newSequenceIdx;
+        //        ofLogNotice() << "Something happened with the sequence index : " << _newSequenceIdx;
     }
     
 }
 
-void player::draw(ofVec2f _pos){
+void player::draw(ofVec2f _pos, ofPoint _bulleCorrection){
     
-    //store the position so the spoken words come from the little avatar
     setPositionHistogram(_pos);
     
     ofPushStyle();
@@ -87,27 +103,54 @@ void player::draw(ofVec2f _pos){
     
     ofPushMatrix();
     ofTranslate(_pos);
-    ofScale(0.5, 0.5);
-    
-//    ofNoFill();
-//    ofDrawCircle(0, 0, 10);
-//    ofDrawRectangle(-100, -300, 200, 300);
     
     // Draw the character
-//    ofTranslate(-0.5 * mSequenceImg.getWidth(), -1 * mSequenceImg.getHeight());
-    
     ofPushStyle();
-    ofSetColor(255,255,255,255);
+    
+    
+    ofPushMatrix();
+    ofTranslate(-0.5 * mSequenceImg.getWidth() + _bulleCorrection.x, -1 * mSequenceImg.getHeight() - 200  + _bulleCorrection.y);
+    //            ofScale(0.75, 0.75);
+    
+    if(mBulleImg.isAllocated()){
+        ofFill();
+        ofSetColor(255,255,255,255);
+        ofDisableNormalizedTexCoords();
+        mBulleImg.draw(0, 0);
+        ofEnableNormalizedTexCoords();
+    }
+    
+    // Draw the text
+    ofSetColor(mColor);
+    ofNoFill();
+    //            ofDrawRectangle(internalBullePos.x, internalBullePos.y, internalBulleSize.x, internalBulleSize.y);
+    
+    
+    ofPoint whereTheTextIs(internalBullePos.x + 0.5*internalBulleSize.x, internalBullePos.y + 0.15*myText.getHeight(), 10);
+    //            ofDrawCircle(whereTheTextIs.x , whereTheTextIs.y, 10);
+    myText.drawCenter(whereTheTextIs.x , whereTheTextIs.y);
+    
+    ofPopMatrix();
+    
+    ofPushMatrix();
+    ofScale(0.5, 0.5);
+    
+    //            ofNoFill();
+    //            ofDrawCircle(0, 0, 10);
+    //            ofDrawRectangle(-100, -300, 200, 300);
+    
     if(mSequenceImg.isAllocated()){
+        ofSetColor(255,255,255,255);
+        
         ofDisableNormalizedTexCoords();
         mSequenceImg.draw(-0.5 * mSequenceImg.getWidth(), -1 * mSequenceImg.getHeight());
         ofEnableNormalizedTexCoords();
     }
+    ofPopMatrix();
+    
+    
     ofPopStyle();
     
-    // Draw the text
-    myText.setColor(mColor.r, mColor.g, mColor.b, mColor.a);
-    myText.drawCenter(0.5 * mSequenceImg.getWidth(), -1 * mSequenceImg.getHeight() - 200);
     
     ofPopMatrix();
     

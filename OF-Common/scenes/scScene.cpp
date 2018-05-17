@@ -36,6 +36,7 @@ void scScene::drawTitle(string _title, ofColor _color){
 void scScene::drawSpokenWord(string _spokenWord, ofColor _color){
     // Draw title
     myTextSpokenWord.setText(utils::toUpperCase(_spokenWord));
+    myTextSpokenWord.wrapTextX(0.7 * ofGetWidth());
     myTextSpokenWord.setColor(_color.r, _color.g, _color.b, _color.a);
     myTextSpokenWord.drawCenter(0.5 * ofGetWidth(), 0.65 * ofGetHeight());
 }
