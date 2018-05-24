@@ -26,6 +26,14 @@ void scGame1::setup(){  //load your scene 1 assets here...
     myInputManager.setWordToFind(bigEnigmaManager().getCurrentEnigma()->getSolution());
 
     //gui
+    
+    gui.setup();
+    //gui.add
+    gui.add(lightPosX.set("lightPosX", 1600, -1000, ofGetWidth()*2));
+    gui.add(lightPosY.set("lightPosY", 120, -1000, 1000));
+    gui.add(lightPosZ.set("lightPosZ", 0, -100, 100));
+    gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
+    
     bDrawGui=false;
     
 };
@@ -99,14 +107,7 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // Erase all words of every one
     bigPlayerManager().freshRestart();
     
-    gui.setup();
-    //gui.add
-    gui.add(lightPosX.set("lightPosX", 1600, -1000, ofGetWidth()*2));
-    gui.add(lightPosY.set("lightPosY", 120, -1000, 1000));
-    gui.add(lightPosZ.set("lightPosZ", 0, -100, 100));
-    gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
-    
-    // On ne refiat pas ca si on vient de l'indice
+    // On ne refait pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
         //cubes
         myCubeManager.setup();

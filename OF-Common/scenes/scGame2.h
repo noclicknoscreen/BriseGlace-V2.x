@@ -9,6 +9,8 @@
 #pragma once
 
 #include "scScene.h"
+#include "cubeManager.h"
+
 
 class scGame2 : public scScene{
 
@@ -21,6 +23,15 @@ public:
     
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
+  
+    //cubeManager
+    cubeManager myCubeManager;
     
+    //gui
+    ofxPanel gui;
+    ofParameter<float> lightPosX, lightPosY, lightPosZ;
+    ofParameter<int> cubesRotationSpeed;
+    bool bDrawGui;
+
 };
 
