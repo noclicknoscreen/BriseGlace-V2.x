@@ -64,7 +64,7 @@ void scGame1::draw(){ //draw scene 1 here
 //    ofPopStyle();
     
     // Draw title
-    scScene::drawTitle("Game 1 : Mot caché");
+    scScene::drawTitle("Mot caché");
     scScene::drawSpokenWord("Derrière ces " + ofToString(bigEnigmaManager().getCurrentEnigma()->getSolution().size()) + " lettres se cache un mot");
     
     bigPlayerManager().draw();    // Draw players

@@ -158,7 +158,7 @@ void scGame3::draw(){
 #endif
     
     // Draw title
-    scScene::drawTitle("Game 3 : Boggle");
+    scScene::drawTitle("Mot brassé");
     // Draw players
     bigPlayerManager().draw();
     

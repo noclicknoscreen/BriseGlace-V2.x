@@ -25,7 +25,7 @@ void scGame2::draw(){ //draw scene 1 here
     // Style setup
     ofSetColor(ofColor::green);
     
-    scScene::drawTitle("Game 2 : Grille / Labyrinthe");            // Draw title
+    scScene::drawTitle("Mes mots rient");            // Draw title
     bigPlayerManager().draw();
     
     ofPopStyle();
