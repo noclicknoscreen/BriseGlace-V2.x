@@ -39,7 +39,7 @@ void scGame1::setup(){  //load your scene 1 assets here...
 };
 
 void scGame1::update(float dt){ //update scene 1 here
-    
+
     myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), cubesRotationSpeed);
     int id = myInputManager.update(&myCubeManager);
     if(id != 0)
@@ -133,6 +133,7 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
         myInputManager.setReadyForNewText();
         myInputManager.setWordToFind(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
     }
+
     
     // -- -- -- -- --
     mTimer.startTimer(45);
@@ -157,6 +158,8 @@ void scGame1::sceneWillDisappear( ofxScene * toScreen ){
 // Speaking event
 void scGame1::someoneSpoke(player & _player){
     scScene::someoneSpoke(_player);
+    
+    myInputManager.revealTirrets(&myCubeManager);
     
     if(myInputManager.isReadyForNewText())
         myInputManager.getNewText(_player);

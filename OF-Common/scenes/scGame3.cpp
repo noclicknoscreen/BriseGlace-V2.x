@@ -185,7 +185,7 @@ void scGame3::someoneSpoke(player & _player){
     std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord));
     if(index != std::string::npos)
     {
-        cout << "c'est gagné !!! " << endl;
+        ofLogNotice() << "c'est gagné !!! " << endl;
         winnerColor = _player.getColor();
         
         winnerId = _player.getNumber();
