@@ -12,7 +12,8 @@
 void inputHandler::setup()
 {
     font.load(globalFontName, 24);
-    
+    fontBig.load(globalFontName, 24+5);
+
     revealMode = false;
     currentRevealCube = 0;
     currentRevealLetter = 0;
@@ -68,7 +69,11 @@ void inputHandler::draw()
         for(int i=0; i<splittedString.size(); i++)
         {
             ofSetColor(splittedString[i].textColor);
+            
+            if(splittedString[i].alpha > 0)
             font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
+            else
+            fontBig.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
         }
 }
 

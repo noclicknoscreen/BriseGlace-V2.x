@@ -47,7 +47,7 @@ public:
     
 private:
     string text;
-    ofTrueTypeFont font;
+    ofTrueTypeFont font, fontBig;
     vector<letterElement> splittedString;
     int userId;
     vector<string> duplicatesLetters;
