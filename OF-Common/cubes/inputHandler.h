@@ -36,7 +36,7 @@ class inputHandler
 public:
     void setup();
     void getNewText(player _player);//int _userId, string txt);
-    void update(cubeManager* cm);
+    int update(cubeManager* cm);
     void draw();
     void compareInput(string wantedWord);
     void clearDuplicatesLettersHistory();

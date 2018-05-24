@@ -20,7 +20,7 @@ public:
     player(ofColor _color, string _characterSeqPath, string _bullePath);
     
     void update(bool _isAvailable, string _message, string _messageToCompare, float _volume, int _number);
-    void draw(ofVec2f _pos, ofPoint _bulleCorrection);
+    void draw(ofVec2f _pos, ofPoint _bulleCorrection, bool drawSign=false, string textToDisplay="");
     
     float getVolume(){return mVolume;};
     string getLastMessage(){return mLastMessage;};
@@ -46,6 +46,10 @@ private:
     ofImage mSequenceImg;
     int     mSequenceIdx;
     int     mSequenceLen;
+    
+    //sign
+    ofImage signImage, handsImage;
+    ofxTextBlock signText;
     
     // Gestion des bulles
     ofImage mBulleImg;

@@ -195,15 +195,23 @@ ofPoint playerManager::getHistogrammPosition(int id)
 
 
 //--------------------------------------------------------------
-void playerManager::draw(){
+void playerManager::draw(int _userId, string _textOnSign){
     
     std::map<int, player>::iterator onePlayer;
     int count = 0;
     int border = 200;
-    
+        
     for (onePlayer=mPlayers.begin(); onePlayer!=mPlayers.end(); ++onePlayer){
+        
+        if(_userId != 0 && onePlayer->second.getNumber() == _userId)
+        {
         // Second is value (aka player)
-        onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()]);
+            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()], true, _textOnSign);
+        }
+        else
+        {
+            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()]);
+        }
         // Then increase
         count++;
     }
@@ -212,6 +220,24 @@ void playerManager::draw(){
         gui.draw();
     }
 }
+
+
+//--------------------------------------------------------------
+int playerManager::getRandomPlayer()
+{
+    std::map<int, player>::iterator onePlayer;
+    
+    int size = mPlayers.size();
+    int rdm = int(ofRandom(0, size));
+    
+    onePlayer=mPlayers.begin();
+    for(int i=0; i<rdm; i++)
+        onePlayer++;
+    
+    return onePlayer->second.getNumber();
+    
+}
+
 
 //--------------------------------------------------------------
 void playerManager::urlResponse(ofHttpResponse & response){

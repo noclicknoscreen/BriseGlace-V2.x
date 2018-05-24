@@ -55,6 +55,8 @@ private:
 protected:
     ///////////// TIMER /////////////////////
     timer mTimer;
+    timer timerSignWin;
+    timer timerSignHint;
     
 };
 

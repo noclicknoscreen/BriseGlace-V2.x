@@ -32,6 +32,8 @@ public:
     // Events callback
     void someoneSpoke(player & _player);
     void timerEnd();
+    void timerSignWinEnd();
+    void timerSignHintEnd();
     
     //gui
     ofxPanel gui;
@@ -47,6 +49,12 @@ public:
     
     // Draw the overlay of hint
     bool bHintOverlay;
+    
+    
+    //signs
+    bool drawWinnerSign, drawHintSign;
+    int winnerUserId;
+    int hintUserId;
     
 };
 

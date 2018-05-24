@@ -77,10 +77,11 @@ void inputHandler::draw()
         }
 }
 
-void inputHandler::update(cubeManager* cm)
+int inputHandler::update(cubeManager* cm)
 {
     
     bool lettersAreFading = false;
+    bool returnValue = 0;
     
     for(int i=0; i<splittedString.size(); i++)
     {
@@ -147,12 +148,18 @@ void inputHandler::update(cubeManager* cm)
                     readyForNewText = true;
                     if(nbCubesRotated == wordToFind.size())
                     {
-                        ofxSceneManager::instance()->goToScene(9);
+                        
+                        //WIN ! 
+                        //ofxSceneManager::instance()->goToScene(9);
+                        cout << "WIN = > return true, userId =  " << userId << endl;
+                        //returnValue = userId;
+                        return userId;
                     }
                     
                 }
             }
     }
+    return 0;
 }
 
 void inputHandler::compareInput(string wantedWord)

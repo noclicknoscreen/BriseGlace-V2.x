@@ -29,5 +29,7 @@ public:
 
     void someoneSpoke(player & _player);
     
+    ofxScene* from;
+    
 };
 

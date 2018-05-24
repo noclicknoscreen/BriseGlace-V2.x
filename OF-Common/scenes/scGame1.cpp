@@ -33,9 +33,18 @@ void scGame1::setup(){  //load your scene 1 assets here...
 void scGame1::update(float dt){ //update scene 1 here
     
     myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), cubesRotationSpeed);
-    myInputManager.update(&myCubeManager);
+    int id = myInputManager.update(&myCubeManager);
+    if(id != 0)
+    {
+        drawWinnerSign = true;
+        winnerUserId = id;
+        timerSignWin.startTimer(8);
+        ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
+    }
 
     mTimer.update(dt);
+    timerSignWin.update(dt);
+    timerSignHint.update(dt);
     
 };
 
@@ -56,18 +65,16 @@ void scGame1::draw(){ //draw scene 1 here
         ofPopStyle();
     ofPopMatrix();
     
-
-//    DEBUG
-//    ofPushStyle();
-//    ofSetColor(ofColor(255,0,0));
-//    ofDrawCircle(200, 200, 200);
-//    ofPopStyle();
-    
     // Draw title
     scScene::drawTitle("Game 1 : Mot caché");
     scScene::drawSpokenWord("Derrière ces " + ofToString(bigEnigmaManager().getCurrentEnigma()->getSolution().size()) + " lettres se cache un mot");
     
-    bigPlayerManager().draw();    // Draw players
+    if(drawWinnerSign)
+            bigPlayerManager().draw(winnerUserId, "c'est gagné");
+    else if(drawHintSign)
+            bigPlayerManager().draw(hintUserId, "veux-tu un indice ?");
+    else
+            bigPlayerManager().draw();    // Draw players
     
 };
 
@@ -106,6 +113,11 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     gui.add(lightPosZ.set("lightPosZ", 0, -100, 100));
     gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
     
+    
+    //signs
+    drawWinnerSign = false;
+    drawHintSign = false;
+    
     // On ne refiat pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
         //cubes
@@ -124,15 +136,20 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // -- -- -- -- --
     mTimer.startTimer(45);
     // Player manager events
-    ofAddListener(mTimer.timerEnd,this,&scGame1::timerEnd);
-
+    ofAddListener(mTimer.timerEnd,          this,&scGame1::timerEnd);
+    ofAddListener(timerSignWin.timerEnd,    this,&scGame1::timerSignWinEnd);
+    ofAddListener(timerSignHint.timerEnd,   this,&scGame1::timerSignHintEnd);
+    
 };
 
 //scene notifications
 void scGame1::sceneWillDisappear( ofxScene * toScreen ){
     // Player manager events
-    ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
-    ofRemoveListener(mTimer.timerEnd,this,&scGame1::timerEnd);
+    ofRemoveListener(bigPlayerManager().someoneSpoke,   this,&scGame1::someoneSpoke);
+    ofRemoveListener(mTimer.timerEnd,                   this,&scGame1::timerEnd);
+    ofRemoveListener(timerSignWin.timerEnd,             this,&scGame1::timerSignWinEnd);
+    ofRemoveListener(timerSignHint.timerEnd,            this,&scGame1::timerSignHintEnd);
+
 }
 
 // Events callback -----------------------------------
@@ -148,6 +165,26 @@ void scGame1::someoneSpoke(player & _player){
 }
 void scGame1::timerEnd(){
     // --------------------------------
+    drawHintSign = true;
+    hintUserId = bigPlayerManager().getRandomPlayer();
+    mTimer.startTimer(45);
+    timerSignHint.startTimer(5);
+}
+
+void scGame1::timerSignWinEnd(){
+    
+    ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) " << endl;
+    // --------------------------------
+    timerSignWin.stop();
+    ofxSceneManager::instance()->goToScene(9);
+}
+
+
+void scGame1::timerSignHintEnd(){
+    
+    ofLogNotice() << "fin du timer timerSignHint, go to scene 9 " << endl;
+    // --------------------------------
+    timerSignHint.stop();
     ofxSceneManager::instance()->goToScene(HINT);
 }
 

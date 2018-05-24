@@ -63,6 +63,7 @@ class timer{
     // global timer available at anyTime
 private:
     ofxAnimatableFloat mTimer;
+    bool started=false;
     
 public:
     
@@ -71,14 +72,17 @@ public:
     
     // TIMER //////////////////////////////////////////////////
     void update(float dt){
-        mTimer.update(dt);
-        if(mTimer.hasFinishedAnimating()){
-            ofNotifyEvent(timerEnd);
+        if(started)
+        {
+            mTimer.update(dt);
+            if(mTimer.hasFinishedAnimating()){
+                ofNotifyEvent(timerEnd);
+            }
         }
     }
     
     void startTimer(float _seconds){
-        
+        started = true;
         mTimer.reset(1.0f);
         mTimer.setCurve(LINEAR);
         mTimer.setRepeatType(PLAY_ONCE);
@@ -103,6 +107,12 @@ public:
             return seconds;
         }
         
+    }
+    
+    void stop()
+    {
+        mTimer.reset(1.0f);
+        started = false;
     }
 };
 
