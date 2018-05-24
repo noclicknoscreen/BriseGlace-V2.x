@@ -26,6 +26,14 @@ void scGame1::setup(){  //load your scene 1 assets here...
     myInputManager.setWordToFind(bigEnigmaManager().getCurrentEnigma()->getSolution());
 
     //gui
+    
+    gui.setup();
+    //gui.add
+    gui.add(lightPosX.set("lightPosX", 1600, -1000, ofGetWidth()*2));
+    gui.add(lightPosY.set("lightPosY", 120, -1000, 1000));
+    gui.add(lightPosZ.set("lightPosZ", 0, -100, 100));
+    gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
+    
     bDrawGui=false;
     
 };
@@ -66,7 +74,7 @@ void scGame1::draw(){ //draw scene 1 here
     ofPopMatrix();
     
     // Draw title
-    scScene::drawTitle("Game 1 : Mot caché");
+    scScene::drawTitle("Mot caché");
     scScene::drawSpokenWord("Derrière ces " + ofToString(bigEnigmaManager().getCurrentEnigma()->getSolution().size()) + " lettres se cache un mot");
     
     if(drawWinnerSign)
@@ -105,13 +113,6 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     
     // Erase all words of every one
     bigPlayerManager().freshRestart();
-    
-    gui.setup();
-    //gui.add
-    gui.add(lightPosX.set("lightPosX", 1600, -1000, ofGetWidth()*2));
-    gui.add(lightPosY.set("lightPosY", 120, -1000, 1000));
-    gui.add(lightPosZ.set("lightPosZ", 0, -100, 100));
-    gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
     
     
     //signs

@@ -157,10 +157,10 @@ void scGame3::draw(){
 #if defined DRAW_DEBUG
     ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
 #endif
+
     
-    // Draw title
-    scScene::drawTitle("Game 3 : Boggle");
-    
+    scScene::drawTitle("Mot brassé");
+
     // Draw players
     if(drawWinnerSign)
         bigPlayerManager().draw(winnerId, "c'est gagné");
