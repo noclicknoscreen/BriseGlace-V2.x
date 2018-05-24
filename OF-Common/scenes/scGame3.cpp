@@ -35,9 +35,6 @@ void scGame3::setup(){
     //light
     setupLight();
     
-    // Player manager events
-    ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
-    
     //now comes from enigma Singleton
     wantedWord = "BONHEUR";
     
@@ -187,7 +184,10 @@ void scGame3::someoneSpoke(player & _player){
 //--------------------------------------------------------------
 void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
-    scScene::sceneWillAppear(fromScreen);    
+    scScene::sceneWillAppear(fromScreen);
+    
+    // Player manager events
+    ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
     
     // Erase all words of every one
     bigPlayerManager().freshRestart();
@@ -225,6 +225,8 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
 //--------------------------------------------------------------
 void scGame3::sceneWillDisappear( ofxScene * toScreen ){
     
+    // Player manager events
+    ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
 };
 
 

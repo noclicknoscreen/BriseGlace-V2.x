@@ -33,7 +33,7 @@ void scHint::draw(){ //draw scene 1 here
     // Draw Timer
     ofDisableDepthTest();
     scScene::drawTitle("Voici l'indice.");
-    scScene::drawSpokenWord("Il vous reste " + mTimer.toString() + " secondes pour jouer avec nous.");
+    //scScene::drawSpokenWord("Il vous reste " + mTimer.toString() + " secondes pour jouer avec nous.");
     
 };
 
@@ -41,7 +41,7 @@ void scHint::draw(){ //draw scene 1 here
 void scHint::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
-    
+    from = fromScreen;
     myIndice.setup(bigEnigmaManager().getCurrentEnigma());
     
     timer = ofGetElapsedTimef();
@@ -62,7 +62,7 @@ void scHint::sceneWillDisappear( ofxScene * toScreen ){
 void scHint::someoneSpoke(player & _player){
     // Waiting for a test (j'ai dit oui')
     // --------------------------------
-    ofxSceneManager::instance()->goToScene(GAME1);
+    ofxSceneManager::instance()->goToScene(from->getSceneID());
 }
 
 

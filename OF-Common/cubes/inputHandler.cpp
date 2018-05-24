@@ -12,7 +12,8 @@
 void inputHandler::setup()
 {
     font.load(globalFontName, 24);
-    
+    fontBig.load(globalFontName, 24+5);
+
     revealMode = false;
     currentRevealCube = 0;
     currentRevealLetter = 0;
@@ -68,14 +69,19 @@ void inputHandler::draw()
         for(int i=0; i<splittedString.size(); i++)
         {
             ofSetColor(splittedString[i].textColor);
+            
+            if(splittedString[i].alpha > 0)
             font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
+            else
+            fontBig.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
         }
 }
 
-void inputHandler::update(cubeManager* cm)
+int inputHandler::update(cubeManager* cm)
 {
     
     bool lettersAreFading = false;
+    bool returnValue = 0;
     
     for(int i=0; i<splittedString.size(); i++)
     {
@@ -142,12 +148,18 @@ void inputHandler::update(cubeManager* cm)
                     readyForNewText = true;
                     if(nbCubesRotated == wordToFind.size())
                     {
-                        ofxSceneManager::instance()->goToScene(9);
+                        
+                        //WIN ! 
+                        //ofxSceneManager::instance()->goToScene(9);
+                        cout << "WIN = > return true, userId =  " << userId << endl;
+                        //returnValue = userId;
+                        return userId;
                     }
                     
                 }
             }
     }
+    return 0;
 }
 
 void inputHandler::compareInput(string wantedWord)

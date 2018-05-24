@@ -50,6 +50,11 @@ player::player(ofColor _color, string _characterSeqPath, string _bullePath){
     
     // ----------
     myText.init(globalFontName, globalFontSizeBig);
+    signText.init(globalFontName, globalFontSizeBig);
+    
+    //load sign and hands
+    signImage.load("Pancarte/Pancarte-Ombres.png");
+    handsImage.load("Pancarte/Mains_seules.png");
     
 }
 
@@ -93,7 +98,7 @@ void player::loadNewSequenceImage(int _newSequenceIdx){
     
 }
 
-void player::draw(ofVec2f _pos, ofPoint _bulleCorrection){
+void player::draw(ofVec2f _pos, ofPoint _bulleCorrection, bool drawSign, string textToDisplay){
     
     setPositionHistogram(_pos);
     
@@ -159,9 +164,50 @@ void player::draw(ofVec2f _pos, ofPoint _bulleCorrection){
         mSequenceImg.draw(-0.5 * mSequenceImg.getWidth(), -1 * mSequenceImg.getHeight());
         ofEnableNormalizedTexCoords();
     }
-    ofPopMatrix();
-    //////////////////////////////////////////////////////////////////
     
+    
+    //DRAW SIGN IF NEEDED
+    if(drawSign)
+    {
+        signText.setText(textToDisplay);
+        signText.wrapTextArea(0.5*signImage.getWidth(), 0.5*signImage.getHeight());
+        
+        ofDisableNormalizedTexCoords();
+        
+        ofPushMatrix();
+        ofTranslate(-0.5 * signImage.getWidth(), (-1 * signImage.getHeight()*0.3*abs(cos(ofGetFrameNum()/40.0 + getPositionHistogram().x)))-0.8*signImage.getHeight());
+        signImage.draw(0,0);
+        
+        //debug
+        /*
+         ofNoFill();
+         ofSetColor(ofColor::red);
+         ofDrawRectangle(0, 0, signImage.getWidth(), signImage.getHeight());
+         ofDrawCircle(signImage.getWidth()/2, signImage.getHeight()/2, 10);
+         ofFill();
+         */
+        
+        //text
+        ofPushMatrix();
+        ofTranslate(signImage.getWidth()/2, signImage.getHeight()/2 - signText.getHeight()/2 - 30);
+        ofRotate(-10, 0, 0, 1); //tilt the text a bit
+        signText.setColor(0, 0, 0, 255);
+        signText.drawCenter(0,0);
+        ofPopMatrix();//text
+        
+        //draw hands over the text
+        ofSetColor(255, 255, 255, 255);
+        handsImage.draw(0,0);
+        
+        ofPopMatrix();//signImage
+        ofEnableNormalizedTexCoords();
+        
+        
+        
+    }
+
+    //////////////////////////////////////////////////////////////////
+    ofPopMatrix();
     ofPopStyle();
     
     

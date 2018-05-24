@@ -20,7 +20,7 @@ public:
     void setup();
     void freshRestart(); // Reset messages for fresh restart
     void update();
-    void draw();
+    void draw(int _userId=0, string _textOnSign="");
     
     void keyPressed(int key);
     
@@ -34,6 +34,8 @@ public:
     
     
     int getNumberOfPlayers(){return mPlayers.size();}
+    int getRandomPlayer();
+
     
     void urlResponse(ofHttpResponse & response);
     
