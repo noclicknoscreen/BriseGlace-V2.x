@@ -26,7 +26,7 @@ void ofApp::setup(){
     
     ///////////////////////////////////////
 	sceneManager = ofxSceneManager::instance();
-    sceneManager->setupCurtain(ofColor::white, ofRectangle(0,0, ofGetWidth(), ofGetHeight()) );
+//    sceneManager->setupCurtain(ofColor::white, ofRectangle(0,0, ofGetWidth(), ofGetHeight()) );
     
     sceneManager->addScene( new scIntro(), INTRO);
     sceneManager->addScene( new scInitialize(), INITIALIZE);
