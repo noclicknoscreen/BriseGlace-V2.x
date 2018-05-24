@@ -1,0 +1,29 @@
+{
+    "jeux": "motus",
+    "mot": "Micheline",
+    "indice": [
+        {
+            "titre": "Bugatti",
+            "image": "image1.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c0\/Bugatti_pr%C3%A9sidentiel%2C_Cit%C3%A9_du_train.jpg\/1280px-Bugatti_pr%C3%A9sidentiel%2C_Cit%C3%A9_du_train.jpg"
+        },
+        {
+            "titre": "Bibendum",
+            "image": "image2.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/88\/Michelin_Poster_1898.jpg\/800px-Michelin_Poster_1898.jpg"
+        },
+        {
+            "titre": "Locomotive",
+            "image": "image3.JPG",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/6e\/France_Paris_Champs_Elysees_Autorail_Picasso.JPG\/330px-France_Paris_Champs_Elysees_Autorail_Picasso.JPG"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "Micheline",
+            "image": "image4.JPG",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8c\/Lyon_St_Paul.JPG\/330px-Lyon_St_Paul.JPG"
+        },
+        "legende": "0000 : La « Micheline » est un autorail rapide équipé de roues spéciales munies de pneus brevetés appelés  « pneurail ». Elle construite par la société Michelin dans les années 1935. Bugatti réalisera également de tels véhicules de luxe dès 1932."
+    }
+}
