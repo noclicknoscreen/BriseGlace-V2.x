@@ -1,29 +1,29 @@
 {
     "jeux": "motus",
-    "mot": "Micheline",
+    "mot": "Gare",
     "indice": [
         {
-            "titre": "Bugatti",
-            "image": "image1.jpg",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c0\/Bugatti_pr%C3%A9sidentiel%2C_Cit%C3%A9_du_train.jpg\/1280px-Bugatti_pr%C3%A9sidentiel%2C_Cit%C3%A9_du_train.jpg"
+            "titre": "Tunnel",
+            "image": "image1.JPG",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/f4\/Lyon_Gorges_de_Loup_II.JPG"
         },
         {
-            "titre": "Bibendum",
-            "image": "image2.jpg",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/88\/Michelin_Poster_1898.jpg\/800px-Michelin_Poster_1898.jpg"
+            "titre": "Tram-train",
+            "image": "image2.JPG",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/2e\/Tramtrain_in_l%27Arbresle_III.JPG"
         },
         {
-            "titre": "Locomotive",
-            "image": "image3.JPG",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/6e\/France_Paris_Champs_Elysees_Autorail_Picasso.JPG\/330px-France_Paris_Champs_Elysees_Autorail_Picasso.JPG"
+            "titre": "Horloger",
+            "image": "image3.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/3\/2853\/11139667303_c0cc36843a_b.jpg"
         }
     ],
     "recompense": {
         "indice": {
-            "titre": "Micheline",
+            "titre": "La gare Saint-Paul",
             "image": "image4.JPG",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8c\/Lyon_St_Paul.JPG\/330px-Lyon_St_Paul.JPG"
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/96\/GareStPaulLyon.JPG"
         },
-        "legende": "0002 : La « Micheline » est un autorail rapide équipé de roues spéciales munies de pneus brevetés appelés  « pneurail ». Elle construite par la société Michelin dans les années 1935. Bugatti réalisera également de tels véhicules de luxe dès 1932."
+        "legende": "Chaque jour, 5 500 voyageurs passent par la gare Saint-Paul située dans le vieux Lyon ou fut tourné le film de Bertran Tavernier « L'horloger de Saint Paul » en 1974. Le premier tram-train fut inauguré en septembre 2012."
     }
 }
