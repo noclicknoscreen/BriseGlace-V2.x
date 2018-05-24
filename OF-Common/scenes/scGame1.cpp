@@ -80,6 +80,7 @@ void scGame1::keyPressed(int key){
         myCubeManager.rotateToWood(0);
     if(key=='W')
         myCubeManager.rotateToWhite(0);
+    
     if(key==' ' )
         bDrawGui = !bDrawGui;
     

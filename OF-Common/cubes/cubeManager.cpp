@@ -143,8 +143,12 @@ void cubeManager::draw(){
     }
     spotLight.disable();
     ofDisableLighting();
+    
+    // DEBUG DRAW
+#if defined DRAW_DEBUG
     spotLight.draw();
-
+#endif
+    
     ofSetColor(255);
 }
 

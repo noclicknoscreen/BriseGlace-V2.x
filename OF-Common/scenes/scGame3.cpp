@@ -120,18 +120,17 @@ void scGame3::draw(){
     
     camera.begin();
     
-    if(drawDebug)
-    {
-        ofSetColor(100, 100, 100);
-        ofNoFill();
-        ground.draw();
-        rightFace.draw();
-        leftFace.draw();
-        bottom.draw();
-        ofFill();
-        
-        spotLight.draw();
-    }
+#if defined DRAW_DEBUG
+    ofSetColor(100, 100, 100);
+    ofNoFill();
+    ground.draw();
+    rightFace.draw();
+    leftFace.draw();
+    bottom.draw();
+    ofFill();
+    
+    spotLight.draw();
+#endif
     
     material.begin();
     for(int i=0; i<myCubes.size(); i++)
@@ -141,8 +140,9 @@ void scGame3::draw(){
     material.end();
     ofDisableLighting();
     
-    if(drawDebug)
-        world.drawDebug();
+#if defined DRAW_DEBUG
+    world.drawDebug();
+#endif
     
     
     camera.end();
@@ -152,8 +152,10 @@ void scGame3::draw(){
     
     if(drawGui)
         gui.draw();
-    
+
+#if defined DRAW_DEBUG
     ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
+#endif
     
     // Draw title
     scScene::drawTitle("Game 3 : Boggle");
@@ -285,7 +287,6 @@ void scGame3::setupGui()
     gui.add(friction.set("friction", 0.75, 0.0, 1.0));
     
     //gui.add(zLight.set("zLight", 0, -1000, 1000));
-    gui.add(drawDebug.set("drawDebug", 0));
     gui.loadFromFile("gui.xml");
     drawGui = false;
 };

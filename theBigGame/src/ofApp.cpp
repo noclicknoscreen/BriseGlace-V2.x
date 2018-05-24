@@ -1,5 +1,6 @@
 #include "ofApp.h"
 
+//#define DRAW_DEBUG
 
 void ofApp::setup(){
 
@@ -82,8 +83,10 @@ void ofApp::draw(){
     
 	sceneManager->draw();
     
+#if defined DRAW_DEBUG
     ofSetColor(255,0,0);
-	ofDrawBitmapString( "press 1, 2, or 3 to change scene", ofGetWidth() - 290, ofGetHeight() - 10);
+    ofDrawBitmapString( "press 1, 2, or 3 to change scene", ofGetWidth() - 290, ofGetHeight() - 10);
+#endif
     
 }
 

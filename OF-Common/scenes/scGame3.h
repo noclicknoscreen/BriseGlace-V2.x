@@ -167,7 +167,6 @@ public:
     ofParameter<float>           volumeBorneMin, volumeBorneMax;
     ofParameter<float> forceMicro2_multiplier;
     ofParameter<ofVec3f>         forceAmount;
-    ofParameter<bool>            drawDebug;
     ofParameter<float>           zLight;
     
     //lumiere

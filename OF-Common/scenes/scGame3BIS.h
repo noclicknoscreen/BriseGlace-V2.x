@@ -100,18 +100,17 @@ public:
         
         camera.begin();
         
-        if(drawDebug)
-        {
-            ofSetColor(100, 100, 100);
-            ofNoFill();
-            ground.draw();
-            rightFace.draw();
-            leftFace.draw();
-            bottom.draw();
-            ofFill();
-            
-            spotLight.draw();
-        }
+#if defined DRAW_DEBUG
+        ofSetColor(100, 100, 100);
+        ofNoFill();
+        ground.draw();
+        rightFace.draw();
+        leftFace.draw();
+        bottom.draw();
+        ofFill();
+        
+        spotLight.draw();
+#endif
         
         material.begin();
         for(int i=0; i<myCubes.size(); i++)
@@ -121,9 +120,9 @@ public:
         material.end();
         ofDisableLighting();
         
-        if(drawDebug)
-            world.drawDebug();
-        
+#if defined DRAW_DEBUG
+        world.drawDebug();
+#endif
         
         camera.end();
         
