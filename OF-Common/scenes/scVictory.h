@@ -25,7 +25,9 @@ public:
     // What happens when timer ends
     void timerEnd();
 
-
+    ofxTextBlock winnerText;
+    ofImage localRewardImage, woodTexture;
+    float cubeSize;
 
 };
 
