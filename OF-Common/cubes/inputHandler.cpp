@@ -148,14 +148,10 @@ int inputHandler::update(cubeManager* cm)
                     readyForNewText = true;
                     if(nbCubesRotated == wordToFind.size())
                     {
-                        
-                        //WIN ! 
-                        //ofxSceneManager::instance()->goToScene(9);
+                        //WIN !
                         cout << "WIN = > return true, userId =  " << userId << endl;
-                        //returnValue = userId;
                         return userId;
                     }
-                    
                 }
             }
     }

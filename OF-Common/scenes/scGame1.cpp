@@ -163,6 +163,7 @@ void scGame1::someoneSpoke(player & _player){
     mTimer.startTimer(45);
     
 }
+
 void scGame1::timerEnd(){
     // --------------------------------
     drawHintSign = true;

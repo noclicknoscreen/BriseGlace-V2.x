@@ -57,6 +57,10 @@ protected:
     timer mTimer;
     timer timerSignWin;
     timer timerSignHint;
+    ///////////// SIGNS ////////////////////
+    bool drawWinnerSign, drawHintSign;
+    int winnerUserId;
+    int hintUserId;
     
 };
 
