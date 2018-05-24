@@ -27,17 +27,41 @@ void scScene::update(float dt){
     ofSetWindowTitle(ofToString(ofGetFrameRate()));
 }
 
-void scScene::drawTitle(string _title, ofColor _color){
+void scScene::drawTitle(string _text, ofColor _color){
     // Draw title
-    myTextTitle.setText(utils::toUpperCase(_title));
+    myTextTitle.setText(utils::toUpperCase(_text));
     myTextTitle.wrapTextX(0.7 * ofGetWidth());
     myTextTitle.setColor(_color.r, _color.g, _color.b, _color.a);
     myTextTitle.drawCenter(0.5 * ofGetWidth(), 0.05 * ofGetHeight());
 }
 
-void scScene::drawSpokenWord(string _spokenWord, ofColor _color){
+void scScene::drawSubTitle(string _text, ofColor _color){
     // Draw title
-    myTextSpokenWord.setText(utils::toUpperCase(_spokenWord));
+    myTextTitle.setText(utils::toUpperCase(_text));
+    myTextTitle.wrapTextX(0.7 * ofGetWidth());
+    myTextTitle.setColor(_color.r, _color.g, _color.b, _color.a);
+    myTextTitle.drawCenter(0.5 * ofGetWidth(), 0.15 * ofGetHeight());
+}
+
+void scScene::drawFullCenterLine1(string _text, ofColor _color){
+    // Draw title
+    myTextTitle.setText(utils::toUpperCase(_text));
+    myTextTitle.wrapTextX(0.7 * ofGetWidth());
+    myTextTitle.setColor(_color.r, _color.g, _color.b, _color.a);
+    myTextTitle.drawCenter(0.5 * ofGetWidth(), 0.5 * ofGetHeight() - 50);
+}
+
+void scScene::drawFullCenterLine2(string _text, ofColor _color){
+    // Draw title
+    myTextTitle.setText(utils::toUpperCase(_text));
+    myTextTitle.wrapTextX(0.7 * ofGetWidth());
+    myTextTitle.setColor(_color.r, _color.g, _color.b, _color.a);
+    myTextTitle.drawCenter(0.5 * ofGetWidth(), 0.5 * ofGetHeight() + 50);
+}
+
+void scScene::drawSpokenWord(string _text, ofColor _color){
+    // Draw title
+    myTextSpokenWord.setText(utils::toUpperCase(_text));
     myTextSpokenWord.wrapTextX(0.7 * ofGetWidth());
     myTextSpokenWord.setColor(_color.r, _color.g, _color.b, _color.a);
     myTextSpokenWord.drawCenter(0.5 * ofGetWidth(), 0.55 * ofGetHeight());

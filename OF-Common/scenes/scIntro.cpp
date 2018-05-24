@@ -20,7 +20,8 @@ void scIntro::update(float dt){ //update scene 1 here
 };
 
 void scIntro::draw(){ //draw scene 1 here
-    scScene::drawTitle("Vous êtes joueur ? \nNous oui !");
+    scScene::drawFullCenterLine1("Vous êtes joueur ?");
+    scScene::drawFullCenterLine2("Nous oui !");
 };
 
 //scene notifications

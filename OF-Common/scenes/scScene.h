@@ -32,8 +32,13 @@ public:
     void setup();
     void update(float dt);
     
-    void drawTitle(string _spokenWord, ofColor _color = ofColor::black);
-    void drawSpokenWord(string _spokenWord, ofColor _color = ofColor::black);
+    void drawTitle(string _text, ofColor _color = ofColor::black);
+    void drawSubTitle(string _text, ofColor _color = ofColor::black);
+    
+    void drawFullCenterLine1(string _text, ofColor _color = ofColor::black);
+    void drawFullCenterLine2(string _text, ofColor _color = ofColor::black);
+    
+    void drawSpokenWord(string _text, ofColor _color = ofColor::black);
     
 //    scScene(playerManager &_manager);
     
