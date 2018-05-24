@@ -395,7 +395,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "scScene::drawTitle(string _title, ofColor _color)"
+            landmarkName = "scScene::drawTitle(string _text, ofColor _color)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
