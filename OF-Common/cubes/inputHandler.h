@@ -44,6 +44,7 @@ public:
     bool isReadyForNewText(){return readyForNewText;}
     void setReadyForNewText(){readyForNewText = true;}
     void setWordToFind(string _wantedWord){wordToFind = _wantedWord;};
+    void revealTirrets(cubeManager* cm);
     
 private:
     string text;

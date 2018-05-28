@@ -50,11 +50,5 @@ public:
     // Draw the overlay of hint
     bool bHintOverlay;
     
-    
-    //signs
-    bool drawWinnerSign, drawHintSign;
-    int winnerUserId;
-    int hintUserId;
-    
 };
 

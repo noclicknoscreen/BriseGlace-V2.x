@@ -97,6 +97,10 @@ void scGame3::update(float dt){
     }
     
 
+    mTimer.update(dt);
+    timerSignWin.update(dt);
+    timerSignHint.update(dt);
+    
 };
 
 //--------------------------------------------------------------
@@ -153,12 +157,21 @@ void scGame3::draw(){
 #if defined DRAW_DEBUG
     ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
 #endif
+
     
-    // Draw title
     scScene::drawTitle("Mot brassé");
+<<<<<<< HEAD
     scScene::drawSubTitle("Parlez dans l'oreille pour retourner les cubes");
+=======
+
+>>>>>>> ec5fdea793eb707dc12fceecd014b525b6ecd556
     // Draw players
-    bigPlayerManager().draw();
+    if(drawWinnerSign)
+        bigPlayerManager().draw(winnerId, "c'est gagné");
+    else if(drawHintSign)
+        bigPlayerManager().draw(hintUserId, "veux-tu un indice?");
+    else
+        bigPlayerManager().draw();
     
 };
 
@@ -176,10 +189,18 @@ void scGame3::someoneSpoke(player & _player){
     std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord));
     if(index != std::string::npos)
     {
-        cout << "c'est gagné !!! " << endl;
+        ofLogNotice() << "c'est gagné !!! " << endl;
         winnerColor = _player.getColor();
-        ofxSceneManager::instance()->goToScene(7, true, false);
-    }    
+        
+        winnerId = _player.getNumber();
+        timerSignWin.startTimer(8);
+        drawWinnerSign = true;
+
+        ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
+
+        //ofxSceneManager::instance()->goToScene(7, true, false);
+    }
+    
 }
 
 //--------------------------------------------------------------
@@ -193,34 +214,53 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     // Erase all words of every one
     bigPlayerManager().freshRestart();
 
-    
-    //now comes from enigma Singleton
-    bigEnigmaManager().pickNewEnigma(MOTUS);
-    wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
-    cout << "setting wantedWord to : " << wantedWord << endl;
-    
-    
-    //clean potentially previous session
-    for(int i=0; i<myCubes.size(); i++)
-    {
-        myCubes[i]->remove();
-    }
-    myCubes.clear();
-    
-    
-    for(int i=0; i<wantedWord.size(); i++)
-    {
-        box = new specialBox();
-        box->setup(texture, ofToString(wantedWord[i]), 40);
-        box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
- 
-        box->add();
-        box->applyForce(START_FORCE_FACTOR*ofVec3f(ofRandom(-1, 1), ofRandom(-1, 1), ofRandom(-1, 1)), box->getPosition());
+    // On ne refiat pas ca si on vient de l'indice
+    if(fromScreen->getSceneID() != HINT){
         
-        myCubes.push_back(box);
+        //now comes from enigma Singleton
+        bigEnigmaManager().pickNewEnigma(MOTUS);
+        wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
+        cout << "setting wantedWord to : " << wantedWord << endl;
+        
+        
+        //clean potentially previous session
+        for(int i=0; i<myCubes.size(); i++)
+        {
+            myCubes[i]->remove();
+        }
+        myCubes.clear();
+        
+        
+        for(int i=0; i<wantedWord.size(); i++)
+        {
+            box = new specialBox();
+            box->setup(texture, ofToString(wantedWord[i]), 40);
+            box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
+     
+            box->add();
+            box->applyForce(START_FORCE_FACTOR*ofVec3f(ofRandom(-1, 1), ofRandom(-1, 1), ofRandom(-1, 1)), box->getPosition());
+            
+            myCubes.push_back(box);
+        }
+
     }
+    
     
     timer = ofGetElapsedTimef();
+    
+    
+    // Player manager events
+    ofAddListener(mTimer.timerEnd,          this,&scGame3::timerEnd);
+    ofAddListener(timerSignWin.timerEnd,    this,&scGame3::timerSignWinEnd);
+    ofAddListener(timerSignHint.timerEnd,   this,&scGame3::timerSignHintEnd);
+    
+    winnerId = 0;
+    
+    mTimer.startTimer(45);
+    
+    drawHintSign = 0;
+    drawWinnerSign = 0;
+
 };
 
 //--------------------------------------------------------------
@@ -228,6 +268,10 @@ void scGame3::sceneWillDisappear( ofxScene * toScreen ){
     
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
+    
+    ofRemoveListener(mTimer.timerEnd,                   this,&scGame3::timerEnd);
+    ofRemoveListener(timerSignWin.timerEnd,             this,&scGame3::timerSignWinEnd);
+    ofRemoveListener(timerSignHint.timerEnd,            this,&scGame3::timerSignHintEnd);
 };
 
 
@@ -353,5 +397,32 @@ void scGame3::setupLight()
     materialColor.setHue(0);
 };
 
+
+void scGame3::timerEnd(){
+    // --------------------------------
+    drawHintSign = true;
+    hintUserId = bigPlayerManager().getRandomPlayer();
+    mTimer.startTimer(45);
+    timerSignHint.startTimer(5);
+}
+
+void scGame3::timerSignWinEnd(){
+    
+    ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) " << endl;
+    // --------------------------------
+    timerSignWin.stop();
+    ofxSceneManager::instance()->goToScene(9);
+}
+
+
+void scGame3::timerSignHintEnd(){
+    
+    ofLogNotice() << "fin du timer timerSignHint, go to scene 9 " << endl;
+    // --------------------------------
+    timerSignHint.stop();
+    mTimer.stop();
+
+    ofxSceneManager::instance()->goToScene(HINT);
+}
 
 

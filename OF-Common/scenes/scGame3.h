@@ -132,6 +132,9 @@ public:
     void someoneSpoke(player & _player);
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
+    void timerEnd();
+    void timerSignWinEnd();
+    void timerSignHintEnd();
     
     void keyPressed(int key);
     void exit();
@@ -181,6 +184,9 @@ public:
     //winner color (for game3BIS ;)
     ofColor winnerColor;
     bool colorizeCubes;
+    
+    int winnerId;
+
     
 };
 

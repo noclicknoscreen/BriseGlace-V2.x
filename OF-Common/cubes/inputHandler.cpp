@@ -85,6 +85,17 @@ void inputHandler::draw()
         }
 }
 
+void inputHandler::revealTirrets(cubeManager* cm)
+{
+    size_t found = wordToFind.find("-", 0);
+
+    if(found!=string::npos)
+    {
+        cm->myCubes[found].rotateToLetter();
+    }
+
+}
+
 int inputHandler::update(cubeManager* cm)
 {
     
@@ -156,14 +167,10 @@ int inputHandler::update(cubeManager* cm)
                     readyForNewText = true;
                     if(nbCubesRotated == wordToFind.size())
                     {
-                        
-                        //WIN ! 
-                        //ofxSceneManager::instance()->goToScene(9);
-                        cout << "WIN = > return true, userId =  " << userId << endl;
-                        //returnValue = userId;
+                        //WIN !
+                        ofLogNotice() << "WIN = > return true, userId =  " << userId << endl;
                         return userId;
                     }
-                    
                 }
             }
     }
