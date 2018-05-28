@@ -17,6 +17,9 @@ void scScene::setup(){
     // Set the texts
     myTextTitle.init(globalFontName, globalFontSizeBig);
     myTextTitle.setColor(0, 0, 0, 0);
+    // Set the texts
+    myTextSubTitle.init(globalFontName, globalFontSizeMedium);
+    myTextSubTitle.setColor(0, 0, 0, 0);
     //
     myTextSpokenWord.init(globalFontName, globalFontSizeSmall);
     myTextSpokenWord.setColor(0, 0, 0, 0);
@@ -37,10 +40,10 @@ void scScene::drawTitle(string _text, ofColor _color){
 
 void scScene::drawSubTitle(string _text, ofColor _color){
     // Draw title
-    myTextTitle.setText(utils::toUpperCase(_text));
-    myTextTitle.wrapTextX(0.7 * ofGetWidth());
-    myTextTitle.setColor(_color.r, _color.g, _color.b, _color.a);
-    myTextTitle.drawCenter(0.5 * ofGetWidth(), 0.15 * ofGetHeight());
+    myTextSubTitle.setText(utils::toUpperCase(_text));
+    myTextSubTitle.wrapTextX(0.7 * ofGetWidth());
+    myTextSubTitle.setColor(_color.r, _color.g, _color.b, _color.a);
+    myTextSubTitle.drawCenter(0.5 * ofGetWidth(), 0.15 * ofGetHeight());
 }
 
 void scScene::drawFullCenterLine1(string _text, ofColor _color){

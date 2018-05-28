@@ -33,12 +33,12 @@ void cubeManager::setup()
     materialColor.setSaturation(0);
 
     //font
-    font.load(globalFontName, 24);
+    font.load(globalFontName, globalFontSizeBig);
     
     //texture
     texture.load("contreplaque.png");
     
-    cubeSize = 80;
+    cubeSize = 150;
     
     //load background
     background.load("Decor_MurEtSol.png");

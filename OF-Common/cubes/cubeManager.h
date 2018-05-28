@@ -14,7 +14,7 @@
 #include "cube.h"
 #include "utils.h"
 
-#define cubesPositionY 200
+#define cubesPositionY 0.4*ofGetHeight()
 #define consignesPositionY 100
 #define espacementCubes 15
 

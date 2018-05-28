@@ -11,8 +11,8 @@
 
 void inputHandler::setup()
 {
-    font.load(globalFontName, 24);
-    fontBig.load(globalFontName, 24+5);
+    font.load(globalFontName, globalFontSizeMedium);
+    fontBig.load(globalFontName, globalFontSizeMedium + 15);
 
     revealMode = false;
     currentRevealCube = 0;
@@ -70,10 +70,18 @@ void inputHandler::draw()
         {
             ofSetColor(splittedString[i].textColor);
             
-            if(splittedString[i].alpha > 0)
-            font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
-            else
-            fontBig.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
+            if(revealMode){
+                font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
+                
+            }else{
+                if(splittedString[i].alpha > 0){
+                    font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
+                    
+                }else{
+                    fontBig.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
+                    
+                }
+            }
         }
 }
 

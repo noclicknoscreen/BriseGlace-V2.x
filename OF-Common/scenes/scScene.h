@@ -50,6 +50,7 @@ public:
     ///////////// MEMBERS /////////////////////
 private:
     ofxTextBlock myTextTitle;
+    ofxTextBlock myTextSubTitle;
     ofxTextBlock myTextSpokenWord;
 
 protected:

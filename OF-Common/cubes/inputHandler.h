@@ -16,9 +16,9 @@
 #include "ofxSceneManager.h"
 #include "utils.h"
 
-#define inputTextYPosition 400
+#define inputTextYPosition 0.6*ofGetHeight()
 #define movementSmoothingValue 15
-#define spaceBetweenLetters 15
+#define spaceBetweenLetters 40
 
 
 typedef struct
