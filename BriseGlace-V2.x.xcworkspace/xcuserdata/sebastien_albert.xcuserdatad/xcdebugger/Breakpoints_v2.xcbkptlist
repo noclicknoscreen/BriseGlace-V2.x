@@ -397,7 +397,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
             endingLineNumber = "37"
-            landmarkName = "scScene::drawTitle(string _text, ofColor _color)"
+            landmarkName = "scScene::drawTitle(string _text, ofColor _color, int _correcY)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -429,7 +429,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "115"
             endingLineNumber = "115"
-            landmarkName = "player::draw(ofVec2f _pos, ofPoint _bulleCorrection)"
+            landmarkName = "player::draw(ofVec2f _pos, ofPoint _bulleCorrection, bool drawSign, string textToDisplay)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -445,7 +445,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "117"
             endingLineNumber = "117"
-            landmarkName = "player::draw(ofVec2f _pos, ofPoint _bulleCorrection)"
+            landmarkName = "player::draw(ofVec2f _pos, ofPoint _bulleCorrection, bool drawSign, string textToDisplay)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -628,7 +628,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame1.cpp"
@@ -644,7 +644,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame1.cpp"

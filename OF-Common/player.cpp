@@ -112,7 +112,7 @@ void player::draw(ofVec2f _pos, ofPoint _bulleCorrection, bool drawSign, string 
     // Draw the character
     ofPushStyle();
     
-    // DRAW PANCARTE + MOT ////////////////////////////////////////////////////////////////
+    // DRAW MOT ////////////////////////////////////////////////////////////////
     ofPushMatrix();
     ofTranslate(-0.5 * mSequenceImg.getWidth() + _bulleCorrection.x, -1 * mSequenceImg.getHeight() - 200  + _bulleCorrection.y);
     //            ofScale(0.75, 0.75);
@@ -135,7 +135,7 @@ void player::draw(ofVec2f _pos, ofPoint _bulleCorrection, bool drawSign, string 
         // Little trick to always be into the frame
         float correction = 0.15;
         if(myText.getHeight() > 120){
-            correction = -0.25;
+            correction = -0.15;
         }
         
         ofPoint whereTheTextIs(internalBullePos.x + 0.5*internalBulleSize.x, internalBullePos.y + correction * myText.getHeight(), 10);
@@ -175,7 +175,7 @@ void player::draw(ofVec2f _pos, ofPoint _bulleCorrection, bool drawSign, string 
         ofDisableNormalizedTexCoords();
         
         ofPushMatrix();
-        ofTranslate(-0.5 * signImage.getWidth(), (-1 * signImage.getHeight()*0.3*abs(cos(ofGetFrameNum()/40.0 + getPositionHistogram().x)))-0.8*signImage.getHeight());
+        ofTranslate(-0.5 * signImage.getWidth(), (-1 * signImage.getHeight()*0.3*abs(cos(ofGetFrameNum()/75.0 + getPositionHistogram().x)))-0.8*signImage.getHeight());
         signImage.draw(0,0);
         
         //debug

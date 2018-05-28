@@ -22,16 +22,19 @@ void scSelectGame::update(float dt){ //update scene 1 here
 
 void scSelectGame::draw(){ //draw scene 1 here
     // Draw title
-    scScene::drawTitle("Dites le nom d'un jeu pour commencer");
+    scScene::drawSubTitle("Dites le nom d'un jeu pour commencer");
     scScene::drawSpokenWord(mPlayerMessage, mPlayerColor);
     
     // Draw players
-    bigPlayerManager().draw();
+    bigPlayerManager().draw3Signs("Mot masqué", "Mot brassé", "Mes mots rient");
     
 };
 
 //scene notifications
 void scSelectGame::sceneWillAppear( ofxScene * fromScreen ){
+    
+    mPlayerMessage = "";
+    
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
     

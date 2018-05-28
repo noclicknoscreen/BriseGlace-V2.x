@@ -34,7 +34,8 @@ public:
         for(int i=0; i<wantedWord.size(); i++)
         {
             box = new specialBox();
-            box->setup(texture, ofToString(wantedWord[wantedWord.size()-(i+1)]), 40);
+//            box->setup(texture, ofToString(wantedWord[wantedWord.size()-(i+1)]), 40);
+            box->setup(texture, ofToString(wantedWord[i]), 40);
             box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
             
             box->add();
@@ -71,7 +72,7 @@ public:
         material.setSpecularColor(materialColor);
         
         //display result for 10 seconds and go to winner screen
-        if(ofGetElapsedTimef() - timer > 10)
+        if(ofGetElapsedTimef() - timer > 5)
         {
             ofxSceneManager::instance()->goToScene(9);
         }
@@ -132,10 +133,12 @@ public:
         if(drawGui)
             gui.draw();
         
-        ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
+        //ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
         
         // Draw title
-        scScene::drawTitle("Game 3 : Boggle");
+        scScene::drawTitle("Mot brassé");
+        //scScene::drawSubTitle("Parlez dans l'oreille pour retourner les cubes");
+        
         // Draw players
         bigPlayerManager().draw();
         

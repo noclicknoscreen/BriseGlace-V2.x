@@ -193,6 +193,36 @@ ofPoint playerManager::getHistogrammPosition(int id)
         return ofPoint(0,0,0);
 };
 
+//--------------------------------------------------------------
+void playerManager::draw3Signs(string _sign1, string _sign2, string _sign3){
+    
+    std::map<int, player>::iterator onePlayer;
+    int border = 200;
+    
+    for (onePlayer=mPlayers.begin(); onePlayer!=mPlayers.end(); ++onePlayer){
+        
+        if(onePlayer->second.getNumber() == 1)
+        {
+            // Second is value (aka player)
+            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()], true, _sign1);
+        }
+        if(onePlayer->second.getNumber() == 2)
+        {
+            // Second is value (aka player)
+            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()], true, _sign2);
+        }
+        if(onePlayer->second.getNumber() == 3)
+        {
+            // Second is value (aka player)
+            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()], true, _sign3);
+        }
+    }
+    
+    if(drawGui){
+        gui.draw();
+    }
+    
+}
 
 //--------------------------------------------------------------
 void playerManager::draw(int _userId, string _textOnSign){
@@ -202,7 +232,7 @@ void playerManager::draw(int _userId, string _textOnSign){
     int border = 200;
         
     for (onePlayer=mPlayers.begin(); onePlayer!=mPlayers.end(); ++onePlayer){
-        
+    
         if(_userId != 0 && onePlayer->second.getNumber() == _userId)
         {
         // Second is value (aka player)

@@ -20,7 +20,8 @@ public:
     void setup();
     void freshRestart(); // Reset messages for fresh restart
     void update();
-    void draw(int _userId=0, string _textOnSign="");
+    void draw(int _userId = 0, string _textOnSign="");
+    void draw3Signs(string _sign1, string _sign2, string _sign3);
     
     void keyPressed(int key);
     

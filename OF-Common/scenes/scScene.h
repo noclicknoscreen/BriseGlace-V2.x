@@ -32,13 +32,14 @@ public:
     void setup();
     void update(float dt);
     
-    void drawTitle(string _text, ofColor _color = ofColor::black);
-    void drawSubTitle(string _text, ofColor _color = ofColor::black);
+    void drawTitle(string _text, ofColor _color = ofColor::black, int _correcY = 0);
+    void drawSubTitle(string _text, ofColor _color = ofColor::black, int _correcY = 0);
     
-    void drawFullCenterLine1(string _text, ofColor _color = ofColor::black);
-    void drawFullCenterLine2(string _text, ofColor _color = ofColor::black);
+    void drawFullCenterLine1(string _text, ofColor _color = ofColor::black, int _correcY = 0);
+    void drawFullCenterLine2(string _text, ofColor _color = ofColor::black, int _correcY = 0);
+    void drawFullCenterLine3(string _text, ofColor _color = ofColor::black, int _correcY = 0);
     
-    void drawSpokenWord(string _text, ofColor _color = ofColor::black);
+    void drawSpokenWord(string _text, ofColor _color = ofColor::black, int _correcY = 0);
     
 //    scScene(playerManager &_manager);
     

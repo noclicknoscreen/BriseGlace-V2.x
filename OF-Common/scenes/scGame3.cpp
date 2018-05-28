@@ -160,7 +160,7 @@ void scGame3::draw(){
 
     
     scScene::drawTitle("Mot brassé");
-    scScene::drawSubTitle("Parlez dans l'oreille pour retourner les cubes");
+    scScene::drawSubTitle("Parlez-moi dans l'oreille pour retourner les cubes");
 
     // Draw players
     if(drawWinnerSign)
@@ -190,7 +190,7 @@ void scGame3::someoneSpoke(player & _player){
         winnerColor = _player.getColor();
         
         winnerId = _player.getNumber();
-        timerSignWin.startTimer(8);
+        timerSignWin.startTimer(5);
         drawWinnerSign = true;
 
         ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
@@ -406,20 +406,23 @@ void scGame3::timerEnd(){
 void scGame3::timerSignWinEnd(){
     
     ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) " << endl;
+    
     // --------------------------------
     timerSignWin.stop();
-    ofxSceneManager::instance()->goToScene(9);
+    ofxSceneManager::instance()->goToScene(GAME3_BIS);
+    
 }
 
 
 void scGame3::timerSignHintEnd(){
     
-    ofLogNotice() << "fin du timer timerSignHint, go to scene 9 " << endl;
+    ofLogNotice() << "fin du timer timerSignHint, go to scene 7 (HINT) " << endl;
     // --------------------------------
     timerSignHint.stop();
     mTimer.stop();
 
     ofxSceneManager::instance()->goToScene(HINT);
+    
 }
 
 

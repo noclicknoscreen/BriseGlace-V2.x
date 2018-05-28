@@ -45,7 +45,7 @@ void scGame2::draw(){ //draw scene 1 here
     ofPushStyle();
     ofPushMatrix();
     
-        myCubeManager.draw();
+        //myCubeManager.draw();
         
         ofDisableLighting();
         ofDisableDepthTest();
