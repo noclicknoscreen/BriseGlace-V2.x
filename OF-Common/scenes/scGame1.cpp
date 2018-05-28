@@ -177,13 +177,13 @@ void scGame1::timerSignWinEnd(){
     ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) " << endl;
     // --------------------------------
     timerSignWin.stop();
-    ofxSceneManager::instance()->goToScene(9);
+    ofxSceneManager::instance()->goToScene(VICTORY);
 }
 
 
 void scGame1::timerSignHintEnd(){
     
-    ofLogNotice() << "fin du timer timerSignHint, go to scene 9 " << endl;
+    ofLogNotice() << "fin du timer timerSignHint, go to scene (HINT) " << endl;
     // --------------------------------
     timerSignHint.stop();
     ofxSceneManager::instance()->goToScene(HINT);

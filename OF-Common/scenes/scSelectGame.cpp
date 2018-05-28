@@ -22,7 +22,7 @@ void scSelectGame::update(float dt){ //update scene 1 here
 
 void scSelectGame::draw(){ //draw scene 1 here
     // Draw title
-    scScene::drawTitle("Choix du jeu");
+    scScene::drawTitle("Dites le nom d'un jeu pour commencer");
     scScene::drawSpokenWord(mPlayerMessage, mPlayerColor);
     
     // Draw players

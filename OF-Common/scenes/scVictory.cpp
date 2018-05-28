@@ -26,8 +26,8 @@ void scVictory::draw(){ //draw scene 1 here
     
         // Style setup
         ofSetColor(ofColor::black);
-        scScene::drawTitle("Gagné !");
-        scScene::drawSpokenWord("Nouveau jeu dans " + mTimer.toString() + " secondes.");
+        scScene::drawSubTitle(bigEnigmaManager().getCurrentEnigma()->getSolution());
+//        scScene::drawSpokenWord("Nouveau jeu dans " + mTimer.toString() + " secondes.");
     
     ofPopStyle();
     

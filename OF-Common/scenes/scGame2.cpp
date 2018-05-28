@@ -59,6 +59,7 @@ void scGame2::draw(){ //draw scene 1 here
     
     // Draw Title
     scScene::drawTitle("Mes mots rient");
+    scScene::drawSubTitle("Prochainement dans votre gare...");
     
     // Draw players
     bigPlayerManager().draw();

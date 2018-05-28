@@ -156,6 +156,7 @@ void scGame3::draw(){
     
     // Draw title
     scScene::drawTitle("Mot brassé");
+    scScene::drawSubTitle("Parlez dans l'oreille pour retourner les cubes");
     // Draw players
     bigPlayerManager().draw();
     

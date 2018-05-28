@@ -53,15 +53,17 @@ void indice::setup(enigma* _enigme)
     
     
     //wrap text
-    myText.init(globalFontName, 16);
-    myText.setText(_enigme->getLegende());
+    myText.init(globalFontName, globalFontSizeBig);
+    myText.setText(_enigme->getTitre(HINT1));
+//    myText.wrapText(cubeSize*3);
     myText.wrapTextX(cubeSize*3);
     
     //fill fbo and put it into an image
     textFbo.begin();
     ofClear(255);
-    ofSetColor(0);
-    myText.draw(0,0);
+    //ofSetColor(0);
+    myText.setColor(0, 0, 0, 255);
+    myText.drawCenter(cubeSize * 1.5, 0);
     textFbo.end();
     
     //put fbo in an image
