@@ -27,16 +27,14 @@ void scVictory::draw(){ //draw scene 1 here
     ofPushStyle();
     ofEnableSmoothing();
     
-    // Style setup
-    ofSetColor(ofColor::black);
-    scScene::drawTitle("Gagné !");
-    scScene::drawSubTitle("Nouveau jeu dans " + mTimer.toString() + " secondes.");
-
     //CUBE + TEXTURE
     ofSetColor(255);
 
     ofEnableDepthTest();
     ofEnableNormalizedTexCoords();
+    
+    
+    ofPushMatrix();
     
     ofTranslate(ofGetWidth()/4 + 100, ofGetHeight()/3 + cubeSize/2 + 50, -cubeSize/2);
     ofRotate(15.0*sin(float(ofGetFrameNum()/100.0))+10, 0, 1, 0);
@@ -56,7 +54,7 @@ void scVictory::draw(){ //draw scene 1 here
     ofPopStyle();
     
     //TEXT
-    scScene::drawSubTitle(bigEnigmaManager().getCurrentEnigma()->getSolution());
+    scScene::drawTitle(bigEnigmaManager().getCurrentEnigma()->getSolution());
     
     winnerText.setColor(0, 0, 0, 255);
     winnerText.wrapTextX(ofGetWidth()/3);

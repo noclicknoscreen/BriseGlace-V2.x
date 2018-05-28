@@ -200,12 +200,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame3.cpp"
-            timestampString = "549215455.072866"
+            timestampString = "549215724.620885"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
-            landmarkName = "scGame3::sceneWillAppear( ofxScene * fromScreen )"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "scGame3::someoneSpoke(player &amp; _player)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -264,12 +264,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame3.cpp"
-            timestampString = "549215455.072866"
+            timestampString = "549215724.620885"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "252"
-            endingLineNumber = "252"
-            landmarkName = "scGame3::keyPressed(int key)"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
+            landmarkName = "scGame3::sceneWillAppear( ofxScene * fromScreen )"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -280,11 +280,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame3.cpp"
-            timestampString = "549215455.072866"
+            timestampString = "549215724.620885"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235">
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "scGame3::sceneWillAppear( ofxScene * fromScreen )"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -294,12 +296,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame3.cpp"
-            timestampString = "549215455.072866"
+            timestampString = "549215724.620885"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "249"
-            endingLineNumber = "249"
-            landmarkName = "scGame3::keyPressed(int key)"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
+            landmarkName = "scGame3::sceneWillAppear( ofxScene * fromScreen )"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -486,12 +488,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame3.cpp"
-            timestampString = "549215455.072866"
+            timestampString = "549215724.620885"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
-            landmarkName = "scGame3::sceneWillAppear( ofxScene * fromScreen )"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "scGame3::someoneSpoke(player &amp; _player)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -518,12 +520,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame3.cpp"
-            timestampString = "549215455.072866"
+            timestampString = "549215724.620885"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
-            landmarkName = "scGame3::sceneWillAppear( ofxScene * fromScreen )"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "scGame3::someoneSpoke(player &amp; _player)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

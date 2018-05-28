@@ -160,11 +160,8 @@ void scGame3::draw(){
 
     
     scScene::drawTitle("Mot brassé");
-<<<<<<< HEAD
     scScene::drawSubTitle("Parlez dans l'oreille pour retourner les cubes");
-=======
 
->>>>>>> ec5fdea793eb707dc12fceecd014b525b6ecd556
     // Draw players
     if(drawWinnerSign)
         bigPlayerManager().draw(winnerId, "c'est gagné");
