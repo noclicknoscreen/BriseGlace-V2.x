@@ -96,7 +96,7 @@ void inputHandler::draw()
         }
 }
 
-void inputHandler::revealTirrets(cubeManager* cm)
+void inputHandler::revealTirrets(cubeManagerHiddenWord* cm)
 {
     size_t found = wordToFind.find("-", 0);
 
@@ -107,7 +107,7 @@ void inputHandler::revealTirrets(cubeManager* cm)
 
 }
 
-int inputHandler::update(cubeManager* cm)
+int inputHandler::update(cubeManagerHiddenWord* cm)
 {
     
     bool lettersAreFading = false;

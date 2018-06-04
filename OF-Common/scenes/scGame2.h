@@ -9,7 +9,7 @@
 #pragma once
 
 #include "scScene.h"
-#include "cubeManager.h"
+#include "cubeManagerHiddenWord.h"
 
 
 class scGame2 : public scScene{
@@ -25,7 +25,7 @@ public:
     void sceneWillDisappear( ofxScene * fromScreen );
   
     //cubeManager
-    cubeManager myCubeManager;
+    cubeManagerHiddenWord myCubeManager;
     
     //gui
     ofxPanel gui;

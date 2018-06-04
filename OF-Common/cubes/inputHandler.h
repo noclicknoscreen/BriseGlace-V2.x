@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "ofMain.h"
-#include "cubeManager.h"
+#include "cubeManagerHiddenWord.h"
 #include "player.h"
 #include "ofxSceneManager.h"
 #include "utils.h"
@@ -36,7 +36,7 @@ class inputHandler
 public:
     void setup();
     void getNewText(player _player);//int _userId, string txt);
-    int update(cubeManager* cm);
+    int update(cubeManagerHiddenWord* cm);
     void draw();
     void compareInput(string wantedWord);
     void clearDuplicatesLettersHistory();
@@ -44,7 +44,7 @@ public:
     bool isReadyForNewText(){return readyForNewText;}
     void setReadyForNewText(){readyForNewText = true;}
     void setWordToFind(string _wantedWord);
-    void revealTirrets(cubeManager* cm);
+    void revealTirrets(cubeManagerHiddenWord* cm);
     
 private:
     string text;

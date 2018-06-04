@@ -159,7 +159,7 @@
 		D2CF8C2720A98E700035B780 /* ReadMe.md in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8BFC20A98E700035B780 /* ReadMe.md */; };
 		D2CF8C2820A98E700035B780 /* ofxSceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8BFF20A98E700035B780 /* ofxSceneManager.cpp */; };
 		D2CF8C2920A98E700035B780 /* cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C0220A98E700035B780 /* cube.cpp */; };
-		D2CF8C2A20A98E700035B780 /* cubeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C0420A98E700035B780 /* cubeManager.cpp */; };
+		D2CF8C2A20A98E700035B780 /* cubeManagerHiddenWord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C0420A98E700035B780 /* cubeManagerHiddenWord.cpp */; };
 		D2CF8C2B20A98E700035B780 /* inputHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C0620A98E700035B780 /* inputHandler.cpp */; };
 		D2CF8C2D20A98E700035B780 /* enigma.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C0B20A98E700035B780 /* enigma.cpp */; };
 		D2CF8C2E20A98E700035B780 /* enigmaManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C0E20A98E700035B780 /* enigmaManager.cpp */; };
@@ -613,8 +613,8 @@
 		D2CF8C0020A98E700035B780 /* ofxSceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSceneManager.h; sourceTree = "<group>"; };
 		D2CF8C0220A98E700035B780 /* cube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cube.cpp; sourceTree = "<group>"; };
 		D2CF8C0320A98E700035B780 /* cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cube.h; sourceTree = "<group>"; };
-		D2CF8C0420A98E700035B780 /* cubeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cubeManager.cpp; sourceTree = "<group>"; };
-		D2CF8C0520A98E700035B780 /* cubeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeManager.h; sourceTree = "<group>"; };
+		D2CF8C0420A98E700035B780 /* cubeManagerHiddenWord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cubeManagerHiddenWord.cpp; sourceTree = "<group>"; };
+		D2CF8C0520A98E700035B780 /* cubeManagerHiddenWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeManagerHiddenWord.h; sourceTree = "<group>"; };
 		D2CF8C0620A98E700035B780 /* inputHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inputHandler.cpp; sourceTree = "<group>"; };
 		D2CF8C0720A98E700035B780 /* inputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputHandler.h; sourceTree = "<group>"; };
 		D2CF8C0B20A98E700035B780 /* enigma.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = enigma.cpp; sourceTree = "<group>"; };
@@ -1471,8 +1471,8 @@
 			children = (
 				D2CF8C0220A98E700035B780 /* cube.cpp */,
 				D2CF8C0320A98E700035B780 /* cube.h */,
-				D2CF8C0420A98E700035B780 /* cubeManager.cpp */,
-				D2CF8C0520A98E700035B780 /* cubeManager.h */,
+				D2CF8C0420A98E700035B780 /* cubeManagerHiddenWord.cpp */,
+				D2CF8C0520A98E700035B780 /* cubeManagerHiddenWord.h */,
 				D2CF8C0620A98E700035B780 /* inputHandler.cpp */,
 				D2CF8C0720A98E700035B780 /* inputHandler.h */,
 			);
@@ -1855,7 +1855,7 @@
 				1C7256FE4F21E7B073E1F8DD /* btCollisionDispatcher.cpp in Sources */,
 				D0ACF3DF4367567B72C5CE9B /* btCollisionObject.cpp in Sources */,
 				94A6531A3844A2554EC4E014 /* btCollisionWorld.cpp in Sources */,
-				D2CF8C2A20A98E700035B780 /* cubeManager.cpp in Sources */,
+				D2CF8C2A20A98E700035B780 /* cubeManagerHiddenWord.cpp in Sources */,
 				02F291350C41DAB2424BC6C0 /* btCompoundCollisionAlgorithm.cpp in Sources */,
 				6BF1B68154E6399149E36E6A /* btCompoundCompoundCollisionAlgorithm.cpp in Sources */,
 				BF9D03A8D7ADDC7427B8E2D1 /* btConvex2dConvex2dAlgorithm.cpp in Sources */,

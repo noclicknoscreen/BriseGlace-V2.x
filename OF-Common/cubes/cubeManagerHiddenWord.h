@@ -1,13 +1,13 @@
 //
-//  cubeManager.hpp
+//  cubeManagerHiddenWord.hpp
 //  cubes
 //
 //  Created by Blindsp0t on 03/05/2018.
 //
 //
 
-#ifndef cubeManager_hpp
-#define cubeManager_hpp
+#ifndef cubeManager_MotBrasse_hpp
+#define cubeManager_MotBrasse_hpp
 
 #include <stdio.h>
 #include "ofMain.h"
@@ -18,7 +18,7 @@
 #define consignesPositionY 100
 #define espacementCubes 15
 
-class cubeManager
+class cubeManagerHiddenWord
 {
 
     public :
@@ -63,4 +63,4 @@ class cubeManager
 
 
 
-#endif /* cubeManager_hpp */
+#endif /* cubeManager_MotBrasse_hpp */

@@ -6,10 +6,10 @@
 //
 //
 
-#include "cubeManager.h"
+#include "cubeManagerHiddenWord.h"
 
 
-void cubeManager::setup()
+void cubeManagerHiddenWord::setup()
 {
     ofEnableDepthTest();
 
@@ -45,7 +45,7 @@ void cubeManager::setup()
 
 };
 
-void cubeManager::update(ofPoint _lightPos, int cubesRotationSpeed)
+void cubeManagerHiddenWord::update(ofPoint _lightPos, int cubesRotationSpeed)
 {
     spotLight.setPosition(_lightPos.x, _lightPos.y, _lightPos.z);
 
@@ -63,7 +63,7 @@ void cubeManager::update(ofPoint _lightPos, int cubesRotationSpeed)
 
 
 //--------------------------------------------------------------
-void cubeManager::draw(){
+void cubeManagerHiddenWord::draw(){
 
     ofEnableDepthTest();
     
@@ -152,7 +152,7 @@ void cubeManager::draw(){
     ofSetColor(255);
 }
 
-void cubeManager::getWord(string word)
+void cubeManagerHiddenWord::getWord(string word)
 {
     cout << "new word : " << word << endl;
     
@@ -172,22 +172,22 @@ void cubeManager::getWord(string word)
 
 
 
-void cubeManager::rotateToWhite(int i)
+void cubeManagerHiddenWord::rotateToWhite(int i)
 {
     myCubes[i].rotateToWhite();
 }
 
-void cubeManager::rotateToWood(int i)
+void cubeManagerHiddenWord::rotateToWood(int i)
 {
     myCubes[i].rotateToWood();
 }
 
-void cubeManager::rotateToLetter(int i)
+void cubeManagerHiddenWord::rotateToLetter(int i)
 {
     myCubes[i].rotateToLetter();
 }
 
-void cubeManager::colorizeCube(int cubeId, ofColor _color)
+void cubeManagerHiddenWord::colorizeCube(int cubeId, ofColor _color)
 {
     myCubes[cubeId].setMaterialColor(_color);
 }
