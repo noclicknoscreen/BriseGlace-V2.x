@@ -45,7 +45,7 @@ void scGame1::update(float dt){ //update scene 1 here
     if(id != 0)
     {
         drawWinnerSign = true;
-        winnerUserId = id;
+        bigPlayerManager().setWinnerUserId(id);
         timerSignWin.startTimer(5);
         ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
     }
@@ -78,7 +78,7 @@ void scGame1::draw(){ //draw scene 1 here
     scScene::drawSubTitle("Derrière ces " + ofToString(bigEnigmaManager().getCurrentEnigma()->getSolution().size()) + " lettres se cache un mot");
     
     if(drawWinnerSign)
-            bigPlayerManager().draw(winnerUserId, "c'est gagné");
+            bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
     else if(drawHintSign)
             bigPlayerManager().draw(hintUserId, "veux-tu un indice ?");
     else

@@ -158,6 +158,21 @@ float playerManager::getUserVolume(int id)
     
     
 }
+
+//--------------------------------------------------------------
+ofColor playerManager::getUserColor(int id)
+{
+    std::map<int, player>::iterator onePlayer = mPlayers.find(id);
+    if (onePlayer != mPlayers.end())
+    {
+        return onePlayer->second.getColor();
+    }
+    else
+        return ofColor::black;
+    
+    
+}
+
 //--------------------------------------------------------------
 float playerManager::getSumVolume()
 {
