@@ -132,6 +132,8 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
         myInputManager.clearDuplicatesLettersHistory();
         myInputManager.setReadyForNewText();
         myInputManager.setWordToFind(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
+        myInputManager.revealTirrets(&myCubeManager);
+        
     }
 
     
@@ -158,8 +160,6 @@ void scGame1::sceneWillDisappear( ofxScene * toScreen ){
 // Speaking event
 void scGame1::someoneSpoke(player & _player){
     scScene::someoneSpoke(_player);
-    
-    myInputManager.revealTirrets(&myCubeManager);
     
     if(myInputManager.isReadyForNewText())
         myInputManager.getNewText(_player);

@@ -43,7 +43,7 @@ public:
     void setRevealMode(){revealMode = true; currentRevealCube=0;}
     bool isReadyForNewText(){return readyForNewText;}
     void setReadyForNewText(){readyForNewText = true;}
-    void setWordToFind(string _wantedWord){wordToFind = _wantedWord;};
+    void setWordToFind(string _wantedWord);
     void revealTirrets(cubeManager* cm);
     
 private:

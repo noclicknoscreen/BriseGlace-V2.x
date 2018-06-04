@@ -21,6 +21,17 @@ void inputHandler::setup()
     nbCubesRotated = 0;
 }
 
+
+void inputHandler::setWordToFind(string _wantedWord){
+
+    //supression des caractères non valide (espace, tirets, accents, etc.)
+    _wantedWord.erase (std::remove (_wantedWord.begin(), _wantedWord.end(), ' '), _wantedWord.end());
+//    _wantedWord.erase (std::remove (_wantedWord.begin(), _wantedWord.end(), '-'), _wantedWord.end());
+    
+    wordToFind = _wantedWord;
+
+};
+
 void inputHandler::getNewText(player _player)
 {
     readyForNewText = false;
@@ -165,7 +176,13 @@ int inputHandler::update(cubeManager* cm)
                     ofLogNotice() << "reveal finished, ready to get another proposal from user " << endl;
                     revealMode = false;
                     readyForNewText = true;
-                    if(nbCubesRotated == wordToFind.size())
+                    
+                    // On écarte les lettres/caractères introuvables (esapces, tirets) pour ne pas bloquer le jeu
+                    string easyWordToFind = wordToFind;
+                    easyWordToFind.erase (std::remove (easyWordToFind.begin(), easyWordToFind.end(), ' '), easyWordToFind.end());
+                    easyWordToFind.erase (std::remove (easyWordToFind.begin(), easyWordToFind.end(), '-'), easyWordToFind.end());
+                    
+                    if(nbCubesRotated == easyWordToFind.size())
                     {
                         //WIN !
                         ofLogNotice() << "WIN = > return true, userId =  " << userId << endl;
@@ -179,7 +196,7 @@ int inputHandler::update(cubeManager* cm)
 
 void inputHandler::compareInput(string wantedWord)
 {
-    //supression des accents :
+    //supression des caractères non valide (espace, tirets, accents, etc.)
     wantedWord.erase (std::remove (wantedWord.begin(), wantedWord.end(), ' '), wantedWord.end());
     
     for(int i=0; i<splittedString.size(); i++)
