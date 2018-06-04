@@ -51,6 +51,7 @@ private:
     ofHttpRequest request;
     
     map<int, player> mPlayers;
+    
     map<int, ofColor> mColors;
     map<int, string> mSequencesPath;
     map<int, string> mBullesPath;

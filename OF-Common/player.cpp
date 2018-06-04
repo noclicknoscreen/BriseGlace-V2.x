@@ -14,6 +14,7 @@
 player::player(ofColor _color, string _characterSeqPath, string _bullePath){
     
     mColor = _color;
+    mIsAvailable = false;
     
     // Check the path of the sequence and do some coffee
     ofDirectory seq(_characterSeqPath);
