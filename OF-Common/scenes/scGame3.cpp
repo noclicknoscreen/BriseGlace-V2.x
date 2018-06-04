@@ -213,7 +213,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     if(fromScreen->getSceneID() != HINT){
         
         //now comes from enigma Singleton
-        bigEnigmaManager().pickNewEnigma(MOTUS);
+        bigEnigmaManager().pickNewEnigma(BOGGLE);
         wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
         cout << "setting wantedWord to : " << wantedWord << endl;
         

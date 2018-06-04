@@ -13,18 +13,18 @@ void scGame1::setup(){  //load your scene 1 assets here...
     ofLogNotice() << "Game 1 : Setup !";
     
     
-    //cubes
-    myCubeManager.setup();
-    
-    //inputs
-    myInputManager.setup();
-    
-    //word to find
-    myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
-    myInputManager.clearDuplicatesLettersHistory();
-    myInputManager.setReadyForNewText();
-    myInputManager.setWordToFind(bigEnigmaManager().getCurrentEnigma()->getSolution());
-
+//    //cubes
+//    myCubeManager.setup(0.4*ofGetHeight(), 100, 15);
+//    
+//    //inputs
+//    myInputManager.setup();
+//    
+//    //word to find
+//    myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
+//    myInputManager.clearDuplicatesLettersHistory();
+//    myInputManager.setReadyForNewText();
+//    myInputManager.setWordToFind(bigEnigmaManager().getCurrentEnigma()->getSolution());
+//
     //gui
     
     gui.setup();
@@ -122,10 +122,10 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // On ne refiat pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
         //cubes
-        myCubeManager.setup();
+        myCubeManager.setup(0.4*ofGetHeight(), 15);
         
         //inputs
-        myInputManager.setup();
+        myInputManager.setup(0.6*ofGetHeight());
         
         //TODO :: bonheur ecrit en dur => lu dans le JSON
         myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());

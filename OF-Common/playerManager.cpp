@@ -163,13 +163,13 @@ float playerManager::getUserVolume(int id)
 ofColor playerManager::getUserColor(int id)
 {
     std::map<int, player>::iterator onePlayer = mPlayers.find(id);
-    if (onePlayer != mPlayers.end())
-    {
+    if (onePlayer != mPlayers.end()){
         return onePlayer->second.getColor();
+        
+    }else{
+        return ofColor(127);
+        
     }
-    else
-        return ofColor::black;
-    
     
 }
 
@@ -216,6 +216,8 @@ ofPoint playerManager::getHistogrammPosition(int id)
 //--------------------------------------------------------------
 void playerManager::draw3Signs(string _sign1, string _sign2, string _sign3){
     
+    ofDisableDepthTest();
+    
     std::map<int, player>::iterator onePlayer;
     int border = 200;
     
@@ -231,6 +233,8 @@ void playerManager::draw3Signs(string _sign1, string _sign2, string _sign3){
 
 //--------------------------------------------------------------
 void playerManager::draw(int _userId, string _textOnSign){
+    
+    ofDisableDepthTest();
     
     std::map<int, player>::iterator onePlayer;
     int count = 0;

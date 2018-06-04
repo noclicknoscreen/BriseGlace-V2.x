@@ -18,12 +18,12 @@ void enigmaManager::update(){
     ofLogNotice() << "Update enigma manager !";
 }
 
-void enigmaManager::pickNewEnigma(gameType _type){
+void enigmaManager::pickNewEnigma(gameType _gameType){
     
     
     string path = GLOBAL_PATH;
     
-    switch (_type) {
+    switch (_gameType) {
         case MOTUS:
             path += "/motus";
             break;
@@ -52,11 +52,12 @@ void enigmaManager::pickNewEnigma(gameType _type){
             enigma newEnigma;
             if(newEnigma.load(oneFile.getAbsolutePath())){
                 mCurrentEnigma = newEnigma;
+                mCurrentGameType = _gameType;
             }
         }
         else
         {
-            pickNewEnigma(_type);
+            pickNewEnigma(_gameType);
         }
     }
     

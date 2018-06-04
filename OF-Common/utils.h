@@ -48,6 +48,15 @@ public:
         
     };
     
+    //--------------------------------------------------------------
+    static string getRndLetter(){
+        
+        string allLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        int rndIdx = (int)ofRandom(0, (float)allLetters.size());
+        
+        return ofToString(allLetters[rndIdx]);
+    };
+    
 };
 
 /* GLOBAL TIMER CLASS ----------------------------------------------

@@ -9,8 +9,11 @@
 #include "cubeManagerHiddenWord.h"
 
 
-void cubeManagerHiddenWord::setup()
+void cubeManagerHiddenWord::setup(int _cubesPositionY, int _espacementCubes)
 {
+    
+    cubeManager::setup(_cubesPositionY, _espacementCubes);
+    
     ofEnableDepthTest();
 
     ofSetBoxResolution(50);
@@ -157,14 +160,14 @@ void cubeManagerHiddenWord::getWord(string word)
     cout << "new word : " << word << endl;
     
     //compute offset between letters
-    float wordWidth = (word.size()*cubeSize) + ((word.size()+1) * espacementCubes);
+    float wordWidth = (word.size()*cubeSize) + ((word.size()+1) * mEspacementCubes);
     
     myCubes.clear();
     
     for(int i=0; i<word.size(); i++)
     {
         cube* tmpCube = new cube();
-        tmpCube->setup(ofPoint((ofGetWidth()-wordWidth)/2 + i*(espacementCubes + cubeSize) + cubeSize/2 + espacementCubes, cubesPositionY,-300), cubeSize);
+        tmpCube->setup(ofPoint((ofGetWidth()-wordWidth)/2 + i*(mEspacementCubes + cubeSize) + cubeSize/2 + mEspacementCubes, mCubesPositionY,-300), cubeSize);
         tmpCube->setLetter(utils::toUpperCase(ofToString(word[i])));
         myCubes.push_back(*tmpCube);
     }
@@ -185,11 +188,6 @@ void cubeManagerHiddenWord::rotateToWood(int i)
 void cubeManagerHiddenWord::rotateToLetter(int i)
 {
     myCubes[i].rotateToLetter();
-}
-
-void cubeManagerHiddenWord::colorizeCube(int cubeId, ofColor _color)
-{
-    myCubes[cubeId].setMaterialColor(_color);
 }
 
 

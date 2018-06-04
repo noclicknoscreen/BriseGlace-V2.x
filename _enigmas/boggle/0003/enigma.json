@@ -1,29 +1,29 @@
 {
     "jeux": "motus",
-    "mot": "Micheline",
+    "mot": "Couvent",
     "indice": [
         {
-            "titre": "Bugatti",
+            "titre": "Anish Kapoor",
             "image": "image1.jpg",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c0\/Bugatti_pr%C3%A9sidentiel%2C_Cit%C3%A9_du_train.jpg\/1280px-Bugatti_pr%C3%A9sidentiel%2C_Cit%C3%A9_du_train.jpg"
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/99\/Anish_Kapoor_at_the_Deutsche_Guggenheim_-_Berlin.jpg"
         },
         {
-            "titre": "Bibendum",
+            "titre": "Iannis Xenaki",
             "image": "image2.jpg",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/88\/Michelin_Poster_1898.jpg\/800px-Michelin_Poster_1898.jpg"
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/31\/Iannis_Xenakis_1975.jpg"
         },
         {
-            "titre": "Locomotive",
+            "titre": "Le Corbusier",
             "image": "image3.JPG",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/6e\/France_Paris_Champs_Elysees_Autorail_Picasso.JPG\/330px-France_Paris_Champs_Elysees_Autorail_Picasso.JPG"
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/23\/Le_Corbusier_1933.JPG"
         }
     ],
     "recompense": {
         "indice": {
-            "titre": "Micheline",
-            "image": "image4.JPG",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8c\/Lyon_St_Paul.JPG\/330px-Lyon_St_Paul.JPG"
+            "titre": "Couvent de La Tourette ",
+            "image": "image4.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/fr\/f\/f5\/La_tourette-_arq._Le_Corbusier.jpg"
         },
-        "legende": "0003 : La « Micheline » est un autorail rapide équipé de roues spéciales munies de pneus brevetés appelés  « pneurail ». Elle construite par la société Michelin dans les années 1935. Bugatti réalisera également de tels véhicules de luxe dès 1932."
+        "legende": "Le couvent de La Tourette est une œuvre majeure de l'architecte Le Corbusier. Les vitrages se veulent l'adaptation de son œuvre Metastasis composée par Iannis Xenaki. L'artiste plasticien Anish Kapoor fut l'invité de la dernière biennale d'art contemporain."
     }
 }

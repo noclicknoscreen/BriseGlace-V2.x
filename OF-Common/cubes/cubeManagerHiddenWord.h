@@ -6,34 +6,29 @@
 //
 //
 
-#ifndef cubeManager_MotBrasse_hpp
-#define cubeManager_MotBrasse_hpp
+#pragma once
 
 #include <stdio.h>
 #include "ofMain.h"
 #include "cube.h"
 #include "utils.h"
 
-#define cubesPositionY 0.4*ofGetHeight()
-#define consignesPositionY 100
-#define espacementCubes 15
+#include "cubeManager.h"
 
-class cubeManagerHiddenWord
+class cubeManagerHiddenWord  : public cubeManager
 {
 
     public :
     
-        void setup();
+        void setup(int _cubesPositionY, int _espacementCubes);
         void update(ofPoint _lightPos, int cubesRotationSpeed);
         void draw();
         void getWord(string word);
     
         //cubes
-        vector<cube>                myCubes;
         void rotateToWhite(int i);
         void rotateToWood(int i);
         void rotateToLetter(int i);
-        void colorizeCube(int cubeId, ofColor _color);
         int getNumberOfCubes() {return myCubes.size();}
     
     private:
@@ -60,7 +55,3 @@ class cubeManagerHiddenWord
         //backgroundImage
         ofImage background;
 };
-
-
-
-#endif /* cubeManager_MotBrasse_hpp */

@@ -9,7 +9,7 @@
 #include "inputHandler.h"
 #include <algorithm>
 
-void inputHandler::setup()
+void inputHandler::setup(int _inputTextPosition)
 {
     font.load(globalFontName, globalFontSizeMedium);
     fontBig.load(globalFontName, globalFontSizeMedium + 15);
@@ -19,6 +19,9 @@ void inputHandler::setup()
     currentRevealLetter = 0;
     
     nbCubesRotated = 0;
+    
+    mInputTextYPosition = _inputTextPosition;
+    
 }
 
 
@@ -58,7 +61,7 @@ void inputHandler::getNewText(player _player)
         elt.textColor = textColor;
         elt.sourcePos = source;
         elt.currentPos = source;
-        elt.destination = ofPoint(cumulatedOffset + ofGetWidth()/2 - font.getStringBoundingBox(text, 0, 0).getWidth(), inputTextYPosition);
+        elt.destination = ofPoint(cumulatedOffset + ofGetWidth()/2 - font.getStringBoundingBox(text, 0, 0).getWidth(), mInputTextYPosition);
         elt.destination.y += ofRandom(0.0, 15.0); //add some random so the text isn't a line block
         
         elt.alpha = 1.0;
@@ -96,7 +99,7 @@ void inputHandler::draw()
         }
 }
 
-void inputHandler::revealTirrets(cubeManagerHiddenWord* cm)
+void inputHandler::revealTirrets(cubeManager* cm)
 {
     size_t found = wordToFind.find("-", 0);
 
@@ -107,7 +110,7 @@ void inputHandler::revealTirrets(cubeManagerHiddenWord* cm)
 
 }
 
-int inputHandler::update(cubeManagerHiddenWord* cm)
+int inputHandler::update(cubeManager* cm)
 {
     
     bool lettersAreFading = false;
@@ -155,7 +158,21 @@ int inputHandler::update(cubeManagerHiddenWord* cm)
             else
             {
                 cm->colorizeCube(index, splittedString[currentRevealCube].textColor);
-                cm->myCubes[index].rotateToLetter(); //rotate the corresponding cube
+                
+                switch (bigEnigmaManager().getCurrentGameType()) {
+                    case MOTUS:
+                        cm->myCubes[index].rotateToLetter(); //rotate the corresponding cube
+                        break;
+                        
+                    case IMAGE_GRID:
+                        cm->myCubes[index].rotateToWhite(); //rotate the corresponding cube
+                        break;
+                        
+                    default:
+                        break;
+                }
+                
+//                cm->myCubes[index].rotateToLetter(); //rotate the corresponding cube
                 nbCubesRotated ++;                   //count one letter found more
                 splittedString[currentRevealCube].alpha = 0;
             }
