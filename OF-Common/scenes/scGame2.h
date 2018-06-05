@@ -9,7 +9,8 @@
 #pragma once
 
 #include "scScene.h"
-#include "cubeManager.h"
+#include "cubeManagerMemory.h"
+#include "inputHandler.h"
 
 
 class scGame2 : public scScene{
@@ -25,7 +26,12 @@ public:
     void sceneWillDisappear( ofxScene * fromScreen );
   
     //cubeManager
-    cubeManager myCubeManager;
+    cubeManagerMemory myCubeManager;
+    //inputManager
+    inputHandler myInputManager;
+    
+    // Events callback
+    void someoneSpoke(player & _player);
     
     //gui
     ofxPanel gui;

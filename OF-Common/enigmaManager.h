@@ -25,9 +25,12 @@ public:
     void pickNewEnigma(gameType _type);
     enigmaType pickHintIndex();
     enigma* getCurrentEnigma(){return &mCurrentEnigma;};
+    gameType getCurrentGameType(){return mCurrentGameType;};
+    
     
 private:
-    enigma mCurrentEnigma;
+    enigma      mCurrentEnigma;
+    gameType    mCurrentGameType;
     ofDirectory dir;
     
 public:

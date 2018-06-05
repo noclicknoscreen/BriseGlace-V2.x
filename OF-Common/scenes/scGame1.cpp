@@ -13,18 +13,18 @@ void scGame1::setup(){  //load your scene 1 assets here...
     ofLogNotice() << "Game 1 : Setup !";
     
     
-    //cubes
-    myCubeManager.setup();
-    
-    //inputs
-    myInputManager.setup();
-    
-    //word to find
-    myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
-    myInputManager.clearDuplicatesLettersHistory();
-    myInputManager.setReadyForNewText();
-    myInputManager.setWordToFind(bigEnigmaManager().getCurrentEnigma()->getSolution());
-
+//    //cubes
+//    myCubeManager.setup(0.4*ofGetHeight(), 100, 15);
+//    
+//    //inputs
+//    myInputManager.setup();
+//    
+//    //word to find
+//    myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
+//    myInputManager.clearDuplicatesLettersHistory();
+//    myInputManager.setReadyForNewText();
+//    myInputManager.setWordToFind(bigEnigmaManager().getCurrentEnigma()->getSolution());
+//
     //gui
     
     gui.setup();
@@ -46,7 +46,7 @@ void scGame1::update(float dt){ //update scene 1 here
     if(id != 0)
     {
         drawWinnerSign = true;
-        winnerUserId = id;
+        bigPlayerManager().setWinnerUserId(id);
         timerSignWin.startTimer(5);
         ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
     }
@@ -79,7 +79,7 @@ void scGame1::draw(){ //draw scene 1 here
     scScene::drawSubTitle("Derrière ces " + ofToString(bigEnigmaManager().getCurrentEnigma()->getSolution().size()) + " lettres se cache un mot");
     
     if(drawWinnerSign)
-            bigPlayerManager().draw(winnerUserId, "c'est gagné");
+            bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
     else if(drawHintSign)
             bigPlayerManager().draw(hintUserId, "veux-tu un indice ?");
     else
@@ -129,16 +129,18 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // On ne refiat pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
         //cubes
-        myCubeManager.setup();
+        myCubeManager.setup(0.4*ofGetHeight(), 15);
         
         //inputs
-        myInputManager.setup();
+        myInputManager.setup(0.6*ofGetHeight());
         
         //TODO :: bonheur ecrit en dur => lu dans le JSON
         myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
         myInputManager.clearDuplicatesLettersHistory();
         myInputManager.setReadyForNewText();
         myInputManager.setWordToFind(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
+        myInputManager.revealTirrets(&myCubeManager);
+        
     }
 
     
@@ -165,8 +167,6 @@ void scGame1::sceneWillDisappear( ofxScene * toScreen ){
 // Speaking event
 void scGame1::someoneSpoke(player & _player){
     scScene::someoneSpoke(_player);
-    
-    myInputManager.revealTirrets(&myCubeManager);
     
     if(myInputManager.isReadyForNewText())
         myInputManager.getNewText(_player);

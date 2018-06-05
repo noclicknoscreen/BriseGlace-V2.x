@@ -1,0 +1,29 @@
+{
+    "jeux": "motus",
+    "mot": "Wagon-Lit",
+    "indice": [
+        {
+            "titre": "L'Orient Express",
+            "image": "image1.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/fd\/L%27Orient_Express_vers_1930_%28c%29_wagons-lits_diffusion.jpg"
+        },
+        {
+            "titre": "Georges Nagelmackers",
+            "image": "image2.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/b\/b1\/Georges_Nagelmackers_par_Nadar.jpg"
+        },
+        {
+            "titre": "Intercités",
+            "image": "image3.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/5f\/L%27Intercit%C3%A9s_de_nuit_Paris_-_Austerlitz_Brian%C3%A7on_entre_en_gare_de_Brian%C3%A7on.jpg"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "Compagnie internationale des Wagons-lits ",
+            "image": "image4.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/4a\/CIWL-Logo-bleu.jpg"
+        },
+        "legende": "La Compagnie internationale des Wagons-lits est une entreprise française d'origine belge, fondée par Georges Nagelmackers en 1872. Intercités de nuit désigne, depuis 2012, le service de trains de nuit réguliers, proposé par la (SNCF), réalisé avec des voitures Corail."
+    }
+}

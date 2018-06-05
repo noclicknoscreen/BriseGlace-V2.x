@@ -24,7 +24,7 @@ class specialBox : public ofxBulletBox
     ofMaterial materialForFaceColor;
     
 public:
-    void customDraw(ofColor winnerColor=ofColor::white)
+    void customDraw(ofColor _winnerColor=ofColor::white)
     {
         transformGL();
         
@@ -54,12 +54,12 @@ public:
             
         
         
-        if(winnerColor != ofColor::white)
+        if(_winnerColor != ofColor::white)
         {
             ofPushMatrix();
 
-            materialForFaceColor.setAmbientColor(winnerColor);
-            materialForFaceColor.setDiffuseColor(ofColor(winnerColor, 140));
+            materialForFaceColor.setAmbientColor(_winnerColor);
+            materialForFaceColor.setDiffuseColor(ofColor(_winnerColor, 140));
             
             materialForFaceColor.begin();
             
@@ -182,11 +182,8 @@ public:
     float timer;
     
     //winner color (for game3BIS ;)
-    ofColor winnerColor;
+protected:
     bool colorizeCubes;
-    
-    int winnerId;
-
     
 };
 

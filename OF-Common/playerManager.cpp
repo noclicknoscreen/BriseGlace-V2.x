@@ -52,6 +52,11 @@ void playerManager::setup(){
     ofRegisterURLNotification(this);
     freshRestart();
     
+    // Players for FORCE DRAW (Drawing player not available
+    mPlayers[1] = player(mColors[1], mSequencesPath[1], mBullesPath[1]);
+    mPlayers[2] = player(mColors[2], mSequencesPath[2], mBullesPath[2]);
+    mPlayers[3] = player(mColors[3], mSequencesPath[3], mBullesPath[3]);
+    
 }
 
 //--------------------------------------------------------------
@@ -153,6 +158,21 @@ float playerManager::getUserVolume(int id)
     
     
 }
+
+//--------------------------------------------------------------
+ofColor playerManager::getUserColor(int id)
+{
+    std::map<int, player>::iterator onePlayer = mPlayers.find(id);
+    if (onePlayer != mPlayers.end()){
+        return onePlayer->second.getColor();
+        
+    }else{
+        return ofColor(127);
+        
+    }
+    
+}
+
 //--------------------------------------------------------------
 float playerManager::getSumVolume()
 {
@@ -196,27 +216,14 @@ ofPoint playerManager::getHistogrammPosition(int id)
 //--------------------------------------------------------------
 void playerManager::draw3Signs(string _sign1, string _sign2, string _sign3){
     
+    ofDisableDepthTest();
+    
     std::map<int, player>::iterator onePlayer;
     int border = 200;
     
-    for (onePlayer=mPlayers.begin(); onePlayer!=mPlayers.end(); ++onePlayer){
-        
-        if(onePlayer->second.getNumber() == 1)
-        {
-            // Second is value (aka player)
-            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()], true, _sign1);
-        }
-        if(onePlayer->second.getNumber() == 2)
-        {
-            // Second is value (aka player)
-            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()], true, _sign2);
-        }
-        if(onePlayer->second.getNumber() == 3)
-        {
-            // Second is value (aka player)
-            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()], true, _sign3);
-        }
-    }
+    mPlayers[1].draw(mPositions[1], mBullesPos[1], true, _sign1);
+    mPlayers[2].draw(mPositions[2], mBullesPos[2], true, _sign2);
+    mPlayers[3].draw(mPositions[3], mBullesPos[3], true, _sign3);
     
     if(drawGui){
         gui.draw();
@@ -226,6 +233,8 @@ void playerManager::draw3Signs(string _sign1, string _sign2, string _sign3){
 
 //--------------------------------------------------------------
 void playerManager::draw(int _userId, string _textOnSign){
+    
+    ofDisableDepthTest();
     
     std::map<int, player>::iterator onePlayer;
     int count = 0;

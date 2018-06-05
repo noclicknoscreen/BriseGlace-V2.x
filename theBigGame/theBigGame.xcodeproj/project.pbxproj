@@ -26,6 +26,8 @@
 		1799B0108983ED7D929BCD9F /* btGenericPoolAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63725EF9D889BFE4E2F0294 /* btGenericPoolAllocator.cpp */; };
 		193FE4A2A5663A54AAE0216E /* btTriangleIndexVertexMaterialArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F0A99F23CADF1CD337797 /* btTriangleIndexVertexMaterialArray.cpp */; };
 		19BAA929C90DC149B11A3AD3 /* btTriangleMeshShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1757BBAA5566F70632842621 /* btTriangleMeshShape.cpp */; };
+		1C3F868920C56C8B0051AFD5 /* cubeManagerMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F868720C56C8B0051AFD5 /* cubeManagerMemory.cpp */; };
+		1C3F868C20C56EA40051AFD5 /* cubeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F868A20C56EA40051AFD5 /* cubeManager.cpp */; };
 		1C7256FE4F21E7B073E1F8DD /* btCollisionDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40B11FBD19D1B23E3C016C9C /* btCollisionDispatcher.cpp */; };
 		1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 907C5B5E104864A2D3A25745 /* ofxToggle.cpp */; };
 		1D209B4E4AAA703227570B0C /* btStridingMeshInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44DDA80A5BBA576BFF4A11F2 /* btStridingMeshInterface.cpp */; };
@@ -159,7 +161,7 @@
 		D2CF8C2720A98E700035B780 /* ReadMe.md in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8BFC20A98E700035B780 /* ReadMe.md */; };
 		D2CF8C2820A98E700035B780 /* ofxSceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8BFF20A98E700035B780 /* ofxSceneManager.cpp */; };
 		D2CF8C2920A98E700035B780 /* cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C0220A98E700035B780 /* cube.cpp */; };
-		D2CF8C2A20A98E700035B780 /* cubeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C0420A98E700035B780 /* cubeManager.cpp */; };
+		D2CF8C2A20A98E700035B780 /* cubeManagerHiddenWord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C0420A98E700035B780 /* cubeManagerHiddenWord.cpp */; };
 		D2CF8C2B20A98E700035B780 /* inputHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C0620A98E700035B780 /* inputHandler.cpp */; };
 		D2CF8C2D20A98E700035B780 /* enigma.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C0B20A98E700035B780 /* enigma.cpp */; };
 		D2CF8C2E20A98E700035B780 /* enigmaManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C0E20A98E700035B780 /* enigmaManager.cpp */; };
@@ -282,6 +284,10 @@
 		1BB921E66522A452136448B9 /* gim_hash_table.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gim_hash_table.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletCollision/Gimpact/gim_hash_table.h; sourceTree = SOURCE_ROOT; };
 		1C0DA2561397A7DE0246858B /* ofxGuiGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGuiGroup.h; path = ../../../addons/ofxGui/src/ofxGuiGroup.h; sourceTree = SOURCE_ROOT; };
 		1C1EBDD4DC4C7294AB44D266 /* btConvexHull.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btConvexHull.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/LinearMath/btConvexHull.h; sourceTree = SOURCE_ROOT; };
+		1C3F868720C56C8B0051AFD5 /* cubeManagerMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cubeManagerMemory.cpp; sourceTree = "<group>"; };
+		1C3F868820C56C8B0051AFD5 /* cubeManagerMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeManagerMemory.h; sourceTree = "<group>"; };
+		1C3F868A20C56EA40051AFD5 /* cubeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cubeManager.cpp; sourceTree = "<group>"; };
+		1C3F868B20C56EA40051AFD5 /* cubeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeManager.h; sourceTree = "<group>"; };
 		1C8F0A99F23CADF1CD337797 /* btTriangleIndexVertexMaterialArray.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = btTriangleIndexVertexMaterialArray.cpp; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletCollision/CollisionShapes/btTriangleIndexVertexMaterialArray.cpp; sourceTree = SOURCE_ROOT; };
 		1C9438A04E33C2101C05E3D9 /* vecidx_aos.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = vecidx_aos.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/vectormath/sse/vecidx_aos.h; sourceTree = SOURCE_ROOT; };
 		1C9E4AC6CF4626BA74F7E994 /* ofxAnimatableFloat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAnimatableFloat.cpp; path = ../../../addons/ofxAnimatable/src/ofxAnimatableFloat.cpp; sourceTree = SOURCE_ROOT; };
@@ -613,8 +619,8 @@
 		D2CF8C0020A98E700035B780 /* ofxSceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSceneManager.h; sourceTree = "<group>"; };
 		D2CF8C0220A98E700035B780 /* cube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cube.cpp; sourceTree = "<group>"; };
 		D2CF8C0320A98E700035B780 /* cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cube.h; sourceTree = "<group>"; };
-		D2CF8C0420A98E700035B780 /* cubeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cubeManager.cpp; sourceTree = "<group>"; };
-		D2CF8C0520A98E700035B780 /* cubeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeManager.h; sourceTree = "<group>"; };
+		D2CF8C0420A98E700035B780 /* cubeManagerHiddenWord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cubeManagerHiddenWord.cpp; sourceTree = "<group>"; };
+		D2CF8C0520A98E700035B780 /* cubeManagerHiddenWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeManagerHiddenWord.h; sourceTree = "<group>"; };
 		D2CF8C0620A98E700035B780 /* inputHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inputHandler.cpp; sourceTree = "<group>"; };
 		D2CF8C0720A98E700035B780 /* inputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputHandler.h; sourceTree = "<group>"; };
 		D2CF8C0B20A98E700035B780 /* enigma.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = enigma.cpp; sourceTree = "<group>"; };
@@ -1469,12 +1475,16 @@
 		D2CF8C0120A98E700035B780 /* cubes */ = {
 			isa = PBXGroup;
 			children = (
-				D2CF8C0220A98E700035B780 /* cube.cpp */,
-				D2CF8C0320A98E700035B780 /* cube.h */,
-				D2CF8C0420A98E700035B780 /* cubeManager.cpp */,
-				D2CF8C0520A98E700035B780 /* cubeManager.h */,
 				D2CF8C0620A98E700035B780 /* inputHandler.cpp */,
 				D2CF8C0720A98E700035B780 /* inputHandler.h */,
+				D2CF8C0220A98E700035B780 /* cube.cpp */,
+				D2CF8C0320A98E700035B780 /* cube.h */,
+				1C3F868A20C56EA40051AFD5 /* cubeManager.cpp */,
+				1C3F868B20C56EA40051AFD5 /* cubeManager.h */,
+				1C3F868720C56C8B0051AFD5 /* cubeManagerMemory.cpp */,
+				1C3F868820C56C8B0051AFD5 /* cubeManagerMemory.h */,
+				D2CF8C0420A98E700035B780 /* cubeManagerHiddenWord.cpp */,
+				D2CF8C0520A98E700035B780 /* cubeManagerHiddenWord.h */,
 			);
 			path = cubes;
 			sourceTree = "<group>";
@@ -1843,6 +1853,7 @@
 				32FEA744CD4CCCA656A89F7C /* btCollisionAlgorithm.cpp in Sources */,
 				CCEAE4C8DC718ABBA8889AFC /* btDbvt.cpp in Sources */,
 				A6C06E9FD6A3797307495948 /* btDbvtBroadphase.cpp in Sources */,
+				1C3F868C20C56EA40051AFD5 /* cubeManager.cpp in Sources */,
 				36BBEA581081D7DD198EB5B7 /* btDispatcher.cpp in Sources */,
 				D596B4C0EA4546DB259B3326 /* btMultiSapBroadphase.cpp in Sources */,
 				485955BD55348C9945648A84 /* btOverlappingPairCache.cpp in Sources */,
@@ -1855,7 +1866,7 @@
 				1C7256FE4F21E7B073E1F8DD /* btCollisionDispatcher.cpp in Sources */,
 				D0ACF3DF4367567B72C5CE9B /* btCollisionObject.cpp in Sources */,
 				94A6531A3844A2554EC4E014 /* btCollisionWorld.cpp in Sources */,
-				D2CF8C2A20A98E700035B780 /* cubeManager.cpp in Sources */,
+				D2CF8C2A20A98E700035B780 /* cubeManagerHiddenWord.cpp in Sources */,
 				02F291350C41DAB2424BC6C0 /* btCompoundCollisionAlgorithm.cpp in Sources */,
 				6BF1B68154E6399149E36E6A /* btCompoundCompoundCollisionAlgorithm.cpp in Sources */,
 				BF9D03A8D7ADDC7427B8E2D1 /* btConvex2dConvex2dAlgorithm.cpp in Sources */,
@@ -2004,6 +2015,7 @@
 				837220E80EB56CD44AD27F2A /* ofxSlider.cpp in Sources */,
 				B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */,
 				1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */,
+				1C3F868920C56C8B0051AFD5 /* cubeManagerMemory.cpp in Sources */,
 				BEDFEE7400C58EA4E412B757 /* ofxJSONElement.cpp in Sources */,
 				FB84AAF8D1B7A95266DB5C09 /* jsoncpp.cpp in Sources */,
 				263D043F32BCC3BB077BB351 /* ofxScreenCurtain.cpp in Sources */,

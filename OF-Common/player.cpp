@@ -14,6 +14,7 @@
 player::player(ofColor _color, string _characterSeqPath, string _bullePath){
     
     mColor = _color;
+    mIsAvailable = false;
     
     // Check the path of the sequence and do some coffee
     ofDirectory seq(_characterSeqPath);
@@ -169,8 +170,9 @@ void player::draw(ofVec2f _pos, ofPoint _bulleCorrection, bool drawSign, string 
     //DRAW SIGN IF NEEDED
     if(drawSign)
     {
-        signText.setText(textToDisplay);
-        signText.wrapTextArea(0.5*signImage.getWidth(), 0.5*signImage.getHeight());
+        signText.setText(utils::toUpperCase(textToDisplay));
+//        signText.wrapTextArea(0.35*signImage.getWidth(), 0.7*signImage.getHeight());
+        signText.wrapTextX(0.5*signImage.getWidth());
         
         ofDisableNormalizedTexCoords();
         

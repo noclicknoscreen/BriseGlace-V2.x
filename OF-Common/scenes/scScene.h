@@ -61,7 +61,6 @@ protected:
     timer timerSignHint;
     ///////////// SIGNS ////////////////////
     bool drawWinnerSign, drawHintSign;
-    int winnerUserId;
     int hintUserId;
     
 };

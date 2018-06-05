@@ -36,7 +36,8 @@ public:
     
     int getNumberOfPlayers(){return mPlayers.size();}
     int getRandomPlayer();
-
+    
+    ofColor getUserColor(int _userId);
     
     void urlResponse(ofHttpResponse & response);
     
@@ -51,6 +52,7 @@ private:
     ofHttpRequest request;
     
     map<int, player> mPlayers;
+    
     map<int, ofColor> mColors;
     map<int, string> mSequencesPath;
     map<int, string> mBullesPath;
@@ -77,6 +79,13 @@ public:
         static playerManager myPlayerManager;
         return myPlayerManager;
     }
+    
+// Winner system
+private:
+    int mWinnerUserId;
+public:
+    void setWinnerUserId(int _id){mWinnerUserId = _id;};
+    int getWinnerUserId(){return mWinnerUserId;};
     
 };
 

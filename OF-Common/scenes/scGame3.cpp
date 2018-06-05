@@ -164,7 +164,7 @@ void scGame3::draw(){
 
     // Draw players
     if(drawWinnerSign)
-        bigPlayerManager().draw(winnerId, "c'est gagné");
+        bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
     else if(drawHintSign)
         bigPlayerManager().draw(hintUserId, "veux-tu un indice?");
     else
@@ -187,9 +187,7 @@ void scGame3::someoneSpoke(player & _player){
     if(index != std::string::npos)
     {
         ofLogNotice() << "c'est gagné !!! " << endl;
-        winnerColor = _player.getColor();
-        
-        winnerId = _player.getNumber();
+        bigPlayerManager().setWinnerUserId(_player.getNumber());
         timerSignWin.startTimer(5);
         drawWinnerSign = true;
 
@@ -215,7 +213,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     if(fromScreen->getSceneID() != HINT){
         
         //now comes from enigma Singleton
-        bigEnigmaManager().pickNewEnigma(MOTUS);
+        bigEnigmaManager().pickNewEnigma(BOGGLE);
         wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
         cout << "setting wantedWord to : " << wantedWord << endl;
         
@@ -251,7 +249,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     ofAddListener(timerSignWin.timerEnd,    this,&scGame3::timerSignWinEnd);
     ofAddListener(timerSignHint.timerEnd,   this,&scGame3::timerSignHintEnd);
     
-    winnerId = 0;
+    bigPlayerManager().setWinnerUserId(0);
     
     mTimer.startTimer(45);
     

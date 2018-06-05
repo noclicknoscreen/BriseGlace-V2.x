@@ -116,7 +116,8 @@ public:
         material.begin();
         for(int i=0; i<myCubes.size(); i++)
         {
-            myCubes[i]->customDraw(winnerColor);
+            myCubes[i]->customDraw(bigPlayerManager().getUserColor(bigPlayerManager().getWinnerUserId()));
+//            myCubes[i]->customDraw(ofColor::blueSteel);
         }
         material.end();
         ofDisableLighting();

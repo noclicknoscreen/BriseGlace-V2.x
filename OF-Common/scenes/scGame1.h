@@ -10,7 +10,7 @@
 
 #include "scScene.h"
 
-#include "cubeManager.h"
+#include "cubeManagerHiddenWord.h"
 #include "ofxGui.h"
 #include "inputHandler.h"
 
@@ -42,7 +42,7 @@ public:
     bool bDrawGui;
     
     //cubeManager
-    cubeManager myCubeManager;
+    cubeManagerHiddenWord myCubeManager;
     
     //inputManager
     inputHandler myInputManager;
