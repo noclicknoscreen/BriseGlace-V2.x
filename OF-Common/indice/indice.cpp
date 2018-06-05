@@ -112,7 +112,7 @@ void indice::update()
         }
     }
     
-    //update cubes
+    // update cubes
     for(int i=0; i<myCubes.size(); i++)
     {
         myCubes[i].update(5);
@@ -129,6 +129,7 @@ void indice::update()
 void indice::draw()
 {
     ofEnableLighting();
+    ofSetSmoothLighting(true);
     spotLight.enable();
     
     materialColor.setHue(0);

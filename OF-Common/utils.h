@@ -124,6 +124,10 @@ public:
         mTimer.reset(1.0f);
         started = false;
     }
+    
+    bool isAnimating(){
+        return mTimer.isAnimating();
+    }
 };
 
 #endif /* utils_h */

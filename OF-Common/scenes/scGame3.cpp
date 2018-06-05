@@ -114,6 +114,7 @@ void scGame3::draw(){
     ofSetBackgroundColor(255);
     
     ofEnableLighting();
+    ofSetSmoothLighting(true);
     spotLight.enable();
 
     material.setAmbientColor(materialColor);
@@ -186,7 +187,7 @@ void scGame3::someoneSpoke(player & _player){
     std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord));
     if(index != std::string::npos)
     {
-        ofLogNotice() << "c'est gagné !!! " << endl;
+        ofLogNotice() << "c'est gagné !!! ";
         bigPlayerManager().setWinnerUserId(_player.getNumber());
         timerSignWin.startTimer(5);
         drawWinnerSign = true;
@@ -195,7 +196,6 @@ void scGame3::someoneSpoke(player & _player){
 
         //ofxSceneManager::instance()->goToScene(7, true, false);
     }
-    
 }
 
 //--------------------------------------------------------------
@@ -215,7 +215,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
         //now comes from enigma Singleton
         bigEnigmaManager().pickNewEnigma(BOGGLE);
         wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
-        cout << "setting wantedWord to : " << wantedWord << endl;
+        ofLogNotice() << "setting wantedWord to : " << wantedWord;
         
         
         //clean potentially previous session
@@ -403,7 +403,7 @@ void scGame3::timerEnd(){
 
 void scGame3::timerSignWinEnd(){
     
-    ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) " << endl;
+    ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) ";
     
     // --------------------------------
     timerSignWin.stop();
@@ -414,7 +414,7 @@ void scGame3::timerSignWinEnd(){
 
 void scGame3::timerSignHintEnd(){
     
-    ofLogNotice() << "fin du timer timerSignHint, go to scene 7 (HINT) " << endl;
+    ofLogNotice() << "fin du timer timerSignHint, go to scene 7 (HINT) ";
     // --------------------------------
     timerSignHint.stop();
     mTimer.stop();

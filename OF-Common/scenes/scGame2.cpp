@@ -29,30 +29,34 @@ void scGame2::setup(){
 void scGame2::update(float dt){
     // Cube update
     myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), cubesRotationSpeed);
-    // Input word (who wins)
-    int id = myInputManager.update(&myCubeManager);
+    
+    if(bigPlayerManager().getWinnerUserId() == 0){
+        // Input word (who wins)
+        myInputManager.update(&myCubeManager);
+    }
+    
+    // Update timers
+    mTimer.update(dt);
+    timerSignHint.update(dt);
+    
+//    // We update if the input manager is ok with it, even if we win before the end of animations
+//    if(myInputManager.isReadyForNewText()){
+        timerSignWin.update(dt);
+//    }
+    
+    // update a timer for post animation
+    mTimerAfterText.update(dt);
     
     mTimer.update(dt);
     
 };
 
 void scGame2::draw(){ //draw scene 1 here
-    
-//    // Draw cubes
-//    ofPushStyle();
-//    ofPushMatrix();
-//    
-//        //myCubeManager.draw();
-//        
-//        ofDisableLighting();
-//        ofDisableDepthTest();
-//        ofSetColor(255);
-//        //GUI
-//        if(bDrawGui)
-//            gui.draw();
-//    
-//    ofPopStyle();
-//    ofPopMatrix();
+
+    //GUI
+    if(bDrawGui){
+        gui.draw();
+    }
     
     // Draw Title
     scScene::drawTitle("Mes mots rient");
@@ -66,10 +70,12 @@ void scGame2::draw(){ //draw scene 1 here
     // Draw players
     bigPlayerManager().draw();
     
-    //GUI
-    if(bDrawGui){
-        gui.draw();
-    }
+    if(drawWinnerSign)
+        bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
+    else if(drawHintSign)
+        bigPlayerManager().draw(hintUserId, "veux-tu un indice ?");
+    else
+        bigPlayerManager().draw();    // Draw players
     
 };
 
@@ -78,8 +84,14 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
     
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
+    
     // Player manager events
-    ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame2::someoneSpoke);
+    ofAddListener(bigPlayerManager().someoneSpoke,  this,&scGame2::someoneSpoke);
+    ofAddListener(mTimer.timerEnd,                  this,&scGame2::timerEnd);
+    ofAddListener(timerSignWin.timerEnd,            this,&scGame2::timerSignWinEnd);
+    ofAddListener(timerSignHint.timerEnd,           this,&scGame2::timerSignHintEnd);
+    ofAddListener(mTimerAfterText.timerEnd,         this,&scGame2::timerAfterTextEnd);
+    ofAddListener(myInputManager.readyForNewText,   this,&scGame2::readyForNewText);
     
     // Erase all words of every one
     bigPlayerManager().freshRestart();
@@ -96,7 +108,7 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
         
         myInputManager.clearDuplicatesLettersHistory();
         myInputManager.setReadyForNewText();
-        myInputManager.setWordToFind(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
+        myInputManager.setMysteryString(myCubeManager.getContent());
         myInputManager.revealTirrets(&myCubeManager);
         
     }
@@ -117,7 +129,11 @@ void scGame2::timerEnd(){
 void scGame2::sceneWillDisappear( ofxScene * toScreen ){
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,   this,&scGame2::someoneSpoke);
-    
+    ofRemoveListener(mTimer.timerEnd,                   this,&scGame2::timerEnd);
+    ofRemoveListener(timerSignWin.timerEnd,             this,&scGame2::timerSignWinEnd);
+    ofRemoveListener(timerSignHint.timerEnd,            this,&scGame2::timerSignHintEnd);
+    ofRemoveListener(mTimerAfterText.timerEnd,          this,&scGame2::timerAfterTextEnd);
+    ofRemoveListener(myInputManager.readyForNewText,    this,&scGame2::readyForNewText);
 }
 
 // Events callback -----------------------------------
@@ -131,4 +147,56 @@ void scGame2::someoneSpoke(player & _player){
     
     mTimer.startTimer(45);
     
+    int compare = ofStringTimesInString(utils::toUpperCase(_player.getLastMessage()), utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
+    if(compare > 0)
+    {
+        ofLogNotice() << "We have a winner [" << _player.getLastMessage() << "] = [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
+        bigPlayerManager().setWinnerUserId(_player.getNumber());
+        myCubeManager.rotateAllToWhite();
+        timerSignWin.startTimer(5);
+        drawWinnerSign = true;
+    }else{
+        ofLogNotice() << "Final comparaison failed [" << _player.getLastMessage() << "] different from [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
+    }
+    
+}
+
+void scGame2::timerEnd(){
+    // --------------------------------
+    drawHintSign = true;
+    hintUserId = bigPlayerManager().getRandomPlayer();
+    mTimer.startTimer(45);
+    timerSignHint.startTimer(5);
+}
+
+void scGame2::timerSignWinEnd(){
+    
+    ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN)";
+    // --------------------------------
+    timerSignWin.stop();
+    ofxSceneManager::instance()->goToScene(VICTORY);
+}
+
+
+void scGame2::timerSignHintEnd(){
+    
+    ofLogNotice() << "fin du timer timerSignHint, go to scene (HINT)";
+    // --------------------------------
+    timerSignHint.stop();
+    ofxSceneManager::instance()->goToScene(HINT);
+}
+
+void scGame2::timerAfterTextEnd(){
+    
+    ofLogNotice() << "fin du timer after text, roll back cubes";
+    // --------------------------------
+    myCubeManager.rotateAllToLetter();
+    mTimerAfterText.stop();
+}
+
+void scGame2::readyForNewText(){
+    
+    ofLogNotice() << "Ready for a new entry, roll back in one second";
+    // --------------------------------
+    mTimerAfterText.startTimer(1);
 }

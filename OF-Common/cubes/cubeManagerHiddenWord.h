@@ -17,41 +17,35 @@
 
 class cubeManagerHiddenWord  : public cubeManager
 {
-
+    
     public :
     
-        void setup(int _cubesPositionY, int _espacementCubes);
-        void update(ofPoint _lightPos, int cubesRotationSpeed);
-        void draw();
-        void getWord(string word);
+    void setup(int _cubesPositionY, int _espacementCubes);
+    void update(ofPoint _lightPos, int cubesRotationSpeed);
+    void draw();
+    void getWord(string word);
     
-        //cubes
-        void rotateToWhite(int i);
-        void rotateToWood(int i);
-        void rotateToLetter(int i);
-        int getNumberOfCubes() {return myCubes.size();}
+    int getNumberOfCubes() {return myCubes.size();}
     
-    private:
+private:
     
-        //lumiere    
-        ofLight spotLight;
-        ofColor lightColor;
-        ofColor materialColor;
-        ofMaterial material;
+    //lumiere
+    ofLight spotLight;
+    ofColor lightColor;
+    ofColor materialColor;
+    ofMaterial material;
     
-        //police de caracteres
-        ofTrueTypeFont              font;
-        
-        //texture
-        ofImage                     texture;
+    //police de caracteres
+    ofTrueTypeFont              font;
     
-        //cubes size
-        float                       cubeSize;
+    //texture
+    ofImage                     texture;
     
-        //consigne
-        string consigne;
-        float consigneWidth;
+    //cubes size
+    float                       cubeSize;
     
-        //backgroundImage
-        ofImage background;
+    //consigne
+    string consigne;
+    float consigneWidth;
+
 };

@@ -6,12 +6,12 @@
 //
 //
 
-#ifndef inputHandler_hpp
-#define inputHandler_hpp
+#pragma once
 
 #include <stdio.h>
 #include "ofMain.h"
 #include "ofxSceneManager.h"
+#include "ofEvent.h"
 
 #include "player.h"
 #include "cubeManagerHiddenWord.h"
@@ -35,34 +35,36 @@ typedef struct
 class inputHandler
 {
 public:
-    void setup(int _inputTextPosition);
-    void getNewText(player _player);//int _userId, string txt);
-    int update(cubeManager* cm);
-    void draw();
-    void compareInput(string wantedWord);
-    void clearDuplicatesLettersHistory();
-    void setRevealMode(){revealMode = true; currentRevealCube=0;}
-    bool isReadyForNewText(){return readyForNewText;}
-    void setReadyForNewText(){readyForNewText = true;}
-    void setWordToFind(string _wantedWord);
-    void revealTirrets(cubeManager* cm);
+    void    setup(int _inputTextPosition);
+    void    getNewText(player _player);//int _userId, string txt);
+    int     update(cubeManager* cm);
+    void    draw();
+    void    clearDuplicatesLettersHistory();
+    void    setRevealMode(){revealMode = true; currentRevealCube=0;}
+    bool    isReadyForNewText(){return mReadyForNewText;}
+    void    setReadyForNewText(){mReadyForNewText = true;}
+    void    revealTirrets(cubeManager* cm);
+    
+    // no root implementation
+    virtual void    compareInput(string wantedWord) = 0;
+    
+    ofEvent<void> readyForNewText;
     
 private:
     string text;
     ofTrueTypeFont font, fontBig;
-    vector<letterElement> splittedString;
     int userId;
-    vector<string> duplicatesLetters;
     
     int currentRevealLetter, currentRevealCube;
     bool revealMode;
-    bool readyForNewText;
-    
-    string wordToFind;
+    bool mReadyForNewText;
     int nbCubesRotated;
     
     int mInputTextYPosition;
     
+protected:
+    string wordToFind;
+    vector<letterElement> splittedString;
+    vector<string> duplicatesLetters;
+    
 };
-
-#endif /* inputHandler_hpp */

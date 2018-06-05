@@ -24,22 +24,11 @@ void inputHandler::setup(int _inputTextPosition)
     
 }
 
-
-void inputHandler::setWordToFind(string _wantedWord){
-
-    //supression des caractères non valide (espace, tirets, accents, etc.)
-    _wantedWord.erase (std::remove (_wantedWord.begin(), _wantedWord.end(), ' '), _wantedWord.end());
-//    _wantedWord.erase (std::remove (_wantedWord.begin(), _wantedWord.end(), '-'), _wantedWord.end());
-    
-    wordToFind = _wantedWord;
-
-};
-
 void inputHandler::getNewText(player _player)
 {
-    readyForNewText = false;
+    mReadyForNewText = false;
     
-    ofLogNotice() << "got new input from user " << userId << " : " << _player.getLastMessageToCompare() << endl;
+    ofLogNotice() << "got new input from user " << userId << " : " << _player.getLastMessageToCompare();
     
     text = utils::toUpperCase(_player.getLastMessageToCompare());
 
@@ -71,10 +60,6 @@ void inputHandler::getNewText(player _player)
         splittedString.push_back(elt);
     }
     
-    
-    //GET THE WANTED WORD FROM THE ENIGMA SINGLETON
-    compareInput(wordToFind);
-    setRevealMode();
     
 }
 
@@ -190,9 +175,11 @@ int inputHandler::update(cubeManager* cm)
                 }
                 else
                 {
-                    ofLogNotice() << "reveal finished, ready to get another proposal from user " << endl;
+                    ofLogNotice() << "reveal finished, ready to get another proposal from user ";
                     revealMode = false;
-                    readyForNewText = true;
+                    mReadyForNewText = true;
+                    
+                    ofNotifyEvent(readyForNewText, this);
                     
                     // On écarte les lettres/caractères introuvables (esapces, tirets) pour ne pas bloquer le jeu
                     string easyWordToFind = wordToFind;
@@ -202,7 +189,7 @@ int inputHandler::update(cubeManager* cm)
                     if(nbCubesRotated == easyWordToFind.size())
                     {
                         //WIN !
-                        ofLogNotice() << "WIN = > return true, userId =  " << userId << endl;
+                        ofLogNotice() << "WIN = > return true, userId =  " << userId;
                         return userId;
                     }
                 }
@@ -211,44 +198,6 @@ int inputHandler::update(cubeManager* cm)
     return 0;
 }
 
-void inputHandler::compareInput(string wantedWord)
-{
-    //supression des caractères non valide (espace, tirets, accents, etc.)
-    wantedWord.erase (std::remove (wantedWord.begin(), wantedWord.end(), ' '), wantedWord.end());
-    
-    for(int i=0; i<splittedString.size(); i++)
-    {
-        size_t found = wantedWord.find(splittedString[i].letter, 0);
-        ofLogNotice() << "compare this letter : " << splittedString[i].letter << endl;
-        if(found==string::npos)
-        {
-            splittedString[i].alpha = 0;
-            ofLogNotice() << "not found => alpha=0" << endl;
-        }
-        
-        while (found!=string::npos)
-        {
-            
-            if(std::find(duplicatesLetters.begin(), duplicatesLetters.end(), splittedString[i].letter) != duplicatesLetters.end())
-            {
-                splittedString[i].alpha = 0;
-                ofLogNotice() << "found DUPLICATE => alpha=0" << endl;
-            }
-            else
-            {
-                splittedString[i].alpha = 1.0;
-                splittedString[i].correspondingCubes.push_back((int)found);
-                ofLogNotice() << "found correspondance => alpha=1.0" << endl;
-                
-            }
-            found = wantedWord.find(splittedString[i].letter, found+1);
-        }
-        ofLogNotice() << "add to duplicates list " << endl;
-        duplicatesLetters.push_back(splittedString[i].letter);
-
-    }
-
-}
 
 
 void inputHandler::clearDuplicatesLettersHistory()

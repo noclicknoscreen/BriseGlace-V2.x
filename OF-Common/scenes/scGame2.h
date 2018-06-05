@@ -10,7 +10,7 @@
 
 #include "scScene.h"
 #include "cubeManagerMemory.h"
-#include "inputHandler.h"
+#include "inputHandlerMemory.h"
 
 
 class scGame2 : public scScene{
@@ -28,7 +28,7 @@ public:
     //cubeManager
     cubeManagerMemory myCubeManager;
     //inputManager
-    inputHandler myInputManager;
+    inputHandlerMemory myInputManager;
     
     // Events callback
     void someoneSpoke(player & _player);
@@ -38,6 +38,16 @@ public:
     ofParameter<float> lightPosX, lightPosY, lightPosZ;
     ofParameter<int> cubesRotationSpeed;
     bool bDrawGui;
+    
+    ///////////// TIMER, EVENTS /////////////////////
+private:
+    timer mTimerAfterText;
+
+    void timerEnd();
+    void timerSignWinEnd();
+    void timerSignHintEnd();
+    void timerAfterTextEnd();
+    void readyForNewText();
 
     void timerEnd();
     

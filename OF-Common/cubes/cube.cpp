@@ -45,45 +45,56 @@ void cube::update(int rotationSpeed)
 
 void cube::rotateToWhite()
 {
-    isRotating = true;
+    if(isRotating == false){
+        
+        isRotating = true;
+        
+        if(int(currentRot)%360 == 0) //white
+            desiredRot += 0;
+        
+        if(int(currentRot)%360 == 90) //wood
+            desiredRot += 270;
+        
+        if(int(currentRot)%360 == 180) //letter
+            desiredRot += 180;
+    }
     
-    if(int(currentRot)%360 == 0) //white
-        desiredRot += 0;
-    
-    if(int(currentRot)%360 == 90) //wood
-        desiredRot += 270;
-    
-    if(int(currentRot)%360 == 180) //letter
-        desiredRot += 180;
 };//0
 
 
 void cube::rotateToWood()
 {
-    isRotating = true;
     
-    if(int(currentRot)%360 == 0) //white
-        desiredRot += 90;
-    
-    if(int(currentRot)%360 == 90) //wood
-        desiredRot += 0;
-    
-    if(int(currentRot)%360 == 180) //letter
-        desiredRot += 270;
+    if(isRotating == false){
+        
+        isRotating = true;
+        
+        if(int(currentRot)%360 == 0) //white
+            desiredRot += 90;
+        
+        if(int(currentRot)%360 == 90) //wood
+            desiredRot += 0;
+        
+        if(int(currentRot)%360 == 180) //letter
+            desiredRot += 270;
+    }
 };
 
 void cube::rotateToLetter()
 {
-    isRotating = true;
-    
-    if(int(currentRot)%360 == 0) //white
-        desiredRot += 180;
-    
-    if(int(currentRot)%360 == 90) //wood
-        desiredRot += 90;
-    
-    if(int(currentRot)%360 == 180) //letter
-        desiredRot += 0;
+    if(isRotating == false){
+        
+        isRotating = true;
+        
+        if(int(currentRot)%360 == 0) //white
+            desiredRot += 180;
+        
+        if(int(currentRot)%360 == 90) //wood
+            desiredRot += 90;
+        
+        if(int(currentRot)%360 == 180) //letter
+            desiredRot += 0;
+    }
 };
 
 void cube::setLetter(string _letter)

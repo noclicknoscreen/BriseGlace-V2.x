@@ -94,6 +94,7 @@ public:
         ofSetBackgroundColor(255);
         
         ofEnableLighting();
+        ofSetSmoothLighting(true);
         spotLight.enable();
         
         material.setAmbientColor(materialColor);

@@ -43,9 +43,6 @@ void cubeManagerHiddenWord::setup(int _cubesPositionY, int _espacementCubes)
     
     cubeSize = 150;
     
-    //load background
-    background.load("Decor_MurEtSol.png");
-
 };
 
 void cubeManagerHiddenWord::update(ofPoint _lightPos, int cubesRotationSpeed)
@@ -70,17 +67,18 @@ void cubeManagerHiddenWord::draw(){
 
     ofEnableDepthTest();
     
-    //draw du background
-    ofSetColor(255);
-    ofPushMatrix();
-        ofTranslate(0,0,-200);
-        background.bind();
-        ofDrawBox(ofGetWidth()/2, ofGetHeight()/2, 0, ofGetWidth()*1.3, ofGetHeight()*1.3, 1);
-        background.unbind();
-    ofPopMatrix();
+//    //draw du background
+//    ofSetColor(255);
+//    ofPushMatrix();
+//        ofTranslate(0,0,-200);
+//        background.bind();
+//        ofDrawBox(ofGetWidth()/2, ofGetHeight()/2, 0, ofGetWidth()*1.3, ofGetHeight()*1.3, 1);
+//        background.unbind();
+//    ofPopMatrix();
     
 
     ofEnableLighting();
+    ofSetSmoothLighting(true);
     spotLight.enable();
     
     for(int i=0; i<myCubes.size(); i++)
@@ -157,7 +155,7 @@ void cubeManagerHiddenWord::draw(){
 
 void cubeManagerHiddenWord::getWord(string word)
 {
-    cout << "new word : " << word << endl;
+    ofLogNotice() << "new word : " << word;
     
     //compute offset between letters
     float wordWidth = (word.size()*cubeSize) + ((word.size()+1) * mEspacementCubes);
@@ -172,24 +170,6 @@ void cubeManagerHiddenWord::getWord(string word)
         myCubes.push_back(*tmpCube);
     }
 }
-
-
-
-void cubeManagerHiddenWord::rotateToWhite(int i)
-{
-    myCubes[i].rotateToWhite();
-}
-
-void cubeManagerHiddenWord::rotateToWood(int i)
-{
-    myCubes[i].rotateToWood();
-}
-
-void cubeManagerHiddenWord::rotateToLetter(int i)
-{
-    myCubes[i].rotateToLetter();
-}
-
 
 
 
