@@ -120,11 +120,6 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
     
 };
 
-void scGame2::timerEnd(){
-    // --------------------------------
-    ofxSceneManager::instance()->goToScene(INTRO);
-}
-
 //scene notifications
 void scGame2::sceneWillDisappear( ofxScene * toScreen ){
     // Player manager events

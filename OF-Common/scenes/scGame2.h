@@ -50,8 +50,6 @@ private:
     void readyForNewText();
     
     //
-
-    void timerEnd();
     
 };
 
