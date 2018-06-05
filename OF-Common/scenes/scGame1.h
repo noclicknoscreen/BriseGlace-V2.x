@@ -38,6 +38,10 @@ public:
     //gui
     ofxPanel gui;
     ofParameter<float> lightPosX, lightPosY, lightPosZ;
+    ofParameter<float> orientationX, orientationY, orientationZ;
+    ofParameter<float> cutOff;
+    ofParameter<float> concentration;
+    
     ofParameter<int> cubesRotationSpeed;
     bool bDrawGui;
     

@@ -132,7 +132,7 @@ public:
         
         ofDisableDepthTest();
         
-        if(drawGui)
+        if(bDrawGui)
             gui.draw();
         
         //ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);

@@ -12,13 +12,20 @@ void scGame1::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Game 1 : Setup !";
     
-        gui.setup();
-    //gui.add
-    gui.add(lightPosX.set("lightPosX", 1600, -1000, ofGetWidth()*2));
-    gui.add(lightPosY.set("lightPosY", 120, -1000, 1000));
-    gui.add(lightPosZ.set("lightPosZ", 0, -200, 200));
+    gui.setup();
+    gui.add(lightPosX.set("lightPosX", 1600, -2000, 2000));
+    gui.add(lightPosY.set("lightPosY", 120, -2000, 2000));
+    gui.add(lightPosZ.set("lightPosZ", 0, -2000, 2000));
+    
+    gui.add(orientationX.set("orientationX", 0, 0, 360));
+    gui.add(orientationY.set("orientationY", 0, 0, 360));
+    gui.add(orientationZ.set("orientationZ", 0, 0, 360));
+    
+    gui.add(cutOff.set("cutOff", 0, 0, 360));
+    gui.add(concentration.set("concentration", 0, 0, 180));
     gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
-    gui.loadFromFile("settingsLights.xml");
+    
+    gui.loadFromFile("settingsLightsGame1.xml");
     
     bDrawGui=false;
     
@@ -26,7 +33,8 @@ void scGame1::setup(){  //load your scene 1 assets here...
 
 void scGame1::update(float dt){ //update scene 1 here
 
-    myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), cubesRotationSpeed);
+    myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), ofPoint(orientationX, orientationY, orientationZ), cutOff, concentration, cubesRotationSpeed);
+    
     int id = myInputManager.update(&myCubeManager);
     if(id != 0)
     {
@@ -45,24 +53,35 @@ void scGame1::update(float dt){ //update scene 1 here
 
 void scGame1::draw(){ //draw scene 1 here
     
-    ofPushStyle();
-        ofPushMatrix();
-        
-            myCubeManager.draw();
-            myInputManager.draw();
-            
-            ofDisableLighting();
-            ofDisableDepthTest();
-            ofSetColor(255);
-            //GUI
-            if(bDrawGui)
-                gui.draw();
-        ofPopStyle();
-    ofPopMatrix();
+    //GUI
+    if(bDrawGui){
+        gui.draw();
+    }
     
     // Draw title
     scScene::drawTitle("Mot masqué");
     scScene::drawSubTitle("Derrière ces " + ofToString(bigEnigmaManager().getCurrentEnigma()->getSolution().size()) + " lettres se cache un mot");
+    
+    // Draw cubes
+    myCubeManager.draw();
+    // Draw floating words
+    myInputManager.draw();
+    
+//    ofPushStyle();
+//        ofPushMatrix();
+//        
+//            myCubeManager.draw();
+//            myInputManager.draw();
+//            
+//            ofDisableLighting();
+//            ofDisableDepthTest();
+//            ofSetColor(255);
+//            //GUI
+//            if(bDrawGui)
+//                gui.draw();
+//        ofPopStyle();
+//    ofPopMatrix();
+//    
     
     if(drawWinnerSign)
             bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
@@ -83,10 +102,10 @@ void scGame1::keyPressed(int key){
     if(key=='W')
         myCubeManager.rotateToWhite(0);
     if(key == 's') {
-        gui.saveToFile("settingsLights.xml");
+        gui.saveToFile("settingsLightsGame1.xml");
     }
     if(key == 'l') {
-        gui.loadFromFile("settingsLights.xml");
+        gui.loadFromFile("settingsLightsGame1.xml");
     }
     
     if(key==' ' )

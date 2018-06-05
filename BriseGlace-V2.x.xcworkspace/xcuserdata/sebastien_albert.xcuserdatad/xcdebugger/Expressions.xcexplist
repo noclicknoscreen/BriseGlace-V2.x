@@ -3,6 +3,17 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "cubeManagerHiddenWord::draw():cubeManagerHiddenWord.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "cubeManager::update(ofVec3f, int):cubeManager.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "spotLight">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "scGame2::update(float):scGame2.cpp">
          <PersistentStrings>
             <PersistentString

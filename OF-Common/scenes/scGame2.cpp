@@ -15,10 +15,20 @@ void scGame2::setup(){
 
     //gui
     gui.setup();
-    gui.add(lightPosX.set("lightPosX", 1600, -1000, ofGetWidth()*2));
-    gui.add(lightPosY.set("lightPosY", 120, -1000, 1000));
-    gui.add(lightPosZ.set("lightPosZ", 0, -100, 100));
+    gui.add(lightPosX.set("lightPosX", 1600, -2000, 2000));
+    gui.add(lightPosY.set("lightPosY", 120, -2000, 2000));
+    gui.add(lightPosZ.set("lightPosZ", 0, -2000, 2000));
+    
+    gui.add(orientationX.set("orientationX", 0, 0, 360));
+    gui.add(orientationY.set("orientationY", 0, 0, 360));
+    gui.add(orientationZ.set("orientationZ", 0, 0, 360));
+    
+    gui.add(cutOff.set("cutOff", 0, 0, 180));
+    gui.add(concentration.set("concentration", 0, 0, 180));
+    
     gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
+    
+    gui.loadFromFile("settingsLightsGame2.xml");
     
     bDrawGui=false;
     
@@ -28,7 +38,8 @@ void scGame2::setup(){
 
 void scGame2::update(float dt){
     // Cube update
-    myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), cubesRotationSpeed);
+    myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), ofPoint(orientationX, orientationY, orientationZ), cutOff, concentration, cubesRotationSpeed);
+    
     
     if(bigPlayerManager().getWinnerUserId() == 0){
         // Input word (who wins)
@@ -128,6 +139,27 @@ void scGame2::sceneWillDisappear( ofxScene * toScreen ){
     ofRemoveListener(timerSignHint.timerEnd,            this,&scGame2::timerSignHintEnd);
     ofRemoveListener(mTimerAfterText.timerEnd,          this,&scGame2::timerAfterTextEnd);
     ofRemoveListener(myInputManager.readyForNewText,    this,&scGame2::readyForNewText);
+}
+
+//--------------------------------------------------------------
+void scGame2::keyPressed(int key){
+    
+    if(key=='l')
+        myCubeManager.rotateToLetter(0);
+    if(key=='w')
+        myCubeManager.rotateToWood(0);
+    if(key=='W')
+        myCubeManager.rotateToWhite(0);
+    if(key == 's') {
+        gui.saveToFile("settingsLightsGame2.xml");
+    }
+    if(key == 'l') {
+        gui.loadFromFile("settingsLightsGame2.xml");
+    }
+    
+    if(key==' ' )
+        bDrawGui = !bDrawGui;
+    
 }
 
 // Events callback -----------------------------------

@@ -21,6 +21,7 @@ public:
     void setup();
     void update(float dt);
 	void draw();
+    void keyPressed(int key);
     
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
@@ -36,7 +37,11 @@ public:
     //gui
     ofxPanel gui;
     ofParameter<float> lightPosX, lightPosY, lightPosZ;
+    ofParameter<float> orientationX, orientationY, orientationZ;
+    ofParameter<float> cutOff;
+    ofParameter<float> concentration;
     ofParameter<int> cubesRotationSpeed;
+    
     bool bDrawGui;
     
     ///////////// TIMER, EVENTS /////////////////////

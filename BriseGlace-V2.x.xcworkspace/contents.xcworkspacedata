@@ -5,6 +5,9 @@
       location = "container:"
       name = "examples">
       <FileRef
+         location = "group:../../examples/gl/multiLightExample/multiLightExample.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:../../addons/ofxAnimatable/example/example.xcodeproj">
       </FileRef>
       <FileRef

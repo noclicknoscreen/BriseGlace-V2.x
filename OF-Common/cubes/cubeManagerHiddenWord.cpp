@@ -11,56 +11,9 @@
 
 void cubeManagerHiddenWord::setup(int _cubesPositionY, int _espacementCubes)
 {
-    
+    // Root Setup -----
     cubeManager::setup(_cubesPositionY, _espacementCubes);
-    
-    ofEnableDepthTest();
-
-    ofSetBoxResolution(50);
-    ofSetSmoothLighting(true);
-    ofSetSphereResolution(32);
- 
-    //lumiere
-    spotLight.setSpotlight();
-    spotLight.setSpotlightCutOff(200);
-    spotLight.setAttenuation(0.3,0,0); //puissance de la light = inverse de l'attenuation
-    spotLight.setSpotConcentration(0.15);
-    spotLight.setDiffuseColor( ofColor(255.f, 255.f, 255.f));
-    spotLight.setSpecularColor( ofColor(255.f, 255.f, 255.f));
-    spotLight.setPosition(ofGetWidth()/2, ofGetHeight()/2, 0);
-    spotLight.setPosition(ofGetWidth()-300, 100, 0);
-    material.setShininess( 128);
-    lightColor.setBrightness( 255.0f);
-    lightColor.setSaturation( 0.f );
-    materialColor.setBrightness(255);
-    materialColor.setSaturation(0);
-
-    //font
-    font.load(globalFontName, globalFontSizeBig);
-    
-    //texture
-    texture.load("contreplaque.png");
-    
-    cubeSize = 150;
-    
 };
-
-void cubeManagerHiddenWord::update(ofPoint _lightPos, int cubesRotationSpeed)
-{
-    spotLight.setPosition(_lightPos.x, _lightPos.y, _lightPos.z);
-
-    for(int i=0; i<myCubes.size(); i++)
-    {
-        myCubes[i].update(cubesRotationSpeed);
-    }
-
-    spotLight.setOrientation( ofVec3f( 0, 45, 30) );
-    lightColor.setHue(0);
-    spotLight.setDiffuseColor(lightColor);
-    material.setSpecularColor(materialColor);
-    
-};
-
 
 //--------------------------------------------------------------
 void cubeManagerHiddenWord::draw(){
@@ -79,7 +32,7 @@ void cubeManagerHiddenWord::draw(){
 
     ofEnableLighting();
     ofSetSmoothLighting(true);
-    spotLight.enable();
+//    spotLightCubes.enable();
     
     for(int i=0; i<myCubes.size(); i++)
     {
@@ -96,10 +49,10 @@ void cubeManagerHiddenWord::draw(){
 
             material.begin();
             ofEnableNormalizedTexCoords();
-            texture.bind();
+            textureBois.bind();
                ofDrawBox(myCubes[i].size, myCubes[i].size ,myCubes[i].size);
             material.end();
-            texture.unbind();
+            textureBois.unbind();
             
             
             //FACE BLANCHE
@@ -142,13 +95,16 @@ void cubeManagerHiddenWord::draw(){
 
         //FIN LETTRE
     }
-    spotLight.disable();
-    ofDisableLighting();
     
     // DEBUG DRAW
 #if defined DRAW_DEBUG
     spotLight.draw();
 #endif
+    
+//    spotLightCubes.disable();
+    ofDisableLighting();
+    
+
     
     ofSetColor(255);
 }

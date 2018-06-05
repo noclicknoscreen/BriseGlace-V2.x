@@ -10,19 +10,18 @@
 
 #include "cube.h"
 #include "enigmaManager.h"
+#include "utils.h"
 
 class cubeManager
 {
     
-    
-protected :
+    // ------------------
+    // METHODS ---------
+    protected :
     void setup(int _cubesPositionY, int _espacementCubes);
-
-    int mCubesPositionY;
-    int mEspacementCubes;
     
 public:
-    vector<cube>                myCubes;
+    void update(ofPoint _lightPos, ofPoint _lightAngle, float _cutOff, float concentration, int cubesRotationSpeed);
     
     void colorizeCube(int cubeId, ofColor _color);
     
@@ -34,6 +33,31 @@ public:
     void rotateAllToWhite();
     void rotateAllToWood();
     void rotateAllToLetter();
+    
+    // ------------------
+    // MEMBERS ---------
+    protected :
+    int mCubesPositionY;
+    int mEspacementCubes;
+    
+    //lumiere
+    ofLight spotLightCubes;
+    ofColor lightColor;
+    ofColor materialColor;
+    ofMaterial material;
+    
+    //police de caracteres
+    ofTrueTypeFont              font;
+    
+    //texture
+    ofImage                     textureBois;
+    
+    //cubes size
+    float                       cubeSize;
+    
+public:
+    vector<cube>                myCubes;
+    
     
 };
 

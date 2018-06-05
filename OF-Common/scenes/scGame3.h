@@ -165,7 +165,7 @@ public:
     
     //parameters
     ofxPanel                     gui;
-    bool                         drawGui;
+    bool                         bDrawGui;
     ofParameter<float>           camPosX, camPosY, camPosZ, gravity, angularDamping, damping, friction;
     ofParameter<float>           volumeBorneMin, volumeBorneMax;
     ofParameter<float> forceMicro2_multiplier;

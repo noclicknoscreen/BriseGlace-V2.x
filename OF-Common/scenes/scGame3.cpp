@@ -152,7 +152,7 @@ void scGame3::draw(){
     
     ofDisableDepthTest();
     
-    if(drawGui)
+    if(bDrawGui)
         gui.draw();
 
 #if defined DRAW_DEBUG
@@ -274,10 +274,16 @@ void scGame3::sceneWillDisappear( ofxScene * toScreen ){
 //--------------------------------------------------------------
 void scGame3::keyPressed(int key){
 
-    if(key==' ')
-    {
-        drawGui = !drawGui;
-    }
+
+        if(key == 's') {
+            gui.saveToFile("settingsLights.xml");
+        }
+        if(key == 'l') {
+            gui.loadFromFile("settingsLights.xml");
+        }
+        
+        if(key==' ' )
+            bDrawGui = !bDrawGui;
     
     if(key == 'f')
     {
@@ -330,7 +336,7 @@ void scGame3::setupGui()
     
     //gui.add(zLight.set("zLight", 0, -1000, 1000));
     gui.loadFromFile("gui.xml");
-    drawGui = false;
+    bDrawGui = false;
 };
 
 
