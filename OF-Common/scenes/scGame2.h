@@ -33,5 +33,7 @@ public:
     ofParameter<int> cubesRotationSpeed;
     bool bDrawGui;
 
+    void timerEnd();
+    
 };
 

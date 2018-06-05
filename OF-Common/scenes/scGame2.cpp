@@ -37,6 +37,8 @@ void scGame2::update(float dt){
     
     myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), cubesRotationSpeed);
     
+    mTimer.update(dt);
+    
 };
 
 void scGame2::draw(){ //draw scene 1 here
@@ -85,7 +87,17 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
         
     }
 
+    // -- -- -- -- --
+    mTimer.startTimer(5);
+    // Player manager events
+    ofAddListener(mTimer.timerEnd, this, &scGame2::timerEnd);
+    
 };
+
+void scGame2::timerEnd(){
+    // --------------------------------
+    ofxSceneManager::instance()->goToScene(INTRO);
+}
 
 //scene notifications
 void scGame2::sceneWillDisappear( ofxScene * toScreen ){

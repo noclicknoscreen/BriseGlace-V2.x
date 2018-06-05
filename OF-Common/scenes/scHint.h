@@ -26,7 +26,8 @@ public:
     indice myIndice;
     
     float timer;
-
+    
+    void timerEnd();
     void someoneSpoke(player & _player);
     
     ofxScene* from;

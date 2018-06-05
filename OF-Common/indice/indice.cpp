@@ -11,20 +11,22 @@
 
 
 //void indice::setup(string photoFilename)
-void indice::setup(enigma* _enigme)
+void indice::setup()
 {
     
     ofEnableDepthTest();
     
+    ofLogNotice() << "Indice setup : [texte] : [" << bigEnigmaManager().getCurrentEnigma()->getTitre(HINT1);
     //load texture
-    texture = _enigme->getImage(HINT1);
+    texture = bigEnigmaManager().getCurrentEnigma()->getImage(HINT1);
     texture.resize(3*cubeSize, 3*cubeSize);
 
-    
     cubeSize = 120;
     totalWidth = cubeSize * 3;
     yPos = ofGetHeight()/2 - 3*(cubeSize/2);
     
+    // Empty cubes
+    myCubes.clear();
     
     //create cubes
     for(int i=0; i<9; i++)
@@ -53,17 +55,17 @@ void indice::setup(enigma* _enigme)
     
     
     //wrap text
-    myText.init(globalFontName, globalFontSizeBig);
-    myText.setText(_enigme->getTitre(HINT1));
-//    myText.wrapText(cubeSize*3);
+    myText.init(globalFontName, globalFontSizeMedium);
+    myText.setText(bigEnigmaManager().getCurrentEnigma()->getTitre(bigEnigmaManager().pickHintIndex()));
     myText.wrapTextX(cubeSize*3);
     
     //fill fbo and put it into an image
     textFbo.begin();
     ofClear(255);
-    //ofSetColor(0);
+    ofSetColor(0);
     myText.setColor(0, 0, 0, 255);
-    myText.drawCenter(cubeSize * 1.5, 0);
+    myText.drawCenter(cubeSize*1.5, 0);
+//    ofDrawCircle(0, 0, 10);
     textFbo.end();
     
     //put fbo in an image
@@ -117,7 +119,7 @@ void indice::update()
     }
     
     //lumiere
-    spotLight.setPosition(ofGetWidth()*5/6, ofGetHeight()/2,100);
+    spotLight.setPosition(ofGetWidth()*5/6, ofGetHeight()/2,150);
     spotLight.setOrientation( ofVec3f( 0, 45, 30) );
     lightColor.setHue(0);
     spotLight.setDiffuseColor(lightColor);

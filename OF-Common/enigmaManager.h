@@ -23,6 +23,7 @@ public:
     //void draw();
     
     void pickNewEnigma(gameType _type);
+    enigmaType pickHintIndex();
     enigma* getCurrentEnigma(){return &mCurrentEnigma;};
     
 private:

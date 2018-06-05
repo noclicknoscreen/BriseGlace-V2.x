@@ -19,7 +19,8 @@ void scHint::setup(){  //load your scene 1 assets here...
 void scHint::update(float dt){ //update scene 1 here
     
     myIndice.update();
-    
+    mTimer.update(dt);
+
     if(ofGetElapsedTimef() - timer > 5)
         myIndice.setRevealMode();
     
@@ -42,15 +43,22 @@ void scHint::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
     from = fromScreen;
-    myIndice.setup(bigEnigmaManager().getCurrentEnigma());
+    myIndice.setup();
     
     timer = ofGetElapsedTimef();
     
     // -- -- -- -- --
+    mTimer.startTimer(15);
     // Player manager events
+    ofAddListener(mTimer.timerEnd, this, &scHint::timerEnd);
+    
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scHint::someoneSpoke);
 
 };
+void scHint::timerEnd(){
+    // --------------------------------
+    ofxSceneManager::instance()->goToScene(from->getSceneID());
+}
 
 //scene notifications
 void scHint::sceneWillDisappear( ofxScene * toScreen ){

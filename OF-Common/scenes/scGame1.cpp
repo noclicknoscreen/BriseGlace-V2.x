@@ -31,8 +31,9 @@ void scGame1::setup(){  //load your scene 1 assets here...
     //gui.add
     gui.add(lightPosX.set("lightPosX", 1600, -1000, ofGetWidth()*2));
     gui.add(lightPosY.set("lightPosY", 120, -1000, 1000));
-    gui.add(lightPosZ.set("lightPosZ", 0, -100, 100));
+    gui.add(lightPosZ.set("lightPosZ", 0, -200, 200));
     gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
+    gui.loadFromFile("settingsLights.xml");
     
     bDrawGui=false;
     
@@ -95,6 +96,12 @@ void scGame1::keyPressed(int key){
         myCubeManager.rotateToWood(0);
     if(key=='W')
         myCubeManager.rotateToWhite(0);
+    if(key == 's') {
+        gui.saveToFile("settingsLights.xml");
+    }
+    if(key == 'l') {
+        gui.loadFromFile("settingsLights.xml");
+    }
     
     if(key==' ' )
         bDrawGui = !bDrawGui;

@@ -14,13 +14,14 @@
 #include "cube.h"
 #include "ofxTextSuite.h"
 #include "enigma.h"
+#include "enigmaManager.h"
 #include "utils.h"
 
 class indice
 {
 public:
     
-    void setup(enigma* _enigme);
+    void setup();
     void update();
     void draw();
     

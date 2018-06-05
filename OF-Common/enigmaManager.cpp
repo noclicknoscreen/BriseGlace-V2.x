@@ -62,6 +62,30 @@ void enigmaManager::pickNewEnigma(gameType _type){
     
 }
 
+enigmaType enigmaManager::pickHintIndex(){
+    
+    int rndIdx = (int)ofRandom(3);
+    enigmaType toReturn;
+    
+    switch (rndIdx) {
+        case 0:
+            toReturn = HINT1;
+            break;
+        case 1:
+            toReturn = HINT2;
+            break;
+        case 2:
+            toReturn = HINT3;
+            break;
+        default:
+            toReturn = HINT1;
+            break;
+    }
+    
+    return toReturn;
+    
+}
+
 //void enigmaManager::draw(){
 //    
 //}
