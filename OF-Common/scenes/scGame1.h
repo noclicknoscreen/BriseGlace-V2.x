@@ -12,7 +12,7 @@
 
 #include "cubeManagerHiddenWord.h"
 #include "ofxGui.h"
-#include "inputHandler.h"
+#include "inputHandlerHiddenWord.h"
 
 
 class scGame1 : public scScene{
@@ -45,7 +45,7 @@ public:
     cubeManagerHiddenWord myCubeManager;
     
     //inputManager
-    inputHandler myInputManager;
+    inputHandlerHiddenWord myInputManager;
     
     // Draw the overlay of hint
     bool bHintOverlay;

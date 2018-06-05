@@ -12,22 +12,7 @@ void scGame1::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Game 1 : Setup !";
     
-    
-//    //cubes
-//    myCubeManager.setup(0.4*ofGetHeight(), 100, 15);
-//    
-//    //inputs
-//    myInputManager.setup();
-//    
-//    //word to find
-//    myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
-//    myInputManager.clearDuplicatesLettersHistory();
-//    myInputManager.setReadyForNewText();
-//    myInputManager.setWordToFind(bigEnigmaManager().getCurrentEnigma()->getSolution());
-//
-    //gui
-    
-    gui.setup();
+        gui.setup();
     //gui.add
     gui.add(lightPosX.set("lightPosX", 1600, -1000, ofGetWidth()*2));
     gui.add(lightPosY.set("lightPosY", 120, -1000, 1000));
@@ -50,6 +35,7 @@ void scGame1::update(float dt){ //update scene 1 here
         ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
     }
 
+    // Update timers
     mTimer.update(dt);
     timerSignWin.update(dt);
     timerSignHint.update(dt);
@@ -178,7 +164,7 @@ void scGame1::timerEnd(){
 
 void scGame1::timerSignWinEnd(){
     
-    ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) " << endl;
+    ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) ";
     // --------------------------------
     timerSignWin.stop();
     ofxSceneManager::instance()->goToScene(VICTORY);
@@ -187,7 +173,7 @@ void scGame1::timerSignWinEnd(){
 
 void scGame1::timerSignHintEnd(){
     
-    ofLogNotice() << "fin du timer timerSignHint, go to scene (HINT) " << endl;
+    ofLogNotice() << "fin du timer timerSignHint, go to scene (HINT) ";
     // --------------------------------
     timerSignHint.stop();
     ofxSceneManager::instance()->goToScene(HINT);

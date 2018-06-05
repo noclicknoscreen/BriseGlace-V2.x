@@ -76,7 +76,7 @@ void scVictory::sceneWillAppear( ofxScene * fromScreen ){
     ofSetBoxResolution(30);
 
     
-    cout << "texte de recompense : " <<  bigEnigmaManager().getCurrentEnigma()->getLegende()  << endl;
+    ofLogNotice() << "texte de recompense : " <<  bigEnigmaManager().getCurrentEnigma()->getLegende();
     
     localRewardImage = bigEnigmaManager().getCurrentEnigma()->getImage(REWARD);
     woodTexture.load("contreplaque.png");

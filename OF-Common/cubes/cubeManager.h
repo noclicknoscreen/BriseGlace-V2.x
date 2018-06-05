@@ -9,6 +9,7 @@
 #pragma once
 
 #include "cube.h"
+#include "enigmaManager.h"
 
 class cubeManager
 {
@@ -25,4 +26,14 @@ public:
     
     void colorizeCube(int cubeId, ofColor _color);
     
+    //cubes
+    void rotateToWhite(int i);
+    void rotateToWood(int i);
+    void rotateToLetter(int i);
+    
+    void rotateAllToWhite();
+    void rotateAllToWood();
+    void rotateAllToLetter();
+    
 };
+

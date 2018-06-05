@@ -291,7 +291,7 @@ void playerManager::urlResponse(ofHttpResponse & response){
             bResetPlayers = false;
         }
     }else{
-        ofLogError() << response.status << " " << response.error << endl;
+        ofLogError() << response.status << " " << response.error;
         
     }
 }

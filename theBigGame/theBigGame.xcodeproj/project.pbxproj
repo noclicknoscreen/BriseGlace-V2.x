@@ -29,6 +29,8 @@
 		1C3F868920C56C8B0051AFD5 /* cubeManagerMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F868720C56C8B0051AFD5 /* cubeManagerMemory.cpp */; };
 		1C3F868C20C56EA40051AFD5 /* cubeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F868A20C56EA40051AFD5 /* cubeManager.cpp */; };
 		1C7256FE4F21E7B073E1F8DD /* btCollisionDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40B11FBD19D1B23E3C016C9C /* btCollisionDispatcher.cpp */; };
+		1CAEABBC20C67E3E00BFC797 /* inputHandlerMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CAEABBA20C67E3E00BFC797 /* inputHandlerMemory.cpp */; };
+		1CAEABBF20C67EAE00BFC797 /* inputHandlerHiddenWord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CAEABBD20C67EAE00BFC797 /* inputHandlerHiddenWord.cpp */; };
 		1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 907C5B5E104864A2D3A25745 /* ofxToggle.cpp */; };
 		1D209B4E4AAA703227570B0C /* btStridingMeshInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44DDA80A5BBA576BFF4A11F2 /* btStridingMeshInterface.cpp */; };
 		1E4F7ABB36EF16B9943F8C74 /* btGhostObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FBFB4287D7FF8E445329D71 /* btGhostObject.cpp */; };
@@ -291,6 +293,10 @@
 		1C8F0A99F23CADF1CD337797 /* btTriangleIndexVertexMaterialArray.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = btTriangleIndexVertexMaterialArray.cpp; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletCollision/CollisionShapes/btTriangleIndexVertexMaterialArray.cpp; sourceTree = SOURCE_ROOT; };
 		1C9438A04E33C2101C05E3D9 /* vecidx_aos.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = vecidx_aos.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/vectormath/sse/vecidx_aos.h; sourceTree = SOURCE_ROOT; };
 		1C9E4AC6CF4626BA74F7E994 /* ofxAnimatableFloat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAnimatableFloat.cpp; path = ../../../addons/ofxAnimatable/src/ofxAnimatableFloat.cpp; sourceTree = SOURCE_ROOT; };
+		1CAEABBA20C67E3E00BFC797 /* inputHandlerMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inputHandlerMemory.cpp; sourceTree = "<group>"; };
+		1CAEABBB20C67E3E00BFC797 /* inputHandlerMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputHandlerMemory.h; sourceTree = "<group>"; };
+		1CAEABBD20C67EAE00BFC797 /* inputHandlerHiddenWord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inputHandlerHiddenWord.cpp; sourceTree = "<group>"; };
+		1CAEABBE20C67EAE00BFC797 /* inputHandlerHiddenWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputHandlerHiddenWord.h; sourceTree = "<group>"; };
 		1D4DB7B7B88FCD73E5772307 /* btSoftBodyInternals.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btSoftBodyInternals.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletSoftBody/btSoftBodyInternals.h; sourceTree = SOURCE_ROOT; };
 		1D5626A71214B2AEA6F785CF /* btBox2dShape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btBox2dShape.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletCollision/CollisionShapes/btBox2dShape.h; sourceTree = SOURCE_ROOT; };
 		1E10F2126ECB1D86C2FB9E18 /* btDbvt.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btDbvt.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletCollision/BroadphaseCollision/btDbvt.h; sourceTree = SOURCE_ROOT; };
@@ -1477,6 +1483,10 @@
 			children = (
 				D2CF8C0620A98E700035B780 /* inputHandler.cpp */,
 				D2CF8C0720A98E700035B780 /* inputHandler.h */,
+				1CAEABBA20C67E3E00BFC797 /* inputHandlerMemory.cpp */,
+				1CAEABBB20C67E3E00BFC797 /* inputHandlerMemory.h */,
+				1CAEABBD20C67EAE00BFC797 /* inputHandlerHiddenWord.cpp */,
+				1CAEABBE20C67EAE00BFC797 /* inputHandlerHiddenWord.h */,
 				D2CF8C0220A98E700035B780 /* cube.cpp */,
 				D2CF8C0320A98E700035B780 /* cube.h */,
 				1C3F868A20C56EA40051AFD5 /* cubeManager.cpp */,
@@ -1873,6 +1883,7 @@
 				F7BC490564524AE0CE7EFB80 /* btConvexConcaveCollisionAlgorithm.cpp in Sources */,
 				5B6112A28323C140B261CE21 /* btConvexConvexAlgorithm.cpp in Sources */,
 				995B3BFA6EC64E7B78E7507F /* btConvexPlaneCollisionAlgorithm.cpp in Sources */,
+				1CAEABBC20C67E3E00BFC797 /* inputHandlerMemory.cpp in Sources */,
 				665F78A820EA2D9F938D6AA8 /* btDefaultCollisionConfiguration.cpp in Sources */,
 				D2CF8C3920A98E700035B780 /* scVictory.cpp in Sources */,
 				4871924328AC1526A0F3AE9A /* btEmptyCollisionAlgorithm.cpp in Sources */,
@@ -1989,6 +2000,7 @@
 				E3A0F1A880D95E438B63BB9B /* btWheelInfo.cpp in Sources */,
 				883F61F187854664BED3147C /* btDefaultSoftBodySolver.cpp in Sources */,
 				2BC8140B4E5145D68696F9B5 /* btSoftBody.cpp in Sources */,
+				1CAEABBF20C67EAE00BFC797 /* inputHandlerHiddenWord.cpp in Sources */,
 				3344A6F4E498DB7B750F3A3E /* btSoftBodyConcaveCollisionAlgorithm.cpp in Sources */,
 				2251C952DA9775B84EB61158 /* btSoftBodyHelpers.cpp in Sources */,
 				D2CF8C2D20A98E700035B780 /* enigma.cpp in Sources */,
