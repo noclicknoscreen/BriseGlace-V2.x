@@ -72,7 +72,7 @@ void cubeManagerMemory::setGrid(int _nbLines, int _nbRows){
                rndLetter = utils::getRndLetter();
             }while(ofStringTimesInString(mContent, rndLetter) > 0 && mContent != "");
             
-            ofPoint position(0.5*(ofGetWidth() - _nbRows*step) - 0.5*step, 0.5*(mCubesPositionY - _nbLines*step) - 0.5*step);
+            ofPoint position(0.5*(ofGetWidth() - _nbRows*step) + 0.5*step, 0.5*(mCubesPositionY - _nbLines*step) + 0.5*step);
             position.x += idxRow*step;
             position.y += idxLine*step;
             position.z = -300;

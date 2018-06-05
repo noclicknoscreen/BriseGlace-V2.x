@@ -102,9 +102,10 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
         bigEnigmaManager().pickNewEnigma(IMAGE_GRID);
         
         //cubes
-        myCubeManager.setup(0.75*ofGetHeight(), 7);
+        int baseX = 0.86*ofGetHeight();
+        myCubeManager.setup(baseX, 7);
         //inputs
-        myInputManager.setup(0.75*ofGetHeight() + 100);
+        myInputManager.setup(baseX + 50);
         
         myInputManager.clearDuplicatesLettersHistory();
         myInputManager.setReadyForNewText();
@@ -113,8 +114,6 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
         
     }
 
-    // -- -- -- -- --
-    mTimer.startTimer(5);
     // Player manager events
     ofAddListener(mTimer.timerEnd, this, &scGame2::timerEnd);
     

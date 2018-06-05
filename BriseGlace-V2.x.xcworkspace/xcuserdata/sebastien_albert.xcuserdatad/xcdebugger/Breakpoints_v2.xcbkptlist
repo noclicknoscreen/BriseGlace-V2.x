@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame2.cpp"
-            timestampString = "549903139.098799"
+            timestampString = "549905649.854147"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
-            landmarkName = "scGame2::timerAfterTextEnd()"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "scGame2::timerSignHintEnd()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame2.cpp"
-            timestampString = "549903139.098799"
+            timestampString = "549905649.854147"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "scGame2::timerAfterTextEnd()"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "scGame2::timerSignHintEnd()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
