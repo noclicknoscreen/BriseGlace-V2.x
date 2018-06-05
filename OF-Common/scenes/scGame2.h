@@ -48,6 +48,8 @@ private:
     void timerSignHintEnd();
     void timerAfterTextEnd();
     void readyForNewText();
+    
+    //
 
 };
 
