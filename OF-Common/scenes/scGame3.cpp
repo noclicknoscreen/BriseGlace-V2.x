@@ -152,9 +152,11 @@ void scGame3::draw(){
     
     ofDisableDepthTest();
     
-    if(bDrawGui)
+    if(bDrawGui){
+        ofDisableLighting();
         gui.draw();
-
+    }
+    
 #if defined DRAW_DEBUG
     ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
 #endif
@@ -176,9 +178,8 @@ void scGame3::draw(){
 //--------------------------------------------------------------
 void scGame3::exit()
 {
-    gui.saveToFile("gui.xml");
+    gui.saveToFile(settingsFileNameGame3);
 }
-
 
 //--------------------------------------------------------------
 void scGame3::someoneSpoke(player & _player){
@@ -276,10 +277,10 @@ void scGame3::keyPressed(int key){
 
 
         if(key == 's') {
-            gui.saveToFile("settingsLights.xml");
+            gui.saveToFile(settingsFileNameGame3);
         }
         if(key == 'l') {
-            gui.loadFromFile("settingsLights.xml");
+            gui.loadFromFile(settingsFileNameGame3);
         }
         
         if(key==' ' )
@@ -317,25 +318,29 @@ void scGame3::applyForceOnCubes(ofVec3f force, ofPoint _frcPos)
 void scGame3::setupGui()
 {
     //gui
-    gui.setup();
-    gui.add(camPosX.set("camPosX", 0, -1000, 1000));
-    gui.add(camPosY.set("camPosY", 800, -1000, 1000));
-    gui.add(camPosZ.set("camPosZ", 155, -1000, 2000));
-    gui.add(gravity.set("gravity", -250, -500, 250));
     
-    gui.add(volumeBorneMin.set("volumeBorneMin", 0, 0.0, 1.0));
-    gui.add(volumeBorneMax.set("volumeBorneMax", 0.29, 0.0, 1.0));
+    group.setName("Game3");
+    group.add(camPosX.set("camPosX", 0, -3000, 3000));
+    group.add(camPosY.set("camPosY", 800, -3000, 3000));
+    group.add(camPosZ.set("camPosZ", 155, -3000, 3000));
+    group.add(gravity.set("gravity", -250, -500, 250));
     
-    gui.add(forceAmount.set("forceAmount", ofVec3f(100,200,100), ofVec3f(0,0,0), ofVec3f(300,300,300)));
+    group.add(volumeBorneMin.set("volumeBorneMin", 0, 0.0, 1.0));
+    group.add(volumeBorneMax.set("volumeBorneMax", 0.29, 0.0, 1.0));
     
-    gui.add(forceMicro2_multiplier.set("forceMicro2_multiplier", 0.6, 0.1, 1.0));
+    group.add(forceAmount.set("forceAmount", ofVec3f(100,200,100), ofVec3f(0,0,0), ofVec3f(300,300,300)));
     
-    gui.add(angularDamping.set("angularDamping", 0.815, 0.0, 1.0));
-    gui.add(damping.set("damping", 0.25, 0.0, 1.0));
-    gui.add(friction.set("friction", 0.75, 0.0, 1.0));
+    group.add(forceMicro2_multiplier.set("forceMicro2_multiplier", 0.6, 0.1, 1.0));
+    
+    group.add(angularDamping.set("angularDamping", 0.815, 0.0, 1.0));
+    group.add(damping.set("damping", 0.25, 0.0, 1.0));
+    group.add(friction.set("friction", 0.75, 0.0, 1.0));
     
     //gui.add(zLight.set("zLight", 0, -1000, 1000));
-    gui.loadFromFile("gui.xml");
+    
+    gui.setup(group);
+    gui.loadFromFile(settingsFileNameGame3);
+    
     bDrawGui = false;
 };
 

@@ -12,14 +12,14 @@
 void playerManager::setup(){
     
     //gui
-    gui.setup("panel"); // most of the time you don't need a name but don't forget to call setup
+    gui.setup("Players"); // most of the time you don't need a name but don't forget to call setup
     
     gui.add(player1.set("player1",ofColor(000,228,255),ofColor(0,0),ofColor(255,255)));
     gui.add(player2.set("player2",ofColor(255,042,140),ofColor(0,0),ofColor(255,255)));
     gui.add(player3.set("player3",ofColor(182,064,167),ofColor(0,0),ofColor(255,255)));
     gui.add(ipAdress.set("ipAdress", "localhost"));
     
-    gui.loadFromFile("settingsPlayers.xml");
+    gui.loadFromFile(settingsPlayers);
     drawGui = false;
 
     
@@ -305,11 +305,11 @@ void playerManager::keyPressed(int key){
     }
     
     if(key == 's') {
-        gui.saveToFile("settingsPlayers.xml");
+        gui.saveToFile(settingsPlayers);
     }
     
     if(key == 'l') {
-        gui.loadFromFile("settingsPlayers");
+        gui.loadFromFile(settingsPlayers);
     }
 }
 

@@ -164,8 +164,11 @@ public:
 //    ofImage background;
     
     //parameters
-    ofxPanel                     gui;
     bool                         bDrawGui;
+    
+    ofxPanel                     gui;
+    ofParameterGroup             group;
+    
     ofParameter<float>           camPosX, camPosY, camPosZ, gravity, angularDamping, damping, friction;
     ofParameter<float>           volumeBorneMin, volumeBorneMax;
     ofParameter<float> forceMicro2_multiplier;

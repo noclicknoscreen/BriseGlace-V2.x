@@ -1,0 +1,12 @@
+<Game1>
+	<lightPosX>960</lightPosX>
+	<lightPosY>320</lightPosY>
+	<lightPosZ>2000</lightPosZ>
+	<cutOff>30.6</cutOff>
+	<concentration>45</concentration>
+	<cubesRotationSpeed>5</cubesRotationSpeed>
+	<orientationX>0</orientationX>
+	<orientationY>0</orientationY>
+	<orientationZ>0</orientationZ>
+<Game1/>
+</Game1>

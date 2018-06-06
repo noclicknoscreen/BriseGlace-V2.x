@@ -1,0 +1,13 @@
+<Game3>
+	<camPosX>0</camPosX>
+	<camPosY>800</camPosY>
+	<camPosZ>155</camPosZ>
+	<gravity>-250</gravity>
+	<volumeBorneMin>0</volumeBorneMin>
+	<volumeBorneMax>0.29</volumeBorneMax>
+	<forceAmount>100, 200, 100</forceAmount>
+	<forceMicro2_multiplier>0.6</forceMicro2_multiplier>
+	<angularDamping>0.815</angularDamping>
+	<damping>0.25</damping>
+	<friction>0.75</friction>
+</Game3>

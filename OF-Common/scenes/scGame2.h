@@ -36,6 +36,8 @@ public:
     
     //gui
     ofxPanel gui;
+    ofParameterGroup             group;
+    
     ofParameter<float> lightPosX, lightPosY, lightPosZ;
     ofParameter<float> orientationX, orientationY, orientationZ;
     ofParameter<float> cutOff;

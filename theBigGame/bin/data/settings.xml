@@ -1,0 +1,23 @@
+<group>
+	<lightPosX>1230</lightPosX>
+	<lightPosY>300</lightPosY>
+	<lightPosZ>2760</lightPosZ>
+	<cutOff>18.9</cutOff>
+	<concentration>134.1</concentration>
+	<cubesRotationSpeed>5</cubesRotationSpeed>
+	<orientationX>12.6</orientationX>
+	<orientationY>0</orientationY>
+	<orientationZ>52.2</orientationZ>
+<group/>
+<Game2>
+		<lightPosX>1600</lightPosX>
+		<lightPosY>120</lightPosY>
+		<lightPosZ>0</lightPosZ>
+		<orientationX>0</orientationX>
+		<orientationY>0</orientationY>
+		<orientationZ>0</orientationZ>
+		<cutOff>0</cutOff>
+		<concentration>0</concentration>
+		<cubesRotationSpeed>5</cubesRotationSpeed>
+	</Game2>
+</group>

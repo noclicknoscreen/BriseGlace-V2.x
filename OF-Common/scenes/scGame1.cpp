@@ -12,20 +12,21 @@ void scGame1::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Game 1 : Setup !";
     
-    gui.setup();
-    gui.add(lightPosX.set("lightPosX", 1600, -2000, 2000));
-    gui.add(lightPosY.set("lightPosY", 120, -2000, 2000));
-    gui.add(lightPosZ.set("lightPosZ", 0, -2000, 2000));
+    group.setName("Game1");
+    group.add(lightPosX.set("lightPosX", 1600, -3000, 3000));
+    group.add(lightPosY.set("lightPosY", 120, -3000, 3000));
+    group.add(lightPosZ.set("lightPosZ", 0, -3000, 3000));
     
-    gui.add(orientationX.set("orientationX", 0, 0, 360));
-    gui.add(orientationY.set("orientationY", 0, 0, 360));
-    gui.add(orientationZ.set("orientationZ", 0, 0, 360));
+    group.add(orientationX.set("orientationX", 0, 0, 360));
+    group.add(orientationY.set("orientationY", 0, 0, 360));
+    group.add(orientationZ.set("orientationZ", 0, 0, 360));
     
-    gui.add(cutOff.set("cutOff", 0, 0, 360));
-    gui.add(concentration.set("concentration", 0, 0, 180));
-    gui.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
+    group.add(cutOff.set("cutOff", 0, 0, 360));
+    group.add(concentration.set("concentration", 0, 0, 180));
+    group.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
     
-    gui.loadFromFile("settingsLightsGame1.xml");
+    gui.setup(group);
+    gui.loadFromFile(settingsFileNameGame1);
     
     bDrawGui=false;
     
@@ -55,6 +56,7 @@ void scGame1::draw(){ //draw scene 1 here
     
     //GUI
     if(bDrawGui){
+        ofDisableLighting();
         gui.draw();
     }
     
@@ -102,10 +104,10 @@ void scGame1::keyPressed(int key){
     if(key=='W')
         myCubeManager.rotateToWhite(0);
     if(key == 's') {
-        gui.saveToFile("settingsLightsGame1.xml");
+        gui.saveToFile(settingsFileNameGame1);
     }
     if(key == 'l') {
-        gui.loadFromFile("settingsLightsGame1.xml");
+        gui.loadFromFile(settingsFileNameGame1);
     }
     
     if(key==' ' )

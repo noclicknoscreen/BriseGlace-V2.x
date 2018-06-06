@@ -77,7 +77,8 @@ void ofApp::draw(){
     ofSetColor(255);
     ofPushView();
     ofDisableNormalizedTexCoords();
-    background.draw(0,0);
+    ofDisableLighting();
+        background.draw(0,0);
     ofEnableNormalizedTexCoords();
     ofPopView();
     

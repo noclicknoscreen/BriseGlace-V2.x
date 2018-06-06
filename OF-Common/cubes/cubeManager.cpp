@@ -27,12 +27,11 @@ void cubeManager::setup(int _cubesPositionY, int _espacementCubes)
     spotLightCubes.setSpotlightCutOff(200);
     spotLightCubes.setAttenuation(0.3,0,0); //puissance de la light = inverse de l'attenuation
     spotLightCubes.setSpotConcentration(0.15);
-    spotLightCubes.setDiffuseColor( ofColor(255.f, 255.f, 255.f));
-    spotLightCubes.setSpecularColor( ofColor(255.f, 255.f, 255.f));
+    spotLightCubes.setDiffuseColor( ofColor(50));
+    spotLightCubes.setSpecularColor( ofColor(0));
     spotLightCubes.setPosition(ofGetWidth()/2, ofGetHeight()/2, 0);
-    material.setShininess( 128);
-    lightColor.setBrightness( 255.0f);
-    lightColor.setSaturation( 0.f );
+    material.setShininess(40);
+    
     materialColor.setBrightness(255);
     materialColor.setSaturation(0);
     
@@ -48,6 +47,7 @@ void cubeManager::setup(int _cubesPositionY, int _espacementCubes)
 void cubeManager::update(ofPoint _lightPos, ofPoint _lightAngle, float _cutOff, float _concentration, int cubesRotationSpeed)
 {
     ofSetSmoothLighting(true);
+    spotLightCubes.enable();
     spotLightCubes.setPosition(_lightPos.x, _lightPos.y, _lightPos.z);
     spotLightCubes.setOrientation(ofVec3f(_lightAngle.x, _lightAngle.y, _lightAngle.z));
     spotLightCubes.setSpotlightCutOff(_cutOff);
@@ -62,8 +62,12 @@ void cubeManager::update(ofPoint _lightPos, ofPoint _lightAngle, float _cutOff, 
     }
     
     lightColor.setHue(0);
+    lightColor.setBrightness( 100.0f);
+    lightColor.setSaturation( 0.f );
+
     spotLightCubes.setDiffuseColor(lightColor);
-    material.setSpecularColor(materialColor);
+    
+    material.setSpecularColor(ofColor(0));
     
 }
 
