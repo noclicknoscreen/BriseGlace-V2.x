@@ -9,10 +9,10 @@
 #include "cubeManager.h"
 
 
-void cubeManager::setup(int _cubesPositionY, int _espacementCubes)
+void cubeManager::setup(ofPoint _cubesPos, int _espacementCubes)
 {
     
-    mCubesPositionY = _cubesPositionY;
+    mCubesPosition = _cubesPos;
     mEspacementCubes = _espacementCubes;
     
     ofEnableDepthTest();

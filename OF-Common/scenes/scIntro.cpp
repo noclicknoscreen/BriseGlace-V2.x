@@ -20,9 +20,9 @@ void scIntro::update(float dt){ //update scene 1 here
 };
 
 void scIntro::draw(){ //draw scene 1 here
-    scScene::drawFullCenterLine1("Vous êtes joueur ?", ofColor::black, -100);
-    scScene::drawFullCenterLine2("Moi oui !", ofColor::black, -100);
-    scScene::drawFullCenterLine3("Parlez-moi dans l'oreille.", ofColor::black, -75);
+    scScene::drawFullCenterLine1("Vous êtes joueur ?", ofColor::black, ofPoint(0,-100));
+    scScene::drawFullCenterLine2("Moi oui !", ofColor::black, ofPoint(0,-100));
+    scScene::drawFullCenterLine3("Parlez-moi dans l'oreille.", ofColor::black, ofPoint(0,-75));
 };
 
 //scene notifications

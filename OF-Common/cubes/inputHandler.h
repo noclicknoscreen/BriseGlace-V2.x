@@ -35,7 +35,7 @@ typedef struct
 class inputHandler
 {
 public:
-    void    setup(int _inputTextPosition);
+    void    setup(ofPoint _inputTextPosition);
     void    getNewText(player _player);//int _userId, string txt);
     int     update(cubeManager* cm);
     void    draw();
@@ -60,7 +60,7 @@ private:
     bool mReadyForNewText;
     int nbCubesRotated;
     
-    int mInputTextYPosition;
+    ofPoint mInputTextPosition;
     
 protected:
     string wordToFind;

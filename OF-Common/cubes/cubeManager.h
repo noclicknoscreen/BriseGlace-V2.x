@@ -18,7 +18,7 @@ class cubeManager
     // ------------------
     // METHODS ---------
     protected :
-    void setup(int _cubesPositionY, int _espacementCubes);
+    void setup(ofPoint _cubesPos, int _espacementCubes);
     
 public:
     void update(ofPoint _lightPos, ofPoint _lightAngle, float _cutOff, float concentration, int cubesRotationSpeed);
@@ -37,7 +37,7 @@ public:
     // ------------------
     // MEMBERS ---------
     protected :
-    int mCubesPositionY;
+    ofPoint mCubesPosition;
     int mEspacementCubes;
     
     //lumiere

@@ -54,7 +54,7 @@ void scVictory::draw(){ //draw scene 1 here
     ofPopStyle();
     
     //TEXT
-    scScene::drawTitle(bigEnigmaManager().getCurrentEnigma()->getSolution(), ofColor::black, 50);
+    scScene::drawTitle(bigEnigmaManager().getCurrentEnigma()->getSolution(), ofColor::black, ofPoint(0,50));
     
     winnerText.setColor(0, 0, 0, 255);
     winnerText.wrapTextX(ofGetWidth()/3);

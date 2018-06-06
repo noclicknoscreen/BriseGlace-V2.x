@@ -90,12 +90,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/scenes/scGame2.cpp"
-            timestampString = "549972001.732419"
+            timestampString = "549974026.110603"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "162"
             endingLineNumber = "162"
             landmarkName = "scGame2::someoneSpoke(player &amp; _player)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OF-Common/cubes/cubeManagerMemory.cpp"
+            timestampString = "549973028.035617"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "cubeManagerMemory::setGrid(int _nbLines, int _nbRows)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -9,10 +9,10 @@
 #include "cubeManagerHiddenWord.h"
 
 
-void cubeManagerHiddenWord::setup(int _cubesPositionY, int _espacementCubes)
+void cubeManagerHiddenWord::setup(ofPoint _cubesPos, int _espacementCubes)
 {
     // Root Setup -----
-    cubeManager::setup(_cubesPositionY, _espacementCubes);
+    cubeManager::setup(_cubesPos, _espacementCubes);
 };
 
 //--------------------------------------------------------------
@@ -121,7 +121,7 @@ void cubeManagerHiddenWord::getWord(string word)
     for(int i=0; i<word.size(); i++)
     {
         cube* tmpCube = new cube();
-        tmpCube->setup(ofPoint((ofGetWidth()-wordWidth)/2 + i*(mEspacementCubes + cubeSize) + cubeSize/2 + mEspacementCubes, mCubesPositionY,-300), cubeSize);
+        tmpCube->setup(ofPoint(mCubesPosition.x - wordWidth/2 + i*(mEspacementCubes + cubeSize) + cubeSize/2 + mEspacementCubes, mCubesPosition.y, -300), cubeSize);
         tmpCube->setLetter(utils::toUpperCase(ofToString(word[i])));
         myCubes.push_back(*tmpCube);
     }

@@ -18,7 +18,7 @@ class cubeManagerMemory : public cubeManager
     
     public :
     
-    void setup(int _cubesPositionY, int _espacementCubes);
+    void setup(ofPoint _cubesPos, int _espacementCubes);
 //    void update(ofPoint _lightPos, int cubesRotationSpeed);
     void draw();
     void drawTexturedCube(int i, float texCoordX_min, float texCoordX_max, float texCoordY_min, float texCoordY_max);

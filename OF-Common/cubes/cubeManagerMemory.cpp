@@ -9,10 +9,10 @@
 #include "cubeManagerMemory.h"
 
 
-void cubeManagerMemory::setup(int _cubesPositionY, int _espacementCubes)
+void cubeManagerMemory::setup(ofPoint _cubesPos, int _espacementCubes)
 {
     // Root Setup -----
-    cubeManager::setup(_cubesPositionY, _espacementCubes);
+    cubeManager::setup(_cubesPos, _espacementCubes);
     // Do the grid --
     setGrid(4,4);
 };
@@ -43,7 +43,7 @@ void cubeManagerMemory::setGrid(int _nbLines, int _nbRows){
                rndLetter = utils::getRndLetter();
             }while(ofStringTimesInString(mContent, rndLetter) > 0 && mContent != "");
             
-            ofPoint position(0.5*(ofGetWidth() - _nbRows*step) + 0.5*step, 0.5*(mCubesPositionY - _nbLines*step) + 0.5*step);
+            ofPoint position(mCubesPosition.x - 0.5*_nbRows*step + 0.5*step, mCubesPosition.y - 0.5*_nbLines*step + 0.5*step);
             position.x += idxRow*step;
             position.y += idxLine*step;
             position.z = -300;

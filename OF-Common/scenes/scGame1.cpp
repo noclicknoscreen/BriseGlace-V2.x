@@ -135,10 +135,10 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // On ne refiat pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
         //cubes
-        myCubeManager.setup(0.4*ofGetHeight(), 15);
+        myCubeManager.setup(ofPoint(0.5*ofGetWidth(), 0.4*ofGetHeight()), 15);
         
         //inputs
-        myInputManager.setup(0.6*ofGetHeight());
+        myInputManager.setup(ofPoint(0, 0.6*ofGetHeight()));
         
         //TODO :: bonheur ecrit en dur => lu dans le JSON
         myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());

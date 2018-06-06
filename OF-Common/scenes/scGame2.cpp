@@ -64,11 +64,12 @@ void scGame2::draw(){ //draw scene 1 here
     }
     
     // Draw Title
-    scScene::drawTitle("Mes mots rient");
-    scScene::drawSubTitle("Prochainement dans votre gare...");
+    scScene::drawTitle("Mes mots rient", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.15 * ofGetHeight()));
+    scScene::drawSubTitle("Prochainement dans votre gare...", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.15 * ofGetHeight()));
 
     // Draw cubes
     myCubeManager.draw();
+    
     // Draw floating words
     myInputManager.draw();
 
@@ -106,10 +107,9 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
         bigEnigmaManager().pickNewEnigma(IMAGE_GRID);
         
         //cubes
-        int baseX = 0.86*ofGetHeight();
-        myCubeManager.setup(baseX, 7);
+        myCubeManager.setup(ofPoint(0.2*ofGetWidth(), 0.5*ofGetHeight()), 7);
         //inputs
-        myInputManager.setup(baseX + 50);
+        myInputManager.setup(ofPoint(0.7 * ofGetWidth(), 0.45 * ofGetHeight()));
         
         myInputManager.clearDuplicatesLettersHistory();
         myInputManager.setReadyForNewText();

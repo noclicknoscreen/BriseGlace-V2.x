@@ -9,18 +9,18 @@
 #include "inputHandler.h"
 #include <algorithm>
 
-void inputHandler::setup(int _inputTextPosition)
+void inputHandler::setup(ofPoint _inputTextPosition)
 {
     font.load(globalFontName, globalFontSizeMedium);
     fontBig.load(globalFontName, globalFontSizeMedium + 15);
-
+    
     revealMode = false;
     currentRevealCube = 0;
     currentRevealLetter = 0;
     
     nbCubesRotated = 0;
     
-    mInputTextYPosition = _inputTextPosition;
+    mInputTextPosition = _inputTextPosition;
     
 }
 
@@ -31,7 +31,7 @@ void inputHandler::getNewText(player _player)
     ofLogNotice() << "got new input from user " << userId << " : " << _player.getLastMessageToCompare();
     
     text = utils::toUpperCase(_player.getLastMessageToCompare());
-
+    
     ofPoint source;
     ofColor textColor;
     
@@ -50,7 +50,7 @@ void inputHandler::getNewText(player _player)
         elt.textColor = textColor;
         elt.sourcePos = source;
         elt.currentPos = source;
-        elt.destination = ofPoint(cumulatedOffset + ofGetWidth()/2 - font.getStringBoundingBox(text, 0, 0).getWidth(), mInputTextYPosition);
+        elt.destination = ofPoint(cumulatedOffset + mInputTextPosition.x - font.getStringBoundingBox(text, 0, 0).getWidth(), mInputTextPosition.y);
         elt.destination.y += ofRandom(0.0, 15.0); //add some random so the text isn't a line block
         
         elt.alpha = 1.0;
@@ -65,34 +65,36 @@ void inputHandler::getNewText(player _player)
 
 void inputHandler::draw()
 {
-        for(int i=0; i<splittedString.size(); i++)
-        {
-            ofSetColor(splittedString[i].textColor);
+    
+    for(int i=0; i<splittedString.size(); i++)
+    {
+        ofSetColor(splittedString[i].textColor);
+        
+        if(revealMode){
+            font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
             
-            if(revealMode){
+        }else{
+            if(splittedString[i].alpha > 0){
                 font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
                 
             }else{
-                if(splittedString[i].alpha > 0){
-                    font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
-                    
-                }else{
-                    fontBig.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
-                    
-                }
+                fontBig.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
+                
             }
         }
+    }
+    
 }
 
 void inputHandler::revealTirrets(cubeManager* cm)
 {
     size_t found = wordToFind.find("-", 0);
-
+    
     if(found!=string::npos)
     {
         cm->myCubes[found].rotateToLetter();
     }
-
+    
 }
 
 int inputHandler::update(cubeManager* cm)
@@ -129,12 +131,12 @@ int inputHandler::update(cubeManager* cm)
         {
             int index = splittedString[currentRevealCube].correspondingCubes[currentRevealLetter];
             
-                //check if a cube is already rotating
-                for(int c=0; c<cm->myCubes.size(); c++)
-                {
-                    if(cm->myCubes[c].isRotating)
-                        somebodyRotating = true;        
-                }
+            //check if a cube is already rotating
+            for(int c=0; c<cm->myCubes.size(); c++)
+            {
+                if(cm->myCubes[c].isRotating)
+                    somebodyRotating = true;
+            }
             
             if(somebodyRotating)
             {
@@ -157,43 +159,43 @@ int inputHandler::update(cubeManager* cm)
                         break;
                 }
                 
-//                cm->myCubes[index].rotateToLetter(); //rotate the corresponding cube
+                //                cm->myCubes[index].rotateToLetter(); //rotate the corresponding cube
                 nbCubesRotated ++;                   //count one letter found more
                 splittedString[currentRevealCube].alpha = 0;
             }
         }
-            if(next)
+        if(next)
+        {
+            if(currentRevealLetter+1 < splittedString[currentRevealCube].correspondingCubes.size())
             {
-                if(currentRevealLetter+1 < splittedString[currentRevealCube].correspondingCubes.size())
+                currentRevealLetter++;
+            }
+            else if(currentRevealCube+1 < splittedString.size())
+            {
+                currentRevealCube++;
+                currentRevealLetter = 0;
+            }
+            else
+            {
+                ofLogNotice() << "reveal finished, ready to get another proposal from user ";
+                revealMode = false;
+                mReadyForNewText = true;
+                
+                ofNotifyEvent(readyForNewText, this);
+                
+                // On écarte les lettres/caractères introuvables (esapces, tirets) pour ne pas bloquer le jeu
+                string easyWordToFind = wordToFind;
+                easyWordToFind.erase (std::remove (easyWordToFind.begin(), easyWordToFind.end(), ' '), easyWordToFind.end());
+                easyWordToFind.erase (std::remove (easyWordToFind.begin(), easyWordToFind.end(), '-'), easyWordToFind.end());
+                
+                if(nbCubesRotated == easyWordToFind.size())
                 {
-                    currentRevealLetter++;
-                }
-                else if(currentRevealCube+1 < splittedString.size())
-                {
-                    currentRevealCube++;
-                    currentRevealLetter = 0;
-                }
-                else
-                {
-                    ofLogNotice() << "reveal finished, ready to get another proposal from user ";
-                    revealMode = false;
-                    mReadyForNewText = true;
-                    
-                    ofNotifyEvent(readyForNewText, this);
-                    
-                    // On écarte les lettres/caractères introuvables (esapces, tirets) pour ne pas bloquer le jeu
-                    string easyWordToFind = wordToFind;
-                    easyWordToFind.erase (std::remove (easyWordToFind.begin(), easyWordToFind.end(), ' '), easyWordToFind.end());
-                    easyWordToFind.erase (std::remove (easyWordToFind.begin(), easyWordToFind.end(), '-'), easyWordToFind.end());
-                    
-                    if(nbCubesRotated == easyWordToFind.size())
-                    {
-                        //WIN !
-                        ofLogNotice() << "WIN = > return true, userId =  " << userId;
-                        return userId;
-                    }
+                    //WIN !
+                    ofLogNotice() << "WIN = > return true, userId =  " << userId;
+                    return userId;
                 }
             }
+        }
     }
     return 0;
 }
