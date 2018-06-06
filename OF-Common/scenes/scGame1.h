@@ -8,14 +8,14 @@
 
 #pragma once
 
-#include "scScene.h"
+#include "scGame.h"
 
 #include "cubeManagerHiddenWord.h"
 #include "ofxGui.h"
 #include "inputHandlerHiddenWord.h"
 
 
-class scGame1 : public scScene{
+class scGame1 : public scGame{
     
 public:
 //    scGame1(playerManager &_manager) : scScene(_manager){
@@ -32,8 +32,6 @@ public:
     // Events callback
     void someoneSpoke(player & _player);
     void timerEnd();
-    void timerSignWinEnd();
-    void timerSignHintEnd();
     
     //gui
     ofxPanel gui;

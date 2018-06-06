@@ -7,7 +7,7 @@
 //
 
 #pragma once
-#include "scScene.h"
+#include "scGame.h"
 #include "ofxGui.h"
 #include "ofxBullet.h"
 
@@ -117,7 +117,7 @@ public:
 };
 
 
-class scGame3 : public scScene{
+class scGame3 : public scGame{
 
 public:
 

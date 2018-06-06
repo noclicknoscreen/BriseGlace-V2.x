@@ -10,7 +10,7 @@
 
 void scGame2::setup(){
     
-    scScene::setup();
+    scGame::setup();
     ofLogNotice() << "Game 2 : Setup !";
 
     //gui
@@ -38,6 +38,9 @@ void scGame2::setup(){
 
 
 void scGame2::update(float dt){
+    
+    scGame::update(dt);
+    
     // Cube update
     myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), ofPoint(orientationX, orientationY, orientationZ), cutOff, concentration, cubesRotationSpeed);
     
@@ -47,19 +50,8 @@ void scGame2::update(float dt){
         myInputManager.update(&myCubeManager);
     }
     
-    // Update timers
-    mTimer.update(dt);
-    timerSignHint.update(dt);
-    
-//    // We update if the input manager is ok with it, even if we win before the end of animations
-//    if(myInputManager.isReadyForNewText()){
-        timerSignWin.update(dt);
-//    }
-    
     // update a timer for post animation
     mTimerAfterText.update(dt);
-    
-    mTimer.update(dt);
     
 };
 
@@ -96,13 +88,10 @@ void scGame2::draw(){ //draw scene 1 here
 void scGame2::sceneWillAppear( ofxScene * fromScreen ){
     
     // reset our scene when we appear
-    scScene::sceneWillAppear(fromScreen);
+    scGame::sceneWillAppear(fromScreen);
     
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke,  this,&scGame2::someoneSpoke);
-    ofAddListener(mTimer.timerEnd,                  this,&scGame2::timerEnd);
-    ofAddListener(timerSignWin.timerEnd,            this,&scGame2::timerSignWinEnd);
-    ofAddListener(timerSignHint.timerEnd,           this,&scGame2::timerSignHintEnd);
     ofAddListener(mTimerAfterText.timerEnd,         this,&scGame2::timerAfterTextEnd);
     ofAddListener(myInputManager.readyForNewText,   this,&scGame2::readyForNewText);
     
@@ -127,18 +116,13 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
         
     }
 
-    // Player manager events
-    ofAddListener(mTimer.timerEnd, this, &scGame2::timerEnd);
-    
 };
 
 //scene notifications
 void scGame2::sceneWillDisappear( ofxScene * toScreen ){
+    scGame::sceneWillDisappear(toScreen);
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,   this,&scGame2::someoneSpoke);
-    ofRemoveListener(mTimer.timerEnd,                   this,&scGame2::timerEnd);
-    ofRemoveListener(timerSignWin.timerEnd,             this,&scGame2::timerSignWinEnd);
-    ofRemoveListener(timerSignHint.timerEnd,            this,&scGame2::timerSignHintEnd);
     ofRemoveListener(mTimerAfterText.timerEnd,          this,&scGame2::timerAfterTextEnd);
     ofRemoveListener(myInputManager.readyForNewText,    this,&scGame2::readyForNewText);
 }
@@ -167,13 +151,11 @@ void scGame2::keyPressed(int key){
 // Events callback -----------------------------------
 // Speaking event
 void scGame2::someoneSpoke(player & _player){
-    scScene::someoneSpoke(_player);
+    scGame::someoneSpoke(_player);
     
     if(myInputManager.isReadyForNewText()){
         myInputManager.getNewText(_player);
     }
-    
-    mTimer.startTimer(45);
     
     int compare = ofStringTimesInString(utils::toUpperCase(_player.getLastMessage()), utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
     if(compare > 0)
@@ -181,7 +163,7 @@ void scGame2::someoneSpoke(player & _player){
         ofLogNotice() << "We have a winner [" << _player.getLastMessage() << "] = [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
         bigPlayerManager().setWinnerUserId(_player.getNumber());
         myCubeManager.rotateAllToWhite();
-        timerSignWin.startTimer(5);
+        restartTimerSignWin();
         drawWinnerSign = true;
     }else{
         ofLogNotice() << "Final comparaison failed [" << _player.getLastMessage() << "] different from [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
@@ -189,30 +171,6 @@ void scGame2::someoneSpoke(player & _player){
     
 }
 
-void scGame2::timerEnd(){
-    // --------------------------------
-    drawHintSign = true;
-    hintUserId = bigPlayerManager().getRandomPlayer();
-    mTimer.startTimer(45);
-    timerSignHint.startTimer(5);
-}
-
-void scGame2::timerSignWinEnd(){
-    
-    ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN)";
-    // --------------------------------
-    timerSignWin.stop();
-    ofxSceneManager::instance()->goToScene(VICTORY);
-}
-
-
-void scGame2::timerSignHintEnd(){
-    
-    ofLogNotice() << "fin du timer timerSignHint, go to scene (HINT)";
-    // --------------------------------
-    timerSignHint.stop();
-    ofxSceneManager::instance()->goToScene(HINT);
-}
 
 void scGame2::timerAfterTextEnd(){
     

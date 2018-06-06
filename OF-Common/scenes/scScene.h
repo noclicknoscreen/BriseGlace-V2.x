@@ -55,11 +55,6 @@ private:
 protected:
     ///////////// TIMER /////////////////////
     timer mTimer;
-    timer timerSignWin;
-    timer timerSignHint;
-    ///////////// SIGNS ////////////////////
-    bool drawWinnerSign, drawHintSign;
-    int hintUserId;
     
 };
 

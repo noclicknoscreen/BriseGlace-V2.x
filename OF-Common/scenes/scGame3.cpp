@@ -98,8 +98,6 @@ void scGame3::update(float dt){
     
 
     mTimer.update(dt);
-    timerSignWin.update(dt);
-    timerSignHint.update(dt);
     
 };
 
@@ -190,7 +188,7 @@ void scGame3::someoneSpoke(player & _player){
     {
         ofLogNotice() << "c'est gagné !!! ";
         bigPlayerManager().setWinnerUserId(_player.getNumber());
-        timerSignWin.startTimer(5);
+        restartTimerSignWin();
         drawWinnerSign = true;
 
         ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
@@ -202,7 +200,7 @@ void scGame3::someoneSpoke(player & _player){
 //--------------------------------------------------------------
 void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
-    scScene::sceneWillAppear(fromScreen);
+    scGame::sceneWillAppear(fromScreen);
     
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
@@ -244,11 +242,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
     timer = ofGetElapsedTimef();
     
-    
-    // Player manager events
-    ofAddListener(mTimer.timerEnd,          this,&scGame3::timerEnd);
-    ofAddListener(timerSignWin.timerEnd,    this,&scGame3::timerSignWinEnd);
-    ofAddListener(timerSignHint.timerEnd,   this,&scGame3::timerSignHintEnd);
+
     
     bigPlayerManager().setWinnerUserId(0);
     
@@ -262,12 +256,11 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
 //--------------------------------------------------------------
 void scGame3::sceneWillDisappear( ofxScene * toScreen ){
     
+    scGame:scGame::sceneWillDisappear(toScreen);
+    
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
-    
-    ofRemoveListener(mTimer.timerEnd,                   this,&scGame3::timerEnd);
-    ofRemoveListener(timerSignWin.timerEnd,             this,&scGame3::timerSignWinEnd);
-    ofRemoveListener(timerSignHint.timerEnd,            this,&scGame3::timerSignHintEnd);
+
 };
 
 
@@ -403,35 +396,5 @@ void scGame3::setupLight()
     materialColor.setHue(0);
 };
 
-
-void scGame3::timerEnd(){
-    // --------------------------------
-    drawHintSign = true;
-    hintUserId = bigPlayerManager().getRandomPlayer();
-    mTimer.startTimer(45);
-    timerSignHint.startTimer(5);
-}
-
-void scGame3::timerSignWinEnd(){
-    
-    ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) ";
-    
-    // --------------------------------
-    timerSignWin.stop();
-    ofxSceneManager::instance()->goToScene(GAME3_BIS);
-    
-}
-
-
-void scGame3::timerSignHintEnd(){
-    
-    ofLogNotice() << "fin du timer timerSignHint, go to scene 7 (HINT) ";
-    // --------------------------------
-    timerSignHint.stop();
-    mTimer.stop();
-
-    ofxSceneManager::instance()->goToScene(HINT);
-    
-}
 
 

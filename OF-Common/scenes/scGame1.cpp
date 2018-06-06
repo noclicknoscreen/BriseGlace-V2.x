@@ -34,6 +34,8 @@ void scGame1::setup(){  //load your scene 1 assets here...
 
 void scGame1::update(float dt){ //update scene 1 here
 
+    scGame::update(dt);
+    
     myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), ofPoint(orientationX, orientationY, orientationZ), cutOff, concentration, cubesRotationSpeed);
     
     int id = myInputManager.update(&myCubeManager);
@@ -41,14 +43,12 @@ void scGame1::update(float dt){ //update scene 1 here
     {
         drawWinnerSign = true;
         bigPlayerManager().setWinnerUserId(id);
-        timerSignWin.startTimer(5);
+        restartTimerSignWin();
         ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
     }
 
     // Update timers
     mTimer.update(dt);
-    timerSignWin.update(dt);
-    timerSignHint.update(dt);
     
 };
 
@@ -119,7 +119,8 @@ void scGame1::keyPressed(int key){
 void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     
     // reset our scene when we appear
-    scScene::sceneWillAppear(fromScreen);
+    scGame::sceneWillAppear(fromScreen);
+    
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
     // Load the next enigma
@@ -127,11 +128,6 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     
     // Erase all words of every one
     bigPlayerManager().freshRestart();
-    
-    
-    //signs
-    drawWinnerSign = false;
-    drawHintSign = false;
     
     // On ne refiat pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
@@ -151,59 +147,23 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     }
 
     
-    // -- -- -- -- --
-    mTimer.startTimer(45);
-    // Player manager events
-    ofAddListener(mTimer.timerEnd,          this,&scGame1::timerEnd);
-    ofAddListener(timerSignWin.timerEnd,    this,&scGame1::timerSignWinEnd);
-    ofAddListener(timerSignHint.timerEnd,   this,&scGame1::timerSignHintEnd);
-    
 };
 
 //scene notifications
 void scGame1::sceneWillDisappear( ofxScene * toScreen ){
+    scGame::sceneWillDisappear(toScreen);
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,   this,&scGame1::someoneSpoke);
-    ofRemoveListener(mTimer.timerEnd,                   this,&scGame1::timerEnd);
-    ofRemoveListener(timerSignWin.timerEnd,             this,&scGame1::timerSignWinEnd);
-    ofRemoveListener(timerSignHint.timerEnd,            this,&scGame1::timerSignHintEnd);
 
 }
 
 // Events callback -----------------------------------
 // Speaking event
 void scGame1::someoneSpoke(player & _player){
-    scScene::someoneSpoke(_player);
+    scGame::someoneSpoke(_player);
     
     if(myInputManager.isReadyForNewText())
         myInputManager.getNewText(_player);
     
-    mTimer.startTimer(45);
-    
-}
-
-void scGame1::timerEnd(){
-    // --------------------------------
-    drawHintSign = true;
-    hintUserId = bigPlayerManager().getRandomPlayer();
-    mTimer.startTimer(45);
-    timerSignHint.startTimer(5);
-}
-
-void scGame1::timerSignWinEnd(){
-    
-    ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) ";
-    // --------------------------------
-    timerSignWin.stop();
-    ofxSceneManager::instance()->goToScene(VICTORY);
-}
-
-
-void scGame1::timerSignHintEnd(){
-    
-    ofLogNotice() << "fin du timer timerSignHint, go to scene (HINT) ";
-    // --------------------------------
-    timerSignHint.stop();
-    ofxSceneManager::instance()->goToScene(HINT);
 }
 

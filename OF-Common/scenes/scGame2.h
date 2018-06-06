@@ -8,12 +8,12 @@
 
 #pragma once
 
-#include "scScene.h"
+#include "scGame.h"
 #include "cubeManagerMemory.h"
 #include "inputHandlerMemory.h"
 
 
-class scGame2 : public scScene{
+class scGame2 : public scGame{
 
 public:
 //    scGame2(playerManager &_manager) : scScene(_manager){
@@ -50,9 +50,6 @@ public:
 private:
     timer mTimerAfterText;
 
-    void timerEnd();
-    void timerSignWinEnd();
-    void timerSignHintEnd();
     void timerAfterTextEnd();
     void readyForNewText();
     
