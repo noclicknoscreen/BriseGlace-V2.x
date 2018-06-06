@@ -89,6 +89,8 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
     
     // reset our scene when we appear
     scGame::sceneWillAppear(fromScreen);
+    // Player manager events
+    ofAddListener(timerSignWin.timerEnd,    this,&scGame2::timerSignWinEnd);
     
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke,  this,&scGame2::someoneSpoke);
@@ -121,6 +123,9 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
 //scene notifications
 void scGame2::sceneWillDisappear( ofxScene * toScreen ){
     scGame::sceneWillDisappear(toScreen);
+    // Disable timer events
+    ofRemoveListener(timerSignWin.timerEnd,     this,&scGame2::timerSignWinEnd);
+    
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,   this,&scGame2::someoneSpoke);
     ofRemoveListener(mTimerAfterText.timerEnd,          this,&scGame2::timerAfterTextEnd);
@@ -170,7 +175,11 @@ void scGame2::someoneSpoke(player & _player){
     }
     
 }
-
+// VICTORY Event , go to scene you prefer
+void scGame2::timerSignWinEnd(){
+    scGame::timerSignWinEnd();
+    ofxSceneManager::instance()->goToScene(VICTORY);
+}
 
 void scGame2::timerAfterTextEnd(){
     

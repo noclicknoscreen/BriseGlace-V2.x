@@ -120,9 +120,12 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     
     // reset our scene when we appear
     scGame::sceneWillAppear(fromScreen);
+    // Player manager events
+    ofAddListener(timerSignWin.timerEnd,    this,&scGame1::timerSignWinEnd);
     
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
+    
     // Load the next enigma
     bigEnigmaManager().pickNewEnigma(MOTUS);
     
@@ -152,6 +155,9 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
 //scene notifications
 void scGame1::sceneWillDisappear( ofxScene * toScreen ){
     scGame::sceneWillDisappear(toScreen);
+    // Disable timer events
+    ofRemoveListener(timerSignWin.timerEnd,     this,&scGame1::timerSignWinEnd);
+    
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,   this,&scGame1::someoneSpoke);
 
@@ -165,5 +171,11 @@ void scGame1::someoneSpoke(player & _player){
     if(myInputManager.isReadyForNewText())
         myInputManager.getNewText(_player);
     
+}
+
+// VICTORY Event , go to scene you prefer
+void scGame1::timerSignWinEnd(){
+    scGame::timerSignWinEnd();
+    ofxSceneManager::instance()->goToScene(VICTORY);
 }
 

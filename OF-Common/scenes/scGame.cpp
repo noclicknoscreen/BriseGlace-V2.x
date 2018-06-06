@@ -10,9 +10,11 @@
 
 void scGame::update(float dt){
     timerBeforeHint.update(dt);
-    ofLogNotice() << "Temps avant indice : "  << timerBeforeHint.toString();
+//    ofLogNotice() << "Temps avant indice : "  << timerBeforeHint.toString();
     
     timerSignHint.update(dt);
+
+    ofLogNotice() << "Temps avant win : "  << timerSignWin.toString();
     timerSignWin.update(dt);
     
 }
@@ -31,13 +33,16 @@ void scGame::someoneSpoke(player & _player){
 }
 
 void scGame::restartTimerSignHint(){
+    ofLogNotice() << "Start timerSignHint, waiting..... ";
     timerSignHint.startTimer(5);
 }
 void scGame::restartTimerBeforeHint(){
+    ofLogNotice() << "Start timerBeforeHint, waiting..... ";
     drawHintSign = false;
     timerBeforeHint.startTimer(30);
 }
 void scGame::restartTimerSignWin(){
+    ofLogNotice() << "Start timerSignWin, waiting..... ";
     timerSignWin.startTimer(5);
 }
 
@@ -57,7 +62,7 @@ void scGame::timerSignWinEnd(){
     ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) ";
     // --------------------------------
     timerSignWin.stop();
-    ofxSceneManager::instance()->goToScene(VICTORY);
+
 }
 
 
@@ -82,7 +87,6 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
     
     // Player manager events
     ofAddListener(timerBeforeHint.timerEnd, this,&scGame::timerBeforeHintEnd);
-    ofAddListener(timerSignWin.timerEnd,    this,&scGame::timerSignWinEnd);
     ofAddListener(timerSignHint.timerEnd,   this,&scGame::timerSignHintEnd);
     
 }
@@ -90,9 +94,9 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
 void scGame::sceneWillDisappear( ofxScene * toScreen ){
     // reset our scene when we appear
     scScene::sceneWillDisappear(toScreen);
+    
     // Disable timer events
     ofRemoveListener(timerBeforeHint.timerEnd,  this,&scGame::timerBeforeHintEnd);
-    ofRemoveListener(timerSignWin.timerEnd,     this,&scGame::timerSignWinEnd);
     ofRemoveListener(timerSignHint.timerEnd,    this,&scGame::timerSignHintEnd);
 
 }

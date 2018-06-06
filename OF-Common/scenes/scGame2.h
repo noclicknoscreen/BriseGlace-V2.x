@@ -33,6 +33,7 @@ public:
     
     // Events callback
     void someoneSpoke(player & _player);
+    void timerSignWinEnd();
     
     //gui
     ofxPanel gui;

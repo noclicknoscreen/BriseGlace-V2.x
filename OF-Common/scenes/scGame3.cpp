@@ -52,6 +52,8 @@ void scGame3::setup(){
 //--------------------------------------------------------------
 void scGame3::update(float dt){
     
+    scGame::update(dt);
+    
     ofSetWindowTitle(ofToString(ofGetFrameRate()));
     
     camera.setPosition(ofVec3f(camPosX, camPosY, camPosZ));
@@ -171,6 +173,7 @@ void scGame3::draw(){
     else
         bigPlayerManager().draw();
     
+    
 };
 
 //--------------------------------------------------------------
@@ -181,26 +184,49 @@ void scGame3::exit()
 
 //--------------------------------------------------------------
 void scGame3::someoneSpoke(player & _player){
-    scScene::someoneSpoke(_player);
-
-    std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord));
-    if(index != std::string::npos)
+    scGame::someoneSpoke(_player);
+//
+//    std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord));
+//    if(index != std::string::npos)
+//    {
+//        ofLogNotice() << "c'est gagné !!! ";
+//        bigPlayerManager().setWinnerUserId(_player.getNumber());
+//        restartTimerSignWin();
+//        drawWinnerSign = true;
+//
+//        ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
+//
+//        //ofxSceneManager::instance()->goToScene(7, true, false);
+//    }
+//    
+    int compare = ofStringTimesInString(utils::toUpperCase(_player.getLastMessage()), utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
+    if(compare > 0)
     {
-        ofLogNotice() << "c'est gagné !!! ";
+        ofLogNotice() << "We have a winner [" << _player.getLastMessage() << "] = [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
         bigPlayerManager().setWinnerUserId(_player.getNumber());
         restartTimerSignWin();
         drawWinnerSign = true;
-
+        
         ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
-
-        //ofxSceneManager::instance()->goToScene(7, true, false);
+        
+    }else{
+        ofLogNotice() << "Final comparaison failed [" << _player.getLastMessage() << "] different from [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
     }
+    
+}
+
+// VICTORY Event , go to scene you prefer
+void scGame3::timerSignWinEnd(){
+    scGame::timerSignWinEnd();
+    ofxSceneManager::instance()->goToScene(GAME3_BIS);
 }
 
 //--------------------------------------------------------------
 void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
     scGame::sceneWillAppear(fromScreen);
+    // Player manager events
+    ofAddListener(timerSignWin.timerEnd,    this,&scGame3::timerSignWinEnd);
     
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
@@ -242,8 +268,6 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
     timer = ofGetElapsedTimef();
     
-
-    
     bigPlayerManager().setWinnerUserId(0);
     
     mTimer.startTimer(45);
@@ -256,7 +280,9 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
 //--------------------------------------------------------------
 void scGame3::sceneWillDisappear( ofxScene * toScreen ){
     
-    scGame:scGame::sceneWillDisappear(toScreen);
+    scGame::sceneWillDisappear(toScreen);
+    // Disable timer events
+    ofRemoveListener(timerSignWin.timerEnd,     this,&scGame3::timerSignWinEnd);
     
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);

@@ -13,11 +13,12 @@
 // This class is made to manage common behaviours between all games
 class scGame  : public scScene{
     
-private:
-    timer timerBeforeHint;
-    timer timerSignHint;
+protected:
     timer timerSignWin;
-    
+private:
+    timer timerSignHint;
+    timer timerBeforeHint;
+private:
     void restartTimerBeforeHint();
     void restartTimerSignHint();
     

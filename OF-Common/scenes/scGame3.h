@@ -134,7 +134,6 @@ public:
     void sceneWillDisappear( ofxScene * fromScreen );
     void timerEnd();
     void timerSignWinEnd();
-    void timerSignHintEnd();
     
     void keyPressed(int key);
     void exit();
