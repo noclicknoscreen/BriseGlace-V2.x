@@ -3,70 +3,50 @@
   <html>
   <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="css/IndexStyle.css" />
       <title>Formulaire</title>
+      <meta name="viewport" content="initial-scale=1.0">
+      <meta http-equiv="Pragma" content="no-cache" />
+      <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+      <meta http-equiv="Expires" content="0" />
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.Jcrop.js"></script>
+      <script type="text/javascript" src="js/option-image.js"></script>
+      <script type="text/javascript"  src="js/pastille.js"></script>
+      <link rel="stylesheet" href="css/jquery.Jcrop.css" type="text/css" />
+      <link href="http://fonts.googleapis.com/css?family=Oswald:400,400|Quattrocento+Sans:400,700|PT+Sans:400|Open+Sans Condensed:300" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/standardize.css">
+      <link rel="stylesheet" href="css/index-grid.css">
+      <link rel="stylesheet" href="css/index.css">
   </head>
-  <body>
-    <form action="?" method="POST">
+  <body class="body page-index clearfix">
 
-    <h1>Enigme</h1>
-    <!-- Input JEUX  -->
-    <p>
 
-      <?php
-          $selected = isset( $_POST['jeux'] ) ? $_POST['jeux'] : "" ;
-          $selectedValue = 'selected="selected"';
-      ?>
-
-        <label for="jeux">Jeux :</label>
-        <select name="jeux" id="jeux" value="boggle">
-            <!-- choix du jeux  -->
-            <option value = "motus" <?php if( $selected == "motus" ) echo $selectedValue ?>>Motus</option>
-            <option value = "boggle" <?php if( $selected == "boggle" ) echo $selectedValue ?>>Boggle</option>
-            <option value = "memory" <?php if( $selected == "memory" ) echo $selectedValue ?>>Memory</option>
-        </select>
-        <input type="submit" name="select" id="selects" value="Select" />
-    </p>
+    <div class="element element-2"></div>
+    <img class="image image-1" src="images/1.png">
+    <p class="_input _input-1">ENIGME</p>
+    <img class="image image-2" src="images/2.png">
+    <div class="element element-3"></div>
 
   <?php
   require('script/utile/function.php');
-  if (isset($_POST['jeux']))
+  // NOUVELLE ENIGME
+  if (isset($_POST['plus']))
   {
-      ?>
+      require('script/front/new.php');
+  }
+  else if (isset($_POST['submit']))
+  {
+    require('script/back/create.php');
+  }
+  else if (isset($_POST['update']))
+  {
+    require('script/back/update.php');
+  }
+    require('script/front/old.php');
+  ?>
 
-      <!-- BOUTTON -->
-      <div class="button">
-      </br>
-        <input type="submit" name="plus" id="plus" value="+"/>
-      </div>
 
-      <?php
 
-      // NOUVELLE ENIGME
-      if (isset($_POST['plus']))
-      {
-        require('script/front/new.php');
-        // SI BOUTTON ENVOYER
-        ?>
-        <input type="submit" name="submit" value="Envoyer" />
-        <?php
-      }
-      else if (isset($_POST['submit']))
-      {
-        require('script/back/create.php');
-      }
-      else if (isset($_POST['update']))
-      {
-        require('script/back/update.php');
-      }
-      require('script/front/old.php');
-      ?>
-      <p> --------------------------------------------------------------------------------------------------------------------</p>
-      <input type="submit" name="update" id="update" value="update" />
-      <p> --------------------------------------------------------------------------------------------------------------------</p>
-      <?php
-    } ?>
-
-</form>
 </body>
 </html>
