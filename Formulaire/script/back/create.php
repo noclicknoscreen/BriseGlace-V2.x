@@ -9,16 +9,17 @@ catch (Exception $e)
   die('Erreur : ' . $e->getMessage());
 }
 
-// On récupère tout le contenu de la table motus
-$reponse = $bdd->query('SELECT * FROM motus ORDER BY id');
+// On récupère tout le contenu de la table enigme
+$reponse = $bdd->query('SELECT * FROM enigme ORDER BY id');
 // Verifie si les images sont valable
+error_mess($_POST['image0'], 0);
 error_mess($_POST['image1'], 1);
 error_mess($_POST['image2'], 2);
 error_mess($_POST['image3'], 3);
 error_mess($_POST['image4'], 4);
-if (verif_image($_POST['image1']) && verif_image($_POST['image2']) && verif_image($_POST['image3']) && verif_image($_POST['image4'])) {
+if (verif_image($_POST['image1']) && verif_image($_POST['image2']) && verif_image($_POST['image3']) && verif_image($_POST['image4']) && verif_image($_POST['image0'])) {
   // SI OUI Creation des dossiers et fichiers JSON + Upload les images
-  $tmp = $_POST['jeux'];
+  $tmp = "enigme";
   if (file_exists ($tmp) == false) {
       mkdir("./" . $tmp, 0777, true);
   }
@@ -57,61 +58,98 @@ if (verif_image($_POST['image1']) && verif_image($_POST['image2']) && verif_imag
       mkdir("./" . $tmp . "/" . $StrNum . $num . "/image", 0777, true);
     }
 
+
+
     // Upload des images
-    for ($i=1; $i <= 4; $i++) {
+    for ($i=0; $i <= 4; $i++) {
       $url=$_POST['image' . $i];
       $info = new SplFileInfo($url);
       $data = @file_get_contents($url);
+      $datacrop = @file_get_contents("tmp/image" . $i . "-crop.jpg");
       $new = $tmp . "/" . $StrNum . $num . '/image/image' . $i . '.' . $info->getExtension();
+      $newcrop = $tmp . "/" . $StrNum . $num . '/image/image' . $i . '-crop.jpg';
       file_put_contents($new, $data);
+      file_put_contents($newcrop, $datacrop);
+      unlink("tmp/image" . $i . "-crop.jpg");
       $imgName[$i] = 'image' . $i . '.' . $info->getExtension();
     }
 
+
     date_default_timezone_set('UTC');
-    $req = $bdd->prepare('INSERT INTO motus(id, mot, indice1, image1, auteur1, indice2, image2, auteur2, indice3, image3, auteur3, recompense, image4, auteur4, legende)
-                          VALUES(:id, :mot, :indice1, :image1, :auteur1, :indice2, :image2, :auteur2, :indice3, :image3, :auteur3, :recompense, :image4, :auteur4, :legende)');
+    $req = $bdd->prepare('INSERT INTO enigme(id, mot, image0, imgcrop0, auteur0, date0, indice1, image1, imgcrop1, auteur1, date1, indice2, image2, imgcrop2, auteur2, date2, indice3, image3, imgcrop3, auteur3, date3, recompense, image4, imgcrop4, auteur4, date4, legende)
+      VALUES(:id, :mot, :image0, :imgcrop0, :auteur0, :date0, :indice1, :image1, :imgcrop1, :auteur1, :date1, :indice2, :image2, :imgcrop2, :auteur2, :date2, :indice3, :image3, :imgcrop3, :auteur3, :date3, :recompense, :image4, :imgcrop4, :auteur4, :date4, :legende)');
     $req->execute(array(
       'id' => $num,
       'mot' => $_POST['mot'],
+      'image0'=>$_POST['image0'],
+      'imgcrop0'=> $tmp . "/" . $StrNum . $num . '/image/image0-crop.jpg',
+      'auteur0' => $_POST['auteur0'],
+      'date0' => $_POST['date0'],
       'indice1'=>$_POST['indice1'],
       'image1'=>$_POST['image1'],
-      'auteur1' => 'auteur',
+      'imgcrop1'=> $tmp . "/" . $StrNum . $num . '/image/image1-crop.jpg',
+      'auteur1' => $_POST['auteur1'],
+      'date1' => $_POST['date1'],
       'indice2'=>$_POST['indice2'],
       'image2'=>$_POST['image2'],
-      'auteur2' => 'auteur',
+      'imgcrop2'=> $tmp . "/" . $StrNum . $num . '/image/image2-crop.jpg',
+      'auteur2' => $_POST['auteur2'],
+      'date2' => $_POST['date2'],
       'indice3'=>$_POST['indice3'],
       'image3'=>$_POST['image3'],
-      'auteur3' => 'auteur',
+      'imgcrop3'=> $tmp . "/" . $StrNum . $num . '/image/image3-crop.jpg',
+      'auteur3' => $_POST['auteur3'],
+      'date3' => $_POST['date3'],
       'recompense'=>$_POST['recompense'],
       'image4'=>$_POST['image4'],
-      'auteur4' => 'auteur',
+      'imgcrop4'=> $tmp . "/" . $StrNum . $num . '/image/image4-crop.jpg',
+      'auteur4' => $_POST['auteur4'],
+      'date4' => $_POST['date4'],
       'legende'=>$_POST['legende'],
       ));
 
     // Crée le tableau JSON
     $jsonFormat = array(
-        "jeux" => $_POST['jeux'],
-        "mot" => $_POST['mot'],
+        "mot" =>array(
+          "titre"=>$_POST['mot'],
+          "image"=>$imgName[0],
+          "image-crop"=> "image0-crop.jpg",
+          "url"=>$_POST['image0'],
+          'auteur' => $_POST['auteur0'],
+          'date' => $_POST['date0'],
+        ),
         "indice"=>array(array(
             "titre"=>$_POST['indice1'],
             "image"=>$imgName[1],
+            "image-crop"=> "image1-crop.jpg",
             "url"=>$_POST['image1'],
+            'auteur' => $_POST['auteur1'],
+            'date' => $_POST['date1'],
           ),
           array(
             "titre"=>$_POST['indice2'],
             "image"=>$imgName[2],
+            "image-crop"=> "image2-crop.jpg",
             "url"=>$_POST['image2'],
+            'auteur' => $_POST['auteur2'],
+            'date' => $_POST['date2'],
           ),
           array(
             "titre"=>$_POST['indice3'],
             "image"=>$imgName[3],
+            "image-crop"=> "image3-crop.jpg",
             "url"=>$_POST['image3'],
+            'auteur' => $_POST['auteur3'],
+            'date' => $_POST['date3'],
         ),),
           "recompense"=>array(
             "indice"=>array(
               "titre"=>$_POST['recompense'],
               "image"=>$imgName[4],
+              "image-crop"=> "image4-crop.jpg",
               "url"=>$_POST['image4'],
+              'auteur' => $_POST['auteur4'],
+              'date' => $_POST['date4'],
             ),
           "legende"=>$_POST['legende'],
           )

@@ -1,0 +1,76 @@
+.fluid-span-1 {
+  width: 8.2%;
+}
+
+.fluid-span-2 {
+  width: 18.4%;
+}
+
+.fluid-span-3 {
+  width: 28.6%;
+}
+
+.fluid-span-4 {
+  width: 38.8%;
+}
+
+.fluid-span-5 {
+  width: 49%;
+}
+
+.fluid-span-6 {
+  width: 59.2%;
+}
+
+.fluid-span-7 {
+  width: 69.4%;
+}
+
+.fluid-span-8 {
+  width: 79.6%;
+}
+
+.fluid-span-9 {
+  width: 89.8%;
+}
+
+.fluid-span-10 {
+  width: 100%;
+}
+
+.fluid-offset-1 {
+  margin-left: 10.2%;
+}
+
+.fluid-offset-2 {
+  margin-left: 20.4%;
+}
+
+.fluid-offset-3 {
+  margin-left: 30.6%;
+}
+
+.fluid-offset-4 {
+  margin-left: 40.8%;
+}
+
+.fluid-offset-5 {
+  margin-left: 51%;
+}
+
+.fluid-offset-6 {
+  margin-left: 61.2%;
+}
+
+.fluid-offset-7 {
+  margin-left: 71.4%;
+}
+
+.fluid-offset-8 {
+  margin-left: 81.6%;
+}
+
+.fluid-offset-9 {
+  margin-left: 91.8%;
+}
+

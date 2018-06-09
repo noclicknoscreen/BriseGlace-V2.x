@@ -9,8 +9,8 @@ catch (Exception $e)
   die('Erreur : ' . $e->getMessage());
 }
 
-// On récupère tout le contenu de la table motus
-$reponse = $bdd->query('SELECT * FROM ' . $_POST['jeux']);
+// On récupère tout le contenu de la table enigme
+$reponse = $bdd->query("SELECT * FROM enigme");
 
 // On affiche chaque entrée une à une
 
@@ -35,13 +35,13 @@ while ($donnees = $reponse->fetch())
   }
 
   // Upload des images
-  for ($j=1; $j <= 4; $j++) {
+  for ($j=0; $j <= 4; $j++) {
 
     $testImg = false;
     $bdd = new PDO('mysql:host=localhost;dbname=formulaire;charset=utf8', 'root', 'root');
-    $zone = $bdd->query("SELECT * FROM motus WHERE id='$i'");
-    $donnee = $zone->fetch();
-    if ($donnee['image' . $j] == $_POST['sqlimage' . $j . $i]) { $testImg = true; }
+    $zone = $bdd->query("SELECT * FROM enigme WHERE id='$i'");
+    $donnees = $zone->fetch();
+    if ($donnees['image' . $j] == $_POST['sqlimage' . $j . $i]) { $testImg = true; }
 
     $url = $_POST['sqlimage' . $j . $i];
     $info = new SplFileInfo($url);
@@ -50,7 +50,7 @@ while ($donnees = $reponse->fetch())
         error_mess($url, $j);
         if (verif_image($url)) {
           $data = @file_get_contents($url);
-          $new = $_POST['jeux'] . "/" . $StrNum . $i . '/image/image' . $j . '.' . $info->getExtension();
+          $new = "enigme/" . $StrNum . $i . '/image/image' . $j . '.' . $info->getExtension();
           file_put_contents($new, $data);
         }
         else { $_POST['sqlimage' . $j . $i] = $donnee['image' . $j]; }
@@ -59,53 +59,100 @@ while ($donnees = $reponse->fetch())
     $zone->closeCursor();
   }
 
-  $req = $bdd->prepare('UPDATE motus SET mot = :mot, indice1 = :indice1, image1 = :image1, indice2 = :indice2, image2 = :image2,
-                        indice3 = :indice3, image3 = :image3, recompense = :recompense, image4 = :image4,
+  $req = $bdd->prepare('UPDATE enigme SET mot = :mot, image0 = :image0, imgcrop0 = :imgcrop0, auteur0 = :auteur0, date0 = :date0,
+                        indice1 = :indice1, image1 = :image1, imgcrop1 = :imgcrop1, auteur1 = :auteur1, date1 = :date1,
+                        indice2 = :indice2, image2 = :image2, imgcrop2 = :imgcrop2, auteur2 = :auteur2, date2 = :date2,
+                        indice3 = :indice3, image3 = :image3, imgcrop3 = :imgcrop3, auteur3 = :auteur3, date3 = :date3,
+                        recompense = :recompense, image4 = :image4, imgcrop4 = :imgcrop4, auteur4 = :auteur4, date4 = :date4,
                         legende = :legende WHERE id = :id');
   $req->execute(array(
     'mot' =>$_POST['sqlmot' . $i],
+
+    'image0'=>$_POST['sqlimage0'. $i],
+    'imgcrop0'=> "enigme/" . $StrNum . $i . '/image/image0-crop.jpg',
+    'auteur0' => $_POST['sqlauteur0'. $i],
+    'date0' => $_POST['sqldate0' . $i],
+
     'indice1'=>$_POST['sqlindice1' . $i],
     'image1'=>$_POST['sqlimage1' . $i],
+
+    'imgcrop1'=> "enigme/" . $StrNum . $i . '/image/image1-crop.jpg',
+    'auteur1' => $_POST['sqlauteur1'. $i],
+    'date1' => $_POST['sqldate1'. $i],
+
     'indice2'=>$_POST['sqlindice2' . $i],
     'image2'=>$_POST['sqlimage2' . $i],
+
+    'imgcrop2'=> "enigme/" . $StrNum . $i . '/image/image2-crop.jpg',
+    'auteur2' => $_POST['sqlauteur2'. $i],
+    'date2' => $_POST['sqldate2'. $i],
+
     'indice3'=>$_POST['sqlindice3' . $i],
     'image3'=>$_POST['sqlimage3' . $i],
+
+    'imgcrop3'=> "enigme/" . $StrNum . $i . '/image/image3-crop.jpg',
+    'auteur3' => $_POST['sqlauteur3'. $i],
+    'date3' => $_POST['sqldate3'. $i],
+
     'recompense'=>$_POST['sqlrecompense' . $i],
     'image4'=>$_POST['sqlimage4' . $i],
+
+    'imgcrop4'=> "enigme/" . $StrNum . $i . '/image/image4-crop.jpg',
+    'auteur4' => $_POST['sqlauteur4'. $i],
+    'date4' => $_POST['sqldate4'. $i],
+
     'legende'=>$_POST['sqllegende' . $i],
   	'id' => $i,
   	));
 
     $jsonFormat = array(
-        "jeux" => $_POST['jeux'],
-        "mot" => $_POST['sqlmot' . $i],
+        "mot" => array(
+          "titre"=>$_POST['sqlmot' . $i],
+          "image"=>$imgName[0],
+          "image-crop"=> "image0-crop.jpg",
+          "url"=>$_POST['sqlimage0' . $i],
+          'auteur' => $_POST['sqlauteur0' . $i],
+          'date' => $_POST['sqldate0' . $i],
+        ),
         "indice"=>array(array(
             "titre"=>$_POST['sqlindice1' . $i],
             "image"=>$imgName[1],
+            "image-crop"=> "image1-crop.jpg",
             "url"=>$_POST['sqlimage1' . $i],
+            'auteur' => $_POST['sqlauteur1' . $i],
+            'date' => $_POST['sqldate1' . $i],
           ),
           array(
             "titre"=>$_POST['sqlindice2' . $i],
             "image"=>$imgName[2],
+            "image-crop"=> "image2-crop.jpg",
             "url"=>$_POST['sqlimage2' . $i],
+            'auteur' => $_POST['sqlauteur2' . $i],
+            'date' => $_POST['sqldate2' . $i],
           ),
           array(
             "titre"=>$_POST['sqlindice3' . $i],
             "image"=>$imgName[3],
+            "image-crop"=> "image3-crop.jpg",
             "url"=>$_POST['sqlimage3' . $i],
+            'auteur' => $_POST['sqlauteur3' . $i],
+            'date' => $_POST['sqldate3' . $i],
         ),),
           "recompense"=>array(
             "indice"=>array(
               "titre"=>$_POST['sqlrecompense' . $i],
               "image"=>$imgName[4],
+              "image-crop"=> "image4-crop.jpg",
               "url"=>$_POST['sqlimage4' . $i],
+              'auteur' => $_POST['sqlauteur4' . $i],
+              'date' => $_POST['sqldate4' . $i],
             ),
           "legende"=>$_POST['sqllegende' . $i],
           )
         );
 
         // Modifie le fichier JSON
-        $fichier = fopen($_POST['jeux']. "/" . $StrNum . $i . "/enigma.json", "w+");
+        $fichier = fopen("enigme/" . $StrNum . $i . "/enigma.json", "w+");
         fputs($fichier, $json_string = json_encode($jsonFormat, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
         fclose($fichier);
 

@@ -1,3 +1,26 @@
+<script type="text/javascript">
+
+function sqlcropimg(valeurChamp, num) {
+    document.getElementById('result' + num).style.display = 'inline';
+    sqlpopupResize("resize.php?src=" + valeurChamp + "&num=" + num, num);
+}
+
+// POPUP
+function sqlpopupResize(page, id) {
+  window.open(page, 'popup','width=900,height=900');
+  sqltest(id);
+}
+
+function sqltest(i)
+{
+  alert("test");
+  setTimeout(test, 10, i);
+  $('#result' + i).attr('src', "tmp/image" + i + "-crop.jpg");
+}
+</script>
+
+<form  action="?" method="POST">
+
 <?php
 try
 {
@@ -8,70 +31,214 @@ catch (Exception $e)
   die('Erreur : ' . $e->getMessage());
 }
 
-// On récupère tout le contenu de la table motus
-$reponse = $bdd->query('SELECT * FROM motus ORDER BY id');
+$reponse = $bdd->query("SELECT * FROM enigme ORDER BY id");
+$result = $bdd->query("SELECT id FROM enigme");
+
+
+// On récupère tout le contenu de la table enigme
+// $reponse = $bdd->query('SELECT * FROM enigme ORDER BY id');
+$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);;
 
 // On affiche chaque entrée une à une
 
+if (empty($result->fetch()))
+{
+  ?>
+  <input type="submit" class="_button _button-1" name="plus" id="plus" value="+"/>
+  <?php
+}
+else
+{
 $i = 0;
 while ($donnees = $reponse->fetch())
 {
 ?>
-      <p> --------------------------------------------------------------------------------------------------------------------</p>
-      <!-- Input MOT -->
-      <p>
-          <label for="mot">Mot à trouver</label> : <br>
-          <input type="text" name="sqlmot<?php echo $i?>" id="sqlmot<?php echo $i?>" value="<?php if (isset($_POST['sqlmot' . $i])){echo $_POST['sqlmot' . $i];} else {echo $donnees['mot'];} ?>">
-      </p>
-      <details>
-      <summary>ÉDITER</summary>
-      <!-- Input INDICE 1 -->
-      <p>
-          <label for="indice1">Indice 1</label> : <br>
-          <input type="text" name="sqlindice1<?php echo $i?>" id="sqlindice1<?php echo $i?>" value="<?php if (isset($_POST['sqlindice1' . $i])){echo $_POST['sqlindice1' . $i];} else {echo $donnees['indice1'];} ?>">
-      </p>
-      <!-- Input IMAGE INDICE 1 -->
-      <p>
-          <label for="image1">image indice 1</label> : <br>
-          <input type="url" name="sqlimage1<?php echo $i?>" id="sqlimage1<?php echo $i?>" class="url_input" value="<?php if (isset($_POST['sqlimage1' . $i])){echo $_POST['sqlimage1' . $i];} else {echo $donnees['image1'];} ?>">
-      </p>
-      <!-- Input INDICE 2 -->
-      <p>
-          <label for="indice2">Indice 2</label> : <br>
-          <input type="text" name="sqlindice2<?php echo $i?>" id="sqlindice2<?php echo $i?>" value="<?php if (isset($_POST['sqlindice2' . $i])){echo $_POST['sqlindice2' . $i];} else {echo $donnees['indice2'];} ?>">
-      </p>
-      <!-- Input IMAGE INDICE 2 -->
-      <p>
-          <label for="image2">image indice 2</label> : <br>
-          <input type="url" name="sqlimage2<?php echo $i?>" id="sqlimage2<?php echo $i?>" class="url_input" value="<?php if (isset($_POST['sqlimage2' . $i])){echo $_POST['sqlimage2' . $i];} else {echo $donnees['image2'];} ?>">
-      </p>
-      <!-- Input INDICE 3 -->
-      <p>
-          <label for="indice3">Indice 3</label> : <br>
-          <input type="text" name="sqlindice3<?php echo $i?>" id="sqlindice3<?php echo $i?>" value="<?php if (isset($_POST['sqlindice3' . $i])){echo $_POST['sqlindice3' . $i];} else {echo $donnees['indice3'];} ?>">
-      </p>
-      <!-- Input IMAGE INDICE 3 -->
-      <p>
-          <label for="image3">image indice 3</label> : <br>
-          <input type="url" name="sqlimage3<?php echo $i?>" id="sqlimage3<?php echo $i?>" class="url_input" value="<?php if (isset($_POST['sqlimage3' . $i])){echo $_POST['sqlimage3' . $i];} else {echo $donnees['image3'];} ?>">
-      </p>
-      <!-- Input RECOMPENSE -->
-      <p>
-          <label for="recompense">Recompense</label> : <br>
-          <input type="text" name="sqlrecompense<?php echo $i?>" id="sqlrecompense<?php echo $i?>" value="<?php if (isset($_POST['sqlrecompense' . $i])){echo $_POST['sqlrecompense' . $i];} else {echo $donnees['recompense'];} ?>">
-      </p>
-      <!-- Input image RECOMPENSE -->
-      <p>
-          <label for="image4">image Recompense</label> : <br>
-          <input type="url" name="sqlimage4<?php echo $i?>" id="sqlimage4<?php echo $i?>" class="url_input" value="<?php if (isset($_POST['sqlimage4' . $i])){echo $_POST['sqlimage4' . $i];} else {echo $donnees['image4'];} ?>">
-      </p>
-      <!-- Input legende RECOMPENSE -->
-      <p>
-          <label for="legende">Légende</label> : <br>
-          <textarea name="sqllegende<?php echo $i?>" id="sqllegende<?php echo $i?>" class="legende_input"><?php if (isset($_POST['sqllegende' . $i])){echo $_POST['sqllegende' . $i];} else {echo $donnees['legende'];} ?></textarea>      </p>
-      </details>
+<!-- Input MOT -->
+
+          <p class="text text-1"><strong>LE MOT &nbsp;À TROUVER</strong></p>
+          <p class="text text-2"></p>
+          <input class="_input _input-2" type="text" name="sqlmot<?php echo $i?>" id="sqlmot<?php echo $i?>" value="<?php if (isset($_POST['sqlmot' . $i])){echo $_POST['sqlmot' . $i];} else {echo $donnees['mot'];} ?>">
+          <input type="submit" class="_button _button-1" name="plus" id="plus" value="+"/>
+          <div class="element element-4"></div>
+          <p class="text text-3"><strong>DATE</strong></p>
+
+          <i class="_button _button-2 first-arrow fa fa-caret-up" style="font-size:24px;color:white"></i>
+          <div class="element element-5" ></div>
+
+          <!-- DIV mot DEBUT -->
+          <div hidden>
+
+            <!-- Input IMAGE MOT -->
+            <p class="text text-5"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ AU MOT</strong></font></p>
+            <div class="element element-8"></div>
+            <p class="text text-6"><strong>1-&nbsp;Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
+            <img class="image image-3" src="images/flickr.png">
+            <img class="image image-4" src="images/wikipedia.jpg">
+            <img class="image image-5" src="images/noun.png">
+            <p class="text text-7"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
+            <p class="text text-8"><strong>3- Je colle lURL dans le champs ci-dessous</strong></p>
+            <input class="_input _input-4" type="url" name="sqlimage0<?php echo $i?>" id="sqlimage0<?php echo $i?>" value="<?php if (isset($_POST['sqlimage0' . $i])){echo $_POST['sqlimage0' . $i];} else {echo $donnees['image0'];} ?>">
+            <p class="text text-9"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE NOM DE L'AUTEUR DE L'IMAGE</strong></font></p>
+            <input class="_input _input-5" name="sqlauteur0<?php echo $i?>" id="sqlauteur0<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqlauteur0' . $i])){echo $_POST['sqlauteur0' . $i];} else {echo $donnees['auteur0'];} ?>" >
+            <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
+            <input class="_input _input-5" name="sqldate0<?php echo $i?>" id="sqldate0<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqldate0' . $i])){echo $_POST['sqldate0' . $i];} else {echo $donnees['date0'];} ?>" >
+
+            <div class="element element-9">
+              <a href='javascript:sqlpopupResize("resize.php?src=" + sqlimage0<?php echo $i?>.value + "&num=0<?php echo $i?>", 0<?php echo $i?>)'><img src="<?php echo $donnees['imgcrop0']; ?>" id="result0<?php echo $i?>"/></a>
+            </div>
+
+            <div class="element element-10"></div>
+
+
+            <!-- Input INDICE 1 -->
+            <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 1</strong></font></p>
+            <input class="_input _input-3" type="text" name="sqlindice1<?php echo $i?>" id="sqlindice1<?php echo $i?>" value="<?php if (isset($_POST['sqlindice1' . $i])){echo $_POST['sqlindice1' . $i];} else {echo $donnees['indice1'];} ?>">
+            <div class="element element-6"></div>
+            <p class="_button _button-3 second-arrow">&nbsp;ÉDITER&nbsp;&nbsp;<i class="fa fa-caret-up" style="color:white"></i></p>
+
+            <div class="element element-7"></div>
+            <!-- DIV INDICE 1 -->
+            <div hidden>
+
+              <!-- Input IMAGE INDICE 1 -->
+              <p class="text text-5"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ AU MOT INDICE 1</strong></font></p>
+              <div class="element element-8"></div>
+              <p class="text text-6"><strong>1-&nbsp;Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
+              <img class="image image-3" src="images/flickr.png">
+              <img class="image image-4" src="images/wikipedia.jpg">
+              <img class="image image-5" src="images/noun.png">
+              <p class="text text-7"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
+              <p class="text text-8"><strong>3- Je colle lURL dans le champs ci-dessous</strong></p>
+              <input class="_input _input-4" type="url" name="sqlimage1<?php echo $i?>" id="sqlimage1<?php echo $i?>" value="<?php if (isset($_POST['sqlimage1' . $i])){echo $_POST['sqlimage1' . $i];} else {echo $donnees['image1'];} ?>">
+              <p class="text text-9"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE NOM DE L'AUTEUR DE L'IMAGE</strong></font></p>
+              <input class="_input _input-5" name="sqlauteur1<?php echo $i?>" id="sqlauteur1<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqlauteur1' . $i])){echo $_POST['sqlauteur1' . $i];} else {echo $donnees['auteur1'];} ?>" >
+              <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
+              <input class="_input _input-5" name="sqldate1<?php echo $i?>" id="sqldate1<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqldate1' . $i])){echo $_POST['sqldate1' . $i];} else {echo $donnees['date1'];} ?>" >
+
+              <div class="element element-9">
+                <img src="<?php echo $donnees['imgcrop1']; ?>" class="crop"/>
+              </div>
+
+              <div class="element element-10"></div>
+
+            </div>
+
+            <!-- Input INDICE 2 -->
+            <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 2</strong></font></p>
+            <input class="_input _input-3" type="text" name="sqlindice2<?php echo $i?>" id="sqlindice2<?php echo $i?>" value="<?php if (isset($_POST['sqlindice2' . $i])){echo $_POST['sqlindice2' . $i];} else {echo $donnees['indice2'];} ?>">
+            <div class="element element-6"></div>
+            <p class="_button _button-3 third-arrow">&nbsp;ÉDITER&nbsp;&nbsp;<i class="fa fa-caret-up" style="color:white"></i></p>
+
+            <div class="element element-7"></div>
+
+            <div hidden>
+
+              <!-- Input IMAGE INDICE 2 -->
+              <p class="text text-5"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ AU MOT INDICE 2</strong></font></p>
+              <div class="element element-8"></div>
+              <p class="text text-6"><strong>1 &nbsp; Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
+              <img class="image image-3" src="images/flickr.png">
+              <img class="image image-4" src="images/wikipedia.jpg">
+              <img class="image image-5" src="images/noun.png">
+              <p class="text text-7"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
+              <p class="text text-8"><strong>3- Je colle lURL dans le champs ci-dessous</strong></p>
+              <input class="_input _input-4" type="url" name="sqlimage2<?php echo $i?>" id="sqlimage2<?php echo $i?>" value="<?php if (isset($_POST['sqlimage2' . $i])){echo $_POST['sqlimage2' . $i];} else {echo $donnees['image2'];} ?>">
+              <p class="text text-9"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE NOM DE L'AUTEUR DE L'IMAGE</strong></font></p>
+              <input class="_input _input-5" name="sqlauteur2<?php echo $i?>" id="sqlauteur2<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqlauteur2' . $i])){echo $_POST['sqlauteur2' . $i];} else {echo $donnees['auteur2'];} ?>" >
+              <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
+              <input class="_input _input-5" name="sqldate2<?php echo $i?>" id="sqldate2<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqldate2' . $i])){echo $_POST['sqldate2' . $i];} else {echo $donnees['date2'];} ?>" >
+
+              <div class="element element-9">
+                <img src="<?php echo $donnees['imgcrop2']; ?>" class="crop"/>
+              </div>
+
+              <div class="element element-10"></div>
+            </div>
+
+
+
+            <!-- Input INDICE 3 -->
+            <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 3</strong></font></p>
+            <input class="_input _input-3" type="text" name="sqlindice3<?php echo $i?>" id="sqlindice3<?php echo $i?>" value="<?php if (isset($_POST['sqlindice3' . $i])){echo $_POST['sqlindice3' . $i];} else {echo $donnees['indice3'];} ?>">
+            <div class="element element-6"></div>
+            <p class="_button _button-3 fourth-arrow">&nbsp;ÉDITER&nbsp;&nbsp;<i class="fa fa-caret-up" style="color:white"></i></p>
+
+            <div class="element element-7"></div>
+
+            <div hidden>
+
+              <!-- Input IMAGE INDICE 3 -->
+              <p class="text text-5"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ AU MOT INDICE 3</strong></font></p>
+              <div class="element element-8"></div>
+              <p class="text text-6"><strong>1 &nbsp; Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
+              <img class="image image-3" src="images/flickr.png">
+              <img class="image image-4" src="images/wikipedia.jpg">
+              <img class="image image-5" src="images/noun.png">
+              <p class="text text-7"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
+              <p class="text text-8"><strong>3- Je colle lURL dans le champs ci-dessous</strong></p>
+              <input class="_input _input-4" type="url" name="sqlimage3<?php echo $i?>" id="sqlimage3<?php echo $i?>" value="<?php if (isset($_POST['sqlimage3' . $i])){echo $_POST['sqlimage3' . $i];} else {echo $donnees['image3'];} ?>">
+              <p class="text text-9"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE NOM DE L'AUTEUR DE L'IMAGE</strong></font></p>
+              <input class="_input _input-5" name="sqlauteur3<?php echo $i?>" id="sqlauteur3<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqlauteur3' . $i])){echo $_POST['sqlauteur3' . $i];} else {echo $donnees['auteur3'];} ?>" >
+              <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
+              <input class="_input _input-5" name="sqldate3<?php echo $i?>" id="sqldate3<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqldate3' . $i])){echo $_POST['sqldate3' . $i];} else {echo $donnees['date3'];} ?>" >
+
+              <div class="element element-9">
+                <img src="<?php echo $donnees['imgcrop3']; ?>" class="crop"/>
+              </div>
+
+              <div class="element element-10"></div>
+
+            </div>
+
+            <!-- Input RECOMPENSE -->
+            <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>GAGNÉ !</strong></font></p>
+            <input class="_input _input-3" type="text" name="sqlrecompense<?php echo $i?>" id="sqlrecompense<?php echo $i?>" value="<?php if (isset($_POST['sqlrecompense' . $i])){echo $_POST['sqlrecompense' . $i];} else {echo $donnees['recompense'];} ?>">
+            <div class="element element-6"></div>
+            <p class="_button _button-3 fifth-arrow">&nbsp;ÉDITER&nbsp;&nbsp;<i class="fa fa-caret-up" style="color:white"></i></p>
+
+            <div class="element element-7"></div>
+
+            <div hidden>
+
+              <!-- Input image RECOMPENSE -->
+              <p class="text text-5"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ LA DÉFINITION</strong></font></p>
+              <div class="element element-8"></div>
+              <p class="text text-6"><strong>1 &nbsp; Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
+              <img class="image image-3" src="images/flickr.png">
+              <img class="image image-4" src="images/wikipedia.jpg">
+              <img class="image image-5" src="images/noun.png">
+              <p class="text text-7"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
+              <p class="text text-8"><strong>3- Je colle lURL dans le champs ci-dessous</strong></p>
+              <input class="_input _input-4"  type="url" name="sqlimage4<?php echo $i?>" id="sqlimage4<?php echo $i?>" value="<?php if (isset($_POST['sqlimage4' . $i])){echo $_POST['sqlimage4' . $i];} else {echo $donnees['image4'];} ?>">
+              <p class="text text-9"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE NOM DE L'AUTEUR DE L'IMAGE</strong></font></p>
+              <input class="_input _input-5" name="sqlauteur4<?php echo $i?>" id="sqlauteur4<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqlauteur4' . $i])){echo $_POST['sqlauteur4' . $i];} else {echo $donnees['auteur4'];} ?>" >
+              <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
+              <input class="_input _input-5" name="sqldate4<?php echo $i?>" id="sqldate4<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqldate4' . $i])){echo $_POST['sqldate4' . $i];} else {echo $donnees['date4'];} ?>" >
+
+              <div class="element element-9">
+                <img src="<?php echo $donnees['imgcrop4']; ?>" class="crop"/>
+              </div>
+
+              <div class="element element-10"></div>
+
+              <!-- Input legende RECOMPENSE -->
+              <p class="text text-11"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA LÉGENDE (144 caractère max.)</strong></font></p>
+              <textarea class="_input _input-7" name="sqllegende<?php echo $i?>" id="sqllegende<?php echo $i?>" class="legende_input"><?php if (isset($_POST['sqllegende' . $i])){echo $_POST['sqllegende' . $i];} else {echo $donnees['legende'];} ?></textarea>
+              <div class="element element-11"></div>
+          </div>
+          <!-- /DIV mot FIN -->
+          </div>
+
   <?php
-$i++;
+  $i++;
+  }
+  ?>
+<input class="_button _button-4" type="submit"name="update" id="update" value="update"/>
+<?php
 }
 $reponse->closeCursor(); // Termine le traitement de la requête
 ?>
+
+<script type="text/javascript" src="js/toggle.js"></script>
+
+</form>
