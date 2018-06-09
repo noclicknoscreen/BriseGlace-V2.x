@@ -20,7 +20,7 @@ class cubeManagerHiddenWord  : public cubeManager
     
     public :
     
-    void setup(ofPoint _cubesPos, int _espacementCubes);
+    void setup(ofPoint _cubesPos, int _espacementCubes, int _cubeSize);
 //    void update(ofPoint _lightPos, int cubesRotationSpeed);
     void draw();
     void getWord(string word);

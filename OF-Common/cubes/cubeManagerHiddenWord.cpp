@@ -9,10 +9,10 @@
 #include "cubeManagerHiddenWord.h"
 
 
-void cubeManagerHiddenWord::setup(ofPoint _cubesPos, int _espacementCubes)
+void cubeManagerHiddenWord::setup(ofPoint _cubesPos, int _espacementCubes, int _cubeSize)
 {
     // Root Setup -----
-    cubeManager::setup(_cubesPos, _espacementCubes);
+    cubeManager::setup(_cubesPos, _espacementCubes, _cubeSize);
 };
 
 //--------------------------------------------------------------
@@ -32,7 +32,6 @@ void cubeManagerHiddenWord::draw(){
 
     ofEnableLighting();
     ofSetSmoothLighting(true);
-//    spotLightCubes.enable();
     
     for(int i=0; i<myCubes.size(); i++)
     {
@@ -121,7 +120,7 @@ void cubeManagerHiddenWord::getWord(string word)
     for(int i=0; i<word.size(); i++)
     {
         cube* tmpCube = new cube();
-        tmpCube->setup(ofPoint(mCubesPosition.x - wordWidth/2 + i*(mEspacementCubes + cubeSize) + cubeSize/2 + mEspacementCubes, mCubesPosition.y, -300), cubeSize);
+        tmpCube->setup(ofPoint(mCubesPosition.x - wordWidth/2 + i*(mEspacementCubes + cubeSize) + cubeSize/2 + mEspacementCubes, mCubesPosition.y, mCubesPosition.z), cubeSize);
         tmpCube->setLetter(utils::toUpperCase(ofToString(word[i])));
         myCubes.push_back(*tmpCube);
     }

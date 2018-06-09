@@ -8,7 +8,10 @@
 
 #pragma once
 #include "scScene.h"
-#include "indice.h"
+//#include "indice.h"
+#include "cubeManagerHint.h"
+#include "cubeManagerMemory.h"
+
 
 
 class scHint : public scScene{
@@ -19,18 +22,38 @@ public:
     void setup();
     void update(float dt);
 	void draw();
+    void keyPressed(int key);
     
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
     
-    indice myIndice;
+//    indice myIndice;
+    cubeManagerHint myCubeManager;
     
-    float timer;
+    //gui
+    ofxPanel gui;
+    ofParameterGroup             group;
+    
+    ofParameter<float> lightPosX, lightPosY, lightPosZ;
+    ofParameter<float> orientationX, orientationY, orientationZ;
+    ofParameter<float> cutOff;
+    ofParameter<float> concentration;
+    ofParameter<int> cubesRotationSpeed;
+    
+    bool bDrawGui;
     
     void timerEnd();
     void someoneSpoke(player & _player);
     
     ofxScene* from;
+
+private:
+    timer timerStartRoll;
+    void  timerStartRollEnd();
     
+    timer timerBeforeRoll;
+    void  timerBeforeRollEnd();
+    
+    int   currentCube;
 };
 

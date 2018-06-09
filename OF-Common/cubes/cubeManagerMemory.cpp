@@ -9,10 +9,10 @@
 #include "cubeManagerMemory.h"
 
 
-void cubeManagerMemory::setup(ofPoint _cubesPos, int _espacementCubes)
+void cubeManagerMemory::setup(ofPoint _cubesPos, int _espacementCubes, int _cubeSize)
 {
     // Root Setup -----
-    cubeManager::setup(_cubesPos, _espacementCubes);
+    cubeManager::setup(_cubesPos, _espacementCubes, _cubeSize);
     // Do the grid --
     setGrid(4,4);
 };
@@ -46,7 +46,7 @@ void cubeManagerMemory::setGrid(int _nbLines, int _nbRows){
             ofPoint position(mCubesPosition.x - 0.5*_nbRows*step + 0.5*step, mCubesPosition.y - 0.5*_nbLines*step + 0.5*step);
             position.x += idxRow*step;
             position.y += idxLine*step;
-            position.z = -300;
+            position.z = mCubesPosition.z;
             
             tmpCube->setup(position, cubeSize);
             tmpCube->setLetter(rndLetter);
@@ -106,11 +106,12 @@ void cubeManagerMemory::draw(){
 //            ofLog() << "We draw a cutted image [line, row] = [" << line << "," << row << "]";
         
             ofDisableNormalizedTexCoords();
-            drawTexturedCube(idxCube,
-                             float(line*answerFullImage.getWidth()/mNbRows),
-                             float((line+1)*answerFullImage.getWidth()/mNbRows),
-                             float(row*answerFullImage.getHeight()/mNbLines),
-                             float((row+1)*answerFullImage.getHeight()/mNbLines)
+            drawTexturedCube(&answerFullImage,
+                             idxCube,
+                             (float)line / (float)mNbRows,
+                             (float)(line+1) / (float)mNbRows,
+                             (float)row / (float)mNbLines,
+                             (float)(row+1) / (float)mNbLines
                              );
         
             material.end();
@@ -168,55 +169,62 @@ void cubeManagerMemory::draw(){
     ofSetColor(255);
 }
 
-void cubeManagerMemory::drawTexturedCube(int i, float texCoordX_min, float texCoordX_max, float texCoordY_min, float texCoordY_max)
-{
-    ofPushMatrix();
-//    ofTranslate(myCubes[i].position.x, myCubes[i].position.y);
-//    ofRotate(myCubes[i].currentRot, 1, 0, 0);
-//    ofDrawBox(0, 0, 0, myCubes[i].size, myCubes[i].size, myCubes[i].size);
-    
-    answerFullImage.bind();
-    ofPushMatrix();
-    
-    ofTranslate(-myCubes[i].size/2, -myCubes[i].size/2, myCubes[i].size/2+0.1);
-    GLfloat tx0 = texCoordX_min;
-    GLfloat ty0 = texCoordY_min;
-    GLfloat tx1 = texCoordX_max;
-    GLfloat ty1 = texCoordY_max;
-    
-    GLfloat px0 = 0.0f;
-    GLfloat py0 = 0.0f;
-    GLfloat px1 = myCubes[i].size;
-    GLfloat py1 = myCubes[i].size;
-    
-    GLfloat tex_coords[] = {
-        tx0,ty0,
-        tx1,ty0,
-        tx1,ty1,
-        tx0,ty1
-    };
-    GLfloat verts[] = {
-        px0,py0,
-        px1,py0,
-        px1,py1,
-        px0,py1
-    };
-    
-    glEnableClientState( GL_TEXTURE_COORD_ARRAY );
-    glTexCoordPointer(2, GL_FLOAT, 0, tex_coords );
-    glEnableClientState(GL_VERTEX_ARRAY);
-    glVertexPointer(2, GL_FLOAT, 0, verts );
-    glDrawArrays( GL_TRIANGLE_FAN, 0, 4 );
-    glDisableClientState( GL_TEXTURE_COORD_ARRAY );
-    
-    
-    ofPopMatrix();
-    
-    ofSetColor(255);
-    answerFullImage.unbind();
-    ofPopMatrix();
-    
-}
+//void cubeManagerMemory::drawTexturedCube(ofImage *texture, int i, float texCoordX_min, float texCoordX_max, float texCoordY_min, float texCoordY_max)
+//{
+//    float realTexCoordX_min = texCoordX_min * texture->getWidth();
+//    float realTexCoordX_max = texCoordX_max * texture->getWidth();
+//    float realTexCoordY_min = texCoordY_min * texture->getHeight();
+//    float realTexCoordY_max = texCoordY_max * texture->getHeight();
+//    
+//    
+//    ofPushMatrix();
+////    ofTranslate(myCubes[i].position.x, myCubes[i].position.y);
+////    ofRotate(myCubes[i].currentRot, 1, 0, 0);
+////    ofDrawBox(0, 0, 0, myCubes[i].size, myCubes[i].size, myCubes[i].size);
+//    
+//    texture->bind();
+//    
+//    ofPushMatrix();
+//    
+//    ofTranslate(-myCubes[i].size/2, -myCubes[i].size/2, myCubes[i].size * (0.5+0.005));
+//    GLfloat tx0 = realTexCoordX_min;
+//    GLfloat ty0 = realTexCoordY_min;
+//    GLfloat tx1 = realTexCoordX_max;
+//    GLfloat ty1 = realTexCoordY_max;
+//    
+//    GLfloat px0 = 0.0f;
+//    GLfloat py0 = 0.0f;
+//    GLfloat px1 = myCubes[i].size;
+//    GLfloat py1 = myCubes[i].size;
+//    
+//    GLfloat tex_coords[] = {
+//        tx0,ty0,
+//        tx1,ty0,
+//        tx1,ty1,
+//        tx0,ty1
+//    };
+//    GLfloat verts[] = {
+//        px0,py0,
+//        px1,py0,
+//        px1,py1,
+//        px0,py1
+//    };
+//    
+//    glEnableClientState( GL_TEXTURE_COORD_ARRAY );
+//    glTexCoordPointer(2, GL_FLOAT, 0, tex_coords );
+//    glEnableClientState(GL_VERTEX_ARRAY);
+//    glVertexPointer(2, GL_FLOAT, 0, verts );
+//    glDrawArrays( GL_TRIANGLE_FAN, 0, 4 );
+//    glDisableClientState( GL_TEXTURE_COORD_ARRAY );
+//    
+//    
+//    ofPopMatrix();
+//    
+//    ofSetColor(255);
+//    texture->unbind();
+//    ofPopMatrix();
+//    
+//}
 
 void cubeManagerMemory::rotateToWhite(int i)
 {

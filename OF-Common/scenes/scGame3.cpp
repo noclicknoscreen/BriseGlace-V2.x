@@ -8,6 +8,12 @@
 
 #include "scGame3.h"
 
+//=======================================================================
+//
+//======= MOT BRASSE ====================================================
+//
+//=======================================================================
+
 //--------------------------------------------------------------
 void scGame3::setup(){
     
@@ -36,7 +42,7 @@ void scGame3::setup(){
     setupLight();
     
     //now comes from enigma Singleton
-    wantedWord = "BONHEUR";
+//    wantedWord = "BONHEUR";
     
     //view from top
     camera.rotate(-80, ofVec3f(1,0,0));
@@ -82,11 +88,9 @@ void scGame3::update(float dt){
     {
 
         ofVec3f randomForce;
-        
         float amountPlayer1 = ofMap(bigPlayerManager().getUserVolume(1), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
         randomForce = ofVec3f(forceAmount->x, ofRandom(-forceAmount->y, forceAmount->y), ofRandom(-forceAmount->z, forceAmount->z)) * amountPlayer1;
         applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
-        
         
         float amountPlayer2 = ofMap(bigPlayerManager().getUserVolume(2), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
         randomForce = ofVec3f(ofRandom(-forceAmount->x, forceAmount->x), ofRandom(-forceAmount->y, forceAmount->y), -forceAmount->z) * amountPlayer2 * forceMicro2_multiplier;
@@ -94,6 +98,10 @@ void scGame3::update(float dt){
         
         float amountPlayer3 = ofMap(bigPlayerManager().getUserVolume(3), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
         randomForce = ofVec3f(-forceAmount->x, ofRandom(-forceAmount->y, forceAmount->y), ofRandom(-forceAmount->z, forceAmount->z)) * amountPlayer3;
+        applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
+        
+        float amountPlayer4 = ofMap(bigPlayerManager().getUserVolume(4), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
+        randomForce = ofVec3f(-forceAmount->x, ofRandom(-forceAmount->y, forceAmount->y), ofRandom(-forceAmount->z, forceAmount->z)) * amountPlayer4;
         applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
 
     }
@@ -115,8 +123,7 @@ void scGame3::draw(){
     
     ofEnableLighting();
     ofSetSmoothLighting(true);
-    spotLight.enable();
-
+    
     material.setAmbientColor(materialColor);
     material.setDiffuseColor(materialColor);
     
@@ -148,7 +155,6 @@ void scGame3::draw(){
     
     
     camera.end();
-    
     
     ofDisableDepthTest();
     
@@ -225,6 +231,8 @@ void scGame3::timerSignWinEnd(){
 void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
     scGame::sceneWillAppear(fromScreen);
+    spotLight.enable();
+
     // Player manager events
     ofAddListener(timerSignWin.timerEnd,    this,&scGame3::timerSignWinEnd);
     
@@ -281,6 +289,8 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
 void scGame3::sceneWillDisappear( ofxScene * toScreen ){
     
     scGame::sceneWillDisappear(toScreen);
+    spotLight.disable();
+
     // Disable timer events
     ofRemoveListener(timerSignWin.timerEnd,     this,&scGame3::timerSignWinEnd);
     

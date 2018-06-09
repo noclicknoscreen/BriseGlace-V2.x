@@ -12,52 +12,118 @@ void scHint::setup(){  //load your scene 1 assets here...
     
     scScene::setup();
     ofLogNotice() << "Indice : Setup !";
+    
+    //gui
+    group.setName("Hint");
+    group.add(lightPosX.set("lightPosX", 1600, -3000, 3000));
+    group.add(lightPosY.set("lightPosY", 120, -3000, 3000));
+    group.add(lightPosZ.set("lightPosZ", 0, -3000, 3000));
+    
+    group.add(orientationX.set("orientationX", 0, 0, 360));
+    group.add(orientationY.set("orientationY", 0, 0, 360));
+    group.add(orientationZ.set("orientationZ", 0, 0, 360));
+    
+    group.add(cutOff.set("cutOff", 0, 0, 180));
+    group.add(concentration.set("concentration", 0, 0, 180));
+    
+    group.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
+    
+    gui.setup(group);
+    gui.loadFromFile(settingsFileNameHint);
 
 };
 
 
 void scHint::update(float dt){ //update scene 1 here
+    // Cube update
+    myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), ofPoint(orientationX, orientationY, orientationZ), cutOff, concentration, cubesRotationSpeed);
     
-    myIndice.update();
     mTimer.update(dt);
-
-    if(ofGetElapsedTimef() - timer > 5)
-        myIndice.setRevealMode();
+    timerBeforeRoll.update(dt);
+    timerStartRoll.update(dt);
     
 };
 
 void scHint::draw(){ //draw scene 1 here
     
-    ofEnableDepthTest();
-    myIndice.draw();
+    //GUI
+    if(bDrawGui){
+        ofDisableLighting();
+        gui.draw();
+    }
     
-    // Draw Timer
-    ofDisableDepthTest();
     scScene::drawTitle("Voici l'indice.");
-    //scScene::drawSpokenWord("Il vous reste " + mTimer.toString() + " secondes pour jouer avec nous.");
+    
+    // Draw cubes
+    myCubeManager.draw();
+    
     
 };
+
+//--------------------------------------------------------------
+void scHint::keyPressed(int key){
+    
+    if(key=='l')
+        myCubeManager.rotateToLetter(0);
+    if(key=='w')
+        myCubeManager.rotateToWood(0);
+    if(key=='W')
+        myCubeManager.rotateToWhite(0);
+    if(key == 's') {
+        gui.saveToFile(settingsFileNameGame2);
+    }
+    if(key == 'l') {
+        gui.loadFromFile(settingsFileNameGame2);
+    }
+    if(key==' ' ){
+        bDrawGui = !bDrawGui;
+    }
+}
 
 //scene notifications
 void scHint::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
     from = fromScreen;
-    myIndice.setup();
     
-    timer = ofGetElapsedTimef();
+    //cubes
+    myCubeManager.setup(ofPoint(0.5*ofGetWidth(), 0.5*ofGetHeight(), 0), 5, 100);
+    currentCube = 0;
     
     // -- -- -- -- --
-    mTimer.startTimer(15);
+    timerBeforeRoll.startTimer(3);
+    
     // Player manager events
     ofAddListener(mTimer.timerEnd, this, &scHint::timerEnd);
-    
+    ofAddListener(timerStartRoll.timerEnd, this, &scHint::timerStartRollEnd);
+    ofAddListener(timerBeforeRoll.timerEnd, this, &scHint::timerBeforeRollEnd);
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scHint::someoneSpoke);
 
 };
 void scHint::timerEnd(){
     // --------------------------------
     ofxSceneManager::instance()->goToScene(from->getSceneID());
+}
+void scHint::timerBeforeRollEnd(){
+    
+    ofLogNotice() << "End of timerBeforeRoll, start roll cubes";
+    
+    timerStartRoll.startTimer(0.5);
+    timerBeforeRoll.stop();
+}
+void scHint::timerStartRollEnd(){
+    
+    ofLogNotice() << "End of timerStartRoll, will roll cube n°" << currentCube;
+    
+    // --------------------------------
+    if(currentCube < myCubeManager.getNumberOfCubes()){
+        myCubeManager.rotateToWood(currentCube);
+        currentCube++;
+        timerStartRoll.startTimer(0.5);
+    }else{
+        mTimer.startTimer(1);
+        timerStartRoll.stop();
+    }
 }
 
 //scene notifications

@@ -29,5 +29,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "scGame3::draw():scGame3.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "bigEnigmaManager()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

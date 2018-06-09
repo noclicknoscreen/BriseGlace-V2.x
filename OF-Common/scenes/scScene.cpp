@@ -83,7 +83,11 @@ void scScene::someoneSpoke(player & _player){
 }
 
 void scScene::sceneWillAppear( ofxScene * fromScreen ){
+    
+//    ofSetupScreenPerspective(-1, -1, 60, -1000, 1000);
+    
     bigPlayerManager().freshRestart();
+    
 }
 
 void scScene::sceneWillDisappear( ofxScene * fromScreen ){

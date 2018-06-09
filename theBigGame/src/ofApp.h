@@ -46,6 +46,6 @@ class ofApp : public ofBaseApp{
 //    playerManager myPlayerManager;
 //    void someoneSpoke(player & _player);
   
-        ofImage background;
+    ofImage background;
     
 };

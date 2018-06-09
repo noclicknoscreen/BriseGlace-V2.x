@@ -14,7 +14,7 @@ class enigmaHint {
     
 public:
     enigmaHint(){
-        
+        image.load("void.jpg)");
     };
     
     enigmaHint(string _imagePath, string _titre){

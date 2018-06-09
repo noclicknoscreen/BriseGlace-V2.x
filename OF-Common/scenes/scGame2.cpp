@@ -8,6 +8,12 @@
 
 #include "scGame2.h"
 
+//=======================================================================
+//
+//======= MES MOTS RIENT ================================================
+//
+//=======================================================================
+
 void scGame2::setup(){
     
     scGame::setup();
@@ -65,7 +71,8 @@ void scGame2::draw(){ //draw scene 1 here
     
     // Draw Title
     scScene::drawTitle("Mes mots rient", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.15 * ofGetHeight()));
-    scScene::drawSubTitle("Prochainement dans votre gare...", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.15 * ofGetHeight()));
+    scScene::drawSubTitle("Trouve le mot grâce à l'image", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.15 * ofGetHeight()));
+    scScene::drawSubTitle("cachée derrière ces lettres", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.20 * ofGetHeight()));
 
     // Draw cubes
     myCubeManager.draw();
@@ -74,8 +81,6 @@ void scGame2::draw(){ //draw scene 1 here
     myInputManager.draw();
 
     // Draw players
-    bigPlayerManager().draw();
-    
     if(drawWinnerSign)
         bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
     else if(drawHintSign)
@@ -107,9 +112,9 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
         bigEnigmaManager().pickNewEnigma(IMAGE_GRID);
         
         //cubes
-        myCubeManager.setup(ofPoint(0.2*ofGetWidth(), 0.5*ofGetHeight()), 7);
+        myCubeManager.setup(ofPoint(0.2*ofGetWidth(), 0.5*ofGetHeight(), -300), 7, 150);
         //inputs
-        myInputManager.setup(ofPoint(0.7 * ofGetWidth(), 0.45 * ofGetHeight()));
+        myInputManager.setup(ofPoint(0.67 * ofGetWidth(), 0.6 * ofGetHeight()));
         
         myInputManager.clearDuplicatesLettersHistory();
         myInputManager.setReadyForNewText();
@@ -147,10 +152,9 @@ void scGame2::keyPressed(int key){
     if(key == 'l') {
         gui.loadFromFile(settingsFileNameGame2);
     }
-    
-    if(key==' ' )
+    if(key==' ' ){
         bDrawGui = !bDrawGui;
-    
+    }
 }
 
 // Events callback -----------------------------------

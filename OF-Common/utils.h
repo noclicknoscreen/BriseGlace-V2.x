@@ -22,6 +22,7 @@ const int       globalFontSizeMedium   = 36;
 const string settingsFileNameGame1 = "settingsGame1.xml";
 const string settingsFileNameGame2 = "settingsGame2.xml";
 const string settingsFileNameGame3 = "settingsGame3.xml";
+const string settingsFileNameHint  = "settingsHint.xml";
 const string settingsPlayers       = "settingsPlayers.xml";
 
 class utils
@@ -133,6 +134,7 @@ public:
     bool isAnimating(){
         return mTimer.isAnimating();
     }
+    
 };
 
 #endif /* utils_h */

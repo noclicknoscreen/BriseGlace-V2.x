@@ -12,6 +12,8 @@
 
 void enigmaManager::setup(){
     ofLogNotice() << "Setup enigma manager as SINGLETON, Sick !";
+    
+    nbHint = 0;
 }
 
 void enigmaManager::update(){
@@ -53,6 +55,9 @@ void enigmaManager::pickNewEnigma(gameType _gameType){
             if(newEnigma.load(oneFile.getAbsolutePath())){
                 mCurrentEnigma = newEnigma;
                 mCurrentGameType = _gameType;
+                
+                nbHint = (int)ofRandom(mCurrentEnigma.getNbHints());
+                
             }
         }
         else
@@ -63,12 +68,24 @@ void enigmaManager::pickNewEnigma(gameType _gameType){
     
 }
 
+void enigmaManager::pushHintIndex(){
+    // go to next hint
+    nbHint++;
+    // take care to not go too far
+    if(nbHint >= mCurrentEnigma.getNbHints()){
+        nbHint = 0;
+    }
+}
+
 enigmaType enigmaManager::pickHintIndex(){
+    return toEnigmaType(nbHint);
+}
+
+enigmaType enigmaManager::toEnigmaType(int _int){
     
-    int rndIdx = (int)ofRandom(3);
     enigmaType toReturn;
     
-    switch (rndIdx) {
+    switch (_int) {
         case 0:
             toReturn = HINT1;
             break;

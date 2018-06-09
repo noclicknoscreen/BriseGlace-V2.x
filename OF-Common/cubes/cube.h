@@ -27,7 +27,7 @@ public:
     float currentRot, desiredRot;
     ofPoint position;
     float size;
-    bool letterFace, whiteFace, woodFace;
+//    bool letterFace, whiteFace, woodFace;
     string myLetter;
     ofColor materialColor;
     bool isRotating;

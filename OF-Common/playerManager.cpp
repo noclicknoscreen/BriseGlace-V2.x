@@ -46,7 +46,7 @@ void playerManager::setup(){
     mSequencesPath[4] = "Cube-Rouge";
     mBullesPath[4] = "Bulles/BulleCentre.png";
     mPositions[4] = ofPoint(0.5 * ofGetWidth(), ofGetHeight());
-    mBullesPos[4] = ofPoint(0, 100);
+    mBullesPos[4] = ofPoint(- 310, 180);
     
     //    someoneSpoke = _someoneSpoke;
     ofRegisterURLNotification(this);

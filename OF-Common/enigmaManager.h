@@ -23,15 +23,19 @@ public:
     //void draw();
     
     void pickNewEnigma(gameType _type);
-    enigmaType pickHintIndex();
+    enigmaType  pickHintIndex();
+    void        pushHintIndex();
     enigma* getCurrentEnigma(){return &mCurrentEnigma;};
     gameType getCurrentGameType(){return mCurrentGameType;};
-    
+private:
+    enigmaType toEnigmaType(int _int);
     
 private:
     enigma      mCurrentEnigma;
     gameType    mCurrentGameType;
     ofDirectory dir;
+    
+    int         nbHint;
     
 public:
     static enigmaManager& get(){

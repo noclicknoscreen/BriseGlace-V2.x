@@ -9,14 +9,14 @@
 #include "scGame.h"
 
 void scGame::update(float dt){
+    
     timerBeforeHint.update(dt);
-//    ofLogNotice() << "Temps avant indice : "  << timerBeforeHint.toString();
-    
     timerSignHint.update(dt);
-
-    ofLogNotice() << "Temps avant win : "  << timerSignWin.toString();
     timerSignWin.update(dt);
-    
+
+    //    ofLogNotice() << "Temps avant indice : "  << timerBeforeHint.toString();
+    //    ofLogNotice() << "Temps avant win : "  << timerSignWin.toString();
+
 }
 
 void scGame::someoneSpoke(player & _player){

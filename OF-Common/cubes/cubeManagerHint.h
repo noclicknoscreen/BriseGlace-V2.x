@@ -10,10 +10,11 @@
 
 #include <stdio.h>
 #include "ofMain.h"
+#include "ofxTextBlock.h"
 
 #include "cubeManager.h"
 
-class cubeManagerMemory : public cubeManager
+class cubeManagerHint : public cubeManager
 {
     
     public :
@@ -21,7 +22,8 @@ class cubeManagerMemory : public cubeManager
     void setup(ofPoint _cubesPos, int _espacementCubes, int _cubeSize);
 //    void update(ofPoint _lightPos, int cubesRotationSpeed);
     void draw();
-//    void drawTexturedCube(ofImage *image, int i, float texCoordX_min, float texCoordX_max, float texCoordY_min, float texCoordY_max);
+//    void drawTexturedCube(int i, float texCoordX_min, float texCoordX_max, float texCoordY_min, float texCoordY_max);
+//    void drawLetteredCube(int i, float texCoordX_min, float texCoordX_max, float texCoordY_min, float texCoordY_max);
     void setGrid(int _nbLines, int _nbRows);
     
     //cubes
@@ -41,11 +43,19 @@ private:
     // fbo to draw portion of image solution
     ofImage answerFullImage;
     
+    //fbo to draw text, to be used as texture
+    ofFbo textFbo;
+    ofImage textImageFromFbo;
+    
+    //text
+    ofxTextBlock myText;
+    
     // What is behind the cubes
 private:
     string mContent;
 public:
     string getContent(){return mContent;};
+
 };
 
 

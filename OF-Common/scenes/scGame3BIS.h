@@ -20,7 +20,7 @@ public:
     //--------------------------------------------------------------
     void sceneWillAppear( ofxScene * fromScreen ){
         
-        scScene::sceneWillAppear(fromScreen);
+        scGame3::sceneWillAppear(fromScreen);
         
         //now comes from enigma Singleton
         wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
@@ -46,7 +46,10 @@ public:
         timer = ofGetElapsedTimef();
     };
     
-    
+    //--------------------------------------------------------------
+    void sceneWillDisappear( ofxScene * fromScreen ){
+        scGame3::sceneWillAppear(fromScreen);
+    };
     
     
     //--------------------------------------------------------------
@@ -95,7 +98,6 @@ public:
         
         ofEnableLighting();
         ofSetSmoothLighting(true);
-        spotLight.enable();
         
         material.setAmbientColor(materialColor);
         material.setDiffuseColor(materialColor);

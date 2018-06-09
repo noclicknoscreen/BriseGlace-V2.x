@@ -8,6 +8,13 @@
 
 #include "scGame1.h"
 
+//=======================================================================
+//
+//======= MOT CACHE ====================================================
+//
+//=======================================================================
+
+
 void scGame1::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Game 1 : Setup !";
@@ -69,22 +76,6 @@ void scGame1::draw(){ //draw scene 1 here
     // Draw floating words
     myInputManager.draw();
     
-//    ofPushStyle();
-//        ofPushMatrix();
-//        
-//            myCubeManager.draw();
-//            myInputManager.draw();
-//            
-//            ofDisableLighting();
-//            ofDisableDepthTest();
-//            ofSetColor(255);
-//            //GUI
-//            if(bDrawGui)
-//                gui.draw();
-//        ofPopStyle();
-//    ofPopMatrix();
-//    
-    
     if(drawWinnerSign)
             bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
     else if(drawHintSign)
@@ -135,16 +126,17 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // On ne refiat pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
         //cubes
-        myCubeManager.setup(ofPoint(0.5*ofGetWidth(), 0.4*ofGetHeight()), 15);
+        myCubeManager.setup(ofPoint(0.5*ofGetWidth(), 0.4*ofGetHeight(), -300), 15, 150);
         
         //inputs
         myInputManager.setup(ofPoint(0, 0.6*ofGetHeight()));
         
-        //TODO :: bonheur ecrit en dur => lu dans le JSON
-        myCubeManager.getWord(bigEnigmaManager().getCurrentEnigma()->getSolution());
+        //
+        string solution = bigEnigmaManager().getCurrentEnigma()->getSolution();
+        myCubeManager.getWord(solution);
         myInputManager.clearDuplicatesLettersHistory();
         myInputManager.setReadyForNewText();
-        myInputManager.setWordToFind(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
+        myInputManager.setWordToFind(utils::toUpperCase(solution));
         myInputManager.revealTirrets(&myCubeManager);
         
     }

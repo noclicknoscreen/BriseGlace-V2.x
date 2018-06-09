@@ -9,16 +9,13 @@
 #include "cubeManager.h"
 
 
-void cubeManager::setup(ofPoint _cubesPos, int _espacementCubes)
+void cubeManager::setup(ofPoint _cubesPos, int _espacementCubes, int _cubeSize)
 {
     
     mCubesPosition = _cubesPos;
     mEspacementCubes = _espacementCubes;
     
-    ofEnableDepthTest();
-    
     ofSetBoxResolution(50);
-    ofSetSmoothLighting(true);
     ofSetSphereResolution(32);
     
     //lumiere
@@ -41,13 +38,11 @@ void cubeManager::setup(ofPoint _cubesPos, int _espacementCubes)
     //texture
     textureBois.load("contreplaque.png");
     
-    cubeSize = 150;
+    cubeSize = _cubeSize;
 }
 
 void cubeManager::update(ofPoint _lightPos, ofPoint _lightAngle, float _cutOff, float _concentration, int cubesRotationSpeed)
 {
-    ofSetSmoothLighting(true);
-    spotLightCubes.enable();
     spotLightCubes.setPosition(_lightPos.x, _lightPos.y, _lightPos.z);
     spotLightCubes.setOrientation(ofVec3f(_lightAngle.x, _lightAngle.y, _lightAngle.z));
     spotLightCubes.setSpotlightCutOff(_cutOff);
@@ -71,6 +66,62 @@ void cubeManager::update(ofPoint _lightPos, ofPoint _lightAngle, float _cutOff, 
     
 }
 
+void cubeManager::drawTexturedCube(ofImage *texture, int i, float texCoordX_min, float texCoordX_max, float texCoordY_min, float texCoordY_max)
+{
+    float realTexCoordX_min = texCoordX_min * texture->getWidth();
+    float realTexCoordX_max = texCoordX_max * texture->getWidth();
+    float realTexCoordY_min = texCoordY_min * texture->getHeight();
+    float realTexCoordY_max = texCoordY_max * texture->getHeight();
+
+
+    ofPushMatrix();
+//    ofTranslate(myCubes[i].position.x, myCubes[i].position.y);
+//    ofRotate(myCubes[i].currentRot, 1, 0, 0);
+//    ofDrawBox(0, 0, 0, myCubes[i].size, myCubes[i].size, myCubes[i].size);
+
+    texture->bind();
+
+    ofPushMatrix();
+
+    ofTranslate(-myCubes[i].size/2, -myCubes[i].size/2, myCubes[i].size * (0.5+0.005));
+    GLfloat tx0 = realTexCoordX_min;
+    GLfloat ty0 = realTexCoordY_min;
+    GLfloat tx1 = realTexCoordX_max;
+    GLfloat ty1 = realTexCoordY_max;
+
+    GLfloat px0 = 0.0f;
+    GLfloat py0 = 0.0f;
+    GLfloat px1 = myCubes[i].size;
+    GLfloat py1 = myCubes[i].size;
+
+    GLfloat tex_coords[] = {
+        tx0,ty0,
+        tx1,ty0,
+        tx1,ty1,
+        tx0,ty1
+    };
+    GLfloat verts[] = {
+        px0,py0,
+        px1,py0,
+        px1,py1,
+        px0,py1
+    };
+
+    glEnableClientState( GL_TEXTURE_COORD_ARRAY );
+    glTexCoordPointer(2, GL_FLOAT, 0, tex_coords );
+    glEnableClientState(GL_VERTEX_ARRAY);
+    glVertexPointer(2, GL_FLOAT, 0, verts );
+    glDrawArrays( GL_TRIANGLE_FAN, 0, 4 );
+    glDisableClientState( GL_TEXTURE_COORD_ARRAY );
+
+
+    ofPopMatrix();
+
+    ofSetColor(255);
+    texture->unbind();
+    ofPopMatrix();
+
+}
 
 void cubeManager::colorizeCube(int cubeId, ofColor _color)
 {

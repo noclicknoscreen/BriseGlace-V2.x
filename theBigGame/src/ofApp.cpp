@@ -73,12 +73,13 @@ void ofApp::update(){
 
 void ofApp::draw(){
     
+    
     // A background to rule them all
     ofSetColor(255);
     ofPushView();
     ofDisableNormalizedTexCoords();
     ofDisableLighting();
-        background.draw(0,0);
+    background.draw(0,0);
     ofEnableNormalizedTexCoords();
     ofPopView();
     

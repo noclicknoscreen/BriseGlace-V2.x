@@ -32,8 +32,10 @@ public:
     string      getTitre(enigmaType _type);
     bool        getIsAvailable(enigmaType _type);
     
-    string       getSolution(){return mSolution;};
-    string       getLegende(){return mLegende;};
+    string      getSolution(){return mSolution;};
+    string      getLegende(){return mLegende;};
+    
+    int         getNbHints(){return mHints.size();};
     
 private:
     string  mLegende;
