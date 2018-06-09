@@ -25,7 +25,7 @@ private:
     ///////////// SIGNS ////////////////////
 protected:
     
-    bool drawWinnerSign, drawHintSign;
+//    bool drawWinnerSign, drawHintSign;
     int hintUserId;
     
 public:

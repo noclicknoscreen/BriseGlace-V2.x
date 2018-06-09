@@ -66,7 +66,7 @@ void ofApp::update(){
     float dt = 1.0f / (float)ofGetFrameRate();
     
 	bigPlayerManager().update();
-    sceneManager->update( dt );
+    sceneManager->update(dt);
     
 }
 

@@ -13,11 +13,12 @@ void scSelectGame::setup(){  //load your scene 1 assets here...
     ofLogNotice() << "Select a game : Setup !";
     
     mPlayerMessage = "";
-    
+    numPlayer = 1;
 };
 
 
 void scSelectGame::update(float dt){ //update scene 1 here
+    mtimerSignAnimation.update(dt);
 };
 
 void scSelectGame::draw(){ //draw scene 1 here
@@ -25,8 +26,7 @@ void scSelectGame::draw(){ //draw scene 1 here
     scScene::drawSubTitle("Dites le nom d'un jeu pour commencer");
     scScene::drawSpokenWord(mPlayerMessage, mPlayerColor);
     
-    // Draw players
-    bigPlayerManager().draw3Signs("Mot masqué", "Mot brassé", "Mes mots rient");
+    bigPlayerManager().draw();
     
 };
 
@@ -40,15 +40,18 @@ void scSelectGame::sceneWillAppear( ofxScene * fromScreen ){
     
     // Erase all words of every one
     bigPlayerManager().freshRestart();
+    mtimerSignAnimation.startTimer(2);
 
     // Player manager events
-    ofAddListener(bigPlayerManager().someoneSpoke,this,&scSelectGame::someoneSpoke);
+    ofAddListener(bigPlayerManager().someoneSpoke   ,this,&scSelectGame::someoneSpoke);
+    ofAddListener(mtimerSignAnimation.timerEnd      ,this,&scSelectGame::timerSignAnimationEnd);
 };
 
 //scene notifications
 void scSelectGame::sceneWillDisappear( ofxScene * toScreen ){
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scSelectGame::someoneSpoke);
+    ofRemoveListener(mtimerSignAnimation.timerEnd      ,this,&scSelectGame::timerSignAnimationEnd);
 }
 
 // Speaking event
@@ -85,5 +88,37 @@ void scSelectGame::someoneSpoke(player & _player){
     if(ofStringTimesInString(mPlayerMessage, "brasser") > 0){
         ofxSceneManager::instance()->goToScene(GAME3);
     }
+    
+}
+
+void scSelectGame::timerSignAnimationEnd(){
+    
+    string signMessage;
+    
+    mtimerSignAnimation.startTimer(2 + ofRandom(-1, 1));
+    bigPlayerManager().stopSign(numPlayer);
+    
+    numPlayer++;
+    if(numPlayer>3){
+        numPlayer = 1;
+    }
+    
+//    // Draw players
+    switch (numPlayer) {
+        case 1:
+            signMessage = "Mot masqué";
+            break;
+        case 2:
+            signMessage = "Mot brassé";
+            break;
+        case 3:
+            signMessage = "Mes mots rient";
+            break;
+            
+        default:
+            break;
+    }
+    
+    bigPlayerManager().startSign(numPlayer, signMessage);
     
 }

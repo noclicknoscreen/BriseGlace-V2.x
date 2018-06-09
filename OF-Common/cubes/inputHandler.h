@@ -25,7 +25,8 @@
 typedef struct
 {
     string letter;
-    ofPoint sourcePos, destination, currentPos;
+//    ofPoint sourcePos, destination, currentPos;
+    ofPoint destination, currentPos;
     ofFloatColor textColor;
     float alpha;
     vector<int> correspondingCubes;

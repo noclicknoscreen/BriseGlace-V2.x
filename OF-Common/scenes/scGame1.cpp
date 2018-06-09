@@ -48,8 +48,9 @@ void scGame1::update(float dt){ //update scene 1 here
     int id = myInputManager.update(&myCubeManager);
     if(id != 0)
     {
-        drawWinnerSign = true;
+//        drawWinnerSign = true;
         bigPlayerManager().setWinnerUserId(id);
+        bigPlayerManager().startSign(id, "C'est gagné !");
         restartTimerSignWin();
         ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
     }
@@ -76,11 +77,11 @@ void scGame1::draw(){ //draw scene 1 here
     // Draw floating words
     myInputManager.draw();
     
-    if(drawWinnerSign)
-            bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
-    else if(drawHintSign)
-            bigPlayerManager().draw(hintUserId, "veux-tu un indice ?");
-    else
+//    if(drawWinnerSign)
+//            bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
+//    else if(drawHintSign)
+//            bigPlayerManager().draw(hintUserId, "veux-tu un indice ?");
+//    else
             bigPlayerManager().draw();    // Draw players
     
 };

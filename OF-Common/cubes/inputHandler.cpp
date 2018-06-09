@@ -37,7 +37,7 @@ void inputHandler::getNewText(player _player)
     
     userId = _player.getNumber();
     textColor = _player.getColor();
-    source = _player.getPositionHistogram();
+    source = _player.getPosition();
     
     
     splittedString.clear();
@@ -48,7 +48,7 @@ void inputHandler::getNewText(player _player)
         letterElement elt;
         elt.letter = text.substr(i,1);
         elt.textColor = textColor;
-        elt.sourcePos = source;
+//        elt.sourcePos = source;
         elt.currentPos = source;
         elt.destination = ofPoint(cumulatedOffset + mInputTextPosition.x - font.getStringBoundingBox(text, 0, 0).getWidth(), mInputTextPosition.y);
         elt.destination.y += ofRandom(0.0, 15.0); //add some random so the text isn't a line block

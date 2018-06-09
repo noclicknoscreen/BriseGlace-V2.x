@@ -81,11 +81,11 @@ void scGame2::draw(){ //draw scene 1 here
     myInputManager.draw();
 
     // Draw players
-    if(drawWinnerSign)
-        bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
-    else if(drawHintSign)
-        bigPlayerManager().draw(hintUserId, "veux-tu un indice ?");
-    else
+//    if(drawWinnerSign)
+//        bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
+//    else if(drawHintSign)
+//        bigPlayerManager().draw(hintUserId, "veux-tu un indice ?");
+//    else
         bigPlayerManager().draw();    // Draw players
     
 };
@@ -173,7 +173,7 @@ void scGame2::someoneSpoke(player & _player){
         bigPlayerManager().setWinnerUserId(_player.getNumber());
         myCubeManager.rotateAllToWhite();
         restartTimerSignWin();
-        drawWinnerSign = true;
+//        drawWinnerSign = true;
     }else{
         ofLogNotice() << "Final comparaison failed [" << _player.getLastMessage() << "] different from [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
     }

@@ -20,8 +20,12 @@ public:
     void setup();
     void freshRestart(); // Reset messages for fresh restart
     void update();
-    void draw(int _userId = 0, string _textOnSign="");
-    void draw3Signs(string _sign1, string _sign2, string _sign3);
+//    void draw(int _userId = 0, string _textOnSign="");
+//    void draw3Signs(string _sign1, string _sign2, string _sign3);
+    void draw();
+    
+    void startSign(int _userId, string _textOnSign);
+    void stopSign(int _userId);
     
     void keyPressed(int key);
     
@@ -31,7 +35,7 @@ public:
     float getSumVolume();
     float getAverageVolume();
     float getUserVolume(int id);
-    ofPoint getHistogrammPosition(int id);
+//    ofPoint getHistogrammPosition(int id);
     
     
     int getNumberOfPlayers(){return mPlayers.size();}

@@ -53,9 +53,9 @@ void playerManager::setup(){
     freshRestart();
     
     // Players for FORCE DRAW (Drawing player not available
-    mPlayers[1] = player(mColors[1], mSequencesPath[1], mBullesPath[1]);
-    mPlayers[2] = player(mColors[2], mSequencesPath[2], mBullesPath[2]);
-    mPlayers[3] = player(mColors[3], mSequencesPath[3], mBullesPath[3]);
+    mPlayers[1] = player(mPositions[1], mColors[1], mSequencesPath[1], mBullesPath[1]);
+    mPlayers[2] = player(mPositions[2], mColors[2], mSequencesPath[2], mBullesPath[2]);
+    mPlayers[3] = player(mPositions[3], mColors[3], mSequencesPath[3], mBullesPath[3]);
     
 }
 
@@ -75,6 +75,13 @@ void playerManager::update(){
         ofLoadURLAsync(url,"players");
         bLoadingPlayers = true;
     }
+    
+    std::map<int, player>::iterator onePlayer;
+    for (onePlayer = mPlayers.begin(); onePlayer != mPlayers.end(); ++onePlayer)
+    {
+        onePlayer->second.updateAnimations();
+    }
+    
 }
 
 //--------------------------------------------------------------
@@ -106,7 +113,7 @@ void playerManager::loadPlayers(ofBuffer _datas){
                 
                 ofLogNotice() << "Add player : " << mResponse["players"][idxPlayer]["nr"].asInt();
                 // Else add
-                player newPlayer = player(mColors[realNr], mSequencesPath[realNr], mBullesPath[realNr]);
+                player newPlayer = player(mPositions[realNr], mColors[realNr], mSequencesPath[realNr], mBullesPath[realNr]);
                 
                 newPlayer.update(mResponse["players"][idxPlayer]["isAvailable"].asBool(),
                                  mResponse["players"][idxPlayer]["lastMessage"]["text"].asString(),
@@ -201,38 +208,39 @@ float playerManager::getAverageVolume()
         return sumVolume/nbP;
 }
 
-//--------------------------------------------------------------
-ofPoint playerManager::getHistogrammPosition(int id)
-{
-    std::map<int, player>::iterator onePlayer = mPlayers.find(id);
-    if (onePlayer != mPlayers.end())
-    {
-        return onePlayer->second.getPositionHistogram();// getVolume();
-    }
-    else
-        return ofPoint(0,0,0);
-};
+////--------------------------------------------------------------
+//ofPoint playerManager::getHistogrammPosition(int id)
+//{
+//    std::map<int, player>::iterator onePlayer = mPlayers.find(id);
+//    if (onePlayer != mPlayers.end())
+//    {
+//        return onePlayer->second.getPositionHistogram();// getVolume();
+//    }
+//    else
+//        return ofPoint(0,0,0);
+//};
+
+////--------------------------------------------------------------
+//void playerManager::draw3Signs(string _sign1, string _sign2, string _sign3){
+//    
+//    ofDisableDepthTest();
+//    
+//    std::map<int, player>::iterator onePlayer;
+//    int border = 200;
+//    
+//    mPlayers[1].draw(mPositions[1], mBullesPos[1], true, _sign1);
+//    mPlayers[2].draw(mPositions[2], mBullesPos[2], true, _sign2);
+//    mPlayers[3].draw(mPositions[3], mBullesPos[3], true, _sign3);
+//    
+//    if(drawGui){
+//        gui.draw();
+//    }
+//    
+//}
 
 //--------------------------------------------------------------
-void playerManager::draw3Signs(string _sign1, string _sign2, string _sign3){
-    
-    ofDisableDepthTest();
-    
-    std::map<int, player>::iterator onePlayer;
-    int border = 200;
-    
-    mPlayers[1].draw(mPositions[1], mBullesPos[1], true, _sign1);
-    mPlayers[2].draw(mPositions[2], mBullesPos[2], true, _sign2);
-    mPlayers[3].draw(mPositions[3], mBullesPos[3], true, _sign3);
-    
-    if(drawGui){
-        gui.draw();
-    }
-    
-}
-
-//--------------------------------------------------------------
-void playerManager::draw(int _userId, string _textOnSign){
+//void playerManager::draw(int _userId, string _textOnSign){
+void playerManager::draw(){
     
     ofDisableDepthTest();
     
@@ -241,16 +249,17 @@ void playerManager::draw(int _userId, string _textOnSign){
     int border = 200;
         
     for (onePlayer=mPlayers.begin(); onePlayer!=mPlayers.end(); ++onePlayer){
-    
-        if(_userId != 0 && onePlayer->second.getNumber() == _userId)
-        {
-        // Second is value (aka player)
-            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()], true, _textOnSign);
-        }
-        else
-        {
-            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()]);
-        }
+        onePlayer->second.draw(mBullesPos[onePlayer->second.getNumber()]);
+//    
+//        if(_userId != 0 && onePlayer->second.getNumber() == _userId)
+//        {
+//        // Second is value (aka player)
+//            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()], true, _textOnSign);
+//        }
+//        else
+//        {
+//            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()]);
+//        }
         // Then increase
         count++;
     }
@@ -260,6 +269,23 @@ void playerManager::draw(int _userId, string _textOnSign){
     }
 }
 
+//--------------------------------------------------------------
+void playerManager::startSign(int _userId, string _textOnSign){
+    std::map<int, player>::iterator onePlayer = mPlayers.find(_userId);
+    if (onePlayer != mPlayers.end())
+    {
+        onePlayer->second.startSign(_textOnSign);
+    }
+}
+
+//--------------------------------------------------------------
+void playerManager::stopSign(int _userId){
+    std::map<int, player>::iterator onePlayer = mPlayers.find(_userId);
+    if (onePlayer != mPlayers.end())
+    {
+        return onePlayer->second.stopSign();
+    }
+}
 
 //--------------------------------------------------------------
 int playerManager::getRandomPlayer()

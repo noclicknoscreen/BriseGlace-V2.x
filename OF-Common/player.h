@@ -10,6 +10,7 @@
 
 #include "ofMain.h"
 #include "ofxTextSuite.h"
+#include "ofxAnimatableFloat.h"
 #include "utils.h"
 
 class player : public ofBaseApp{
@@ -17,18 +18,23 @@ class player : public ofBaseApp{
 public:
     
     player(){};
-    player(ofColor _color, string _characterSeqPath, string _bullePath);
+    player(ofPoint _position, ofColor _color, string _characterSeqPath, string _bullePath);
     
     void update(bool _isAvailable, string _message, string _messageToCompare, float _volume, int _number);
-    void draw(ofVec2f _pos, ofPoint _bulleCorrection, bool drawSign=false, string textToDisplay="");
+    void updateAnimations();
+//    void draw(ofVec2f _pos, ofPoint _bulleCorrection);
+    void draw(ofPoint _bulleCorrection);
     
     float getVolume(){return mVolume;};
     string getLastMessage(){return mLastMessage;};
     string getLastMessageToCompare(){return mLastMessageToCompare;};
     int getNumber(){return mNumber;};
     ofColor getColor(){return mColor;};
-    void setPositionHistogram(ofPoint _pos){positionHistogram = _pos;};
-    ofPoint getPositionHistogram(){return positionHistogram;};
+//    void setPositionHistogram(ofPoint _pos){positionHistogram = _pos;};
+    ofPoint getPosition(){return mPosition;};
+    
+    void startSign(string _textOnSign="");
+    void stopSign();
     
 private:
     float mVolume;
@@ -38,7 +44,13 @@ private:
     bool mIsAvailable;
     
     ofColor mColor;
-    ofPoint positionHistogram;
+    ofPoint mPosition;
+//    ofPoint positionHistogram;
+    
+    ofPoint              mSignUpAndDown;
+    ofxAnimatableFloat   mSignAnimation;
+    string               mSignText;
+    bool                 mSignDraw;
     
     // Gestion de la sequence des petits bonhommes
     void loadNewSequenceImage(int _newSequenceIdx);

@@ -29,5 +29,11 @@ private:
     string  mPlayerMessage;
     ofColor mPlayerColor;
     
+private:
+    timer mtimerSignAnimation;
+    void  timerSignAnimationEnd();
+    int   numPlayer;
+
+    
 };
 

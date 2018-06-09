@@ -11,10 +11,12 @@
 #define internalBulleSize ofPoint(365, 172)
 #define internalBullePos ofPoint(15,19)
 
-player::player(ofColor _color, string _characterSeqPath, string _bullePath){
+player::player(ofPoint _position, ofColor _color, string _characterSeqPath, string _bullePath){
     
     mColor = _color;
     mIsAvailable = false;
+    
+    mPosition = _position;
     
     // Check the path of the sequence and do some coffee
     ofDirectory seq(_characterSeqPath);
@@ -72,10 +74,24 @@ void player::update(bool _isAvailable, string _message, string _messageToCompare
     loadNewSequenceImage((int)ofMap(mVolume, 0, 1, 0, mSequenceLen - 1, true));
     
     // Set the text
-    
     myText.setText(utils::toUpperCase(mLastMessage));
     myText.wrapTextArea(0.9 * internalBulleSize.x, 0.9 * internalBulleSize.y);
     myText.setColor(0, 0, 0, 255);
+}
+
+void player::updateAnimations(){
+    // Sign animation
+    float dt = 1.0f / (float)ofGetFrameRate();
+    mSignAnimation.update(dt);
+    mSignUpAndDown.x = 0;
+    mSignUpAndDown.y = -1.0f * mSignAnimation.getCurrentValue() * 500.0f;
+    
+//    ofLogNotice() << "Player n° " << mNumber << " : Timer sign value = " << mSignAnimation.getCurrentValue();
+    if(mSignAnimation.getCurrentValue() <= 0.0f){
+        mSignDraw = false;
+    }else{
+        mSignDraw = true;
+    }
     
 }
 
@@ -99,16 +115,19 @@ void player::loadNewSequenceImage(int _newSequenceIdx){
     
 }
 
-void player::draw(ofVec2f _pos, ofPoint _bulleCorrection, bool drawSign, string textToDisplay){
+//void player::draw(ofVec2f _pos, ofPoint _bulleCorrection){
+void player::draw(ofPoint _bulleCorrection){
     
-    setPositionHistogram(_pos);
+//    setPositionHistogram(_pos);
+    
+//    mPosition = _pos;
     
     ofPushStyle();
     ofSetColor(mColor);
     ofFill();
     
     ofPushMatrix();
-    ofTranslate(_pos);
+    ofTranslate(mPosition);
     
     // Draw the character
     ofPushStyle();
@@ -167,17 +186,19 @@ void player::draw(ofVec2f _pos, ofPoint _bulleCorrection, bool drawSign, string 
     }
     
     
-    //DRAW SIGN IF NEEDED
-    if(drawSign)
+    // DRAW SIGN IF NEEDED /////////////////////////////////////////////////////////////
+    if(mSignDraw)
     {
-        signText.setText(utils::toUpperCase(textToDisplay));
-//        signText.wrapTextArea(0.35*signImage.getWidth(), 0.7*signImage.getHeight());
+        signText.setText(utils::toUpperCase(mSignText));
         signText.wrapTextX(0.5*signImage.getWidth());
         
         ofDisableNormalizedTexCoords();
         
         ofPushMatrix();
-        ofTranslate(-0.5 * signImage.getWidth(), (-1 * signImage.getHeight()*0.3*abs(cos(ofGetFrameNum()/75.0 + getPositionHistogram().x)))-0.8*signImage.getHeight());
+        ofTranslate(mSignUpAndDown);
+        ofTranslate(-0.5 * signImage.getWidth(), -0.5 * signImage.getHeight() + abs(cos(ofGetFrameNum()/75.0))*50);
+//        ofTranslate(getPositionHistogram().x, getPositionHistogram().y);
+//        ofTranslate(-0.5 * signImage.getWidth(), (-1 * signImage.getHeight()*0.3*abs(cos(ofGetFrameNum()/75.0 + getPositionHistogram().x)))-0.8*signImage.getHeight());
         signImage.draw(0,0);
         
         //debug
@@ -205,7 +226,6 @@ void player::draw(ofVec2f _pos, ofPoint _bulleCorrection, bool drawSign, string 
         ofEnableNormalizedTexCoords();
         
         
-        
     }
 
     //////////////////////////////////////////////////////////////////
@@ -217,4 +237,27 @@ void player::draw(ofVec2f _pos, ofPoint _bulleCorrection, bool drawSign, string 
     
     ofPopStyle();
     
+}
+
+void player::startSign(string _textOnSign){
+    // Sign animation
+    mSignAnimation.reset(0.0f);
+    mSignAnimation.setCurve(QUADRATIC_EASE_OUT);
+    mSignAnimation.setRepeatType(PLAY_ONCE);
+    mSignAnimation.setDuration(1);
+    mSignAnimation.animateTo(1.0f);
+    
+    mSignText = _textOnSign;
+    
+}
+
+void player::stopSign(){
+    if(mSignDraw == true){
+        // Sign animation
+        mSignAnimation.reset(1.0f);
+        mSignAnimation.setCurve(QUADRATIC_EASE_OUT);
+        mSignAnimation.setRepeatType(PLAY_ONCE);
+        mSignAnimation.setDuration(1);
+        mSignAnimation.animateTo(0.0f);
+    }
 }

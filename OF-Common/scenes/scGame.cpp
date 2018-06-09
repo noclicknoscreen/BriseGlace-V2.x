@@ -9,19 +9,14 @@
 #include "scGame.h"
 
 void scGame::update(float dt){
-    
     timerBeforeHint.update(dt);
     timerSignHint.update(dt);
     timerSignWin.update(dt);
-
-    //    ofLogNotice() << "Temps avant indice : "  << timerBeforeHint.toString();
-    //    ofLogNotice() << "Temps avant win : "  << timerSignWin.toString();
-
 }
 
 void scGame::someoneSpoke(player & _player){
     
-    drawHintSign = false;
+//    drawHintSign = false;
     
     scScene::someoneSpoke(_player);
     
@@ -38,7 +33,8 @@ void scGame::restartTimerSignHint(){
 }
 void scGame::restartTimerBeforeHint(){
     ofLogNotice() << "Start timerBeforeHint, waiting..... ";
-    drawHintSign = false;
+//    drawHintSign = false;
+    
     timerBeforeHint.startTimer(30);
 }
 void scGame::restartTimerSignWin(){
@@ -51,25 +47,25 @@ void scGame::timerBeforeHintEnd(){
     ofLogNotice() << "fin du timer beforeHint, 5 seconds and go to hint";
     
     // --------------------------------
-    drawHintSign = true;
+//    drawHintSign = true;
     hintUserId = bigPlayerManager().getRandomPlayer();
+    bigPlayerManager().startSign(hintUserId, "Veux-tu un indice ?");
+//
     timerBeforeHint.stop();
     timerSignHint.startTimer(5);
 }
 
 void scGame::timerSignWinEnd(){
-    
     ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) ";
     // --------------------------------
     timerSignWin.stop();
-
 }
 
 
 void scGame::timerSignHintEnd(){
-    
     ofLogNotice() << "fin du timer timerSignHint, go to scene (HINT) ";
     // --------------------------------
+    bigPlayerManager().stopSign(hintUserId);
     timerSignHint.stop();
     ofxSceneManager::instance()->goToScene(HINT);
 }
@@ -79,9 +75,14 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
 
-    //signs
-    drawWinnerSign = false;
-    drawHintSign = false;
+    // Signs ----------------------------------------
+    bigPlayerManager().stopSign(1);
+    bigPlayerManager().stopSign(2);
+    bigPlayerManager().stopSign(3);
+    bigPlayerManager().stopSign(4);
+    
+//    drawWinnerSign = false;
+//    drawHintSign = false;
     
     restartTimerBeforeHint();
     

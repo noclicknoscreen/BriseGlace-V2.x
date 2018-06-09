@@ -172,11 +172,11 @@ void scGame3::draw(){
     scScene::drawSubTitle("Parlez-moi dans l'oreille pour retourner les cubes");
 
     // Draw players
-    if(drawWinnerSign)
-        bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
-    else if(drawHintSign)
-        bigPlayerManager().draw(hintUserId, "veux-tu un indice?");
-    else
+//    if(drawWinnerSign)
+//        bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
+//    else if(drawHintSign)
+//        bigPlayerManager().draw(hintUserId, "veux-tu un indice?");
+//    else
         bigPlayerManager().draw();
     
     
@@ -210,8 +210,9 @@ void scGame3::someoneSpoke(player & _player){
     {
         ofLogNotice() << "We have a winner [" << _player.getLastMessage() << "] = [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
         bigPlayerManager().setWinnerUserId(_player.getNumber());
+        bigPlayerManager().startSign(_player.getNumber(), "C'est gagné !");
         restartTimerSignWin();
-        drawWinnerSign = true;
+//        drawWinnerSign = true;
         
         ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
         
@@ -280,8 +281,8 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
     mTimer.startTimer(45);
     
-    drawHintSign = 0;
-    drawWinnerSign = 0;
+//    drawHintSign = 0;
+//    drawWinnerSign = 0;
 
 };
 
