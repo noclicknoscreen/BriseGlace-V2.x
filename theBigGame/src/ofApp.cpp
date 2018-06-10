@@ -11,7 +11,7 @@ void ofApp::setup(){
 	ofEnableSmoothing();
 		
     ///////////////////////////////////////
-    myFont.load("Folktale.ttf", 28, true, true);
+    myFont.load("KGTenThousandReasons.ttf", 28, true, true);
     
 	///////////////////////////////////////
     // add the newFloat method to listen for eventsAddon newFloatEvent
@@ -72,6 +72,9 @@ void ofApp::draw(){
     ofPopView();
     
 	sceneManager->draw();
+    
+//    string oeuvre = "Ïuvre";
+//    myFont.drawString(oeuvre, 100, 100);
     
 #if defined DRAW_DEBUG
     ofSetColor(255,0,0);

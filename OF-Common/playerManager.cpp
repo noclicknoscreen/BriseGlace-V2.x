@@ -53,9 +53,9 @@ void playerManager::setup(){
     freshRestart();
     
     // Players for FORCE DRAW (Drawing player not available
-    mPlayers[1] = player(mPositions[1], mColors[1], mSequencesPath[1], mBullesPath[1]);
-    mPlayers[2] = player(mPositions[2], mColors[2], mSequencesPath[2], mBullesPath[2]);
-    mPlayers[3] = player(mPositions[3], mColors[3], mSequencesPath[3], mBullesPath[3]);
+    mPlayers[1] = player(1, mPositions[1], mColors[1], mSequencesPath[1], mBullesPath[1]);
+    mPlayers[2] = player(2, mPositions[2], mColors[2], mSequencesPath[2], mBullesPath[2]);
+    mPlayers[3] = player(3, mPositions[3], mColors[3], mSequencesPath[3], mBullesPath[3]);
     
 }
 
@@ -113,7 +113,7 @@ void playerManager::loadPlayers(ofBuffer _datas){
                 
                 ofLogNotice() << "Add player : " << mResponse["players"][idxPlayer]["nr"].asInt();
                 // Else add
-                player newPlayer = player(mPositions[realNr], mColors[realNr], mSequencesPath[realNr], mBullesPath[realNr]);
+                player newPlayer = player(realNr, mPositions[realNr], mColors[realNr], mSequencesPath[realNr], mBullesPath[realNr]);
                 
                 newPlayer.update(mResponse["players"][idxPlayer]["isAvailable"].asBool(),
                                  mResponse["players"][idxPlayer]["lastMessage"]["text"].asString(),

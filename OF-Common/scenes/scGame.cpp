@@ -21,7 +21,6 @@ void scGame::someoneSpoke(player & _player){
     // Restart waiting timer
     restartTimerBeforeHint();
     // Stop eventually sign timer
-    restartTimerSignHint();
     timerSignHint.stop();
 }
 
@@ -76,7 +75,11 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
 //    drawWinnerSign = false;
 //    drawHintSign = false;
     
+    // Restart waiting timer
     restartTimerBeforeHint();
+    // Stop eventually sign timer
+//    restartTimerSignHint();
+    timerSignHint.stop();
     
     // Player manager events
     ofAddListener(timerBeforeHint.timerEnd, this,&scGame::timerBeforeHintEnd);

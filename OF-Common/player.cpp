@@ -11,12 +11,13 @@
 #define internalBulleSize ofPoint(365, 172)
 #define internalBullePos ofPoint(15,19)
 
-player::player(ofPoint _position, ofColor _color, string _characterSeqPath, string _bullePath){
+player::player(int _number, ofPoint _position, ofColor _color, string _characterSeqPath, string _bullePath){
     
     mColor = _color;
     mIsAvailable = false;
     
     mPosition = _position;
+    mNumber   = _number;
     
     // Check the path of the sequence and do some coffee
     ofDirectory seq(_characterSeqPath);
@@ -84,7 +85,11 @@ void player::updateAnimations(){
     float dt = 1.0f / (float)ofGetFrameRate();
     mSignAnimation.update(dt);
     mSignUpAndDown.x = 0;
-    mSignUpAndDown.y = -1.0f * mSignAnimation.getCurrentValue() * 500.0f;
+    mSignUpAndDown.y = ofMap(mSignAnimation.getCurrentValue(), 0, 1, 200.0f, -350.0f);
+    
+    mSignScale.x = ofMap(mSignAnimation.getCurrentValue(), 0, 1, 0.75f, 1.0f);
+    mSignScale.y = ofMap(mSignAnimation.getCurrentValue(), 0, 1, 0.25f, 1.0f);
+    
     
 //    ofLogNotice() << "Player n° " << mNumber << " : Timer sign value = " << mSignAnimation.getCurrentValue();
     if(mSignAnimation.getCurrentValue() <= 0.0f){
@@ -195,6 +200,7 @@ void player::draw(ofPoint _bulleCorrection){
         ofDisableNormalizedTexCoords();
         
         ofPushMatrix();
+        ofScale(mSignScale);
         ofTranslate(mSignUpAndDown);
         ofTranslate(-0.5 * signImage.getWidth(), -0.5 * signImage.getHeight() + abs(cos(ofGetFrameNum()/75.0))*50);
 //        ofTranslate(getPositionHistogram().x, getPositionHistogram().y);
@@ -244,7 +250,7 @@ void player::startSign(string _textOnSign){
     mSignAnimation.reset(0.0f);
     mSignAnimation.setCurve(QUADRATIC_EASE_OUT);
     mSignAnimation.setRepeatType(PLAY_ONCE);
-    mSignAnimation.setDuration(1);
+    mSignAnimation.setDuration(0.5);
     mSignAnimation.animateTo(1.0f);
     
     mSignText = _textOnSign;
@@ -257,7 +263,7 @@ void player::stopSign(){
         mSignAnimation.reset(1.0f);
         mSignAnimation.setCurve(QUADRATIC_EASE_OUT);
         mSignAnimation.setRepeatType(PLAY_ONCE);
-        mSignAnimation.setDuration(1);
+        mSignAnimation.setDuration(0.5);
         mSignAnimation.animateTo(0.0f);
     }
 }

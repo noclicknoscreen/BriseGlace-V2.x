@@ -18,7 +18,7 @@ class player : public ofBaseApp{
 public:
     
     player(){};
-    player(ofPoint _position, ofColor _color, string _characterSeqPath, string _bullePath);
+    player(int _number, ofPoint _position, ofColor _color, string _characterSeqPath, string _bullePath);
     
     void update(bool _isAvailable, string _message, string _messageToCompare, float _volume, int _number);
     void updateAnimations();
@@ -48,6 +48,7 @@ private:
 //    ofPoint positionHistogram;
     
     ofPoint              mSignUpAndDown;
+    ofPoint              mSignScale;
     ofxAnimatableFloat   mSignAnimation;
     string               mSignText;
     bool                 mSignDraw;

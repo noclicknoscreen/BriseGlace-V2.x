@@ -118,14 +118,14 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
     
-    // Load the next enigma
-    bigEnigmaManager().pickNewEnigma(MOTUS);
-    
 //    // Erase all words of every one
 //    bigPlayerManager().freshRestart();
 //
     // On ne refiat pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
+        
+        // Load the next enigma
+        bigEnigmaManager().pickNewEnigma(MOTUS);
         
         // Reset winner
         bigPlayerManager().setWinnerUserId(0);

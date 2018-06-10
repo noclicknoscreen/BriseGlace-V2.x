@@ -83,7 +83,7 @@ void cubeManager::drawTexturedCube(ofImage *texture, int i, float texCoordX_min,
 
     ofPushMatrix();
 
-    ofTranslate(-myCubes[i].size/2, -myCubes[i].size/2, myCubes[i].size * (0.5+0.005));
+    ofTranslate(-myCubes[i].size/2, -myCubes[i].size/2, myCubes[i].size * (0.5+0.002));
     GLfloat tx0 = realTexCoordX_min;
     GLfloat ty0 = realTexCoordY_min;
     GLfloat tx1 = realTexCoordX_max;

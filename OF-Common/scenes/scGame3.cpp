@@ -279,6 +279,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
 
         //now comes from enigma Singleton
         bigEnigmaManager().pickNewEnigma(BOGGLE);
+        
         wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
         ofLogNotice() << "setting wantedWord to : " << wantedWord;
         

@@ -87,6 +87,8 @@ void scVictory::sceneWillAppear( ofxScene * fromScreen ){
 
 //scene notifications
 void scVictory::sceneWillDisappear( ofxScene * toScreen ){
+    scScene::sceneWillDisappear(toScreen);
+    
     ofRemoveListener(mTimerEndScene.timerEnd,this,&scVictory::timerEndScene);
 }
 
