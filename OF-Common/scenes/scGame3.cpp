@@ -268,12 +268,15 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
     
-    // Erase all words of every one
-    bigPlayerManager().freshRestart();
+//    // Erase all words of every one
+//    bigPlayerManager().freshRestart();
 
     // On ne refiat pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
         
+        // Reset winner
+        bigPlayerManager().setWinnerUserId(0);
+
         //now comes from enigma Singleton
         bigEnigmaManager().pickNewEnigma(BOGGLE);
         wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());

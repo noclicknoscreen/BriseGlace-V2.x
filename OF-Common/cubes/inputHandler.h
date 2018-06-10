@@ -37,7 +37,7 @@ class inputHandler
 {
 public:
     void    setup(ofPoint _inputTextPosition);
-    void    getNewText(player _player);//int _userId, string txt);
+    void    getNewText(player _player);
     int     update(cubeManager* cm);
     void    draw();
     void    clearDuplicatesLettersHistory();

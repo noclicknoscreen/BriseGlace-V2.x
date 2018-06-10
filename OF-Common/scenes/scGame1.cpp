@@ -121,11 +121,15 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // Load the next enigma
     bigEnigmaManager().pickNewEnigma(MOTUS);
     
-    // Erase all words of every one
-    bigPlayerManager().freshRestart();
-    
+//    // Erase all words of every one
+//    bigPlayerManager().freshRestart();
+//
     // On ne refiat pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
+        
+        // Reset winner
+        bigPlayerManager().setWinnerUserId(0);
+
         //cubes
         myCubeManager.setup(ofPoint(0.5*ofGetWidth(), 0.4*ofGetHeight(), -300), 15, 150);
         

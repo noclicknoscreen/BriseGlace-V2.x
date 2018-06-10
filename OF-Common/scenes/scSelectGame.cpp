@@ -39,7 +39,7 @@ void scSelectGame::sceneWillAppear( ofxScene * fromScreen ){
     scScene::sceneWillAppear(fromScreen);
     
     // Erase all words of every one
-    bigPlayerManager().freshRestart();
+//    bigPlayerManager().freshRestart();
     mtimerSignAnimation.startTimer(2);
 
     // Player manager events

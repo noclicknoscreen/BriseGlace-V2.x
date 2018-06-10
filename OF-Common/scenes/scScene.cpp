@@ -83,6 +83,11 @@ void scScene::someoneSpoke(player & _player){
 
 void scScene::sceneWillAppear( ofxScene * fromScreen ){
     bigPlayerManager().freshRestart();
+    // Signs ----------------------------------------
+    bigPlayerManager().stopSign(1);
+    bigPlayerManager().stopSign(2);
+    bigPlayerManager().stopSign(3);
+    bigPlayerManager().stopSign(4);
 }
 
 void scScene::sceneWillDisappear( ofxScene * toScreen ){

@@ -57,7 +57,7 @@ void enigmaManager::pickNewEnigma(gameType _gameType){
                 mCurrentGameType = _gameType;
                 
                 nbHint = (int)ofRandom(mCurrentEnigma.getNbHints());
-                
+
             }
         }
         else
@@ -79,6 +79,37 @@ void enigmaManager::pushHintIndex(){
 
 enigmaType enigmaManager::pickHintIndex(){
     return toEnigmaType(nbHint);
+}
+
+// PSEUDO STRING -----------------------------------------------
+void enigmaManager::setPseudoString(int _length){
+    
+    mPseudoString = ""; // Clear
+    mPseudoString += mCurrentEnigma.getSolution();
+    
+    if(_length > mPseudoString.size()){
+        // On rajoute des lettre aléatoire
+        for(int i=0; i< (_length - mPseudoString.size()); i++){
+            mPseudoString += utils::getRndLetter()[0];
+        }
+    }else if(_length < mPseudoString.size()){
+        mPseudoString.resize(_length);
+    }
+    
+    random_shuffle(mPseudoString.begin(), mPseudoString.end());
+    
+}
+
+string    enigmaManager::pickPseudoLetter(int _idx){
+    if(_idx >= 0 && _idx < mPseudoString.size()){
+        // return a letter among the pseudo string
+        return ofToString(mPseudoString[_idx]);
+        
+    }else{
+        // else return anything random
+        return utils::getRndLetter();
+        
+    }
 }
 
 enigmaType enigmaManager::toEnigmaType(int _int){

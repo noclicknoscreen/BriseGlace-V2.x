@@ -245,23 +245,9 @@ void playerManager::draw(){
     ofDisableDepthTest();
     
     std::map<int, player>::iterator onePlayer;
-    int count = 0;
-    int border = 200;
-        
+
     for (onePlayer=mPlayers.begin(); onePlayer!=mPlayers.end(); ++onePlayer){
         onePlayer->second.draw(mBullesPos[onePlayer->second.getNumber()]);
-//    
-//        if(_userId != 0 && onePlayer->second.getNumber() == _userId)
-//        {
-//        // Second is value (aka player)
-//            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()], true, _textOnSign);
-//        }
-//        else
-//        {
-//            onePlayer->second.draw(mPositions[onePlayer->second.getNumber()], mBullesPos[onePlayer->second.getNumber()]);
-//        }
-        // Then increase
-        count++;
     }
     
     if(drawGui){

@@ -31,6 +31,11 @@ void cubeManagerMemory::setGrid(int _nbLines, int _nbRows){
     answerFullImage = bigEnigmaManager().getCurrentEnigma()->getImage(REWARD);
     answerFullImage.resize(_nbRows*cubeSize, _nbLines*cubeSize);
     
+    // Shuffle the pseudo string
+    bigEnigmaManager().setPseudoString(_nbRows * _nbLines);
+    
+    int countCube = 0;
+    
     for(int idxRow=0; idxRow<_nbRows; idxRow++)
     {
         
@@ -38,10 +43,11 @@ void cubeManagerMemory::setGrid(int _nbLines, int _nbRows){
         {
             cube* tmpCube = new cube();
             int step = cubeSize + 2*mEspacementCubes;
-            string rndLetter;
-            do{
-               rndLetter = utils::getRndLetter();
-            }while(ofStringTimesInString(mContent, rndLetter) > 0 && mContent != "");
+            string rndLetter = utils::toUpperCase(bigEnigmaManager().pickPseudoLetter(countCube));
+            
+//            do{
+//                rndLetter = utils::getRndLetter();
+//            }while(ofStringTimesInString(mContent, rndLetter) > 0 && mContent != "");
             
             ofPoint position(mCubesPosition.x - 0.5*_nbRows*step + 0.5*step, mCubesPosition.y - 0.5*_nbLines*step + 0.5*step);
             position.x += idxRow*step;
@@ -55,6 +61,7 @@ void cubeManagerMemory::setGrid(int _nbLines, int _nbRows){
             mContent += rndLetter;
             
             myCubes.push_back(*tmpCube);
+            countCube++;
             
         }
     }

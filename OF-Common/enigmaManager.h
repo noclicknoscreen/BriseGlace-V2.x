@@ -9,7 +9,9 @@
 #pragma once
 
 #include "ofMain.h"
+
 #include "enigma.h"
+#include "utils.h"
 
 enum gameType {MOTUS = 1, IMAGE_GRID, BOGGLE};
 
@@ -27,6 +29,7 @@ public:
     void        pushHintIndex();
     enigma* getCurrentEnigma(){return &mCurrentEnigma;};
     gameType getCurrentGameType(){return mCurrentGameType;};
+    
 private:
     enigmaType toEnigmaType(int _int);
     
@@ -36,6 +39,14 @@ private:
     ofDirectory dir;
     
     int         nbHint;
+    
+    // pseudo-random string (half enigma answer, half random)
+private:
+    string    mPseudoString;
+    
+public:
+    void      setPseudoString(int _length);
+    string    pickPseudoLetter(int _idx);
     
 public:
     static enigmaManager& get(){

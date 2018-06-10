@@ -55,7 +55,7 @@ void scGame2::update(float dt){
         // Input word (who wins)
         myInputManager.update(&myCubeManager);
     }
-    
+
     // update a timer for post animation
     mTimerAfterText.update(dt);
     
@@ -103,11 +103,15 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
     ofAddListener(mTimerAfterText.timerEnd,         this,&scGame2::timerAfterTextEnd);
     ofAddListener(myInputManager.readyForNewText,   this,&scGame2::readyForNewText);
     
-    // Erase all words of every one
-    bigPlayerManager().freshRestart();
+//    // Erase all words of every one
+//    bigPlayerManager().freshRestart();
     
     // On ne refait pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
+        
+        // Reset winner
+        bigPlayerManager().setWinnerUserId(0);
+
         // Load the next enigma
         bigEnigmaManager().pickNewEnigma(IMAGE_GRID);
         
@@ -172,8 +176,8 @@ void scGame2::someoneSpoke(player & _player){
         ofLogNotice() << "We have a winner [" << _player.getLastMessage() << "] = [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
         bigPlayerManager().setWinnerUserId(_player.getNumber());
         myCubeManager.rotateAllToWhite();
+        bigPlayerManager().startSign(_player.getNumber(), "C'est gagné !");
         restartTimerSignWin();
-//        drawWinnerSign = true;
     }else{
         ofLogNotice() << "Final comparaison failed [" << _player.getLastMessage() << "] different from [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
     }

@@ -16,8 +16,6 @@ void scGame::update(float dt){
 
 void scGame::someoneSpoke(player & _player){
     
-//    drawHintSign = false;
-    
     scScene::someoneSpoke(_player);
     
     // Restart waiting timer
@@ -74,12 +72,6 @@ void scGame::timerSignHintEnd(){
 void scGame::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
-
-    // Signs ----------------------------------------
-    bigPlayerManager().stopSign(1);
-    bigPlayerManager().stopSign(2);
-    bigPlayerManager().stopSign(3);
-    bigPlayerManager().stopSign(4);
     
 //    drawWinnerSign = false;
 //    drawHintSign = false;
@@ -95,6 +87,8 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
 void scGame::sceneWillDisappear( ofxScene * toScreen ){
     // reset our scene when we appear
     scScene::sceneWillDisappear(toScreen);
+    
+    timerBeforeHint.stop();
     
     // Disable timer events
     ofRemoveListener(timerBeforeHint.timerEnd,  this,&scGame::timerBeforeHintEnd);

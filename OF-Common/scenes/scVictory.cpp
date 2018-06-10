@@ -66,6 +66,7 @@ void scVictory::draw(){ //draw scene 1 here
 void scVictory::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
+
     // --
     mTimerEndScene.startTimer(25);
     // Player manager events
