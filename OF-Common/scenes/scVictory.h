@@ -22,12 +22,16 @@ public:
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
     
-    // What happens when timer ends
-    void timerEnd();
 
     ofxTextBlock winnerText;
     ofImage localRewardImage, woodTexture;
     float cubeSize;
 
+// TIMERS
+private:
+    timer mTimerEndScene;
+    void  timerEndScene();
+
+    
 };
 

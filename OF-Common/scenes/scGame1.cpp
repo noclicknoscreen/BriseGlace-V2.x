@@ -56,7 +56,7 @@ void scGame1::update(float dt){ //update scene 1 here
     }
 
     // Update timers
-    mTimer.update(dt);
+//    mTimer.update(dt);
     
 };
 

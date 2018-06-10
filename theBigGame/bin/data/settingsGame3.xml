@@ -11,5 +11,9 @@
 	<damping>0.25</damping>
 	<friction>0.75</friction>
 <Game3/>
-	<bonusY>0</bonusY>
+	<bonusY>15</bonusY>
+<testIs1>0</testIs1>
+	<testIs2>0</testIs2>
+	<testIs3>0</testIs3>
+<constantZ>3</constantZ>
 </Game3>

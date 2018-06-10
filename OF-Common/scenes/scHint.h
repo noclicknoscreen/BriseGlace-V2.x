@@ -42,16 +42,18 @@ public:
     
     bool bDrawGui;
     
-    void timerEnd();
     void someoneSpoke(player & _player);
     
     ofxScene* from;
 
 private:
-    timer timerStartRoll;
+    timer mTimerEndScene;
+    void  timerEndScene();
+    
+    timer mTimerStartRoll;
     void  timerStartRollEnd();
     
-    timer timerBeforeRoll;
+    timer mTimerBeforeRoll;
     void  timerBeforeRollEnd();
     
     int   currentCube;

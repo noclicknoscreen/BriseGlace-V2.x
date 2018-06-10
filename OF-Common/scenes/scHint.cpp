@@ -38,9 +38,9 @@ void scHint::update(float dt){ //update scene 1 here
     // Cube update
     myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), ofPoint(orientationX, orientationY, orientationZ), cutOff, concentration, cubesRotationSpeed);
     
-    mTimer.update(dt);
-    timerBeforeRoll.update(dt);
-    timerStartRoll.update(dt);
+    mTimerEndScene.update(dt);
+    mTimerBeforeRoll.update(dt);
+    mTimerStartRoll.update(dt);
     
 };
 
@@ -91,16 +91,39 @@ void scHint::sceneWillAppear( ofxScene * fromScreen ){
     currentCube = 0;
     
     // -- -- -- -- --
-    timerBeforeRoll.startTimer(3);
+    mTimerBeforeRoll.startTimer(3);
     
-    // Player manager events
-    ofAddListener(mTimer.timerEnd, this, &scHint::timerEnd);
-    ofAddListener(timerStartRoll.timerEnd, this, &scHint::timerStartRollEnd);
-    ofAddListener(timerBeforeRoll.timerEnd, this, &scHint::timerBeforeRollEnd);
+    // events ---
+    ofAddListener(mTimerEndScene.timerEnd, this, &scHint::timerEndScene);
+    ofAddListener(mTimerStartRoll.timerEnd, this, &scHint::timerStartRollEnd);
+    ofAddListener(mTimerBeforeRoll.timerEnd, this, &scHint::timerBeforeRollEnd);
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scHint::someoneSpoke);
 
-};
-void scHint::timerEnd(){
+}
+
+void scHint::sceneWillDisappear( ofxScene * toScreen){
+    scScene::sceneWillDisappear(toScreen);
+    
+    mTimerStartRoll.stop();
+    mTimerBeforeRoll.stop();
+    mTimerEndScene.stop();
+    
+    // events ---
+    ofRemoveListener(mTimerEndScene.timerEnd, this, &scHint::timerEndScene);
+    ofRemoveListener(mTimerStartRoll.timerEnd, this, &scHint::timerStartRollEnd);
+    ofRemoveListener(mTimerBeforeRoll.timerEnd, this, &scHint::timerBeforeRollEnd);
+    ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scHint::someoneSpoke);
+    
+}
+
+// EVENTS ////////////////////////////////////////////////////////////////////////////////////////////
+// Speaking event
+void scHint::someoneSpoke(player & _player){
+    // Waiting for a test (j'ai dit oui')
+    // --------------------------------
+    ofxSceneManager::instance()->goToScene(from->getSceneID());
+}
+void scHint::timerEndScene(){
     // --------------------------------
     ofxSceneManager::instance()->goToScene(from->getSceneID());
 }
@@ -108,8 +131,8 @@ void scHint::timerBeforeRollEnd(){
     
     ofLogNotice() << "End of timerBeforeRoll, start roll cubes";
     
-    timerStartRoll.startTimer(0.5);
-    timerBeforeRoll.stop();
+    mTimerStartRoll.startTimer(0.5);
+    mTimerBeforeRoll.stop();
 }
 void scHint::timerStartRollEnd(){
     
@@ -119,25 +142,13 @@ void scHint::timerStartRollEnd(){
     if(currentCube < myCubeManager.getNumberOfCubes()){
         myCubeManager.rotateToWood(currentCube);
         currentCube++;
-        timerStartRoll.startTimer(0.5);
+        mTimerStartRoll.startTimer(0.5);
     }else{
-        mTimer.startTimer(1);
-        timerStartRoll.stop();
+        mTimerEndScene.startTimer(1);
+        mTimerStartRoll.stop();
     }
 }
 
-//scene notifications
-void scHint::sceneWillDisappear( ofxScene * toScreen ){
-    ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scHint::someoneSpoke);
-}
-
-// Events callback -----------------------------------
-// Speaking event
-void scHint::someoneSpoke(player & _player){
-    // Waiting for a test (j'ai dit oui')
-    // --------------------------------
-    ofxSceneManager::instance()->goToScene(from->getSceneID());
-}
 
 
 

@@ -8,7 +8,7 @@
 
 #include "scGame3.h"
 
-#define DRAW_DEBUG
+//#define DRAW_DEBUG
 
 //=======================================================================
 //
@@ -91,6 +91,9 @@ void scGame3::update(float dt){
 
         ofVec3f randomForce;
         float amountPlayer1 = ofMap(bigPlayerManager().getUserVolume(1), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
+        if(testIs1){
+            amountPlayer1 = bigPlayerManager().getUserVolume(4);
+        }
         randomForce = ofVec3f(
                               forceAmount->x,
                               ofRandom(-forceAmount->y, forceAmount->y) + bonusY,
@@ -100,18 +103,21 @@ void scGame3::update(float dt){
         applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
         
         float amountPlayer2 = ofMap(bigPlayerManager().getUserVolume(2), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
-        if(bigPlayerManager().getUserVolume(4) > 0){
+        if(testIs2){
             amountPlayer2 = bigPlayerManager().getUserVolume(4);
         }
         randomForce = ofVec3f(
                               ofRandom(-forceAmount->x, forceAmount->x),
-                              ofRandom(-forceAmount->y, forceAmount->y) + bonusY,
-                              -forceAmount->z
+                              ofRandom(forceAmount->y) + bonusY,
+                              ofRandom(-forceAmount->z, forceAmount->z)
                               )
         * amountPlayer2 * forceMicro2_multiplier;
         applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
         
         float amountPlayer3 = ofMap(bigPlayerManager().getUserVolume(3), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
+        if(testIs3){
+            amountPlayer3 = bigPlayerManager().getUserVolume(4);
+        }
         randomForce = ofVec3f(
                               -forceAmount->x,
                               ofRandom(-forceAmount->y, forceAmount->y) + bonusY,
@@ -119,11 +125,17 @@ void scGame3::update(float dt){
                               )
         * amountPlayer3;
         applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
+        
+        randomForce = ofVec3f(0,
+                              0,
+                              constantZ
+                              );
+        applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
 
     }
     
 
-    mTimer.update(dt);
+//    mTimerEndScene.update(dt);
     
 };
 
@@ -295,7 +307,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
     bigPlayerManager().setWinnerUserId(0);
     
-    mTimer.startTimer(45);
+//    mTimerEndScene.startTimer(45);
     
 //    drawHintSign = 0;
 //    drawWinnerSign = 0;
@@ -377,10 +389,15 @@ void scGame3::setupGui()
     
     group.add(forceMicro2_multiplier.set("forceMicro2_multiplier", 0.6, 0.1, 1.0));
     group.add(bonusY.set("bonusY", 0, 0, 300));
+    group.add(constantZ.set("constantZ", 0, -300, 300));
     
     group.add(angularDamping.set("angularDamping", 0.815, 0.0, 1.0));
     group.add(damping.set("damping", 0.25, 0.0, 1.0));
     group.add(friction.set("friction", 0.75, 0.0, 1.0));
+    
+    group.add(testIs1.set("testIs1", false));
+    group.add(testIs2.set("testIs2", false));
+    group.add(testIs3.set("testIs3", false));
     
     //gui.add(zLight.set("zLight", 0, -1000, 1000));
     

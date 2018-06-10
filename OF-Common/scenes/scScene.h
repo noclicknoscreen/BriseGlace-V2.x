@@ -52,9 +52,5 @@ private:
     ofxTextBlock myTextSubTitle;
     ofxTextBlock myTextSpokenWord;
 
-protected:
-    ///////////// TIMER /////////////////////
-    timer mTimer;
-    
 };
 

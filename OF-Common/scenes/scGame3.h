@@ -74,18 +74,33 @@ public:
 
         
         ofSetColor(0);
-        ofPushMatrix();
-                ofRotate(180, 0, 0, 1);
-                ofRotate(180, 0, 1, 0);
-                ofRotate(180, 1, 0, 0);
         
-                ofTranslate(-textWidth/2.0,  -textHeight/2, float(size.z/2 +2));
-                
-                ofDisableLighting();
-                font.drawString(letter, 0, 0);
-                ofEnableLighting();
-            ofPopMatrix();
+        // DRAW A LETTER ////////////////////////////////////////////////////
+        ofPushMatrix();
+            ofRotate(180, 0, 0, 1);
+            ofRotate(180, 0, 1, 0);
+            ofRotate(180, 1, 0, 0);
+    
+            ofTranslate(-textWidth/2.0,  -textHeight/2, float(size.z/2 +2));
+            
+            ofDisableLighting();
+            font.drawString(letter, 0, 0);
+            ofEnableLighting();
+        ofPopMatrix();
 
+        // DRAW A LETTER ////////////////////////////////////////////////////
+        ofPushMatrix();
+//            ofRotate(180, 0, 0, 1);
+//            ofRotate(180, 0, 1, 0);
+//            ofRotate(180, 1, 0, 0);
+        
+            ofTranslate(-textWidth/2.0,  -textHeight/2, -1.0f *     float(size.z/2 +2));
+            
+            ofDisableLighting();
+            font.drawString(letter, 0, 0);
+            ofEnableLighting();
+        ofPopMatrix();
+        
         ofPopMatrix();
         
         //restore gl state
@@ -172,8 +187,13 @@ public:
     ofParameter<float>           volumeBorneMin, volumeBorneMax;
     ofParameter<float>           forceMicro2_multiplier;
     ofParameter<float>           bonusY;
+    ofParameter<float>           constantZ;
     ofParameter<ofVec3f>         forceAmount;
     ofParameter<float>           zLight;
+    
+    ofParameter<bool>           testIs1;
+    ofParameter<bool>           testIs2;
+    ofParameter<bool>           testIs3;
     
     //lumiere
     ofLight spotLight;
@@ -187,6 +207,11 @@ public:
     //winner color (for game3BIS ;)
 protected:
     bool colorizeCubes;
+    
+    // TIMERS
+//private:
+//    timer mTimerEndScene;
+//    void  timerEndScene();
     
 };
 

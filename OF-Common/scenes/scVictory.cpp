@@ -19,7 +19,7 @@ void scVictory::setup(){  //load your scene 1 assets here...
 
 void scVictory::update(float dt){ //update scene 1 here
     scScene::update(dt);
-    mTimer.update(dt);
+    mTimerEndScene.update(dt);
 };
 
 void scVictory::draw(){ //draw scene 1 here
@@ -67,9 +67,9 @@ void scVictory::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
     // --
-    mTimer.startTimer(25);
+    mTimerEndScene.startTimer(25);
     // Player manager events
-    ofAddListener(mTimer.timerEnd,this,&scVictory::timerEnd);
+    ofAddListener(mTimerEndScene.timerEnd,this,&scVictory::timerEndScene);
     
     winnerText.init(globalFontName, globalFontSizeSmall);
     winnerText.setText(bigEnigmaManager().getCurrentEnigma()->getLegende());
@@ -85,11 +85,11 @@ void scVictory::sceneWillAppear( ofxScene * fromScreen ){
 
 //scene notifications
 void scVictory::sceneWillDisappear( ofxScene * toScreen ){
-    ofRemoveListener(mTimer.timerEnd,this,&scVictory::timerEnd);
+    ofRemoveListener(mTimerEndScene.timerEnd,this,&scVictory::timerEndScene);
 }
 
 // If the time is ended, we go further ---------------------------------------
-void scVictory::timerEnd(){
+void scVictory::timerEndScene(){
     ofxSceneManager::instance()->goToScene(INTRO);
 }
 

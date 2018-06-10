@@ -16,13 +16,13 @@ void scInitialize::setup(){  //load your scene 1 assets here...
 
 void scInitialize::update(float dt){ //update scene 1 here
     scScene::update(dt);
-    mTimer.update(dt);
+    mTimerEndScene.update(dt);
 };
 
 void scInitialize::draw(){ //draw scene 1 here
     // Draw Words
     scScene::drawTitle("Initialisation...");
-    scScene::drawSpokenWord( "Il vous reste " + mTimer.toString() + " secondes pour jouer avec nous.");
+    scScene::drawSpokenWord( "Il vous reste " + mTimerEndScene.toString() + " secondes pour jouer avec nous.");
 
     // Draw players
     bigPlayerManager().draw();
@@ -34,18 +34,18 @@ void scInitialize::sceneWillAppear( ofxScene * fromScreen ){
     scScene::sceneWillAppear(fromScreen);
     
     // --
-    mTimer.startTimer(20);
+    mTimerEndScene.startTimer(20);
     // Player manager events
-    ofAddListener(mTimer.timerEnd,this,&scInitialize::timerEnd);
+    ofAddListener(mTimerEndScene.timerEnd,this,&scInitialize::timerEndScene);
     
 };
 
 //scene notifications
 void scInitialize::sceneWillDisappear( ofxScene * toScreen ){
-    ofRemoveListener(mTimer.timerEnd,this,&scInitialize::timerEnd);
+    ofRemoveListener(mTimerEndScene.timerEnd,this,&scInitialize::timerEndScene);
 };
 
 // If the time is ended, we go further ---------------------------------------
-void scInitialize::timerEnd(){
+void scInitialize::timerEndScene(){
     ofxSceneManager::instance()->goToScene(SELECT_GAME);
 }
