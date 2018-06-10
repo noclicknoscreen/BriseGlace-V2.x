@@ -23,6 +23,12 @@ public:
     void sceneWillDisappear( ofxScene * fromScreen );
 
     void someoneSpoke(player & _player);
+
+private:
+    timer mTimerTexte;
+    void  timerTexteEnd();
+    
+    bool bDrawSubtitle1, bDrawSubtitle2;
     
 };
 

@@ -10,7 +10,7 @@
 
 //=======================================================================
 //
-//======= MOT CACHE ====================================================
+//======= MOT MASQUE ====================================================
 //
 //=======================================================================
 
@@ -69,8 +69,8 @@ void scGame1::draw(){ //draw scene 1 here
     }
     
     // Draw title
-    scScene::drawTitle("Mot masqué");
-    scScene::drawSubTitle("Derrière ces " + ofToString(bigEnigmaManager().getCurrentEnigma()->getSolution().size()) + " lettres se cache un mot");
+    scScene::drawTitle("Mot masqué en " + ofToString(bigEnigmaManager().getCurrentEnigma()->getSolution().size()) + " lettres");
+    scScene::drawSubTitle("Dites un mot pour voir");
     
     // Draw cubes
     myCubeManager.draw();

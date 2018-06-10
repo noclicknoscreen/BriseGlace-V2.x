@@ -16,8 +16,7 @@ void ofApp::setup(){
 	///////////////////////////////////////
     // add the newFloat method to listen for eventsAddon newFloatEvent
     ofAddListener(nextSceneEvent,this,&ofApp::nextSceneAuto);
-//    ofAddListener(bigPlayerManager().someoneSpoke,this,&ofApp::someoneSpoke);
-
+    
     ///////////////////////////////////////
     bigPlayerManager().setup();
     
@@ -26,7 +25,6 @@ void ofApp::setup(){
     
     ///////////////////////////////////////
 	sceneManager = ofxSceneManager::instance();
-//    sceneManager->setupCurtain(ofColor::white, ofRectangle(0,0, ofGetWidth(), ofGetHeight()) );
     
     sceneManager->addScene( new scIntro(), INTRO);
     sceneManager->addScene( new scInitialize(), INITIALIZE);
@@ -37,17 +35,7 @@ void ofApp::setup(){
     sceneManager->addScene( new scGame3BIS(), GAME3_BIS);
     sceneManager->addScene( new scHint(), HINT);
     sceneManager->addScene( new scVictory(), VICTORY);
-//    
-//    sceneManager->addScene( new scIntro(myPlayerManager), INTRO);
-//    sceneManager->addScene( new scInitialize(myPlayerManager), INITIALIZE);
-//    sceneManager->addScene( new scSelectGame(myPlayerManager), SELECT_GAME);
-//    sceneManager->addScene( new scGame1(myPlayerManager), GAME1);
-//    sceneManager->addScene( new scGame2(myPlayerManager), GAME2);
-//    sceneManager->addScene( new scGame3(myPlayerManager), GAME3);
-//    sceneManager->addScene( new scGame3BIS(myPlayerManager), GAME3_BIS);
-//    sceneManager->addScene( new scHint(myPlayerManager), HINT);
-//    sceneManager->addScene( new scVictory(myPlayerManager), VICTORY);
-    
+
     sceneManager->setDrawDebug(false);
 	sceneManager->setCurtainDropTime(1.0);
 	sceneManager->setCurtainStayTime(0.0);
@@ -152,41 +140,6 @@ void ofApp::nextSceneAuto(){
             break;
     }
 }
-
-//// There we'll manage which scene will go next when the previous ends
-//void ofApp::someoneSpoke(player & _player){
-//    ofLogNotice() << "[ofApp] Someone spoke ! What do yu wanna do ?";
-//    
-//    switch (sceneManager->getCurrentSceneID()) {
-//        case INTRO:
-//            goToNextScene();
-//            break;
-//        case INITIALIZE:
-//            break;
-//        case SELECT_GAME:
-//            ofLogNotice() << "Last spoken word is : " << _player.getLastMessage();
-//            // Choix du jeu 1
-//            if(ofStringTimesInString(_player.getLastMessage(), "motus") > 0){
-//                sceneManager->goToScene(GAME1);
-//            }
-//            // Choix du jeu 2
-//            if(ofStringTimesInString(_player.getLastMessage(), "labyrinthe") > 0){
-//                sceneManager->goToScene(GAME2);
-//            }
-//            // Choix du jeu 3
-//            if(ofStringTimesInString(_player.getLastMessage(), "Google") > 0){
-//                sceneManager->goToScene(GAME3);
-//            }
-//            break;
-//        case GAME1:
-//        case GAME2:
-//        case GAME3:
-//        case HINT:
-//        case VICTORY:
-//        default:
-//            break;
-//    }
-//}
 
 void ofApp::goToNextScene(){
     int scId = sceneManager->getCurrentSceneID();
