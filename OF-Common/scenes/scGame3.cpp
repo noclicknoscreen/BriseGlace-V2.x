@@ -8,6 +8,8 @@
 
 #include "scGame3.h"
 
+#define DRAW_DEBUG
+
 //=======================================================================
 //
 //======= MOT BRASSE ====================================================
@@ -89,19 +91,33 @@ void scGame3::update(float dt){
 
         ofVec3f randomForce;
         float amountPlayer1 = ofMap(bigPlayerManager().getUserVolume(1), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
-        randomForce = ofVec3f(forceAmount->x, ofRandom(-forceAmount->y, forceAmount->y), ofRandom(-forceAmount->z, forceAmount->z)) * amountPlayer1;
+        randomForce = ofVec3f(
+                              forceAmount->x,
+                              ofRandom(-forceAmount->y, forceAmount->y) + bonusY,
+                              ofRandom(-forceAmount->z, forceAmount->z)
+                              )
+        * amountPlayer1;
         applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
         
         float amountPlayer2 = ofMap(bigPlayerManager().getUserVolume(2), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
-        randomForce = ofVec3f(ofRandom(-forceAmount->x, forceAmount->x), ofRandom(-forceAmount->y, forceAmount->y), -forceAmount->z) * amountPlayer2 * forceMicro2_multiplier;
+        if(bigPlayerManager().getUserVolume(4) > 0){
+            amountPlayer2 = bigPlayerManager().getUserVolume(4);
+        }
+        randomForce = ofVec3f(
+                              ofRandom(-forceAmount->x, forceAmount->x),
+                              ofRandom(-forceAmount->y, forceAmount->y) + bonusY,
+                              -forceAmount->z
+                              )
+        * amountPlayer2 * forceMicro2_multiplier;
         applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
         
         float amountPlayer3 = ofMap(bigPlayerManager().getUserVolume(3), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
-        randomForce = ofVec3f(-forceAmount->x, ofRandom(-forceAmount->y, forceAmount->y), ofRandom(-forceAmount->z, forceAmount->z)) * amountPlayer3;
-        applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
-        
-        float amountPlayer4 = ofMap(bigPlayerManager().getUserVolume(4), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
-        randomForce = ofVec3f(-forceAmount->x, ofRandom(-forceAmount->y, forceAmount->y), ofRandom(-forceAmount->z, forceAmount->z)) * amountPlayer4;
+        randomForce = ofVec3f(
+                              -forceAmount->x,
+                              ofRandom(-forceAmount->y, forceAmount->y) + bonusY,
+                              ofRandom(-forceAmount->z, forceAmount->z)
+                              )
+        * amountPlayer3;
         applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
 
     }
@@ -304,17 +320,16 @@ void scGame3::sceneWillDisappear( ofxScene * toScreen ){
 
 //--------------------------------------------------------------
 void scGame3::keyPressed(int key){
-
-
-        if(key == 's') {
-            gui.saveToFile(settingsFileNameGame3);
-        }
-        if(key == 'l') {
-            gui.loadFromFile(settingsFileNameGame3);
-        }
-        
-        if(key==' ' )
-            bDrawGui = !bDrawGui;
+    
+    
+    if(key == 's') {
+        gui.saveToFile(settingsFileNameGame3);
+    }
+    if(key == 'l') {
+        gui.loadFromFile(settingsFileNameGame3);
+    }
+    if(key==' ' )
+        bDrawGui = !bDrawGui;
     
     if(key == 'f')
     {
@@ -361,6 +376,7 @@ void scGame3::setupGui()
     group.add(forceAmount.set("forceAmount", ofVec3f(100,200,100), ofVec3f(0,0,0), ofVec3f(300,300,300)));
     
     group.add(forceMicro2_multiplier.set("forceMicro2_multiplier", 0.6, 0.1, 1.0));
+    group.add(bonusY.set("bonusY", 0, 0, 300));
     
     group.add(angularDamping.set("angularDamping", 0.815, 0.0, 1.0));
     group.add(damping.set("damping", 0.25, 0.0, 1.0));
@@ -384,29 +400,30 @@ void scGame3::setupPhysics()
     world.setGravity(ofVec3f(0,50,0));
     
     float boxSize = 1000.0;
-    float yOffset = 150.0; //so the bottom of the simulation is above the avatars
+    float yBottomOffset = 150.0;    // so the bottom of the simulation is above the avatars
+    float yTopOffset = 500.0;       // and the top is below the text
     
-    ground.create( world.world,     ofVec3f(0, 0, 0- yOffset    ),      0., boxSize, 1.f, boxSize );
+    ground.create( world.world,     ofVec3f(0, 0, 0- yBottomOffset    ),      0., boxSize, 1.f, boxSize );
     ground.setProperties(.25, .55);
     ground.add();
     
-    rightFace.create( world.world,  ofVec3f(boxSize/2 - 100, 0, 0- yOffset),    0., 1, boxSize, boxSize );
+    rightFace.create( world.world,  ofVec3f(boxSize/2 - 100, 0, 0- yBottomOffset),    0., 1, boxSize, boxSize );
     rightFace.setProperties(.25, .95);
     rightFace.add();
     
-    leftFace.create( world.world,  ofVec3f(-(boxSize/2 - 100), 0, 0- yOffset),    0., 1, boxSize, boxSize );
+    leftFace.create( world.world,  ofVec3f(-(boxSize/2 - 100), 0, 0- yBottomOffset),    0., 1, boxSize, boxSize );
     leftFace.setProperties(.25, .95);
     leftFace.add();
     
-    bottom.create( world.world,  ofVec3f(0, 0, -boxSize/2- yOffset),      0., boxSize, boxSize, 1 );
+    bottom.create( world.world,  ofVec3f(0, 0, -boxSize/2 -yBottomOffset + yTopOffset),      0., boxSize, boxSize, 1 );
     bottom.setProperties(.25, .95);
     bottom.add();
     
-    front.create(world.world,  ofVec3f(0, 0, boxSize/2 - yOffset - 150),      0., boxSize, boxSize, 1 );
+    front.create(world.world,  ofVec3f(0, 0, boxSize/2 - yBottomOffset - 150),      0., boxSize, boxSize, 1 );
     front.setProperties(.25, .95);
     front.add();
     
-    top.create(world.world,  ofVec3f(0, boxSize/2, 0- yOffset),      0., boxSize, 1, boxSize );
+    top.create(world.world,  ofVec3f(0, boxSize/2, 0- yBottomOffset),      0., boxSize, 1, boxSize );
     top.setProperties(.25, .95);
     //top.add();
     

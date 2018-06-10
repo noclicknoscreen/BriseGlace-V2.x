@@ -49,9 +49,16 @@ void scSelectGame::sceneWillAppear( ofxScene * fromScreen ){
 
 //scene notifications
 void scSelectGame::sceneWillDisappear( ofxScene * toScreen ){
+    // reset our scene when we appear
+    scScene::sceneWillDisappear(toScreen);
+
+    bigPlayerManager().stopSign(1);
+    bigPlayerManager().stopSign(2);
+    bigPlayerManager().stopSign(3);
+    
     // Player manager events
-    ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scSelectGame::someoneSpoke);
-    ofRemoveListener(mtimerSignAnimation.timerEnd      ,this,&scSelectGame::timerSignAnimationEnd);
+    ofRemoveListener(bigPlayerManager().someoneSpoke    ,this,&scSelectGame::someoneSpoke);
+    ofRemoveListener(mtimerSignAnimation.timerEnd       ,this,&scSelectGame::timerSignAnimationEnd);
 }
 
 // Speaking event
