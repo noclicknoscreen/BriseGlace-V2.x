@@ -165,9 +165,9 @@ void scGame1::sceneWillDisappear( ofxScene * toScreen ){
 void scGame1::someoneSpoke(player & _player){
     scGame::someoneSpoke(_player);
     
-    if(myInputManager.isReadyForNewText())
+    if(myInputManager.isReadyForNewText()){
         myInputManager.getNewText(_player);
-    
+    }
 }
 
 // VICTORY Event , go to scene you prefer

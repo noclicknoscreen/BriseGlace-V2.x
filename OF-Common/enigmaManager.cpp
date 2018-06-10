@@ -8,7 +8,7 @@
 
 #include "enigmaManager.h"
 
-#define GLOBAL_PATH "../../../_enigmas"
+#define GLOBAL_PATH "../../../_enigmasNewForm/enigme"
 
 void enigmaManager::setup(){
     ofLogNotice() << "Setup enigma manager as SINGLETON, Sick !";
@@ -24,20 +24,20 @@ void enigmaManager::pickNewEnigma(gameType _gameType){
     
     
     string path = GLOBAL_PATH;
-    
-    switch (_gameType) {
-        case MOTUS:
-            path += "/motus";
-            break;
-        case IMAGE_GRID:
-            path += "/memory";
-            break;
-        case BOGGLE:
-            path += "/boggle";
-            break;
-        default:
-            break;
-    }
+//    path += "/enigme";
+//    switch (_gameType) {
+//        case MOTUS:
+//            path += "/motus";
+//            break;
+//        case IMAGE_GRID:
+//            path += "/memory";
+//            break;
+//        case BOGGLE:
+//            path += "/boggle";
+//            break;
+//        default:
+//            break;
+//    }
     
     // First, know all folder of one game type
     dir.listDir(path);

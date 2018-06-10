@@ -14,7 +14,7 @@ const string tagIndice = "indice";
 const string tagRecompense = "recompense";
 
 const string tagTitre = "titre";
-const string tagImage = "image";
+const string tagImage = "image-crop";
 const string tagURL = "url";
 
 const string tagLegende = "legende";
@@ -34,8 +34,8 @@ bool enigma::load(string _path){
         if(content.open(fileJson.getAbsolutePath())){
             
             // Head of the enigma (Solution, legend) --
-            mSolution = content[tagMot].asString();
-            mLegende = content[tagRecompense][tagLegende].asString();
+            mSolution   = content[tagMot][tagTitre].asString();
+            mLegende    = content[tagRecompense][tagLegende].asString();
             
             ofLogNotice() << "Enigma : " << mSolution << "," << mLegende;
             
