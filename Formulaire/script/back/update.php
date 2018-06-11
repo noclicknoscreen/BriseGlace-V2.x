@@ -34,6 +34,8 @@ while ($donnees = $reponse->fetch())
       break;
   }
 
+
+
   // Upload des images
   for ($j=0; $j <= 4; $j++) {
 
@@ -41,20 +43,25 @@ while ($donnees = $reponse->fetch())
     $bdd = new PDO('mysql:host=localhost;dbname=formulaire;charset=utf8', 'root', 'root');
     $zone = $bdd->query("SELECT * FROM enigme WHERE id='$i'");
     $donnees = $zone->fetch();
-    if ($donnees['image' . $j] == $_POST['sqlimage' . $j . $i]) { $testImg = true; }
-
     $url = $_POST['sqlimage' . $j . $i];
     $info = new SplFileInfo($url);
-    if ($testImg == false)
-      {
-        error_mess($url, $j);
-        if (verif_image($url)) {
-          $data = @file_get_contents($url);
-          $new = "enigme/" . $StrNum . $i . '/image/image' . $j . '.' . $info->getExtension();
-          file_put_contents($new, $data);
-        }
-        else { $_POST['sqlimage' . $j . $i] = $donnee['image' . $j]; }
+    error_mess($url, $j);
+    if (verif_image($url)) {
+        if (file_exists("tmp/image" . $j . $i . "-crop.jpg"))
+          {
+            $datacrop = @file_get_contents("tmp/image" . $j . $i . "-crop.jpg");
+            $newcrop ="enigme/" . $StrNum . $i . '/image/image' . $j . '-crop.jpg';
+            file_put_contents($newcrop, $datacrop);
+            unlink("tmp/image" . $j . $i . "-crop.jpg");
+          }
+          if ($donnees['image' . $j] != $_POST['sqlimage' . $j . $i])
+          {
+            $data = @file_get_contents($url);
+            $new = "enigme/" . $StrNum . $i . '/image/image' . $j . '.' . $info->getExtension();
+            file_put_contents($new, $data);
+          }
       }
+    else { $_POST['sqlimage' . $j . $i] = $donnee['image' . $j]; }
     $imgName[$j] = 'image' . $j . '.' . $info->getExtension();
     $zone->closeCursor();
   }

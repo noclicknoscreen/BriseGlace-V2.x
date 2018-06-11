@@ -34,7 +34,7 @@ error_mess($_POST['image4'], 4);
 if (verif_image($_POST['image1']) && verif_image($_POST['image2']) && verif_image($_POST['image3']) && verif_image($_POST['image4']) && verif_image($_POST['image0'])) {
   // SI OUI Creation des dossiers et fichiers JSON + Upload les images
   $tmp = "enigme";
-  if (file_exists ($tmp) == false) {
+  if (file_exists($tmp) == false) {
       mkdir("./" . $tmp, 0777, true);
   }
 
@@ -54,11 +54,11 @@ if (verif_image($_POST['image1']) && verif_image($_POST['image2']) && verif_imag
       break;
   }
 
-  if (file_exists ($tmp . "/" . $StrNum . $num) == false) {
+  if (file_exists($tmp . "/" . $StrNum . $num) == false) {
       mkdir("./" . $tmp . "/" . $StrNum . $num, 0777, true);
     }
 
-    if (file_exists ($tmp . "/". $StrNum . $num . "/image") == false) {
+    if (file_exists($tmp . "/". $StrNum . $num . "/image") == false) {
       mkdir("./" . $tmp . "/" . $StrNum . $num . "/image", 0777, true);
     }
 

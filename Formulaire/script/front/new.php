@@ -8,7 +8,8 @@ function cropimg(valeurChamp, num) {
     {
       document.getElementById('result' + num).style.display = 'none';
     }
-    else {
+    else
+    {
       document.getElementById('result' + num).style.display = 'inline';
       popupResize("resize.php?src=" + valeurChamp + "&num=" + num, num);
     }
@@ -30,6 +31,7 @@ function popupResize(page, id) {
 function test(i)
 {
   setTimeout(test, 10, i);
+  sessionStorage.clear();
   $('#result' + i).attr('src', "tmp/image" + i + "-crop.jpg");
 }
 </script>
