@@ -30,10 +30,12 @@ private:
     ofColor mPlayerColor;
     
 private:
-    timer mtimerSignAnimation;
+    timer mTimerSignAnimation;
     void  timerSignAnimationEnd();
     int   numPlayer;
-
+    
+    timer mTimerEraseWord;
+    void  timerEraseWordEnd();
     
 };
 

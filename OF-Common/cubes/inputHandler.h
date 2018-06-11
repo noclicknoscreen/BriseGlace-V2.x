@@ -19,7 +19,7 @@
 #include "enigmaManager.h"
 
 #define movementSmoothingValue 15
-#define spaceBetweenLetters 40
+#define spaceBetweenLetters 80
 
 
 typedef struct

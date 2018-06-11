@@ -59,7 +59,7 @@ public:
             ofPushMatrix();
 
             materialForFaceColor.setAmbientColor(_winnerColor);
-            materialForFaceColor.setDiffuseColor(ofColor(_winnerColor, 140));
+            materialForFaceColor.setDiffuseColor(ofColor(_winnerColor, 200));
             
             materialForFaceColor.begin();
             

@@ -116,7 +116,7 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
         bigEnigmaManager().pickNewEnigma(IMAGE_GRID);
         
         //cubes
-        myCubeManager.setup(ofPoint(0.2*ofGetWidth(), 0.5*ofGetHeight(), -300), 7, 150);
+        myCubeManager.setup(ofPoint(0.2*ofGetWidth(), 0.33*ofGetHeight(), -300), 7, 150);
         //inputs
         myInputManager.setup(ofPoint(0.67 * ofGetWidth(), 0.6 * ofGetHeight()));
         

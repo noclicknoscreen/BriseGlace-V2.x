@@ -50,7 +50,7 @@ void inputHandler::getNewText(player _player)
         elt.textColor = textColor;
 //        elt.sourcePos = source;
         elt.currentPos = source;
-        elt.destination = ofPoint(cumulatedOffset + mInputTextPosition.x - font.getStringBoundingBox(text, 0, 0).getWidth(), mInputTextPosition.y);
+        elt.destination = ofPoint(mInputTextPosition.x + 0.5 * (cumulatedOffset - font.getStringBoundingBox(text, 0, 0).getWidth()), mInputTextPosition.y);
         elt.destination.y += ofRandom(0.0, 15.0); //add some random so the text isn't a line block
         
         elt.alpha = 1.0;

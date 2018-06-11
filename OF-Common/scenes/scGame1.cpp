@@ -56,7 +56,7 @@ void scGame1::update(float dt){ //update scene 1 here
     }
 
     // Update timers
-//    mTimer.update(dt);
+    timerSignWin.update(dt);
     
 };
 
@@ -134,7 +134,7 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
         myCubeManager.setup(ofPoint(0.5*ofGetWidth(), 0.4*ofGetHeight(), -300), 15, 150);
         
         //inputs
-        myInputManager.setup(ofPoint(0, 0.6*ofGetHeight()));
+        myInputManager.setup(ofPoint(0.5*ofGetWidth(), 0.6*ofGetHeight()));
         
         //
         string solution = bigEnigmaManager().getCurrentEnigma()->getSolution();

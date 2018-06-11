@@ -20,8 +20,9 @@ public:
     //--------------------------------------------------------------
     void sceneWillAppear( ofxScene * fromScreen ){
         
-        scGame3::sceneWillAppear(fromScreen);
-        
+        scGame::sceneWillAppear(fromScreen);
+        spotLight.enable();
+
         //now comes from enigma Singleton
         wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
         
@@ -44,11 +45,12 @@ public:
         }
         
         timer = ofGetElapsedTimef();
+        
     };
     
     //--------------------------------------------------------------
     void sceneWillDisappear( ofxScene * fromScreen ){
-        scGame3::sceneWillAppear(fromScreen);
+        scGame::sceneWillAppear(fromScreen);
     };
     
     
@@ -57,7 +59,7 @@ public:
         
 //        bigPlayerManager().update();
         
-        camera.setPosition(ofVec3f(camPosX, camPosY, camPosZ));
+        camera.setGlobalPosition(ofVec3f(camPosX, camPosY, camPosZ));
         world.setGravity(ofVec3f(0,gravity, 0));
         
         world.update();

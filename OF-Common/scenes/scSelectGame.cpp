@@ -17,8 +17,9 @@ void scSelectGame::setup(){  //load your scene 1 assets here...
 };
 
 
-void scSelectGame::update(float dt){ //update scene 1 here
-    mtimerSignAnimation.update(dt);
+void scSelectGame::update(float dt){
+    mTimerSignAnimation.update(dt);
+    mTimerEraseWord.update(dt);
 };
 
 void scSelectGame::draw(){ //draw scene 1 here
@@ -33,18 +34,19 @@ void scSelectGame::draw(){ //draw scene 1 here
 //scene notifications
 void scSelectGame::sceneWillAppear( ofxScene * fromScreen ){
     
-    mPlayerMessage = "";
     
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
+    mPlayerMessage = "";
     
     // Erase all words of every one
-//    bigPlayerManager().freshRestart();
-    mtimerSignAnimation.startTimer(2);
+    mTimerSignAnimation.startTimer(2);
+    mTimerEraseWord.startTimer(2);
 
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke   ,this,&scSelectGame::someoneSpoke);
-    ofAddListener(mtimerSignAnimation.timerEnd      ,this,&scSelectGame::timerSignAnimationEnd);
+    ofAddListener(mTimerSignAnimation.timerEnd      ,this,&scSelectGame::timerSignAnimationEnd);
+    ofAddListener(mTimerEraseWord.timerEnd      ,this,&scSelectGame::timerEraseWordEnd);
 };
 
 //scene notifications
@@ -58,7 +60,8 @@ void scSelectGame::sceneWillDisappear( ofxScene * toScreen ){
     
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke    ,this,&scSelectGame::someoneSpoke);
-    ofRemoveListener(mtimerSignAnimation.timerEnd       ,this,&scSelectGame::timerSignAnimationEnd);
+    ofRemoveListener(mTimerSignAnimation.timerEnd      ,this,&scSelectGame::timerSignAnimationEnd);
+    ofRemoveListener(mTimerEraseWord.timerEnd      ,this,&scSelectGame::timerEraseWordEnd);
 }
 
 // Speaking event
@@ -67,6 +70,7 @@ void scSelectGame::someoneSpoke(player & _player){
     
     mPlayerMessage = _player.getLastMessage();
     mPlayerColor = _player.getColor();
+    mTimerEraseWord.startTimer(2);
     
     ofLogNotice() << "Last spoken word is : " << _player.getLastMessage();
     // Choix du jeu 1 : Mot Masqué
@@ -102,7 +106,7 @@ void scSelectGame::timerSignAnimationEnd(){
     
     string signMessage;
     
-    mtimerSignAnimation.startTimer(2 + ofRandom(-1, 1));
+    mTimerSignAnimation.startTimer(2 + ofRandom(-1, 1));
     bigPlayerManager().stopSign(numPlayer);
     
     numPlayer++;
@@ -128,4 +132,10 @@ void scSelectGame::timerSignAnimationEnd(){
     
     bigPlayerManager().startSign(numPlayer, signMessage);
     
+}
+
+void scSelectGame::timerEraseWordEnd(){
+    //ofLogNotice() << "Erase word to avoid bullshits";
+    mPlayerMessage = "";
+    mTimerEraseWord.stop();
 }
