@@ -8,6 +8,7 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.Jcrop.js"></script>
     <link rel="stylesheet" href="css/jquery.Jcrop.css" type="text/css" />
+    <link rel="stylesheet" href="css/resize.css" type="text/css" />
 </head>
 
 <body>
@@ -26,7 +27,7 @@ var file =
     <input type="text" id="h" name="h" hidden/>
     <input type="text" value="<?php echo $_GET['src']?>" id="src" name="src" hidden/>
     <input type="text" value="<?php echo $_GET['num']?>" id="num" name="num" hidden/>
-    <input type="submit" value="Crop"/>
+    <input type="submit" value="Crop" class="_button"/>
   </form>
 
 
