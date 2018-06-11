@@ -10,33 +10,58 @@
 
 #include "ofMain.h"
 
+#include "ofxJson.h"
+
+const string tagJeu = "jeux";
+const string tagMot = "mot";
+const string tagIndice = "indice";
+const string tagRecompense = "recompense";
+
+const string tagTitre = "titre";
+const string tagImage = "image-crop";
+const string tagURL = "url";
+const string tagLegende = "legende";
+
 class enigmaHint {
     
 public:
     enigmaHint(){
-        image.load("void.jpg)");
+        mImage.load("void.jpg)");
     };
     
-    enigmaHint(string _imagePath, string _titre){
+    enigmaHint(string _path, ofxJSONElement _content){
+        
+        string _imagePath;
+        string _titre = _content[tagTitre].asString();
+        string _legende = _content[tagLegende].asString();
+        
+        _imagePath += _path;
+        _imagePath += "/image/";
+        _imagePath += _content[tagImage].asString();
         
         ofFile img(_imagePath);
         if(_imagePath!= "" && img.exists()){
-            image.load(_imagePath);
+            mImage.load(_imagePath);
         }else{
             ofLogWarning() << "Image file does not exist :"  << _imagePath;
+            mIsAvaiable = false;
         }
-        titre = _titre;
         
-    };
-    bool isAvailable(){
-        return (image.isAllocated() && (titre != ""));
+        mTitre = _titre;
+        mIsAvaiable = true;
     };
     
-    ofImage     getImage(){return image;};
-    string      getTitre(){return titre;};
+    bool isAvailable(){
+        return mIsAvaiable;
+    };
+    
+    ofImage     getImage(){return mImage;};
+    string      getTitre(){return mTitre;};
     
 private:
-    ofImage image;
-    string  titre;
+    ofImage mImage;
+    string  mTitre;
+    
+    bool mIsAvaiable;
     
 };

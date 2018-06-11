@@ -55,7 +55,7 @@ void scVictory::draw(){ //draw scene 1 here
     
     //TEXT
 //    scScene::drawTitle(bigEnigmaManager().getCurrentEnigma()->getSolution(), ofColor::black, ofPoint(0,50));
-    scScene::drawTitle(bigEnigmaManager().getCurrentEnigma()->getTitre(REWARD), ofColor::black, ofPoint(0,50));
+    scScene::drawTitle(bigEnigmaManager().getCurrentEnigma()->getTitleRecompense(), ofColor::black, ofPoint(0,50));
     
     winnerText.setColor(0, 0, 0, 255);
     winnerText.wrapTextX(ofGetWidth()/3);
@@ -80,7 +80,7 @@ void scVictory::sceneWillAppear( ofxScene * fromScreen ){
     
     ofLogNotice() << "texte de recompense : " <<  bigEnigmaManager().getCurrentEnigma()->getLegende();
     
-    localRewardImage = bigEnigmaManager().getCurrentEnigma()->getImage(REWARD);
+    localRewardImage = bigEnigmaManager().getCurrentEnigma()->getImageRecompense();
     woodTexture.load("contreplaque.png");
 
 };

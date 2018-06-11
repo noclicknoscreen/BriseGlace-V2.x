@@ -9,15 +9,13 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxJson.h"
 
 #include "enigmaHint.h"
 
 typedef enum {
     HINT1 = 0,
     HINT2,
-    HINT3,
-    REWARD
+    HINT3
 } enigmaType;
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -27,22 +25,26 @@ public:
 
     bool load(string path);
     
-    ofImage     getImage(enigmaType _type);
-    
-    string      getTitre(enigmaType _type);
     bool        getIsAvailable(enigmaType _type);
     
-    string      getSolution(){return mSolution;};
+    string      getSolution(){return mSolution.getTitre();};
+    ofImage     getImageSolution(){return mSolution.getImage();};
+    
+    string      getTitleRecompense(){return mRecompense.getTitre();};
+    ofImage     getImageRecompense(){return mRecompense.getImage();};
     string      getLegende(){return mLegende;};
     
     int         getNbHints(){return mHints.size();};
     
-private:
-    string  mLegende;
-    string  mSolution;
+    ofImage     getImage(enigmaType _type);
+    string      getTitre(enigmaType _type);
     
+private:
     vector<enigmaHint>     mHints;
-    enigmaHint             mReward;
+    enigmaHint             mRecompense;
+    enigmaHint             mSolution;
+    
+    string  mLegende;
     
     enigmaHint*  getHint(enigmaType _type);
     

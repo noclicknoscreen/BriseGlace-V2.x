@@ -28,7 +28,7 @@ void cubeManagerMemory::setGrid(int _nbLines, int _nbRows){
     mNbRows = _nbRows;
     
     // load the big image
-    answerFullImage = bigEnigmaManager().getCurrentEnigma()->getImage(REWARD);
+    answerFullImage = bigEnigmaManager().getCurrentEnigma()->getImageSolution();
     answerFullImage.resize(_nbRows*cubeSize, _nbLines*cubeSize);
     
     // Shuffle the pseudo string
