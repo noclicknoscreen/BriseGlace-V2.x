@@ -9,7 +9,10 @@ void ofApp::setup(){
 	ofSetVerticalSync(true);
     ofBackground(ofColor::white);
 	ofEnableSmoothing();
-		
+    
+    bFullScreen = true;
+    setFullScreen();
+    
     ///////////////////////////////////////
     myFont.load("KGTenThousandReasons.ttf", 28, true, true);
     
@@ -110,8 +113,8 @@ void ofApp::keyPressed(int key){
     
     if(key== 'f')
     {
-        ofToggleFullscreen();
-        ofHideCursor();
+        bFullScreen = !bFullScreen;
+        setFullScreen();
     }
 
     
@@ -120,6 +123,15 @@ void ofApp::keyPressed(int key){
     
 }
 
+void ofApp::setFullScreen(){
+    ofSetFullscreen(bFullScreen);
+    if(bFullScreen==true){
+        ofHideCursor();
+    }else{
+        ofShowCursor();
+    }
+    
+}
 
 void ofApp::windowResized(int w, int h){
 	sceneManager->windowResized(w,h); // in case your screens need to know, will forward to all of them

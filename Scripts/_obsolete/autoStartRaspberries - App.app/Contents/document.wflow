@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>tell application "Terminal"	activate	tell application "System Events" to keystroke "n" using command down	repeat while contents of selected tab of window 1 starts with linefeed		delay 0.1	end repeat	do script "/Users/medenagan-id-001/BriseGlace/OF_0.9.8/apps/BriseGlace-V2.x/Scripts/startServer.sh" in window 1 -- make sure the path to your script is rightend tell</string>
+					<string>tell application "Terminal"	activate	tell application "System Events" to keystroke "n" using command down	repeat while contents of selected tab of window 1 starts with linefeed		delay 0.1	end repeat		do script "/Users/medenagan-id-001/BriseGlace/OF_0.9.8/apps/BriseGlace-V2.x/Scripts/startRaspberries.sh" in window 1 -- make sure the path to your script is right	end tell</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -68,15 +68,15 @@
 				<key>Class Name</key>
 				<string>RunScriptAction</string>
 				<key>InputUUID</key>
-				<string>3399B53B-9BDD-46FB-97F3-961494D57A0F</string>
+				<string>01657700-A45E-4353-98C5-E133375EC706</string>
 				<key>Keywords</key>
 				<array>
 					<string>Exécuter</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>7B387709-E6F0-4D85-9994-4738F31CAE17</string>
+				<string>D028E89C-7367-4C61-B091-0F64B257FE4A</string>
 				<key>UUID</key>
-				<string>61BA8D73-CE21-45E2-94B4-AA3D78BE11F7</string>
+				<string>F6665A36-48BA-4F6C-90CC-907B92BEB4BC</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -107,7 +107,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:316.000000</string>
+				<string>301.500000:316.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>

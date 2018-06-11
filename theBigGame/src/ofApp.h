@@ -47,5 +47,7 @@ class ofApp : public ofBaseApp{
 //    void someoneSpoke(player & _player);
   
     ofImage background;
+    bool    bFullScreen;
+    void    setFullScreen();
     
 };
