@@ -4,7 +4,7 @@ function prog_submit()
 {
    if (divmot.style.backgroundColor != "rgb(102, 171, 82)")
    {
-      window.alert("Tous les champs ne sont pas renseignés correctement !";
+      window.alert("Tous les champs ne sont pas renseignés correctement !");
       return false;
    }
     else
