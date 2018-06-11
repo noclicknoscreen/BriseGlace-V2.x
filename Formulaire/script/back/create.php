@@ -11,6 +11,20 @@ catch (Exception $e)
 
 // On récupère tout le contenu de la table enigme
 $reponse = $bdd->query('SELECT * FROM enigme ORDER BY id');
+$query = $bdd->query('SELECT MAX(id) AS maxval FROM enigme');
+$max_row = $query->fetch(PDO::FETCH_ASSOC);
+
+$max = $max_row['maxval'];
+
+if ($max == null)
+{
+  $num = 0;
+}
+else
+{
+  $num = $max + 1;
+}
+
 // Verifie si les images sont valable
 error_mess($_POST['image0'], 0);
 error_mess($_POST['image1'], 1);
@@ -23,16 +37,6 @@ if (verif_image($_POST['image1']) && verif_image($_POST['image2']) && verif_imag
   if (file_exists ($tmp) == false) {
       mkdir("./" . $tmp, 0777, true);
   }
-
-  // Crée numbering.txt
-  if (file_exists ($tmp . "/numbering.txt") == false)
-  {
-    $numbering = fopen($tmp . "/numbering.txt", "w+");
-    fputs($numbering, "0");
-    fclose($numbering);
-  }
-
-  $num = file_get_contents($tmp . "/numbering.txt");
 
   $long = strlen($num);
   switch ($long) {
@@ -57,8 +61,6 @@ if (verif_image($_POST['image1']) && verif_image($_POST['image2']) && verif_imag
     if (file_exists ($tmp . "/". $StrNum . $num . "/image") == false) {
       mkdir("./" . $tmp . "/" . $StrNum . $num . "/image", 0777, true);
     }
-
-
 
     // Upload des images
     for ($i=0; $i <= 4; $i++) {
@@ -159,14 +161,6 @@ if (verif_image($_POST['image1']) && verif_image($_POST['image2']) && verif_imag
 $fichier = fopen($tmp . "/" . $StrNum . $num . "/enigma.json", "w+");
 fputs($fichier, $json_string = json_encode($jsonFormat, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 fclose($fichier);
-
-// Numerotation des enigmes
-$num = $num + 1;
-$text = fopen($tmp . "/numbering.txt", "w+");
-fputs($text, $num);
-fclose($text);
-
-echo "<p>Enigme enregistrer !</p>";
 }
 else {
 // SI NON Echec de l'enregistrement
