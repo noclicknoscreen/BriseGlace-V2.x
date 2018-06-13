@@ -21,11 +21,15 @@
   </head>
   <body class="body page-index clearfix">
 
+<script type="text/javascript">
+$('#copie').on('click', function() {
+    location.reload();
+});
+</script>
 
     <div class="element element-2"></div>
     <img class="image image-1" src="images/1.png">
     <p class="_input _input-1">ENIGME</p>
-    <img class="image image-2" src="images/2.png">
     <div class="element element-3"></div>
 
   <?php
@@ -38,12 +42,18 @@
   else if (isset($_POST['submit']))
   {
     require('script/back/create.php');
+    echo "<form method=\"post\" action=\"?\"><button class=\"_button _button-1\" name=\"copie\" id=\"copie\"/>METTRE À JOUR</button></form>";
   }
   else if (isset($_POST['update']))
   {
     require('script/back/update.php');
+    echo "<form method=\"post\" action=\"?\"><button class=\"_button _button-1\" name=\"copie\" id=\"copie\"/>METTRE À JOUR</button></form>";
   }
-    require('script/front/old.php');
+  else if (isset($_POST['copie']))
+  {
+    require('script/back/copie.php');
+  }
+  require('script/front/old.php');
   ?>
 
 
