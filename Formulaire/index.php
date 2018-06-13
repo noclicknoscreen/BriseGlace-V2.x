@@ -11,6 +11,8 @@
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <script type="text/javascript" src="js/jquery.Jcrop.js"></script>
       <script type="text/javascript" src="js/option-image.js"></script>
+      <script type="text/javascript" src="js/crop-new.js"></script>
+      <script type="text/javascript" src="js/crop-old.js"></script>
       <script type="text/javascript"  src="js/pastille.js"></script>
       <link rel="stylesheet" href="css/jquery.Jcrop.css" type="text/css" />
       <link href="http://fonts.googleapis.com/css?family=Oswald:400,400|Quattrocento+Sans:400,700|PT+Sans:400|Open+Sans Condensed:300" rel="stylesheet" type="text/css">
@@ -22,6 +24,7 @@
   <body class="body page-index clearfix">
 
 <script type="text/javascript">
+
 $('#copie').on('click', function() {
     location.reload();
 });
@@ -32,26 +35,51 @@ $('#copie').on('click', function() {
     <p class="_input _input-1">ENIGME</p>
     <div class="element element-3"></div>
 
-  <?php
+<?php
+
+  function clearFolder($folder)
+  {
+      // 1 ouvrir le dossier
+      $dossier = opendir($folder);
+      //2)Tant que le dossier est aps vide
+      while ($fichier = readdir($dossier))
+        {
+          //3) Sans compter . et ..
+          if ($fichier != "." && $fichier != "..")
+          {
+            //On selectionne le fichier et on le supprime
+            $Vidage = $folder.$fichier;
+            unlink($Vidage);
+          }
+        }
+        //Fermer le dossier vide
+        closedir($dossier);
+  }
+
   require('script/utile/function.php');
   // NOUVELLE ENIGME
   if (isset($_POST['plus']))
   {
       require('script/front/new.php');
+      clearFolder("tmp/");
   }
   else if (isset($_POST['submit']))
   {
     require('script/back/create.php');
     echo "<form method=\"post\" action=\"?\"><button class=\"_button _button-1\" name=\"copie\" id=\"copie\"/>METTRE À JOUR</button></form>";
+    clearFolder("tmp/");
+
   }
   else if (isset($_POST['update']))
   {
     require('script/back/update.php');
     echo "<form method=\"post\" action=\"?\"><button class=\"_button _button-1\" name=\"copie\" id=\"copie\"/>METTRE À JOUR</button></form>";
+    clearFolder("tmp/");
   }
   else if (isset($_POST['copie']))
   {
     require('script/back/copie.php');
+    clearFolder("tmp/");
   }
   require('script/front/old.php');
   ?>

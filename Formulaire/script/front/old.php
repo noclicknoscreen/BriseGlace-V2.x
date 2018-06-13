@@ -1,34 +1,3 @@
-<script type="text/javascript">
-
-function sqlcropimg(valeurChamp, num) {
-  $('#testimg' + num).attr('src', valeurChamp);
-  if (document.getElementById('testimg' + num).height == 430 || document.getElementById('testimg' + num).height == 374 || document.getElementById('testimg' + num).height <= 0)
-    {
-      document.getElementById('result' + num).style.display = 'none';
-    }
-    else
-    {
-      document.getElementById('result' + num).style.display = 'inline';
-      sqlpopupResize("resize.php?src=" + valeurChamp + "&num=" + num, num);
-      sqltest(id);
-    }
-}
-
-// POPUP
-function sqlpopupResize(page, id) {
-  document.getElementById('result' + id).style.display = 'inline';
-  window.open(page, 'popup','width=900,height=900');
-  sqltest(id);
-}
-
-function sqltest(i)
-{
-  setTimeout(sqltest, 10, i);
-  sessionStorage.clear();
-  $('#result' + i).attr('src', "tmp/image" + i + "-crop.jpg");
-}
-</script>
-
 <form  action="?" method="POST">
 
 <?php
@@ -92,9 +61,11 @@ while ($donnees = $reponse->fetch())
             <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
             <input class="_input _input-5" name="sqldate0<?php echo $i?>" id="sqldate0<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqldate0' . $i])){echo $_POST['sqldate0' . $i];} else {echo $donnees['date0'];} ?>" spellcheck="true">
 
+            <a href='javascript:sqlpopupResize("resize.php?src=" + sqlimage0<?php echo $i?>.value + "&num=0<?php echo $i?>", "0<?php echo $i?>")'>
             <div class="element element-9">
-              <a href='javascript:sqlpopupResize("resize.php?src=" + sqlimage0<?php echo $i?>.value + "&num=0<?php echo $i?>", "0<?php echo $i?>")'><img src="<?php echo $donnees['imgcrop0']; ?>" id="result0<?php echo $i?>" display="inline"/></a>
+              <img src="<?php echo $donnees['imgcrop0']; ?>" id="result0<?php echo $i?>" display="inline"/>
             </div>
+            </a>
 
             <img src="<?php echo $donnees['imgcrop0']; ?>" id="testimg0<?php echo $i?>" hidden/>
 
@@ -126,9 +97,11 @@ while ($donnees = $reponse->fetch())
               <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
               <input class="_input _input-5" name="sqldate1<?php echo $i?>" id="sqldate1<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqldate1' . $i])){echo $_POST['sqldate1' . $i];} else {echo $donnees['date1'];} ?>" spellcheck="true">
 
+              <a href='javascript:sqlpopupResize("resize.php?src=" + sqlimage1<?php echo $i?>.value + "&num=1<?php echo $i?>", "1<?php echo $i?>")'>
               <div class="element element-9">
-                <a href='javascript:sqlpopupResize("resize.php?src=" + sqlimage1<?php echo $i?>.value + "&num=1<?php echo $i?>", "1<?php echo $i?>")'><img src="<?php echo $donnees['imgcrop1']; ?>" id="result1<?php echo $i?>" display="inline"/></a>
+                <img src="<?php echo $donnees['imgcrop1']; ?>" id="result1<?php echo $i?>" display="inline"/>
               </div>
+              </a>
 
               <img src="<?php echo $donnees['imgcrop1']; ?>" id="testimg1<?php echo $i?>" hidden/>
 
@@ -161,9 +134,11 @@ while ($donnees = $reponse->fetch())
               <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
               <input class="_input _input-5" name="sqldate2<?php echo $i?>" id="sqldate2<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqldate2' . $i])){echo $_POST['sqldate2' . $i];} else {echo $donnees['date2'];} ?>" spellcheck="true">
 
+              <a href='javascript:sqlpopupResize("resize.php?src=" + sqlimage2<?php echo $i?>.value + "&num=2<?php echo $i?>", "2<?php echo $i?>")'>
               <div class="element element-9">
-                <a href='javascript:sqlpopupResize("resize.php?src=" + sqlimage2<?php echo $i?>.value + "&num=2<?php echo $i?>", "2<?php echo $i?>")'><img src="<?php echo $donnees['imgcrop2']; ?>" id="result2<?php echo $i?>" display="inline"/></a>
+                <img src="<?php echo $donnees['imgcrop2']; ?>" id="result2<?php echo $i?>" display="inline"/>
               </div>
+              </a>
 
               <img src="<?php echo $donnees['imgcrop2']; ?>" id="testimg2<?php echo $i?>" hidden/>
 
@@ -197,9 +172,11 @@ while ($donnees = $reponse->fetch())
               <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
               <input class="_input _input-5" name="sqldate3<?php echo $i?>" id="sqldate3<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqldate3' . $i])){echo $_POST['sqldate3' . $i];} else {echo $donnees['date3'];} ?>" spellcheck="true">
 
+              <a href='javascript:sqlpopupResize("resize.php?src=" + sqlimage3<?php echo $i?>.value + "&num=3<?php echo $i?>", "3<?php echo $i?>")'>
               <div class="element element-9">
-                <a href='javascript:sqlpopupResize("resize.php?src=" + sqlimage3<?php echo $i?>.value + "&num=3<?php echo $i?>", "3<?php echo $i?>")'><img src="<?php echo $donnees['imgcrop3']; ?>" id="result3<?php echo $i?>" display="inline"/></a>
+                <img src="<?php echo $donnees['imgcrop3']; ?>" id="result3<?php echo $i?>" display="inline"/>
               </div>
+              </a>
 
               <img src="<?php echo $donnees['imgcrop3']; ?>" id="testimg3<?php echo $i?>" hidden/>
 
@@ -232,9 +209,11 @@ while ($donnees = $reponse->fetch())
               <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
               <input class="_input _input-5" name="sqldate4<?php echo $i?>" id="sqldate4<?php echo $i?>" type="text"  value="<?php if (isset($_POST['sqldate4' . $i])){echo $_POST['sqldate4' . $i];} else {echo $donnees['date4'];} ?>" spellcheck="true">
 
+              <a href='javascript:sqlpopupResize("resize.php?src=" + sqlimage4<?php echo $i?>.value + "&num=4<?php echo $i?>", "4<?php echo $i?>")'>
               <div class="element element-9">
-                <a href='javascript:sqlpopupResize("resize.php?src=" + sqlimage4<?php echo $i?>.value + "&num=4<?php echo $i?>", "4<?php echo $i?>")'><img src="<?php echo $donnees['imgcrop4']; ?>" id="result4<?php echo $i?>" /></a>
+                <img src="<?php echo $donnees['imgcrop4']; ?>" id="result4<?php echo $i?>" display="inline"/>
               </div>
+              </a>
 
               <img src="<?php echo $donnees['imgcrop4']; ?>" id="testimg4<?php echo $i?>" hidden/>
 
@@ -263,12 +242,59 @@ $maxidi = $i;
 
 </form>
 
+
 <script type="text/javascript">
+
+// PASTILLE POUR OLD.PHP
+
+
+// INDICE
+for (var j = 0; j < <?php echo $maxidi?>; j++) {
+  for (var i = 0; i <= 4; i++) {
+      document.getElementById('result' + i + j).style.display = 'inline';
+    }
+}
+
+for (var j = 0; j < <?php echo $maxidi?>; j++) {
+  for (var i = 1; i <= 4; i++) {
+      document.getElementById('sqldivindice' + i + j).style.background ="rgb(102, 171, 82)";
+    }
+}
 
 function mytest()
 {
   // INDICE
   for (var j = 0; j < <?php echo $maxidi?>; j++) {
+
+    // MOT A TROUVER PASTILLE
+    if (document.getElementById('sqlmot' + j).value &&
+        document.getElementById('result0' + j).style.display == 'inline' &&
+        document.getElementById('sqlauteur0' + j).value &&
+        document.getElementById('sqldate0' + j).value &&
+        document.getElementById('sqldivindice1' + j).style.backgroundColor == "rgb(102, 171, 82)" &&
+        document.getElementById('sqldivindice2' + j).style.backgroundColor == "rgb(102, 171, 82)" &&
+        document.getElementById('sqldivindice3' + j).style.backgroundColor == "rgb(102, 171, 82)" &&
+        document.getElementById('sqldivindice4' + j).style.backgroundColor == "rgb(102, 171, 82)")
+    {
+      document.getElementById('sqldivmot' + j).style.background ="rgb(102, 171, 82)";
+    }
+    else if(document.getElementById('sqlmot' + j).value ||
+            document.getElementById('result0' + j).style.display == 'inline' ||
+            document.getElementById('sqlauteur0' + j).value ||
+            document.getElementById('sqldate0' + j).value ||
+            document.getElementById('sqldivindice1' + j).style.backgroundColor == "rgb(102, 171, 82)" ||
+            document.getElementById('sqldivindice2' + j).style.backgroundColor == "rgb(102, 171, 82)" ||
+            document.getElementById('sqldivindice3' + j).style.backgroundColor == "rgb(102, 171, 82)" ||
+            document.getElementById('sqldivindice4' + j).style.backgroundColor == "rgb(102, 171, 82)")
+    {
+      document.getElementById('sqldivmot' + j).style.background="rgb(247, 147, 30)";
+    }
+    else
+    {
+      document.getElementById('sqldivmot' + j).style.background="rgb(228, 38, 19)";
+    }
+
+    // INDICE PASTILLE
     for (var i = 1; i <= 3; i++) {
       if (document.getElementById('sqlindice' + i + j).value &&
           document.getElementById('sqlauteur' + i + j).value &&
@@ -290,7 +316,7 @@ function mytest()
       }
     }
 
-    // RECOMPENSE
+    // RECOMPENSE PASTILLE
       if (document.getElementById('sqlrecompense' + j).value &&
           document.getElementById('sqllegende' + j).value &&
           document.getElementById('sqlauteur4' + j).value &&

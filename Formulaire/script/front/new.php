@@ -1,39 +1,5 @@
 <script type="text/javascript">
-
 tafonction();
-
-function cropimg(valeurChamp, num) {
-    $('#testimg' + num).attr('src', valeurChamp);
-    if (document.getElementById('testimg' + num).height == 430 || document.getElementById('testimg' + num).height == 374 || document.getElementById('testimg' + num).height <= 0)
-    {
-      document.getElementById('result' + num).style.display = 'none';
-    }
-    else
-    {
-      document.getElementById('result' + num).style.display = 'inline';
-      popupResize("resize.php?src=" + valeurChamp + "&num=" + num, num);
-    }
-}
-
-// POPUP
-function popupResize(page, id) {
-  if (document.getElementById('testimg' + id).height == 430 || document.getElementById('testimg' + id).height == 374 || document.getElementById('testimg' + id).height <= 0)
-  {
-    document.getElementById('result' + id).style.display = 'none';
-    $('#result' + id).attr('src', "");
-  }
-  else {
-    window.open(page, 'popup','width=900,height=900');
-    test(id);
-  }
-}
-
-function test(i)
-{
-  setTimeout(test, 10, i);
-  sessionStorage.clear();
-  $('#result' + i).attr('src', "tmp/image" + i + "-crop.jpg");
-}
 </script>
 
 <form  action="?" method="POST" onSubmit="return prog_submit()">
@@ -65,9 +31,11 @@ function test(i)
   <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
   <input class="_input _input-6" name="date0" id="date0" type="text" value="<?php if (isset($_POST['date0'])){echo $_POST['date0'];} ?>" spellcheck="true">
 
+<a href='javascript:popupResize("resize.php?src=" + image0.value + "&num=0", 0)'>
   <div class="element element-9">
-     <a href='javascript:popupResize("resize.php?src=" + image0.value + "&num=0", 0)'><img src="" id="result0"/></a>
+     <img src="" id="result0"/>
   </div>
+</a>
 
   <img src="" id="testimg0" hidden/>
 
@@ -99,9 +67,11 @@ function test(i)
     <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
     <input class="_input _input-6" name="date1" id="date1" type="text" value="<?php if (isset($_POST['date1'])){echo $_POST['date1'];} ?>" spellcheck="true">
 
+    <a href='javascript:popupResize("resize.php?src=" + image1.value + "&num=1", 1)'>
     <div class="element element-9">
-       <a href='javascript:popupResize("resize.php?src=" + image1.value + "&num=1", 1)'><img src="" id="result1"/></a>
+       <img src="" id="result1"/>
     </div>
+    </a>
 
     <img src="" id="testimg1" hidden/>
 
@@ -134,10 +104,12 @@ function test(i)
     <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
     <input class="_input _input-6" name="date2" id="date2" type="text" value="<?php if (isset($_POST['date2'])){echo $_POST['date2'];} ?>" spellcheck="true">
 
-
+    <a href='javascript:popupResize("resize.php?src=" + image2.value + "&num=2", 2)'>
     <div class="element element-9">
-      <a href='javascript:popupResize("resize.php?src=" + image2.value + "&num=2", 2)'><img src="" id="result2" class="the_img"/></a>
+      <img src="" id="result2" class="the_img"/>
     </div>
+  </a>
+
     <img src="" id="testimg2" hidden/>
     <div class="element element-10"></div>
   </div>
@@ -167,9 +139,12 @@ function test(i)
     <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
     <input class="_input _input-6" name="date3" id="date3" type="text" value="<?php if (isset($_POST['date3'])){echo $_POST['date3'];} ?>" spellcheck="true">
 
+    <a href='javascript:popupResize("resize.php?src=" + image3.value + "&num=3", 3)'>
       <div class="element element-9">
-        <a href='javascript:popupResize("resize.php?src=" + image3.value + "&num=3", 3)'><img src="" id="result3" class="the_img"/></a>
+        <img src="" id="result3" class="the_img"/>
       </div>
+    </a>
+
       <img src="" id="testimg3" hidden/>
     <div class="element element-10"></div>
 
@@ -200,9 +175,12 @@ function test(i)
     <p class="text text-10"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LA DATE DE MISE EN LIGNE DE L'IMAGE</strong></font></p>
     <input class="_input _input-6" name="date4" id="date4" type="text" value="<?php if (isset($_POST['date4'])){echo $_POST['date4'];} ?>" spellcheck="true">
 
+    <a href='javascript:popupResize("resize.php?src=" + image4.value + "&num=4", 4)'>
     <div class="element element-9">
-      <a href='javascript:popupResize("resize.php?src=" + image4.value + "&num=4", 4)'><img src="" id="result4" class="the_img"/></a>
+      <img src="" id="result4" class="the_img"/>
     </div>
+  </a>
+
     <img src="" id="testimg4" hidden/>
     <div class="element element-10"></div>
 
