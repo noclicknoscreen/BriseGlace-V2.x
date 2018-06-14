@@ -10,11 +10,10 @@ catch (Exception $e)
 }
 
 // On récupère tout le contenu de la table enigme
-$reponse = $bdd->query('SELECT * FROM enigme ORDER BY id');
 $query = $bdd->query('SELECT MAX(id) AS maxval FROM enigme');
 $max_row = $query->fetch(PDO::FETCH_ASSOC);
-
 $max = $max_row['maxval'];
+$query->closeCursor();
 
 if ($max == null)
 {
@@ -25,60 +24,51 @@ else
   $num = $max + 1;
 }
 
-// Verifie si les images sont valable
-error_mess($_POST['image0'], 0);
-error_mess($_POST['image1'], 1);
-error_mess($_POST['image2'], 2);
-error_mess($_POST['image3'], 3);
-error_mess($_POST['image4'], 4);
-if (verif_image($_POST['image1']) && verif_image($_POST['image2']) && verif_image($_POST['image3']) && verif_image($_POST['image4']) && verif_image($_POST['image0'])) {
-  // SI OUI Creation des dossiers et fichiers JSON + Upload les images
-  $tmp = "enigme";
-  if (file_exists($tmp) == false) {
-      mkdir("./" . $tmp, 0777, true);
-  }
+$tmp = "enigme";
+if (file_exists($tmp) == false) {
+    mkdir("./" . $tmp, 0777, true);
+}
 
-  $long = strlen($num);
-  switch ($long) {
-    case 1:
-      $StrNum = "000";
-      break;
-    case 2:
-      $StrNum = "00";
-      break;
-    case 3:
-      $StrNum = "0";
-      break;
-    case 4:
-      $StrNum = "";
-      break;
-  }
+$long = strlen($num);
+switch ($long) {
+  case 1:
+    $StrNum = "000";
+    break;
+  case 2:
+    $StrNum = "00";
+    break;
+  case 3:
+    $StrNum = "0";
+    break;
+  case 4:
+    $StrNum = "";
+    break;
+}
 
-  if (file_exists($tmp . "/" . $StrNum . $num) == false) {
-      mkdir("./" . $tmp . "/" . $StrNum . $num, 0777, true);
-    }
+if (file_exists($tmp . "/" . $StrNum . $num) == false) {
+    mkdir("./" . $tmp . "/" . $StrNum . $num, 0777, true);
+}
 
-    if (file_exists($tmp . "/". $StrNum . $num . "/image") == false) {
-      mkdir("./" . $tmp . "/" . $StrNum . $num . "/image", 0777, true);
-    }
+if (file_exists($tmp . "/". $StrNum . $num . "/image") == false) {
+    mkdir("./" . $tmp . "/" . $StrNum . $num . "/image", 0777, true);
+}
 
-    // Upload des images
-    for ($i=0; $i <= 4; $i++) {
-      $url=$_POST['image' . $i];
-      $info = new SplFileInfo($url);
-      $data = @file_get_contents($url);
-      $datacrop = @file_get_contents("tmp/image" . $i . "-crop.jpg");
-      $new = $tmp . "/" . $StrNum . $num . '/image/image' . $i . '.' . $info->getExtension();
-      $newcrop = $tmp . "/" . $StrNum . $num . '/image/image' . $i . '-crop.jpg';
-      file_put_contents($new, $data);
-      file_put_contents($newcrop, $datacrop);
-      unlink("tmp/image" . $i . "-crop.jpg");
-      $imgName[$i] = 'image' . $i . '.' . $info->getExtension();
-    }
+// Upload des images
+for ($i=0; $i <= 4; $i++) {
+  $url=$_POST['image' . $i];
+  $info = new SplFileInfo($url);
+  $data = @file_get_contents($url);
+  $datacrop = @file_get_contents("tmp/image" . $i . "-crop.jpg");
+  $new = $tmp . "/" . $StrNum . $num . '/image/image' . $i . '.' . $info->getExtension();
+  $newcrop = $tmp . "/" . $StrNum . $num . '/image/image' . $i . '-crop.jpg';
+  file_put_contents($new, $data);
+  file_put_contents($newcrop, $datacrop);
+  unlink("tmp/image" . $i . "-crop.jpg");
+  $imgName[$i] = 'image' . $i . '.' . $info->getExtension();
+}
 
-
-    date_default_timezone_set('UTC');
-    $req = $bdd->prepare('INSERT INTO enigme(id, mot, image0, imgcrop0, auteur0, date0, indice1, image1, imgcrop1, auteur1, date1, indice2, image2, imgcrop2, auteur2, date2, indice3, image3, imgcrop3, auteur3, date3, recompense, image4, imgcrop4, auteur4, date4, legende)
+date_default_timezone_set('UTC');
+   $req = $bdd->prepare('INSERT INTO enigme(id, mot, image0, imgcrop0, auteur0, date0, indice1, image1, imgcrop1, auteur1, date1, indice2, image2, imgcrop2, auteur2, date2, indice3, image3, imgcrop3, auteur3, date3, recompense, image4, imgcrop4, auteur4, date4, legende)
       VALUES(:id, :mot, :image0, :imgcrop0, :auteur0, :date0, :indice1, :image1, :imgcrop1, :auteur1, :date1, :indice2, :image2, :imgcrop2, :auteur2, :date2, :indice3, :image3, :imgcrop3, :auteur3, :date3, :recompense, :image4, :imgcrop4, :auteur4, :date4, :legende)');
     $req->execute(array(
       'id' => $num,
@@ -161,11 +151,4 @@ if (verif_image($_POST['image1']) && verif_image($_POST['image2']) && verif_imag
 $fichier = fopen($tmp . "/" . $StrNum . $num . "/enigma.json", "w+");
 fputs($fichier, $json_string = json_encode($jsonFormat, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 fclose($fichier);
-}
-else {
-// SI NON Echec de l'enregistrement
-echo "Echec de l'enregistrement.";
-}
-
-$reponse->closeCursor(); // Termine le traitement de la requête
 ?>

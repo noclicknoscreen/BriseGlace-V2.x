@@ -30,9 +30,25 @@ $('#copie').on('click', function() {
 });
 </script>
 
+<?php
+try
+{
+  $bdd = new PDO('mysql:host=localhost;dbname=formulaire;charset=utf8', 'root', 'root');
+}
+catch (Exception $e)
+{
+  die('Erreur : ' . $e->getMessage());
+}
+$query = $bdd->query('SELECT MAX(id) AS maxval FROM enigme');
+$max_row = $query->fetch(PDO::FETCH_ASSOC);
+$max = $max_row['maxval'] + 1;
+
+$query->closeCursor(); // Termine le traitement de la requête
+?>
+
     <div class="element element-2"></div>
     <img class="image image-1" src="images/1.png">
-    <p class="_input _input-1">ENIGME</p>
+    <p class="_input _input-1">Nombre d'énigmes : <?php echo $max ?></p>
     <div class="element element-3"></div>
 
 <?php
