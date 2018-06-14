@@ -48,7 +48,7 @@ $query->closeCursor(); // Termine le traitement de la requête
 
     <div class="element element-2"></div>
     <img class="image image-1" src="images/1.png">
-    <p class="_input _input-1">Nombre d'énigmes : <?php echo $max ?></p>
+    <p class="_input _input-1"><?php echo $max ?> énigmes</p>
     <div class="element element-3"></div>
 
 <?php
