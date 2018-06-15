@@ -59,7 +59,7 @@ while ($donnees = $reponse->fetch())
     $imgName[$j] = 'image' . $j . '.' . $info->getExtension();
   }
 
-  $req = $bdd->prepare('UPDATE enigme SET mot = :mot, image0 = :image0, imgcrop0 = :imgcrop0, auteur0 = :auteur0, date0 = :date0,
+  $req = $bdd->prepare('UPDATE enigme SET mot = :mot, theme = :theme, image0 = :image0, imgcrop0 = :imgcrop0, auteur0 = :auteur0, date0 = :date0,
                         indice1 = :indice1, image1 = :image1, imgcrop1 = :imgcrop1, auteur1 = :auteur1, date1 = :date1,
                         indice2 = :indice2, image2 = :image2, imgcrop2 = :imgcrop2, auteur2 = :auteur2, date2 = :date2,
                         indice3 = :indice3, image3 = :image3, imgcrop3 = :imgcrop3, auteur3 = :auteur3, date3 = :date3,
@@ -67,6 +67,7 @@ while ($donnees = $reponse->fetch())
                         legende = :legende WHERE id = :id');
   $req->execute(array(
     'mot' =>$_POST['sqlmot' . $id],
+    'theme' =>$_POST['sqltheme' . $id],
 
     'image0'=>$_POST['sqlimage0'. $id],
     'imgcrop0'=> "enigme/" . $StrNum . $id . '/image/image0-crop.jpg',
@@ -107,6 +108,7 @@ while ($donnees = $reponse->fetch())
     $req->closeCursor();
 
     $jsonFormat = array(
+        "theme"=>$_POST['sqltheme' . $id],
         "mot" => array(
           "titre"=>$_POST['sqlmot' . $id],
           "image"=>$imgName[0],

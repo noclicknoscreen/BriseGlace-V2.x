@@ -36,7 +36,7 @@ while ($donnees = $reponse->fetch())
 <!-- Mot clé -->
           <input type="submit" class="_button _button-2" name="plus" id="plus" value="+"/>
           <input class="_input _input-2" type="text" name="sqlmot<?php echo $i?>" id="sqlmot<?php echo $i?>" value="<?php if (isset($_POST['sqlmot' . $i])){echo $_POST['sqlmot' . $i];} else {echo $donnees['mot'];} ?>" spellcheck="true">
-          <input class="_input _input-3" type="text">
+          <input class="_input _input-3" type="text" id="sqltheme<?php echo $i?>" name="sqltheme<?php echo $i?>" value="<?php if (isset($_POST['sqltheme' . $i])){echo $_POST['sqltheme' . $i];} else {echo $donnees['theme'];} ?>" spellcheck="true">
           <div class="element element-4" id="sqldivmot<?php echo $i?>" spellcheck="true"></div>
           <p class="text text-2"><strong>DATE</strong></p>
 
@@ -76,7 +76,7 @@ while ($donnees = $reponse->fetch())
             <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 1</strong></font></p>
             <input class="_input _input-4" type="text" name="sqlindice1<?php echo $i?>" id="sqlindice1<?php echo $i?>" value="<?php if (isset($_POST['sqlindice1' . $i])){echo $_POST['sqlindice1' . $i];} else {echo $donnees['indice1'];} ?>" spellcheck="true">
             <div class="element element-6" id="sqldivindice1<?php echo $i?>" spellcheck="true"></div>
-            <p class="_button _button-4 second-arrow">&nbsp;ÉDITER&nbsp;&nbsp;<i class="fa fa-caret-up" style="color:white"></i></p>
+            <p class="_button _button-4 second-arrow">ÉDITER</p>
 
             <div class="element element-7"></div>
             <!-- DIV INDICE 1 -->
@@ -113,7 +113,7 @@ while ($donnees = $reponse->fetch())
             <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 2</strong></font></p>
             <input class="_input _input-4" type="text" name="sqlindice2<?php echo $i?>" id="sqlindice2<?php echo $i?>" value="<?php if (isset($_POST['sqlindice2' . $i])){echo $_POST['sqlindice2' . $i];} else {echo $donnees['indice2'];} ?>" spellcheck="true">
             <div class="element element-6" id="sqldivindice2<?php echo $i?>" spellcheck="true"></div>
-            <p class="_button _button-4 third-arrow">&nbsp;ÉDITER&nbsp;&nbsp;<i class="fa fa-caret-up" style="color:white"></i></p>
+            <p class="_button _button-4 third-arrow">ÉDITER</p>
 
             <div class="element element-7"></div>
 
@@ -151,7 +151,7 @@ while ($donnees = $reponse->fetch())
             <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 3</strong></font></p>
             <input class="_input _input-4" type="text" name="sqlindice3<?php echo $i?>" id="sqlindice3<?php echo $i?>" value="<?php if (isset($_POST['sqlindice3' . $i])){echo $_POST['sqlindice3' . $i];} else {echo $donnees['indice3'];} ?>" spellcheck="true">
             <div class="element element-6" id="sqldivindice3<?php echo $i?>" spellcheck="true"></div>
-            <p class="_button _button-4 fourth-arrow">&nbsp;ÉDITER&nbsp;&nbsp;<i class="fa fa-caret-up" style="color:white"></i></p>
+            <p class="_button _button-4 fourth-arrow">ÉDITER</p>
 
             <div class="element element-7"></div>
 
@@ -188,7 +188,7 @@ while ($donnees = $reponse->fetch())
             <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>GAGNÉ !</strong></font></p>
             <input class="_input _input-4" type="text" name="sqlrecompense<?php echo $i?>" id="sqlrecompense<?php echo $i?>" value="<?php if (isset($_POST['sqlrecompense' . $i])){echo $_POST['sqlrecompense' . $i];} else {echo $donnees['recompense'];} ?>" spellcheck="true">
             <div class="element element-6" id="sqldivindice4<?php echo $i?>" spellcheck="true"></div>
-            <p class="_button _button-4 fifth-arrow">&nbsp;ÉDITER&nbsp;&nbsp;<i class="fa fa-caret-up" style="color:white"></i></p>
+            <p class="_button _button-4 fifth-arrow">ÉDITER</p>
 
             <div class="element element-5"></div>
 
@@ -231,7 +231,7 @@ while ($donnees = $reponse->fetch())
   $i++;
   }
   ?>
-<input class="_button _button-5" type="submit"name="update" id="update" value="SOUMETTRE"/>
+<input class="_button _button-5" type="submit"name="update" id="update" value="Enregistrer les modifications"/>
 <?php
 }
 $reponse->closeCursor(); // Termine le traitement de la requête

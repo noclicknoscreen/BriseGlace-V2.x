@@ -89,7 +89,7 @@ $query->closeCursor(); // Termine le traitement de la requête
   else if (isset($_POST['update']))
   {
     require('script/back/update.php');
-    echo "<form method=\"post\" action=\"?\"><button class=\"_button _button-1\" name=\"copie\" id=\"copie\"/>METTRE À JOUR</button></form>";
+    echo "<form method=\"post\" action=\"?\"><button class=\"_button _button-1\" name=\"copie\" id=\"copie\"/>Mettre à jour le jeu</button></form>";
     clearFolder("tmp/");
   }
   else if (isset($_POST['copie']))

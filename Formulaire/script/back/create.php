@@ -68,11 +68,12 @@ for ($i=0; $i <= 4; $i++) {
 }
 
 date_default_timezone_set('UTC');
-   $req = $bdd->prepare('INSERT INTO enigme(id, mot, image0, imgcrop0, auteur0, date0, indice1, image1, imgcrop1, auteur1, date1, indice2, image2, imgcrop2, auteur2, date2, indice3, image3, imgcrop3, auteur3, date3, recompense, image4, imgcrop4, auteur4, date4, legende)
-      VALUES(:id, :mot, :image0, :imgcrop0, :auteur0, :date0, :indice1, :image1, :imgcrop1, :auteur1, :date1, :indice2, :image2, :imgcrop2, :auteur2, :date2, :indice3, :image3, :imgcrop3, :auteur3, :date3, :recompense, :image4, :imgcrop4, :auteur4, :date4, :legende)');
+   $req = $bdd->prepare('INSERT INTO enigme(id, mot, theme, image0, imgcrop0, auteur0, date0, indice1, image1, imgcrop1, auteur1, date1, indice2, image2, imgcrop2, auteur2, date2, indice3, image3, imgcrop3, auteur3, date3, recompense, image4, imgcrop4, auteur4, date4, legende)
+      VALUES(:id, :mot, :theme, :image0, :imgcrop0, :auteur0, :date0, :indice1, :image1, :imgcrop1, :auteur1, :date1, :indice2, :image2, :imgcrop2, :auteur2, :date2, :indice3, :image3, :imgcrop3, :auteur3, :date3, :recompense, :image4, :imgcrop4, :auteur4, :date4, :legende)');
     $req->execute(array(
       'id' => $num,
       'mot' => $_POST['mot'],
+      'theme' => $_POST['theme'],
       'image0'=>$_POST['image0'],
       'imgcrop0'=> $tmp . "/" . $StrNum . $num . '/image/image0-crop.jpg',
       'auteur0' => $_POST['auteur0'],
@@ -102,6 +103,7 @@ date_default_timezone_set('UTC');
 
     // Crée le tableau JSON
     $jsonFormat = array(
+        "theme"=>$_POST['theme'],
         "mot" =>array(
           "titre"=>$_POST['mot'],
           "image"=>$imgName[0],
