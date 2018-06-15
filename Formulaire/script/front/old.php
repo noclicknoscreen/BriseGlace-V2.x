@@ -36,7 +36,7 @@ while ($donnees = $reponse->fetch())
 <!-- Mot clé -->
           <input type="submit" class="_button _button-2" name="plus" id="plus" value="+"/>
           <input class="_input _input-2" type="text" name="sqlmot<?php echo $i?>" id="sqlmot<?php echo $i?>" value="<?php if (isset($_POST['sqlmot' . $i])){echo $_POST['sqlmot' . $i];} else {echo $donnees['mot'];} ?>" spellcheck="true">
-          <input class="_input _input-3" type="text" id="sqltheme<?php echo $i?>" name="sqltheme<?php echo $i?>" placeholder="mot clé" value="<?php if (isset($_POST['sqltheme' . $i])){echo $_POST['sqltheme' . $i];} else {echo $donnees['theme'];} ?>" spellcheck="true">
+          <input class="_input _input-3" type="text" id="sqltheme<?php echo $i?>" name="sqltheme<?php echo $i?>" value="<?php if (isset($_POST['sqltheme' . $i])){echo $_POST['sqltheme' . $i];} else {echo $donnees['theme'];} ?>" spellcheck="true">
           <div class="element element-4" id="sqldivmot<?php echo $i?>" spellcheck="true"></div>
           <p class="text text-2"><strong>DATE</strong></p>
 
@@ -50,9 +50,9 @@ while ($donnees = $reponse->fetch())
             <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ AU MOT</strong></font></p>
             <div class="element element-8"></div>
             <p class="text text-5"><strong>1-&nbsp;Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
-            <a id="flickr0<?php echo $i?>" href='javascript:popup("https://www.flickr.com/search/?text=<?php echo $donnees['mot'];?>&license=4%2C5%2C9%2C10")'><img class="image image-2" src="images/flickr.png"></a>
-            <a id="wikipedia0<?php echo $i?>" href='javascript:popup("https://fr.wikipedia.org/wiki/<?php echo $donnees['mot'];?>")'><img class="image image-3" src="images/wikipedia.jpg" ></a>
-            <a id="noun0<?php echo $i?>" href='javascript:popup("https://thenounproject.com/search/?q=<?php echo $donnees['mot'];?>")'><img class="image image-4" src="images/noun.png"></a>
+            <img class="image image-2" src="images/flickr.png">
+            <img class="image image-3" src="images/wikipedia.jpg">
+            <img class="image image-4" src="images/noun.png">
             <p class="text text-6"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
             <p class="text text-7"><strong>3- Je colle lURL dans le champs ci-dessous</strong></p>
             <input class="_input _input-5" type="url" name="sqlimage0<?php echo $i?>" id="sqlimage0<?php echo $i?>" onkeyup="sqlcropimg(this.value, '0<?php echo $i?>');" value="<?php if (isset($_POST['sqlimage0' . $i])){echo $_POST['sqlimage0' . $i];} else {echo $donnees['image0'];} ?>" spellcheck="true">
@@ -86,9 +86,9 @@ while ($donnees = $reponse->fetch())
               <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ AU MOT INDICE 1</strong></font></p>
               <div class="element element-8"></div>
               <p class="text text-5"><strong>1-&nbsp;Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
-              <a id="flickr1<?php echo $i?>" href='javascript:popup("https://www.flickr.com/search/?text=<?php echo $donnees['indice1'];?>&license=4%2C5%2C9%2C10")'><img class="image image-2" src="images/flickr.png"></a>
-              <a id="wikipedia1<?php echo $i?>" href='javascript:popup("https://fr.wikipedia.org/wiki/<?php echo $donnees['indice1'];?>")'><img class="image image-3" src="images/wikipedia.jpg" ></a>
-              <a id="noun1<?php echo $i?>" href='javascript:popup("https://thenounproject.com/search/?q=<?php echo $donnees['indice1'];?>")'><img class="image image-4" src="images/noun.png"></a>
+              <img class="image image-2" src="images/flickr.png">
+              <img class="image image-3" src="images/wikipedia.jpg">
+              <img class="image image-4" src="images/noun.png">
               <p class="text text-6"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
               <p class="text text-7"><strong>3- Je colle lURL dans le champs ci-dessous</strong></p>
               <input class="_input _input-5" type="url" name="sqlimage1<?php echo $i?>" id="sqlimage1<?php echo $i?>" onkeyup="sqlcropimg(this.value, '1<?php echo $i?>');" value="<?php if (isset($_POST['sqlimage1' . $i])){echo $_POST['sqlimage1' . $i];} else {echo $donnees['image1'];} ?>" spellcheck="true">
@@ -123,9 +123,9 @@ while ($donnees = $reponse->fetch())
               <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ AU MOT INDICE 2</strong></font></p>
               <div class="element element-8"></div>
               <p class="text text-5"><strong>1 &nbsp; Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
-              <a id="flickr2<?php echo $i?>" href='javascript:popup("https://www.flickr.com/search/?text=<?php echo $donnees['indice2'];?>&license=4%2C5%2C9%2C10")'><img class="image image-2" src="images/flickr.png"></a>
-              <a id="wikipedia2<?php echo $i?>" href='javascript:popup("https://fr.wikipedia.org/wiki/<?php echo $donnees['indice2'];?>")'><img class="image image-3" src="images/wikipedia.jpg" ></a>
-              <a id="noun2<?php echo $i?>" href='javascript:popup("https://thenounproject.com/search/?q=<?php echo $donnees['indice2'];?>")'><img class="image image-4" src="images/noun.png"></a>
+              <img class="image image-2" src="images/flickr.png">
+              <img class="image image-3" src="images/wikipedia.jpg">
+              <img class="image image-4" src="images/noun.png">
               <p class="text text-6"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
               <p class="text text-7"><strong>3- Je colle lURL dans le champs ci-dessous</strong></p>
               <input class="_input _input-5" type="url" name="sqlimage2<?php echo $i?>" id="sqlimage2<?php echo $i?>" onkeyup="sqlcropimg(this.value, '2<?php echo $i?>');" value="<?php if (isset($_POST['sqlimage2' . $i])){echo $_POST['sqlimage2' . $i];} else {echo $donnees['image2'];} ?>" spellcheck="true">
@@ -161,9 +161,9 @@ while ($donnees = $reponse->fetch())
               <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ AU MOT INDICE 3</strong></font></p>
               <div class="element element-8"></div>
               <p class="text text-5"><strong>1 &nbsp; Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
-              <a id="flickr3<?php echo $i?>" href='javascript:popup("https://www.flickr.com/search/?text=<?php echo $donnees['indice3'];?>&license=4%2C5%2C9%2C10")'><img class="image image-2" src="images/flickr.png"></a>
-              <a id="wikipedia3<?php echo $i?>" href='javascript:popup("https://fr.wikipedia.org/wiki/<?php echo $donnees['indice3'];?>")'><img class="image image-3" src="images/wikipedia.jpg" ></a>
-              <a id="noun3<?php echo $i?>" href='javascript:popup("https://thenounproject.com/search/?q=<?php echo $donnees['indice3'];?>")'><img class="image image-4" src="images/noun.png"></a>
+              <img class="image image-2" src="images/flickr.png">
+              <img class="image image-3" src="images/wikipedia.jpg">
+              <img class="image image-4" src="images/noun.png">
               <p class="text text-6"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
               <p class="text text-7"><strong>3- Je colle lURL dans le champs ci-dessous</strong></p>
               <input class="_input _input-5" type="url" name="sqlimage3<?php echo $i?>" id="sqlimage3<?php echo $i?>" onkeyup="sqlcropimg(this.value, '3<?php echo $i?>');" value="<?php if (isset($_POST['sqlimage3' . $i])){echo $_POST['sqlimage3' . $i];} else {echo $donnees['image3'];} ?>" spellcheck="true">
@@ -198,9 +198,9 @@ while ($donnees = $reponse->fetch())
               <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ LA DÉFINITION</strong></font></p>
               <div class="element element-8"></div>
               <p class="text text-5"><strong>1 &nbsp; Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
-              <a id="flickr4<?php echo $i?>" href='javascript:popup("https://www.flickr.com/search/?text=<?php echo $donnees['recompense'];?>&license=4%2C5%2C9%2C10")'><img class="image image-2" src="images/flickr.png"></a>
-              <a id="wikipedia4<?php echo $i?>" href='javascript:popup("https://fr.wikipedia.org/wiki/<?php echo $donnees['recompense'];?>")'><img class="image image-3" src="images/wikipedia.jpg" ></a>
-              <a id="noun4<?php echo $i?>" href='javascript:popup("https://thenounproject.com/search/?q=<?php echo $donnees['recompense'];?>")'><img class="image image-4" src="images/noun.png"></a>
+              <img class="image image-2" src="images/flickr.png">
+              <img class="image image-3" src="images/wikipedia.jpg">
+              <img class="image image-4" src="images/noun.png">
               <p class="text text-6"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
               <p class="text text-7"><strong>3- Je colle lURL dans le champs ci-dessous</strong></p>
               <input class="_input _input-5"  type="url" name="sqlimage4<?php echo $i?>" id="sqlimage4<?php echo $i?>" onkeyup="sqlcropimg(this.value, '4<?php echo $i?>');" value="<?php if (isset($_POST['sqlimage4' . $i])){echo $_POST['sqlimage4' . $i];} else {echo $donnees['image4'];} ?>" spellcheck="true">
