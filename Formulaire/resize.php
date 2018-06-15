@@ -27,7 +27,7 @@ var file =
     <input type="text" id="h" name="h" hidden/>
     <input type="text" value="<?php echo $_GET['src']?>" id="src" name="src" hidden/>
     <input type="text" value="<?php echo $_GET['num']?>" id="num" name="num" hidden/>
-    <input type="submit" value="Crop" class="_button"/>
+    <input type="submit" value="CROP" class="_buttontest"/>
   </form>
 
 
@@ -37,7 +37,7 @@ $(function(){
   $('#jcrop_target').Jcrop({
   onSelect: updateCoords,
   onChange: updateCoords,
-  bgColor: 'transparent',
+  bgColor: 'white',
   boxWidth: 700,
   boxHeight: 770,
   bgOpacity:  .2,

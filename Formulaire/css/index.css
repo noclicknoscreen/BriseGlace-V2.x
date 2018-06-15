@@ -70,7 +70,6 @@ body {
 ._input {
   display: block;
   font-family: 'Quattrocento Sans';
-  color: rgb(255, 255, 255);
 }
 
 .element-1 {
@@ -143,7 +142,7 @@ body {
   z-index: 33;
   width: 20px;
   height: 20px;
-  margin: 13px 0 0 1.73438%;
+  margin: 13px 0 0 1.13542%;
   border-radius: 100px;
   background-color: rgb(228, 38, 19);
 }
@@ -258,7 +257,7 @@ body {
   z-index: 19;
   width: 8.25%;
   min-height: 15px;
-  margin: 22px 0 0 15.79948%;
+  margin: 22px 0 0 16.39844%;
   font-family: Oswald;
   font-size: 0.667em;
   font-weight: 400;
@@ -402,13 +401,14 @@ body {
 ._input-1 {
   position: fixed;
   top: 9px;
-  left: 46.3333333333%;
+  left: 49.4986979166%;
   z-index: 36;
-  width: 22.1666666666%;
+  width: 8.25%;
   height: 32px;
   background-color: rgb(77, 77, 77);
   font-size: 0.75em;
   text-transform: uppercase;
+  color: rgb(255, 255, 255);
 }
 
 ._input-2 {
@@ -423,6 +423,7 @@ body {
   background-color: rgb(51, 51, 51);
   font-size: 0.833em;
   text-transform: uppercase;
+  color: rgb(255, 255, 255);
 }
 
 ._input-3 {
@@ -435,6 +436,8 @@ body {
   padding: 0 10px;
   background-color: rgb(51, 51, 51);
   font-size: 0.833em;
+  font-weight: 400;
+  color: #b2b2b2;
 }
 
 ._input-4 {
@@ -449,6 +452,7 @@ body {
   background-color: rgb(51, 51, 51);
   font-size: 0.833em;
   text-transform: uppercase;
+  color: rgb(255, 255, 255);
 }
 
 ._input-5 {
@@ -463,6 +467,7 @@ body {
   background-color: rgb(51, 51, 51);
   font-size: 0.625em;
   font-weight: 400;
+  color: rgb(255, 255, 255);
 }
 
 ._input-6 {
@@ -477,6 +482,7 @@ body {
   background-color: rgb(51, 51, 51);
   font-size: 0.625em;
   font-weight: 400;
+  color: rgb(255, 255, 255);
 }
 
 ._input-7 {
@@ -491,6 +497,7 @@ body {
   background-color: rgb(51, 51, 51);
   font-size: 0.625em;
   font-weight: 400;
+  color: rgb(255, 255, 255);
 }
 
 ._input-8 {
@@ -505,6 +512,7 @@ body {
   background-color: rgb(51, 51, 51);
   font-size: 0.833em;
   font-weight: 400;
+  color: rgb(255, 255, 255);
 }
 
 .text a,
