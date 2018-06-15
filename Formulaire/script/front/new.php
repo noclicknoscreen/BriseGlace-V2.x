@@ -6,7 +6,7 @@ tafonction();
 <!-- Input MOT -->
 <p class="text text-1"><strong>LE MOT &nbsp;À TROUVER</strong></p>
 <input class="_input _input-2" type="text" name="mot" id="mot" onkeyup="recupmot(this.value);" value="<?php if (isset($_POST['mot'])){echo $_POST['mot'];} ?>" spellcheck="true">
-<input class="_input _input-3" type="text" id="theme" name="theme">
+<input class="_input _input-3" type="text" id="theme" name="theme" placeholder="mot clé" value="<?php if (isset($_POST['mot'])){echo $_POST['mot'];} ?>" spellcheck="true">
 <div class="element element-4" id="divmot"></div>
 <p class="text text-2"><strong>DATE</strong></p>
 <i class="_button _button-3 first-arrow fa fa-caret-down" style="font-size:24px;color:white"></i>
@@ -19,7 +19,7 @@ tafonction();
   <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ AU MOT</strong></font></p>
   <div class="element element-8"></div>
   <p class="text text-5"><strong>1-&nbsp;Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
-  <a id="flickr0" href='javascript:popup("https://www.flickr.com/search/?license=4%2C5%2C9%2C10")'><img class="image image-2" src="images/flickr.png"></a>
+  <a id="flickr0" href='javascript:popup("https://www.flickr.com")'><img class="image image-2" src="images/flickr.png"></a>
   <a id="wikipedia0" href='javascript:popup("https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal")'><img class="image image-3" src="images/wikipedia.jpg" ></a>
   <a id="noun0" href='javascript:popup("https://thenounproject.com/")'><img class="image image-4" src="images/noun.png"></a>
   <p class="text text-6"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
@@ -55,7 +55,7 @@ tafonction();
     <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ AU MOT INDICE 1</strong></font></p>
     <div class="element element-8"></div>
     <p class="text text-5"><strong>1-&nbsp;Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
-    <a id="flickr1" href='javascript:popup("https://www.flickr.com/search/?license=4%2C5%2C9%2C10")'><img class="image image-2" src="images/flickr.png"></a>
+    <a id="flickr1" href='javascript:popup("https://www.flickr.com")'><img class="image image-2" src="images/flickr.png"></a>
     <a id="wikipedia1" href='javascript:popup("https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal")'><img class="image image-3" src="images/wikipedia.jpg" ></a>
     <a id="noun1" href='javascript:popup("https://thenounproject.com/")'><img class="image image-4" src="images/noun.png"></a>
     <p class="text text-6"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
@@ -92,7 +92,7 @@ tafonction();
     <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ AU MOT INDICE 2</strong></font></p>
     <div class="element element-8"></div>
     <p class="text text-5"><strong>1 &nbsp; Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
-    <a id="flickr2" href='javascript:popup("https://www.flickr.com/search/?license=4%2C5%2C9%2C10")'><img class="image image-2" src="images/flickr.png"></a>
+    <a id="flickr2" href='javascript:popup("https://www.flickr.com")'><img class="image image-2" src="images/flickr.png"></a>
     <a id="wikipedia2" href='javascript:popup("https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal")'><img class="image image-3" src="images/wikipedia.jpg" ></a>
     <a id="noun2" href='javascript:popup("https://thenounproject.com/")'><img class="image image-4" src="images/noun.png"></a>
     <p class="text text-6"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
@@ -127,7 +127,7 @@ tafonction();
     <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ AU MOT INDICE 3</strong></font></p>
     <div class="element element-8"></div>
     <p class="text text-5"><strong>1 &nbsp; Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
-    <a id="flickr3" href='javascript:popup("https://www.flickr.com/search/?license=4%2C5%2C9%2C10")'><img class="image image-2" src="images/flickr.png"></a>
+    <a id="flickr3" href='javascript:popup("https://www.flickr.com")'><img class="image image-2" src="images/flickr.png"></a>
     <a id="wikipedia3" href='javascript:popup("https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal")'><img class="image image-3" src="images/wikipedia.jpg" ></a>
     <a id="noun3" href='javascript:popup("https://thenounproject.com/")'><img class="image image-4" src="images/noun.png"></a>
     <p class="text text-6"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
@@ -163,7 +163,7 @@ tafonction();
     <p class="text text-4"><font color="#b2b2b2" face="Quattrocento Sans"><strong>LE VISUEL ASSOCIÉ LA DÉFINITION</strong></font></p>
     <div class="element element-8"></div>
     <p class="text text-5"><strong>1 &nbsp; Je choisi une banque d'image libres de droits</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parmi les proposition ci-dessous :</strong></p>
-    <a id="flickr4" href='javascript:popup("https://www.flickr.com/search/?license=4%2C5%2C9%2C10")'><img class="image image-2" src="images/flickr.png"></a>
+    <a id="flickr4" href='javascript:popup("https://www.flickr.com")'><img class="image image-2" src="images/flickr.png"></a>
     <a id="wikipedia4" href='javascript:popup("https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal")'><img class="image image-3" src="images/wikipedia.jpg" ></a>
     <a id="noun4" href='javascript:popup("https://thenounproject.com/")'><img class="image image-4" src="images/noun.png"></a>
     <p class="text text-6"><strong>2- Je sélectionne une image puis je copie&nbsp;</strong><strong></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l'URL de l'image (adresse dans le navigateur).&nbsp;</strong></p>
