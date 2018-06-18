@@ -105,16 +105,10 @@ void cubeManagerHint::draw(){
     for(int idxCube=0; idxCube<myCubes.size(); idxCube++)
     {
         
-        ofSetColor(255, 0, 0);
-        ofDrawBox(0, 0, 0, 50, 50, 50);
-        
         ofPushMatrix();
         
         ofTranslate(myCubes[idxCube].position.x, myCubes[idxCube].position.y, myCubes[idxCube].position.z);
         ofRotate(myCubes[idxCube].currentRot, 1.0, 0.0, 0.0);
-        
-        ofSetColor(0, 255, 0);
-        ofDrawBox(0, 0, 0, 50, 50, 50);
         
         materialColor.setHue(0);
         material.setAmbientColor(materialColor);
