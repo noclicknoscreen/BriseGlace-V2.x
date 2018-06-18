@@ -16,10 +16,7 @@ public:
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
     
-    
     void update(float dt);
     void draw();
-    
-    
     
 };

@@ -50,6 +50,15 @@ void scGame3Bis::update(float dt){
     
     //        bigPlayerManager().update();
     
+    //light
+//    spotLight.setOrientation( ofVec3f( 0, 45, 30) );
+//    spotLight.setPosition(ofGetWidth()-100, 100, 0);
+    spotLight.setOrientation( ofVec3f( 0, 45, 30) );
+    spotLight.setPosition(1600, 483,0);
+    
+    lightColor.setHue(0);
+    spotLight.setDiffuseColor(lightColor);
+    
     camera.setGlobalPosition(ofVec3f(camPosX, camPosY, camPosZ));
     world.setGravity(ofVec3f(0,gravity, 0));
     
@@ -59,12 +68,7 @@ void scGame3Bis::update(float dt){
     {
         myCubes[i]->setActivationState(1);
     }
-    
-    //light
-    spotLight.setOrientation( ofVec3f( 0, 45, 30) );
-    spotLight.setPosition(ofGetWidth()-100, 100, 0);
-    lightColor.setHue(0);
-    spotLight.setDiffuseColor(lightColor);
+
     material.setSpecularColor(materialColor);
     
     //display result for 10 seconds and go to winner screen

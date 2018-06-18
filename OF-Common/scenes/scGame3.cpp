@@ -466,7 +466,7 @@ void scGame3::setupLight()
     spotLight.setSpotConcentration(0.15);
     spotLight.setDiffuseColor( ofColor(255.f, 255.f, 255.f));
     spotLight.setSpecularColor( ofColor(255.f, 255.f, 255.f));
-    spotLight.setPosition(ofGetWidth()/2, ofGetHeight()/2, 0);
+//    spotLight.setPosition(ofGetWidth()/2, ofGetHeight()/2, 0);
     spotLight.setPosition(ofGetWidth()-300, 100, 0);
     material.setShininess( 128);
     lightColor.setBrightness( 255.0f);
