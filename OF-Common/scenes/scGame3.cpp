@@ -37,9 +37,6 @@ void scGame3::setup(){
     //camera
     camera.setPosition(ofVec3f(camPosX, camPosY, camPosZ));
     
-    //physics
-    setupPhysics();
-    
     //light
     setupLight();
     
@@ -197,7 +194,9 @@ void scGame3::draw(){
     
     
     scScene::drawTitle("Mot brassé");
-    scScene::drawSubTitle("Parlez-moi dans l'oreille pour retourner les cubes");
+    
+    scScene::drawSubTitle("Trouve " + ofToString(bigEnigmaManager().getCurrentEnigma()->getTheme()));
+    scScene::drawSubTitle("Parlez-moi dans l'oreille pour retourner les cubes", ofColor::black, ofPoint(0, 50));
     
     // Draw players
     //    if(drawWinnerSign)
@@ -287,25 +286,35 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
         wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
         ofLogNotice() << "setting wantedWord to : " << wantedWord;
         
-        
-        //clean potentially previous session
+        //physics
+        setupPhysics(ofVec3f(1000.0, 1000.0, 1000.0));
+
+        // Clean potentially previous session -----------------------------------------------------------
         for(int i=0; i<myCubes.size(); i++)
         {
             myCubes[i]->remove();
         }
         myCubes.clear();
         
-        
+        // Create all cubes -----------------------------------------------------------------------------
         for(int i=0; i<wantedWord.size(); i++)
         {
+            
+            ofVec3f rdnStartPosition;
+            rdnStartPosition.x = ofRandom(-100, 100);
+            rdnStartPosition.y = ofRandom(550, 600);
+            rdnStartPosition.z = ofRandom(-50, 50);
+            
             box = new cubeRigidBody();
-            box->setup(texture, ofToString(wantedWord[i]), 40);
-            box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
+            box->setup(texture, ofToString(wantedWord[i]));
+            box->create(world.world, rdnStartPosition, .5, 80, 80, 80);
+//            box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
             
             box->add();
             box->applyForce(START_FORCE_FACTOR*ofVec3f(ofRandom(-1, 1), ofRandom(-1, 1), ofRandom(-1, 1)), box->getPosition());
             
             myCubes.push_back(box);
+            
         }
         
     }
@@ -417,40 +426,39 @@ void scGame3::setupGui()
 
 
 //--------------------------------------------------------------
-void scGame3::setupPhysics()
+void scGame3::setupPhysics(ofVec3f _boxSize)
 {
     world.setup();
     world.enableDebugDraw();
     world.setCamera(&camera);
     world.setGravity(ofVec3f(0,50,0));
     
-    float boxSize = 1000.0;
-    float yBottomOffset = 150.0;    // so the bottom of the simulation is above the avatars
-    float yTopOffset = 500.0;       // and the top is below the text
+    float   yBottomOffset = 150.0;    // so the bottom of the simulation is above the avatars
+    float   yTopOffset = 500.0;       // and the top is below the text
     
     //    void create(btDiscreteDynamicsWorld* a_world, ofVec3f a_loc, float a_mass, float a_sizeX, float a_sizeY, float a_sizeZ );
     
-    ground.create   (world.world, ofVec3f(0, 0, 0 - yBottomOffset), 0., boxSize, 1.f, boxSize);
+    ground.create   (world.world, ofVec3f(0, 0, 0 - yBottomOffset), 0., _boxSize.x, 1.f, _boxSize.z);
     ground.setProperties(.25, .55);
     ground.add();
     
-    rightFace.create(world.world, ofVec3f(boxSize/2 - 100, 0, 0 - yBottomOffset), 0., 1, boxSize, boxSize*5);
+    rightFace.create(world.world, ofVec3f(_boxSize.x/2 - 100, 0, 0 - yBottomOffset), 0., 1, _boxSize.y, _boxSize.z * 5);
     rightFace.setProperties(.25, .95);
     rightFace.add();
     
-    leftFace.create (world.world, ofVec3f(-(boxSize/2 - 100), 0, 0- yBottomOffset), 0., 1, boxSize, boxSize*5);
+    leftFace.create (world.world, ofVec3f(-(_boxSize.x/2 - 100), 0, 0- yBottomOffset), 0., 1, _boxSize.y, _boxSize.z * 5);
     leftFace.setProperties(.25, .95);
     leftFace.add();
     
-    bottom.create   (world.world, ofVec3f(0, 0, -boxSize/2 -yBottomOffset + yTopOffset), 0., boxSize, boxSize, 1 );
+    bottom.create   (world.world, ofVec3f(0, 0, -_boxSize.z/2 -yBottomOffset + yTopOffset), 0., _boxSize.x, _boxSize.y, 1 );
     bottom.setProperties(.25, .95);
     bottom.add();
     
-    front.create    (world.world, ofVec3f(0, 0, boxSize/2 - yBottomOffset - 150), 0., boxSize, boxSize, 1 );
+    front.create    (world.world, ofVec3f(0, 0, _boxSize.z/2 - yBottomOffset - 150), 0., _boxSize.x, _boxSize.y, 1 );
     front.setProperties(.25, .95);
     front.add();
     
-    top.create      (world.world, ofVec3f(0, boxSize/2, 0- yBottomOffset), 0., boxSize, 1, boxSize );
+    top.create      (world.world, ofVec3f(0, _boxSize.y/2, 0- yBottomOffset), 0., _boxSize.x, 1, _boxSize.z );
     top.setProperties(.25, .95);
     //top.add();
     

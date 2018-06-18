@@ -89,6 +89,11 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
 //    restartTimerSignHint();
     timerSignHint.stop();
     
+    // Reset all signs
+    bigPlayerManager().stopSign(1);
+    bigPlayerManager().stopSign(2);
+    bigPlayerManager().stopSign(3);
+    
     // Player manager events
     ofAddListener(timerBeforeHint.timerEnd, this,&scGame::timerBeforeHintEnd);
     ofAddListener(timerSignHint.timerEnd,   this,&scGame::timerSignHintEnd);
@@ -100,6 +105,11 @@ void scGame::sceneWillDisappear( ofxScene * toScreen ){
     scScene::sceneWillDisappear(toScreen);
     
     timerBeforeHint.stop();
+    
+    // Reset all signs
+    bigPlayerManager().stopSign(1);
+    bigPlayerManager().stopSign(2);
+    bigPlayerManager().stopSign(3);
     
     // Disable timer events
     ofRemoveListener(timerBeforeHint.timerEnd,  this,&scGame::timerBeforeHintEnd);

@@ -25,7 +25,7 @@ public:
     void update(float dt);
 	void draw();
     void setupGui();
-    void setupPhysics();
+    void setupPhysics(ofVec3f _boxSize);
     void setupLight();
     
     void someoneSpoke(player & _player);

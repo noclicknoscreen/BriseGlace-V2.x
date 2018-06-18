@@ -71,6 +71,7 @@ void scGame1::draw(){ //draw scene 1 here
     
     // Draw title
     scScene::drawTitle("Mot masqué en " + ofToString(bigEnigmaManager().getCurrentEnigma()->getSolution().size()) + " lettres");
+    scScene::drawTitle("Trouve un " + ofToString(bigEnigmaManager().getCurrentEnigma()->getTheme()));
     scScene::drawSubTitle("Dites un mot pour voir");
     
     // Draw cubes

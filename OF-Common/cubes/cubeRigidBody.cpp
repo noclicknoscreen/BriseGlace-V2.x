@@ -105,11 +105,11 @@ void cubeRigidBody::setTexture(ofImage _texture)
     texture = _texture;
 }
 
-void cubeRigidBody::setup(ofImage _image, string _letter, float _size)
+void cubeRigidBody::setup(ofImage _image, string _letter)
 {
     setTexture(_image);
     setLetter(_letter);
-    font.load(globalFontName, 34);
+    font.load(globalFontName, globalFontSizeMedium);
     
     //setSize(_size);
 }

@@ -102,7 +102,3 @@ void cube::setLetter(string _letter)
     myLetter = _letter;
 }
 
-void cube::setMaterialColor(ofColor _color)
-{
-    materialColor = _color;
-}

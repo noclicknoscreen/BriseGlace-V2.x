@@ -49,6 +49,8 @@ public:
     // no root implementation
     virtual void    compareInput(string wantedWord) = 0;
     
+    void reset();
+    
     ofEvent<void> readyForNewText;
     
 private:

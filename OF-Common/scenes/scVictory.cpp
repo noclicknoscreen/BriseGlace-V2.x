@@ -58,8 +58,8 @@ void scVictory::draw(){ //draw scene 1 here
     scScene::drawTitle(bigEnigmaManager().getCurrentEnigma()->getTitleRecompense(), ofColor::black, ofPoint(0,50));
     
     winnerText.setColor(0, 0, 0, 255);
-    winnerText.wrapTextX(ofGetWidth()/3);
-    winnerText.draw(ofGetWidth()/2, ofGetHeight()/3);
+    winnerText.wrapTextX(0.4 * ofGetWidth());
+    winnerText.draw(ofGetWidth()/2, 0.33 * ofGetHeight());
     
 };
 

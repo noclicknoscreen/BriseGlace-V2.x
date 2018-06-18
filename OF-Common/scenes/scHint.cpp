@@ -92,6 +92,8 @@ void scHint::sceneWillAppear( ofxScene * fromScreen ){
     
     // -- -- -- -- --
     mTimerBeforeRoll.startTimer(3);
+    mTimerStartRoll.stop();
+    mTimerEndScene.stop();
     
     // events ---
     ofAddListener(mTimerEndScene.timerEnd, this, &scHint::timerEndScene);
@@ -104,6 +106,7 @@ void scHint::sceneWillAppear( ofxScene * fromScreen ){
 void scHint::sceneWillDisappear( ofxScene * toScreen){
     scScene::sceneWillDisappear(toScreen);
     
+    // -- -- -- -- --
     mTimerStartRoll.stop();
     mTimerBeforeRoll.stop();
     mTimerEndScene.stop();
@@ -120,11 +123,14 @@ void scHint::sceneWillDisappear( ofxScene * toScreen){
 // Speaking event
 void scHint::someoneSpoke(player & _player){
     // Waiting for a test (j'ai dit oui')
+    if(mTimerStartRoll.isAnimating() == false){
     // --------------------------------
-    ofxSceneManager::instance()->goToScene(from->getSceneID());
+        ofxSceneManager::instance()->goToScene(from->getSceneID());
+    }
 }
 void scHint::timerEndScene(){
     // --------------------------------
+    mTimerStartRoll.stop();
     ofxSceneManager::instance()->goToScene(from->getSceneID());
 }
 void scHint::timerBeforeRollEnd(){
@@ -144,7 +150,7 @@ void scHint::timerStartRollEnd(){
         currentCube++;
         mTimerStartRoll.startTimer(0.5);
     }else{
-        mTimerEndScene.startTimer(1);
+        mTimerEndScene.startTimer(10);
         mTimerStartRoll.stop();
     }
 }

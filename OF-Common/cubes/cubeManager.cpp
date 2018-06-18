@@ -123,9 +123,34 @@ void cubeManager::drawTexturedCube(ofImage *texture, int i, float texCoordX_min,
 
 }
 
+// Here we colorize cubes
 void cubeManager::colorizeCube(int cubeId, ofColor _color)
 {
-    myCubes[cubeId].setMaterialColor(_color);
+    
+    int compareNb;
+    
+    switch (bigEnigmaManager().getCurrentGameType()) {
+            
+        case IMAGE_GRID:
+            // In Memory, we test if the letter is in the solution word
+            compareNb = ofStringTimesInString(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()), myCubes[cubeId].myLetter);
+            ofLogNotice() << "Colorize : The letter is [" << myCubes[cubeId].myLetter << "] and the enigma is [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "]" << " NB=" << compareNb;
+            
+            if(compareNb > 0){
+                // Good, we color
+                myCubes[cubeId].setMaterialColor(_color);
+            }else{
+                // Not Good, keep white
+                myCubes[cubeId].setMaterialColor(ofColor::white);
+            }
+            break;
+            
+        default:
+            // Set the color anyway
+            myCubes[cubeId].setMaterialColor(_color);
+            break;
+    }
+    
 }
 void cubeManager::rotateToWhite(int _idxCube)
 {

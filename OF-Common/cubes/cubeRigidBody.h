@@ -24,7 +24,7 @@ public:
     
     void setLetter(string _letter);
     void setTexture(ofImage _texture);
-    void setup(ofImage _image, string _letter, float _size);
+    void setup(ofImage _image, string _letter);
 };
 
 

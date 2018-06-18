@@ -103,8 +103,8 @@ void cubeManagerMemory::draw(){
             // FACE AVEC IMAGE --------------------------------------------------
             ofPushMatrix();
             material.begin();
-            material.setAmbientColor(myCubes[idxCube].materialColor);
-            material.setDiffuseColor(ofColor(myCubes[idxCube].materialColor, 140)); //add some transparency here, to keep the texture visible ;)
+            material.setAmbientColor(myCubes[idxCube].getMaterialColor());
+            material.setDiffuseColor(ofColor(myCubes[idxCube].getMaterialColor(), 140)); //add some transparency here, to keep the texture visible ;)
         
         
             int row = idxCube % mNbRows;
@@ -123,12 +123,14 @@ void cubeManagerMemory::draw(){
         
             material.end();
             ofPopMatrix();
-            // END FACE BLANCHE --------------------------------------------------
+            // END FACE AVEC IMAGE --------------------------------------------------
         
-            // FACE BLANCHE --------------------------------------------------
+            // FACE DE COULEUR --------------------------------------------------
             material.begin();
-            material.setAmbientColor(myCubes[idxCube].materialColor);
-            material.setDiffuseColor(ofColor(myCubes[idxCube].materialColor, 140)); //add some transparency here, to keep the texture visible ;)
+        
+            // La couleur du cube est blanche ou de couleur selon la bonne réponse
+            material.setAmbientColor(myCubes[idxCube].getMaterialColor());
+            material.setDiffuseColor(ofColor(myCubes[idxCube].getMaterialColor(), 140)); //add some transparency here, to keep the texture visible ;)
         
             ofEnableNormalizedTexCoords();
             for(int i=0; i<myCubes.size(); i++)
@@ -139,7 +141,7 @@ void cubeManagerMemory::draw(){
                 ofPopMatrix();
             }
             material.end();
-            // END FACE BLANCHE --------------------------------------------------
+            // END FACE DE COULEUR --------------------------------------------------
         
             // DEBUT LETTRE ------------------------------------------------
             float textHeight, textWidth;

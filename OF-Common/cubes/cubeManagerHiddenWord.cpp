@@ -55,9 +55,9 @@ void cubeManagerHiddenWord::draw(){
             
             
             //FACE BLANCHE
-            material.setAmbientColor(myCubes[i].materialColor);
+            material.setAmbientColor(myCubes[i].getMaterialColor());
         
-            material.setDiffuseColor(ofColor(myCubes[i].materialColor, 140)); //add some transparency here, to keep the texture visible ;)
+            material.setDiffuseColor(ofColor(myCubes[i].getMaterialColor(), 140)); //add some transparency here, to keep the texture visible ;)
             material.begin();
         
             ofEnableNormalizedTexCoords();
