@@ -1,4 +1,5 @@
 {
+    "theme": "un mode de transport",
     "mot": {
         "titre": "Wagon-Lit",
         "image": "image0.jpg",
@@ -12,9 +13,9 @@
             "titre": "L'Orient Express",
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/fd\/L%27Orient_Express_vers_1930_%28c%29_wagons-lits_diffusion.jpg",
-            "auteur": "WLDiffusion",
-            "date": "2 septembre 2014"
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/b\/bf\/Gare_Austerlitz_Orient_expres_2.jpg",
+            "auteur": "Smiley.toerist",
+            "date": "1 mai 1983"
         },
         {
             "titre": "Georges Nagelmackers",
@@ -35,13 +36,13 @@
     ],
     "recompense": {
         "indice": {
-            "titre": "Compagnie internationale des Wagons-lits",
+            "titre": "LA Compagnie internationale des Wagons-lits",
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/4a\/CIWL-Logo-bleu.jpg",
             "auteur": "Tamorlan",
             "date": "18 février 2014"
         },
-        "legende": "La Compagnie internationale des Wagons-lits est une entreprise française d'origine belge, fondée par Georges Nagelmackers en 1872. Intercités de nuit désigne, depuis 2012, le service de trains de nuit réguliers, proposé par la (SNCF), réalisé avec des voitures Corail."
+        "legende": "La Compagnie internationale des Wagons-lits est une entreprise française d'origine belge, fondée par Georges Nagelmackers en 1872. Intercités de nuit désigne, depuis 2012, le service de trains de nuit réguliers, proposé par la SNCF, réalisé avec des voitures Corail."
     }
 }

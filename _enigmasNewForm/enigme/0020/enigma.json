@@ -1,0 +1,48 @@
+{
+    "theme": "un métier",
+    "mot": {
+        "titre": "blogueuse",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/c2.staticflickr.com\/8\/7248\/7419512924_00f8169cd8_b.jpg",
+        "auteur": "inconnu",
+        "date": "3 mars 2012 "
+    },
+    "indice": [
+        {
+            "titre": "Experte",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/8\/7013\/6569944913_9da2d76eb9_b.jpg",
+            "auteur": "Yohann Legrand",
+            "date": "11 décembre 2011 "
+        },
+        {
+            "titre": "passionnée",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/4\/3427\/3244186572_9d1c143c83_b.jpg",
+            "auteur": " Lauri Rantala",
+            "date": "23 janvier 2009"
+        },
+        {
+            "titre": "internet",
+            "image": "image3.png",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/d30y9cdsu7xlg0.cloudfront.net\/png\/326129-200.png",
+            "auteur": "priyanka",
+            "date": "inconnue"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "blogueuse",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/8\/7248\/7419512924_00f8169cd8_b.jpg",
+            "auteur": "inconnu",
+            "date": "3 mars 2012 "
+        },
+        "legende": "Auteur d’un blogue. Personne utilisant Internet comme un moyen de communication pour s’exprimer et diffuser de l’information sur différents sujets pour lesquels elle a une expertise ou une passion. Utilisant les mots, la photo, les vidéos, le blogueur remixe régulièrement les contenus de différentes sources provenant des médias traditionnels, des communautés en ligne, d’autres blogues et de sites à contenus.\r\n"
+    }
+}

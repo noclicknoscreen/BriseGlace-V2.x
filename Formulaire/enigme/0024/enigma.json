@@ -1,0 +1,48 @@
+{
+    "theme": "un héros",
+    "mot": {
+        "titre": "abbé pierre",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/6\/65\/ABBE_PIERRE-1999Without.jpg",
+        "auteur": "Studio Harcourt ",
+        "date": "7 août 2010"
+    },
+    "indice": [
+        {
+            "titre": "Hiver 54",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/5\/4085\/5071112318_51b0a723ab_b.jpg",
+            "auteur": "phalenebdlv",
+            "date": "hiver 54"
+        },
+        {
+            "titre": "Henri Grouès",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/64\/Abb%C3%A9_Pierre_%281955%29.jpg\/800px-Abb%C3%A9_Pierre_%281955%29.jpg",
+            "auteur": "Wim van Rossem",
+            "date": "7 août 1955"
+        },
+        {
+            "titre": "mouvement Emmaüs",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/5\/4371\/36763175530_fa4708f178_b.jpg",
+            "auteur": "Filippo Tarchiani",
+            "date": "vers 1625"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "L'abbé pierre",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/6\/65\/ABBE_PIERRE-1999Without.jpg",
+            "auteur": "Studio Harcourt ",
+            "date": "7 août 2010"
+        },
+        "legende": "Henri Grouès, dit l’abbé Pierre est le fondateur du mouvement Emmaüs : organisation non-confessionnelle de lutte contre l'exclusion. Durant l'hiver de 1954, il lance un appel sur les ondes qui rapportera 500 millions de francs en dons, dont 2 millions par Charlie Chaplin qui dira à cette occasion : “Je ne les donne pas, je les rends. Ils appartiennent au vagabond que j'ai été et que j'ai incarné.”"
+    }
+}

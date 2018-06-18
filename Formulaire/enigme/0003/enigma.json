@@ -1,9 +1,10 @@
 {
+    "theme": "un lieu de méditation",
     "mot": {
         "titre": "Couvent",
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
-        "url": "https:\/\/c2.staticflickr.com\/2\/1398\/556651580_168212776a_o.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/fr\/f\/f5\/La_tourette-_arq._Le_Corbusier.jpg",
         "auteur": "fusion-of-horizons",
         "date": "24 octobre 2002"
     },
@@ -42,6 +43,6 @@
             "auteur": "Alexandre Norman",
             "date": "2007-09-16"
         },
-        "legende": "Le couvent de La Tourette est une œuvre majeure de l'architecte Le Corbusier. Les vitrages se veulent l'adaptation de son œuvre Metastasis composée par Iannis Xenakis. L'artiste plasticien Anish Kapoor fut l'invité de la dernière biennale d'art contemporain."
+        "legende": "Le couvent de La Tourette est une œuvre majeure de l'architecte Le Corbusier. Les vitrages se veulent l'adaptation de l'œuvre Metastasis composée par Iannis Xenakis. L'artiste plasticien Anish Kapoor fut l'invité de la dernière biennale d'art contemporain."
     }
 }

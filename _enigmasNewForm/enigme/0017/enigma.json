@@ -1,0 +1,48 @@
+{
+    "theme": "un objet du train",
+    "mot": {
+        "titre": "pantographe",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/8c\/Pantograf_2.jpg",
+        "auteur": "Sheep221",
+        "date": "31 mars 2006"
+    },
+    "indice": [
+        {
+            "titre": "caténaire",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/6\/5332\/7417425976_65484282d6_b.jpg",
+            "auteur": "JPC24M",
+            "date": "13 mai 2012 "
+        },
+        {
+            "titre": "locomotive électrique",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/6\/5341\/9772761856_36475bf049_b.jpg",
+            "auteur": "Patrick Janicek",
+            "date": "14 septembre 2013 "
+        },
+        {
+            "titre": "Losange",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/8\/7749\/17603762543_7028bfa130_b.jpg",
+            "auteur": "Étienne Pouvreau",
+            "date": "19 mai 2015 "
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "pantographe",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/f4\/Pantograaf_lichtrail.jpg",
+            "auteur": "inconnu",
+            "date": "6 mars 2005"
+        },
+        "legende": "Le pantographe est le dispositif articulé qui permet à une locomotive électrique ou à un tramway ou à d'autres systèmes automoteurs électriques de capter le courant par frottement sur une caténaire."
+    }
+}

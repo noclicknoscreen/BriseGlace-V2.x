@@ -1,0 +1,48 @@
+{
+    "theme": "un personnage relou",
+    "mot": {
+        "titre": "troll",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/c2.staticflickr.com\/8\/7134\/7578316830_c9a817f081_b.jpg",
+        "auteur": "Jan Hammershaug",
+        "date": "15 juillet 2012 "
+    },
+    "indice": [
+        {
+            "titre": "folklore scandinave",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/1\/12\/Trollschild.jpg",
+            "auteur": "Sebastian.Dietrich ",
+            "date": "30 août 2007"
+        },
+        {
+            "titre": "internet",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/3\/2878\/9561063863_4d51030596_b.jpg",
+            "auteur": "Illustrator LdreiT",
+            "date": "21 août 2013 "
+        },
+        {
+            "titre": "discussion",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/2\/1001\/634224242_1d827058c5_o.jpg",
+            "auteur": " Bill Wren",
+            "date": "26 juin 2007 "
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "troll",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/6\/5060\/5501482868_1264028a9e_b.jpg",
+            "auteur": " Cami Valderrama",
+            "date": "5 mars 2011 "
+        },
+        "legende": "Inspiré du floklore scandinave, on peut se retrouver clic à clic avec un troll sur le net. On les trouve sur les forums ou les réseaux sociaux. Ils se distinguent par leur capacité à créer artificiellement une controverse qui focalise l'attention sur cette dernière aux dépens des échanges et de l'équilibre de la discussion."
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "theme": "un métier",
+    "mot": {
+        "titre": "exploratrice",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/e3\/Jeanne_Barret.jpg",
+        "auteur": "inconnu",
+        "date": "inconnue"
+    },
+    "indice": [
+        {
+            "titre": "Voyageuse",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/e4\/Recherche_and_Esp%C3%A9rance-Fran%C3%A7ois_Roux_mg_0574.jpg\/1920px-Recherche_and_Esp%C3%A9rance-Fran%C3%A7ois_Roux_mg_0574.jpg",
+            "auteur": "inconnu",
+            "date": "inconnue"
+        },
+        {
+            "titre": "curieuse",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/4\/3417\/5804110695_a3b8aa1841_b.jpg",
+            "auteur": "Peter Hellberg",
+            "date": "2 juin 2011 "
+        },
+        {
+            "titre": "courageuse",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/1\/1\/128391936_44e3cd651d_b.jpg",
+            "auteur": " Tommy Wong",
+            "date": "14 avril 2006 "
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "Jeanne Barret",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/e3\/Jeanne_Barret.jpg",
+            "auteur": "inconnu",
+            "date": "inconnue"
+        },
+        "legende": "Exploratrice et botaniste du XVIIIème siècle, Jeanne Barret est notamment connue pour être la première femme à avoir fait le tour du monde sur l'expédition de Bougainville. Déguisée en homme, elle est engagée sous le nom de Jean Baret comme valet et assistant du naturaliste Philibert Commerson. Plus tard elle l'aidera à consigner et répertorier les végétaux et à réorganiser les jardins de Lyon. "
+    }
+}

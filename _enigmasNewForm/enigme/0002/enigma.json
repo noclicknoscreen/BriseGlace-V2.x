@@ -1,11 +1,12 @@
 {
+    "theme": "un lieu de transit",
     "mot": {
-        "titre": "gare",
-        "image": "image0.png",
+        "titre": "SAINT-PAUL",
+        "image": "image0.JPG",
         "image-crop": "image0-crop.jpg",
-        "url": "https:\/\/d30y9cdsu7xlg0.cloudfront.net\/png\/1493048-200.png",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/96\/GareStPaulLyon.JPG",
         "auteur": "Andrea Caldarelli",
-        "date": "Inconnu"
+        "date": "Inconnue"
     },
     "indice": [
         {
@@ -42,6 +43,6 @@
             "auteur": "Gotty",
             "date": "28 septembre 2006"
         },
-        "legende": "Chaque jour, 5 500 voyageurs passent par la gare Saint-Paul située dans le vieux Lyon ou fut tourné le film de Bertran Tavernier « L'horloger de Saint Paul » en 1974. Le premier tram-train fut inauguré en septembre 2012."
+        "legende": "Chaque jour, 5 500 voyageurs passent par la gare Saint-Paul située dans le vieux Lyon où fut tourné le film de Bertrand Tavernier  “L'horloger de Saint Paul” 1974. Le premier tram-train fut inauguré en septembre 2012."
     }
 }
