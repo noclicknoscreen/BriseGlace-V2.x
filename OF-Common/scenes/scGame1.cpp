@@ -52,6 +52,7 @@ void scGame1::update(float dt){ //update scene 1 here
         bigPlayerManager().setWinnerUserId(id);
         bigPlayerManager().startSign(id, "C'est gagné !");
         restartTimerSignWin();
+        stopHint();
         ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
     }
 

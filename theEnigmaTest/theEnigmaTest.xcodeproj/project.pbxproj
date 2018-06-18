@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1CB20F5220A59603004D2214 /* enigma.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CB20F4E20A59603004D2214 /* enigma.cpp */; };
 		1CB20F5320A59603004D2214 /* enigmaManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CB20F5020A59603004D2214 /* enigmaManager.cpp */; };
+		1CD83BE020D7BA0E00C873FB /* cubeRigidBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CD83BDE20D7BA0E00C873FB /* cubeRigidBody.cpp */; };
 		BEDFEE7400C58EA4E412B757 /* ofxJSONElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2B099E6BD1199664C48B177 /* ofxJSONElement.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
@@ -52,6 +53,8 @@
 		1CB20F5020A59603004D2214 /* enigmaManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = enigmaManager.cpp; path = "../../OF-Common/enigmaManager.cpp"; sourceTree = "<group>"; };
 		1CB20F5120A59603004D2214 /* enigmaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = enigmaManager.h; path = "../../OF-Common/enigmaManager.h"; sourceTree = "<group>"; };
 		1CB20F5620A599B8004D2214 /* enigmaHint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = enigmaHint.h; path = "../../OF-Common/enigmaHint.h"; sourceTree = "<group>"; };
+		1CD83BDE20D7BA0E00C873FB /* cubeRigidBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cubeRigidBody.cpp; path = "../OF-Common/cubes/cubeRigidBody.cpp"; sourceTree = "<group>"; };
+		1CD83BDF20D7BA0E00C873FB /* cubeRigidBody.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = cubeRigidBody.hpp; path = "../OF-Common/cubes/cubeRigidBody.hpp"; sourceTree = "<group>"; };
 		21BDE665988474F1B1F4D302 /* jsoncpp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = jsoncpp.cpp; path = ../../../addons/ofxJSON/libs/jsoncpp/src/jsoncpp.cpp; sourceTree = SOURCE_ROOT; };
 		26A541233BC6F736E758F718 /* ofxJSONElement.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJSONElement.h; path = ../../../addons/ofxJSON/src/ofxJSONElement.h; sourceTree = SOURCE_ROOT; };
 		2C7CF000B7B4F782C187C353 /* json.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = json.h; path = ../../../addons/ofxJSON/libs/jsoncpp/include/json/json.h; sourceTree = SOURCE_ROOT; };
@@ -170,6 +173,8 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
+				1CD83BDE20D7BA0E00C873FB /* cubeRigidBody.cpp */,
+				1CD83BDF20D7BA0E00C873FB /* cubeRigidBody.hpp */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
@@ -298,6 +303,7 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				1CB20F5220A59603004D2214 /* enigma.cpp in Sources */,
 				1CB20F5320A59603004D2214 /* enigmaManager.cpp in Sources */,
+				1CD83BE020D7BA0E00C873FB /* cubeRigidBody.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				BEDFEE7400C58EA4E412B757 /* ofxJSONElement.cpp in Sources */,
 				FB84AAF8D1B7A95266DB5C09 /* jsoncpp.cpp in Sources */,

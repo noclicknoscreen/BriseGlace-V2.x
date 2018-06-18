@@ -1,0 +1,143 @@
+//
+//  scGame3Bis.cpp
+//  theBigGame
+//
+//  Created by Sébastien Albert on 18/06/2018.
+//
+//
+
+#include "scGame3Bis.h"
+
+//--------------------------------------------------------------
+void scGame3Bis::sceneWillAppear( ofxScene * fromScreen ){
+    
+    scGame::sceneWillAppear(fromScreen);
+    spotLight.enable();
+    
+    //now comes from enigma Singleton
+    wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
+    
+    for(int i=0; i<myCubes.size(); i++)
+    {
+        myCubes[i]->remove();
+    }
+    myCubes.clear();
+    
+    for(int i=0; i<wantedWord.size(); i++)
+    {
+        box = new cubeRigidBody();
+        //            box->setup(texture, ofToString(wantedWord[wantedWord.size()-(i+1)]), 40);
+        box->setup(texture, ofToString(wantedWord[i]), 40);
+        box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
+        
+        box->add();
+        
+        myCubes.push_back(box);
+    }
+    
+    timer = ofGetElapsedTimef();
+    
+};
+
+//--------------------------------------------------------------
+void scGame3Bis::sceneWillDisappear( ofxScene * fromScreen ){
+    scGame::sceneWillAppear(fromScreen);
+};
+
+
+//--------------------------------------------------------------
+void scGame3Bis::update(float dt){
+    
+    //        bigPlayerManager().update();
+    
+    camera.setGlobalPosition(ofVec3f(camPosX, camPosY, camPosZ));
+    world.setGravity(ofVec3f(0,gravity, 0));
+    
+    world.update();
+    
+    for(int i=0; i<myCubes.size(); i++)
+    {
+        myCubes[i]->setActivationState(1);
+    }
+    
+    //light
+    spotLight.setOrientation( ofVec3f( 0, 45, 30) );
+    spotLight.setPosition(ofGetWidth()-100, 100, 0);
+    lightColor.setHue(0);
+    spotLight.setDiffuseColor(lightColor);
+    material.setSpecularColor(materialColor);
+    
+    //display result for 10 seconds and go to winner screen
+    if(ofGetElapsedTimef() - timer > 5)
+    {
+        ofxSceneManager::instance()->goToScene(9);
+    }
+    
+    
+    //materialColor = winnerColor;
+    
+};
+
+
+//--------------------------------------------------------------
+void scGame3Bis::draw(){
+    
+    ofEnableAntiAliasing();
+    ofEnableSmoothing();
+    ofEnableAlphaBlending();
+    ofEnableDepthTest();
+    
+    ofSetBackgroundColor(255);
+    
+    ofEnableLighting();
+    ofSetSmoothLighting(true);
+    
+    material.setAmbientColor(materialColor);
+    material.setDiffuseColor(materialColor);
+    
+    camera.begin();
+    
+#if defined DRAW_DEBUG
+    ofSetColor(100, 100, 100);
+    ofNoFill();
+    ground.draw();
+    rightFace.draw();
+    leftFace.draw();
+    bottom.draw();
+    ofFill();
+    
+    spotLight.draw();
+#endif
+    
+    material.begin();
+    for(int i=0; i<myCubes.size(); i++)
+    {
+        myCubes[i]->customDraw(bigPlayerManager().getUserColor(bigPlayerManager().getWinnerUserId()));
+        //            myCubes[i]->customDraw(ofColor::blueSteel);
+    }
+    material.end();
+    ofDisableLighting();
+    
+#if defined DRAW_DEBUG
+    world.drawDebug();
+#endif
+    
+    camera.end();
+    
+    
+    ofDisableDepthTest();
+    
+    if(bDrawGui)
+        gui.draw();
+    
+    //ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
+    
+    // Draw title
+    scScene::drawTitle("Mot brassé");
+    //scScene::drawSubTitle("Parlez dans l'oreille pour retourner les cubes");
+    
+    // Draw players
+    bigPlayerManager().draw();
+    
+}
+

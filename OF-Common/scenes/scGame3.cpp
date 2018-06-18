@@ -21,7 +21,7 @@ void scGame3::setup(){
     
     scScene::setup();
     ofLogNotice() << "Game 3 : Setup !";
-
+    
     //gui
     setupGui();
     
@@ -36,7 +36,7 @@ void scGame3::setup(){
     
     //camera
     camera.setPosition(ofVec3f(camPosX, camPosY, camPosZ));
-
+    
     //physics
     setupPhysics();
     
@@ -44,16 +44,16 @@ void scGame3::setup(){
     setupLight();
     
     //now comes from enigma Singleton
-//    wantedWord = "BONHEUR";
+    //    wantedWord = "BONHEUR";
     
     //view from top
     camera.rotate(-80, ofVec3f(1,0,0));
     
     //load background
-//    background.load("Decor_SS-Sol.png");
+    //    background.load("Decor_SS-Sol.png");
     
     colorizeCubes=false;
-
+    
 };
 
 
@@ -66,7 +66,7 @@ void scGame3::update(float dt){
     
     camera.setGlobalPosition(ofVec3f(camPosX, camPosY, camPosZ));
     world.setGravity(ofVec3f(0,gravity, 0));
-
+    
     world.update();
     
     for(int i=0; i<myCubes.size(); i++)
@@ -88,7 +88,7 @@ void scGame3::update(float dt){
     //apply forces after 5 seconds
     if(ofGetElapsedTimef() - timer > 5)
     {
-
+        
         ofVec3f randomForce;
         float amountPlayer1 = ofMap(bigPlayerManager().getUserVolume(1), volumeBorneMin, volumeBorneMax, volumeBorneMin, volumeBorneMax);
         if(testIs1){
@@ -131,17 +131,17 @@ void scGame3::update(float dt){
                               constantZ
                               );
         applyForceOnCubes(randomForce, ofPoint(-500, 0, 0));
-
+        
     }
     
-
-//    mTimerEndScene.update(dt);
+    
+    //    mTimerEndScene.update(dt);
     
 };
 
 //--------------------------------------------------------------
 void scGame3::draw(){
-
+    
     ofEnableAntiAliasing();
     ofEnableSmoothing();
     ofEnableAlphaBlending();
@@ -194,18 +194,18 @@ void scGame3::draw(){
 #if defined DRAW_DEBUG
     ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
 #endif
-
+    
     
     scScene::drawTitle("Mot brassé");
     scScene::drawSubTitle("Parlez-moi dans l'oreille pour retourner les cubes");
-
+    
     // Draw players
-//    if(drawWinnerSign)
-//        bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
-//    else if(drawHintSign)
-//        bigPlayerManager().draw(hintUserId, "veux-tu un indice?");
-//    else
-        bigPlayerManager().draw();
+    //    if(drawWinnerSign)
+    //        bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
+    //    else if(drawHintSign)
+    //        bigPlayerManager().draw(hintUserId, "veux-tu un indice?");
+    //    else
+    bigPlayerManager().draw();
     
     
 };
@@ -220,20 +220,20 @@ void scGame3::exit()
 void scGame3::someoneSpoke(player & _player){
     // We don't do the root (because we want to see the hint anyway)
     scScene::someoneSpoke(_player);
-//
-//    std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord));
-//    if(index != std::string::npos)
-//    {
-//        ofLogNotice() << "c'est gagné !!! ";
-//        bigPlayerManager().setWinnerUserId(_player.getNumber());
-//        restartTimerSignWin();
-//        drawWinnerSign = true;
-//
-//        ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
-//
-//        //ofxSceneManager::instance()->goToScene(7, true, false);
-//    }
-//
+    //
+    //    std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord));
+    //    if(index != std::string::npos)
+    //    {
+    //        ofLogNotice() << "c'est gagné !!! ";
+    //        bigPlayerManager().setWinnerUserId(_player.getNumber());
+    //        restartTimerSignWin();
+    //        drawWinnerSign = true;
+    //
+    //        ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
+    //
+    //        //ofxSceneManager::instance()->goToScene(7, true, false);
+    //    }
+    //
     
     int compare = ofStringTimesInString(utils::toUpperCase(_player.getLastMessage()), utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
     if(compare > 0)
@@ -242,7 +242,9 @@ void scGame3::someoneSpoke(player & _player){
         bigPlayerManager().setWinnerUserId(_player.getNumber());
         bigPlayerManager().startSign(_player.getNumber(), "C'est gagné !");
         restartTimerSignWin();
-//        drawWinnerSign = true;
+        stopHint();
+        
+        //        drawWinnerSign = true;
         
         ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
         
@@ -263,22 +265,22 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
     scGame::sceneWillAppear(fromScreen);
     spotLight.enable();
-
+    
     // Player manager events
     ofAddListener(timerSignWin.timerEnd,    this,&scGame3::timerSignWinEnd);
     
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
     
-//    // Erase all words of every one
-//    bigPlayerManager().freshRestart();
-
+    //    // Erase all words of every one
+    //    bigPlayerManager().freshRestart();
+    
     // On ne refiat pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
         
         // Reset winner
         bigPlayerManager().setWinnerUserId(0);
-
+        
         //now comes from enigma Singleton
         bigEnigmaManager().pickNewEnigma(BOGGLE);
         
@@ -296,16 +298,16 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
         
         for(int i=0; i<wantedWord.size(); i++)
         {
-            box = new specialBox();
+            box = new cubeRigidBody();
             box->setup(texture, ofToString(wantedWord[i]), 40);
             box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
-     
+            
             box->add();
             box->applyForce(START_FORCE_FACTOR*ofVec3f(ofRandom(-1, 1), ofRandom(-1, 1), ofRandom(-1, 1)), box->getPosition());
             
             myCubes.push_back(box);
         }
-
+        
     }
     
     
@@ -313,11 +315,11 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
     bigPlayerManager().setWinnerUserId(0);
     
-//    mTimerEndScene.startTimer(45);
+    //    mTimerEndScene.startTimer(45);
     
-//    drawHintSign = 0;
-//    drawWinnerSign = 0;
-
+    //    drawHintSign = 0;
+    //    drawWinnerSign = 0;
+    
 };
 
 //--------------------------------------------------------------
@@ -325,13 +327,13 @@ void scGame3::sceneWillDisappear( ofxScene * toScreen ){
     
     scGame::sceneWillDisappear(toScreen);
     spotLight.disable();
-
+    
     // Disable timer events
     ofRemoveListener(timerSignWin.timerEnd,     this,&scGame3::timerSignWinEnd);
     
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
-
+    
 };
 
 
@@ -426,7 +428,7 @@ void scGame3::setupPhysics()
     float yBottomOffset = 150.0;    // so the bottom of the simulation is above the avatars
     float yTopOffset = 500.0;       // and the top is below the text
     
-//    void create(btDiscreteDynamicsWorld* a_world, ofVec3f a_loc, float a_mass, float a_sizeX, float a_sizeY, float a_sizeZ );
+    //    void create(btDiscreteDynamicsWorld* a_world, ofVec3f a_loc, float a_mass, float a_sizeX, float a_sizeY, float a_sizeZ );
     
     ground.create   (world.world, ofVec3f(0, 0, 0 - yBottomOffset), 0., boxSize, 1.f, boxSize);
     ground.setProperties(.25, .55);

@@ -178,6 +178,8 @@ void scGame2::someoneSpoke(player & _player){
         myCubeManager.rotateAllToWhite();
         bigPlayerManager().startSign(_player.getNumber(), "C'est gagné !");
         restartTimerSignWin();
+        stopHint();
+        
     }else{
         ofLogNotice() << "Final comparaison failed [" << _player.getLastMessage() << "] different from [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
     }

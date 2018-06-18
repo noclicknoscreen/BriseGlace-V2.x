@@ -39,6 +39,12 @@ void scGame::restartTimerSignWin(){
     timerSignWin.startTimer(5);
 }
 
+void scGame::stopHint(){
+    // Stop display Hint
+    bigPlayerManager().stopSign(hintUserId);
+    timerSignHint.stop();
+}
+
 void scGame::timerBeforeHintEnd(){
     
     ofLogNotice() << "fin du timer beforeHint, 5 seconds and go to hint";
@@ -55,7 +61,9 @@ void scGame::timerBeforeHintEnd(){
 void scGame::timerSignWinEnd(){
     ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) ";
     // --------------------------------
+    // Stop counting
     timerSignWin.stop();
+    // Then go to child behaviour
 }
 
 
