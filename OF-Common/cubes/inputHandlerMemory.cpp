@@ -20,6 +20,8 @@ void inputHandlerMemory::getNewText(player _player)
     
 }
 
+
+
 void inputHandlerMemory::compareInput(string wantedWord)
 {
     duplicatesLetters.clear();

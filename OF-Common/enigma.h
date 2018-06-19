@@ -18,6 +18,8 @@ typedef enum {
     HINT3
 } enigmaType;
 
+const string tagTheme   = "theme";
+
 //////////////////////////////////////////////////////////////////////////////////
 class enigma{
     
@@ -33,6 +35,7 @@ public:
     string      getTitleRecompense(){return mRecompense.getTitre();};
     ofImage     getImageRecompense(){return mRecompense.getImage();};
     string      getLegende(){return mLegende;};
+    string      getTheme(){return mTheme;};
     
     int         getNbHints(){return mHints.size();};
     
@@ -45,6 +48,7 @@ private:
     enigmaHint             mSolution;
     
     string  mLegende;
+    string  mTheme;
     
     enigmaHint*  getHint(enigmaType _type);
     

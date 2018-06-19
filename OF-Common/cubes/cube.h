@@ -18,7 +18,6 @@ public:
     void setup(ofPoint pos, float size);
     void update(int rotationSpeed);
     void setLetter(string letter);
-    void setMaterialColor(ofColor _color);
     void rotateToWhite();
     void rotateToWood();
     void rotateToLetter();
@@ -29,8 +28,13 @@ public:
     float size;
 //    bool letterFace, whiteFace, woodFace;
     string myLetter;
-    ofColor materialColor;
     bool isRotating;
+    
+private:
+    ofColor materialColor;
+public:
+    void setMaterialColor(ofColor _color){materialColor = _color;};
+    ofColor getMaterialColor(){return materialColor;};
     
 };
 #endif /* cube_hpp */

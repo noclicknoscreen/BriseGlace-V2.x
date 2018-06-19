@@ -33,6 +33,7 @@ public:
     void update(float dt);
     
     void restartTimerSignWin();
+    void stopHint();
     
     void timerBeforeHintEnd();
     void timerSignWinEnd();

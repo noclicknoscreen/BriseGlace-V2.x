@@ -31,7 +31,7 @@ public:
     
     // Events callback
     void someoneSpoke(player & _player);
-    void timerEnd();
+//    void timerEnd();
     void timerSignWinEnd();
     
     //gui

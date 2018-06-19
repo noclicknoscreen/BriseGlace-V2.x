@@ -22,4 +22,5 @@ public:
     void getNewText(player _player);
     void compareInput(string wantedWord);
     
+    
 };

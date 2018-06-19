@@ -24,6 +24,11 @@ void inputHandler::setup(ofPoint _inputTextPosition)
     
 }
 
+void inputHandler::reset(){
+    duplicatesLetters.clear();
+    splittedString.clear();
+}
+
 void inputHandler::getNewText(player _player)
 {
     mReadyForNewText = false;
@@ -45,19 +50,27 @@ void inputHandler::getNewText(player _player)
     
     for(int i=0; i<text.size(); i++)
     {
-        letterElement elt;
-        elt.letter = text.substr(i,1);
-        elt.textColor = textColor;
-//        elt.sourcePos = source;
-        elt.currentPos = source;
-        elt.destination = ofPoint(mInputTextPosition.x + 0.5 * (cumulatedOffset - font.getStringBoundingBox(text, 0, 0).getWidth()), mInputTextPosition.y);
-        elt.destination.y += ofRandom(0.0, 15.0); //add some random so the text isn't a line block
+        letterElement oneSplitStr;
+        oneSplitStr.letter = text.substr(i,1);
         
-        elt.alpha = 1.0;
+//        if(ofIsStringInString(ofToString(text[i]), bigEnigmaManager().getCurrentEnigma()-> getSolution()) > 0){
+//            // We display the good letters in player color
+//            oneSplitStr.textColor = textColor;
+//        }else{
+//            // The bad ones in gray
+//            oneSplitStr.textColor = ofColor::gray;
+//        }
         
-        cumulatedOffset += font.getStringBoundingBox(elt.letter, 0, 0).getWidth() + spaceBetweenLetters;
+        oneSplitStr.textColor = textColor;
+        oneSplitStr.currentPos = source;
+        oneSplitStr.destination = ofPoint(mInputTextPosition.x + 0.5 * (cumulatedOffset - font.getStringBoundingBox(text, 0, 0).getWidth()), mInputTextPosition.y);
+        oneSplitStr.destination.y += ofRandom(0.0, 15.0); //add some random so the text isn't a line block
         
-        splittedString.push_back(elt);
+        oneSplitStr.alpha = 1.0;
+        
+        cumulatedOffset += font.getStringBoundingBox(oneSplitStr.letter, 0, 0).getWidth() + spaceBetweenLetters;
+        
+        splittedString.push_back(oneSplitStr);
     }
     
     

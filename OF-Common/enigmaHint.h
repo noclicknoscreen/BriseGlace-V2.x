@@ -12,7 +12,7 @@
 
 #include "ofxJson.h"
 
-const string tagJeu = "jeux";
+//const string tagJeu = "jeux";
 const string tagMot = "mot";
 const string tagIndice = "indice";
 const string tagRecompense = "recompense";

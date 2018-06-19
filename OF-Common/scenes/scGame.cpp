@@ -39,6 +39,12 @@ void scGame::restartTimerSignWin(){
     timerSignWin.startTimer(5);
 }
 
+void scGame::stopHint(){
+    // Stop display Hint
+    bigPlayerManager().stopSign(hintUserId);
+    timerSignHint.stop();
+}
+
 void scGame::timerBeforeHintEnd(){
     
     ofLogNotice() << "fin du timer beforeHint, 5 seconds and go to hint";
@@ -55,7 +61,9 @@ void scGame::timerBeforeHintEnd(){
 void scGame::timerSignWinEnd(){
     ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) ";
     // --------------------------------
+    // Stop counting
     timerSignWin.stop();
+    // Then go to child behaviour
 }
 
 
@@ -81,6 +89,11 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
 //    restartTimerSignHint();
     timerSignHint.stop();
     
+    // Reset all signs
+    bigPlayerManager().stopSign(1);
+    bigPlayerManager().stopSign(2);
+    bigPlayerManager().stopSign(3);
+    
     // Player manager events
     ofAddListener(timerBeforeHint.timerEnd, this,&scGame::timerBeforeHintEnd);
     ofAddListener(timerSignHint.timerEnd,   this,&scGame::timerSignHintEnd);
@@ -92,6 +105,11 @@ void scGame::sceneWillDisappear( ofxScene * toScreen ){
     scScene::sceneWillDisappear(toScreen);
     
     timerBeforeHint.stop();
+    
+    // Reset all signs
+    bigPlayerManager().stopSign(1);
+    bigPlayerManager().stopSign(2);
+    bigPlayerManager().stopSign(3);
     
     // Disable timer events
     ofRemoveListener(timerBeforeHint.timerEnd,  this,&scGame::timerBeforeHintEnd);

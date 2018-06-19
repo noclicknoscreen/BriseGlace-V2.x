@@ -52,6 +52,7 @@ void scGame1::update(float dt){ //update scene 1 here
         bigPlayerManager().setWinnerUserId(id);
         bigPlayerManager().startSign(id, "C'est gagné !");
         restartTimerSignWin();
+        stopHint();
         ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
     }
 
@@ -70,6 +71,7 @@ void scGame1::draw(){ //draw scene 1 here
     
     // Draw title
     scScene::drawTitle("Mot masqué en " + ofToString(bigEnigmaManager().getCurrentEnigma()->getSolution().size()) + " lettres");
+    scScene::drawTitle("Trouve un " + ofToString(bigEnigmaManager().getCurrentEnigma()->getTheme()));
     scScene::drawSubTitle("Dites un mot pour voir");
     
     // Draw cubes

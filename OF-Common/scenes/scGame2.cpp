@@ -71,7 +71,7 @@ void scGame2::draw(){ //draw scene 1 here
     
     // Draw Title
     scScene::drawTitle("Mes mots rient", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.15 * ofGetHeight()));
-    scScene::drawSubTitle("Trouve le mot grâce à l'image", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.15 * ofGetHeight()));
+    scScene::drawSubTitle("Trouve " + ofToString(bigEnigmaManager().getCurrentEnigma()->getTheme()) + " grâce à l'image", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.15 * ofGetHeight()));
     scScene::drawSubTitle("cachée derrière ces lettres", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.20 * ofGetHeight()));
 
     // Draw cubes
@@ -105,6 +105,8 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
     
 //    // Erase all words of every one
 //    bigPlayerManager().freshRestart();
+    
+    myInputManager.reset();
     
     // On ne refait pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
@@ -178,6 +180,8 @@ void scGame2::someoneSpoke(player & _player){
         myCubeManager.rotateAllToWhite();
         bigPlayerManager().startSign(_player.getNumber(), "C'est gagné !");
         restartTimerSignWin();
+        stopHint();
+        
     }else{
         ofLogNotice() << "Final comparaison failed [" << _player.getLastMessage() << "] different from [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
     }

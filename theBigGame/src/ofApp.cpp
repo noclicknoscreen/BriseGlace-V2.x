@@ -35,7 +35,7 @@ void ofApp::setup(){
     sceneManager->addScene( new scGame1(), GAME1);
     sceneManager->addScene( new scGame2(), GAME2);
     sceneManager->addScene( new scGame3(), GAME3);
-    sceneManager->addScene( new scGame3BIS(), GAME3_BIS);
+    sceneManager->addScene( new scGame3Bis(), GAME3_BIS);
     sceneManager->addScene( new scHint(), HINT);
     sceneManager->addScene( new scVictory(), VICTORY);
 

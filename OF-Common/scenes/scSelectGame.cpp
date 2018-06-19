@@ -91,6 +91,9 @@ void scSelectGame::someoneSpoke(player & _player){
     if(ofStringTimesInString(mPlayerMessage, "memory") > 0){
         ofxSceneManager::instance()->goToScene(GAME2);
     }
+    if(ofStringTimesInString(mPlayerMessage, "memories") > 0){
+        ofxSceneManager::instance()->goToScene(GAME2);
+    }
     
     // Choix du jeu 3 : Mot Brassé
     if(ofStringTimesInString(mPlayerMessage, "brassé") > 0){

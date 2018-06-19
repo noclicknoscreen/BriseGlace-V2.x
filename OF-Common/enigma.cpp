@@ -66,7 +66,9 @@ bool enigma::load(string _path){
                 mSolution = enigmaHint(_path, content[tagMot]);
             }
             
+            // Basic enigma fields
             mLegende = content[tagRecompense][tagLegende].asString();
+            mTheme   = content[tagTheme].asString();
             
             // Head of the enigma (Solution, legend) --
             ofLogNotice() << "Enigma : ";

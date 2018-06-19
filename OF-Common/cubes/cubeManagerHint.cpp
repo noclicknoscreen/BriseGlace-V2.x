@@ -105,16 +105,10 @@ void cubeManagerHint::draw(){
     for(int idxCube=0; idxCube<myCubes.size(); idxCube++)
     {
         
-        ofSetColor(255, 0, 0);
-        ofDrawBox(0, 0, 0, 50, 50, 50);
-        
         ofPushMatrix();
         
         ofTranslate(myCubes[idxCube].position.x, myCubes[idxCube].position.y, myCubes[idxCube].position.z);
         ofRotate(myCubes[idxCube].currentRot, 1.0, 0.0, 0.0);
-        
-        ofSetColor(0, 255, 0);
-        ofDrawBox(0, 0, 0, 50, 50, 50);
         
         materialColor.setHue(0);
         material.setAmbientColor(materialColor);
@@ -132,8 +126,8 @@ void cubeManagerHint::draw(){
         // FACE AVEC IMAGE (Indice) --------------------------------------------------
 //        ofPushMatrix();
         material.begin();
-        material.setAmbientColor(myCubes[idxCube].materialColor);
-        material.setDiffuseColor(ofColor(myCubes[idxCube].materialColor, 140)); //add some transparency here, to keep the texture visible ;)
+        material.setAmbientColor(myCubes[idxCube].getMaterialColor());
+        material.setDiffuseColor(ofColor(myCubes[idxCube].getMaterialColor(), 140)); //add some transparency here, to keep the texture visible ;)
         
         
         int row = idxCube % mNbRows;
@@ -156,8 +150,8 @@ void cubeManagerHint::draw(){
         
         // FACE BLANCHE --------------------------------------------------
         material.begin();
-        material.setAmbientColor(myCubes[idxCube].materialColor);
-        material.setDiffuseColor(ofColor(myCubes[idxCube].materialColor, 140)); //add some transparency here, to keep the texture visible ;)
+        material.setAmbientColor(myCubes[idxCube].getMaterialColor());
+        material.setDiffuseColor(ofColor(myCubes[idxCube].getMaterialColor(), 140)); //add some transparency here, to keep the texture visible ;)
         
         ofEnableNormalizedTexCoords();
         for(int i=0; i<myCubes.size(); i++)
@@ -174,8 +168,8 @@ void cubeManagerHint::draw(){
         ofPushMatrix();
         ofRotate(myCubes[idxCube].currentRot+180, 1, 0, 0);
         material.begin();
-        material.setAmbientColor(myCubes[idxCube].materialColor);
-        material.setDiffuseColor(ofColor(myCubes[idxCube].materialColor, 140)); //add some transparency here, to keep the texture visible ;)
+        material.setAmbientColor(myCubes[idxCube].getMaterialColor());
+        material.setDiffuseColor(ofColor(myCubes[idxCube].getMaterialColor(), 140)); //add some transparency here, to keep the texture visible ;)
         
         //            ofLog() << "We draw a cutted image [line, row] = [" << line << "," << row << "]";
         
