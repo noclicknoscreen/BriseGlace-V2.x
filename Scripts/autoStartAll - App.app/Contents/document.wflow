@@ -105,111 +105,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>309.000000:112.000000</string>
-				<key>nibPath</key>
-				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
-			</dict>
-			<key>isViewVisible</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>action</key>
-			<dict>
-				<key>AMAccepts</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Optional</key>
-					<true/>
-					<key>Types</key>
-					<array>
-						<string>com.apple.applescript.object</string>
-					</array>
-				</dict>
-				<key>AMActionVersion</key>
-				<string>1.0.2</string>
-				<key>AMApplication</key>
-				<array>
-					<string>Automator</string>
-				</array>
-				<key>AMParameterProperties</key>
-				<dict>
-					<key>source</key>
-					<dict/>
-				</dict>
-				<key>AMProvides</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Types</key>
-					<array>
-						<string>com.apple.applescript.object</string>
-					</array>
-				</dict>
-				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Run AppleScript.action</string>
-				<key>ActionName</key>
-				<string>Exécuter un script AppleScript</string>
-				<key>ActionParameters</key>
-				<dict>
-					<key>source</key>
-					<string>tell application "Terminal"	activate		tell application "System Events" to keystroke "t" using command down	repeat while contents of selected tab of window 1 starts with linefeed		delay 0.1	end repeat		do script "/Users/medenagan-id-001/BriseGlace/OF_0.9.8/apps/BriseGlace-V2.x/Scripts/startRaspberries.sh" in window 1 -- make sure the path to your script is right	end tell</string>
-				</dict>
-				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.RunScript</string>
-				<key>CFBundleVersion</key>
-				<string>1.0.2</string>
-				<key>CanShowSelectedItemsWhenRun</key>
-				<false/>
-				<key>CanShowWhenRun</key>
-				<true/>
-				<key>Category</key>
-				<array>
-					<string>AMCategoryUtilities</string>
-				</array>
-				<key>Class Name</key>
-				<string>RunScriptAction</string>
-				<key>InputUUID</key>
-				<string>4668F47F-0D77-4A52-A246-7607BF36BA26</string>
-				<key>Keywords</key>
-				<array>
-					<string>Exécuter</string>
-				</array>
-				<key>OutputUUID</key>
-				<string>0E3F20FD-5FAD-4E48-B692-956E2B9F9592</string>
-				<key>UUID</key>
-				<string>A8D7CA90-2602-4BAC-847B-696AC3F46B0B</string>
-				<key>UnlocalizedApplications</key>
-				<array>
-					<string>Automator</string>
-				</array>
-				<key>arguments</key>
-				<dict>
-					<key>0</key>
-					<dict>
-						<key>default value</key>
-						<string>on run {input, parameters}
-	
-	(* Your script goes here *)
-	
-	return input
-end run</string>
-						<key>name</key>
-						<string>source</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>0</string>
-					</dict>
-				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
-				<key>isViewVisible</key>
-				<false/>
-				<key>location</key>
-				<string>309.000000:154.000000</string>
+				<string>301.500000:112.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -308,32 +204,23 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
-				<false/>
+				<true/>
 				<key>location</key>
-				<string>309.000000:196.000000</string>
+				<string>301.500000:358.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<false/>
+			<true/>
 		</dict>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>23B1F3E6-B0D0-4019-BB8A-BF585881E2E7</key>
+		<key>6C0DC17A-9B84-4F57-853C-3F81D30004FD</key>
 		<dict>
 			<key>from</key>
 			<string>61BA8D73-CE21-45E2-94B4-AA3D78BE11F7 - 61BA8D73-CE21-45E2-94B4-AA3D78BE11F7</string>
-			<key>to</key>
-			<string>A8D7CA90-2602-4BAC-847B-696AC3F46B0B - A8D7CA90-2602-4BAC-847B-696AC3F46B0B</string>
-		</dict>
-		<key>42B688EB-3519-4896-9337-A925639FF635</key>
-		<dict>
-			<key>from</key>
-			<string>A8D7CA90-2602-4BAC-847B-696AC3F46B0B - A8D7CA90-2602-4BAC-847B-696AC3F46B0B</string>
 			<key>to</key>
 			<string>054B7410-7CD7-483F-9C86-37646ED3CE94 - 054B7410-7CD7-483F-9C86-37646ED3CE94</string>
 		</dict>

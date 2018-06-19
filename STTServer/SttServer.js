@@ -3,14 +3,21 @@
 var fs = require('fs');
 var http = require('http');
 var https = require('https');
-var privateKey  = fs.readFileSync(__dirname + '/public/certificates/key.pem');
-var certificate = fs.readFileSync(__dirname + '/public/certificates/cert.pem');
+var shell = require('shelljs');
 
-var credentials = {key: privateKey, cert: certificate, passphrase: '@@kons3n'};
+// var privateKey  = fs.readFileSync(__dirname + '/public/certificates/privatekey.pem');
+// var certificate = fs.readFileSync(__dirname + '/public/certificates/certificate.pem');
+//
+// var credentials = {key: privateKey, cert: certificate, passphrase: 'BriseGlace'};
 var express = require('express');
 var app = express();
 
 // your express configuration here
+const credentials = {
+  key: fs.readFileSync(__dirname + '/public/certificates/privatekey.pem'),
+  cert: fs.readFileSync(__dirname + '/public/certificates/certificate.pem'),
+  passphrase: 'BriseGlace',
+};
 
 var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
@@ -67,17 +74,21 @@ app.get('/resetPlayers', function(req, res) {
   res.send(JSON.stringify(playerManager.strPlayers()));
 });
 
+// Start clients
+restartRaspClient('192.168.2.21');
+restartRaspClient('192.168.2.22');
+restartRaspClient('192.168.2.23');
 
-const options = {
-  key: fs.readFileSync(__dirname + '/public/certificates/key.pem'),
-  cert: fs.readFileSync(__dirname + '/public/certificates/cert.pem'),
-  passphrase: '@@kons3n',
-};
 
 // --------------------------------------------
 // Socket section
 
 var socketServer = io.on('connection', (socket) => {
+
+  socket.on('disconnect', function() {
+      console.log('recognition disconnected : ' + socket.id);
+      restartRaspClient(socketHelper.decodeIp(socket));
+  });
 
   console.log('recognition connected : ' + socket.id);
   // Add player
@@ -128,6 +139,11 @@ function sendPlayerToRecognition(socket, player){
   console.log("Player sent to recognition : ");
   //console.log(player);
   socket.emit('myPlayer', player);
+}
+
+function restartRaspClient(myIpAddr){
+  console.log('Restart Raspberry : ' + myIpAddr);
+  shell.exec('/Users/medenagan-id-001/BriseGlace/OF_0.9.8/apps/BriseGlace-V2.x/Scripts/startOneRaspberry.sh ' + myIpAddr);
 }
 // mySocket.on('connection', (socket) => {
 //
