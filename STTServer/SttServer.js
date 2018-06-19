@@ -14,8 +14,8 @@ var app = express();
 
 // your express configuration here
 const credentials = {
-  key: fs.readFileSync(__dirname + '/public/certificates/privatekey.pem'),
-  cert: fs.readFileSync(__dirname + '/public/certificates/certificate.pem'),
+  key: fs.readFileSync(__dirname + '/public/certificates/server_key.pem'),
+  cert: fs.readFileSync(__dirname + '/public/certificates/server_crt.pem'),
   passphrase: 'BriseGlace',
 };
 
