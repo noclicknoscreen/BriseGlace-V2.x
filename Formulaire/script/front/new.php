@@ -1,15 +1,16 @@
 <script type="text/javascript">
-tafonction();
+pastille_new();
 </script>
 
-<form  action="?" method="POST" onSubmit="return prog_submit()">
+<form  action="?" method="POST">
 <!-- Input MOT -->
-<p class="text text-1"><strong>LE MOT &nbsp;À TROUVER</strong></p>
-<input class="_input _input-2" type="text" name="mot" id="mot" onkeyup="recupmot(this.value);" value="<?php if (isset($_POST['mot'])){echo $_POST['mot'];} ?>" spellcheck="true">
+
+<input class="_input _input-2" type="text" name="mot" id="mot" onkeyup='recupmot(this.value, "");' value="<?php if (isset($_POST['mot'])){echo $_POST['mot'];} ?>" spellcheck="true">
 <input class="_input _input-3" type="text" id="theme" name="theme" placeholder="mot clé" value="<?php if (isset($_POST['mot'])){echo $_POST['mot'];} ?>" spellcheck="true">
-<div class="element element-4" id="divmot"></div>
-<p class="text text-2"><strong>DATE</strong></p>
-<i class="_button _button-3 first-arrow fa fa-caret-down" style="font-size:24px;color:white"></i>
+<div class="element element-4" id="divmot" onchange="" ></div>
+<p class="text text-2"><strong><?php echo $max + 1?></strong></p>
+<input class="checkbox checkbox-2" onclick='alert_message_new()' type="checkbox" name="check" id="check" value="on">
+<i class="_button _button-3 first-arrow fa fa-caret-down" id="arrow1" style="font-size:24px;color:white"></i>
 <div class="element element-5" ></div>
 
 

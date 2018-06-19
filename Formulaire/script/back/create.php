@@ -63,13 +63,16 @@ for ($i=0; $i <= 4; $i++) {
   $newcrop = $tmp . "/" . $StrNum . $num . '/image/image' . $i . '-crop.jpg';
   file_put_contents($new, $data);
   file_put_contents($newcrop, $datacrop);
-  unlink("tmp/image" . $i . "-crop.jpg");
+  if (file_exists("tmp/image" . $i . "-crop.jpg")) {unlink("tmp/image" . $i . "-crop.jpg");}
   $imgName[$i] = 'image' . $i . '.' . $info->getExtension();
 }
 
+if (@$_POST['check']) { $actif = "on"; }
+else { $actif = "off"; }
+
 date_default_timezone_set('UTC');
-   $req = $bdd->prepare('INSERT INTO enigme(id, mot, theme, image0, imgcrop0, auteur0, date0, indice1, image1, imgcrop1, auteur1, date1, indice2, image2, imgcrop2, auteur2, date2, indice3, image3, imgcrop3, auteur3, date3, recompense, image4, imgcrop4, auteur4, date4, legende)
-      VALUES(:id, :mot, :theme, :image0, :imgcrop0, :auteur0, :date0, :indice1, :image1, :imgcrop1, :auteur1, :date1, :indice2, :image2, :imgcrop2, :auteur2, :date2, :indice3, :image3, :imgcrop3, :auteur3, :date3, :recompense, :image4, :imgcrop4, :auteur4, :date4, :legende)');
+   $req = $bdd->prepare('INSERT INTO enigme(id, mot, theme, image0, imgcrop0, auteur0, date0, indice1, image1, imgcrop1, auteur1, date1, indice2, image2, imgcrop2, auteur2, date2, indice3, image3, imgcrop3, auteur3, date3, recompense, image4, imgcrop4, auteur4, date4, legende, actif)
+      VALUES(:id, :mot, :theme, :image0, :imgcrop0, :auteur0, :date0, :indice1, :image1, :imgcrop1, :auteur1, :date1, :indice2, :image2, :imgcrop2, :auteur2, :date2, :indice3, :image3, :imgcrop3, :auteur3, :date3, :recompense, :image4, :imgcrop4, :auteur4, :date4, :legende, :actif)');
     $req->execute(array(
       'id' => $num,
       'mot' => $_POST['mot'],
@@ -99,6 +102,7 @@ date_default_timezone_set('UTC');
       'auteur4' => $_POST['auteur4'],
       'date4' => $_POST['date4'],
       'legende'=>$_POST['legende'],
+      'actif'=>$actif,
       ));
 
     // Crée le tableau JSON

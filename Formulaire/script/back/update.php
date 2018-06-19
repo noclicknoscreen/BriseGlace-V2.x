@@ -12,6 +12,9 @@ catch (Exception $e)
 // On récupère tout le contenu de la table enigme
 $reponse = $bdd->query("SELECT * FROM enigme");
 
+if (file_exists("enigme") == false) {
+    mkdir("./enigme", 0777, true);
+}
 
 // On affiche chaque entrée une à une
 echo 'console.log("debug1");';
@@ -33,6 +36,16 @@ while ($donnees = $reponse->fetch())
       $StrNum = "";
       break;
   }
+
+  if (file_exists("enigme/" . $StrNum . $id) == false) {
+      mkdir("./enigme/" . $StrNum . $id, 0777, true);
+      mkdir("./enigme/" . $StrNum . $id . "/image", 0777, true);
+  }
+
+  if (file_exists("./enigme/" . $StrNum . $id . "/image") == false) {
+      mkdir("./enigme/" . $StrNum . $id . "/image", 0777, true);
+  }
+
   // Upload des images
   for ($j=0; $j <= 4; $j++) {
 
@@ -49,7 +62,7 @@ while ($donnees = $reponse->fetch())
             file_put_contents($newcrop, $datacrop);
             unlink("tmp/image" . $j . $id . "-crop.jpg");
           }
-          if ($donnees['image' . $j] != $_POST['sqlimage' . $j . $id])
+          if ($donnees['image' . $j] != $_POST['sqlimage' . $j . $id] || file_exists("enigme/" . $StrNum . $id . '/image/image' . $j . '.' . $info->getExtension()) == false)
           {
             $data = @file_get_contents($url);
             $new = "enigme/" . $StrNum . $id . '/image/image' . $j . '.' . $info->getExtension();
@@ -59,12 +72,15 @@ while ($donnees = $reponse->fetch())
     $imgName[$j] = 'image' . $j . '.' . $info->getExtension();
   }
 
+if (@$_POST['check' . $id]) { $actif = "on"; }
+else { $actif = "off"; }
+
   $req = $bdd->prepare('UPDATE enigme SET mot = :mot, theme = :theme, image0 = :image0, imgcrop0 = :imgcrop0, auteur0 = :auteur0, date0 = :date0,
                         indice1 = :indice1, image1 = :image1, imgcrop1 = :imgcrop1, auteur1 = :auteur1, date1 = :date1,
                         indice2 = :indice2, image2 = :image2, imgcrop2 = :imgcrop2, auteur2 = :auteur2, date2 = :date2,
                         indice3 = :indice3, image3 = :image3, imgcrop3 = :imgcrop3, auteur3 = :auteur3, date3 = :date3,
                         recompense = :recompense, image4 = :image4, imgcrop4 = :imgcrop4, auteur4 = :auteur4, date4 = :date4,
-                        legende = :legende WHERE id = :id');
+                        legende = :legende, actif = :actif WHERE id = :id');
   $req->execute(array(
     'mot' =>$_POST['sqlmot' . $id],
     'theme' =>$_POST['sqltheme' . $id],
@@ -103,6 +119,8 @@ while ($donnees = $reponse->fetch())
     'date4' => $_POST['sqldate4'. $id],
 
     'legende'=>$_POST['sqllegende' . $id],
+    'actif' => $actif,
+
   	'id' => $id,
   	));
     $req->closeCursor();

@@ -1,9 +1,9 @@
 //RECHERCHE D'IMAGE
 
-function recupmot(valeurChamp) {
-    $('#flickr0').attr('href', "javascript:popup(\"https://www.flickr.com/search/?text=" + valeurChamp + "&license=4%2C5%2C9%2C10\")");
-    $('#wikipedia0').attr('href', "javascript:popup(\"https://fr.wikipedia.org/wiki/" + valeurChamp + "\")");
-    $('#noun0').attr('href', "javascript:popup(\"https://thenounproject.com/search/?q=" + valeurChamp + "\")");
+function recupmot(valeurChamp, num) {
+    $('#flickr0' + num).attr('href', "javascript:popup(\"https://www.flickr.com/search/?text=" + valeurChamp + "&license=4%2C5%2C9%2C10\")");
+    $('#wikipedia0' + num).attr('href', "javascript:popup(\"https://fr.wikipedia.org/wiki/" + valeurChamp + "\")");
+    $('#noun0' + num).attr('href', "javascript:popup(\"https://thenounproject.com/search/?q=" + valeurChamp + "\")");
 }
 
 function recupindice1(valeurChamp) {

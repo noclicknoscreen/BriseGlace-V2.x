@@ -13,7 +13,8 @@
       <script type="text/javascript" src="js/option-image.js"></script>
       <script type="text/javascript" src="js/crop-new.js"></script>
       <script type="text/javascript" src="js/crop-old.js"></script>
-      <script type="text/javascript"  src="js/pastille.js"></script>
+      <script type="text/javascript"  src="js/pastille_new.js"></script>
+      <script type="text/javascript"  src="js/pastille_old.js"></script>
       <link rel="stylesheet" href="css/jquery.Jcrop.css" type="text/css" />
       <link href="http://fonts.googleapis.com/css?family=Oswald:400,400|Quattrocento+Sans:400,700|PT+Sans:400|Open+Sans Condensed:300" rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -50,6 +51,9 @@ $query->closeCursor(); // Termine le traitement de la requête
     <img class="image image-1" src="images/1.png">
     <p class="_input _input-1"><?php echo $max ?> énigmes</p>
     <div class="element element-3"></div>
+    <input class="checkbox checkbox-1" type="checkbox">
+    <p class="text text-1"><strong><strong>LE MOT À TROUVER</strong></strong></p>
+    <span class="_text-2"><font color="#fff9f9"><span>Tout cocher</span></font></span>
 
 <?php
 

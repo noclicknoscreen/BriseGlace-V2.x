@@ -1,4 +1,4 @@
-<form  action="?" method="POST">
+<form  action="?" method="POST" onsubmit="return old_submit()">
 
 <?php
 try
@@ -38,9 +38,13 @@ while ($donnees = $reponse->fetch())
           <input class="_input _input-2" type="text" name="sqlmot<?php echo $i?>" id="sqlmot<?php echo $i?>" value="<?php if (isset($_POST['sqlmot' . $i])){echo $_POST['sqlmot' . $i];} else {echo $donnees['mot'];} ?>" spellcheck="true">
           <input class="_input _input-3" type="text" id="sqltheme<?php echo $i?>" name="sqltheme<?php echo $i?>" placeholder="mot clé" value="<?php if (isset($_POST['sqltheme' . $i])){echo $_POST['sqltheme' . $i];} else {echo $donnees['theme'];} ?>" spellcheck="true">
           <div class="element element-4" id="sqldivmot<?php echo $i?>" spellcheck="true"></div>
-          <p class="text text-2"><strong>DATE</strong></p>
+          <p class="text text-2"><strong><?php echo $donnees['id'] + 1?></strong></p>
 
-          <i class="_button _button-3 first-arrow fa fa-caret-up" style="font-size:24px;color:white"></i>
+
+          <input class="checkbox checkbox-2" onclick='alert_message_old("<?php echo $i?>")' type="checkbox" name="check<?php echo $i?>" id="check<?php echo $i?>" value="on" <?php if (!strcmp($donnees['actif'],"on")) {echo "checked";}?>>
+
+
+          <i class="_button _button-3 first-arrow fa fa-caret-up" id="arrow2" name="arrow2" style="font-size:24px;color:white"></i>
           <div class="element element-5" ></div>
 
           <!-- DIV mot DEBUT -->
@@ -245,104 +249,46 @@ $maxidi = $i;
 
 <script type="text/javascript">
 
+function alert_message_old(id)
+{
+  if (document.getElementById('sqldivmot' + id).style.backgroundColor == "rgb(228, 38, 19)" || document.getElementById('sqldivmot' + id).style.backgroundColor == "rgb(247, 147, 30)")
+  {
+    document.getElementById('check' + id).checked = false;
+    alert("Enigme incomplète !");
+  }
+}
+
+// Autorisation à cocher "check" ou non
+function old_submit()
+{
+  var testcheck = false;
+  for (var id = 0; id < <?php echo $maxidi?>; id++)
+  {
+     if (document.getElementById('check' + id).checked == true) {testcheck = true;}
+  }
+  if (testcheck != true) {
+    window.alert("Vous devez avoir activé au moins une enigme !");
+    return false;
+  }
+}
+
 // PASTILLE POUR OLD.PHP
-
-
 // INDICE
 for (var j = 0; j < <?php echo $maxidi?>; j++) {
   for (var i = 0; i <= 4; i++) {
-      document.getElementById('result' + i + j).style.display = 'inline';
+      if (!document.getElementById('result' + i + j).height <= 0)
+        {
+          document.getElementById('result' + i + j).style.display = 'inline';
+        }
     }
 }
 
 for (var j = 0; j < <?php echo $maxidi?>; j++) {
   for (var i = 1; i <= 4; i++) {
-      document.getElementById('sqldivindice' + i + j).style.background ="rgb(102, 171, 82)";
+      document.getElementById('sqldivindice' + i + j).style.backgroundColor = "rgb(102, 171, 82)";
     }
 }
 
-function mytest()
-{
-  // INDICE
-  for (var j = 0; j < <?php echo $maxidi?>; j++) {
-
-    // MOT A TROUVER PASTILLE
-    if (document.getElementById('sqlmot' + j).value &&
-        document.getElementById('result0' + j).style.display == 'inline' &&
-        document.getElementById('sqlauteur0' + j).value &&
-        document.getElementById('sqldate0' + j).value &&
-        document.getElementById('sqldivindice1' + j).style.backgroundColor == "rgb(102, 171, 82)" &&
-        document.getElementById('sqldivindice2' + j).style.backgroundColor == "rgb(102, 171, 82)" &&
-        document.getElementById('sqldivindice3' + j).style.backgroundColor == "rgb(102, 171, 82)" &&
-        document.getElementById('sqldivindice4' + j).style.backgroundColor == "rgb(102, 171, 82)")
-    {
-      document.getElementById('sqldivmot' + j).style.background ="rgb(102, 171, 82)";
-    }
-    else if(document.getElementById('sqlmot' + j).value ||
-            document.getElementById('result0' + j).style.display == 'inline' ||
-            document.getElementById('sqlauteur0' + j).value ||
-            document.getElementById('sqldate0' + j).value ||
-            document.getElementById('sqldivindice1' + j).style.backgroundColor == "rgb(102, 171, 82)" ||
-            document.getElementById('sqldivindice2' + j).style.backgroundColor == "rgb(102, 171, 82)" ||
-            document.getElementById('sqldivindice3' + j).style.backgroundColor == "rgb(102, 171, 82)" ||
-            document.getElementById('sqldivindice4' + j).style.backgroundColor == "rgb(102, 171, 82)")
-    {
-      document.getElementById('sqldivmot' + j).style.background="rgb(247, 147, 30)";
-    }
-    else
-    {
-      document.getElementById('sqldivmot' + j).style.background="rgb(228, 38, 19)";
-    }
-
-    // INDICE PASTILLE
-    for (var i = 1; i <= 3; i++) {
-      if (document.getElementById('sqlindice' + i + j).value &&
-          document.getElementById('sqlauteur' + i + j).value &&
-          document.getElementById('sqldate' + i + j).value &&
-          document.getElementById('result' + i + j).style.display == 'inline')
-        {
-           document.getElementById('sqldivindice' + i + j).style.background="rgb(102, 171, 82)";
-        }
-      else if (document.getElementById('sqlindice' + i + j).value ||
-               document.getElementById('sqlauteur' + i + j).value ||
-               document.getElementById('sqldate' + i + j).value ||
-               document.getElementById('result' + i + j).style.display == 'inline')
-      {
-        document.getElementById('sqldivindice' + i + j).style.background="rgb(247, 147, 30)";
-      }
-      else
-      {
-        document.getElementById('sqldivindice' + i + j).style.background="rgb(228, 38, 19)";
-      }
-    }
-
-    // RECOMPENSE PASTILLE
-      if (document.getElementById('sqlrecompense' + j).value &&
-          document.getElementById('sqllegende' + j).value &&
-          document.getElementById('sqlauteur4' + j).value &&
-          document.getElementById('sqldate4' + j).value &&
-          document.getElementById('result4' + j).style.display == 'inline')
-       {
-         document.getElementById('sqldivindice4' + j).style.background="rgb(102, 171, 82)";
-       }
-      else if (document.getElementById('sqlrecompense' + j).value ||
-              document.getElementById('sqllegende' + j).value ||
-              document.getElementById('sqlauteur4' + j).value ||
-              document.getElementById('sqldate4' + j).value ||
-              document.getElementById('result4' + j).style.display == 'inline')
-      {
-         document.getElementById('sqldivindice4' + j).style.background="rgb(247, 147, 30)";
-      }
-      else
-      {
-        document.getElementById('sqldivindice4' + j).style.background="rgb(228, 38, 19)";
-      }
-
-  }
-
-  setTimeout(mytest, 10);
-
-}
-mytest();
+pastille_old(<?php echo $maxidi?>);
 
 </script>
