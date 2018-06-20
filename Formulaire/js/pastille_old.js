@@ -1,7 +1,6 @@
 function pastille_old(maxidi)
 {
   setTimeout(pastille_old, 10, maxidi);
-  document.getElementById('arrow2').style.removeProperty('font-family');
   // INDICE
   for (var j = 0; j < maxidi; j++) {
 

@@ -37,14 +37,14 @@ while ($donnees = $reponse->fetch())
           <input type="submit" class="_button _button-2" name="plus" id="plus" value="+"/>
           <input class="_input _input-2" type="text" name="sqlmot<?php echo $i?>" id="sqlmot<?php echo $i?>" value="<?php if (isset($_POST['sqlmot' . $i])){echo $_POST['sqlmot' . $i];} else {echo $donnees['mot'];} ?>" spellcheck="true">
           <input class="_input _input-3" type="text" id="sqltheme<?php echo $i?>" name="sqltheme<?php echo $i?>" placeholder="mot clé" value="<?php if (isset($_POST['sqltheme' . $i])){echo $_POST['sqltheme' . $i];} else {echo $donnees['theme'];} ?>" spellcheck="true">
-          <div class="element element-4" id="sqldivmot<?php echo $i?>" spellcheck="true"></div>
+          <div class="element element-4" id="sqldivmot<?php echo $i?>" onchange='ifgreen("<?php echo $i?>")'></div>
           <p class="text text-2"><strong><?php echo $donnees['id'] + 1?></strong></p>
 
 
           <input class="checkbox checkbox-2" onclick='alert_message_old("<?php echo $i?>")' type="checkbox" name="check<?php echo $i?>" id="check<?php echo $i?>" value="on" <?php if (!strcmp($donnees['actif'],"on")) {echo "checked";}?>>
 
 
-          <i class="_button _button-3 first-arrow fa fa-caret-up" id="arrow2" name="arrow2" style="font-size:24px;color:white"></i>
+          <i class="_button _button-3 first-arrow fa fa-caret-up" style="font-size:24px;color:white"></i>
           <div class="element element-5" ></div>
 
           <!-- DIV mot DEBUT -->
@@ -248,6 +248,15 @@ $maxidi = $i;
 
 
 <script type="text/javascript">
+
+function ifgreen(id)
+{
+  alert("test");
+  if (document.getElementById('sqldivmot' + id).style.backgroundColor != "rgb(228, 38, 19)" || document.getElementById('sqldivmot' + id).style.backgroundColor != "rgb(247, 147, 30)")
+  {
+    document.getElementById('check' + id).checked = true;
+  }
+}
 
 function alert_message_old(id)
 {

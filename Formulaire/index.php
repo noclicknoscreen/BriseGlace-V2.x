@@ -43,7 +43,6 @@ catch (Exception $e)
 $query = $bdd->query('SELECT MAX(id) AS maxval FROM enigme');
 $max_row = $query->fetch(PDO::FETCH_ASSOC);
 $max = $max_row['maxval'] + 1;
-
 $query->closeCursor(); // Termine le traitement de la requête
 ?>
 
@@ -51,9 +50,32 @@ $query->closeCursor(); // Termine le traitement de la requête
     <img class="image image-1" src="images/1.png">
     <p class="_input _input-1"><?php echo $max ?> énigmes</p>
     <div class="element element-3"></div>
-    <input class="checkbox checkbox-1" type="checkbox">
+    <input class="checkbox checkbox-1" id="first_check" name="first_check" onclick="cocher(<?php echo $max ?>)" type="checkbox">
     <p class="text text-1"><strong><strong>LE MOT À TROUVER</strong></strong></p>
     <span class="_text-2"><font color="#fff9f9"><span>Tout cocher</span></font></span>
+
+    <script type="text/javascript">
+    function cocher(id)
+      {
+        if (document.getElementById('first_check').checked == true)
+          {
+            for (var i = 0; i < id; i++)
+              {
+                if (document.getElementById('check')) {document.getElementById('check').checked = true;}
+                document.getElementById('check' + i).checked = true;
+              }
+          }
+        else
+          {
+          for (var i = 0; i < id; i++)
+            {
+              if (document.getElementById('check')) {document.getElementById('check').checked = false;}
+              document.getElementById('check' + i).checked = false;
+            }
+          }
+      }
+
+    </script>
 
 <?php
 
