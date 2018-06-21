@@ -56,6 +56,29 @@ public:
         
     };
     
+    //-------------------------------------------------------------------
+    static string cleanString(string _inStr){
+//        ofStringReplace(_inStr, "\"", "\"");
+        // Suppression des accents bizarres --
+        ofStringReplace(_inStr, "“", "\"");
+        ofStringReplace(_inStr, "«", "\"");
+        ofStringReplace(_inStr, "»", "\"");
+        ofStringReplace(_inStr, "‹", "\"");
+        ofStringReplace(_inStr, "›", "\"");
+        ofStringReplace(_inStr, "“", "\"");
+        ofStringReplace(_inStr, "”", "\"");
+        ofStringReplace(_inStr, "„", "\"");
+//        ofStringReplace(_inStr, "'", "\"");
+//        ofStringReplace(_inStr, "‘", "\"");
+//        ofStringReplace(_inStr, "’", "\"");
+//        ofStringReplace(_inStr, "‚", "\"");
+        // Remplacement œ car pas dans le jeu de caractères OF
+        ofStringReplace(_inStr, "œ", "oe");
+        ofStringReplace(_inStr, "Œ", "OE");
+        
+        return _inStr;
+    }
+    
     //--------------------------------------------------------------
     static wstring getRndLetter(){
         

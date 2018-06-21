@@ -9,8 +9,8 @@
 #pragma once
 
 #include "ofMain.h"
-
 #include "enigmaHint.h"
+#include "utils.h"
 
 typedef enum {
     HINT1 = 0,

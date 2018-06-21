@@ -109,9 +109,9 @@ void cubeManagerHiddenWord::draw(){
     ofSetColor(255);
 }
 
-void cubeManagerHiddenWord::getWord(string word)
+void cubeManagerHiddenWord::getWord(wstring word)
 {
-    ofLogNotice() << "new word : " << word;
+    ofLogNotice() << "new word : " << utils::toByteString(word);
     
     //compute offset between letters
     float wordWidth = (word.size()*cubeSize) + ((word.size()+1) * mEspacementCubes);
@@ -120,10 +120,12 @@ void cubeManagerHiddenWord::getWord(string word)
     
     for(int i=0; i<word.size(); i++)
     {
-        cube* tmpCube = new cube();
-        tmpCube->setup(ofPoint(mCubesPosition.x - wordWidth/2 + i*(mEspacementCubes + cubeSize) + cubeSize/2 + mEspacementCubes, mCubesPosition.y, mCubesPosition.z), cubeSize);
-        tmpCube->setLetter(utils::toWString(word.substr(i, 1)));
-        myCubes.push_back(*tmpCube);
+        if(word.substr(i,1) != L" "){
+            cube* tmpCube = new cube();
+            tmpCube->setup(ofPoint(mCubesPosition.x - wordWidth/2 + i*(mEspacementCubes + cubeSize) + cubeSize/2 + mEspacementCubes, mCubesPosition.y, mCubesPosition.z), cubeSize);
+            tmpCube->setLetter(word.substr(i, 1));
+            myCubes.push_back(*tmpCube);
+        }
     }
 }
 

@@ -67,7 +67,7 @@ bool enigma::load(string _path){
             }
             
             // Basic enigma fields
-            mLegende = content[tagRecompense][tagLegende].asString();
+            mLegende = utils::cleanString(content[tagRecompense][tagLegende].asString());
             mTheme   = content[tagTheme].asString();
             
             // Head of the enigma (Solution, legend) --

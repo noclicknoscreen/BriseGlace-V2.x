@@ -282,8 +282,8 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
         //now comes from enigma Singleton
         bigEnigmaManager().pickNewEnigma(BOGGLE);
         
-        wantedWord = utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution());
-        ofLogNotice() << "setting wantedWord to : " << wantedWord;
+        wantedWord = utils::toWString(bigEnigmaManager().getCurrentEnigma()->getSolution());
+        ofLogNotice() << "setting wantedWord to : " << utils::toByteString(wantedWord);
         
         //physics
         setupPhysics(ofVec3f(1000.0, 1000.0, 1000.0));
@@ -305,7 +305,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
             rdnStartPosition.z = ofRandom(-50, 50);
             
             box = new cubeRigidBody();
-            box->setup(texture, utils::toWString(wantedWord.substr(i,1)));
+            box->setup(texture, wantedWord.substr(i,1));
             box->create(world.world, rdnStartPosition, .5, 80, 80, 80);
 //            box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
             

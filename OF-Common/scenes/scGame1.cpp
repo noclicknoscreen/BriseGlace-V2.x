@@ -71,7 +71,7 @@ void scGame1::draw(){ //draw scene 1 here
     
     // Draw title
     scScene::drawTitle("Mot masqué");
-    scScene::drawSubTitle("Trouve un " + ofToString(bigEnigmaManager().getCurrentEnigma()->getTheme()));
+    scScene::drawSubTitle("Trouvez " + ofToString(bigEnigmaManager().getCurrentEnigma()->getTheme()));
     scScene::drawSubTitle("Dites un mot pour voir", ofColor::black, ofPoint(0,50));
     
     // Draw cubes
@@ -140,7 +140,7 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
         
         //
         string solution = bigEnigmaManager().getCurrentEnigma()->getSolution();
-        myCubeManager.getWord(solution);
+        myCubeManager.getWord(utils::toWString(solution));
         myInputManager.clearDuplicatesLettersHistory();
         myInputManager.setReadyForNewText();
         myInputManager.setWordToFind(utils::toUpperCase(solution));

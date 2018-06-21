@@ -49,8 +49,6 @@ public:
     //ofEasyCam					camera;
     ofCamera					camera;
     
-    //the word to find
-    string wantedWord;
     
     //texture
     ofImage texture;
@@ -96,6 +94,14 @@ protected:
 //private:
 //    timer mTimerEndScene;
 //    void  timerEndScene();
+protected:
+    //the word to find
+    wstring wantedWord;
+public:
+    void setWantedWord(wstring _wantedWord);
+    wstring getWantedWord();
+    
+    
     
 };
 
