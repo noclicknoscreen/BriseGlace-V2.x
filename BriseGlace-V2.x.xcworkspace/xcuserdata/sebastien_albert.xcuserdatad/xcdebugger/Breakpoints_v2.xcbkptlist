@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "OF-Common/scenes/scGame3Bis.cpp"
-            timestampString = "551008603.453882"
+            filePath = "OF-Common/enigmaManager.cpp"
+            timestampString = "551224133.492735"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "scGame3Bis::sceneWillAppear( ofxScene * fromScreen )"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "enigmaManager::setPseudoString(int _length)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "OF-Common/scenes/scGame3Bis.cpp"
-            timestampString = "551020550.103289"
+            filePath = "OF-Common/enigmaManager.cpp"
+            timestampString = "551224150.054915"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "scGame3Bis::update(float dt)"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "enigmaManager::setPseudoString(int _length)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "OF-Common/enigma.cpp"
-            timestampString = "551013714.640636"
+            filePath = "OF-Common/enigmaManager.cpp"
+            timestampString = "551224267.790679"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "enigma::load(string _path)"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "enigmaManager::setPseudoString(int _length)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OF-Common/cubes/cubeManagerMemory.cpp"
+            timestampString = "551225531.167419"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "cubeManagerMemory::setGrid(int _nbLines, int _nbRows)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,29 +73,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "OF-Common/scenes/scHint.cpp"
-            timestampString = "551018811.581207"
+            filePath = "OF-Common/cubes/cubeManagerMemory.cpp"
+            timestampString = "551225531.167419"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "scHint::sceneWillDisappear( ofxScene * toScreen)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OF-Common/scenes/scGame2.cpp"
-            timestampString = "551022269.4382989"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
-            landmarkName = "scGame2::timerSignWinEnd()"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "cubeManagerMemory::draw()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -17,7 +17,7 @@ class cube
 public:
     void setup(ofPoint pos, float size);
     void update(int rotationSpeed);
-    void setLetter(string letter);
+    void setLetter(char letter);
     void rotateToWhite();
     void rotateToWood();
     void rotateToLetter();
@@ -27,7 +27,8 @@ public:
     ofPoint position;
     float size;
 //    bool letterFace, whiteFace, woodFace;
-    string myLetter;
+//    string myLetter;
+    char myLetter;
     bool isRotating;
     
 private:

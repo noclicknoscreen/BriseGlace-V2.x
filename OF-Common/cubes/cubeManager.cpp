@@ -33,7 +33,7 @@ void cubeManager::setup(ofPoint _cubesPos, int _espacementCubes, int _cubeSize)
     materialColor.setSaturation(0);
     
     //font
-    font.load(globalFontName, globalFontSizeBig);
+    font.load(globalFontName, globalFontSizeBig, true, true);
     
     //texture
     textureBois.load("contreplaque.png");
@@ -133,7 +133,7 @@ void cubeManager::colorizeCube(int cubeId, ofColor _color)
             
         case IMAGE_GRID:
             // In Memory, we test if the letter is in the solution word
-            compareNb = ofStringTimesInString(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()), myCubes[cubeId].myLetter);
+            compareNb = ofStringTimesInString(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()), ofToString(myCubes[cubeId].myLetter));
             ofLogNotice() << "Colorize : The letter is [" << myCubes[cubeId].myLetter << "] and the enigma is [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "]" << " NB=" << compareNb;
             
             if(compareNb > 0){

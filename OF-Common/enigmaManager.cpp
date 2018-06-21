@@ -7,6 +7,8 @@
 //
 
 #include "enigmaManager.h"
+#include <algorithm>
+#include <string>
 
 #define GLOBAL_PATH "../../../_enigmasNewForm/enigme"
 
@@ -84,26 +86,43 @@ enigmaType enigmaManager::pickHintIndex(){
 // PSEUDO STRING -----------------------------------------------
 void enigmaManager::setPseudoString(int _length){
     
-    mPseudoString = ""; // Clear
-    mPseudoString += mCurrentEnigma.getSolution();
+//    mPseudoString = ""; // Clear
+//    mPseudoString.clear(); // Clear
+    mPseudoString = utils::toUpperCase(mCurrentEnigma.getSolution());
     
+    mPseudoString.erase(std::remove(mPseudoString.begin(), mPseudoString.end(), ' '), mPseudoString.end());
+    
+//    int savedSize = mPseudoString.size();
     if(_length > mPseudoString.size()){
         // On rajoute des lettre aléatoire
-        for(int i=0; i< (_length - mPseudoString.size()); i++){
-            mPseudoString += utils::getRndLetter()[0];
+        for(int i = mPseudoString.size(); i < _length; i++){
+            mPseudoString += utils::getRndLetter();
         }
     }else if(_length < mPseudoString.size()){
         mPseudoString.resize(_length);
     }
     
-    random_shuffle(mPseudoString.begin(), mPseudoString.end());
+    // Manual shuffle
+    // But don't touch to utf8 characters
+    for(int idxLetter = 0; idxLetter < mPseudoString.size(); idxLetter++){
+        
+        int rndIdx = (int)ofRandom(0, mPseudoString.size());
+        
+        if(ofStringTimesInString("ÀÂÉÈÊÎÔÛÙŒÆÇ", ofToString(mPseudoString[rndIdx])) <= 0
+           &&
+           ofStringTimesInString("ÀÂÉÈÊÎÔÛÙŒÆÇ", ofToString(mPseudoString[idxLetter])) <= 0){
+            
+            std::swap(mPseudoString[idxLetter], mPseudoString[rndIdx]);
+        }
+    }
+    ofLog() << "Pseudo chaine = " << mPseudoString << " longueur(" << ofToString(mPseudoString.size()) << ")";
     
 }
 
-string    enigmaManager::pickPseudoLetter(int _idx){
+char enigmaManager::pickPseudoLetter(int _idx){
     if(_idx >= 0 && _idx < mPseudoString.size()){
         // return a letter among the pseudo string
-        return ofToString(mPseudoString[_idx]);
+        return mPseudoString[_idx];
         
     }else{
         // else return anything random

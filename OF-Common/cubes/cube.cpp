@@ -97,7 +97,7 @@ void cube::rotateToLetter()
     }
 };
 
-void cube::setLetter(string _letter)
+void cube::setLetter(char _letter)
 {
     myLetter = _letter;
 }

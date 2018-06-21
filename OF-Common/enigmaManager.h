@@ -46,7 +46,7 @@ private:
     
 public:
     void      setPseudoString(int _length);
-    string    pickPseudoLetter(int _idx);
+    char    pickPseudoLetter(int _idx);
     
 public:
     static enigmaManager& get(){

@@ -11,6 +11,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "ofApp::draw():ofApp.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "bigEnigmaManager()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "cubeManagerMemory::setGrid(int, int):cubeManagerMemory.cpp">
          <PersistentStrings>
             <PersistentString
@@ -19,15 +27,32 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "enigmaManager::setPseudoString(int):enigmaManager.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "ofToString(mPseudoString[2])">
+            </PersistentString>
+            <PersistentString
+               value = "mPseudoString">
+            </PersistentString>
+            <PersistentString
+               value = "(int)c">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "cubeManagerHiddenWord::draw():cubeManagerHiddenWord.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "player::draw(ofVec3f):player.cpp">
+      </ContextState>
+      <ContextState
          contextName = "scGame3::update(float):scGame3.cpp">
          <PersistentStrings>
             <PersistentString
                value = "bigEnigmaManager()">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "cubeManagerHiddenWord::draw():cubeManagerHiddenWord.cpp">
       </ContextState>
       <ContextState
          contextName = "scGame3::draw():scGame3.cpp">

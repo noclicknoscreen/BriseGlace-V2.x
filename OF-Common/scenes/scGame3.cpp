@@ -194,7 +194,6 @@ void scGame3::draw(){
     
     
     scScene::drawTitle("Mot brassé");
-    
     scScene::drawSubTitle("Trouve " + ofToString(bigEnigmaManager().getCurrentEnigma()->getTheme()));
     scScene::drawSubTitle("Parlez-moi dans l'oreille pour retourner les cubes", ofColor::black, ofPoint(0, 50));
     

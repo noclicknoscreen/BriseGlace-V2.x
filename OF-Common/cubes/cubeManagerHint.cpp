@@ -65,10 +65,10 @@ void cubeManagerHint::setGrid(int _nbLines, int _nbRows){
         {
             cube* tmpCube = new cube();
             int step = cubeSize + 2*mEspacementCubes;
-            string rndLetter;
-            do{
-                rndLetter = utils::getRndLetter();
-            }while(ofStringTimesInString(mContent, rndLetter) > 0 && mContent != "");
+//            string rndLetter;
+//            do{
+//                rndLetter = utils::getRndLetter();
+//            }while(ofStringTimesInString(mContent, rndLetter) > 0 && mContent != "");
             
             ofPoint position(mCubesPosition.x - 0.5*_nbRows*step + 0.5*step, mCubesPosition.y - 0.5*_nbLines*step + 0.5*step);
             position.x += idxRow*step;
@@ -76,10 +76,10 @@ void cubeManagerHint::setGrid(int _nbLines, int _nbRows){
             position.z = mCubesPosition.z;
             
             tmpCube->setup(position, cubeSize);
-            tmpCube->setLetter(rndLetter);
+//            tmpCube->setLetter(rndLetter);
             tmpCube->rotateToWhite();
             
-            mContent += rndLetter;
+//            mContent += rndLetter;
             
             myCubes.push_back(*tmpCube);
             

@@ -86,7 +86,10 @@ void cubeManagerHiddenWord::draw(){
                 ofTranslate(-textWidth/2, -textHeight/2, -myCubes[i].size/2-1);
                 ofRotate(180,0,1,0);
                 ofRotate(180,0,0,1);
-                font.drawString(myCubes[i].myLetter, 0, 0);
+        
+                string s;
+                s += myCubes[i].myLetter;
+                font.drawString(s, 0, 0);
         
             ofPopMatrix();
         
@@ -121,7 +124,7 @@ void cubeManagerHiddenWord::getWord(string word)
     {
         cube* tmpCube = new cube();
         tmpCube->setup(ofPoint(mCubesPosition.x - wordWidth/2 + i*(mEspacementCubes + cubeSize) + cubeSize/2 + mEspacementCubes, mCubesPosition.y, mCubesPosition.z), cubeSize);
-        tmpCube->setLetter(utils::toUpperCase(ofToString(word[i])));
+        tmpCube->setLetter(word[i]);
         myCubes.push_back(*tmpCube);
     }
 }
