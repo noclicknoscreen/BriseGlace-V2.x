@@ -157,4 +157,5 @@ date_default_timezone_set('UTC');
 $fichier = fopen($tmp . "/" . $StrNum . $num . "/enigma.json", "w+");
 fputs($fichier, $json_string = json_encode($jsonFormat, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 fclose($fichier);
+
 ?>
