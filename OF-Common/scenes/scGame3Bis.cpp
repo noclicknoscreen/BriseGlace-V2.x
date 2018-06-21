@@ -35,7 +35,7 @@ void scGame3Bis::sceneWillAppear( ofxScene * fromScreen ){
         
         box = new cubeRigidBody();
         //            box->setup(texture, ofToString(wantedWord[wantedWord.size()-(i+1)]), 40);
-        box->setup(texture, ofToString(wantedWord[i]));
+        box->setup(texture, utils::toWString(wantedWord.substr(i,1)));
         box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
         box->create(world.world, startPosition, .5, 80, 80, 80);
         box->add();

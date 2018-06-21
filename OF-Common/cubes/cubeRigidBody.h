@@ -13,7 +13,6 @@
 
 class cubeRigidBody : public ofxBulletBox
 {
-    string letter;
     ofImage texture;
     ofTrueTypeFont font;
     
@@ -22,9 +21,14 @@ class cubeRigidBody : public ofxBulletBox
 public:
     void customDraw(ofColor _winnerColor=ofColor::white);
     
-    void setLetter(string _letter);
     void setTexture(ofImage _texture);
-    void setup(ofImage _image, string _letter);
+    void setup(ofImage _image, wstring _letter);
+    
+private:
+    wstring mLetter;
+public:
+    void setLetter(wstring letter);
+    wstring getLetter();
 };
 
 

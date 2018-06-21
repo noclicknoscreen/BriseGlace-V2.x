@@ -33,13 +33,13 @@ void cubeManagerHiddenWord::draw(){
     ofEnableLighting();
     ofSetSmoothLighting(true);
     
-    for(int i=0; i<myCubes.size(); i++)
+    for(int idxCube=0; idxCube<myCubes.size(); idxCube++)
     {
         ofPushMatrix();
         
         
-            ofTranslate(myCubes[i].position.x, myCubes[i].position.y, myCubes[i].position.z);
-            ofRotate(myCubes[i].currentRot, 1.0, 0.0, 0.0);
+            ofTranslate(myCubes[idxCube].position.x, myCubes[idxCube].position.y, myCubes[idxCube].position.z);
+            ofRotate(myCubes[idxCube].currentRot, 1.0, 0.0, 0.0);
         
             materialColor.setHue(0);
             material.setAmbientColor(materialColor);
@@ -49,15 +49,15 @@ void cubeManagerHiddenWord::draw(){
             material.begin();
             ofEnableNormalizedTexCoords();
             textureBois.bind();
-               ofDrawBox(myCubes[i].size, myCubes[i].size ,myCubes[i].size);
+               ofDrawBox(myCubes[idxCube].size, myCubes[idxCube].size ,myCubes[idxCube].size);
             material.end();
             textureBois.unbind();
             
             
             //FACE BLANCHE
-            material.setAmbientColor(myCubes[i].getMaterialColor());
+            material.setAmbientColor(myCubes[idxCube].getMaterialColor());
         
-            material.setDiffuseColor(ofColor(myCubes[i].getMaterialColor(), 140)); //add some transparency here, to keep the texture visible ;)
+            material.setDiffuseColor(ofColor(myCubes[idxCube].getMaterialColor(), 140)); //add some transparency here, to keep the texture visible ;)
             material.begin();
         
             ofEnableNormalizedTexCoords();
@@ -66,7 +66,7 @@ void cubeManagerHiddenWord::draw(){
             {
                 ofPushMatrix();
                 ofRotate(180,1,0,0);
-                ofDrawRectangle(-myCubes[i].size/2, -myCubes[i].size/2, (myCubes[i].size/2)+0.2, myCubes[i].size, myCubes[i].size);
+                ofDrawRectangle(-myCubes[idxCube].size/2, -myCubes[idxCube].size/2, (myCubes[idxCube].size/2)+0.2, myCubes[idxCube].size, myCubes[idxCube].size);
                 ofPopMatrix();
             }
             //texture.unbind();
@@ -83,15 +83,13 @@ void cubeManagerHiddenWord::draw(){
             
             ofPushMatrix();
             
-                ofTranslate(-textWidth/2, -textHeight/2, -myCubes[i].size/2-1);
+                ofTranslate(-textWidth/2, -textHeight/2, -myCubes[idxCube].size/2-1);
                 ofRotate(180,0,1,0);
                 ofRotate(180,0,0,1);
         
-                string s;
-                s += myCubes[i].myLetter;
-                font.drawString(s, 0, 0);
+        font.drawString(utils::toUpperCase(utils::toByteString(myCubes[idxCube].getLetter())), 0, 0);
         
-            ofPopMatrix();
+        ofPopMatrix();
         
         ofPopMatrix();
 
@@ -124,7 +122,7 @@ void cubeManagerHiddenWord::getWord(string word)
     {
         cube* tmpCube = new cube();
         tmpCube->setup(ofPoint(mCubesPosition.x - wordWidth/2 + i*(mEspacementCubes + cubeSize) + cubeSize/2 + mEspacementCubes, mCubesPosition.y, mCubesPosition.z), cubeSize);
-        tmpCube->setLetter(word[i]);
+        tmpCube->setLetter(utils::toWString(word.substr(i, 1)));
         myCubes.push_back(*tmpCube);
     }
 }

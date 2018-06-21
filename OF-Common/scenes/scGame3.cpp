@@ -305,7 +305,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
             rdnStartPosition.z = ofRandom(-50, 50);
             
             box = new cubeRigidBody();
-            box->setup(texture, ofToString(wantedWord[i]));
+            box->setup(texture, utils::toWString(wantedWord.substr(i,1)));
             box->create(world.world, rdnStartPosition, .5, 80, 80, 80);
 //            box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
             

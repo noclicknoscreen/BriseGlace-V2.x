@@ -132,9 +132,9 @@ void cubeManager::colorizeCube(int cubeId, ofColor _color)
     switch (bigEnigmaManager().getCurrentGameType()) {
             
         case IMAGE_GRID:
-            // In Memory, we test if the letter is in the solution word
-            compareNb = ofStringTimesInString(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()), ofToString(myCubes[cubeId].myLetter));
-            ofLogNotice() << "Colorize : The letter is [" << myCubes[cubeId].myLetter << "] and the enigma is [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "]" << " NB=" << compareNb;
+            // In Memory, we test if the letter is in the solution word)
+            compareNb = ofStringTimesInString(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()), utils::toByteString(myCubes[cubeId].getLetter()));
+            ofLogNotice() << "Colorize : The letter is [" << utils::toByteString(myCubes[cubeId].getLetter()) << "] and the enigma is [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "]" << " NB=" << compareNb;
             
             if(compareNb > 0){
                 // Good, we color

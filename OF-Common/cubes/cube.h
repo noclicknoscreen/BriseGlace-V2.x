@@ -17,7 +17,6 @@ class cube
 public:
     void setup(ofPoint pos, float size);
     void update(int rotationSpeed);
-    void setLetter(char letter);
     void rotateToWhite();
     void rotateToWood();
     void rotateToLetter();
@@ -27,8 +26,8 @@ public:
     ofPoint position;
     float size;
 //    bool letterFace, whiteFace, woodFace;
-//    string myLetter;
-    char myLetter;
+    
+//    char myLetter;
     bool isRotating;
     
 private:
@@ -36,6 +35,12 @@ private:
 public:
     void setMaterialColor(ofColor _color){materialColor = _color;};
     ofColor getMaterialColor(){return materialColor;};
+    
+private:
+    wstring mLetter;
+public:
+    void setLetter(wstring letter);
+    wstring getLetter();
     
 };
 #endif /* cube_hpp */

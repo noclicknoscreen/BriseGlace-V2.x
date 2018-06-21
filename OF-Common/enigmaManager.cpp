@@ -88,7 +88,7 @@ void enigmaManager::setPseudoString(int _length){
     
 //    mPseudoString = ""; // Clear
 //    mPseudoString.clear(); // Clear
-    mPseudoString = utils::toUpperCase(mCurrentEnigma.getSolution());
+    mPseudoString = utils::toWString(utils::toUpperCase(mCurrentEnigma.getSolution()));
     
     mPseudoString.erase(std::remove(mPseudoString.begin(), mPseudoString.end(), ' '), mPseudoString.end());
     
@@ -108,21 +108,22 @@ void enigmaManager::setPseudoString(int _length){
         
         int rndIdx = (int)ofRandom(0, mPseudoString.size());
         
-        if(ofStringTimesInString("ÀÂÉÈÊÎÔÛÙŒÆÇ", ofToString(mPseudoString[rndIdx])) <= 0
+        if(ofStringTimesInString("ÀÂÉÈÊÎÔÛÙŒÆÇ", utils::toByteString(mPseudoString.substr(rndIdx,1))) <= 0
            &&
-           ofStringTimesInString("ÀÂÉÈÊÎÔÛÙŒÆÇ", ofToString(mPseudoString[idxLetter])) <= 0){
+           ofStringTimesInString("ÀÂÉÈÊÎÔÛÙŒÆÇ", utils::toByteString(mPseudoString.substr(idxLetter,1))) <= 0){
             
             std::swap(mPseudoString[idxLetter], mPseudoString[rndIdx]);
         }
     }
-    ofLog() << "Pseudo chaine = " << mPseudoString << " longueur(" << ofToString(mPseudoString.size()) << ")";
+    ofLog() << "Pseudo chaine = " << utils::toByteString(mPseudoString) << " longueur(" << ofToString(mPseudoString.size()) << ")";
     
 }
 
-char enigmaManager::pickPseudoLetter(int _idx){
+wstring enigmaManager::pickPseudoLetter(int _idx){
     if(_idx >= 0 && _idx < mPseudoString.size()){
         // return a letter among the pseudo string
-        return mPseudoString[_idx];
+//        return mPseudoString[_idx];
+        return mPseudoString.substr(_idx, 1);
         
     }else{
         // else return anything random

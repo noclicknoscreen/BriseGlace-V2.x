@@ -6,12 +6,14 @@
 //
 //
 
-#ifndef utils_h
-#define utils_h
+#pragma once
 
 #include "ofMain.h"
 #include "ofxAnimatableFloat.h"
 #include "ofEvents.h"
+
+#include <locale>
+#include <codecvt>
 
 
 const string    globalFontName = "KGTenThousandReasons.ttf";
@@ -55,13 +57,37 @@ public:
     };
     
     //--------------------------------------------------------------
-    static char getRndLetter(){
+    static wstring getRndLetter(){
         
-        string allLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        wstring allLetters = L"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         int rndIdx = (int)ofRandom(0, (float)allLetters.size());
         
-        return allLetters[rndIdx];
+        return allLetters.substr(rndIdx, 1);
+//        return allLetters[rndIdx];
     };
+    
+    
+    // CONVERSION -------------------------------------------------------------
+private:
+//    static std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
+public:
+    static std::string toByteString(std::wstring _WStr){
+        
+        std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
+        
+        std::string narrow = converter.to_bytes(_WStr);
+        return narrow;
+    }
+    static std::wstring toWString(std::string _Str){
+        
+        std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
+        
+        std::wstring wide = converter.from_bytes(_Str);
+        return wide;
+    }
+    // Examples
+//    std::string narrow = converter.to_bytes(wide_utf16_source_string);
+//    std::wstring wide = converter.from_bytes(narrow_utf8_source_string);
     
 };
 
@@ -137,4 +163,3 @@ public:
     
 };
 
-#endif /* utils_h */

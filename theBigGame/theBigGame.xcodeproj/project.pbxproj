@@ -290,9 +290,9 @@
 		1BB921E66522A452136448B9 /* gim_hash_table.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gim_hash_table.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletCollision/Gimpact/gim_hash_table.h; sourceTree = SOURCE_ROOT; };
 		1C0DA2561397A7DE0246858B /* ofxGuiGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGuiGroup.h; path = ../../../addons/ofxGui/src/ofxGuiGroup.h; sourceTree = SOURCE_ROOT; };
 		1C1EBDD4DC4C7294AB44D266 /* btConvexHull.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btConvexHull.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/LinearMath/btConvexHull.h; sourceTree = SOURCE_ROOT; };
-		1C3F868720C56C8B0051AFD5 /* cubeManagerMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cubeManagerMemory.cpp; sourceTree = "<group>"; };
+		1C3F868720C56C8B0051AFD5 /* cubeManagerMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = cubeManagerMemory.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		1C3F868820C56C8B0051AFD5 /* cubeManagerMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeManagerMemory.h; sourceTree = "<group>"; };
-		1C3F868A20C56EA40051AFD5 /* cubeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cubeManager.cpp; sourceTree = "<group>"; };
+		1C3F868A20C56EA40051AFD5 /* cubeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = cubeManager.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		1C3F868B20C56EA40051AFD5 /* cubeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeManager.h; sourceTree = "<group>"; };
 		1C69A2DC20C7D0A8008D3744 /* scGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scGame.cpp; sourceTree = "<group>"; };
 		1C69A2DD20C7D0A8008D3744 /* scGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scGame.h; sourceTree = "<group>"; };
@@ -306,7 +306,7 @@
 		1CAEABBD20C67EAE00BFC797 /* inputHandlerHiddenWord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inputHandlerHiddenWord.cpp; sourceTree = "<group>"; };
 		1CAEABBE20C67EAE00BFC797 /* inputHandlerHiddenWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputHandlerHiddenWord.h; sourceTree = "<group>"; };
 		1CD83BDB20D7B88800C873FB /* scGame3Bis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scGame3Bis.cpp; sourceTree = "<group>"; };
-		1CD83BE120D7BA5C00C873FB /* cubeRigidBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cubeRigidBody.cpp; sourceTree = "<group>"; };
+		1CD83BE120D7BA5C00C873FB /* cubeRigidBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = cubeRigidBody.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		1CD83BE220D7BA5C00C873FB /* cubeRigidBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeRigidBody.h; sourceTree = "<group>"; };
 		1D4DB7B7B88FCD73E5772307 /* btSoftBodyInternals.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btSoftBodyInternals.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletSoftBody/btSoftBodyInternals.h; sourceTree = SOURCE_ROOT; };
 		1D5626A71214B2AEA6F785CF /* btBox2dShape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btBox2dShape.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletCollision/CollisionShapes/btBox2dShape.h; sourceTree = SOURCE_ROOT; };
@@ -636,14 +636,14 @@
 		D2CF8C0020A98E700035B780 /* ofxSceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSceneManager.h; sourceTree = "<group>"; };
 		D2CF8C0220A98E700035B780 /* cube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cube.cpp; sourceTree = "<group>"; };
 		D2CF8C0320A98E700035B780 /* cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cube.h; sourceTree = "<group>"; };
-		D2CF8C0420A98E700035B780 /* cubeManagerHiddenWord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cubeManagerHiddenWord.cpp; sourceTree = "<group>"; };
+		D2CF8C0420A98E700035B780 /* cubeManagerHiddenWord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = cubeManagerHiddenWord.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		D2CF8C0520A98E700035B780 /* cubeManagerHiddenWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeManagerHiddenWord.h; sourceTree = "<group>"; };
 		D2CF8C0620A98E700035B780 /* inputHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inputHandler.cpp; sourceTree = "<group>"; };
 		D2CF8C0720A98E700035B780 /* inputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputHandler.h; sourceTree = "<group>"; };
 		D2CF8C0B20A98E700035B780 /* enigma.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = enigma.cpp; sourceTree = "<group>"; };
 		D2CF8C0C20A98E700035B780 /* enigma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enigma.h; sourceTree = "<group>"; };
 		D2CF8C0D20A98E700035B780 /* enigmaHint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enigmaHint.h; sourceTree = "<group>"; };
-		D2CF8C0E20A98E700035B780 /* enigmaManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = enigmaManager.cpp; sourceTree = "<group>"; };
+		D2CF8C0E20A98E700035B780 /* enigmaManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = enigmaManager.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		D2CF8C0F20A98E700035B780 /* enigmaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enigmaManager.h; sourceTree = "<group>"; };
 		D2CF8C1020A98E700035B780 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
 		D2CF8C1120A98E700035B780 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
@@ -672,7 +672,7 @@
 		D2CF8C4420A9FBA70035B780 /* ofxTextSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTextSuite.h; sourceTree = "<group>"; };
 		D2CF8C4B20AA01380035B780 /* indice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = indice.cpp; sourceTree = "<group>"; };
 		D2CF8C4C20AA01380035B780 /* indice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = indice.h; sourceTree = "<group>"; };
-		D2CF8C5020AAEAAC0035B780 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		D2CF8C5020AAEAAC0035B780 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = utils.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		D2CF8C5120AB141B0035B780 /* scGame3Bis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scGame3Bis.h; sourceTree = "<group>"; };
 		D2D1D47D5A2A1B5AC097B14F /* btDefaultMotionState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btDefaultMotionState.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/LinearMath/btDefaultMotionState.h; sourceTree = SOURCE_ROOT; };
 		D2F2DC31B30F78A69C7E766C /* btActionInterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btActionInterface.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletDynamics/Dynamics/btActionInterface.h; sourceTree = SOURCE_ROOT; };

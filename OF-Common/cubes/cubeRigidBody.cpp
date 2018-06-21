@@ -33,8 +33,8 @@ void cubeRigidBody::customDraw(ofColor _winnerColor)
     
     //letter
     float textHeight, textWidth;
-    textWidth = font.getStringBoundingBox(letter, 0, 0).getWidth();
-    textHeight = font.getStringBoundingBox(letter, 0, 0).getHeight();
+    textWidth = font.getStringBoundingBox(utils::toByteString(mLetter), 0, 0).getWidth();
+    textHeight = font.getStringBoundingBox(utils::toByteString(mLetter), 0, 0).getHeight();
     
     
     
@@ -68,7 +68,7 @@ void cubeRigidBody::customDraw(ofColor _winnerColor)
     ofTranslate(-textWidth/2.0,  -textHeight/2, float(size.z/2 +2));
     
     ofDisableLighting();
-    font.drawString(letter, 0, 0);
+    font.drawString(utils::toByteString(mLetter), 0, 0);
     ofEnableLighting();
     ofPopMatrix();
     
@@ -81,7 +81,7 @@ void cubeRigidBody::customDraw(ofColor _winnerColor)
     ofTranslate(-textWidth/2.0,  -textHeight/2, -1.0f *     float(size.z/2 +2));
     
     ofDisableLighting();
-    font.drawString(letter, 0, 0);
+    font.drawString(utils::toByteString(mLetter), 0, 0);
     ofEnableLighting();
     ofPopMatrix();
     
@@ -95,9 +95,13 @@ void cubeRigidBody::customDraw(ofColor _winnerColor)
     
 }
 
-void cubeRigidBody::setLetter(string _letter)
+void cubeRigidBody::setLetter(wstring _letter)
 {
-    letter = _letter;
+    mLetter = _letter;
+}
+wstring cubeRigidBody::getLetter()
+{
+    return mLetter;
 }
 
 void cubeRigidBody::setTexture(ofImage _texture)
@@ -105,7 +109,7 @@ void cubeRigidBody::setTexture(ofImage _texture)
     texture = _texture;
 }
 
-void cubeRigidBody::setup(ofImage _image, string _letter)
+void cubeRigidBody::setup(ofImage _image, wstring _letter)
 {
     setTexture(_image);
     setLetter(_letter);

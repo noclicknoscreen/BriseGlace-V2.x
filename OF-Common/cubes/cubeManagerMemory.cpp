@@ -43,7 +43,7 @@ void cubeManagerMemory::setGrid(int _nbLines, int _nbRows){
         {
             cube* tmpCube = new cube();
             int step = cubeSize + 2*mEspacementCubes;
-            char rndLetter = bigEnigmaManager().pickPseudoLetter(countCube);
+            wstring rndLetter = bigEnigmaManager().pickPseudoLetter(countCube);
             
 //            do{
 //                rndLetter = utils::getRndLetter();
@@ -55,11 +55,11 @@ void cubeManagerMemory::setGrid(int _nbLines, int _nbRows){
             position.z = mCubesPosition.z;
             
             tmpCube->setup(position, cubeSize);
-            ofLog() << "Add cube , letter = "  << rndLetter;
+            ofLog() << "Add cube , letter = "  << utils::toByteString(rndLetter);
             tmpCube->setLetter(rndLetter);
             tmpCube->rotateToLetter();
             
-            mContent += rndLetter;
+            mContent += utils::toByteString(rndLetter);
             
             myCubes.push_back(*tmpCube);
             countCube++;
@@ -156,10 +156,8 @@ void cubeManagerMemory::draw(){
                 ofTranslate(-textWidth/2, -textHeight/2, -1.0f * (1 + myCubes[idxCube].size/2));
                 ofRotate(180,0,1,0);
                 ofRotate(180,0,0,1);
-        
-                string s;
-                s += myCubes[idxCube].myLetter;
-                font.drawString(s, 0, 0);
+
+        font.drawString(utils::toUpperCase(utils::toByteString(myCubes[idxCube].getLetter())), 0, 0);
         
             ofPopMatrix();
             // FIN LETTRE --------------------------------------------------

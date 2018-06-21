@@ -42,11 +42,11 @@ private:
     
     // pseudo-random string (half enigma answer, half random)
 private:
-    string    mPseudoString;
+    wstring    mPseudoString;
     
 public:
     void      setPseudoString(int _length);
-    char    pickPseudoLetter(int _idx);
+    wstring    pickPseudoLetter(int _idx);
     
 public:
     static enigmaManager& get(){
