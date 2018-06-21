@@ -5,6 +5,9 @@
       location = "container:"
       name = "examples">
       <FileRef
+         location = "group:../../../0.10.0/examples/strings/ofLogExample/ofLogExample.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:../../examples/gl/multiLightExample/multiLightExample.xcodeproj">
       </FileRef>
       <FileRef

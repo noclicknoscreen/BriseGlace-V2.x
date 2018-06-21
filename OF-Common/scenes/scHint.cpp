@@ -27,6 +27,8 @@ void scHint::setup(){  //load your scene 1 assets here...
     group.add(concentration.set("concentration", 0, 0, 180));
     
     group.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
+    group.add(waitTimeBeforeRoll.set("waitTimeBeforeRoll", 3, 0.1, 10));
+    group.add(timeInBetweenRolls.set("timeInBetweenRolls", .5, 0.1, 2));
     
     gui.setup(group);
     gui.loadFromFile(settingsFileNameHint);
@@ -70,10 +72,10 @@ void scHint::keyPressed(int key){
     if(key=='W')
         myCubeManager.rotateToWhite(0);
     if(key == 's') {
-        gui.saveToFile(settingsFileNameGame2);
+        gui.saveToFile(settingsFileNameHint);
     }
     if(key == 'l') {
-        gui.loadFromFile(settingsFileNameGame2);
+        gui.loadFromFile(settingsFileNameHint);
     }
     if(key==' ' ){
         bDrawGui = !bDrawGui;
@@ -91,7 +93,7 @@ void scHint::sceneWillAppear( ofxScene * fromScreen ){
     currentCube = 0;
     
     // -- -- -- -- --
-    mTimerBeforeRoll.startTimer(3);
+    mTimerBeforeRoll.startTimer(waitTimeBeforeRoll);
     mTimerStartRoll.stop();
     mTimerEndScene.stop();
     
@@ -137,7 +139,7 @@ void scHint::timerBeforeRollEnd(){
     
     ofLogNotice() << "End of timerBeforeRoll, start roll cubes";
     
-    mTimerStartRoll.startTimer(0.5);
+    mTimerStartRoll.startTimer(timeInBetweenRolls);
     mTimerBeforeRoll.stop();
 }
 void scHint::timerStartRollEnd(){
@@ -148,7 +150,7 @@ void scHint::timerStartRollEnd(){
     if(currentCube < myCubeManager.getNumberOfCubes()){
         myCubeManager.rotateToWood(currentCube);
         currentCube++;
-        mTimerStartRoll.startTimer(0.5);
+        mTimerStartRoll.startTimer(timeInBetweenRolls);
     }else{
         mTimerEndScene.startTimer(10);
         mTimerStartRoll.stop();

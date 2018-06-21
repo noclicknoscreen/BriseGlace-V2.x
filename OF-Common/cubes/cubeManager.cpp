@@ -41,7 +41,7 @@ void cubeManager::setup(ofPoint _cubesPos, int _espacementCubes, int _cubeSize)
     cubeSize = _cubeSize;
 }
 
-void cubeManager::update(ofPoint _lightPos, ofPoint _lightAngle, float _cutOff, float _concentration, int cubesRotationSpeed)
+void cubeManager::update(ofPoint _lightPos, ofPoint _lightAngle, float _cutOff, float _concentration, float cubesRotationSpeed)
 {
     spotLightCubes.setPosition(_lightPos.x, _lightPos.y, _lightPos.z);
     spotLightCubes.setOrientation(ofVec3f(_lightAngle.x, _lightAngle.y, _lightAngle.z));

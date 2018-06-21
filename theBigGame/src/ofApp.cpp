@@ -48,6 +48,23 @@ void ofApp::setup(){
     ///////////////////////////////////////
     background.load("Decor_MurEtSol.png");
     
+    ///////////////////////////////////////
+#ifdef _DEBUG
+    // debug only code
+    
+#else
+    // release only code
+    ofFile fileLog("../../../Scripts/appLog.txt");
+    if(fileLog.exists()){
+        fileLog.remove();
+    }
+    
+    ofSetLogLevel(OF_LOG_WARNING);
+    ofLogToFile("../../../Scripts/appLog.txt", true); //set channel to log file. log file resides in the /bin/data folder
+#endif
+    
+    
+    
     
 }
 
