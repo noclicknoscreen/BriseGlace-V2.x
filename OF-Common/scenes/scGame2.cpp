@@ -74,6 +74,9 @@ void scGame2::draw(){ //draw scene 1 here
     scScene::drawSubTitle("Trouve " + ofToString(bigEnigmaManager().getCurrentEnigma()->getTheme()) + " grâce à l'image", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.15 * ofGetHeight()));
     scScene::drawSubTitle("cachée derrière ces lettres", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.20 * ofGetHeight()));
 
+    // Draw mother of draw
+    scGame::draw();
+
     // Draw cubes
     myCubeManager.draw();
     

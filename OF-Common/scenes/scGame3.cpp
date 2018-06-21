@@ -19,7 +19,8 @@
 //--------------------------------------------------------------
 void scGame3::setup(){
     
-    scScene::setup();
+    scGame::setup();
+    
     ofLogNotice() << "Game 3 : Setup !";
     
     //gui
@@ -151,6 +152,9 @@ void scGame3::draw(){
     
     material.setAmbientColor(materialColor);
     material.setDiffuseColor(materialColor);
+    
+    // Draw mother of draw
+    scGame::draw();
     
     camera.begin();
     

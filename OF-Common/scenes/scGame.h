@@ -18,9 +18,11 @@ protected:
 private:
     timer timerSignHint;
     timer timerBeforeHint;
+    timer timerForceWin;
 private:
     void restartTimerBeforeHint();
     void restartTimerSignHint();
+    void restartTimerForceWin();
     
     ///////////// SIGNS ////////////////////
 protected:
@@ -28,9 +30,17 @@ protected:
 //    bool drawWinnerSign, drawHintSign;
     int hintUserId;
     
-public:
+    // Gestion de la sequence du timer
+    void loadNewSequenceImage(int _newSequenceIdx);
+    string  mSequencePath;
+    ofImage mSequenceImg;
+    int     mSequenceIdx;
+    int     mSequenceLen;
     
+public:
+    void setup();
     void update(float dt);
+    void draw();
     
     void restartTimerSignWin();
     void stopHint();
@@ -38,6 +48,7 @@ public:
     void timerBeforeHintEnd();
     void timerSignWinEnd();
     void timerSignHintEnd();
+    void timerForceWinEnd();
     
     void someoneSpoke(player & _player);
     

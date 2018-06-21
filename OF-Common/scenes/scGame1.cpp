@@ -16,7 +16,7 @@
 
 
 void scGame1::setup(){  //load your scene 1 assets here...
-    scScene::setup();
+    scGame::setup();
     ofLogNotice() << "Game 1 : Setup !";
     
     group.setName("Game1");
@@ -73,6 +73,9 @@ void scGame1::draw(){ //draw scene 1 here
     scScene::drawTitle("Mot masqué");
     scScene::drawSubTitle("Trouvez " + ofToString(bigEnigmaManager().getCurrentEnigma()->getTheme()));
     scScene::drawSubTitle("Dites un mot pour voir", ofColor::black, ofPoint(0,50));
+    
+    // Draw mother of draw
+    scGame::draw();
     
     // Draw cubes
     myCubeManager.draw();

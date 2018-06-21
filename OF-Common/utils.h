@@ -184,5 +184,9 @@ public:
         return mTimer.isAnimating();
     }
     
+    float getValuef(){
+        return mTimer.getCurrentValue();
+    }
+    
 };
 
