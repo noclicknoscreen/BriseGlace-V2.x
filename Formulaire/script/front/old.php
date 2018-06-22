@@ -17,30 +17,35 @@ else {
   $trier = $_POST['trier'];
 }
 
-echo '</br></br></br></br><p style="color:red;">' . $trier . '</p>';
-
 if (isset($_POST['chercher']))
 {
   if (strlen($_POST['chercher']) > 0)
   {
-    $chercherand = " AND mot LIKE '%" . $_POST['chercher'] ."%' OR theme LIKE '%" . $_POST['chercher'] ."%' OR image0 LIKE '%" . $_POST['chercher'] ."%' OR auteur0
-                LIKE '%" . $_POST['chercher'] ."%' OR date0 LIKE '%" . $_POST['chercher'] ."%' OR indice1 LIKE '%" . $_POST['chercher'] ."%' OR image1 LIKE '%" . $_POST['chercher'] ."%' OR auteur1
-                LIKE '%" . $_POST['chercher'] ."%' OR date1 LIKE '%" . $_POST['chercher'] ."%' OR indice2 LIKE '%" . $_POST['chercher'] ."%' OR image2 LIKE '%" . $_POST['chercher'] ."%' OR auteur2
-                LIKE '%" . $_POST['chercher'] ."%' OR date2 LIKE '%" . $_POST['chercher'] ."%' OR indice3 LIKE '%" . $_POST['chercher'] ."%' OR image3 LIKE '%" . $_POST['chercher'] ."%' OR auteur3
-                LIKE '%" . $_POST['chercher'] ."%' OR date3 LIKE '%" . $_POST['chercher'] ."%' OR recompense LIKE '%" . $_POST['chercher'] ."%' OR image4 LIKE '%" . $_POST['chercher'] ."%' OR auteur4
-                LIKE '%" . $_POST['chercher'] ."%' OR date4 LIKE '%" . $_POST['chercher'] ."%' OR legende LIKE '%" . $_POST['chercher'] ."%' ";
-
-    $chercherwhere = " WHERE mot LIKE '%" . $_POST['chercher'] ."%' OR theme LIKE '%" . $_POST['chercher'] ."%' OR image0 LIKE '%" . $_POST['chercher'] ."%' OR auteur0
-                LIKE '%" . $_POST['chercher'] ."%' OR date0 LIKE '%" . $_POST['chercher'] ."%' OR indice1 LIKE '%" . $_POST['chercher'] ."%' OR image1 LIKE '%" . $_POST['chercher'] ."%' OR auteur1
-                LIKE '%" . $_POST['chercher'] ."%' OR date1 LIKE '%" . $_POST['chercher'] ."%' OR indice2 LIKE '%" . $_POST['chercher'] ."%' OR image2 LIKE '%" . $_POST['chercher'] ."%' OR auteur2
-                LIKE '%" . $_POST['chercher'] ."%' OR date2 LIKE '%" . $_POST['chercher'] ."%' OR indice3 LIKE '%" . $_POST['chercher'] ."%' OR image3 LIKE '%" . $_POST['chercher'] ."%' OR auteur3
-                LIKE '%" . $_POST['chercher'] ."%' OR date3 LIKE '%" . $_POST['chercher'] ."%' OR recompense LIKE '%" . $_POST['chercher'] ."%' OR image4 LIKE '%" . $_POST['chercher'] ."%' OR auteur4
-                LIKE '%" . $_POST['chercher'] ."%' OR date4 LIKE '%" . $_POST['chercher'] ."%' OR legende LIKE '%" . $_POST['chercher'] ."%' ";
+    if (!strcmp($_POST['selectTable'], "indice")) {
+      $chercherand = " AND indice1 LIKE '%" . $_POST['chercher'] ."%' OR indice2 LIKE '%" . $_POST['chercher'] ."%' OR indice3 LIKE '%" . $_POST['chercher'] . "%' ";
+      $chercherwhere = " WHERE indice1 LIKE '%" . $_POST['chercher'] ."%' OR indice2 LIKE '%" . $_POST['chercher'] ."%' OR indice3 LIKE '%" . $_POST['chercher'] . "%' ";
+    }
+    elseif (!strcmp($_POST['selectTable'], "image")) {
+      $chercherand = " AND image0 LIKE '%" . $_POST['chercher'] ."%' OR image1 LIKE '%" . $_POST['chercher'] ."%' OR image2 LIKE '%" . $_POST['chercher'] ."%' OR image3 LIKE '%" . $_POST['chercher'] ."%' OR image4 LIKE '%" . $_POST['chercher'] ."%' ";
+      $chercherwhere = " WHERE image0 LIKE '%" . $_POST['chercher'] ."%' OR image1 LIKE '%" . $_POST['chercher'] ."%' OR image2 LIKE '%" . $_POST['chercher'] ."%' OR image3 LIKE '%" . $_POST['chercher'] ."%' OR image4 LIKE '%" . $_POST['chercher'] ."%' ";
+    }
+    elseif (!strcmp($_POST['selectTable'], "auteur")) {
+      $chercherand = " AND auteur0 LIKE '%" . $_POST['chercher'] ."%' OR auteur1 LIKE '%" . $_POST['chercher'] ."%' OR auteur2 LIKE '%" . $_POST['chercher'] ."%' OR auteur3 LIKE '%" . $_POST['chercher'] ."%' OR auteur4 LIKE '%" . $_POST['chercher'] ."%' ";
+      $chercherwhere = " WHERE auteur0 LIKE '%" . $_POST['chercher'] ."%' OR auteur1 LIKE '%" . $_POST['chercher'] ."%' OR auteur2 LIKE '%" . $_POST['chercher'] ."%' OR auteur3 LIKE '%" . $_POST['chercher'] ."%' OR auteur4 LIKE '%" . $_POST['chercher'] ."%' ";
+    }
+    elseif (!strcmp($_POST['selectTable'], "date")) {
+      $chercherand = " AND date LIKE '%" . $_POST['chercher'] ."%' OR date0 LIKE '%" . $_POST['chercher'] ."%' OR date1 LIKE '%" . $_POST['chercher'] ."%' OR date2 LIKE '%" . $_POST['chercher'] ."%' OR date3 LIKE '%" . $_POST['chercher'] ."%' OR date4 LIKE '%" . $_POST['chercher'] ."%' ";
+      $chercherwhere = " WHERE date LIKE '%" . $_POST['chercher'] ."%' OR date0 LIKE '%" . $_POST['chercher'] ."%' OR date1 LIKE '%" . $_POST['chercher'] ."%' OR date2 LIKE '%" . $_POST['chercher'] ."%' OR date3 LIKE '%" . $_POST['chercher'] ."%' OR date4 LIKE '%" . $_POST['chercher'] ."%' ";
     }
     else {
-      $chercherand = " ";
-      $chercherwhere = " ";
+      $chercherand = " AND " . $_POST['selectTable'] ." LIKE '%" . $_POST['chercher'] ."%' ";
+      $chercherwhere = " WHERE " . $_POST['selectTable'] ." LIKE '%" . $_POST['chercher'] ."%' ";
     }
+  }
+  else {
+    $chercherand = " ";
+    $chercherwhere = " ";
+  }
 }
 else {
   $chercherand = " ";
@@ -60,6 +65,16 @@ if (isset($_POST['filtrer']) || isset($_POST['trier']))
     $good_requet = "SELECT * FROM enigme WHERE actif = 'off'" . $chercherand . "ORDER BY " . $trier;
     $control_check = 0;
   }
+  elseif (!strcmp($_POST['filtrer'], "complet")) {
+    $reponse = $bdd->query("SELECT * FROM enigme WHERE complet = 'complet'" . $chercherand . "ORDER BY " . $trier);
+    $good_requet = "SELECT * FROM enigme WHERE complet = 'complet'" . $chercherand . "ORDER BY " . $trier;
+    $control_check = 1;
+  }
+  elseif (!strcmp($_POST['filtrer'], "incomplet")) {
+    $reponse = $bdd->query("SELECT * FROM enigme WHERE complet = 'incomplet'" . $chercherand . "ORDER BY " . $trier);
+    $good_requet = "SELECT * FROM enigme WHERE complet = 'incomplet'" . $chercherand . "ORDER BY " . $trier;
+    $control_check = 0;
+  }
   else
   {
     $reponse = $bdd->query('SELECT * FROM enigme' . $chercherwhere . 'ORDER BY ' . $trier);
@@ -74,12 +89,12 @@ else
     $control_check = 1;
   }
 
+
 // On récupère tout le contenu de la table enigme
 // $reponse = $bdd->query('SELECT * FROM enigme ORDER BY id');
 $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);;
 
 // On affiche chaque entrée une à une
-
 
 ?>
   <input type="text" name="good_requet" id="good_requet" value="<?php echo $good_requet?>" hidden/>
@@ -90,11 +105,16 @@ while ($donnees = $reponse->fetch())
 ?>
 <!-- Input MOT -->
 <!-- Mot clé -->
+          <input type="text" name="sqlcomplet<?php echo $i?>" id="sqlcomplet<?php echo $i?>" value="incomplet" hidden/>
           <input type="submit" class="_button _button-2" name="plus" id="plus" value="+"/>
           <input class="_input _input-2" type="text" name="sqlmot<?php echo $i?>" id="sqlmot<?php echo $i?>" value="<?php if (isset($_POST['sqlmot' . $i])){echo $_POST['sqlmot' . $i];} else {echo $donnees['mot'];} ?>" spellcheck="true">
           <input class="_input _input-3" type="text" id="sqltheme<?php echo $i?>" name="sqltheme<?php echo $i?>" placeholder="mot clé" value="<?php if (isset($_POST['sqltheme' . $i])){echo $_POST['sqltheme' . $i];} else {echo $donnees['theme'];} ?>" spellcheck="true">
           <div class="element element-4" id="sqldivmot<?php echo $i?>"></div>
-          <p class="text text-2"><strong><?php echo $donnees['id'] + 1?></strong></p>
+          <?php
+          $year = substr($donnees['date'], 0, 10);
+          $hour= substr($donnees['date'], 10, 6);
+          ?>
+          <p class="text text-2"><strong><?php echo $year?>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $hour?></strong></p>
 
 
           <input class="checkbox checkbox-2" onclick='alert_message_old("<?php echo $i?>")' type="checkbox" name="check<?php echo $i?>" id="check<?php echo $i?>" value="on" <?php if (!strcmp($donnees['actif'],"on")) {echo "checked";}?>>

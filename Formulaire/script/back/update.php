@@ -76,7 +76,7 @@ else { $actif = "off"; }
                         indice2 = :indice2, image2 = :image2, imgcrop2 = :imgcrop2, auteur2 = :auteur2, date2 = :date2,
                         indice3 = :indice3, image3 = :image3, imgcrop3 = :imgcrop3, auteur3 = :auteur3, date3 = :date3,
                         recompense = :recompense, image4 = :image4, imgcrop4 = :imgcrop4, auteur4 = :auteur4, date4 = :date4,
-                        legende = :legende, actif = :actif WHERE id = :id');
+                        legende = :legende, complet = :complet, actif = :actif WHERE id = :id');
   $req->execute(array(
     'mot' =>$_POST['sqlmot' . $i],
     'theme' =>$_POST['sqltheme' . $i],
@@ -115,6 +115,7 @@ else { $actif = "off"; }
     'date4' => $_POST['sqldate4'. $i],
 
     'legende'=>$_POST['sqllegende' . $i],
+    'complet' => $_POST['sqlcomplet' . $i],
     'actif' => $actif,
 
   	'id' => $id,

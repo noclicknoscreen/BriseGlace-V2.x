@@ -5,6 +5,7 @@ pastille_new();
 <form  action="?" method="POST">
 <!-- Input MOT -->
 
+<input type="text" name="complet" id="complet" value="incomplet" hidden/>
 <input class="_input _input-2" type="text" name="mot" id="mot" onkeyup='recupmot(this.value, "");' value="<?php if (isset($_POST['mot'])){echo $_POST['mot'];} ?>" spellcheck="true">
 <input class="_input _input-3" type="text" id="theme" name="theme" placeholder="mot clé" value="<?php if (isset($_POST['mot'])){echo $_POST['mot'];} ?>" spellcheck="true">
 <div class="element element-4" id="divmot" onchange="" ></div>

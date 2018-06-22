@@ -30,10 +30,8 @@ function handleSubmit(){
 }
 
 function delaySubmit(){
-    window.setTimeout(handleSubmit, 1000); // change this to whatever delay you need
+    window.setTimeout(handleSubmit, 2000); // change this to whatever delay you need
 };
-
-
 
 $('#copie').on('click', function() {
   location.reload();
@@ -74,11 +72,17 @@ $query->closeCursor(); // Termine le traitement de la requête
 
   <input id="chercher" name="chercher" class="-select -select-1 js-chercher" onkeyup="delaySubmit()" placeholder="mot clé" type="text" value="<?php if(isset($_POST['chercher'])) {echo $_POST['chercher'];}?>">
 
-  <select type="submit" id="filtrer" name="filtrer" class="-select -select-2 js-filtrer" onChange="submit()">
-    <option value="" <?php if(!isset($_POST['filtrer'])) {echo "selected";}?>>Filtrer par</option>
-    <option value="on" <?php if(isset($_POST['filtrer']) && !strcmp($_POST['filtrer'], "on")) {echo "selected";}?>>actif</option>
-    <option value="off" <?php if(isset($_POST['filtrer']) && !strcmp($_POST['filtrer'], "off")) {echo "selected";}?>>inactif</option>
+  <select id="selectTable" name="selectTable" class="-select -select-2 js-select-table" type="text" onChange="submit()">
+    <option value="mot" <?php if(!isset($_POST['selectTable'])) {echo "selected";}?>>mot</option>
+    <option value="theme" <?php if(isset($_POST['selectTable']) && !strcmp($_POST['selectTable'], "theme")) {echo "selected";}?>>theme</option>
+    <option value="indice" <?php if(isset($_POST['selectTable']) && !strcmp($_POST['selectTable'], "indice")) {echo "selected";}?>>indice</option>
+    <option value="image" <?php if(isset($_POST['selectTable']) && !strcmp($_POST['selectTable'], "image")) {echo "selected";}?>>image</option>
+    <option value="auteur" <?php if(isset($_POST['selectTable']) && !strcmp($_POST['selectTable'], "auteur")) {echo "selected";}?>>auteur</option>
+    <option value="date" <?php if(isset($_POST['selectTable']) && !strcmp($_POST['selectTable'], "date")) {echo "selected";}?>>date</option>
+    <option value="recompense" <?php if(isset($_POST['selectTable']) && !strcmp($_POST['selectTable'], "recompense")) {echo "selected";}?>>gagné</option>
+    <option value="legende" <?php if(isset($_POST['selectTable']) && !strcmp($_POST['selectTable'], "legende")) {echo "selected";}?>>legende</option>
   <select>
+
 
   <select id="trier" name="trier" class="-select -select-3 js-trier" onChange="submit()">
     <option value="id" <?php if(!isset($_POST['trier'])) {echo "selected";}?>>Trier par</option>
@@ -86,7 +90,19 @@ $query->closeCursor(); // Termine le traitement de la requête
     <option value="mot DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "mot DESC")) {echo "selected";}?>>Mot: par ordre décroissant</option>
     <option value="id" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "id")) {echo "selected";}?>>id: par ordre croissant</option>
     <option value="id DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "id DESC")) {echo "selected";}?>>id: par ordre décroissant</option>
+    <option value="date" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "date")) {echo "selected";}?>>date: par ordre croissant</option>
+    <option value="date DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "date DESC")) {echo "selected";}?>>date: par ordre décroissant</option>
+    <option value="complet" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "complet")) {echo "selected";}?>>Enigme complete</option>
+    <option value="complet DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "complet DESC")) {echo "selected";}?>>Enigme incomplete</option>
   <select>
+
+    <select type="submit" id="filtrer" name="filtrer" class="-select -select-4 js-filtrer" onChange="submit()">
+      <option value="" <?php if(!isset($_POST['filtrer'])) {echo "selected";}?>>Filtrer par</option>
+      <option value="on" <?php if(isset($_POST['filtrer']) && !strcmp($_POST['filtrer'], "on")) {echo "selected";}?>>actif</option>
+      <option value="off" <?php if(isset($_POST['filtrer']) && !strcmp($_POST['filtrer'], "off")) {echo "selected";}?>>inactif</option>
+      <option value="complet" <?php if(isset($_POST['filtrer']) && !strcmp($_POST['filtrer'], "complet")) {echo "selected";}?>>complet</option>
+      <option value="incomplet" <?php if(isset($_POST['filtrer']) && !strcmp($_POST['filtrer'], "incomplet")) {echo "selected";}?>>incomplet</option>
+    <select>
 
   <span class="_text-2"><font color="#fff9f9"><span>Tout cocher</span></font></span>
 </form>
