@@ -27,9 +27,9 @@ public:
     
     
 private:
-    timer mTimerSignAnimation;
     void  timerSignAnimationEnd();
     int   numPlayer;
+    int   numMessage;
     
 };
 

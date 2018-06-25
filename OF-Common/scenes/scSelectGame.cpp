@@ -14,6 +14,7 @@ void scSelectGame::setup(){  //load your scene 1 assets here...
     
     mPlayerMessage = "";
     numPlayer = 1;
+    numMessage = 0;
 };
 
 
@@ -24,7 +25,14 @@ void scSelectGame::update(float dt){
 
 void scSelectGame::draw(){ //draw scene 1 here
     // Draw title
-    scScene::drawSubTitle("Dites le nom d'un jeu pour commencer");
+    scScene::drawTitle("Bienvenus sur \"Jeux de mô\"", ofColor::black, ofPoint(0, 50));
+    
+    scScene::drawSubTitle("Vous êtes joueurs ?", ofColor::black, ofPoint(0, 300));
+    scScene::drawTitle("Nous oui !", ofColor::black, ofPoint(0, 350));
+    
+    scScene::drawSubTitle("Pour commencer,", ofColor::black, ofPoint(0, 500));
+    scScene::drawTitle("Dites le nom de votre jeu préféré...", ofColor::black, ofPoint(0, 550));
+    
     scScene::drawSpokenWord(mPlayerMessage, mPlayerColor);
     
     bigPlayerManager().draw();
@@ -39,7 +47,7 @@ void scSelectGame::sceneWillAppear( ofxScene * fromScreen ){
     mPlayerMessage = "";
     
     // Erase all words of every one
-    mTimerSignAnimation.startTimer(2);
+//    mTimerSignAnimation.startTimer(2);
     mTimerEraseWord.startTimer(2);
 
     // Player manager events
@@ -78,20 +86,24 @@ void scSelectGame::timerSignAnimationEnd(){
     do{
         newPlayer = (int)ofRandom(1, 4);
     }while(numPlayer == newPlayer);
-    
     numPlayer = newPlayer;
     
-    int idxMesssage = (int)ofRandom(0, 3);
+    int idxMesssage;
+    do{
+        idxMesssage = (int)ofRandom(0, 3);
+    }while(numMessage == idxMesssage);
+    numMessage = idxMesssage;
+    
     // Draw players
     switch (idxMesssage) {
         case 0:
-            signMessage = "Mot\nmasqué";
+            signMessage = "Mot masqué";
             break;
         case 1:
-            signMessage = "Mot\nbrassé";
+            signMessage = "Mot brassé";
             break;
         case 2:
-            signMessage = "Mes mots\nrient";
+            signMessage = "Mes mots rient";
             break;
             
         default:

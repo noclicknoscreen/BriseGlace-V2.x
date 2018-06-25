@@ -12,6 +12,11 @@
 //scScene::scScene(playerManager &_manager){
 //    myPlayerManager = &_manager;
 //}
+
+void scSelect::update(float dt){
+    mTimerSignAnimation.update(dt);
+};
+
 // Speaking event
 void scSelect::someoneSpoke(player & _player){
     
@@ -26,18 +31,21 @@ void scSelect::someoneSpoke(player & _player){
     if(ofStringTimesInString(mPlayerMessage, "masqu") > 0){
         ofxSceneManager::instance()->goToScene(GAME1);
     }
-    if(ofStringTimesInString(mPlayerMessage, "masquer") > 0){
+    if(ofStringTimesInString(mPlayerMessage, "cach") > 0){
         ofxSceneManager::instance()->goToScene(GAME1);
     }
-    if(ofStringTimesInString(mPlayerMessage, "masquer") > 0){
-        ofxSceneManager::instance()->goToScene(GAME1);
-    }
-    if(ofStringTimesInString(mPlayerMessage, "caché") > 0){
-        ofxSceneManager::instance()->goToScene(GAME1);
-    }
-    if(ofStringTimesInString(mPlayerMessage, "cacher") > 0){
-        ofxSceneManager::instance()->goToScene(GAME1);
-    }
+//    if(ofStringTimesInString(mPlayerMessage, "masqué") > 0){
+//        ofxSceneManager::instance()->goToScene(GAME1);
+//    }
+//    if(ofStringTimesInString(mPlayerMessage, "masquer") > 0){
+//        ofxSceneManager::instance()->goToScene(GAME1);
+//    }
+//    if(ofStringTimesInString(mPlayerMessage, "caché") > 0){
+//        ofxSceneManager::instance()->goToScene(GAME1);
+//    }
+//    if(ofStringTimesInString(mPlayerMessage, "cacher") > 0){
+//        ofxSceneManager::instance()->goToScene(GAME1);
+//    }
     
     // Choix du jeu 2 : Mes mots rient
     if(ofStringTimesInString(mPlayerMessage, "rient") > 0){
@@ -54,12 +62,12 @@ void scSelect::someoneSpoke(player & _player){
     }
     
     // Choix du jeu 3 : Mot Brassé
-    if(ofStringTimesInString(mPlayerMessage, "brassé") > 0){
+    if(ofStringTimesInString(mPlayerMessage, "brass") > 0){
         ofxSceneManager::instance()->goToScene(GAME3);
     }
-    if(ofStringTimesInString(mPlayerMessage, "brasser") > 0){
-        ofxSceneManager::instance()->goToScene(GAME3);
-    }
+//    if(ofStringTimesInString(mPlayerMessage, "brasser") > 0){
+//        ofxSceneManager::instance()->goToScene(GAME3);
+//    }
     if(ofStringTimesInString(mPlayerMessage, "bracelet") > 0){
         ofxSceneManager::instance()->goToScene(GAME3);
     }
@@ -76,17 +84,18 @@ void scSelect::timerEraseWordEnd(){
 //scene notifications
 void scSelect::sceneWillAppear( ofxScene * fromScreen ){
     
-    
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
     mPlayerMessage = "";
     
     // Erase all words of every one
+    mTimerSignAnimation.startTimer(2);
     mTimerEraseWord.startTimer(2);
     
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke   ,this,&scSelect::someoneSpoke);
-    ofAddListener(mTimerEraseWord.timerEnd      ,this,&scSelect::timerEraseWordEnd);
+//    ofAddListener(mTimerSignAnimation.timerEnd      ,this,&scSelect::timerSignAnimationEnd);
+//    ofAddListener(mTimerEraseWord.timerEnd      ,this,&scSelect::timerEraseWordEnd);
 };
 
 //scene notifications
@@ -96,5 +105,6 @@ void scSelect::sceneWillDisappear( ofxScene * toScreen ){
     
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke    ,this,&scSelect::someoneSpoke);
-    ofRemoveListener(mTimerEraseWord.timerEnd           ,this,&scSelect::timerEraseWordEnd);
+//    ofRemoveListener(mTimerSignAnimation.timerEnd       ,this,&scSelect::timerSignAnimationEnd);
+//    ofRemoveListener(mTimerEraseWord.timerEnd           ,this,&scSelect::timerEraseWordEnd);
 }

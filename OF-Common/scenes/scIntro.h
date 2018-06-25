@@ -24,11 +24,16 @@ public:
 
     void someoneSpoke(player & _player);
 
-private:
-    timer mTimerTexte;
-    void  timerTexteEnd();
+//private:
+//    timer mTimerTexte;
+//    void  timerTexteEnd();
+//    
+//    bool bDrawSubtitle1, bDrawSubtitle2;
     
-    bool bDrawSubtitle1, bDrawSubtitle2;
+private:
+    void  timerSignAnimationEnd();
+    int   numPlayer;
+    int   numMessage;
     
 };
 

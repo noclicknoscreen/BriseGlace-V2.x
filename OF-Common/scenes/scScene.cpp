@@ -34,7 +34,7 @@ void scScene::drawTitle(string _text, ofColor _color, ofPoint _correc){
     myTextTitle.setText(utils::toUpperCase(_text));
     myTextTitle.wrapTextX(0.7 * ofGetWidth());
     myTextTitle.setColor(_color.r, _color.g, _color.b, _color.a);
-    myTextTitle.drawCenter(0.5 * ofGetWidth() + _correc.x, 0.05 * ofGetHeight() + _correc.y);
+    myTextTitle.drawCenter(0.5 * ofGetWidth() + _correc.x, _correc.y);
 }
 
 void scScene::drawSubTitle(string _text, ofColor _color, ofPoint _correc){
@@ -42,7 +42,7 @@ void scScene::drawSubTitle(string _text, ofColor _color, ofPoint _correc){
     myTextSubTitle.setText(utils::toUpperCase(_text));
     myTextSubTitle.wrapTextX(0.7 * ofGetWidth());
     myTextSubTitle.setColor(_color.r, _color.g, _color.b, _color.a);
-    myTextSubTitle.drawCenter(0.5 * ofGetWidth() + _correc.x, 0.15 * ofGetHeight() + _correc.y);
+    myTextSubTitle.drawCenter(0.5 * ofGetWidth() + _correc.x, _correc.y);
 }
 
 void scScene::drawFullCenterLine1(string _text, ofColor _color, ofPoint _correc){

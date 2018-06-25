@@ -120,12 +120,7 @@ void player::loadNewSequenceImage(int _newSequenceIdx){
     
 }
 
-//void player::draw(ofVec2f _pos, ofPoint _bulleCorrection){
 void player::draw(ofPoint _bulleCorrection){
-    
-//    setPositionHistogram(_pos);
-    
-//    mPosition = _pos;
     
     ofPushStyle();
     ofSetColor(mColor);
@@ -164,12 +159,7 @@ void player::draw(ofPoint _bulleCorrection){
         }
         
         ofPoint whereTheTextIs(internalBullePos.x + 0.5*internalBulleSize.x, internalBullePos.y + correction * myText.getHeight(), 10);
-        
-//        ofDrawBitmapString(ofToString(myText.getHeight()) + ":" + ofToString(correction), whereTheTextIs.x, whereTheTextIs.y);
         myText.drawCenter(whereTheTextIs.x , whereTheTextIs.y);
-//        ofDrawRectangle(whereTheTextIs.x - 0.5 * myText.getWidth(), whereTheTextIs.y, myText.getWidth(), myText.getHeight());
-//        ofDrawCircle(whereTheTextIs.x , whereTheTextIs.y, 10);
-        
     }
     ofPopMatrix();
     //////////////////////////////////////////////////////////////////
@@ -177,11 +167,7 @@ void player::draw(ofPoint _bulleCorrection){
     // DRAW BONHOMME ////////////////////////////////////////////////////////////////
     ofPushMatrix();
     ofScale(0.5, 0.5);
-    
-    //            ofNoFill();
-    //            ofDrawCircle(0, 0, 10);
-    //            ofDrawRectangle(-100, -300, 200, 300);
-    
+
     if(mSequenceImg.isAllocated()){
         ofSetColor(255,255,255,255);
         
@@ -195,7 +181,7 @@ void player::draw(ofPoint _bulleCorrection){
     if(mSignDraw)
     {
         signText.setText(utils::toUpperCase(mSignText));
-        signText.wrapTextX(0.5*signImage.getWidth());
+        signText.wrapTextX(0.6*signImage.getWidth());
         
         ofDisableNormalizedTexCoords();
         
@@ -203,8 +189,6 @@ void player::draw(ofPoint _bulleCorrection){
         ofScale(mSignScale);
         ofTranslate(mSignUpAndDown);
         ofTranslate(-0.5 * signImage.getWidth(), -0.5 * signImage.getHeight() + abs(cos(ofGetFrameNum()/75.0))*50);
-//        ofTranslate(getPositionHistogram().x, getPositionHistogram().y);
-//        ofTranslate(-0.5 * signImage.getWidth(), (-1 * signImage.getHeight()*0.3*abs(cos(ofGetFrameNum()/75.0 + getPositionHistogram().x)))-0.8*signImage.getHeight());
         signImage.draw(0,0);
         
         //debug
