@@ -60,7 +60,7 @@ void scPartners::sceneWillDisappear( ofxScene * toScreen ){
 // EVENTS ////////////////////////////////////////////////////////////////////////////////////////////
 // Speaking event
 void scPartners::timerDisplayEnd(){
-    ofxSceneManager::instance()->goToScene(INTRO);
+    ofxSceneManager::instance()->goToScene(SELECT_GAME);
 }
 
 
