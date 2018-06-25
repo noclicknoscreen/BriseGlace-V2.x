@@ -56,14 +56,15 @@ void scIntro::sceneWillDisappear( ofxScene * toScreen ){
     scScene::sceneWillDisappear(toScreen);
     
     // Player manager events
-    ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scIntro::someoneSpoke);
-    ofRemoveListener(mTimerTexte.timerEnd              ,this,&scIntro::timerTexteEnd);
+    ofRemoveListener(bigPlayerManager().someoneSpoke    ,this,&scIntro::someoneSpoke);
+    ofRemoveListener(mTimerTexte.timerEnd               ,this,&scIntro::timerTexteEnd);
     
 }
 
 // EVENTS ////////////////////////////////////////////////////////////////////////////////////////////
 // Speaking event
 void scIntro::someoneSpoke(player & _player){
+    scSelect::someoneSpoke(_player);
     ofxSceneManager::instance()->goToScene(SELECT_GAME);
 }
 

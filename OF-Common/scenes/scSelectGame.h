@@ -8,9 +8,9 @@
 
 #pragma once
 
-#include "scScene.h"
+#include "scSelect.h"
 
-class scSelectGame : public scScene{
+class scSelectGame : public scSelect{
 
 public:
 //    scSelectGame(playerManager &_manager) : scScene(_manager){
@@ -23,19 +23,13 @@ public:
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
 
-    void someoneSpoke(player & _player);
+//    void someoneSpoke(player & _player);
     
-private:
-    string  mPlayerMessage;
-    ofColor mPlayerColor;
     
 private:
     timer mTimerSignAnimation;
     void  timerSignAnimationEnd();
     int   numPlayer;
-    
-    timer mTimerEraseWord;
-    void  timerEraseWordEnd();
     
 };
 

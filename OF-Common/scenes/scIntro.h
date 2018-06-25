@@ -7,9 +7,9 @@
 //
 
 #pragma once
-#include "scScene.h"
+#include "scSelect.h"
 
-class scIntro : public scScene{
+class scIntro : public scSelect{
 
 public:
     // Constructor

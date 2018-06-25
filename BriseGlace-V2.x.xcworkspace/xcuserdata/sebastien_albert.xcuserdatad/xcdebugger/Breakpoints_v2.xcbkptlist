@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OF-Common/utils.h"
-            timestampString = "551277952.4095711"
+            timestampString = "551289224.4871989"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "toByteString(std::wstring _WStr)"
             landmarkType = "7">
          </BreakpointContent>
@@ -176,6 +176,22 @@
             startingLineNumber = "50"
             endingLineNumber = "50"
             landmarkName = "scGame::loadNewSequenceImage(int _newSequenceIdx)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OF-Common/scenes/scIntro.cpp"
+            timestampString = "551289249.331651"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "scIntro::someoneSpoke(player &amp; _player)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -72,16 +72,12 @@ void cubeRigidBody::customDraw(ofColor _winnerColor)
     ofEnableLighting();
     ofPopMatrix();
     
-    // DRAW A LETTER ////////////////////////////////////////////////////
+    // DRAW ANOTHER LETTER ////////////////////////////////////////////////////
     ofPushMatrix();
-    //            ofRotate(180, 0, 0, 1);
-    //            ofRotate(180, 0, 1, 0);
-    //            ofRotate(180, 1, 0, 0);
-    
     ofTranslate(-textWidth/2.0,  -textHeight/2, -1.0f *     float(size.z/2 +2));
     
     ofDisableLighting();
-    font.drawString(utils::toByteString(mLetter), 0, 0);
+    font.drawString(utils::toUpperCase(utils::toByteString(mLetter)), 0, 0);
     ofEnableLighting();
     ofPopMatrix();
     

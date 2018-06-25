@@ -125,7 +125,7 @@ void scHint::sceneWillDisappear( ofxScene * toScreen){
 // Speaking event
 void scHint::someoneSpoke(player & _player){
     // Waiting for a test (j'ai dit oui')
-    if(mTimerStartRoll.isAnimating() == false){
+    if(mTimerStartRoll.isAnimating() == false && mTimerBeforeRoll.isAnimating() == false){
     // --------------------------------
         ofxSceneManager::instance()->goToScene(from->getSceneID());
     }
