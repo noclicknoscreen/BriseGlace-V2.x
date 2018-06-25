@@ -52,6 +52,9 @@ void scGame3::setup(){
     
     colorizeCubes=false;
     
+    mGameName = "MOT BRASSÉ";
+    mConsigne = "SI VOUS NOUS PARLEZ, ON FERA TOURNER LES CUBES !";
+    
 };
 
 
@@ -153,9 +156,6 @@ void scGame3::draw(){
     material.setAmbientColor(materialColor);
     material.setDiffuseColor(materialColor);
     
-    // Draw mother of draw
-    scGame::draw();
-    
     camera.begin();
     
 #if defined DRAW_DEBUG
@@ -196,17 +196,10 @@ void scGame3::draw(){
     ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
 #endif
     
-    
-    scScene::drawTitle("Mot brassé");
-    scScene::drawSubTitle("Trouve " + ofToString(bigEnigmaManager().getCurrentEnigma()->getTheme()));
-    scScene::drawSubTitle("Parlez-moi dans l'oreille pour retourner les cubes", ofColor::black, ofPoint(0, 50));
+    // Draw mother of draw
+    scGame::draw();
     
     // Draw players
-    //    if(drawWinnerSign)
-    //        bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
-    //    else if(drawHintSign)
-    //        bigPlayerManager().draw(hintUserId, "veux-tu un indice?");
-    //    else
     bigPlayerManager().draw();
     
     

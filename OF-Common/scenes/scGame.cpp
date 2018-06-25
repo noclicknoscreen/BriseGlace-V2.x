@@ -31,6 +31,12 @@ void scGame::setup(){
         
     }
     
+    // ---------------------------------------------------------------------------
+    mCartoucheText.init(globalFontName, globalFontSizeMedium);
+    mTitle.load(globalFontName, globalFontSizeMedium);
+    mSubLine1.load(globalFontName, globalFontSizeBig);
+    mSubLine2.load(globalFontName, globalFontSizeMedium);
+    
 }
 
 void scGame::update(float dt){
@@ -42,6 +48,11 @@ void scGame::update(float dt){
     // We re-map the volume between the end and the start of a sequence
     loadNewSequenceImage((int)ofMap(timerForceWin.getValuef(), 0, 1, mSequenceLen - 1, 0, true));
 
+    // -----------------------------------------------------------------
+    // Draw title and consignes
+    mCartoucheText.setColor(0, 0, 0, 255);
+    // -----------------------------------------------------------------
+    
 }
 
 
@@ -73,6 +84,42 @@ void scGame::draw(){
         mSequenceImg.draw(ofGetWidth() - 200, ofGetHeight() - 200, 100, 100);
         ofEnableNormalizedTexCoords();
     }
+    
+    // -----------------------------------------------------------------
+    // Draw title and consignes
+    ofPushStyle();
+    
+    
+    mCartoucheText.setColor(0, 0, 0, 0);
+    ofDisableLighting();
+    ofDisableDepthTest();
+    ofEnableAlphaBlending();
+    ofNoFill();
+    ofSetColor(ofColor::black, 0);
+
+    
+    ofPoint posTextCartouche(300, 100);
+    float   width = 400;
+    float   lineH = 65;
+    mCartoucheText.setText("Bienvenus");
+    mCartoucheText.wrapTextX(width);
+    mCartoucheText.drawCenter(posTextCartouche.x, posTextCartouche.y);
+    mCartoucheText.setText("sur");
+    mCartoucheText.wrapTextX(width);
+    mCartoucheText.drawCenter(posTextCartouche.x, posTextCartouche.y + lineH);
+    mCartoucheText.setText(mGameName);
+    mCartoucheText.wrapTextX(width);
+    mCartoucheText.drawCenter(posTextCartouche.x, posTextCartouche.y + 2*lineH);
+    
+    ofSetColor(ofColor::black);
+    ofPoint posText(600, 175);
+    mTitle.drawString("ICI ON CHERCHE :", posText.x, posText.y);
+    mSubLine1.drawString(bigEnigmaManager().getCurrentEnigma()->getTheme(), posText.x, posText.y + 75);
+    mSubLine2.drawString(mConsigne, posText.x, posText.y + 150);
+    
+    ofPopStyle();
+    // -----------------------------------------------------------------
+    
 }
 
 void scGame::someoneSpoke(player & _player){

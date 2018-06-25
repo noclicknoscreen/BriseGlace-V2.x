@@ -39,6 +39,9 @@ void scGame2::setup(){
     
     bDrawGui=false;
     
+    mGameName = "MES MOTS RIENT";
+    mConsigne = "UN MOT SE CACHE PARMI CES LETTRES. PARLEZ POUR VOIR !";
+    
 };
 
 
@@ -69,11 +72,6 @@ void scGame2::draw(){ //draw scene 1 here
         gui.draw();
     }
     
-    // Draw Title
-    scScene::drawTitle("Mes mots rient", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.15 * ofGetHeight()));
-    scScene::drawSubTitle("Trouve " + ofToString(bigEnigmaManager().getCurrentEnigma()->getTheme()) + " grâce à l'image", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.15 * ofGetHeight()));
-    scScene::drawSubTitle("cachée derrière ces lettres", ofColor::black, ofPoint(0.17 * ofGetWidth(), 0.20 * ofGetHeight()));
-
     // Draw mother of draw
     scGame::draw();
 
@@ -84,12 +82,7 @@ void scGame2::draw(){ //draw scene 1 here
     myInputManager.draw();
 
     // Draw players
-//    if(drawWinnerSign)
-//        bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
-//    else if(drawHintSign)
-//        bigPlayerManager().draw(hintUserId, "veux-tu un indice ?");
-//    else
-        bigPlayerManager().draw();    // Draw players
+    bigPlayerManager().draw();    // Draw players
     
 };
 
@@ -121,7 +114,7 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
         bigEnigmaManager().pickNewEnigma(IMAGE_GRID);
         
         //cubes
-        myCubeManager.setup(ofPoint(0.2*ofGetWidth(), 0.33*ofGetHeight(), -300), 7, 150);
+        myCubeManager.setup(ofPoint(0.2*ofGetWidth(), 0.5*ofGetHeight(), -300), 7, 130);
         //inputs
         myInputManager.setup(ofPoint(0.67 * ofGetWidth(), 0.6 * ofGetHeight()));
         

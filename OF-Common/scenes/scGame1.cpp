@@ -37,6 +37,9 @@ void scGame1::setup(){  //load your scene 1 assets here...
     
     bDrawGui=false;
     
+    mGameName = "MOT MASQUÉ";
+    mConsigne = "SI VOUS NOUS PARLEZ, ON RÉPÉTERA TOUT !";
+    
 };
 
 void scGame1::update(float dt){ //update scene 1 here
@@ -68,11 +71,6 @@ void scGame1::draw(){ //draw scene 1 here
         ofDisableLighting();
         gui.draw();
     }
-    
-    // Draw title
-    scScene::drawTitle("Mot masqué");
-    scScene::drawSubTitle("Trouvez " + ofToString(bigEnigmaManager().getCurrentEnigma()->getTheme()));
-    scScene::drawSubTitle("Dites un mot pour voir", ofColor::black, ofPoint(0,50));
     
     // Draw mother of draw
     scGame::draw();

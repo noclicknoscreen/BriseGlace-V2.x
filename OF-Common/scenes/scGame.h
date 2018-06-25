@@ -26,8 +26,6 @@ private:
     
     ///////////// SIGNS ////////////////////
 protected:
-    
-//    bool drawWinnerSign, drawHintSign;
     int hintUserId;
     
     // Gestion de la sequence du timer
@@ -54,5 +52,18 @@ public:
     
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
+    
+    ///////////// CONSIGNES, TITRES ////////////////////
+private:
+    ofImage mCartoucheImg;
+    
+    ofxTextBlock    mCartoucheText;
+    ofTrueTypeFont  mTitle;
+    ofTrueTypeFont  mSubLine1;
+    ofTrueTypeFont  mSubLine2;
+
+protected:
+    string  mGameName;
+    string  mConsigne;
     
 };
