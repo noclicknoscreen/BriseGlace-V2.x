@@ -5,12 +5,13 @@ pastille_new();
 <form  action="?" method="POST">
 <!-- Input MOT -->
 
+<input type="text" name="complet" id="complet" value="incomplet" hidden/>
 <input class="_input _input-2" type="text" name="mot" id="mot" onkeyup='recupmot(this.value, "");' value="<?php if (isset($_POST['mot'])){echo $_POST['mot'];} ?>" spellcheck="true">
 <input class="_input _input-3" type="text" id="theme" name="theme" placeholder="mot clé" value="<?php if (isset($_POST['mot'])){echo $_POST['mot'];} ?>" spellcheck="true">
 <div class="element element-4" id="divmot" onchange="" ></div>
 <p class="text text-2"><strong><?php echo $max + 1?></strong></p>
 <input class="checkbox checkbox-2" onclick='alert_message_new()' type="checkbox" name="check" id="check" value="on">
-<i class="_button _button-3 first-arrow fa fa-caret-down" id="arrow1" style="font-size:24px;color:white"></i>
+<i class="container first-arrow fa fa-caret-down" id="arrow1" style="font-size:24px;color:white"></i>
 <div class="element element-5" ></div>
 
 
@@ -47,7 +48,7 @@ pastille_new();
   <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 1</strong></font></p>
   <input class="_input _input-4" type="text" name="indice1" id="indice1" onkeyup="recupindice1(this.value);" value="<?php if (isset($_POST['indice1'])){echo $_POST['indice1'];} ?>" spellcheck="true">
   <div class="element element-6" id="divindice1"></div>
-  <p class="_button _button-4 second-arrow">ÉDITER</p>
+  <p class="_button _button-3 second-arrow">ÉDITER</p>
   <div class="element element-7"></div>
 
   <!-- DIV INDICE 1 -->
@@ -84,7 +85,7 @@ pastille_new();
   <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 2</strong></font></p>
   <input class="_input _input-4" type="text" name="indice2" id="indice2" onkeyup="recupindice2(this.value);" value="<?php if (isset($_POST['indice2'])){echo $_POST['indice2'];} ?>" spellcheck="true">
   <div class="element element-6" id="divindice2"></div>
-  <p class="_button _button-4 third-arrow">ÉDITER</p>
+  <p class="_button _button-3 third-arrow">ÉDITER</p>
 
   <div class="element element-7"></div>
 
@@ -119,7 +120,7 @@ pastille_new();
   <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 3</strong></font></p>
   <input class="_input _input-4" type="text" name="indice3" id="indice3" onkeyup="recupindice3(this.value);" value="<?php if (isset($_POST['indice3'])){echo $_POST['indice3'];} ?>" spellcheck="true">
   <div class="element element-6" id="divindice3"></div>
-  <p class="_button _button-4 fourth-arrow">ÉDITER</p>
+  <p class="_button _button-3 fourth-arrow">ÉDITER</p>
 
   <div class="element element-7"></div>
 
@@ -154,7 +155,7 @@ pastille_new();
   <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>GAGNÉ !</strong></font></p>
   <input class="_input _input-4" name="recompense" id="recompense" onkeyup="recupindice4(this.value);" value="<?php if (isset($_POST['recompense'])){echo $_POST['recompense'];} ?>" spellcheck="true">
   <div class="element element-6" id="divindice4"></div>
-  <p class="_button _button-4 fifth-arrow">ÉDITER</p>
+  <p class="_button _button-3 fifth-arrow">ÉDITER</p>
 
   <div class="element element-7"></div>
 
@@ -189,7 +190,7 @@ pastille_new();
     <textarea name="legende" id="legende" class="_input _input-8"rows="4" cols="50" spellcheck="true"><?php if (isset($_POST['image4'])){echo $_POST['image4'];}?></textarea>
     <div class="element element-11"></div>
   </div>
-  <input class="_button _button-5" type="submit" name="submit" value="Enregistrer la nouvelle enigme"/>
+  <input class="_button _button-4" type="submit" name="submit" value="Enregistrer la nouvelle enigme"/>
   <div class="element element-12"></div>
 </div>
 </form>                                                                                                                                                                                                        

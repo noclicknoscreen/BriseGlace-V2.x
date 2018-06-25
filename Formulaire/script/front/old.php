@@ -10,8 +10,84 @@ catch (Exception $e)
   die('Erreur : ' . $e->getMessage());
 }
 
-$reponse = $bdd->query("SELECT * FROM enigme ORDER BY id");
-$result = $bdd->query("SELECT id FROM enigme");
+if (!isset($_POST['trier'])) {
+  $trier = "id";
+}
+else {
+  $trier = $_POST['trier'];
+}
+
+if (isset($_POST['chercher']))
+{
+  if (strlen($_POST['chercher']) > 0)
+  {
+    if (!strcmp($_POST['selectTable'], "indice")) {
+      $chercherand = " AND indice1 LIKE '%" . $_POST['chercher'] ."%' OR indice2 LIKE '%" . $_POST['chercher'] ."%' OR indice3 LIKE '%" . $_POST['chercher'] . "%' ";
+      $chercherwhere = " WHERE indice1 LIKE '%" . $_POST['chercher'] ."%' OR indice2 LIKE '%" . $_POST['chercher'] ."%' OR indice3 LIKE '%" . $_POST['chercher'] . "%' ";
+    }
+    elseif (!strcmp($_POST['selectTable'], "image")) {
+      $chercherand = " AND image0 LIKE '%" . $_POST['chercher'] ."%' OR image1 LIKE '%" . $_POST['chercher'] ."%' OR image2 LIKE '%" . $_POST['chercher'] ."%' OR image3 LIKE '%" . $_POST['chercher'] ."%' OR image4 LIKE '%" . $_POST['chercher'] ."%' ";
+      $chercherwhere = " WHERE image0 LIKE '%" . $_POST['chercher'] ."%' OR image1 LIKE '%" . $_POST['chercher'] ."%' OR image2 LIKE '%" . $_POST['chercher'] ."%' OR image3 LIKE '%" . $_POST['chercher'] ."%' OR image4 LIKE '%" . $_POST['chercher'] ."%' ";
+    }
+    elseif (!strcmp($_POST['selectTable'], "auteur")) {
+      $chercherand = " AND auteur0 LIKE '%" . $_POST['chercher'] ."%' OR auteur1 LIKE '%" . $_POST['chercher'] ."%' OR auteur2 LIKE '%" . $_POST['chercher'] ."%' OR auteur3 LIKE '%" . $_POST['chercher'] ."%' OR auteur4 LIKE '%" . $_POST['chercher'] ."%' ";
+      $chercherwhere = " WHERE auteur0 LIKE '%" . $_POST['chercher'] ."%' OR auteur1 LIKE '%" . $_POST['chercher'] ."%' OR auteur2 LIKE '%" . $_POST['chercher'] ."%' OR auteur3 LIKE '%" . $_POST['chercher'] ."%' OR auteur4 LIKE '%" . $_POST['chercher'] ."%' ";
+    }
+    elseif (!strcmp($_POST['selectTable'], "date")) {
+      $chercherand = " AND date LIKE '%" . $_POST['chercher'] ."%' OR date0 LIKE '%" . $_POST['chercher'] ."%' OR date1 LIKE '%" . $_POST['chercher'] ."%' OR date2 LIKE '%" . $_POST['chercher'] ."%' OR date3 LIKE '%" . $_POST['chercher'] ."%' OR date4 LIKE '%" . $_POST['chercher'] ."%' ";
+      $chercherwhere = " WHERE date LIKE '%" . $_POST['chercher'] ."%' OR date0 LIKE '%" . $_POST['chercher'] ."%' OR date1 LIKE '%" . $_POST['chercher'] ."%' OR date2 LIKE '%" . $_POST['chercher'] ."%' OR date3 LIKE '%" . $_POST['chercher'] ."%' OR date4 LIKE '%" . $_POST['chercher'] ."%' ";
+    }
+    else {
+      $chercherand = " AND " . $_POST['selectTable'] ." LIKE '%" . $_POST['chercher'] ."%' ";
+      $chercherwhere = " WHERE " . $_POST['selectTable'] ." LIKE '%" . $_POST['chercher'] ."%' ";
+    }
+  }
+  else {
+    $chercherand = " ";
+    $chercherwhere = " ";
+  }
+}
+else {
+  $chercherand = " ";
+  $chercherwhere = " ";
+}
+
+if (isset($_POST['filtrer']) || isset($_POST['trier']))
+{
+  if (!strcmp($_POST['filtrer'], "on"))
+  {
+    $reponse = $bdd->query("SELECT * FROM enigme WHERE actif = 'on'" . $chercherand . "ORDER BY " . $trier);
+    $good_requet = "SELECT * FROM enigme WHERE actif = 'on'" . $chercherand . "ORDER BY " . $trier;
+    $control_check = 1;
+  }
+  elseif (!strcmp($_POST['filtrer'], "off")) {
+    $reponse = $bdd->query("SELECT * FROM enigme WHERE actif = 'off'" . $chercherand . "ORDER BY " . $trier);
+    $good_requet = "SELECT * FROM enigme WHERE actif = 'off'" . $chercherand . "ORDER BY " . $trier;
+    $control_check = 0;
+  }
+  elseif (!strcmp($_POST['filtrer'], "complet")) {
+    $reponse = $bdd->query("SELECT * FROM enigme WHERE complet = 'complet'" . $chercherand . "ORDER BY " . $trier);
+    $good_requet = "SELECT * FROM enigme WHERE complet = 'complet'" . $chercherand . "ORDER BY " . $trier;
+    $control_check = 1;
+  }
+  elseif (!strcmp($_POST['filtrer'], "incomplet")) {
+    $reponse = $bdd->query("SELECT * FROM enigme WHERE complet = 'incomplet'" . $chercherand . "ORDER BY " . $trier);
+    $good_requet = "SELECT * FROM enigme WHERE complet = 'incomplet'" . $chercherand . "ORDER BY " . $trier;
+    $control_check = 0;
+  }
+  else
+  {
+    $reponse = $bdd->query('SELECT * FROM enigme' . $chercherwhere . 'ORDER BY ' . $trier);
+    $good_requet = 'SELECT * FROM enigme' . $chercherwhere . 'ORDER BY ' . $trier;
+    $control_check = 1;
+  }
+}
+else
+  {
+    $reponse = $bdd->query('SELECT * FROM enigme' . $chercherwhere . 'ORDER BY id');
+    $good_requet = 'SELECT * FROM enigme' . $chercherwhere . 'ORDER BY id';
+    $control_check = 1;
+  }
 
 
 // On récupère tout le contenu de la table enigme
@@ -20,31 +96,32 @@ $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);;
 
 // On affiche chaque entrée une à une
 
-if (empty($result->fetch()))
-{
-  ?>
-  <input type="submit" class="_button _button-2" name="plus" id="plus" value="+"/>
-  <?php
-}
-else
-{
+?>
+  <input type="text" name="good_requet" id="good_requet" value="<?php echo $good_requet?>" hidden/>
+<?php
 $i = 0;
 while ($donnees = $reponse->fetch())
 {
 ?>
 <!-- Input MOT -->
 <!-- Mot clé -->
+          <input type="text" name="sqlcomplet<?php echo $i?>" id="sqlcomplet<?php echo $i?>" value="incomplet" hidden/>
           <input type="submit" class="_button _button-2" name="plus" id="plus" value="+"/>
           <input class="_input _input-2" type="text" name="sqlmot<?php echo $i?>" id="sqlmot<?php echo $i?>" value="<?php if (isset($_POST['sqlmot' . $i])){echo $_POST['sqlmot' . $i];} else {echo $donnees['mot'];} ?>" spellcheck="true">
           <input class="_input _input-3" type="text" id="sqltheme<?php echo $i?>" name="sqltheme<?php echo $i?>" placeholder="mot clé" value="<?php if (isset($_POST['sqltheme' . $i])){echo $_POST['sqltheme' . $i];} else {echo $donnees['theme'];} ?>" spellcheck="true">
-          <div class="element element-4" id="sqldivmot<?php echo $i?>" onchange='ifgreen("<?php echo $i?>")'></div>
-          <p class="text text-2"><strong><?php echo $donnees['id'] + 1?></strong></p>
+          <div class="element element-4" id="sqldivmot<?php echo $i?>"></div>
+          <?php
+          $year = substr($donnees['date'], 0, 10);
+          $hour= substr($donnees['date'], 10, 6);
+          ?>
+          <p class="text text-2"><strong><?php echo $year?>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $hour?></strong></p>
 
 
           <input class="checkbox checkbox-2" onclick='alert_message_old("<?php echo $i?>")' type="checkbox" name="check<?php echo $i?>" id="check<?php echo $i?>" value="on" <?php if (!strcmp($donnees['actif'],"on")) {echo "checked";}?>>
 
 
-          <i class="_button _button-3 first-arrow fa fa-caret-up" style="font-size:24px;color:white"></i>
+          <i class="container first-arrow fa fa-caret-up" style="font-size:24px;color:white"></i>
+
           <div class="element element-5" ></div>
 
           <!-- DIV mot DEBUT -->
@@ -80,7 +157,7 @@ while ($donnees = $reponse->fetch())
             <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 1</strong></font></p>
             <input class="_input _input-4" type="text" name="sqlindice1<?php echo $i?>" id="sqlindice1<?php echo $i?>" value="<?php if (isset($_POST['sqlindice1' . $i])){echo $_POST['sqlindice1' . $i];} else {echo $donnees['indice1'];} ?>" spellcheck="true">
             <div class="element element-6" id="sqldivindice1<?php echo $i?>" spellcheck="true"></div>
-            <p class="_button _button-4 second-arrow">ÉDITER</p>
+            <p class="_button _button-3 second-arrow">ÉDITER</p>
 
             <div class="element element-7"></div>
             <!-- DIV INDICE 1 -->
@@ -117,7 +194,7 @@ while ($donnees = $reponse->fetch())
             <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 2</strong></font></p>
             <input class="_input _input-4" type="text" name="sqlindice2<?php echo $i?>" id="sqlindice2<?php echo $i?>" value="<?php if (isset($_POST['sqlindice2' . $i])){echo $_POST['sqlindice2' . $i];} else {echo $donnees['indice2'];} ?>" spellcheck="true">
             <div class="element element-6" id="sqldivindice2<?php echo $i?>" spellcheck="true"></div>
-            <p class="_button _button-4 third-arrow">ÉDITER</p>
+            <p class="_button _button-3 third-arrow">ÉDITER</p>
 
             <div class="element element-7"></div>
 
@@ -155,7 +232,7 @@ while ($donnees = $reponse->fetch())
             <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 3</strong></font></p>
             <input class="_input _input-4" type="text" name="sqlindice3<?php echo $i?>" id="sqlindice3<?php echo $i?>" value="<?php if (isset($_POST['sqlindice3' . $i])){echo $_POST['sqlindice3' . $i];} else {echo $donnees['indice3'];} ?>" spellcheck="true">
             <div class="element element-6" id="sqldivindice3<?php echo $i?>" spellcheck="true"></div>
-            <p class="_button _button-4 fourth-arrow">ÉDITER</p>
+            <p class="_button _button-3 fourth-arrow">ÉDITER</p>
 
             <div class="element element-7"></div>
 
@@ -192,7 +269,7 @@ while ($donnees = $reponse->fetch())
             <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>GAGNÉ !</strong></font></p>
             <input class="_input _input-4" type="text" name="sqlrecompense<?php echo $i?>" id="sqlrecompense<?php echo $i?>" value="<?php if (isset($_POST['sqlrecompense' . $i])){echo $_POST['sqlrecompense' . $i];} else {echo $donnees['recompense'];} ?>" spellcheck="true">
             <div class="element element-6" id="sqldivindice4<?php echo $i?>" spellcheck="true"></div>
-            <p class="_button _button-4 fifth-arrow">ÉDITER</p>
+            <p class="_button _button-3 fifth-arrow">ÉDITER</p>
 
             <div class="element element-5"></div>
 
@@ -235,28 +312,18 @@ while ($donnees = $reponse->fetch())
   $i++;
   }
   ?>
-<input class="_button _button-5" type="submit"name="update" id="update" value="Enregistrer les modifications"/>
+<input class="_button _button-4" type="submit"name="update" id="update" value="Enregistrer les modifications"/>
 <?php
-}
 $reponse->closeCursor(); // Termine le traitement de la requête
 $maxidi = $i;
 ?>
-
+<input type="number" id="numMax" name="numMax" value=<?php echo $maxidi?> hidden>
 <script type="text/javascript" src="js/toggle.js"></script>
 
 </form>
 
 
 <script type="text/javascript">
-
-function ifgreen(id)
-{
-  alert("test");
-  if (document.getElementById('sqldivmot' + id).style.backgroundColor != "rgb(228, 38, 19)" || document.getElementById('sqldivmot' + id).style.backgroundColor != "rgb(247, 147, 30)")
-  {
-    document.getElementById('check' + id).checked = true;
-  }
-}
 
 function alert_message_old(id)
 {
@@ -270,14 +337,18 @@ function alert_message_old(id)
 // Autorisation à cocher "check" ou non
 function old_submit()
 {
-  var testcheck = false;
-  for (var id = 0; id < <?php echo $maxidi?>; id++)
+  var nb = <?php echo $control_check;?>;
+  if (nb == 1)
   {
-     if (document.getElementById('check' + id).checked == true) {testcheck = true;}
-  }
-  if (testcheck != true) {
-    window.alert("Vous devez avoir activé au moins une enigme !");
-    return false;
+    var testcheck = false;
+    for (var id = 0; id < <?php echo $maxidi?>; id++)
+    {
+       if (document.getElementById('check' + id).checked == true) {testcheck = true;}
+    }
+    if (testcheck != true) {
+      window.alert("Vous devez avoir activé au moins une enigme !");
+      return false;
+    }
   }
 }
 

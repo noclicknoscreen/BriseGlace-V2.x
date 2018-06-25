@@ -22,6 +22,7 @@ function pastille_new()
       divindice4.style.backgroundColor == "rgb(102, 171, 82)")
   {
     document.getElementById('divmot').style.background="rgb(102, 171, 82)";
+    document.getElementById('complet').value ="complet";
   }
   else if(document.getElementById('mot').value ||
           document.getElementById('theme').value ||
@@ -38,6 +39,7 @@ function pastille_new()
   else
   {
     document.getElementById('divmot').style.background="rgb(228, 38, 19)";
+    document.getElementById('complet').value ="vide";
   }
 
 

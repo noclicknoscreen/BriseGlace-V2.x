@@ -22,6 +22,7 @@ function pastille_old(maxidi)
         document.getElementById('sqldivindice4' + j).style.backgroundColor == "rgb(102, 171, 82)")
     {
       document.getElementById('sqldivmot' + j).style.background ="rgb(102, 171, 82)";
+      document.getElementById('sqlcomplet' + j).value ="complet";
     }
     else if(document.getElementById('sqlmot' + j).value ||
             document.getElementById('sqltheme' + j).value ||
@@ -38,6 +39,7 @@ function pastille_old(maxidi)
     else
     {
       document.getElementById('sqldivmot' + j).style.background="rgb(228, 38, 19)";
+      document.getElementById('sqlcomplet' + j).value ="vide";
     }
 
     // INDICE PASTILLE
