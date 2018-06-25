@@ -57,7 +57,8 @@ public:
 private:
     ofImage mCartoucheImg;
     
-    ofxTextBlock    mCartoucheText;
+    ofxTextBlock    mCartoucheTextTitle;
+    ofxTextBlock    mCartoucheTextSubTi;
     ofTrueTypeFont  mTitle;
     ofTrueTypeFont  mSubLine1;
     ofTrueTypeFont  mSubLine2;

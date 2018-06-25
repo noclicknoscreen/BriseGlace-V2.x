@@ -32,7 +32,9 @@ void scGame::setup(){
     }
     
     // ---------------------------------------------------------------------------
-    mCartoucheText.init(globalFontName, globalFontSizeMedium);
+    mCartoucheImg.load("Pastille-Titre-JeuA01.png");
+    mCartoucheTextTitle.init(globalFontName, globalFontSizeSmall);
+    mCartoucheTextSubTi.init(globalFontName, globalFontSizeMedium);
     mTitle.load(globalFontName, globalFontSizeMedium);
     mSubLine1.load(globalFontName, globalFontSizeBig);
     mSubLine2.load(globalFontName, globalFontSizeMedium - 2);
@@ -48,11 +50,6 @@ void scGame::update(float dt){
     // We re-map the volume between the end and the start of a sequence
     loadNewSequenceImage((int)ofMap(timerForceWin.getValuef(), 0, 1, mSequenceLen - 1, 0, true));
 
-    // -----------------------------------------------------------------
-    // Draw title and consignes
-    mCartoucheText.setColor(0, 0, 0, 255);
-    // -----------------------------------------------------------------
-    
 }
 
 
@@ -102,24 +99,28 @@ void scGame::draw(){
     ofDisableLighting();
     ofDisableDepthTest();
     ofEnableAlphaBlending();
+    ofDisableNormalizedTexCoords();
     
     ofNoFill();
     
-    ofSetColor(ofColor::black, 0);
-
-    
     ofPoint posTextCartouche(300, 75);
+    ofPoint posTextCartoucheImg(300, 200);
     float   width = 400;
     float   lineH = 65;
-    mCartoucheText.setText("BIENVENUS");mCartoucheText.setColor(0, 0, 0, 255);
-    mCartoucheText.wrapTextX(width);
-    mCartoucheText.drawCenter(posTextCartouche.x, posTextCartouche.y);
-    mCartoucheText.setText("SUR");mCartoucheText.setColor(0, 0, 0, 255);
-    mCartoucheText.wrapTextX(width);
-    mCartoucheText.drawCenter(posTextCartouche.x, posTextCartouche.y + lineH);
-    mCartoucheText.setText(mGameName);mCartoucheText.setColor(0, 0, 0, 255);
-    mCartoucheText.wrapTextX(width);
-    mCartoucheText.drawCenter(posTextCartouche.x, posTextCartouche.y + 2*lineH);
+    
+    ofSetColor(ofColor::white, 255);
+    mCartoucheImg.draw(posTextCartoucheImg.x - 0.5 * mCartoucheImg.getWidth(), posTextCartoucheImg.y - 0.5 * mCartoucheImg.getHeight());
+    
+    mCartoucheTextTitle.setText("BIENVENUS");mCartoucheTextTitle.setColor(255, 255, 255, 255);
+    mCartoucheTextTitle.wrapTextX(width);
+    mCartoucheTextTitle.drawCenter(posTextCartouche.x, posTextCartouche.y);
+    mCartoucheTextTitle.setText("SUR");mCartoucheTextTitle.setColor(255, 255, 255, 255);
+    mCartoucheTextTitle.wrapTextX(width);
+    mCartoucheTextTitle.drawCenter(posTextCartouche.x, posTextCartouche.y + lineH);
+    
+    mCartoucheTextSubTi.setText(mGameName);mCartoucheTextSubTi.setColor(255, 255, 255, 255);
+    mCartoucheTextSubTi.wrapTextX(width);
+    mCartoucheTextSubTi.drawCenter(posTextCartouche.x, posTextCartouche.y + 2*lineH);
     
     ofSetColor(ofColor::black);
     ofPoint posText(600, 150);
