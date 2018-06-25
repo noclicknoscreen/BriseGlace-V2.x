@@ -31,6 +31,8 @@ public:
 private:
     timer mTimerEndScene;
     void  timerEndScene();
+    
+    int    mNumberGames;
 
     
 };

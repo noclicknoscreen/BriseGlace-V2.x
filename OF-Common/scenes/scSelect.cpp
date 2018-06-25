@@ -93,7 +93,7 @@ void scSelect::sceneWillAppear( ofxScene * fromScreen ){
     mTimerEraseWord.startTimer(2);
     
     // Player manager events
-    ofAddListener(bigPlayerManager().someoneSpoke   ,this,&scSelect::someoneSpoke);
+//    ofAddListener(bigPlayerManager().someoneSpoke   ,this,&scSelect::someoneSpoke);
 //    ofAddListener(mTimerSignAnimation.timerEnd      ,this,&scSelect::timerSignAnimationEnd);
 //    ofAddListener(mTimerEraseWord.timerEnd      ,this,&scSelect::timerEraseWordEnd);
 };
@@ -104,7 +104,7 @@ void scSelect::sceneWillDisappear( ofxScene * toScreen ){
     scScene::sceneWillDisappear(toScreen);
     
     // Player manager events
-    ofRemoveListener(bigPlayerManager().someoneSpoke    ,this,&scSelect::someoneSpoke);
+//    ofRemoveListener(bigPlayerManager().someoneSpoke    ,this,&scSelect::someoneSpoke);
 //    ofRemoveListener(mTimerSignAnimation.timerEnd       ,this,&scSelect::timerSignAnimationEnd);
 //    ofRemoveListener(mTimerEraseWord.timerEnd           ,this,&scSelect::timerEraseWordEnd);
 }

@@ -51,6 +51,7 @@ void scSelectGame::sceneWillAppear( ofxScene * fromScreen ){
     mTimerEraseWord.startTimer(2);
 
     // Player manager events
+    ofAddListener(bigPlayerManager().someoneSpoke   ,this,&scSelectGame::someoneSpoke);
     ofAddListener(mTimerSignAnimation.timerEnd      ,this,&scSelectGame::timerSignAnimationEnd);
     
 };
@@ -66,8 +67,15 @@ void scSelectGame::sceneWillDisappear( ofxScene * toScreen ){
     bigPlayerManager().stopSign(3);
     
     // Player manager events
+    ofRemoveListener(bigPlayerManager().someoneSpoke    ,this,&scSelectGame::someoneSpoke);
     ofRemoveListener(mTimerSignAnimation.timerEnd       ,this,&scSelectGame::timerSignAnimationEnd);
     
+}
+
+// EVENTS ////////////////////////////////////////////////////////////////////////////////////////////
+// Speaking event
+void scSelectGame::someoneSpoke(player & _player){
+    scSelect::someoneSpoke(_player);
 }
 
 void scSelectGame::timerSignAnimationEnd(){

@@ -10,6 +10,9 @@
 
 #include "scGame3.h"
 
+#define START_FORCE_FACTOR_BIS 10
+
+
 class scGame3Bis : public scGame3
 {
 public:

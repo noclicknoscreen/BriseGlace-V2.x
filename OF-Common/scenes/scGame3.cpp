@@ -214,7 +214,7 @@ void scGame3::exit()
 //--------------------------------------------------------------
 void scGame3::someoneSpoke(player & _player){
     // We don't do the root (because we want to see the hint anyway)
-    scScene::someoneSpoke(_player);
+    scGame::someoneSpoke(_player);
     //
     //    std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord));
     //    if(index != std::string::npos)
@@ -230,22 +230,22 @@ void scGame3::someoneSpoke(player & _player){
     //    }
     //
     
-    int compare = ofStringTimesInString(utils::toUpperCase(_player.getLastMessage()), utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
-    if(compare > 0)
-    {
-        ofLogNotice() << "We have a winner [" << _player.getLastMessage() << "] = [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
-        bigPlayerManager().setWinnerUserId(_player.getNumber());
-        bigPlayerManager().startSign(_player.getNumber(), "C'est gagné !");
-        restartTimerSignWin();
-        stopHint();
-        
-        //        drawWinnerSign = true;
-        
-        ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
-        
-    }else{
-        ofLogNotice() << "Final comparaison failed [" << _player.getLastMessage() << "] different from [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
-    }
+//    int compare = ofStringTimesInString(utils::toUpperCase(_player.getLastMessage()), utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
+//    if(compare > 0)
+//    {
+//        ofLogNotice() << "We have a winner [" << _player.getLastMessage() << "] = [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
+//        bigPlayerManager().setWinnerUserId(_player.getNumber());
+//        bigPlayerManager().startSign(_player.getNumber(), "C'est gagné !");
+//        restartTimerSignWin();
+//        stopHint();
+//        
+//        //        drawWinnerSign = true;
+//        
+//        ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
+//        
+//    }else{
+//        ofLogNotice() << "Final comparaison failed [" << _player.getLastMessage() << "] different from [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
+//    }
     
 }
 

@@ -166,7 +166,7 @@ public:
     string toString(){
         float mappedValue = mTimer.getCurrentValue() * mTimer.getDuration();
         
-        string seconds = ofToString((int) mappedValue, 2, '0');
+        string seconds = ofToString((int) fmod(mappedValue,60), 2, '0');
         string minutes = ofToString((int) (mappedValue / 60), 2, '0');
         
         if(mTimer.getDuration() >= 60){

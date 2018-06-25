@@ -29,16 +29,18 @@ void scGame3Bis::sceneWillAppear( ofxScene * fromScreen ){
     for(int i=0; i<wantedWord.size(); i++)
     {
         ofVec3f startPosition;
-        startPosition.x = ofMap((float)i / (float)wantedWord.size(), 0, 1, -500, 500);
-        startPosition.y = 150;
-        startPosition.z = ofRandom(-20, 20);
+        startPosition.x = ofMap((float)i / (float)wantedWord.size(), 0, 1, -400, 400);
+        startPosition.y = 750;
+        startPosition.z = ofRandom(-5, 5);
         
         box = new cubeRigidBody();
         //            box->setup(texture, ofToString(wantedWord[wantedWord.size()-(i+1)]), 40);
         box->setup(texture, wantedWord.substr(i,1));
-        box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
+//        box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
         box->create(world.world, startPosition, .5, 80, 80, 80);
         box->add();
+        box->applyForce(START_FORCE_FACTOR_BIS*ofVec3f(ofRandom(-1, 1), ofRandom(-1, 1), ofRandom(-1, 1)), box->getPosition());
+
         
         myCubes.push_back(box);
     }

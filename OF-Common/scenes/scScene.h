@@ -21,7 +21,7 @@
 
 #include "utils.h"
 
-enum Scenes{ INTRO = 1, SELECT_GAME, GAME1, GAME2, GAME3, GAME3_BIS, HINT, VICTORY };
+enum Scenes{ INTRO = 1, SELECT_GAME, GAME1, GAME2, GAME3, GAME3_BIS, HINT, VICTORY, PARTNERS};
 
 class scScene : public ofxScene, ofBaseApp {
     

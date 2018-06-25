@@ -77,11 +77,14 @@ void scGame::loadNewSequenceImage(int _newSequenceIdx){
 }
 
 void scGame::draw(){
+    
+    // Dessin du compteur ----------------------------------------------
     if(mSequenceImg.isAllocated()){
         ofSetColor(255,255,255,255);
         
         ofDisableNormalizedTexCoords();
-        mSequenceImg.draw(ofGetWidth() - 200, ofGetHeight() - 200, 100, 100);
+//        mSequenceImg.draw(ofGetWidth() - 200, ofGetHeight() - 200, 100, 100);
+        mSubLine2.drawString(timerForceWin.toString(), ofGetWidth() - 200, ofGetHeight() - 200);
         ofEnableNormalizedTexCoords();
     }
     
@@ -101,10 +104,10 @@ void scGame::draw(){
     ofPoint posTextCartouche(300, 100);
     float   width = 400;
     float   lineH = 65;
-    mCartoucheText.setText("Bienvenus");
+    mCartoucheText.setText("BIENVENUS");
     mCartoucheText.wrapTextX(width);
     mCartoucheText.drawCenter(posTextCartouche.x, posTextCartouche.y);
-    mCartoucheText.setText("sur");
+    mCartoucheText.setText("SUR");
     mCartoucheText.wrapTextX(width);
     mCartoucheText.drawCenter(posTextCartouche.x, posTextCartouche.y + lineH);
     mCartoucheText.setText(mGameName);
@@ -114,7 +117,7 @@ void scGame::draw(){
     ofSetColor(ofColor::black);
     ofPoint posText(600, 175);
     mTitle.drawString("ICI ON CHERCHE :", posText.x, posText.y);
-    mSubLine1.drawString(bigEnigmaManager().getCurrentEnigma()->getTheme(), posText.x, posText.y + 75);
+    mSubLine1.drawString(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getTheme()), posText.x, posText.y + 75);
     mSubLine2.drawString(mConsigne, posText.x, posText.y + 150);
     
     ofPopStyle();
@@ -125,6 +128,19 @@ void scGame::draw(){
 void scGame::someoneSpoke(player & _player){
     
     scScene::someoneSpoke(_player);
+    
+    int compare = ofStringTimesInString(utils::toUpperCase(_player.getLastMessage()), utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
+    if(compare > 0)
+    {
+        ofLogNotice() << "We have a winner [" << _player.getLastMessage() << "] = [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
+        bigPlayerManager().setWinnerUserId(_player.getNumber());
+        bigPlayerManager().startSign(_player.getNumber(), "C'est gagné !");
+        restartTimerSignWin();
+        stopHint();
+        
+    }else{
+        ofLogNotice() << "Final comparaison failed [" << _player.getLastMessage() << "] different from [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
+    }
     
     // Restart waiting timer
     restartTimerBeforeHint();
@@ -148,7 +164,7 @@ void scGame::restartTimerSignWin(){
 }
 void scGame::restartTimerForceWin(){
     ofLogNotice() << "Start Timer force win, waiting..... ";
-    timerForceWin.startTimer(30);
+    timerForceWin.startTimer(90);
 }
 
 void scGame::stopHint(){
@@ -192,8 +208,15 @@ void scGame::timerForceWinEnd(){
     // --------------------------------
     // Stop counting
     timerForceWin.stop();
+    // --------------------------------
+    //    drawHintSign = true;
+    hintUserId = bigPlayerManager().getRandomPlayer();
+    timerSignHint.stop();
+    bigPlayerManager().startSign(hintUserId, "C'est perdu !");
     
-    ofxSceneManager::instance()->goToScene(VICTORY);
+    restartTimerSignWin();
+    
+//    ofxSceneManager::instance()->goToScene(VICTORY);
 }
 
 //scene notifications
@@ -216,6 +239,7 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
     bigPlayerManager().stopSign(1);
     bigPlayerManager().stopSign(2);
     bigPlayerManager().stopSign(3);
+    bigPlayerManager().stopSign(4);
     
     // Player manager events
     ofAddListener(timerBeforeHint.timerEnd, this,&scGame::timerBeforeHintEnd);
@@ -235,10 +259,11 @@ void scGame::sceneWillDisappear( ofxScene * toScreen ){
     bigPlayerManager().stopSign(1);
     bigPlayerManager().stopSign(2);
     bigPlayerManager().stopSign(3);
+    bigPlayerManager().stopSign(4);
     
     // Disable timer events
     ofRemoveListener(timerBeforeHint.timerEnd,  this,&scGame::timerBeforeHintEnd);
     ofRemoveListener(timerSignHint.timerEnd,    this,&scGame::timerSignHintEnd);
-    ofRemoveListener(timerForceWin.timerEnd,   this,&scGame::timerForceWinEnd);
+    ofRemoveListener(timerForceWin.timerEnd,    this,&scGame::timerForceWinEnd);
 
 }

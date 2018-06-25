@@ -51,6 +51,7 @@ void scIntro::sceneWillAppear( ofxScene * fromScreen ){
 //    bDrawSubtitle2 = false;
     
     // Player manager events
+    ofAddListener(bigPlayerManager().someoneSpoke   ,this,&scIntro::someoneSpoke);
     ofAddListener(mTimerSignAnimation.timerEnd      ,this,&scIntro::timerSignAnimationEnd);
 //    ofAddListener(mTimerTexte.timerEnd              ,this,&scIntro::timerTexteEnd);
 };
@@ -60,6 +61,7 @@ void scIntro::sceneWillDisappear( ofxScene * toScreen ){
     scSelect::sceneWillDisappear(toScreen);
     
     // Player manager events
+    ofRemoveListener(bigPlayerManager().someoneSpoke    ,this,&scIntro::someoneSpoke);
     ofRemoveListener(mTimerSignAnimation.timerEnd       ,this,&scIntro::timerSignAnimationEnd);
 //    ofRemoveListener(mTimerTexte.timerEnd               ,this,&scIntro::timerTexteEnd);
     

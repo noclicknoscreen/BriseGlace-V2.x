@@ -80,12 +80,8 @@ void scGame1::draw(){ //draw scene 1 here
     // Draw floating words
     myInputManager.draw();
     
-//    if(drawWinnerSign)
-//            bigPlayerManager().draw(bigPlayerManager().getWinnerUserId(), "c'est gagné");
-//    else if(drawHintSign)
-//            bigPlayerManager().draw(hintUserId, "veux-tu un indice ?");
-//    else
-            bigPlayerManager().draw();    // Draw players
+    // Draw players
+    bigPlayerManager().draw();
     
 };
 

@@ -82,7 +82,7 @@ void scGame2::draw(){ //draw scene 1 here
     myInputManager.draw();
 
     // Draw players
-    bigPlayerManager().draw();    // Draw players
+    bigPlayerManager().draw();
     
 };
 
@@ -168,18 +168,8 @@ void scGame2::someoneSpoke(player & _player){
         myInputManager.getNewText(_player);
     }
     
-    int compare = ofStringTimesInString(utils::toUpperCase(_player.getLastMessage()), utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getSolution()));
-    if(compare > 0)
-    {
-        ofLogNotice() << "We have a winner [" << _player.getLastMessage() << "] = [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
-        bigPlayerManager().setWinnerUserId(_player.getNumber());
+    if(bigPlayerManager().getWinnerUserId() > 0){
         myCubeManager.rotateAllToWhite();
-        bigPlayerManager().startSign(_player.getNumber(), "C'est gagné !");
-        restartTimerSignWin();
-        stopHint();
-        
-    }else{
-        ofLogNotice() << "Final comparaison failed [" << _player.getLastMessage() << "] different from [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
     }
     
 }

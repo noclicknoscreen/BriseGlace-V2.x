@@ -28,6 +28,7 @@
 		19BAA929C90DC149B11A3AD3 /* btTriangleMeshShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1757BBAA5566F70632842621 /* btTriangleMeshShape.cpp */; };
 		1C23F16A20E0E0AA001B7D72 /* ofxTextAlign.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C23F15F20E0E0AA001B7D72 /* ofxTextAlign.cpp */; };
 		1C23F16B20E0E0AA001B7D72 /* ofxTextAlignTTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C23F16120E0E0AA001B7D72 /* ofxTextAlignTTF.cpp */; };
+		1C23F17220E10F51001B7D72 /* scPartners.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C23F17020E10F51001B7D72 /* scPartners.cpp */; };
 		1C3F868920C56C8B0051AFD5 /* cubeManagerMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F868720C56C8B0051AFD5 /* cubeManagerMemory.cpp */; };
 		1C3F868C20C56EA40051AFD5 /* cubeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F868A20C56EA40051AFD5 /* cubeManager.cpp */; };
 		1C64A40120DBFED500CF54C4 /* scSelect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C64A3FF20DBFED500CF54C4 /* scSelect.cpp */; };
@@ -296,6 +297,8 @@
 		1C23F16020E0E0AA001B7D72 /* ofxTextAlign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTextAlign.h; sourceTree = "<group>"; };
 		1C23F16120E0E0AA001B7D72 /* ofxTextAlignTTF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTextAlignTTF.cpp; sourceTree = "<group>"; };
 		1C23F16220E0E0AA001B7D72 /* ofxTextAlignTTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTextAlignTTF.h; sourceTree = "<group>"; };
+		1C23F17020E10F51001B7D72 /* scPartners.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scPartners.cpp; sourceTree = "<group>"; };
+		1C23F17120E10F51001B7D72 /* scPartners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scPartners.h; sourceTree = "<group>"; };
 		1C3F868720C56C8B0051AFD5 /* cubeManagerMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = cubeManagerMemory.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		1C3F868820C56C8B0051AFD5 /* cubeManagerMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeManagerMemory.h; sourceTree = "<group>"; };
 		1C3F868A20C56EA40051AFD5 /* cubeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = cubeManager.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
@@ -1560,6 +1563,8 @@
 				D2CF8C2220A98E700035B780 /* scScene.h */,
 				D2CF8C1F20A98E700035B780 /* scIntro.cpp */,
 				D2CF8C2020A98E700035B780 /* scIntro.h */,
+				1C23F17020E10F51001B7D72 /* scPartners.cpp */,
+				1C23F17120E10F51001B7D72 /* scPartners.h */,
 				D2CF8C2320A98E700035B780 /* scSelectGame.cpp */,
 				D2CF8C2420A98E700035B780 /* scSelectGame.h */,
 				1C64A3FF20DBFED500CF54C4 /* scSelect.cpp */,
@@ -1913,6 +1918,7 @@
 				D596B4C0EA4546DB259B3326 /* btMultiSapBroadphase.cpp in Sources */,
 				485955BD55348C9945648A84 /* btOverlappingPairCache.cpp in Sources */,
 				1CD83BE320D7BA5C00C873FB /* cubeRigidBody.cpp in Sources */,
+				1C23F17220E10F51001B7D72 /* scPartners.cpp in Sources */,
 				10E25EB8EA74DDA4831F37ED /* btQuantizedBvh.cpp in Sources */,
 				41A0F868C0B1AB431877CED4 /* btSimpleBroadphase.cpp in Sources */,
 				6C102724B942D7839064BD6F /* btActivatingCollisionAlgorithm.cpp in Sources */,

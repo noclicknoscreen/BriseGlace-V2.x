@@ -38,6 +38,7 @@ void ofApp::setup(){
     sceneManager->addScene( new scGame3Bis(), GAME3_BIS);
     sceneManager->addScene( new scHint(), HINT);
     sceneManager->addScene( new scVictory(), VICTORY);
+    sceneManager->addScene( new scPartners(), PARTNERS);
 
     sceneManager->setDrawDebug(false);
 	sceneManager->setCurtainDropTime(1.0);
@@ -119,6 +120,7 @@ void ofApp::keyPressed(int key){
     if (key == '5') sceneManager->goToScene(GAME3);
     if (key == '6') sceneManager->goToScene(HINT);
     if (key == '7') sceneManager->goToScene(VICTORY);
+    if (key == '8') sceneManager->goToScene(PARTNERS);
     
     if (key == OF_KEY_RIGHT || key == OF_KEY_LEFT){
         if (key == OF_KEY_RIGHT)
@@ -167,6 +169,7 @@ void ofApp::nextSceneAuto(){
         case GAME3:
         case HINT:
         case VICTORY:
+        case PARTNERS:
         default:
             goToNextScene();
             break;

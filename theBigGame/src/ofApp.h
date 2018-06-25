@@ -14,6 +14,7 @@
 #include "scGame3BIS.h"
 #include "scHint.h"
 #include "scVictory.h"
+#include "scPartners.h"
 
 #include "ofEvent.h"
 
