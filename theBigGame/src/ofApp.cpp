@@ -161,7 +161,7 @@ void ofApp::nextSceneAuto(){
     ofLogNotice() << "Next Scene !!!!! Auto-Launch";
     
     switch (sceneManager->getCurrentSceneID()) {
-        case INTRO:
+//        case INTRO:
 //        case INITIALIZE:
         case SELECT_GAME:
         case GAME1:
