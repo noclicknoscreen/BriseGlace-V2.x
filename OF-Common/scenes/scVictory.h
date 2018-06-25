@@ -32,6 +32,12 @@ private:
     timer mTimerEndScene;
     void  timerEndScene();
     
+    timer mTimerEndReading;
+    void  timerEndReading();
+    
+    void someoneSpoke(player & _player);
+    void endScene();
+    
     int    mNumberGames;
 
     

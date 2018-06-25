@@ -79,22 +79,43 @@ void inputHandler::getNewText(player _player)
 void inputHandler::draw()
 {
     
-    for(int i=0; i<splittedString.size(); i++)
+    
+    for(int i = 0; i < splittedString.size(); i++)
     {
-        ofSetColor(splittedString[i].textColor);
+        ofPushStyle();
+        ofEnableAlphaBlending();
         
-        if(revealMode){
-            font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
-            
-        }else{
-            if(splittedString[i].alpha > 0){
-                font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
-                
-            }else{
-                fontBig.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
-                
-            }
-        }
+        ofPushMatrix();
+        
+        float scale = ofMap(splittedString[i].textColor.a, 1.0, 0.0, 1.0, 1.5);
+//        ofLog() << "which alpha : " << splittedString[i].textColor.a << " : " << "scale : " << scale;
+        
+        ofTranslate(splittedString[i].currentPos);
+        ofScale(scale, scale, scale);
+        
+        ofSetColor(splittedString[i].textColor);
+        font.drawString(splittedString[i].letter, 0, 0);
+        
+        ofPopMatrix();
+        ofPopStyle();
+        
+//        if(revealMode){
+//            font.drawString(splittedString[i].letter, 0, 0);
+//            
+//        }else{
+//            font.drawString(splittedString[i].letter, 0, 0);
+//            
+//            if(splittedString[i].alpha > 0){
+//                font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
+//                
+//            }else{
+//                fontBig.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
+//                
+//            }
+//        }
+        
+
+        
     }
     
 }

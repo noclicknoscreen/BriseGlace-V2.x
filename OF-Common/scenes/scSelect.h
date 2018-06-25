@@ -16,11 +16,9 @@ protected:
     string  mPlayerMessage;
     ofColor mPlayerColor;
     
-    timer mTimerEraseWord;
     
 public:
     void update(float dt);
-    void  timerEraseWordEnd();
     
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );

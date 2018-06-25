@@ -65,7 +65,7 @@ void cubeRigidBody::customDraw(ofColor _winnerColor)
     ofRotate(180, 0, 1, 0);
     ofRotate(180, 1, 0, 0);
     
-    ofTranslate(-textWidth/2.0,  -textHeight/2, float(size.z/2 +2));
+    ofTranslate(-textWidth/2.0, -textHeight/2, float(size.z/2 +2));
     
     ofDisableLighting();
     font.drawString(utils::toUpperCase(utils::toByteString(mLetter)), 0, 0);
@@ -85,8 +85,6 @@ void cubeRigidBody::customDraw(ofColor _winnerColor)
     
     //restore gl state
     restoreTransformGL();
-    
-    
     
     
 }

@@ -26,20 +26,20 @@ void enigmaManager::pickNewEnigma(gameType _gameType){
     
     
     string path = GLOBAL_PATH;
-//    path += "/enigme";
-//    switch (_gameType) {
-//        case MOTUS:
-//            path += "/motus";
-//            break;
-//        case IMAGE_GRID:
-//            path += "/memory";
-//            break;
-//        case BOGGLE:
-//            path += "/boggle";
-//            break;
-//        default:
-//            break;
-//    }
+    //    path += "/enigme";
+    //    switch (_gameType) {
+    //        case MOTUS:
+    //            path += "/motus";
+    //            break;
+    //        case IMAGE_GRID:
+    //            path += "/memory";
+    //            break;
+    //        case BOGGLE:
+    //            path += "/boggle";
+    //            break;
+    //        default:
+    //            break;
+    //    }
     
     // First, know all folder of one game type
     dir.listDir(path);
@@ -59,7 +59,7 @@ void enigmaManager::pickNewEnigma(gameType _gameType){
                 mCurrentGameType = _gameType;
                 
                 nbHint = (int)ofRandom(mCurrentEnigma.getNbHints());
-
+                
             }
         }
         else
@@ -86,17 +86,24 @@ enigmaType enigmaManager::pickHintIndex(){
 // PSEUDO STRING -----------------------------------------------
 void enigmaManager::setPseudoString(int _length){
     
-//    mPseudoString = ""; // Clear
-//    mPseudoString.clear(); // Clear
+    //    mPseudoString = ""; // Clear
+    //    mPseudoString.clear(); // Clear
     mPseudoString = utils::toWString(utils::toUpperCase(mCurrentEnigma.getSolution()));
     
     mPseudoString.erase(std::remove(mPseudoString.begin(), mPseudoString.end(), ' '), mPseudoString.end());
     
-//    int savedSize = mPseudoString.size();
+    //    int savedSize = mPseudoString.size();
     if(_length > mPseudoString.size()){
         // On rajoute des lettre aléatoire
         for(int i = mPseudoString.size(); i < _length; i++){
-            mPseudoString += utils::getRndLetter();
+            wstring rdnStr;
+            
+            do{
+                rdnStr = utils::getRndLetter();
+            }while(mPseudoString.find(rdnStr) != std::string::npos);
+                
+            mPseudoString += rdnStr;
+            
         }
     }else if(_length < mPseudoString.size()){
         mPseudoString.resize(_length);
@@ -122,7 +129,7 @@ void enigmaManager::setPseudoString(int _length){
 wstring enigmaManager::pickPseudoLetter(int _idx){
     if(_idx >= 0 && _idx < mPseudoString.size()){
         // return a letter among the pseudo string
-//        return mPseudoString[_idx];
+        //        return mPseudoString[_idx];
         return mPseudoString.substr(_idx, 1);
         
     }else{

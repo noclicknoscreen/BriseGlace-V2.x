@@ -152,7 +152,7 @@ void scHint::timerStartRollEnd(){
         currentCube++;
         mTimerStartRoll.startTimer(timeInBetweenRolls);
     }else{
-        mTimerEndScene.startTimer(10);
+        mTimerEndScene.startTimer(4);
         mTimerStartRoll.stop();
     }
 }

@@ -11,20 +11,27 @@
 #include "scSelect.h"
 
 class scSelectGame : public scSelect{
-
+    
 public:
-//    scSelectGame(playerManager &_manager) : scScene(_manager){
-//    };
+    //    scSelectGame(playerManager &_manager) : scScene(_manager){
+    //    };
     
     void setup();
     void update(float dt);
-	void draw();
+    void draw();
     
     void sceneWillAppear( ofxScene * fromScreen );
     void sceneWillDisappear( ofxScene * fromScreen );
-
+    
     void someoneSpoke(player & _player);
     
+private:
+    timer   mTimerTextSequence;
+    void    timerTextSequenceEnd();
+    int     mIndexSequence;
+    
+    timer   mTimerEraseWord;
+    void  timerEraseWordEnd();
     
 private:
     void  timerSignAnimationEnd();

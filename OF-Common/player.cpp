@@ -134,7 +134,8 @@ void player::draw(ofPoint _bulleCorrection){
     
     // DRAW MOT ////////////////////////////////////////////////////////////////
     ofPushMatrix();
-    ofTranslate(-0.5 * mSequenceImg.getWidth() + _bulleCorrection.x, -1 * mSequenceImg.getHeight() - 200  + _bulleCorrection.y);
+    ofPoint realPosBulle(-0.5 * mSequenceImg.getWidth() + _bulleCorrection.x, -1 * mSequenceImg.getHeight() - 200  + _bulleCorrection.y);
+    ofTranslate(realPosBulle);
     //            ofScale(0.75, 0.75);
     
     if(mIsAvailable){
@@ -153,13 +154,18 @@ void player::draw(ofPoint _bulleCorrection){
         
         
         // Little trick to always be into the frame
-        float correction = 0.15;
-        if(myText.getHeight() > 120){
-            correction = -0.15;
-        }
+//        float correction = 0.15;
+//        if(myText.getHeight() > 120){
+//            correction = -0.15;
+//        }
+//        
+//        ofPoint whereTheTextIs(internalBullePos.x + 0.5*internalBulleSize.x, internalBullePos.y + correction * myText.getHeight(), 10);
+        ofPoint whereTheTextIs(internalBullePos.x + 0.5*internalBulleSize.x, internalBullePos.y - 0.5*internalBulleSize.y + 0.5 * mBulleImg.getHeight() - 0.25 * myText.getHeight());
         
-        ofPoint whereTheTextIs(internalBullePos.x + 0.5*internalBulleSize.x, internalBullePos.y + correction * myText.getHeight(), 10);
+//        ofDrawCircle(whereTheTextIs, 5);
+//        ofDrawBitmapString(ofToString(myText.getHeight()), whereTheTextIs);
         myText.drawCenter(whereTheTextIs.x , whereTheTextIs.y);
+        
     }
     ofPopMatrix();
     //////////////////////////////////////////////////////////////////

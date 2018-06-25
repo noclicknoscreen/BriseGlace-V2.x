@@ -22,6 +22,7 @@ void scVictory::setup(){  //load your scene 1 assets here...
 void scVictory::update(float dt){ //update scene 1 here
     scScene::update(dt);
     mTimerEndScene.update(dt);
+    mTimerEndReading.update(dt);
 };
 
 void scVictory::draw(){ //draw scene 1 here
@@ -71,9 +72,11 @@ void scVictory::sceneWillAppear( ofxScene * fromScreen ){
     scScene::sceneWillAppear(fromScreen);
     
     // --
-    mTimerEndScene.startTimer(25);
+    mTimerEndReading.startTimer(15);
     // Player manager events
+    ofAddListener(bigPlayerManager().someoneSpoke    ,this,&scVictory::someoneSpoke);
     ofAddListener(mTimerEndScene.timerEnd,this,&scVictory::timerEndScene);
+    ofAddListener(mTimerEndReading.timerEnd,this,&scVictory::timerEndReading);
     
     winnerText.init(globalFontName, globalFontSizeSmall);
     winnerText.setText(bigEnigmaManager().getCurrentEnigma()->getLegende());
@@ -91,17 +94,34 @@ void scVictory::sceneWillAppear( ofxScene * fromScreen ){
 void scVictory::sceneWillDisappear( ofxScene * toScreen ){
     scScene::sceneWillDisappear(toScreen);
     
+    ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scVictory::someoneSpoke);
     ofRemoveListener(mTimerEndScene.timerEnd,this,&scVictory::timerEndScene);
+    ofRemoveListener(mTimerEndScene.timerEnd,this,&scVictory::timerEndReading);
 }
 
-// EVENTS SECTION /////////////////////////////////////////////////////////////
-// If the time is ended, we go further ---------------------------------------
-void scVictory::timerEndScene(){
+
+void scVictory::endScene(){
     mNumberGames++;
     if(mNumberGames % 5 == 0){
         ofxSceneManager::instance()->goToScene(PARTNERS);
     }else{
-        ofxSceneManager::instance()->goToScene(INTRO);
+        ofxSceneManager::instance()->goToScene(SELECT_GAME);
     }
+}
+
+// EVENTS SECTION /////////////////////////////////////////////////////////////
+// Speaking event
+void scVictory::someoneSpoke(player & _player){
+    scScene::someoneSpoke(_player);
+    endScene();
+}
+
+// If the time is ended, we go further ---------------------------------------
+void scVictory::timerEndScene(){
+    endScene();
+}
+
+void scVictory::timerEndReading(){
+    mTimerEndScene.startTimer(10);
 }
 

@@ -24,7 +24,7 @@ void scSelect::someoneSpoke(player & _player){
     
     mPlayerMessage = _player.getLastMessage();
     mPlayerColor = _player.getColor();
-    mTimerEraseWord.startTimer(2);
+//    mTimerEraseWord.startTimer(2);
     
     ofLogNotice() << "Last spoken word is : " << _player.getLastMessage();
     // Choix du jeu 1 : Mot Masqué
@@ -75,11 +75,11 @@ void scSelect::someoneSpoke(player & _player){
 }
 
 
-void scSelect::timerEraseWordEnd(){
-    //ofLogNotice() << "Erase word to avoid bullshits";
-    mPlayerMessage = "";
-    mTimerEraseWord.stop();
-}
+//void scSelect::timerEraseWordEnd(){
+//    //ofLogNotice() << "Erase word to avoid bullshits";
+//    mPlayerMessage = "";
+////    mTimerEraseWord.stop();
+//}
 
 //scene notifications
 void scSelect::sceneWillAppear( ofxScene * fromScreen ){
@@ -90,7 +90,7 @@ void scSelect::sceneWillAppear( ofxScene * fromScreen ){
     
     // Erase all words of every one
     mTimerSignAnimation.startTimer(2);
-    mTimerEraseWord.startTimer(2);
+//    mTimerEraseWord.startTimer(2);
     
     // Player manager events
 //    ofAddListener(bigPlayerManager().someoneSpoke   ,this,&scSelect::someoneSpoke);

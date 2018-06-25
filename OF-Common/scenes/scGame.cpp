@@ -35,7 +35,7 @@ void scGame::setup(){
     mCartoucheText.init(globalFontName, globalFontSizeMedium);
     mTitle.load(globalFontName, globalFontSizeMedium);
     mSubLine1.load(globalFontName, globalFontSizeBig);
-    mSubLine2.load(globalFontName, globalFontSizeMedium);
+    mSubLine2.load(globalFontName, globalFontSizeMedium - 2);
     
 }
 
@@ -80,11 +80,18 @@ void scGame::draw(){
     
     // Dessin du compteur ----------------------------------------------
     if(mSequenceImg.isAllocated()){
+        ofPushStyle();
         ofSetColor(255,255,255,255);
         
         ofDisableNormalizedTexCoords();
 //        mSequenceImg.draw(ofGetWidth() - 200, ofGetHeight() - 200, 100, 100);
-        mSubLine2.drawString(timerForceWin.toString(), ofGetWidth() - 200, ofGetHeight() - 200);
+        ofPopStyle();
+        
+        ofPushStyle();
+        ofSetColor(0,0,0,255);
+        mSubLine2.drawString(timerForceWin.toString(), 0.9 * ofGetWidth(), 0.95 * ofGetHeight());
+        ofPopStyle();
+        
         ofEnableNormalizedTexCoords();
     }
     
@@ -92,32 +99,32 @@ void scGame::draw(){
     // Draw title and consignes
     ofPushStyle();
     
-    
-    mCartoucheText.setColor(0, 0, 0, 0);
     ofDisableLighting();
     ofDisableDepthTest();
     ofEnableAlphaBlending();
+    
     ofNoFill();
+    
     ofSetColor(ofColor::black, 0);
 
     
-    ofPoint posTextCartouche(300, 100);
+    ofPoint posTextCartouche(300, 75);
     float   width = 400;
     float   lineH = 65;
-    mCartoucheText.setText("BIENVENUS");
+    mCartoucheText.setText("BIENVENUS");mCartoucheText.setColor(0, 0, 0, 255);
     mCartoucheText.wrapTextX(width);
     mCartoucheText.drawCenter(posTextCartouche.x, posTextCartouche.y);
-    mCartoucheText.setText("SUR");
+    mCartoucheText.setText("SUR");mCartoucheText.setColor(0, 0, 0, 255);
     mCartoucheText.wrapTextX(width);
     mCartoucheText.drawCenter(posTextCartouche.x, posTextCartouche.y + lineH);
-    mCartoucheText.setText(mGameName);
+    mCartoucheText.setText(mGameName);mCartoucheText.setColor(0, 0, 0, 255);
     mCartoucheText.wrapTextX(width);
     mCartoucheText.drawCenter(posTextCartouche.x, posTextCartouche.y + 2*lineH);
     
     ofSetColor(ofColor::black);
-    ofPoint posText(600, 175);
+    ofPoint posText(600, 150);
     mTitle.drawString("ICI ON CHERCHE :", posText.x, posText.y);
-    mSubLine1.drawString(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getTheme()), posText.x, posText.y + 75);
+    mSubLine1.drawString(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getTheme()), posText.x, posText.y + 80);
     mSubLine2.drawString(mConsigne, posText.x, posText.y + 150);
     
     ofPopStyle();
