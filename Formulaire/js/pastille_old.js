@@ -10,6 +10,14 @@ function pastille_old(maxidi)
     document.getElementById('check' + j).checked = false;
   }
 
+  if (document.getElementById('check' + j).checked == true)
+  {
+    document.getElementById('sqlmot' + j).style.color ="rgb(254, 254, 254)";
+  }
+  else {
+    document.getElementById('sqlmot' + j).style.color ="rgb(255, 255, 255, 0.47)";
+  }
+
     // MOT A TROUVER PASTILLE
     if (document.getElementById('sqlmot' + j).value &&
         document.getElementById('sqltheme' + j).value &&

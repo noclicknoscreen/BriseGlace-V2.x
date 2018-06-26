@@ -1,5 +1,7 @@
 <?php
 
+// NON UTILISE
+
 // Fonction
 
 //Verification des IMAGES

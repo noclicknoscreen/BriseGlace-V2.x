@@ -71,8 +71,8 @@ if (isset($_POST['filtrer']) || isset($_POST['trier']))
     $control_check = 1;
   }
   elseif (!strcmp($_POST['filtrer'], "incomplet")) {
-    $reponse = $bdd->query("SELECT * FROM enigme WHERE complet = 'incomplet'" . $chercherand . "ORDER BY " . $trier);
-    $good_requet = "SELECT * FROM enigme WHERE complet = 'incomplet'" . $chercherand . "ORDER BY " . $trier;
+    $reponse = $bdd->query("SELECT * FROM enigme WHERE complet = 'incomplet' OR complet = 'vide'" . $chercherand . "ORDER BY " . $trier);
+    $good_requet = "SELECT * FROM enigme WHERE complet = 'incomplet' OR complet = 'vide'" . $chercherand . "ORDER BY " . $trier;
     $control_check = 0;
   }
   else
@@ -88,7 +88,6 @@ else
     $good_requet = 'SELECT * FROM enigme' . $chercherwhere . 'ORDER BY id';
     $control_check = 1;
   }
-
 
 // On récupère tout le contenu de la table enigme
 // $reponse = $bdd->query('SELECT * FROM enigme ORDER BY id');
@@ -107,8 +106,8 @@ while ($donnees = $reponse->fetch())
 <!-- Mot clé -->
           <input type="text" name="sqlcomplet<?php echo $i?>" id="sqlcomplet<?php echo $i?>" value="incomplet" hidden/>
           <input type="submit" class="_button _button-2" name="plus" id="plus" value="+"/>
-          <input class="_input _input-2" type="text" name="sqlmot<?php echo $i?>" id="sqlmot<?php echo $i?>" value="<?php if (isset($_POST['sqlmot' . $i])){echo $_POST['sqlmot' . $i];} else {echo $donnees['mot'];} ?>" spellcheck="true">
-          <input class="_input _input-3" type="text" id="sqltheme<?php echo $i?>" name="sqltheme<?php echo $i?>" placeholder="mot clé" value="<?php if (isset($_POST['sqltheme' . $i])){echo $_POST['sqltheme' . $i];} else {echo $donnees['theme'];} ?>" spellcheck="true">
+          <input class="_input _input-2" type="text" onkeyup='recupmot(this.value, "<?php echo $i?>");' name="sqlmot<?php echo $i?>" id="sqlmot<?php echo $i?>" value="<?php if (isset($_POST['sqlmot' . $i])){echo $_POST['sqlmot' . $i];} else {echo $donnees['mot'];} ?>" spellcheck="true">
+          <input class="_input _input-3" type="text" id="sqltheme<?php echo $i?>" name="sqltheme<?php echo $i?>" placeholder="theme" value="<?php if (isset($_POST['sqltheme' . $i])){echo $_POST['sqltheme' . $i];} else {echo $donnees['theme'];} ?>" spellcheck="true">
           <div class="element element-4" id="sqldivmot<?php echo $i?>"></div>
           <?php
           $year = substr($donnees['date'], 0, 10);
@@ -155,7 +154,7 @@ while ($donnees = $reponse->fetch())
 
             <!-- Input INDICE 1 -->
             <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 1</strong></font></p>
-            <input class="_input _input-4" type="text" name="sqlindice1<?php echo $i?>" id="sqlindice1<?php echo $i?>" value="<?php if (isset($_POST['sqlindice1' . $i])){echo $_POST['sqlindice1' . $i];} else {echo $donnees['indice1'];} ?>" spellcheck="true">
+            <input class="_input _input-4" type="text" onkeyup='recupindice1(this.value, "<?php echo $i?>");' name="sqlindice1<?php echo $i?>" id="sqlindice1<?php echo $i?>" value="<?php if (isset($_POST['sqlindice1' . $i])){echo $_POST['sqlindice1' . $i];} else {echo $donnees['indice1'];} ?>" spellcheck="true">
             <div class="element element-6" id="sqldivindice1<?php echo $i?>" spellcheck="true"></div>
             <p class="_button _button-3 second-arrow">ÉDITER</p>
 
@@ -192,7 +191,7 @@ while ($donnees = $reponse->fetch())
 
             <!-- Input INDICE 2 -->
             <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 2</strong></font></p>
-            <input class="_input _input-4" type="text" name="sqlindice2<?php echo $i?>" id="sqlindice2<?php echo $i?>" value="<?php if (isset($_POST['sqlindice2' . $i])){echo $_POST['sqlindice2' . $i];} else {echo $donnees['indice2'];} ?>" spellcheck="true">
+            <input class="_input _input-4" type="text" onkeyup='recupindice2(this.value, "<?php echo $i?>");' name="sqlindice2<?php echo $i?>" id="sqlindice2<?php echo $i?>" value="<?php if (isset($_POST['sqlindice2' . $i])){echo $_POST['sqlindice2' . $i];} else {echo $donnees['indice2'];} ?>" spellcheck="true">
             <div class="element element-6" id="sqldivindice2<?php echo $i?>" spellcheck="true"></div>
             <p class="_button _button-3 third-arrow">ÉDITER</p>
 
@@ -230,7 +229,7 @@ while ($donnees = $reponse->fetch())
 
             <!-- Input INDICE 3 -->
             <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>INDICE 3</strong></font></p>
-            <input class="_input _input-4" type="text" name="sqlindice3<?php echo $i?>" id="sqlindice3<?php echo $i?>" value="<?php if (isset($_POST['sqlindice3' . $i])){echo $_POST['sqlindice3' . $i];} else {echo $donnees['indice3'];} ?>" spellcheck="true">
+            <input class="_input _input-4" type="text" onkeyup='recupindice3(this.value, "<?php echo $i?>");' name="sqlindice3<?php echo $i?>" id="sqlindice3<?php echo $i?>" value="<?php if (isset($_POST['sqlindice3' . $i])){echo $_POST['sqlindice3' . $i];} else {echo $donnees['indice3'];} ?>" spellcheck="true">
             <div class="element element-6" id="sqldivindice3<?php echo $i?>" spellcheck="true"></div>
             <p class="_button _button-3 fourth-arrow">ÉDITER</p>
 
@@ -267,7 +266,7 @@ while ($donnees = $reponse->fetch())
 
             <!-- Input RECOMPENSE -->
             <p class="text text-3"><font color="#b2b2b2" face="Quattrocento Sans"><strong>GAGNÉ !</strong></font></p>
-            <input class="_input _input-4" type="text" name="sqlrecompense<?php echo $i?>" id="sqlrecompense<?php echo $i?>" value="<?php if (isset($_POST['sqlrecompense' . $i])){echo $_POST['sqlrecompense' . $i];} else {echo $donnees['recompense'];} ?>" spellcheck="true">
+            <input class="_input _input-4" type="text" onkeyup='recupindice4(this.value, "<?php echo $i?>");' name="sqlrecompense<?php echo $i?>" id="sqlrecompense<?php echo $i?>" value="<?php if (isset($_POST['sqlrecompense' . $i])){echo $_POST['sqlrecompense' . $i];} else {echo $donnees['recompense'];} ?>" spellcheck="true">
             <div class="element element-6" id="sqldivindice4<?php echo $i?>" spellcheck="true"></div>
             <p class="_button _button-3 fifth-arrow">ÉDITER</p>
 
@@ -370,5 +369,7 @@ for (var j = 0; j < <?php echo $maxidi?>; j++) {
 }
 
 pastille_old(<?php echo $maxidi?>);
+
+
 
 </script>

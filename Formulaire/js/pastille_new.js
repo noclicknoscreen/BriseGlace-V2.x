@@ -11,6 +11,12 @@ function pastille_new()
 {
   // traitement
   setTimeout(pastille_new,10); /* rappel après 2 secondes = 2000 millisecondes */
+
+  if (document.getElementById('check').checked == true)
+  {
+    document.getElementById('mot').style.color ="rgb(254, 254, 254)";
+  }
+
   if (document.getElementById('mot').value &&
       document.getElementById('theme').value &&
       document.getElementById('result0').style.display == 'inline' &&
