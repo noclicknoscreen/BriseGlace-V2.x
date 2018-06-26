@@ -9,7 +9,7 @@
 #include "inputHandler.h"
 #include <algorithm>
 
-void inputHandler::setup(ofPoint _inputTextPosition)
+void inputHandler::setup(ofPoint _inputTextPosition, float _maxWidth, float _lineHeight)
 {
     font.load(globalFontName, globalFontSizeMedium);
     fontBig.load(globalFontName, globalFontSizeMedium + 15);
@@ -21,6 +21,8 @@ void inputHandler::setup(ofPoint _inputTextPosition)
     nbCubesRotated = 0;
     
     mInputTextPosition = _inputTextPosition;
+    mMaxWidth = _maxWidth;
+    mLineHeight = _lineHeight;
     
 }
 
@@ -48,38 +50,60 @@ void inputHandler::getNewText(player _player)
     splittedString.clear();
     float cumulatedOffset = 0;
     
-    for(int i=0; i<text.size(); i++)
-    {
-        letterElement oneSplitStr;
-        oneSplitStr.letter = text.substr(i,1);
-        
-//        if(ofIsStringInString(ofToString(text[i]), bigEnigmaManager().getCurrentEnigma()-> getSolution()) > 0){
-//            // We display the good letters in player color
-//            oneSplitStr.textColor = textColor;
-//        }else{
-//            // The bad ones in gray
-//            oneSplitStr.textColor = ofColor::gray;
-//        }
-        
-        oneSplitStr.textColor = textColor;
-        oneSplitStr.currentPos = source;
-        oneSplitStr.destination = ofPoint(mInputTextPosition.x + 0.5 * (cumulatedOffset - font.getStringBoundingBox(text, 0, 0).getWidth()), mInputTextPosition.y);
-        oneSplitStr.destination.y += ofRandom(0.0, 15.0); //add some random so the text isn't a line block
-        
-        oneSplitStr.alpha = 1.0;
-        
-        cumulatedOffset += font.getStringBoundingBox(oneSplitStr.letter, 0, 0).getWidth() + spaceBetweenLetters;
-        
-        splittedString.push_back(oneSplitStr);
-    }
+    vector<string> splittedText = ofSplitString(text, " ");
     
+    float textWidth = 0;
+    int   idxLine = 0;
+    int   nbLines = 0;
+    string strTheLine = "";
+    
+    ofLogNotice() << "Input string from position: " << source << " to position: " << mInputTextPosition;
+    
+    float totalWidth = text.size() * spaceBetweenLetters + font.getStringBoundingBox(text, 0, 0).getWidth();
+    nbLines = (int)totalWidth / mMaxWidth;
+    
+    for (int idxTxt = 0; idxTxt < splittedText.size(); idxTxt++) {
+        
+        textWidth += splittedText[idxTxt].size() * spaceBetweenLetters + font.getStringBoundingBox(splittedText[idxTxt], 0, 0).getWidth();
+        // Don't draw, accumulate strings
+        strTheLine += splittedText[idxTxt] + " ";
+        
+        if(textWidth > mMaxWidth || (idxTxt == splittedText.size()-1)){
+            
+            // Draw the line
+            for(int i=0; i<strTheLine.size(); i++)
+            {
+                letterElement oneSplitStr;
+                oneSplitStr.letter = strTheLine.substr(i,1);
+                
+                oneSplitStr.textColor = textColor;
+                oneSplitStr.currentPos = source;
+                oneSplitStr.destination.x = mInputTextPosition.x + 0.5 * cumulatedOffset - font.getStringBoundingBox(strTheLine, 0, 0).getWidth();
+                oneSplitStr.destination.y = mInputTextPosition.y + mLineHeight*(0.5*nbLines - idxLine) + ofRandom(0.0, 15.0); //add some random so the text isn't a line block
+                
+                ofLogNotice() << "The letter " << oneSplitStr.letter << " goes to position: " << oneSplitStr.destination << " Line = " << idxLine << " x " << mLineHeight;
+                
+                oneSplitStr.alpha = 1.0;
+                
+                cumulatedOffset += font.getStringBoundingBox(oneSplitStr.letter, 0, 0).getWidth() + spaceBetweenLetters;
+                
+                splittedString.push_back(oneSplitStr);
+            }
+            
+            idxLine++;
+            textWidth = 0;
+            cumulatedOffset = 0;
+            strTheLine = "";
+            
+        }
+
+    }
     
 }
 
 void inputHandler::draw()
 {
-    
-    
+
     for(int i = 0; i < splittedString.size(); i++)
     {
         ofPushStyle();
@@ -88,7 +112,6 @@ void inputHandler::draw()
         ofPushMatrix();
         
         float scale = ofMap(splittedString[i].textColor.a, 1.0, 0.0, 1.0, 1.5);
-//        ofLog() << "which alpha : " << splittedString[i].textColor.a << " : " << "scale : " << scale;
         
         ofTranslate(splittedString[i].currentPos);
         ofScale(scale, scale, scale);
@@ -98,23 +121,6 @@ void inputHandler::draw()
         
         ofPopMatrix();
         ofPopStyle();
-        
-//        if(revealMode){
-//            font.drawString(splittedString[i].letter, 0, 0);
-//            
-//        }else{
-//            font.drawString(splittedString[i].letter, 0, 0);
-//            
-//            if(splittedString[i].alpha > 0){
-//                font.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
-//                
-//            }else{
-//                fontBig.drawString(splittedString[i].letter, splittedString[i].currentPos.x, splittedString[i].currentPos.y);
-//                
-//            }
-//        }
-        
-
         
     }
     
@@ -222,7 +228,7 @@ int inputHandler::update(cubeManager* cm)
                 easyWordToFind.erase (std::remove (easyWordToFind.begin(), easyWordToFind.end(), ' '), easyWordToFind.end());
                 easyWordToFind.erase (std::remove (easyWordToFind.begin(), easyWordToFind.end(), '-'), easyWordToFind.end());
                 
-                if(nbCubesRotated == easyWordToFind.size())
+                if(nbCubesRotated >= easyWordToFind.size())
                 {
                     //WIN !
                     ofLogNotice() << "WIN = > return true, userId =  " << userId;

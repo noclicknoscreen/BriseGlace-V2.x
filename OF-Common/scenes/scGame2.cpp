@@ -116,7 +116,7 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
         //cubes
         myCubeManager.setup(ofPoint(0.2*ofGetWidth(), 0.5*ofGetHeight(), -300), 7, 130);
         //inputs
-        myInputManager.setup(ofPoint(0.67 * ofGetWidth(), 0.6 * ofGetHeight()));
+        myInputManager.setup(ofPoint(0.67 * ofGetWidth(), 0.5 * ofGetHeight()), 0.4 * ofGetWidth(), 75);
         
         myInputManager.clearDuplicatesLettersHistory();
         myInputManager.setReadyForNewText();
