@@ -111,7 +111,7 @@ void scGame::draw(){
     ofSetColor(ofColor::white, 255);
     mCartoucheImg.draw(posTextCartoucheImg.x - 0.5 * mCartoucheImg.getWidth(), posTextCartoucheImg.y - 0.5 * mCartoucheImg.getHeight());
     
-    mCartoucheTextTitle.setText("BIENVENUS");mCartoucheTextTitle.setColor(255, 255, 255, 255);
+    mCartoucheTextTitle.setText("BIENVENUE");mCartoucheTextTitle.setColor(255, 255, 255, 255);
     mCartoucheTextTitle.wrapTextX(width);
     mCartoucheTextTitle.drawCenter(posTextCartouche.x, posTextCartouche.y);
     mCartoucheTextTitle.setText("SUR");mCartoucheTextTitle.setColor(255, 255, 255, 255);

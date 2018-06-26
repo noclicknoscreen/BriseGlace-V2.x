@@ -15,7 +15,7 @@ void scPartners::setup(){  //load your scene 1 assets here...
     
     ofLogNotice() << "Partners";
     
-    partnerImage.load("Credit-BriseGlace-A01.png");
+    partnerImage.load("Credit-BriseGlace-A02.png");
 };
 
 void scPartners::update(float dt){
