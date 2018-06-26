@@ -186,7 +186,6 @@ void scGame::timerBeforeHintEnd(){
     ofLogNotice() << "fin du timer beforeHint, 5 seconds and go to hint";
     
     // --------------------------------
-//    drawHintSign = true;
     hintUserId = bigPlayerManager().getRandomPlayer();
     bigPlayerManager().startSign(hintUserId, "Veux-tu un indice ?");
 //
@@ -217,7 +216,6 @@ void scGame::timerForceWinEnd(){
     // Stop counting
     timerForceWin.stop();
     // --------------------------------
-    //    drawHintSign = true;
     hintUserId = bigPlayerManager().getRandomPlayer();
     timerSignHint.stop();
     bigPlayerManager().startSign(hintUserId, "C'est perdu !");
@@ -232,15 +230,10 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scScene::sceneWillAppear(fromScreen);
     
-//    drawWinnerSign = false;
-//    drawHintSign = false;
-    
     // Restart waiting timer
     restartTimerBeforeHint();
-    // Restart a timer that we win anytime
-    restartTimerForceWin();
+
     // Stop eventually sign timer
-//    restartTimerSignHint();
     timerSignHint.stop();
     
     // Reset all signs
@@ -253,6 +246,12 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
     ofAddListener(timerBeforeHint.timerEnd, this,&scGame::timerBeforeHintEnd);
     ofAddListener(timerSignHint.timerEnd,   this,&scGame::timerSignHintEnd);
     ofAddListener(timerForceWin.timerEnd,   this,&scGame::timerForceWinEnd);
+    
+    // On ne refiat pas ca si on vient de l'indice
+    if(fromScreen->getSceneID() != HINT){
+        // Restart a timer that we win anytime
+        restartTimerForceWin();
+    }
     
 }
 
