@@ -90,8 +90,8 @@ $query->closeCursor(); // Termine le traitement de la requête
     <option value="mot DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "mot DESC")) {echo "selected";}?>>Mot: par ordre décroissant</option>
     <option value="id" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "id")) {echo "selected";}?>>id: par ordre croissant</option>
     <option value="id DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "id DESC")) {echo "selected";}?>>id: par ordre décroissant</option>
-    <option value="date" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "date")) {echo "selected";}?>>date: par ordre croissant</option>
-    <option value="date DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "date DESC")) {echo "selected";}?>>date: par ordre décroissant</option>
+    <option value="date" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "date")) {echo "selected";}?>>date/heure: par ordre croissant</option>
+    <option value="date DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "date DESC")) {echo "selected";}?>>date/heure: par ordre décroissant</option>
     <option value="complet" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "complet")) {echo "selected";}?>>Enigme complete</option>
     <option value="complet DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "complet DESC")) {echo "selected";}?>>Enigme incomplete</option>
   <select>
@@ -160,8 +160,8 @@ if (isset($_POST['plus']))
     <script type="text/javascript">
     document.getElementById('filtrer').style.display='none';
     document.getElementById('trier').style.display='none';
-    document.getElementById('appliquer').style.display='none';
-    document.getElementById('plus').style.display='none';
+    document.getElementById('selectTable').style.display='none';
+    document.getElementById('chercher').style.display='none';
     </script>
     <?php
     require('script/front/new.php');
