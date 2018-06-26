@@ -247,10 +247,13 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
     ofAddListener(timerSignHint.timerEnd,   this,&scGame::timerSignHintEnd);
     ofAddListener(timerForceWin.timerEnd,   this,&scGame::timerForceWinEnd);
     
-    // On ne refiat pas ca si on vient de l'indice
+    // On ne refait pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
         // Restart a timer that we win anytime
         restartTimerForceWin();
+    }else{
+        // unPause the timer
+        timerForceWin.resume();
     }
     
 }
@@ -259,8 +262,15 @@ void scGame::sceneWillDisappear( ofxScene * toScreen ){
     // reset our scene when we appear
     scScene::sceneWillDisappear(toScreen);
     
+    // On ne refait pas ca si on vient de l'indice
+    if(toScreen->getSceneID() != HINT){
+        // Restart a timer that we win anytime
+        timerForceWin.stop();
+    }else{
+        // Pause the timer
+        timerForceWin.pause();
+    }
     timerBeforeHint.stop();
-    timerForceWin.stop();
     
     // Reset all signs
     bigPlayerManager().stopSign(1);

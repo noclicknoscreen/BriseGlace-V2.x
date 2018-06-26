@@ -177,10 +177,16 @@ public:
         
     }
     
-    void stop()
-    {
+    void stop(){
         mTimer.reset(1.0f);
         started = false;
+    }
+    
+    void pause(){
+        mTimer.pause();
+    }
+    void resume(){
+        mTimer.resume();
     }
     
     bool isAnimating(){
