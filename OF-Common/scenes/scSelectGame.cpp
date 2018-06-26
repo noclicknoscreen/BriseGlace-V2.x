@@ -28,7 +28,7 @@ void scSelectGame::update(float dt){
 void scSelectGame::draw(){ //draw scene 1 here
     // Draw title
     if(mIndexSequence >= 2){
-        scScene::drawTitle("Bienvenus sur \"Jeux de mô\"", ofColor::black, ofPoint(0, 50));
+        scScene::drawTitle("Bienvenue sur \"Jeux de mô\"", ofColor::black, ofPoint(0, 50));
     }
     
     if(mIndexSequence <= 2){

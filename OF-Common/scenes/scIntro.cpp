@@ -26,7 +26,7 @@ void scIntro::update(float dt){
 };
 
 void scIntro::draw(){ //draw scene 1 here
-    scScene::drawTitle("Bienvenus sur \"Jeux de mô\"", ofColor::black, ofPoint(0, 150));
+    scScene::drawTitle("Bienvenue sur \"Jeux de mô\"", ofColor::black, ofPoint(0, 150));
     scScene::drawSubTitle("Aidez-nous à retrouver nos mots perdus", ofColor::black, ofPoint(0, 375));
     scScene::drawSubTitle("en nous parlant dans l'oreille.", ofColor::black, ofPoint(0, 440));
 //    if(bDrawSubtitle1==true){
