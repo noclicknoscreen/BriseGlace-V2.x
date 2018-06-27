@@ -47,7 +47,7 @@ catch (Exception $e)
 {
 die('Erreur : ' . $e->getMessage());
 }
-$query = $bdd->query('SELECT MAX(id) AS maxval FROM enigme');
+$query = $bdd->query('SELECT MAX(id) AS maxval FROM enigme WHERE complet="complet"');
 $max_row = $query->fetch(PDO::FETCH_ASSOC);
 $max = $max_row['maxval'] + 1;
 $query->closeCursor(); // Termine le traitement de la requête
@@ -104,7 +104,7 @@ $query->closeCursor(); // Termine le traitement de la requête
   <input class="checkbox checkbox-1" id="first_check" name="first_check" onclick="cocher(<?php echo $max ?>)" type="checkbox">
 
   <input type="submit" class="_button _button-2" name="plus" id="plus" value="+"/>
-  
+
   <p class="text text-1"><strong><strong>LE MOT À TROUVER</strong></strong></p>
 
 </form>
@@ -179,7 +179,6 @@ else if (isset($_POST['submit']))
 else if (isset($_POST['update']))
 {
   require('script/back/update.php');
-  clearFolder("tmp/");
   // echo "<form method=\"post\" action=\"?\"><button class=\"_button _button-1\" name=\"copie\" id=\"copie\"/>Mettre à jour le jeu</button></form>";
   echo "<meta http-equiv=\"refresh\" content=\"0\">";
 }
