@@ -55,7 +55,7 @@ body {
   position: relative;
   float: left;
   height: 24px;
-  margin-top: -55px;
+  margin-top: 1px;
   padding: 0 10px;
   background-color: rgb(51, 51, 51);
   font-family: Helvetica;
@@ -68,10 +68,9 @@ body {
   display: block;
   position: relative;
   float: right;
-  clear: both;
   width: 1.6666666666%;
   height: 18px;
-  margin-right: 21.07943%;
+  margin-right: 24.98698%;
   padding: 0 10px;
   background-color: rgb(242, 242, 242);
   font-family: Helvetica;
@@ -84,7 +83,7 @@ body {
   position: relative;
   float: left;
   clear: both;
-  z-index: 45;
+  z-index: 35;
   width: 1.6666666666%;
   height: 20px;
   margin: -29px 0 0 80.66667%;
@@ -113,35 +112,36 @@ body {
 
 .-select-1 {
   clear: both;
-  z-index: 40;
+  z-index: 42;
   width: 15%;
   margin-left: 11.08073%;
 }
 
 .-select-2 {
-  z-index: 39;
+  z-index: 41;
   width: 7.3333333333%;
-  margin-left: 27.16667%;
+  margin-left: 1.08594%;
 }
 
 .-select-3 {
   z-index: 34;
   width: 15%;
-  margin-left: 35.58203%;
+  margin-left: 1.08073%;
 }
 
 .-select-4 {
   z-index: 33;
   width: 7.33%;
-  margin-left: 51.61589%;
+  margin-left: 1.02865%;
 }
 
 .checkbox-1 {
-  z-index: 35;
+  z-index: 36;
   margin-top: 4px;
 }
 
 .checkbox-2 {
+  clear: both;
   z-index: 29;
   margin-top: -26px;
 }
@@ -193,7 +193,7 @@ body {
   position: relative;
   float: left;
   clear: both;
-  z-index: 38;
+  z-index: 40;
   width: 100%;
   height: 46px;
   margin: 1px 0 0 -0.75%;
@@ -204,7 +204,7 @@ body {
   position: fixed;
   top: -5px;
   left: 0;
-  z-index: 41;
+  z-index: 43;
   width: 100%;
   height: 48px;
   background-color: rgb(77, 77, 77);
@@ -214,10 +214,10 @@ body {
   position: relative;
   float: right;
   clear: both;
-  z-index: 37;
+  z-index: 38;
   width: 20px;
   height: 20px;
-  margin: -27px 52.93099% 0 0;
+  margin: -26px 46.29296875% 0 0;
   border-radius: 100px;
   background-color: rgb(228, 38, 19);
 }
@@ -235,7 +235,7 @@ body {
 .element-6 {
   position: relative;
   float: left;
-  z-index: 36;
+  z-index: 37;
   width: 20px;
   height: 20px;
   margin: 9px 0 0 1.69922%;
@@ -280,7 +280,7 @@ body {
   position: fixed;
   top: 1px;
   left: 10.5%;
-  z-index: 43;
+  z-index: 45;
   width: 425px;
 }
 
@@ -315,7 +315,7 @@ body {
   z-index: 4;
   width: 25%;
   min-height: 22px;
-  margin: 1px 0 0 11.08073%;
+  margin: -2px 0 0 11.08073%;
   font-family: Helvetica;
   font-size: 1.5em;
   color: rgb(77, 77, 77);
@@ -339,7 +339,7 @@ body {
   z-index: 19;
   width: 8.8333333333%;
   min-height: 15px;
-  margin: -28px 22.91667% 0 0;
+  margin: -28px 26.66667% 0 0;
   font-size: 1em;
   font-weight: 400;
   color: rgb(0, 0, 0);
@@ -432,7 +432,7 @@ body {
   position: fixed;
   top: 9px;
   left: 66.8333333333%;
-  z-index: 44;
+  z-index: 46;
   width: 16%;
   height: 25px;
   background-color: rgb(102, 171, 82);
@@ -444,7 +444,7 @@ body {
 ._button-2 {
   position: absolute;
   top: 51px;
-  right: 17.6666666666%;
+  right: 21.5833333333%;
   z-index: 8;
   width: 20px;
   height: 18px;
@@ -456,6 +456,19 @@ body {
 ._button-3 {
   position: relative;
   float: right;
+  clear: both;
+  z-index: 39;
+  width: 20px;
+  height: 18px;
+  margin: -28px 21.58073% 0 0;
+  background-color: rgb(228, 38, 19);
+  font-family: Helvetica;
+  font-size: 1em;
+}
+
+._button-4 {
+  position: relative;
+  float: right;
   z-index: 30;
   width: 5.75%;
   height: 18px;
@@ -465,7 +478,7 @@ body {
   font-size: 0.875em;
 }
 
-._button-4 {
+._button-5 {
   position: relative;
   float: right;
   clear: both;
@@ -483,7 +496,7 @@ body {
   position: fixed;
   top: 9px;
   left: 49.4986979166%;
-  z-index: 42;
+  z-index: 44;
   width: 8.25%;
   height: 32px;
   background-color: rgb(77, 77, 77);
@@ -495,10 +508,11 @@ body {
 ._input-2 {
   position: relative;
   float: right;
+  clear: both;
   z-index: 21;
-  width: 15%;
+  width: 23.4166666666%;
   height: 35px;
-  margin-right: 73.91667%;
+  margin-right: 65.5%;
   padding: 0 10px;
   background-color: rgb(51, 51, 51);
   font-size: 1.25em;
@@ -517,7 +531,7 @@ body {
   z-index: 26;
   width: 15%;
   height: 35px;
-  margin: -35px 57.83203% 0 0;
+  margin: -35px 49.41667% 0 0;
   padding: 0 10px;
   background-color: rgb(51, 51, 51);
   font-size: 1.25em;
@@ -600,11 +614,11 @@ body {
   color: rgb(255, 255, 255);
 }
 
-._text-2 {
+._text-1 {
   display: block;
   position: absolute;
-  top: 48px;
-  right: 26%;
+  top: 46px;
+  right: 29.75%;
   z-index: 32;
   width: 5.75%;
   min-height: 15px;
@@ -613,7 +627,7 @@ body {
   color: rgb(0, 0, 0);
 }
 
-._text-2 span {
+._text-1 span {
   border-top-width: 0;
   border-right-width: 0;
   border-bottom-width: 0;
@@ -640,7 +654,7 @@ body {
   white-space: normal;
 }
 
-._text-2 strong {
+._text-1 strong {
   border-top-width: 0;
   border-right-width: 0;
   border-bottom-width: 0;
@@ -726,12 +740,12 @@ body {
   color: rgb(178, 178, 178);
 }
 
-._text-2 span:active,
-._text-2 span:focus,
-._text-2 span:hover,
-._text-2 strong:active,
-._text-2 strong:focus,
-._text-2 strong:hover,
+._text-1 span:active,
+._text-1 span:focus,
+._text-1 span:hover,
+._text-1 strong:active,
+._text-1 strong:focus,
+._text-1 strong:hover,
 .text-1 strong:active,
 .text-1 strong:focus {
   font-size: NaNem;

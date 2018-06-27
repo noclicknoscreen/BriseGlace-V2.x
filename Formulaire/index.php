@@ -63,12 +63,7 @@ $query->closeCursor(); // Termine le traitement de la requête
   <p class="_input _input-1"><?php echo $max ?> énigmes</p>
   <div class="element element-3"></div>
 
-  <input class="checkbox checkbox-1" id="first_check" name="first_check" onclick="cocher(<?php echo $max ?>)" type="checkbox">
 
-  <input type="submit" class="_button _button-2" name="plus" id="plus" value="+"/>
-
-
-  <p class="text text-1"><strong><strong>LE MOT À TROUVER</strong></strong></p>
 
   <input id="chercher" name="chercher" class="-select -select-1 js-chercher" onkeyup="delaySubmit()" placeholder="mot clé" type="text" value="<?php if(isset($_POST['chercher'])) {echo $_POST['chercher'];}?>">
 
@@ -104,7 +99,14 @@ $query->closeCursor(); // Termine le traitement de la requête
       <option value="incomplet" <?php if(isset($_POST['filtrer']) && !strcmp($_POST['filtrer'], "incomplet")) {echo "selected";}?>>incomplet</option>
     <select>
 
-  <span class="_text-2"><font color="#fff9f9"><span>Tout cocher</span></font></span>
+  <span class="_text-1"><font color="#fff9f9"><span>Tout cocher</span></font></span>
+
+  <input class="checkbox checkbox-1" id="first_check" name="first_check" onclick="cocher(<?php echo $max ?>)" type="checkbox">
+
+  <input type="submit" class="_button _button-2" name="plus" id="plus" value="+"/>
+  
+  <p class="text text-1"><strong><strong>LE MOT À TROUVER</strong></strong></p>
+
 </form>
 
 
