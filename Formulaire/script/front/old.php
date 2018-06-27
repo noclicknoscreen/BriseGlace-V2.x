@@ -1,4 +1,4 @@
-<form  action="?" method="POST" onsubmit="return old_submit()">
+<form  action="?" method="POST" id="form_old" name="form_old">
 
 <?php
 try
@@ -84,8 +84,8 @@ if (isset($_POST['filtrer']) || isset($_POST['trier']))
 }
 else
   {
-    $reponse = $bdd->query('SELECT * FROM enigme' . $chercherwhere . 'ORDER BY id AND complet');
-    $good_requet = 'SELECT * FROM enigme' . $chercherwhere . 'ORDER BY id AND complet';
+    $reponse = $bdd->query('SELECT * FROM enigme' . $chercherwhere . 'ORDER BY complet');
+    $good_requet = 'SELECT * FROM enigme' . $chercherwhere . 'ORDER BY complet';
     $control_check = 1;
   }
 
@@ -312,7 +312,7 @@ while ($donnees = $reponse->fetch())
   $i++;
   }
   ?>
-<input class="_button _button-5" type="submit"name="update" id="update" value="Enregistrer les modifications"/>
+<input class="_button _button-5" type="submit" name="update" id="update" onclick="return update_form();" value="Enregistrer les modifications"/>
 <?php
 $reponse->closeCursor(); // Termine le traitement de la requête
 $maxidi = $i;
@@ -335,21 +335,25 @@ function alert_message_old(id)
 }
 
 // Autorisation à cocher "check" ou non
-function old_submit()
+function update_form()
 {
-  var nb = <?php echo $control_check;?>;
-  if (nb == 1)
+  if (confirm("Voulez vous vraiment enregistrer les modifications ?"))
   {
-    var testcheck = false;
-    for (var id = 0; id < <?php echo $maxidi?>; id++)
+    var nb = <?php echo $control_check;?>;
+    if (nb == 1)
     {
-       if (document.getElementById('check' + id).checked == true) {testcheck = true;}
-    }
-    if (testcheck != true) {
-      window.alert("Vous devez avoir activé au moins une enigme !");
-      return false;
+      var testcheck = false;
+      for (var id = 0; id < <?php echo $maxidi?>; id++)
+      {
+         if (document.getElementById('check' + id).checked == true) {testcheck = true;}
+      }
+      if (testcheck != true) {
+        window.alert("Vous devez avoir activé au moins une enigme !");
+        return false;
+      }
     }
   }
+  else {return false;}
 }
 
 // PASTILLE POUR OLD.PHP
@@ -394,6 +398,7 @@ if(confirm("Voulez vous vraiment effacer l'enigme ?"))
    document.getElementById('sqlrecompense' + num).value = "";
    document.getElementById('sqlauteur4' + num).value = "";
    document.getElementById('sqldate4' + num).value = "";
+   document.getElementById('sqllegende' + num).value = "";
    document.getElementById('result4' + num).style.display = 'none';
   }
 

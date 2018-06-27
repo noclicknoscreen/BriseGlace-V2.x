@@ -35,10 +35,10 @@ function pastille_new()
           document.getElementById('result0').style.display == 'inline' ||
           document.getElementById('auteur0').value ||
           document.getElementById('date0').value ||
-          divindice1.style.backgroundColor == "rgb(102, 171, 82)" ||
-          divindice2.style.backgroundColor == "rgb(102, 171, 82)" ||
-          divindice3.style.backgroundColor == "rgb(102, 171, 82)" ||
-          divindice4.style.backgroundColor  == "rgb(102, 171, 82)")
+          (divindice1.style.backgroundColor == "rgb(102, 171, 82)" || divindice1.style.backgroundColor == "rgb(247, 147, 30)") ||
+          (divindice2.style.backgroundColor == "rgb(102, 171, 82)" || divindice2.style.backgroundColor == "rgb(247, 147, 30)") ||
+          (divindice3.style.backgroundColor == "rgb(102, 171, 82)" || divindice3.style.backgroundColor == "rgb(247, 147, 30)") ||
+          (divindice4.style.backgroundColor  == "rgb(102, 171, 82)" || divindice4.style.backgroundColor  == "rgb(247, 147, 30)"))
   {
     document.getElementById('divmot').style.background="rgb(247, 147, 30)";
   }

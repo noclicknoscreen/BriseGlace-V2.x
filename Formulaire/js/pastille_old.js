@@ -37,12 +37,13 @@ function pastille_old(maxidi)
             document.getElementById('result0' + j).style.display == 'inline' ||
             document.getElementById('sqlauteur0' + j).value ||
             document.getElementById('sqldate0' + j).value ||
-            document.getElementById('sqldivindice1' + j).style.backgroundColor == "rgb(102, 171, 82)" ||
-            document.getElementById('sqldivindice2' + j).style.backgroundColor == "rgb(102, 171, 82)" ||
-            document.getElementById('sqldivindice3' + j).style.backgroundColor == "rgb(102, 171, 82)" ||
-            document.getElementById('sqldivindice4' + j).style.backgroundColor == "rgb(102, 171, 82)")
+            (document.getElementById('sqldivindice1' + j).style.backgroundColor == "rgb(102, 171, 82)" || document.getElementById('sqldivindice1' + j).style.backgroundColor == "rgb(247, 147, 30)") ||
+            (document.getElementById('sqldivindice2' + j).style.backgroundColor == "rgb(102, 171, 82)" || document.getElementById('sqldivindice2' + j).style.backgroundColor == "rgb(247, 147, 30)") ||
+            (document.getElementById('sqldivindice3' + j).style.backgroundColor == "rgb(102, 171, 82)" || document.getElementById('sqldivindice3' + j).style.backgroundColor == "rgb(247, 147, 30)") ||
+            (document.getElementById('sqldivindice4' + j).style.backgroundColor == "rgb(102, 171, 82)" || document.getElementById('sqldivindice4' + j).style.backgroundColor == "rgb(247, 147, 30)"))
     {
       document.getElementById('sqldivmot' + j).style.background="rgb(247, 147, 30)";
+      document.getElementById('sqlcomplet' + j).value ="incomplet";
     }
     else
     {

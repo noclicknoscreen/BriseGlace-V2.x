@@ -54,7 +54,7 @@ while ($donnees = $reponse->fetch())
         if (file_exists("tmp/image" . $j . $i . "-crop.jpg"))
           {
             $datacrop = @file_get_contents("tmp/image" . $j . $i . "-crop.jpg");
-            $newcrop ="enigme/" . $StrNum . $i . '/image/image' . $j . '-crop.jpg';
+            $newcrop ="enigme/" . $StrNum . $id . '/image/image' . $j . '-crop.jpg';
             file_put_contents($newcrop, $datacrop);
             unlink("tmp/image" . $j . $i . "-crop.jpg");
           }
@@ -71,6 +71,23 @@ while ($donnees = $reponse->fetch())
 if (@$_POST['check' . $i]) { $actif = "on"; }
 else { $actif = "off"; }
 
+$imgcrop0 = "enigme/" . $StrNum . $id . '/image/image0-crop.jpg';
+$imgcrop1 = "enigme/" . $StrNum . $id . '/image/image1-crop.jpg';
+$imgcrop2 = "enigme/" . $StrNum . $id . '/image/image2-crop.jpg';
+$imgcrop3 = "enigme/" . $StrNum . $id . '/image/image3-crop.jpg';
+$imgcrop4 = "enigme/" . $StrNum . $id . '/image/image4-crop.jpg';
+
+if (!strcmp($_POST['sqlcomplet' . $i], "vide"))
+{
+  clearFolder("./enigme/" . $StrNum . $id . "/image/");
+  $_POST['sqlimage0'. $i] = "";
+  $imgcrop0 = "";
+  $imgcrop1 = "";
+  $imgcrop2 = "";
+  $imgcrop3 = "";
+  $imgcrop4 = "";
+}
+
   $req = $bdd->prepare('UPDATE enigme SET mot = :mot, theme = :theme, image0 = :image0, imgcrop0 = :imgcrop0, auteur0 = :auteur0, date0 = :date0,
                         indice1 = :indice1, image1 = :image1, imgcrop1 = :imgcrop1, auteur1 = :auteur1, date1 = :date1,
                         indice2 = :indice2, image2 = :image2, imgcrop2 = :imgcrop2, auteur2 = :auteur2, date2 = :date2,
@@ -82,35 +99,35 @@ else { $actif = "off"; }
     'theme' =>$_POST['sqltheme' . $i],
 
     'image0'=>$_POST['sqlimage0'. $i],
-    'imgcrop0'=> "enigme/" . $StrNum . $id . '/image/image0-crop.jpg',
+    'imgcrop0'=> $imgcrop0,
     'auteur0' => $_POST['sqlauteur0'. $i],
     'date0' => $_POST['sqldate0' . $i],
 
     'indice1'=>$_POST['sqlindice1' . $i],
     'image1'=>$_POST['sqlimage1' . $i],
 
-    'imgcrop1'=> "enigme/" . $StrNum . $id . '/image/image1-crop.jpg',
+    'imgcrop1'=> $imgcrop1,
     'auteur1' => $_POST['sqlauteur1'. $i],
     'date1' => $_POST['sqldate1'. $i],
 
     'indice2'=>$_POST['sqlindice2' . $i],
     'image2'=>$_POST['sqlimage2' . $i],
 
-    'imgcrop2'=> "enigme/" . $StrNum . $id . '/image/image2-crop.jpg',
+    'imgcrop2'=> $imgcrop2,
     'auteur2' => $_POST['sqlauteur2'. $i],
     'date2' => $_POST['sqldate2'. $i],
 
     'indice3'=>$_POST['sqlindice3' . $i],
     'image3'=>$_POST['sqlimage3' . $i],
 
-    'imgcrop3'=> "enigme/" . $StrNum . $id . '/image/image3-crop.jpg',
+    'imgcrop3'=> $imgcrop3,
     'auteur3' => $_POST['sqlauteur3'. $i],
     'date3' => $_POST['sqldate3'. $i],
 
     'recompense'=>$_POST['sqlrecompense' . $i],
     'image4'=>$_POST['sqlimage4' . $i],
 
-    'imgcrop4'=> "enigme/" . $StrNum . $id . '/image/image4-crop.jpg',
+    'imgcrop4'=> $imgcrop4,
     'auteur4' => $_POST['sqlauteur4'. $i],
     'date4' => $_POST['sqldate4'. $i],
 
