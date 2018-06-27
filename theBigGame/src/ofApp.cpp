@@ -117,7 +117,7 @@ void ofApp::keyPressed(int key){
     if (key == '5') sceneManager->goToScene(GAME3_BIS);
     if (key == '6') sceneManager->goToScene(HINT);
     if (key == '7') sceneManager->goToScene(VICTORY);
-    if (key == '7') sceneManager->goToScene(PARTNERS);
+    if (key == '8') sceneManager->goToScene(PARTNERS);
     
     if (key == OF_KEY_RIGHT || key == OF_KEY_LEFT){
         if (key == OF_KEY_RIGHT)

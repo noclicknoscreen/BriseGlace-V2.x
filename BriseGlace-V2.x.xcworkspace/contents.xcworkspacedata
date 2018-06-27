@@ -5,7 +5,16 @@
       location = "container:"
       name = "examples">
       <FileRef
+         location = "group:../../addons/ofxTextAlign/example_use_ttf/example_use_ttf.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../0.10.0/examples/strings/ofLogExample/ofLogExample.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:../../examples/gl/multiLightExample/multiLightExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../addons/ofxAnimatable/example/example.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:../../examples/gui/guiFromParametersExample/guiFromParametersExample.xcodeproj">
