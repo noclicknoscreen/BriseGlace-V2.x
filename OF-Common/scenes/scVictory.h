@@ -29,11 +29,13 @@ public:
 
 // TIMERS
 private:
-    timer mTimerEndScene;
-    void  timerEndScene();
+    timer mTimerScene;
+    void  timerSceneEnd();
+    const float cTimerSceneTimeout = 10.0f;
     
-    timer mTimerEndReading;
-    void  timerEndReading();
+    timer mTimerReading;
+    void  timerReadingEnd();
+    const float cTimerReadingTimeout = 15.0f;
     
     void someoneSpoke(player & _player);
     void endScene();

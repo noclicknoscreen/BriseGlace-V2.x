@@ -217,6 +217,20 @@ void scGame3::exit()
 void scGame3::someoneSpoke(player & _player){
     // We don't do the root (because we want to see the hint anyway)
     scGame::someoneSpoke(_player);
+    
+    string spokenMessage = _player.getLastMessage();
+    // Check if there is a cube
+    for(int i=0; i<myCubes.size(); i++)
+    {
+        if(ofStringTimesInString(utils::toUpperCase(spokenMessage), utils::toUpperCase(utils::toByteString(myCubes[i]->getLetter()))) > 0){
+            
+            ofLogNotice() << "Letter [" << utils::toByteString(myCubes[i]->getLetter()) << "] found in " << spokenMessage;
+            myCubes[i]->setIsInAnwer(true, _player.getColor());
+            
+        }
+    }
+    
+    
     //
     //    std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord));
     //    if(index != std::string::npos)

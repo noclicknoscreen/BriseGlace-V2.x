@@ -25,10 +25,20 @@ public:
     void setup(ofImage _image, wstring _letter);
     
 private:
+    void drawALetter(float _rotX, float _rotY, float _rotZ, ofColor _color = ofColor::black);
+    
+private:
     wstring mLetter;
 public:
     void setLetter(wstring letter);
     wstring getLetter();
+    
+private:
+    bool        mIsInAnswer;
+    ofColor     mFoundPlayerColor;
+public:
+    void setIsInAnwer(bool _isInAnswer, ofColor _foundPlayerColor);
+
 };
 
 

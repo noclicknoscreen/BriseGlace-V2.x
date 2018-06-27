@@ -30,7 +30,7 @@ void scGame3Bis::sceneWillAppear( ofxScene * fromScreen ){
     {
         ofVec3f startPosition;
         startPosition.x = ofMap((float)i / (float)wantedWord.size(), 0, 1, -400, 400);
-        startPosition.y = 750;
+        startPosition.y = 550;
         startPosition.z = ofRandom(-5, 5);
         
         box = new cubeRigidBody();
