@@ -179,7 +179,6 @@
 		D2CF8C3220A98E700035B780 /* scGame2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C1720A98E700035B780 /* scGame2.cpp */; };
 		D2CF8C3320A98E700035B780 /* scGame3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C1920A98E700035B780 /* scGame3.cpp */; };
 		D2CF8C3420A98E700035B780 /* scHint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C1B20A98E700035B780 /* scHint.cpp */; };
-		D2CF8C3620A98E700035B780 /* scIntro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C1F20A98E700035B780 /* scIntro.cpp */; };
 		D2CF8C3720A98E700035B780 /* scScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C2120A98E700035B780 /* scScene.cpp */; };
 		D2CF8C3820A98E700035B780 /* scSelectGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C2320A98E700035B780 /* scSelectGame.cpp */; };
 		D2CF8C3920A98E700035B780 /* scVictory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CF8C2520A98E700035B780 /* scVictory.cpp */; };
@@ -662,8 +661,6 @@
 		D2CF8C1A20A98E700035B780 /* scGame3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scGame3.h; sourceTree = "<group>"; };
 		D2CF8C1B20A98E700035B780 /* scHint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scHint.cpp; sourceTree = "<group>"; };
 		D2CF8C1C20A98E700035B780 /* scHint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scHint.h; sourceTree = "<group>"; };
-		D2CF8C1F20A98E700035B780 /* scIntro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scIntro.cpp; sourceTree = "<group>"; };
-		D2CF8C2020A98E700035B780 /* scIntro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scIntro.h; sourceTree = "<group>"; };
 		D2CF8C2120A98E700035B780 /* scScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scScene.cpp; sourceTree = "<group>"; };
 		D2CF8C2220A98E700035B780 /* scScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scScene.h; sourceTree = "<group>"; };
 		D2CF8C2320A98E700035B780 /* scSelectGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scSelectGame.cpp; sourceTree = "<group>"; };
@@ -1534,8 +1531,6 @@
 				D2CF8C1C20A98E700035B780 /* scHint.h */,
 				D2CF8C2120A98E700035B780 /* scScene.cpp */,
 				D2CF8C2220A98E700035B780 /* scScene.h */,
-				D2CF8C1F20A98E700035B780 /* scIntro.cpp */,
-				D2CF8C2020A98E700035B780 /* scIntro.h */,
 				1C23F17020E10F51001B7D72 /* scPartners.cpp */,
 				1C23F17120E10F51001B7D72 /* scPartners.h */,
 				D2CF8C2320A98E700035B780 /* scSelectGame.cpp */,
@@ -2041,7 +2036,6 @@
 				D67C2A715397417907555FC0 /* btConvexHullComputer.cpp in Sources */,
 				22E5C3B18481FB82D54AAB86 /* btGeometryUtil.cpp in Sources */,
 				D2CF8C2E20A98E700035B780 /* enigmaManager.cpp in Sources */,
-				D2CF8C3620A98E700035B780 /* scIntro.cpp in Sources */,
 				6FDB79E1612FC75322E4DD17 /* btPolarDecomposition.cpp in Sources */,
 				0B1850BD9F835110397FE248 /* btQuickprof.cpp in Sources */,
 				4FEEC9815844F988B5154BE3 /* btSerializer.cpp in Sources */,

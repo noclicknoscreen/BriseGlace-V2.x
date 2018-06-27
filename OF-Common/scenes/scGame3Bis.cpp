@@ -30,7 +30,7 @@ void scGame3Bis::sceneWillAppear( ofxScene * fromScreen ){
     {
         ofVec3f startPosition;
         startPosition.x = ofMap((float)i / (float)wantedWord.size(), 0, 1, -400, 400);
-        startPosition.y = 750;
+        startPosition.y = 550;
         startPosition.z = ofRandom(-5, 5);
         
         box = new cubeRigidBody();
@@ -45,24 +45,30 @@ void scGame3Bis::sceneWillAppear( ofxScene * fromScreen ){
         myCubes.push_back(box);
     }
     
-    timer = ofGetElapsedTimef();
+    // EVENTS
+    // timer timeout
+    mTimerEndScene.startTimer(5);
+    // Listener
+    ofAddListener(mTimerEndScene.timerEnd, this, &scGame3Bis::timerEndSceneEnd);
     
 };
 
 //--------------------------------------------------------------
-void scGame3Bis::sceneWillDisappear( ofxScene * fromScreen ){
-    scGame::sceneWillAppear(fromScreen);
-};
+void scGame3Bis::sceneWillDisappear( ofxScene * toScreen ){
+    scGame::sceneWillDisappear(toScreen);
+    
+    // EVENTS
+    ofRemoveListener(mTimerEndScene.timerEnd, this, &scGame3Bis::timerEndSceneEnd);
+    
+}
 
 
 //--------------------------------------------------------------
 void scGame3Bis::update(float dt){
     
-    //        bigPlayerManager().update();
+    mTimerEndScene.update(dt);
     
     //light
-//    spotLight.setOrientation( ofVec3f( 0, 45, 30) );
-//    spotLight.setPosition(ofGetWidth()-100, 100, 0);
     spotLight.setOrientation( ofVec3f( 0, 45, 30) );
     spotLight.setPosition(1600, 483,0);
     
@@ -81,11 +87,11 @@ void scGame3Bis::update(float dt){
 
     material.setSpecularColor(materialColor);
     
-    //display result for 10 seconds and go to winner screen
-    if(ofGetElapsedTimef() - timer > 5)
-    {
-        ofxSceneManager::instance()->goToScene(9);
-    }
+//    //display result for 10 seconds and go to winner screen
+//    if(ofGetElapsedTimef() - timer > 5)
+//    {
+//        ofxSceneManager::instance()->goToScene(9);
+//    }
     
     
     //materialColor = winnerColor;
@@ -153,5 +159,10 @@ void scGame3Bis::draw(){
     // Draw players
     bigPlayerManager().draw();
     
+}
+
+// EVENTS
+void  scGame3Bis::timerEndSceneEnd(){
+    ofxSceneManager::instance()->goToScene(VICTORY);
 }
 

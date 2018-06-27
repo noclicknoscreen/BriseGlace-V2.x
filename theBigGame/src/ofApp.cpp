@@ -29,8 +29,6 @@ void ofApp::setup(){
     ///////////////////////////////////////
 	sceneManager = ofxSceneManager::instance();
     
-//    sceneManager->addScene( new scIntro(), INTRO);
-//    sceneManager->addScene( new scInitialize(), INITIALIZE);
     sceneManager->addScene( new scSelectGame(), SELECT_GAME);
     sceneManager->addScene( new scGame1(), GAME1);
     sceneManager->addScene( new scGame2(), GAME2);
@@ -112,15 +110,14 @@ void ofApp::mousePressed( int x, int y, int button ){
 
 void ofApp::keyPressed(int key){
 	
-//    if (key == '1') sceneManager->goToScene(INTRO);
-//    if (key == '2') sceneManager->goToScene(INITIALIZE);
-    if (key == '2') sceneManager->goToScene(SELECT_GAME);
-    if (key == '3') sceneManager->goToScene(GAME1);
-    if (key == '4') sceneManager->goToScene(GAME2);
-    if (key == '5') sceneManager->goToScene(GAME3);
+    if (key == '1') sceneManager->goToScene(SELECT_GAME);
+    if (key == '2') sceneManager->goToScene(GAME1);
+    if (key == '3') sceneManager->goToScene(GAME2);
+    if (key == '4') sceneManager->goToScene(GAME3);
+    if (key == '5') sceneManager->goToScene(GAME3_BIS);
     if (key == '6') sceneManager->goToScene(HINT);
     if (key == '7') sceneManager->goToScene(VICTORY);
-    if (key == '8') sceneManager->goToScene(PARTNERS);
+    if (key == '7') sceneManager->goToScene(PARTNERS);
     
     if (key == OF_KEY_RIGHT || key == OF_KEY_LEFT){
         if (key == OF_KEY_RIGHT)

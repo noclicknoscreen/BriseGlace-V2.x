@@ -87,7 +87,8 @@ void scGame3::update(float dt){
     material.setSpecularColor(materialColor);
     
     //apply forces after 5 seconds
-    if(ofGetElapsedTimef() - timer > 5)
+    //    if(ofGetElapsedTimef() - timer > 5)
+    if(mStartForces)
     {
         
         ofVec3f randomForce;
@@ -135,7 +136,8 @@ void scGame3::update(float dt){
         
     }
     
-    
+    // Timers
+    mTimerStartForces.update(dt);
     //    mTimerEndScene.update(dt);
     
 };
@@ -215,6 +217,20 @@ void scGame3::exit()
 void scGame3::someoneSpoke(player & _player){
     // We don't do the root (because we want to see the hint anyway)
     scGame::someoneSpoke(_player);
+    
+    string spokenMessage = _player.getLastMessage();
+    // Check if there is a cube
+    for(int i=0; i<myCubes.size(); i++)
+    {
+        if(ofStringTimesInString(utils::toUpperCase(spokenMessage), utils::toUpperCase(utils::toByteString(myCubes[i]->getLetter()))) > 0){
+            
+            ofLogNotice() << "Letter [" << utils::toByteString(myCubes[i]->getLetter()) << "] found in " << spokenMessage;
+            myCubes[i]->setIsInAnwer(true, _player.getColor());
+            
+        }
+    }
+    
+    
     //
     //    std::size_t index = utils::toUpperCase(_player.getLastMessage()).find(utils::toUpperCase(wantedWord));
     //    if(index != std::string::npos)
@@ -254,6 +270,10 @@ void scGame3::timerSignWinEnd(){
     scGame::timerSignWinEnd();
     ofxSceneManager::instance()->goToScene(GAME3_BIS);
 }
+// Wait for some seocnds before applying forces
+void scGame3::timerStartForcesEnd(){
+    mStartForces = true;
+}
 
 //--------------------------------------------------------------
 void scGame3::sceneWillAppear( ofxScene * fromScreen ){
@@ -263,6 +283,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     
     // Player manager events
     ofAddListener(timerSignWin.timerEnd,    this,&scGame3::timerSignWinEnd);
+    ofAddListener(mTimerStartForces.timerEnd,    this,&scGame3::timerStartForcesEnd);
     
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);
@@ -273,6 +294,9 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     // On ne refiat pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
         
+        // Start timer
+        mTimerStartForces.startTimer(cStartForcesTimeout );
+
         // Reset winner
         bigPlayerManager().setWinnerUserId(0);
         
@@ -316,7 +340,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     }
     
     
-    timer = ofGetElapsedTimef();
+//    timer = ofGetElapsedTimef();
     
     bigPlayerManager().setWinnerUserId(0);
     
@@ -335,6 +359,8 @@ void scGame3::sceneWillDisappear( ofxScene * toScreen ){
     
     // Disable timer events
     ofRemoveListener(timerSignWin.timerEnd,     this,&scGame3::timerSignWinEnd);
+    ofRemoveListener(mTimerStartForces.timerEnd,    this,&scGame3::timerStartForcesEnd);
+
     
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame3::someoneSpoke);

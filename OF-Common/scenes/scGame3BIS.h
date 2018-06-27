@@ -10,7 +10,7 @@
 
 #include "scGame3.h"
 
-#define START_FORCE_FACTOR_BIS 10
+#define START_FORCE_FACTOR_BIS 6
 
 
 class scGame3Bis : public scGame3
@@ -21,5 +21,10 @@ public:
     
     void update(float dt);
     void draw();
+    
+    // TIMERS
+private:
+    timer mTimerEndScene;
+    void  timerEndSceneEnd();
     
 };

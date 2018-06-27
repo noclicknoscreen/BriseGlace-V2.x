@@ -120,13 +120,13 @@ void scSelectGame::timerSignAnimationEnd(){
     // Draw players
     switch (numPlayer) {
         case 1:
-            signMessage = "Mot masqué";
+            signMessage = "Mô masqué";
             break;
         case 2:
-            signMessage = "Mot brassé";
+            signMessage = "Mô brassé";
             break;
         case 3:
-            signMessage = "Mes mots rient";
+            signMessage = "Mes mô rient";
             break;
             
         default:
