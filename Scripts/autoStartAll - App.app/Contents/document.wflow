@@ -21,17 +21,25 @@
 					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.object</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.0.2</string>
+				<string>2.0.3</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Automator</string>
 				</array>
 				<key>AMParameterProperties</key>
 				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
 					<key>source</key>
 					<dict/>
 				</dict>
@@ -41,22 +49,30 @@
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.object</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
 				<key>ActionName</key>
-				<string>Exécuter un script AppleScript</string>
+				<string>Exécuter un script Shell</string>
 				<key>ActionParameters</key>
 				<dict>
+					<key>COMMAND_STRING</key>
+					<string>/Users/medenagan-id-001/BriseGlace/OF_0.9.8/apps/BriseGlace-V2.x/Scripts/startServer.sh</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>0</integer>
+					<key>shell</key>
+					<string>/bin/bash</string>
 					<key>source</key>
-					<string>tell application "Terminal"	activate		tell application "System Events" to keystroke "n" using command down	repeat while contents of selected tab of window 1 starts with linefeed		delay 0.1	end repeat		do script "/Users/medenagan-id-001/BriseGlace/OF_0.9.8/apps/BriseGlace-V2.x/Scripts/startServer.sh" in window 1 -- make sure the path to your script is right	end tell</string>
+					<string></string>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.RunScript</string>
+				<string>com.apple.RunShellScript</string>
 				<key>CFBundleVersion</key>
-				<string>1.0.2</string>
+				<string>2.0.3</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -66,17 +82,21 @@
 					<string>AMCategoryUtilities</string>
 				</array>
 				<key>Class Name</key>
-				<string>RunScriptAction</string>
+				<string>RunShellScriptAction</string>
 				<key>InputUUID</key>
-				<string>3399B53B-9BDD-46FB-97F3-961494D57A0F</string>
+				<string>DA8192FF-4F15-4A29-8575-D4B601519584</string>
 				<key>Keywords</key>
 				<array>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Commande</string>
 					<string>Exécuter</string>
+					<string>Unix</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>7B387709-E6F0-4D85-9994-4738F31CAE17</string>
+				<string>F947CC2C-4B10-47EF-83B1-416BA0F8DB4B</string>
 				<key>UUID</key>
-				<string>61BA8D73-CE21-45E2-94B4-AA3D78BE11F7</string>
+				<string>8DC1C988-D656-4CAA-AC80-8FB3332756F2</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -86,14 +106,9 @@
 					<key>0</key>
 					<dict>
 						<key>default value</key>
-						<string>on run {input, parameters}
-	
-	(* Your script goes here *)
-	
-	return input
-end run</string>
+						<integer>0</integer>
 						<key>name</key>
-						<string>source</string>
+						<string>inputMethod</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -101,16 +116,70 @@ end run</string>
 						<key>uuid</key>
 						<string>0</string>
 					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
-				<false/>
+				<true/>
 				<key>location</key>
-				<string>301.500000:112.000000</string>
+				<string>589.500000:253.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/French.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -123,17 +192,25 @@ end run</string>
 					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.object</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.0.2</string>
+				<string>2.0.3</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Automator</string>
 				</array>
 				<key>AMParameterProperties</key>
 				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
 					<key>source</key>
 					<dict/>
 				</dict>
@@ -143,22 +220,30 @@ end run</string>
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.object</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
 				<key>ActionName</key>
-				<string>Exécuter un script AppleScript</string>
+				<string>Exécuter un script Shell</string>
 				<key>ActionParameters</key>
 				<dict>
+					<key>COMMAND_STRING</key>
+					<string>/Users/medenagan-id-001/BriseGlace/OF_0.9.8/apps/BriseGlace-V2.x/Scripts/startGod.sh</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>0</integer>
+					<key>shell</key>
+					<string>/bin/bash</string>
 					<key>source</key>
-					<string>tell application "Terminal"	activate		tell application "System Events" to keystroke "t" using command down	repeat while contents of selected tab of window 1 starts with linefeed		delay 0.1	end repeat		do script "/Users/medenagan-id-001/BriseGlace/OF_0.9.8/apps/BriseGlace-V2.x/Scripts/startGod.sh" in window 1 -- make sure the path to your script is right	end tell</string>
+					<string></string>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.RunScript</string>
+				<string>com.apple.RunShellScript</string>
 				<key>CFBundleVersion</key>
-				<string>1.0.2</string>
+				<string>2.0.3</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -168,17 +253,21 @@ end run</string>
 					<string>AMCategoryUtilities</string>
 				</array>
 				<key>Class Name</key>
-				<string>RunScriptAction</string>
+				<string>RunShellScriptAction</string>
 				<key>InputUUID</key>
-				<string>D4C4464D-6ED8-49DC-BFB9-B74F6C8995D0</string>
+				<string>CE3E5C6B-FF29-49F4-8E3E-AC6C7C11019A</string>
 				<key>Keywords</key>
 				<array>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Commande</string>
 					<string>Exécuter</string>
+					<string>Unix</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>1EA73ABC-6AC5-42C3-A02C-85331968AF78</string>
+				<string>F6EC7671-344B-4C51-972C-11B86F79F26C</string>
 				<key>UUID</key>
-				<string>054B7410-7CD7-483F-9C86-37646ED3CE94</string>
+				<string>E9B0A96E-52AD-4F14-9B3B-92CCD8A5F05D</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -188,14 +277,9 @@ end run</string>
 					<key>0</key>
 					<dict>
 						<key>default value</key>
-						<string>on run {input, parameters}
-	
-	(* Your script goes here *)
-	
-	return input
-end run</string>
+						<integer>0</integer>
 						<key>name</key>
-						<string>source</string>
+						<string>inputMethod</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -203,13 +287,67 @@ end run</string>
 						<key>uuid</key>
 						<string>0</string>
 					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>301.500000:358.000000</string>
+				<string>589.500000:436.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/French.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -217,12 +355,12 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>6C0DC17A-9B84-4F57-853C-3F81D30004FD</key>
+		<key>B6072ED2-892A-4100-B2A6-8607289601AB</key>
 		<dict>
 			<key>from</key>
-			<string>61BA8D73-CE21-45E2-94B4-AA3D78BE11F7 - 61BA8D73-CE21-45E2-94B4-AA3D78BE11F7</string>
+			<string>8DC1C988-D656-4CAA-AC80-8FB3332756F2 - 8DC1C988-D656-4CAA-AC80-8FB3332756F2</string>
 			<key>to</key>
-			<string>054B7410-7CD7-483F-9C86-37646ED3CE94 - 054B7410-7CD7-483F-9C86-37646ED3CE94</string>
+			<string>E9B0A96E-52AD-4F14-9B3B-92CCD8A5F05D - E9B0A96E-52AD-4F14-9B3B-92CCD8A5F05D</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>

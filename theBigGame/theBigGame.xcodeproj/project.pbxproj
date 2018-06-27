@@ -26,8 +26,6 @@
 		1799B0108983ED7D929BCD9F /* btGenericPoolAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63725EF9D889BFE4E2F0294 /* btGenericPoolAllocator.cpp */; };
 		193FE4A2A5663A54AAE0216E /* btTriangleIndexVertexMaterialArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F0A99F23CADF1CD337797 /* btTriangleIndexVertexMaterialArray.cpp */; };
 		19BAA929C90DC149B11A3AD3 /* btTriangleMeshShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1757BBAA5566F70632842621 /* btTriangleMeshShape.cpp */; };
-		1C23F16A20E0E0AA001B7D72 /* ofxTextAlign.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C23F15F20E0E0AA001B7D72 /* ofxTextAlign.cpp */; };
-		1C23F16B20E0E0AA001B7D72 /* ofxTextAlignTTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C23F16120E0E0AA001B7D72 /* ofxTextAlignTTF.cpp */; };
 		1C23F17220E10F51001B7D72 /* scPartners.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C23F17020E10F51001B7D72 /* scPartners.cpp */; };
 		1C3F868920C56C8B0051AFD5 /* cubeManagerMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F868720C56C8B0051AFD5 /* cubeManagerMemory.cpp */; };
 		1C3F868C20C56EA40051AFD5 /* cubeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F868A20C56EA40051AFD5 /* cubeManager.cpp */; };
@@ -293,10 +291,6 @@
 		1BB921E66522A452136448B9 /* gim_hash_table.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gim_hash_table.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletCollision/Gimpact/gim_hash_table.h; sourceTree = SOURCE_ROOT; };
 		1C0DA2561397A7DE0246858B /* ofxGuiGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGuiGroup.h; path = ../../../addons/ofxGui/src/ofxGuiGroup.h; sourceTree = SOURCE_ROOT; };
 		1C1EBDD4DC4C7294AB44D266 /* btConvexHull.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btConvexHull.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/LinearMath/btConvexHull.h; sourceTree = SOURCE_ROOT; };
-		1C23F15F20E0E0AA001B7D72 /* ofxTextAlign.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTextAlign.cpp; sourceTree = "<group>"; };
-		1C23F16020E0E0AA001B7D72 /* ofxTextAlign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTextAlign.h; sourceTree = "<group>"; };
-		1C23F16120E0E0AA001B7D72 /* ofxTextAlignTTF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTextAlignTTF.cpp; sourceTree = "<group>"; };
-		1C23F16220E0E0AA001B7D72 /* ofxTextAlignTTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTextAlignTTF.h; sourceTree = "<group>"; };
 		1C23F17020E10F51001B7D72 /* scPartners.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scPartners.cpp; sourceTree = "<group>"; };
 		1C23F17120E10F51001B7D72 /* scPartners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scPartners.h; sourceTree = "<group>"; };
 		1C3F868720C56C8B0051AFD5 /* cubeManagerMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = cubeManagerMemory.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
@@ -842,26 +836,6 @@
 			name = src;
 			sourceTree = "<group>";
 		};
-		1C23F14020E0E0AA001B7D72 /* ofxTextAlign */ = {
-			isa = PBXGroup;
-			children = (
-				1C23F15E20E0E0AA001B7D72 /* src */,
-			);
-			name = ofxTextAlign;
-			path = ../../../addons/ofxTextAlign;
-			sourceTree = "<group>";
-		};
-		1C23F15E20E0E0AA001B7D72 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				1C23F15F20E0E0AA001B7D72 /* ofxTextAlign.cpp */,
-				1C23F16020E0E0AA001B7D72 /* ofxTextAlign.h */,
-				1C23F16120E0E0AA001B7D72 /* ofxTextAlignTTF.cpp */,
-				1C23F16220E0E0AA001B7D72 /* ofxTextAlignTTF.h */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		220B8BBB133E2E7548BC9AD5 /* Character */ = {
 			isa = PBXGroup;
 			children = (
@@ -1330,7 +1304,6 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
-				1C23F14020E0E0AA001B7D72 /* ofxTextAlign */,
 				D2CF8C3A20A9FBA70035B780 /* ofxTextSuite */,
 				8D83D7AC476703EBECC1932D /* ofxAnimatable */,
 				CDA47165D96F2059C5206BBD /* ofxBullet */,
@@ -1945,7 +1918,6 @@
 				9490B05F7BED5ED9FEBE5372 /* btManifoldResult.cpp in Sources */,
 				DF31BA5D568C1251B951E48A /* btSimulationIslandManager.cpp in Sources */,
 				F7FFAD7717FFA1ABC3DF77AC /* btSphereBoxCollisionAlgorithm.cpp in Sources */,
-				1C23F16B20E0E0AA001B7D72 /* ofxTextAlignTTF.cpp in Sources */,
 				76B4B6A1696AEF91399F9944 /* btSphereSphereCollisionAlgorithm.cpp in Sources */,
 				58D0D5644883025836E31FF0 /* btSphereTriangleCollisionAlgorithm.cpp in Sources */,
 				DC5FB35A8341B64056AEF64A /* btUnionFind.cpp in Sources */,
@@ -2072,7 +2044,6 @@
 				D2CF8C3620A98E700035B780 /* scIntro.cpp in Sources */,
 				6FDB79E1612FC75322E4DD17 /* btPolarDecomposition.cpp in Sources */,
 				0B1850BD9F835110397FE248 /* btQuickprof.cpp in Sources */,
-				1C23F16A20E0E0AA001B7D72 /* ofxTextAlign.cpp in Sources */,
 				4FEEC9815844F988B5154BE3 /* btSerializer.cpp in Sources */,
 				48741DBF80C2F3E072279DBF /* btVector3.cpp in Sources */,
 				856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */,
