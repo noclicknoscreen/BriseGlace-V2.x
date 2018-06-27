@@ -22,4 +22,9 @@ public:
     void update(float dt);
     void draw();
     
+    // TIMERS
+private:
+    timer mTimerEndScene;
+    void  timerEndSceneEnd();
+    
 };

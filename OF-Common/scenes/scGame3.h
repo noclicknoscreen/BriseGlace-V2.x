@@ -84,16 +84,19 @@ public:
     ofMaterial material;
     
     //timer
-    float timer;
+//    float timer;
     
     //winner color (for game3BIS ;)
 protected:
     bool colorizeCubes;
     
     // TIMERS
-//private:
-//    timer mTimerEndScene;
-//    void  timerEndScene();
+private:
+    timer mTimerStartForces;
+    void  timerStartForcesEnd();
+    bool  mStartForces;
+    const float cStartForcesTimeout = 5.0f;
+    
 protected:
     //the word to find
     wstring wantedWord;
