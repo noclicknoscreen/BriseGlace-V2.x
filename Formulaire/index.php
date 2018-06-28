@@ -25,6 +25,7 @@
 <body class="body page-index clearfix">
 
 <script type="text/javascript">
+
 function handleSubmit(){
     document.getElementById("form1").submit();
 }
@@ -97,6 +98,7 @@ $query->closeCursor(); // Termine le traitement de la requête
       <option value="off" <?php if(isset($_POST['filtrer']) && !strcmp($_POST['filtrer'], "off")) {echo "selected";}?>>inactif</option>
       <option value="complet" <?php if(isset($_POST['filtrer']) && !strcmp($_POST['filtrer'], "complet")) {echo "selected";}?>>complet</option>
       <option value="incomplet" <?php if(isset($_POST['filtrer']) && !strcmp($_POST['filtrer'], "incomplet")) {echo "selected";}?>>incomplet</option>
+      <option value="vide" <?php if(isset($_POST['filtrer']) && !strcmp($_POST['filtrer'], "vide")) {echo "selected";}?>>vide</option>
     <select>
 
   <span class="_text-1"><font color="#fff9f9"><span>Tout cocher</span></font></span>
@@ -158,16 +160,13 @@ require('script/utile/function.php');
 // NOUVELLE ENIGME
 if (isset($_POST['plus']))
 {
+  require('script/back/create.php');
     ?>
-    <script type="text/javascript">
-    document.getElementById('filtrer').style.display='none';
-    document.getElementById('trier').style.display='none';
-    document.getElementById('selectTable').style.display='none';
-    document.getElementById('chercher').style.display='none';
+    <script>
+    document.getElementById('trier').value="complet DESC";
+    document.getElementById("form1").submit();
     </script>
     <?php
-    require('script/front/new.php');
-    clearFolder("tmp/");
 }
 else if (isset($_POST['submit']))
 {
@@ -185,7 +184,6 @@ else if (isset($_POST['update']))
 else if (isset($_POST['copie']))
 {
   require('script/back/copie.php');
-  clearFolder("tmp/");
 }
 
 require('script/front/old.php');
