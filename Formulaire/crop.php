@@ -7,7 +7,7 @@ $new_filename = "tmp/image" . $_POST['num'] . "-crop.jpg";
 $src = $_POST['src'];
 
 $info = new SplFileInfo($src);
-if ($info->getExtension() == "jpg" || $info->getExtension() == "jpeg" || $info->getExtension() == "JPG")
+if ($info->getExtension() == "jpg" || $info->getExtension() == "jpeg" || $info->getExtension() == "JPG" || $info->getExtension() == "svg")
 {
   $img_r = imagecreatefromjpeg($src);
   $dst_r = ImageCreateTrueColor( $targ_w, $targ_h);
