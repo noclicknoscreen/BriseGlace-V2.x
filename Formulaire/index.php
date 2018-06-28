@@ -135,7 +135,6 @@ $query->closeCursor(); // Termine le traitement de la requête
 
   </script>
 
-
 <?php
 function clearFolder($folder)
 {

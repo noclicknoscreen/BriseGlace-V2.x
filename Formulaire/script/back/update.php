@@ -69,11 +69,7 @@ while ($donnees = $reponse->fetch())
   }
 
 $actif = "off";
-if (isset($_POST['check' . $i]))
-{
- if (!strcmp($_POST['check' . $i], "on"))  { $actif = "on"; }
- else { $actif = "off"; }
-}
+
 
 $imgcrop0 = "enigme/" . $StrNum . $id . '/image/image0-crop.jpg';
 $imgcrop1 = "enigme/" . $StrNum . $id . '/image/image1-crop.jpg';
