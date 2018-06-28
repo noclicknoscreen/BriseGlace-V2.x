@@ -72,6 +72,7 @@ void scVictory::sceneWillAppear( ofxScene * fromScreen ){
     scScene::sceneWillAppear(fromScreen);
     
     // --
+    mTimerScene.stop();
     mTimerReading.startTimer(cTimerReadingTimeout);
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke   ,this   ,&scVictory::someoneSpoke);
