@@ -109,6 +109,7 @@ while ($donnees = $reponse->fetch())
 ?>
 <!-- Input MOT -->
 <!-- Mot clé -->
+          <input type="submit" class="_button _button-2" name="plus" id="plus" value="+" onclick="return new_enigma();"/>
           <input type="text" name="sqlcomplet<?php echo $i?>" id="sqlcomplet<?php echo $i?>" value="incomplet" hidden/>
           <input type="submit" class="_button _button-2" name="plus" id="plus" value="+" onclick="return new_enigma();"/>
           <input class="_input _input-2" type="text" onkeyup='recupmot(this.value, "<?php echo $i?>");' name="sqlmot<?php echo $i?>" id="sqlmot<?php echo $i?>" value="<?php if (isset($_POST['sqlmot' . $i])){echo $_POST['sqlmot' . $i];} else {echo $donnees['mot'];} ?>" spellcheck="true">
@@ -329,7 +330,6 @@ $maxidi = $i;
 
 
 <script type="text/javascript">
-
 // EDITER FERMER
 function editer_fermer(i) {
     var x = document.getElementById("editer" + i);

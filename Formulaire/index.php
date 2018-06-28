@@ -25,6 +25,7 @@
 <body class="body page-index clearfix">
 
 <script type="text/javascript">
+
 function handleSubmit(){
     document.getElementById("form1").submit();
 }
