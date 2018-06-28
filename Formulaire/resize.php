@@ -42,7 +42,7 @@ $(function(){
   boxHeight: 770,
   bgOpacity:  .2,
   setSelect:   [0, 0, 3000, 0],
-  minSize: [300, 300],
+  minSize: [100, 100],
   allowSelect : false,
   aspectRatio: 1,
  });
