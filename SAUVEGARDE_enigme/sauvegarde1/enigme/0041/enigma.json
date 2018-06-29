@@ -1,0 +1,48 @@
+{
+    "theme": "une commune",
+    "mot": {
+        "titre": "ecully",
+        "image": "image0.",
+        "image-crop": "image0-crop.jpg",
+        "url": "",
+        "auteur": "",
+        "date": ""
+    },
+    "indice": [
+        {
+            "titre": "",
+            "image": "image1.",
+            "image-crop": "image1-crop.jpg",
+            "url": "",
+            "auteur": "",
+            "date": ""
+        },
+        {
+            "titre": "",
+            "image": "image2.",
+            "image-crop": "image2-crop.jpg",
+            "url": "",
+            "auteur": "",
+            "date": ""
+        },
+        {
+            "titre": "",
+            "image": "image3.",
+            "image-crop": "image3-crop.jpg",
+            "url": "",
+            "auteur": "",
+            "date": ""
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "",
+            "image": "image4.",
+            "image-crop": "image4-crop.jpg",
+            "url": "",
+            "auteur": "",
+            "date": ""
+        },
+        "legende": ""
+    }
+}

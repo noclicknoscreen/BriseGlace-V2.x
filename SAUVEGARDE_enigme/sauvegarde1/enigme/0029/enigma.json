@@ -1,0 +1,48 @@
+{
+    "theme": "un dispositif ferroviaire",
+    "mot": {
+        "titre": "rail",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/c2.staticflickr.com\/4\/3029\/2902667829_24c6502795_b.jpg",
+        "auteur": "Corey Leopold",
+        "date": "5 juillet 2008 "
+    },
+    "indice": [
+        {
+            "titre": "Acier",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/3\/2897\/14239642623_f6e69792c1_b.jpg",
+            "auteur": "Frédéric BISSON",
+            "date": "18 mai 2014 "
+        },
+        {
+            "titre": "traverse",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/5\/5c\/Railroad_construction_-_ties_awaiting_rails%2C_Alaska%2C_1915.jpg\/800px-Railroad_construction_-_ties_awaiting_rails%2C_Alaska%2C_1915.jpg",
+            "auteur": "inconnu",
+            "date": "inconnue"
+        },
+        {
+            "titre": "60 kg par mètre linéaire",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/4\/3558\/3442986770_e4f20cfbe0_b.jpg",
+            "auteur": "truds 09",
+            "date": "6 mars 2009 "
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "un rail",
+            "image": "image4.png",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/7\/79\/PRR_rail_section_drawing.png\/1024px-PRR_rail_section_drawing.png",
+            "auteur": "Willson, Frederick Newton ",
+            "date": "1898"
+        },
+        "legende": "Deux files de RAIL, fixées par des traverses, constituent la voie qui guide et permet aux trains de rouler. En acier, sur les lignes les plus chargées ou à grande vitesse, ils pèsent 60kg par mètre linéaire. Chaque rail mesure à la sortie d'atelier, 400 mètre de long. Pour assurer la sécurité des trains et le confort des voyageurs le réglage de la voie se fait au millimètre près. "
+    }
+}

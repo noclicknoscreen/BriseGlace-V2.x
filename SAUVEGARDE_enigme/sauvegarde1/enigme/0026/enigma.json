@@ -1,0 +1,48 @@
+{
+    "theme": "un dispositif ferroviaire",
+    "mot": {
+        "titre": "ZÉBULON",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/fa\/Zebulon.jpg",
+        "auteur": "Jean-Michel MITTEAU ",
+        "date": "1 janvier 1975"
+    },
+    "indice": [
+        {
+            "titre": "Manège enchanté",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/8\/7368\/9737006626_0d457b68f1_b.jpg",
+            "auteur": "Musée de l'horlogerie",
+            "date": "23 février 2006"
+        },
+        {
+            "titre": "TGV",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/3\/2675\/4531756072_360983dbee_o.jpg",
+            "auteur": "Victor Brito",
+            "date": "17 avril 2010 "
+        },
+        {
+            "titre": "309 km\/h",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/8\/7726\/16465585043_8cc4920ed2_b.jpg",
+            "auteur": " Jean-François Gornet",
+            "date": "8 mars 2015"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "ZÉBULON",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/fa\/Zebulon.jpg",
+            "auteur": "Jean-Michel MITTEAU ",
+            "date": "1 janvier 1975"
+        },
+        "legende": "Le ZÉBULON n'est pas un personnage sur ressort, mais bien une locomotive électrique expérimentale. La Z 7001 fut construite par Decauville-De Dietrich-Oerlikon et a servi en 1974 à le mise au point du TGV. ZÉBULON atteignit à l'époque la vitesse maximum de 309 km\/h."
+    }
+}

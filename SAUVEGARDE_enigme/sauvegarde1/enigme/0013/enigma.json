@@ -1,0 +1,48 @@
+{
+    "theme": "une spécialité lyonnaise",
+    "mot": {
+        "titre": "COUSSIN",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/80\/Coussins_de_Lyon.jpg\/1280px-Coussins_de_Lyon.jpg",
+        "auteur": "Ji-Elle ",
+        "date": "25 février 2016"
+    },
+    "indice": [
+        {
+            "titre": "Confiserie",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/5\/4046\/4451569428_da80d90e3e_b.jpg",
+            "auteur": "Yohann Legrand",
+            "date": "21 mars 2010"
+        },
+        {
+            "titre": "Échevins",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/4\/49\/Portrait_d%27un_échevin_-_Nicolas_de_Largillierre.jpg\/800px-Portrait_d%27un_échevin_-_Nicolas_de_Largillierre.jpg",
+            "auteur": "Yelkrokoyade",
+            "date": "inconnu"
+        },
+        {
+            "titre": "Pâte d'amande",
+            "image": "image3.JPG",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/17\/Amande.JPG\/1280px-Amande.JPG",
+            "auteur": "Med Dhifallah",
+            "date": "28 septembre 2008"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "Coussins de Lyon",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/80\/Coussins_de_Lyon.jpg\/1280px-Coussins_de_Lyon.jpg",
+            "auteur": "Ji-Elle ",
+            "date": "25 février 2016"
+        },
+        "legende": "En l'an 1643, lors de la terrible épidémie de peste qui ravage la cité, les échevins lyonnais organisent une procession vers Fourvière pour implorer la Vierge d'épargner la ville. Ce faisant, ils remettent un cierge de sept livres de cire et un écu d’or présenté sur un coussin de soie. C'est ce coussin de soierie qui inspirera la création de la confiserie. "
+    }
+}
