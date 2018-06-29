@@ -38,6 +38,7 @@ $('#copie').on('click', function() {
 </script>
 <?php
 ob_start();
+ini_set('max_input_vars', 3000);
 try
 {
 $bdd = new PDO('mysql:host=localhost;dbname=formulaire;charset=utf8', 'root', 'root');
