@@ -1,5 +1,4 @@
 <?php
-
 try
 {
   $bdd = new PDO('mysql:host=localhost;dbname=formulaire;charset=utf8', 'root', 'root');
@@ -10,11 +9,8 @@ catch (Exception $e)
 }
 
 // On récupère tout le contenu de la table enigme
-
 $reponse = $bdd->query($_POST['good_requet']);
-
 // On affiche chaque entrée une à une
-
 $i = 0;
 while ($donnees = $reponse->fetch())
 {
@@ -198,5 +194,4 @@ if (!strcmp($_POST['sqlcomplet' . $i], "vide"))
 $i++;
 }
 $reponse->closeCursor();
-
 ?>
