@@ -21,9 +21,8 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body class="body page-index clearfix">
-
+<?php ini_set('php_value max_input_vars',3000); ?>
 <script type="text/javascript">
-
 function handleSubmit(){
     document.getElementById("form1").submit();
 }
@@ -38,7 +37,6 @@ $('#copie').on('click', function() {
 </script>
 <?php
 ob_start();
-ini_set('max_input_vars', 3000);
 try
 {
 $bdd = new PDO('mysql:host=localhost;dbname=formulaire;charset=utf8', 'root', 'root');
@@ -47,7 +45,7 @@ catch (Exception $e)
 {
 die('Erreur : ' . $e->getMessage());
 }
-$query = $bdd->query('SELECT MAX(id) AS maxval FROM enigme WHERE complet="complet"');
+$query = $bdd->query('SELECT COUNT(id) AS maxval FROM enigme WHERE complet="complet" ');
 $max_row = $query->fetch(PDO::FETCH_ASSOC);
 $max = $max_row['maxval'] + 1;
 $query->closeCursor(); // Termine le traitement de la requête
