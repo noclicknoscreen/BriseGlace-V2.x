@@ -48,10 +48,10 @@ void scSelectGame::draw(){ //draw scene 1 here
         scScene::drawTitle(utils::cleanString("A vos marques,"), ofColor::black, ofPoint(0, 300));
     }
     if(mIndexSequence >= 6){
-        scScene::drawTitle(utils::cleanString("Prêts,"), ofColor::black, ofPoint(0, 400));
+        scScene::drawTitle(utils::cleanString("Prêts,"), ofColor::black, ofPoint(0, 390));
     }
     if(mIndexSequence >= 7){
-        scScene::drawTitle(utils::cleanString("Parlez !"), ofColor::black, ofPoint(0, 500));
+        scScene::drawTitle(utils::cleanString("Parlez !"), ofColor::black, ofPoint(0, 480));
     }
     
     scScene::drawSpokenWord(mPlayerMessage, mPlayerColor);
@@ -103,6 +103,7 @@ void scSelectGame::sceneWillDisappear( ofxScene * toScreen ){
 // Speaking event
 void scSelectGame::someoneSpoke(player & _player){
     scSelect::someoneSpoke(_player);
+    nextStepSequence();
 }
 
 void scSelectGame::timerSignAnimationEnd(){
@@ -129,23 +130,27 @@ void scSelectGame::timerSignAnimationEnd(){
     //    }while(numMessage == idxMesssage);
     //    numMessage = idxMesssage;
     
+    float _width = 0.6f;
+    
     // Draw players
     switch (numPlayer) {
         case 1:
-            signMessage = "Mô masqué";
+            signMessage = "Mot masqué";
+            _width = 0.4f;
             break;
         case 2:
-            signMessage = "Mô brassé";
+            signMessage = "Mot brassé";
+            _width = 0.4f;
             break;
         case 3:
-            signMessage = "Mes mô rient";
+            signMessage = "Mes mots rient";
             break;
             
         default:
             break;
     }
     
-    bigPlayerManager().startSign(numPlayer, signMessage);
+    bigPlayerManager().startSign(numPlayer, signMessage, _width);
     
 }
 
@@ -156,6 +161,14 @@ void scSelectGame::timerEraseWordEnd(){
 
 void scSelectGame::timerTextSequenceEnd(){
     
+    nextStepSequence();
+    
+    ofLogNotice() << "timerTextSequenceEnd, remaining time : " << mTimerTextSequence.toString();
+    
+    
+}
+
+void scSelectGame::nextStepSequence(){
     if(mIndexSequence == 0){
         mTimerTextSequence.startTimer(cTimerTextSequence1);
         mIndexSequence++;
@@ -196,9 +209,4 @@ void scSelectGame::timerTextSequenceEnd(){
         mTimerTextSequence.stop();
     }
     
-    ofLogNotice() << "timerTextSequenceEnd, remaining time : " << mTimerTextSequence.toString();
-    
-    
 }
-
-

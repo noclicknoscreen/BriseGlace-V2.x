@@ -29,6 +29,7 @@ public:
 private:
     timer   mTimerTextSequence;
     void    timerTextSequenceEnd();
+    void    nextStepSequence();
     int     mIndexSequence;
     
     const float cTimerTextSequence1 = 1.0f;

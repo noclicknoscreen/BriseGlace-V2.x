@@ -101,14 +101,14 @@ public:
         
         std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
         
-        std::string narrow = converter.to_bytes(_WStr);
+        const std::string narrow = converter.to_bytes(_WStr);
         return narrow;
     }
     static std::wstring toWString(std::string _Str){
         
         std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
         
-        std::wstring wide = converter.from_bytes(_Str);
+        const std::wstring wide = converter.from_bytes(_Str);
         return wide;
     }
     // Examples

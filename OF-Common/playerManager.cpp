@@ -23,29 +23,30 @@ void playerManager::setup(){
     drawGui = false;
 
     
-    // 1st player is red
+    // 1st player is blue
     mColors[1] = player1;
     mSequencesPath[1] = "Cube-Bleu";
     mBullesPath[1] = "Bulles/BulleGauche.png";
-    mPositions[1] = ofPoint(450, ofGetHeight());
-    mBullesPos[1] = ofPoint(- 325, 170);
-    // Green
+    mPositions[1] = ofPoint(450, ofGetHeight() + 20);
+    mBullesPos[1] = ofPoint(- 325, 190);
+    // Red
     mColors[2] = player2;
     mSequencesPath[2] = "Cube-Rouge";
-    mBullesPath[2] = "Bulles/BulleGauche.png";
-    mPositions[2] = ofPoint(0.5 * ofGetWidth() + 75, ofGetHeight());
-    mBullesPos[2] = ofPoint(- 310, 180);
-    // Blue
+    mBullesPath[2] = "Bulles/BulleDroite.png";
+    mPositions[2] = ofPoint(0.5 * ofGetWidth() - 75, ofGetHeight() + 20);
+    mBullesPos[2] = ofPoint(125, 175);
+//    mBullesPos[2] = ofPoint(- 310, 180);
+    // Purple
     mColors[3] = player3;
     mSequencesPath[3] = "Cube-Violet";
     mBullesPath[3] = "Bulles/BulleDroite.png";
-    mPositions[3] = ofPoint(ofGetWidth() - 450, ofGetHeight());
+    mPositions[3] = ofPoint(ofGetWidth() - 450, ofGetHeight() + 20);
     mBullesPos[3] = ofPoint(120, 150);
     // MySelf = Gray
     mColors[4] = player1;
     mSequencesPath[4] = "Cube-Rouge";
     mBullesPath[4] = "Bulles/BulleCentre.png";
-    mPositions[4] = ofPoint(0.5 * ofGetWidth(), ofGetHeight());
+    mPositions[4] = ofPoint(0.5 * ofGetWidth(), ofGetHeight() + 20);
     mBullesPos[4] = ofPoint(- 310, 180);
     
     //    someoneSpoke = _someoneSpoke;
@@ -256,11 +257,11 @@ void playerManager::draw(){
 }
 
 //--------------------------------------------------------------
-void playerManager::startSign(int _userId, string _textOnSign){
+void playerManager::startSign(int _userId, string _textOnSign, float _width){
     std::map<int, player>::iterator onePlayer = mPlayers.find(_userId);
     if (onePlayer != mPlayers.end())
     {
-        onePlayer->second.startSign(_textOnSign);
+        onePlayer->second.startSign(_textOnSign, _width);
     }
 }
 

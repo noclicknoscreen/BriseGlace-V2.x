@@ -21,8 +21,10 @@ void scVictory::setup(){  //load your scene 1 assets here...
 
 void scVictory::update(float dt){ //update scene 1 here
     scScene::update(dt);
-    mTimerScene.update(dt);
     mTimerReading.update(dt);
+    if(mTimerReading.isAnimating() == false){
+        mTimerScene.update(dt);
+    }
 };
 
 void scVictory::draw(){ //draw scene 1 here

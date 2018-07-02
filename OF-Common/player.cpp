@@ -154,16 +154,7 @@ void player::draw(ofPoint _bulleCorrection){
         
         
         // Little trick to always be into the frame
-//        float correction = 0.15;
-//        if(myText.getHeight() > 120){
-//            correction = -0.15;
-//        }
-//        
-//        ofPoint whereTheTextIs(internalBullePos.x + 0.5*internalBulleSize.x, internalBullePos.y + correction * myText.getHeight(), 10);
         ofPoint whereTheTextIs(internalBullePos.x + 0.5*internalBulleSize.x, internalBullePos.y - 0.5*internalBulleSize.y + 0.5 * mBulleImg.getHeight() - 0.25 * myText.getHeight());
-        
-//        ofDrawCircle(whereTheTextIs, 5);
-//        ofDrawBitmapString(ofToString(myText.getHeight()), whereTheTextIs);
         myText.drawCenter(whereTheTextIs.x , whereTheTextIs.y);
         
     }
@@ -187,7 +178,7 @@ void player::draw(ofPoint _bulleCorrection){
     if(mSignDraw)
     {
         signText.setText(utils::toUpperCase(mSignText));
-        signText.wrapTextX(0.6*signImage.getWidth());
+        signText.wrapTextX(mSignRelativeWidth*signImage.getWidth());
         
         ofDisableNormalizedTexCoords();
         
@@ -235,7 +226,7 @@ void player::draw(ofPoint _bulleCorrection){
     
 }
 
-void player::startSign(string _textOnSign){
+void player::startSign(string _text, float _width){
     // Sign animation
     mSignAnimation.reset(0.0f);
     mSignAnimation.setCurve(QUADRATIC_EASE_OUT);
@@ -243,7 +234,8 @@ void player::startSign(string _textOnSign){
     mSignAnimation.setDuration(0.5);
     mSignAnimation.animateTo(1.0f);
     
-    mSignText = _textOnSign;
+    mSignText = _text;
+    mSignRelativeWidth = _width;
     
 }
 

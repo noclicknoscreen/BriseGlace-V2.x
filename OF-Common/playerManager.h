@@ -24,7 +24,7 @@ public:
 //    void draw3Signs(string _sign1, string _sign2, string _sign3);
     void draw();
     
-    void startSign(int _userId, string _textOnSign);
+    void startSign(int _userId, string _textOnSign, float _width = 0.6);
     void stopSign(int _userId);
     
     void keyPressed(int key);

@@ -49,6 +49,17 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "ofStringTimesInString(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;):ofUtils.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "*needle">
+            </PersistentString>
+            <PersistentString
+               value = "&amp;haystack">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "cubeManagerMemory::setGrid(int, int):cubeManagerMemory.cpp">
          <PersistentStrings>
             <PersistentString
@@ -79,10 +90,10 @@
          contextName = "scVictory::draw():scVictory.cpp">
          <PersistentStrings>
             <PersistentString
-               value = "winnerText">
+               value = "bigEnigmaManager().getCurrentEnigma()">
             </PersistentString>
             <PersistentString
-               value = "bigEnigmaManager().getCurrentEnigma()">
+               value = "winnerText">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

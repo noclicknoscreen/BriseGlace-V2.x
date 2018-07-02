@@ -32,7 +32,8 @@ void scGame::setup(){
     }
     
     // ---------------------------------------------------------------------------
-    mCartoucheImg.load("Pastille-Titre-JeuA01.png");
+    mCartoucheImg.load("Pancarte/Pancarte-ss-Ombres.png");
+    mCartoucheImg.resize(0.5 * mCartoucheImg.getWidth(), 0.5 * mCartoucheImg.getHeight());
     mCartoucheTextTitle.init(globalFontName, globalFontSizeSmall);
     mCartoucheTextSubTi.init(globalFontName, globalFontSizeMedium);
     mTitle.load(globalFontName, globalFontSizeMedium);
@@ -103,30 +104,44 @@ void scGame::draw(){
     
     ofNoFill();
     
-    ofPoint posTextCartouche(300, 75);
-    ofPoint posTextCartoucheImg(300, 200);
-    float   width = 400;
+    ofPoint posCartouche(1600, 135);
+    ofPoint posText(175, 90);
+    
+    float   width = 300;
     float   lineH = 65;
     
+    
     ofSetColor(ofColor::white, 255);
-    mCartoucheImg.draw(posTextCartoucheImg.x - 0.5 * mCartoucheImg.getWidth(), posTextCartoucheImg.y - 0.5 * mCartoucheImg.getHeight());
     
-    mCartoucheTextTitle.setText("BIENVENUE");mCartoucheTextTitle.setColor(255, 255, 255, 255);
-    mCartoucheTextTitle.wrapTextX(width);
-    mCartoucheTextTitle.drawCenter(posTextCartouche.x, posTextCartouche.y);
-    mCartoucheTextTitle.setText("SUR");mCartoucheTextTitle.setColor(255, 255, 255, 255);
-    mCartoucheTextTitle.wrapTextX(width);
-    mCartoucheTextTitle.drawCenter(posTextCartouche.x, posTextCartouche.y + lineH);
+    ofPushMatrix();
+    ofTranslate(posCartouche);
     
-    mCartoucheTextSubTi.setText(mGameName);mCartoucheTextSubTi.setColor(255, 255, 255, 255);
+    mCartoucheImg.draw(- 0.5 * mCartoucheImg.getWidth(), - 0.5 * mCartoucheImg.getHeight());
+    
+    ofPushMatrix();
+    ofRotateZ(-7);
+    ofScale(0.7, 0.7);
+    
+//    mCartoucheTextTitle.setText("BIENVENUE SUR");mCartoucheTextTitle.setColor(255, 255, 255, 255);
+//    mCartoucheTextTitle.wrapTextX(width);
+//    mCartoucheTextTitle.drawCenter(posTextCartouche.x, posTextCartouche.y);
+//    mCartoucheTextTitle.setText("SUR");mCartoucheTextTitle.setColor(255, 255, 255, 255);
+//    mCartoucheTextTitle.wrapTextX(width);
+//    mCartoucheTextTitle.drawCenter(posTextCartouche.x, posTextCartouche.y + lineH);
+    
+    mCartoucheTextSubTi.setText(mGameName);mCartoucheTextSubTi.setColor(0, 0, 0	, 255);
     mCartoucheTextSubTi.wrapTextX(width);
-    mCartoucheTextSubTi.drawCenter(posTextCartouche.x, posTextCartouche.y + 2*lineH);
+    mCartoucheTextSubTi.drawCenter(0, -100);
+    
+    ofPopMatrix();
+    ofPopMatrix();
+    
     
     ofSetColor(ofColor::black);
-    ofPoint posText(600, 150);
     mTitle.drawString("ICI ON CHERCHE :", posText.x, posText.y);
     mSubLine1.drawString(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getTheme()), posText.x, posText.y + 80);
     mSubLine2.drawString(mConsigne, posText.x, posText.y + 150);
+    
     
     ofPopStyle();
     // -----------------------------------------------------------------
@@ -150,10 +165,20 @@ void scGame::someoneSpoke(player & _player){
         ofLogNotice() << "Final comparaison failed [" << _player.getLastMessage() << "] different from [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
     }
     
-    // Restart waiting timer
-    restartTimerBeforeHint();
-    // Stop eventually sign timer
-    timerSignHint.stop();
+    // We can spoke to the app to show or not the hint
+    if(hintUserId != 0){
+        int compareOui = ofStringTimesInString(utils::toUpperCase(_player.getLastMessage()), utils::toUpperCase("oui"));
+        
+        int compareNon = ofStringTimesInString(utils::toUpperCase(_player.getLastMessage()), utils::toUpperCase("non"));
+        
+        if(compareOui > 0){
+            // Oui -> indice
+            ofxSceneManager::instance()->goToScene(HINT);
+        }else if(compareNon > 0){
+            // Non -> on arrête
+            stopHint();
+        }
+    }
 }
 
 void scGame::restartTimerSignHint(){
@@ -162,9 +187,7 @@ void scGame::restartTimerSignHint(){
 }
 void scGame::restartTimerBeforeHint(){
     ofLogNotice() << "Start timerBeforeHint, waiting..... ";
-//    drawHintSign = false;
-    
-    timerBeforeHint.startTimer(30);
+    timerBeforeHint.startTimer(25);
 }
 void scGame::restartTimerSignWin(){
     ofLogNotice() << "Start timerSignWin, waiting..... ";
@@ -179,6 +202,7 @@ void scGame::stopHint(){
     // Stop display Hint
     bigPlayerManager().stopSign(hintUserId);
     timerSignHint.stop();
+    hintUserId = 0;
 }
 
 void scGame::timerBeforeHintEnd(){
@@ -188,7 +212,7 @@ void scGame::timerBeforeHintEnd(){
     // --------------------------------
     hintUserId = bigPlayerManager().getRandomPlayer();
     bigPlayerManager().startSign(hintUserId, "Veux-tu un indice ?");
-//
+
     timerBeforeHint.stop();
     timerSignHint.startTimer(5);
 }

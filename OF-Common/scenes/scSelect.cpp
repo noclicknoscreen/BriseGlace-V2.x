@@ -72,6 +72,21 @@ void scSelect::someoneSpoke(player & _player){
         ofxSceneManager::instance()->goToScene(GAME3);
     }
     
+    if(ofStringTimesInString(mPlayerMessage, "n'importe quoi") > 0){
+        int rndIdx = ofRandom(0, 3);
+        if(rndIdx <  1){
+            ofxSceneManager::instance()->goToScene(GAME1);
+        }else if(rndIdx <  2){
+            ofxSceneManager::instance()->goToScene(GAME2);
+        }else if(rndIdx <  3){
+            ofxSceneManager::instance()->goToScene(GAME3);
+        }
+    }
+    
+    if(ofStringTimesInString(mPlayerMessage, "partenaire") > 0){
+        ofxSceneManager::instance()->goToScene(PARTNERS);
+    }
+    
 }
 
 

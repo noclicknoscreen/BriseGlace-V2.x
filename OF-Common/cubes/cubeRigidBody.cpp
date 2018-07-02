@@ -19,13 +19,27 @@ void cubeRigidBody::customDraw(ofColor _winnerColor)
     
     //apply texture
     ofEnableNormalizedTexCoords();
-    texture.bind();
-    
-    //3d box
+    ofFill();
     ofSetColor(255);
     
-    ofFill();
+    if(mIsInAnswer == false){
+        // LE CUBE N'A PAS ENCORE ETE MENTIONNE
+        materialForFaceColor.setAmbientColor(ofFloatColor(0.2));
+        materialForFaceColor.setDiffuseColor(ofFloatColor(0.8));
+        
+    }else{
+        
+        // LE CUBE A ETE MENTIONNE
+        materialForFaceColor.setAmbientColor(mFoundPlayerColor);
+        materialForFaceColor.setDiffuseColor(mFoundPlayerColor);
+        
+    }
+    
+    materialForFaceColor.begin();
+    texture.bind();
+    
     ofDrawBox(0, 0, 0, size.x, size.y, size.z);
+    materialForFaceColor.end();
     
     texture.unbind();
     ofDisableNormalizedTexCoords();
@@ -69,12 +83,12 @@ void cubeRigidBody::customDraw(ofColor _winnerColor)
 
         // LE CUBE A ETE MENTIONNE
         // On dessine une lettre sur chaque face
-        drawALetter(0, 0, 0     , mFoundPlayerColor);
-        drawALetter(90, 0, 0    , mFoundPlayerColor);
-        drawALetter(180, 0, 0   , mFoundPlayerColor);
-        drawALetter(270, 0, 0   , mFoundPlayerColor);
-        drawALetter(0, 90, 90    , mFoundPlayerColor);
-        drawALetter(0, 270, 90   , mFoundPlayerColor);
+        drawALetter(0, 0, 0);
+        drawALetter(90, 0, 0);
+        drawALetter(180, 0, 0);
+        drawALetter(270, 0, 0);
+        drawALetter(0, 90, 90);
+        drawALetter(0, 270, 90);
         
     }
     

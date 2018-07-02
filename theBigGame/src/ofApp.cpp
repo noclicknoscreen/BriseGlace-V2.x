@@ -45,7 +45,7 @@ void ofApp::setup(){
 	sceneManager->setOverlapUpdate(true);
     
     ///////////////////////////////////////
-    background.load("Decor_MurEtSol.png");
+    background.load("Decor_MurEtSol-A01.jpg");
     
     ///////////////////////////////////////
 #ifdef _DEBUG
@@ -140,7 +140,7 @@ void ofApp::keyPressed(int key){
 }
 
 void ofApp::setFullScreen(){
-    ofSetFullscreen(bFullScreen);
+//    ofSetFullscreen(bFullScreen);
     if(bFullScreen==true){
         ofHideCursor();
     }else{

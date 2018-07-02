@@ -33,7 +33,7 @@ public:
 //    void setPositionHistogram(ofPoint _pos){positionHistogram = _pos;};
     ofPoint getPosition(){return mPosition;};
     
-    void startSign(string _textOnSign="");
+    void startSign(string _text, float _width);
     void stopSign();
     
 private:
@@ -51,6 +51,7 @@ private:
     ofPoint              mSignScale;
     ofxAnimatableFloat   mSignAnimation;
     string               mSignText;
+    float                mSignRelativeWidth;
     bool                 mSignDraw;
     
     // Gestion de la sequence des petits bonhommes
