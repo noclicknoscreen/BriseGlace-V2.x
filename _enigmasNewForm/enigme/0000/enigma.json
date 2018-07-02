@@ -1,7 +1,7 @@
 {
-    "theme": "un mode de transport",
+    "theme": "un moyen de transport",
     "mot": {
-        "titre": "micheline",
+        "titre": "UNE micheline",
         "image": "image0.JPG",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/8c\/Lyon_St_Paul.JPG",
@@ -40,9 +40,9 @@
             "image": "image4.JPG",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/8c\/Lyon_St_Paul.JPG",
-            "auteur": "Smiley.toerist",
+            "auteur": "Smiley Toerist",
             "date": "21 mars 2009"
         },
-        "legende": "La « Micheline » est un autorail rapide équipé de roues spéciales munies de pneus brevetés appelés  “pneurail”. Elle est construite par la société Michelin dans les années 1935. Bugatti réalisera également de tels véhicules de luxe dès 1932."
+        "legende": "Inventée par le fils de la marque au Bibendum (Marcel Michelin) et construite par la société éponyme dans les années 1931, la « Micheline » est un autorail rapide équipé de roues spéciales munies de pneus brevetés appelés  “pneurail”. Dès 1932, Bugatti produit des véhicules similaires en version luxe."
     }
 }

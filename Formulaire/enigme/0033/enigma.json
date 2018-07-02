@@ -1,0 +1,48 @@
+{
+    "theme": "une commune",
+    "mot": {
+        "titre": "chaponost",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/c2.staticflickr.com\/2\/1573\/25985299544_df80cd7a25_b.jpg",
+        "auteur": "Jeanne Menjoulet",
+        "date": "8 mai 2018 "
+    },
+    "indice": [
+        {
+            "titre": "aqueducs",
+            "image": "image1.JPG",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/3\/3c\/Aqueduc_du_Gier-Chaponost-Plat_de_l%27Air-Conduite_sur_arc.JPG\/1280px-Aqueduc_du_Gier-Chaponost-Plat_de_l%27Air-Conduite_sur_arc.JPG",
+            "auteur": "Jmh2o",
+            "date": "23 août 2010"
+        },
+        {
+            "titre": "Le château des Cartières",
+            "image": "image2.JPG",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/6f\/Ch%C3%A2teau_des_Carti%C3%A8res_1.JPG\/1280px-Ch%C3%A2teau_des_Carti%C3%A8res_1.JPG",
+            "auteur": "PHILDIC",
+            "date": "8 février 2009"
+        },
+        {
+            "titre": "Aimé Delaroche",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/3\/2091\/32743945751_d9c8df7894_b.jpg",
+            "auteur": "Thorsten Krienke",
+            "date": "12 février 2017"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "chaponost",
+            "image": "image4.JPG",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/3\/3c\/Aqueduc_du_Gier-Chaponost-Plat_de_l%27Air-Conduite_sur_arc.JPG\/1280px-Aqueduc_du_Gier-Chaponost-Plat_de_l%27Air-Conduite_sur_arc.JPG",
+            "auteur": "Jmh2o",
+            "date": "23 août 2010"
+        },
+        "legende": "La première preuve certaine de l’existence du village est un texte de 1 225 qui mentionne le nom de CHAPONOST. La commune est traversée par l'aqueduc du Gier amenant l'eau de Saint-Chamont à Saint-Just. La construction de son château le \"Château des Cartières\" débute au 4e quart du XVIIe siècle puis est remanié au XIXe siècle. Un de ses prodiges, le harpiste Emmanuel CEYSSON, est détenteur de plusieurs prix et médailles d'or de concours internationaux. Il fut même nominé aux victoires de la musique classique en 2010 dans la catégorie \"Révélation Soliste Instrumental\"."
+    }
+}

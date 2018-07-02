@@ -1,48 +1,48 @@
 {
-    "theme": "un métier",
+    "theme": "un objet du train",
     "mot": {
-        "titre": "blogueuse",
+        "titre": "pantographe",
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
-        "url": "https:\/\/c2.staticflickr.com\/8\/7248\/7419512924_00f8169cd8_b.jpg",
-        "auteur": "inconnu",
-        "date": "3 mars 2012 "
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/8c\/Pantograf_2.jpg",
+        "auteur": "Sheep221",
+        "date": "31 mars 2006"
     },
     "indice": [
         {
-            "titre": "Experte",
+            "titre": "caténaire",
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
-            "url": "https:\/\/c2.staticflickr.com\/8\/7013\/6569944913_9da2d76eb9_b.jpg",
-            "auteur": "Yohann Legrand",
-            "date": "11 décembre 2011 "
+            "url": "https:\/\/c2.staticflickr.com\/6\/5332\/7417425976_65484282d6_b.jpg",
+            "auteur": "JPC24M",
+            "date": "13 mai 2012 "
         },
         {
-            "titre": "passionnée",
+            "titre": "locomotive électrique",
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
-            "url": "https:\/\/c2.staticflickr.com\/4\/3427\/3244186572_9d1c143c83_b.jpg",
-            "auteur": " Lauri Rantala",
-            "date": "23 janvier 2009"
+            "url": "https:\/\/c2.staticflickr.com\/6\/5341\/9772761856_36475bf049_b.jpg",
+            "auteur": "Patrick Janicek",
+            "date": "14 septembre 2013 "
         },
         {
-            "titre": "internet",
-            "image": "image3.png",
+            "titre": "Losange",
+            "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
-            "url": "https:\/\/d30y9cdsu7xlg0.cloudfront.net\/png\/326129-200.png",
-            "auteur": "priyanka",
-            "date": "inconnue"
+            "url": "https:\/\/c2.staticflickr.com\/8\/7749\/17603762543_7028bfa130_b.jpg",
+            "auteur": "Étienne Pouvreau",
+            "date": "19 mai 2015 "
         }
     ],
     "recompense": {
         "indice": {
-            "titre": "blogueuse",
+            "titre": "pantographe",
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
-            "url": "https:\/\/c2.staticflickr.com\/8\/7248\/7419512924_00f8169cd8_b.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/f4\/Pantograaf_lichtrail.jpg",
             "auteur": "inconnu",
-            "date": "3 mars 2012 "
+            "date": "6 mars 2005"
         },
-        "legende": "Auteur d’un blogue. Personne utilisant Internet comme un moyen de communication pour s’exprimer et diffuser de l’information sur différents sujets pour lesquels elle a une expertise ou une passion. Utilisant les mots, la photo, les vidéos, la blogueuse remixe régulièrement les contenus de différentes sources provenant des médias traditionnels, des communautés en ligne, d’autres blogues et de sites à contenus.\r\n"
+        "legende": "Le pantographe est le dispositif articulé qui permet à une locomotive électrique ou à un tramway ou à d'autres systèmes automoteurs électriques de capter le courant par frottement sur une caténaire."
     }
 }

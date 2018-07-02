@@ -1,0 +1,48 @@
+{
+    "theme": "une commune",
+    "mot": {
+        "titre": "tassin",
+        "image": "image0.png",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/b\/be\/Blason_ville_fr_Tassin-la-Demi-Lune_%28Rh%C3%B4ne%29.svg\/600px-Blason_ville_fr_Tassin-la-Demi-Lune_%28Rh%C3%B4ne%29.svg.png",
+        "auteur": "Tretinville",
+        "date": "13 novembre 2011"
+    },
+    "indice": [
+        {
+            "titre": "3 renards",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/07\/FARGES_823_-_LA_DEMI-LUNE_-_Les_trois-renards.jpg",
+            "auteur": "inconnu",
+            "date": "Avant la Première Guerre mondiale"
+        },
+        {
+            "titre": "horloge",
+            "image": "image2.JPG",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/5\/58\/Horloge_Tassin.JPG\/800px-Horloge_Tassin.JPG",
+            "auteur": "Mourial",
+            "date": "1 mai 2008"
+        },
+        {
+            "titre": "demi-lune",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/8\/7410\/9506262126_00b51a5252_b.jpg",
+            "auteur": "Frédéric BISSON",
+            "date": "13 août 2013"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "tassin la demi-lune",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/4\/3933\/15016237743_f2fbc6aea1_b.jpg",
+            "auteur": "Phil Richards",
+            "date": "5 juillet 1993 "
+        },
+        "legende": "Dès l'an 11 a. J-C, Agrippa fit aménager quatre voies, qui partaient de Lugdunum respectivement en direction de l'Aquitaine, du Rhin, de La Manche et de la Narbonnaise. Au « point de croisement » en demi-lune des routes royales, \"l'Horloge\" est inaugurée le 5 avril 1908 en présence d'Édouard Herriot. Elle fût construite d'après les plans de MM. Robert et Chollat, jeunes architectes lyonnais, et du sculpteur Pierre Devaux."
+    }
+}

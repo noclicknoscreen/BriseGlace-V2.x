@@ -1,48 +1,48 @@
 {
-    "theme": "un chef cuisinier",
+    "theme": "un humaniste célèbre",
     "mot": {
-        "titre": "bocuse",
+        "titre": "Rabelais",
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
-        "url": "https:\/\/c1.staticflickr.com\/1\/215\/487900252_72fa1a0e3d_o.jpg",
-        "auteur": " Alain Elorza",
-        "date": "7 mai 2007 "
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8d\/Francois_Rabelais_-_Portrait.jpg\/800px-Francois_Rabelais_-_Portrait.jpg",
+        "auteur": "inconnu",
+        "date": "inconnue"
     },
     "indice": [
         {
-            "titre": "Meilleur ouvrier de france",
+            "titre": "Penseur de la renaissance",
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
-            "url": "https:\/\/c2.staticflickr.com\/6\/5678\/22564367624_456d044dc2_b.jpg",
-            "auteur": " Yann Caradec",
-            "date": "21 novembre 2015 "
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/3a\/1543%2C_Andreas_Vesalius%27_Fabrica%2C_Base_Of_The_Brain.jpg",
+            "auteur": "inconnu",
+            "date": "inconnue"
         },
         {
-            "titre": "L'auberge",
+            "titre": "Érudit",
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/27\/Int%C3%A9rieur_de_l%27auberge_de_Paul_Bocuse.jpg\/1920px-Int%C3%A9rieur_de_l%27auberge_de_Paul_Bocuse.jpg",
-            "auteur": "Éric Messel ",
-            "date": "10 avril 2017"
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/22\/Da_Vinci_Vitruve_Luc_Viatour.jpg\/800px-Da_Vinci_Vitruve_Luc_Viatour.jpg",
+            "auteur": "inconnu",
+            "date": "inconnue"
         },
         {
-            "titre": "Poularde aux morilles",
-            "image": "image3.JPG",
+            "titre": "Protagoras",
+            "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/4\/44\/Paul_Bocuse_044.JPG\/1280px-Paul_Bocuse_044.JPG",
-            "auteur": "Arnaud 25 ",
-            "date": "25 octobre 2013"
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c1\/Salvator_Rosa_-_D%C3%A9mocrite_et_Protagoras.jpg\/800px-Salvator_Rosa_-_D%C3%A9mocrite_et_Protagoras.jpg",
+            "auteur": "inconnu",
+            "date": "inconnue"
         }
     ],
     "recompense": {
         "indice": {
-            "titre": "Monsieur paul",
+            "titre": "françois Rabelais",
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/c\/ce\/Paul_Bocuse_2007_-2.jpg",
-            "auteur": "Alain Elorza",
-            "date": "7 mai 2007"
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8d\/Francois_Rabelais_-_Portrait.jpg\/800px-Francois_Rabelais_-_Portrait.jpg",
+            "auteur": "inconnu",
+            "date": "inconnue"
         },
-        "legende": "Trois étoiles au Guide Michelin pendant 53 années (de 1965 à 2018), Paul Bocuse compte parmi les plus célèbres cuisiniers du monde et fut un précurseur de la nouvelle cuisine, un maître de la cuisine traditionnelle et de la gastronomie française."
+        "legende": "Médecin à l'hôtel-Dieu de Lyon cet humaniste et écrivain publia à Lyon : Pantagruel et Gargantua"
     }
 }

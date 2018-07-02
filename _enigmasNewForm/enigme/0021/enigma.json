@@ -1,48 +1,48 @@
 {
-    "theme": "un humaniste célèbre",
+    "theme": "une commune",
     "mot": {
-        "titre": "Rabelais",
-        "image": "image0.jpg",
+        "titre": "l'arbresle",
+        "image": "image0.JPG",
         "image-crop": "image0-crop.jpg",
-        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8d\/Francois_Rabelais_-_Portrait.jpg\/800px-Francois_Rabelais_-_Portrait.jpg",
-        "auteur": "inconnu",
-        "date": "inconnue"
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/a7\/Gare_de_L%27Arbresle.JPG\/1280px-Gare_de_L%27Arbresle.JPG",
+        "auteur": "Camster ",
+        "date": "8 juin 2014"
     },
     "indice": [
         {
-            "titre": "Penseur de la renaissance",
-            "image": "image1.jpg",
+            "titre": "son blason",
+            "image": "image1.png",
             "image-crop": "image1-crop.jpg",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/3a\/1543%2C_Andreas_Vesalius%27_Fabrica%2C_Base_Of_The_Brain.jpg",
-            "auteur": "inconnu",
-            "date": "inconnue"
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/2b\/Blason_ville_fr_L%27Arbresle_%28Rh%C3%B4ne%29.svg\/600px-Blason_ville_fr_L%27Arbresle_%28Rh%C3%B4ne%29.svg.png",
+            "auteur": "bvs-aca",
+            "date": "18 août 2008"
         },
         {
-            "titre": "Érudit",
+            "titre": "Son clocher",
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/22\/Da_Vinci_Vitruve_Luc_Viatour.jpg\/800px-Da_Vinci_Vitruve_Luc_Viatour.jpg",
-            "auteur": "inconnu",
-            "date": "inconnue"
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/9\/99\/L%27Arbresle%2C_%C3%A9glise_Nativit%C3%A9de_St_Jean_Baptiste.jpg\/399px-L%27Arbresle%2C_%C3%A9glise_Nativit%C3%A9de_St_Jean_Baptiste.jpg",
+            "auteur": "Dominique Robert",
+            "date": "19 September 2012"
         },
         {
-            "titre": "Protagoras",
+            "titre": "la brévenne",
             "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c1\/Salvator_Rosa_-_D%C3%A9mocrite_et_Protagoras.jpg\/800px-Salvator_Rosa_-_D%C3%A9mocrite_et_Protagoras.jpg",
-            "auteur": "inconnu",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/15\/L%27Arbresle_-_La_Br%C3%A9venne.jpg\/1280px-L%27Arbresle_-_La_Br%C3%A9venne.jpg",
+            "auteur": "Joannès Drevet",
             "date": "inconnue"
         }
     ],
     "recompense": {
         "indice": {
-            "titre": "françois Rabelais",
-            "image": "image4.jpg",
+            "titre": "l'arbresle",
+            "image": "image4.JPG",
             "image-crop": "image4-crop.jpg",
-            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8d\/Francois_Rabelais_-_Portrait.jpg\/800px-Francois_Rabelais_-_Portrait.jpg",
-            "auteur": "inconnu",
-            "date": "inconnue"
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/4\/4d\/Arbr_2.JPG\/1280px-Arbr_2.JPG",
+            "auteur": "Julien Bertrand",
+            "date": "11 janvier 2007"
         },
-        "legende": "Médecin à l'hôtel-Dieu de Lyon cet humaniste et écrivain publia à Lyon : Pantagruel et Gargantua"
+        "legende": "Comme l'attestent les armes et outils en silex trouvées au Muzard, l'homme occupe le site de L'Arbresle dès le néolithique. Au Moyen-Âge, la ville constitue une halte sur le \"Grand chemin Français\", l'itinéraire est prisé car il est le plus court pour rejoindre la capitale Paris. Il deviendra le \"Grand chemin de Paris à Lyon\", puis la \"Route Royale\". On la connait aujourd'hui sous le nom de la Route Nationale 7."
     }
 }

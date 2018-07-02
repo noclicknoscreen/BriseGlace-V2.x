@@ -1,0 +1,48 @@
+{
+    "theme": "un dispositif ferroviaire",
+    "mot": {
+        "titre": "VACMA",
+        "image": "image0.JPG",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/ac\/BB26000-pupitre-DSCF8005.JPG\/1280px-BB26000-pupitre-DSCF8005.JPG",
+        "auteur": "Polo Maurienne",
+        "date": "20 octobre 2012"
+    },
+    "indice": [
+        {
+            "titre": "la vigilance",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/4\/3915\/14815670908_b44335a9bc_b.jpg",
+            "auteur": " Björn Rudner",
+            "date": "16 août 2014"
+        },
+        {
+            "titre": "Les mains",
+            "image": "image2.JPG",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/ac\/BB26000-pupitre-DSCF8005.JPG\/1280px-BB26000-pupitre-DSCF8005.JPG",
+            "auteur": "Polo Maurienne",
+            "date": "20 octobre 2012"
+        },
+        {
+            "titre": "les pieds",
+            "image": "image3.JPG",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/ac\/BB26000-pupitre-DSCF8005.JPG\/1280px-BB26000-pupitre-DSCF8005.JPG",
+            "auteur": "Polo Maurienne",
+            "date": "20 octobre 2012"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "LA VACMA",
+            "image": "image4.JPG",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/ac\/BB26000-pupitre-DSCF8005.JPG\/1280px-BB26000-pupitre-DSCF8005.JPG",
+            "auteur": "Polo Maurienne",
+            "date": "20 octobre 2012"
+        },
+        "legende": "Pour prouver qu'il est en possession de ses moyen, le conducteur utilise la VACMA, Veille Automatique à Contrôle de Maintien d'Appui. Il appuie en permanence sur une pédale ou sur un \"cerclo\" (commande de vitesse) et doit relâcher brièvement toues les minutes. Sinon, un bruit strident rententit, puis le train s'arrête."
+    }
+}
