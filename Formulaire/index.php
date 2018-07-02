@@ -47,7 +47,7 @@ die('Erreur : ' . $e->getMessage());
 }
 $query = $bdd->query('SELECT COUNT(id) AS maxval FROM enigme WHERE complet="complet" ');
 $max_row = $query->fetch(PDO::FETCH_ASSOC);
-$max = $max_row['maxval'] + 1;
+$max = $max_row['maxval'];
 $query->closeCursor(); // Termine le traitement de la requête
 ?>
   <form  action="?" method="POST" id="form1" name="form1">
