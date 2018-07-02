@@ -157,19 +157,18 @@ if (isset($_POST['plus']))
 else if (isset($_POST['submit']))
 {
   require('script/back/create.php');
-  // echo "<form method=\"post\" action=\"?\"><button class=\"_button _button-1\" name=\"copie\" id=\"copie\"/>METTRE À JOUR</button></form>";
   clearFolder("tmp/");
   header('Location: index.php');
 }
 else if (isset($_POST['update']))
 {
   require('script/back/update.php');
-  // echo "<form method=\"post\" action=\"?\"><button class=\"_button _button-1\" name=\"copie\" id=\"copie\"/>Mettre à jour le jeu</button></form>";
   header('Location: index.php');
 }
 else if (isset($_POST['copie']))
 {
   require('script/back/copie.php');
+  header('Location: index.php');
 }
 
 require('script/front/old.php');
