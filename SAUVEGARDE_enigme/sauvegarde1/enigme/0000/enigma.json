@@ -1,0 +1,48 @@
+{
+    "theme": "un moyen de transport",
+    "mot": {
+        "titre": "micheline",
+        "image": "image0.JPG",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/8c\/Lyon_St_Paul.JPG",
+        "auteur": "Oxyman",
+        "date": "29 mars 2009"
+    },
+    "indice": [
+        {
+            "titre": "Bugatti",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c0\/Bugatti_pr%C3%A9sidentiel%2C_Cit%C3%A9_du_train.jpg\/1280px-Bugatti_pr%C3%A9sidentiel%2C_Cit%C3%A9_du_train.jpg",
+            "auteur": "Hugh Llewelyn",
+            "date": "29 mars 2009"
+        },
+        {
+            "titre": "Bibendum",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/88\/Michelin_Poster_1898.jpg",
+            "auteur": "Ragilnih",
+            "date": "23 novembre 2017 "
+        },
+        {
+            "titre": "Locomotive",
+            "image": "image3.JPG",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/6\/6e\/France_Paris_Champs_Elysees_Autorail_Picasso.JPG",
+            "auteur": "GIRAUD Patrick",
+            "date": "29 mai 2003"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "Micheline",
+            "image": "image4.JPG",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/8c\/Lyon_St_Paul.JPG",
+            "auteur": "Smiley Toerist",
+            "date": "21 mars 2009"
+        },
+        "legende": "Inventée par le fils de la marque au Bibendum (Marcel Michelin) et construite par la société éponyme dans les années 1931, la « Micheline » est un autorail rapide équipé de roues spéciales munies de pneus brevetés appelés  “pneurail”. Dès 1932, Bugatti produit des véhicules similaires en version luxe."
+    }
+}

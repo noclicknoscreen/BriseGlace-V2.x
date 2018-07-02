@@ -7,14 +7,7 @@ $new_filename = "tmp/image" . $_POST['num'] . "-crop.jpg";
 $src = $_POST['src'];
 
 $info = new SplFileInfo($src);
-if ($info->getExtension() == "jpg" || $info->getExtension() == "jpeg" || $info->getExtension() == "JPG" || $info->getExtension() == "svg")
-{
-  $img_r = imagecreatefromjpeg($src);
-  $dst_r = ImageCreateTrueColor( $targ_w, $targ_h);
-  imagecopyresampled($dst_r,$img_r,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,$_POST['w'],$_POST['h']);
-  imagejpeg($dst_r, $new_filename, $jpeg_quality);
-}
-else if($info->getExtension() == "png")
+if($info->getExtension() == "png")
 {
   $img_r = imagecreatefrompng($src);
   $dst_r = ImageCreateTrueColor( $targ_w, $targ_h );
@@ -24,7 +17,13 @@ else if($info->getExtension() == "png")
   imagecopyresampled($dst_r,$img_r,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,$_POST['w'],$_POST['h']);
   imagejpeg($dst_r, $new_filename);
 }
-
+else
+{
+  $img_r = imagecreatefromjpeg($src);
+  $dst_r = ImageCreateTrueColor( $targ_w, $targ_h);
+  imagecopyresampled($dst_r,$img_r,0,0,$_POST['x'],$_POST['y'],$targ_w,$targ_h,$_POST['w'],$_POST['h']);
+  imagejpeg($dst_r, $new_filename, $jpeg_quality);
+}
 
 echo "<img src='" . $new_filename . "' />"
 

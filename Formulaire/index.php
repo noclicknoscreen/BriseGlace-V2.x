@@ -1,5 +1,3 @@
-<!doctype html>
-
 <html>
 <head>
     <meta charset="utf-8">
@@ -23,9 +21,8 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body class="body page-index clearfix">
-
+<?php ini_set('php_value max_input_vars',3000); ?>
 <script type="text/javascript">
-
 function handleSubmit(){
     document.getElementById("form1").submit();
 }
@@ -38,8 +35,8 @@ $('#copie').on('click', function() {
   location.reload();
 });
 </script>
-
 <?php
+ob_start();
 try
 {
 $bdd = new PDO('mysql:host=localhost;dbname=formulaire;charset=utf8', 'root', 'root');
@@ -48,12 +45,11 @@ catch (Exception $e)
 {
 die('Erreur : ' . $e->getMessage());
 }
-$query = $bdd->query('SELECT MAX(id) AS maxval FROM enigme WHERE complet="complet"');
+$query = $bdd->query('SELECT COUNT(id) AS maxval FROM enigme WHERE complet="complet" ');
 $max_row = $query->fetch(PDO::FETCH_ASSOC);
-$max = $max_row['maxval'] + 1;
+$max = $max_row['maxval'];
 $query->closeCursor(); // Termine le traitement de la requête
 ?>
-
   <form  action="?" method="POST" id="form1" name="form1">
 
   <div class="element element-2"></div>
@@ -110,8 +106,6 @@ $query->closeCursor(); // Termine le traitement de la requête
   <p class="text text-1"><strong><strong>LE MOT À TROUVER</strong></strong></p>
 
 </form>
-
-
   <script type="text/javascript">
   function cocher(id)
     {
@@ -132,9 +126,7 @@ $query->closeCursor(); // Termine le traitement de la requête
           }
         }
     }
-
   </script>
-
 <?php
 function clearFolder($folder)
 {
@@ -160,36 +152,27 @@ require('script/utile/function.php');
 if (isset($_POST['plus']))
 {
   require('script/back/create.php');
-    ?>
-    <script>
-    document.getElementById('trier').value="complet DESC";
-    document.getElementById("form1").submit();
-    </script>
-    <?php
+  header('Location: index.php#update');
 }
 else if (isset($_POST['submit']))
 {
   require('script/back/create.php');
-  // echo "<form method=\"post\" action=\"?\"><button class=\"_button _button-1\" name=\"copie\" id=\"copie\"/>METTRE À JOUR</button></form>";
   clearFolder("tmp/");
-  echo "<meta http-equiv=\"refresh\" content=\"0\">";
+  header('Location: index.php');
 }
 else if (isset($_POST['update']))
 {
   require('script/back/update.php');
-  // echo "<form method=\"post\" action=\"?\"><button class=\"_button _button-1\" name=\"copie\" id=\"copie\"/>Mettre à jour le jeu</button></form>";
-  echo "<meta http-equiv=\"refresh\" content=\"0\">";
+  header('Location: index.php');
 }
 else if (isset($_POST['copie']))
 {
   require('script/back/copie.php');
+  header('Location: index.php');
 }
 
 require('script/front/old.php');
-
+ob_end_flush();
 ?>
-
-
-
 </body>
 </html>

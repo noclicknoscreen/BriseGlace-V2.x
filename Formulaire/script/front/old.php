@@ -1,5 +1,4 @@
 <form  action="?" method="POST" id="form_old" name="form_old">
-
 <?php
 try
 {
@@ -97,9 +96,7 @@ else
 // On récupère tout le contenu de la table enigme
 // $reponse = $bdd->query('SELECT * FROM enigme ORDER BY id');
 $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);;
-
 // On affiche chaque entrée une à une
-
 ?>
   <input type="text" name="good_requet" id="good_requet" value="<?php echo $good_requet?>" hidden/>
 <?php
@@ -434,5 +431,4 @@ if(confirm("Voulez vous vraiment effacer l'enigme ?"))
   }
 
 }
-
 </script>

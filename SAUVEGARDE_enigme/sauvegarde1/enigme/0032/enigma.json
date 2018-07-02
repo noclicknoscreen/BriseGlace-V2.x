@@ -1,0 +1,48 @@
+{
+    "theme": "un dispositif ferroviaire",
+    "mot": {
+        "titre": "voix",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/1e\/Human_voice_spectrogram.jpg\/1280px-Human_voice_spectrogram.jpg",
+        "auteur": "Dvortygirl, Mysid",
+        "date": "6 août 2007"
+    },
+    "indice": [
+        {
+            "titre": "jingle",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/5\/4273\/34975192235_016e6f93f7_b.jpg",
+            "auteur": "James West",
+            "date": "29 mai 2017 "
+        },
+        {
+            "titre": "haut parleur",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/5\/4096\/4933225386_a52282b247_b.jpg",
+            "auteur": " Cilou101",
+            "date": "27 août 2010"
+        },
+        {
+            "titre": "informations",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/1\/331\/19634372369_8ce703c80c_b.jpg",
+            "auteur": "Patrick Janicek",
+            "date": "8 juillet 2015"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "la voix du rail",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/8\/7527\/27759765261_b5ea0913fc_b.jpg",
+            "auteur": "Alexis Dupuis",
+            "date": "19 avril 2016 "
+        },
+        "legende": "Et oui, le rail a une voix et même un nom : \"Simone Hérault\". Vous l'entendez dans toute les gares de France annonçant les départs et les arrivées. Comédienne et ex-journaliste de France Inter, elle accompagne les voyageurs depuis plus de 20 ans. Bien sûr, elle n'a pas enregistré toutes les annonces. C'est grâce à la technique de concaténation que le logiciel peut former l'ensemble des phrases nécessaire à chaque desserte. Il suffit préalablement d'enregistrer des annonces clés en trois versions : intonation de début, milieu et fin de phrase."
+    }
+}

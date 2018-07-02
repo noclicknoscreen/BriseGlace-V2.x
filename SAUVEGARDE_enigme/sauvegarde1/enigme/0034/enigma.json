@@ -1,0 +1,48 @@
+{
+    "theme": "une commune",
+    "mot": {
+        "titre": "lentilly",
+        "image": "image0.",
+        "image-crop": "image0-crop.jpg",
+        "url": "",
+        "auteur": "",
+        "date": ""
+    },
+    "indice": [
+        {
+            "titre": "",
+            "image": "image1.",
+            "image-crop": "image1-crop.jpg",
+            "url": "",
+            "auteur": "",
+            "date": ""
+        },
+        {
+            "titre": "Jean Jacques de Boissieu",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/a\/ac\/Jjboissieu.jpg",
+            "auteur": "Autoportrait",
+            "date": "XVIIIe siècle"
+        },
+        {
+            "titre": "",
+            "image": "image3.",
+            "image-crop": "image3-crop.jpg",
+            "url": "",
+            "auteur": "",
+            "date": ""
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "lentilly",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/1\/19\/1200pix-CM-vue-generale-1-11-2009_%289a%29.jpg",
+            "auteur": "Cadsic",
+            "date": "1 septembre 2010"
+        },
+        "legende": ""
+    }
+}
