@@ -135,6 +135,10 @@ private:
     
 public:
     
+    timer(){
+        mTimer.reset(1.0f);
+    }
+    
     // Timer Event
     ofEvent<void> timerEnd;
     

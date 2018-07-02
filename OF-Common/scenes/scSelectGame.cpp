@@ -27,21 +27,33 @@ void scSelectGame::update(float dt){
 
 void scSelectGame::draw(){ //draw scene 1 here
     // Draw title
-    if(mIndexSequence >= 2){
+    if(mIndexSequence >= 0){
         scScene::drawTitle("Bienvenue sur \"Jeux de mô\"", ofColor::black, ofPoint(0, 50));
     }
-    
-    if(mIndexSequence <= 2){
+    if(mIndexSequence == 1 || mIndexSequence == 2){
         scScene::drawSubTitle("Vous êtes joueurs ?", ofColor::black, ofPoint(0, 300));
-        if(mIndexSequence >= 1){
-            scScene::drawTitle("Nous oui !", ofColor::black, ofPoint(0, 350));
-        }
+    }
+    if(mIndexSequence == 2){
+        scScene::drawTitle("Nous oui !", ofColor::black, ofPoint(0, 350));
+    }
+    if(mIndexSequence == 3){
+        scScene::drawSubTitle(utils::cleanString("Les mô, sont des petits cubes dotés d’une oreille, d’un long cou, de deux yeux et d’une bouche."), ofColor::black, ofPoint(0, 300));
+        scScene::drawSubTitle(utils::cleanString("Ils vivent dans les gares et répètent tout ce qu’on leur dit !"), ofColor::black, ofPoint(0, 460));
+    }
+    if(mIndexSequence == 4){
+        scScene::drawSubTitle(utils::cleanString("Comme ils n’ont pas beaucoup de mémoire,"), ofColor::black, ofPoint(0, 300));
+        scScene::drawSubTitle(utils::cleanString("Aidez-les à retrouver leurs mots perdus..."), ofColor::black, ofPoint(0, 375));
+    }
+    if(mIndexSequence >= 5){
+        scScene::drawTitle(utils::cleanString("A vos marques,"), ofColor::black, ofPoint(0, 300));
+    }
+    if(mIndexSequence >= 6){
+        scScene::drawTitle(utils::cleanString("Prêts,"), ofColor::black, ofPoint(0, 400));
+    }
+    if(mIndexSequence >= 7){
+        scScene::drawTitle(utils::cleanString("Parlez !"), ofColor::black, ofPoint(0, 500));
     }
     
-    if(mIndexSequence >= 3){
-        scScene::drawSubTitle("Pour commencer,", ofColor::black, ofPoint(0, 300));
-        scScene::drawTitle("Dites le nom de votre jeu préféré...", ofColor::black, ofPoint(0, 350));
-    }
     scScene::drawSpokenWord(mPlayerMessage, mPlayerColor);
     
     bigPlayerManager().draw();
@@ -143,12 +155,50 @@ void scSelectGame::timerEraseWordEnd(){
 }
 
 void scSelectGame::timerTextSequenceEnd(){
-    if(mIndexSequence <= 3){
-        mTimerTextSequence.startTimer(1);
+    
+    if(mIndexSequence == 0){
+        mTimerTextSequence.startTimer(cTimerTextSequence1);
         mIndexSequence++;
+        
+    }else if(mIndexSequence == 1){
+        mTimerTextSequence.startTimer(cTimerTextSequence1);
+        mIndexSequence++;
+        
+    }else if(mIndexSequence == 2){
+        mTimerTextSequence.startTimer(cTimerTextSequence2);
+        mIndexSequence++;
+        
+    }else if(mIndexSequence == 3){
+        mTimerTextSequence.startTimer(cTimerTextSequence2);
+        mIndexSequence++;
+        
+    }else if(mIndexSequence == 4){
+        mTimerTextSequence.startTimer(cTimerTextSequence3);
+        mIndexSequence++;
+        
+    }else if(mIndexSequence == 5){
+        mTimerTextSequence.startTimer(cTimerTextSequence3);
+        mIndexSequence++;
+        
+    }else if(mIndexSequence == 6){
+        mTimerTextSequence.startTimer(cTimerTextSequence3);
+        mIndexSequence++;
+        
+    }else if(mIndexSequence == 7){
+        mTimerTextSequence.startTimer(cTimerTextSequence3);
+        mIndexSequence++;
+        
+    }else if(mIndexSequence == 8){
+        mTimerTextSequence.startTimer(cTimerTextSequence3);
+        mIndexSequence++;
+        
     }else{
         mTimerTextSequence.stop();
     }
+    
+    ofLogNotice() << "timerTextSequenceEnd, remaining time : " << mTimerTextSequence.toString();
+    
+    
 }
 
 

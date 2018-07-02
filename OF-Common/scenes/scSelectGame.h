@@ -21,6 +21,7 @@ public:
     void draw();
     
     void sceneWillAppear( ofxScene * fromScreen );
+//    void sceneDidAppear();
     void sceneWillDisappear( ofxScene * fromScreen );
     
     void someoneSpoke(player & _player);
@@ -30,13 +31,17 @@ private:
     void    timerTextSequenceEnd();
     int     mIndexSequence;
     
+    const float cTimerTextSequence1 = 1.0f;
+    const float cTimerTextSequence2 = 9.0f;
+    const float cTimerTextSequence3 = 1.5f;
+    
     timer   mTimerEraseWord;
-    void  timerEraseWordEnd();
+    void    timerEraseWordEnd();
     
 private:
     void  timerSignAnimationEnd();
     int   numPlayer;
     int   numMessage;
-    
+
 };
 
