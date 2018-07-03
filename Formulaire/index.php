@@ -78,12 +78,14 @@ $query->closeCursor(); // Termine le traitement de la requête
 
   <select id="trier" name="trier" class="-select -select-3 js-trier" onChange="submit()">
     <option value="id" <?php if(!isset($_POST['trier'])) {echo "selected";}?>>Trier par</option>
-    <option value="mot" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "mot")) {echo "selected";}?>>Mot: par ordre croissant</option>
-    <option value="mot DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "mot DESC")) {echo "selected";}?>>Mot: par ordre décroissant</option>
-    <option value="id" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "id")) {echo "selected";}?>>id: par ordre croissant</option>
-    <option value="id DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "id DESC")) {echo "selected";}?>>id: par ordre décroissant</option>
-    <option value="date" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "date")) {echo "selected";}?>>date/heure: par ordre croissant</option>
-    <option value="date DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "date DESC")) {echo "selected";}?>>date/heure: par ordre décroissant</option>
+    <option value="mot" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "mot")) {echo "selected";}?>>Mot croissant</option>
+    <option value="mot DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "mot DESC")) {echo "selected";}?>>Mot décroissant</option>
+    <option value="theme" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "theme")) {echo "selected";}?>>Theme croissant</option>
+    <option value="theme DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "theme DESC")) {echo "selected";}?>>Theme décroissant</option>
+    <option value="id" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "id")) {echo "selected";}?>>Date de création croissant</option>
+    <option value="id DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "id DESC")) {echo "selected";}?>>Date de création décroissant</option>
+    <option value="date" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "date")) {echo "selected";}?>>Date de modifications croissant</option>
+    <option value="date DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "date DESC")) {echo "selected";}?>>Date de modifications décroissant</option>
     <option value="complet" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "complet")) {echo "selected";}?>>Enigme complete</option>
     <option value="complet DESC" <?php if(isset($_POST['trier']) && !strcmp($_POST['trier'], "complet DESC")) {echo "selected";}?>>Enigme incomplete</option>
   <select>
