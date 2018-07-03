@@ -45,11 +45,16 @@ void scGame::setup(){
     
     // ---------------------------------------------------------------------------
     // Format 834 x 753
-    ofPoint originalSize(834, 753);
-    float factor = 0.25f;
+    ofPoint originalSizeGare(834, 753);
+    ofPoint originalSizeDepart(295, 531);
+    float factorGare = 0.25f;
+    float factorDepart = 0.35f;
     
     gare.load("Gare-A01.png");
-    gare.resize(factor * originalSize.x, factor * originalSize.y);
+    gare.resize(factorGare * originalSizeGare.x, factorGare * originalSizeGare.y);
+    
+    depart.load("DEPART-A01.png");
+    depart.resize(factorDepart * originalSizeDepart.x, factorDepart * originalSizeDepart.y);
     
 }
 
@@ -93,13 +98,16 @@ void scGame::draw(){
     // -----------------------------------------------------------------
     ofPushStyle();
     ofEnableAlphaBlending();
+    ofDisableDepthTest();
+    ofDisableNormalizedTexCoords();
     ofSetColor(255);
     gare.draw(0.85 * ofGetWidth(), 0.715 * ofGetHeight());
+    depart.draw(0.02 * ofGetWidth(), 0.72 * ofGetHeight() -5);
     ofPopStyle();
     
-    if(timerForceWin.getValuef() > 0.1f){
-        float x = ofMap(timerForceWin.getValuef(), 0, 1, ofGetWidth() + 25, 0);
-        petitTrain.draw(ofPoint(x, ofGetHeight() - 175));
+    if(timerForceWin.getValuef() > 0.0f){
+        float x = ofMap(timerForceWin.getValuef(), 0, 1, ofGetWidth(), -10);
+        petitTrain.draw(ofPoint(x, ofGetHeight() - 182));
     }
     
     

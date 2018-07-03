@@ -34,7 +34,7 @@ void scHint::setup(){  //load your scene 1 assets here...
     gui.loadFromFile(settingsFileNameHint);
     
     // Draw author
-    mAuthorDraw.load(globalFontName, 16);
+    mAuthorDraw.load(globalFontName, 8);
 
 };
 
@@ -68,7 +68,7 @@ void scHint::draw(){ //draw scene 1 here
     ofSetColor(ofColor::black, 200);
     
     ofPushMatrix();
-    ofTranslate(0.383 * ofGetWidth(), 0.795 * ofGetHeight());
+    ofTranslate(0.383 * ofGetWidth(), 0.795 * ofGetHeight() - 50);
 //    ofRotateZ(-90);
     
     mAuthorDraw.drawString(bigEnigmaManager().getCurrentEnigma()->getAuteur(bigEnigmaManager().pickHintIndex()), 0, 0);

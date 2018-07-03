@@ -16,7 +16,7 @@ void scVictory::setup(){  //load your scene 1 assets here...
     mNumberGames = 0;
     
     // Draw author
-    mAuthorDraw.load(globalFontName, 16);
+    mAuthorDraw.load(globalFontName, 8);
     
 };
 

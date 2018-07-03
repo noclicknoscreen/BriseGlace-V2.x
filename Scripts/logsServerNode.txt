@@ -23888,3 +23888,2677 @@ menthe à l'eau
 Players sent to display : 
 Players sent to display : 
 Players sent to display : 
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+le caractère
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+j'ai déjà réveillé
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:q_GuPcajYnz4kl32AAAC IP:192.168.2.23
+New message from 3:192.168.2.23
+mais ça fonctionne ou quoi
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:4l875_6kFinjNngVAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+ben oui
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Eurosport
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+j'ai oublié de mettre le four
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+m'embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Hugo délire
+Players sent to display : 
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ c'est gagné
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ok on rentre chez nous
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+m'embrasser
+Players sent to display : 
+resetPlayers
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ non memory merde
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+est-ce que ça marche
+Players sent to display : 
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ouais ça marche
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+coup de vent
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:fJHW7_0tauBkcm3DAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+non
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:4l875_6kFinjNngVAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+comment
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:q_GuPcajYnz4kl32AAAC IP:192.168.2.23
+New message from 3:192.168.2.23
+le petit couvent
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:q_GuPcajYnz4kl32AAAC IP:192.168.2.23
+New message from 3:192.168.2.23
+tu peux me faire un petit pipi
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:q_GuPcajYnz4kl32AAAC IP:192.168.2.23
+New message from 3:192.168.2.23
+quelle question
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : 4l875_6kFinjNngVAAAB
+Restart Raspberry : 192.168.2.22
+Restart  192.168.2.22
+Connection to 192.168.2.22 closed by remote host.
+exec: Connection to 192.168.2.22 closed by remote host.
+
+recognition connected : VVwfkcphyI2SIcV3AAAD
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition disconnected : VVwfkcphyI2SIcV3AAAD
+Restart Raspberry : 192.168.2.22
+Restart  192.168.2.22
+Connection to 192.168.2.22 closed by remote host.
+exec: Connection to 192.168.2.22 closed by remote host.
+
+recognition connected : bOYGmKhl_2n98hb6AAAE
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition disconnected : q_GuPcajYnz4kl32AAAC
+Restart Raspberry : 192.168.2.23
+Restart  192.168.2.23
+Connection to 192.168.2.23 closed by remote host.
+exec: Connection to 192.168.2.23 closed by remote host.
+
+recognition connected : OIINh1b34TErI0CBAAAF
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition disconnected : bOYGmKhl_2n98hb6AAAE
+Restart Raspberry : 192.168.2.22
+Restart  192.168.2.22
+Connection to 192.168.2.22 closed by remote host.
+exec: Connection to 192.168.2.22 closed by remote host.
+
+recognition connected : OrQqu4opYeNMVi77AAAG
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+==================================================
+
+Server starting at : 2018-7-3 08:42:21
+
+Server Notes :
+Recognition page : /recognition
+Display page : /display
+--
+Restart Raspberry : 192.168.2.21
+Restart  192.168.2.21
+Connection to 192.168.2.21 closed by remote host.
+exec: Connection to 192.168.2.21 closed by remote host.
+
+Restart Raspberry : 192.168.2.22
+Restart  192.168.2.22
+Connection to 192.168.2.22 closed by remote host.
+exec: Connection to 192.168.2.22 closed by remote host.
+
+Restart Raspberry : 192.168.2.23
+Restart  192.168.2.23
+Connection to 192.168.2.23 closed by remote host.
+exec: Connection to 192.168.2.23 closed by remote host.
+
+listening http STT Server on port 8080
+--
+listening https STT Server on port 8443
+--
+resetPlayers
+recognition connected : O30Xi_QjcVKkoWXvAAAA
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : LYOODZ18gcM0WODhAAAB
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : EEfIxeHW29ZJjFPAAAAC
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+la la la la la
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+n'importe quoi
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+vibreur
+Players sent to display : 
+Old player found, Id:EEfIxeHW29ZJjFPAAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+libraire
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:EEfIxeHW29ZJjFPAAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+libraire
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+mais ouais
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+naviguer
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+quel est le fusible
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+écouter parce que j'avais
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:EEfIxeHW29ZJjFPAAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+le matin c'est bien d'ouvrir
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+la veille
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+chaque année
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+j'ai un pote dans la clim c'est bien
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+je mets de l'eau
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+de ce qu'il m'a expliqué ça passe par
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ça passe pas
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+c'est vraiment
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:EEfIxeHW29ZJjFPAAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+piano Lucien
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+il y a 12
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ouvrir tuyau et ramener
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+Raymond Béjart de 50 balles le loyer
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+le problème des copropriétés
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+faire des travaux.
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+je viens de te répondre
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+je vois avec elle pour la maison
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:EEfIxeHW29ZJjFPAAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+qui est comme
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+demander à tous les points de guérison
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+j'ai travaillé
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+mission de Bastien
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+Decathlon Saintes
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+date de votre confiance pour être mieux
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+de quoi je pense que une bonne piste
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+bien je me disais que ce serait intéressant d'avoir le lieu
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ détournement de cuivre
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+après ce que je t'ai envoyé
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ ce que je me disais
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ouais parce qu'on ne voit pas bien
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+après il y a pas de souci
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+un abonnement
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+sur le sur le bar
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ de texture
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+balourd
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+que j'aime dans la peinture
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ idée de ouvrir sur ce
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+on valide ensemble
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+sur la partie
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+non je parle en général
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+mais bon
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ouais ben
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+je ne peux pas avoir un fournisseur
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+appelle Mathilde
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+bah là il va voir
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+que c'est dommage non pas du tout
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ projection
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+les trucs
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+deuxième main
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ le troisième remaniement du restaurant
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+c'est pour ça que j'aimerais
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : EEfIxeHW29ZJjFPAAAAC
+Restart Raspberry : 192.168.2.22
+Restart  192.168.2.22
+Connection to 192.168.2.22 closed by remote host.
+exec: Connection to 192.168.2.22 closed by remote host.
+
+recognition connected : cgpemQU4mduqAz5IAAAD
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ouais ben j'aimerais bien que tu viennes
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+Shazam
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+de naissance
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+appelle en général
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+le ressenti négatif
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+zombie pas très fort
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+mais non
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+par contre
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+Annabelle 2
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+améliore
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+et voilà et donc là par contre
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+je suis pas disponible
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+t'inquiète elle va te ramener en
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ envoie quand même
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+je m'appelle
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+démystifier
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+il faut pas avoir d'enfant
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+mets le téléphone en particulier
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+demande à des gens
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+Ouais mais en fait
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+Minecraft fille
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+medium Kia
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ça dépend
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+je veux des vidéos sur YouTube
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+virginité
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+attention
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ça veut dire que sur la durée
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+donc ça veut dire que
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ben ouais mais
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+aller
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+bon après-midi
+Players sent to display : 
+Old player found, Id:cgpemQU4mduqAz5IAAAD IP:192.168.2.22
+New message from 2:192.168.2.22
+bon après-midi
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+une belle définition en fait du ruissellement
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+sf5 pour s'endormir
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ il est bien difficile
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+les paramètres pour 1h
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ouais
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ajouter l'auteur
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+bah c'est chiant toi
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+adresse complète saison 10
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+la lumière
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+je le mettrai
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+on veut de la pluie
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+les plus belles citations
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : cgpemQU4mduqAz5IAAAD
+Restart Raspberry : 192.168.2.22
+Restart  192.168.2.22
+Connection to 192.168.2.22 closed by remote host.
+exec: Connection to 192.168.2.22 closed by remote host.
+
+recognition connected : IUW6i8CdrAqRaB8xAAAE
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+32 / 3
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+j'ai créé par erreur
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+des images vives en fait
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+pas trop faire des trucs
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+Bonjour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+de faire une recherche sur l'appartement à zéro
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+faire une recherche sur le répertoire
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ tous les fichiers à zéro
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+maman c'est bon
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+voyager 310 à répertoire
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+mais là c'est quoi ça
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+programme doit pas travailler
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+quelle heure ils sont arrivés là par erreur
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+à plus tard
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+je peux pas supprimer
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ça aussi c'est vraiment récurrent
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ tu trouves comment ne pas les générer
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+tu supprimes tu images donc
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ cours du développement 0
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+l'image
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ créer un fichier média 0 pixel
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+j'adore quand tu rien à voir
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+moi je pointe sur Enigma newform line
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ j'aime tout ce qui est pas ça qui à mon niveau
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+tu peux me le mettre
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+m'embrasser
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+couvent
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+coucou
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+boomerang
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+mot bracelet
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+papillote
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+coucou
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+m'embrasser
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+son préféré
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ Skull
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+blogueuse
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+d'ailleurs je voudrais te demander un petit truc je les ai les mots les nouvelles lignes ou pas coucou alors
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+1 2 3 4 1 2 3 4 à lalalala lalalala lalalala lalalala
+Players sent to display : 
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+coucou
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ coucou
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+jamais avec
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+bien à toi
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+la base de donnée à toi elle est où
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ bah si moi je suis à jour sur repository donc c'est ça ma question
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+m'embrasser
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+pourquoi lui il a joué pas moi
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+diabète
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Rabelais
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+pourquoi Kennedy me manque
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+c'est plutôt chez moi que ça se passe
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+vérifie le dossier tu vas chercher
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ mais c'est vrai
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+mais mais du coup dernier petit coup de pression après je te laisse
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+superflu
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+continue quand ce sera après tu pourras
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ et tu me préviens
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ça marche
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+du coup
+Players sent to display : 
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ quoi c'est
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+vas-y je t'emmerde
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+non non c'est bon
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+moi je veux bien le petit train
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+1942 ans
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+du coup c'est 1900
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+météo de Marans
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+dans GTA V
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+œdipe et je pense
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+350 images
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ c'était 6 secondes
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+même boucle que les personnages
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ ça me prenait trop de temps de refaire une boucle
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+vraiment marre de tout
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ j'ai prêté
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+abat-jour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+c'est tout le travail intellectuel
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+marteau
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+Domingo
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+il a fini de faire
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+mais bon ils sont verts
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+pas que m'embrasser
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+qui va à la vitesse
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ je pense
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+écrire un bootcut spécial donc
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ du coup on le fait
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+du coup il fait comme ça tu vas te faire une minute trente
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+Val-de-Seine
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+status
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+images de poules
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+je suis pas là faut passer une commande
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+tu as pas envie de dire
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+va voir dans le dans le répertoire
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ remonte dans le répertoire normalement
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+photos de Lille
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+déplacer dans la corbeille
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+un truc à faire pour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+à m'embrasser
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+m'embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+mots cachés
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ma session pas besoin de memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:LYOODZ18gcM0WODhAAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+titanoreine après-midi
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+parce que tu as commandé 3
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+recognition disconnected : LYOODZ18gcM0WODhAAAB
+Restart Raspberry : 192.168.2.23
+Restart  192.168.2.23
+Connection to 192.168.2.23 closed by remote host.
+exec: Connection to 192.168.2.23 closed by remote host.
+
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+mon petit
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+recognition connected : Np12vwS_FY43wy78AAAF
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+m'embrasser
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+vous brassez
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+horaires de train
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Momo bras
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+des moments
+Players sent to display : 
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+monobrosse de Momo
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ mots cachés
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+conduis-moi
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+rapidement
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ben oui mais voilà tu te retrouves avec le problème qu'on tous les animateurs
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+lance pas la bonne vitesse il dérape
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+travail en avance
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+oui mais tu auras même problème on est là en avance
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+memory
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Salut
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+c'est un petit nom
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Google ralent
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+bah je pense.
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+memory
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+mots masqués
+Players sent to display : 
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+où acheter
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+petit train
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+oui
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ouais
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ce que je me disais
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ juste un petit panneau
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+non
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+allez bulle pas transparente ça c'est pas grave
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ ça rajoute un peu profonde
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+bah au moins
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+décollage
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ mots masqués
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+comprenant 7 à quoi il sert parce que il est marrant mais
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+sinon si vous ne parlez on répétera tout
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+bon masqué
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+nova memory
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ ils vont pas mémoriser dans
+Players sent to display : 
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+mémoriser
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ils vont pas mémoriser là
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ si on leur dit au début les gens vont pas mémoriser à quoi il sert
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+horaires de bus de la ligne 18 fait ils ont rien à mémoriser de rien
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Bonjour
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ oui
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+n'importe quoi
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+la la la la
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+oui
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+ah merde je sais pas si le phone
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+visiophone
+Players sent to display : 
+resetPlayers
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+xylophone
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+c'est quoi un cheval
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ouais je sais pas quoi dire
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+memory
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+memory
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Guivarc'h
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+voili me positionner
+Players sent to display : 
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+positionner
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+le petit train
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Anthony tout à chaque fois il va passer il va passer au même endroit on va demander
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+90
+Players sent to display : 
+resetPlayers
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+Manon Marsault
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+on passe devant
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+comme les indices ils arrivent alors fixe dans la durée du jeu avec le petit train se déplace
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+de la même façon
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ chaque fois que l'on va demander un indice le petit train ils sont au même endroit donc on peut mettre sur un panneau pour dire
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ma remarque c'est ça se peut faire
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ à moindre frais
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+je te donne ça après on fait ce qu'on veut
+Players sent to display : 
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+images de demain
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+photos dessiner m'embrasser
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+inch'Allah quand il arriva pour niveau de la tête du bonhomme bleu normalement il va demander un indice
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+non maintenant
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+pourquoi on peut mettre un petit panneau soit
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Ouais kiss
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+redondance peut-être du coup
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+non
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+centre
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+passant
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ passant
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ vas-y j'ai gagné
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+de Chine
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ tu avais d'autres possibilités pour mettre sur une demi-lune
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Lionel a compris
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ Tassin
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+bar bar bar bar bar bar Bordeaux
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+disparais
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+un cube à la place de l'espace
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+pourquoi il choisit n'importe quoi
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+mot de lettres qui se cache derrière les yeux
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+blogueuse
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+blogueuse
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+comment prépare les choisis
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+est-ce que l'abbé Pierre
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+balance la sauce
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ m'embrasser
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+enluminure
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+alors les petits cubes
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Toto
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Jean-Paul
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Jean-Paul
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Bocuse
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+m'embrasser
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+memory
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+je peux rester super tard tu pars à 5h30
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+tu dors bien.
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+m'embrasser
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+moyenne
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+le boulot
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+quel est l'auteur
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ l'auteur de
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+moi je ferais mieux
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+j'attends tes petites étiquettes
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+modifier s'il était là ça roule
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+bourgeoisie mise en page
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+tête épaule et genoux pieds genoux pied
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+c'est sûr qu'elles sont
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+blanche
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Blanchon
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+blanche
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ça claque
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ Cyril
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+Pizza
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ Pizza
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+éternuement
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+éternuement
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+animaux
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+mot craché
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ mot frapper
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+m'embrasser
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ ça marche pas
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+m'embrasser
+Players sent to display : 
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+m'embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+vas-y en chêne
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ m'embrasser dans memories
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+Lorie
+Players sent to display : 
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+memory
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+memory
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ne pas mélanger
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Jean-Paul memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+coordonnées
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+on a connu mieux memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+une fois
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+comme ça
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+cinéma Royan
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+m'embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+mots masqués
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+vous brassez Avignon
+Players sent to display : 
+resetPlayers
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+remettre l'écran
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+as-tu la réponse
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+tu me dis tu veux le concierge
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+porno
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+synonyme
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+le derrière
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+j'aime bien qu'on va devoir l'ajuster
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+docteur c'est bon
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+la Massara
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+Momo me mastiquer
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ça ça pourra marcher aussi
+Players sent to display : 
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+ bon masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:O30Xi_QjcVKkoWXvAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+rue des Moulins
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+il faudrait qu'il en parle
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:IUW6i8CdrAqRaB8xAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+unify
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Np12vwS_FY43wy78AAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+inquiète hier
+Players sent to display : 
+Players sent to display : 
