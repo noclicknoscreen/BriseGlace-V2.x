@@ -73,5 +73,6 @@ protected:
     
     // Tchou, tchou, le petit train
     imageSequence petitTrain;
+    ofImage       gare;
     
 };

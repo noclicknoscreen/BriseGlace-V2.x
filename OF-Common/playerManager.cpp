@@ -26,26 +26,26 @@ void playerManager::setup(){
     // 1st player is blue
     mColors[1] = player1;
     mSequencesPath[1] = "Cube-Bleu";
-    mBullesPath[1] = "Bulles/BulleGauche.png";
+    mBullesPath[1] = "Bulles/BulleGauche-Blanche.png";
     mPositions[1] = ofPoint(450, ofGetHeight() + 20);
     mBullesPos[1] = ofPoint(- 325, 190);
     // Red
     mColors[2] = player2;
     mSequencesPath[2] = "Cube-Rouge";
-    mBullesPath[2] = "Bulles/BulleDroite.png";
+    mBullesPath[2] = "Bulles/BulleDroite-Blanche.png";
     mPositions[2] = ofPoint(0.5 * ofGetWidth() - 75, ofGetHeight() + 20);
     mBullesPos[2] = ofPoint(125, 175);
 //    mBullesPos[2] = ofPoint(- 310, 180);
     // Purple
     mColors[3] = player3;
     mSequencesPath[3] = "Cube-Violet";
-    mBullesPath[3] = "Bulles/BulleDroite.png";
+    mBullesPath[3] = "Bulles/BulleDroite-Blanche.png";
     mPositions[3] = ofPoint(ofGetWidth() - 450, ofGetHeight() + 20);
     mBullesPos[3] = ofPoint(120, 150);
     // MySelf = Gray
     mColors[4] = player1;
     mSequencesPath[4] = "Cube-Rouge";
-    mBullesPath[4] = "Bulles/BulleCentre.png";
+    mBullesPath[4] = "Bulles/BulleCentre-Blanche.png";
     mPositions[4] = ofPoint(0.5 * ofGetWidth(), ofGetHeight() + 20);
     mBullesPos[4] = ofPoint(- 310, 180);
     

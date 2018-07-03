@@ -43,6 +43,14 @@ void scGame::setup(){
     // ---------------------------------------------------------------------------
     petitTrain.load("Train-A01", 2.0, ofPoint(150, 150));
     
+    // ---------------------------------------------------------------------------
+    // Format 834 x 753
+    ofPoint originalSize(834, 753);
+    float factor = 0.25f;
+    
+    gare.load("Gare-A01.png");
+    gare.resize(factor * originalSize.x, factor * originalSize.y);
+    
 }
 
 void scGame::update(float dt){
@@ -83,10 +91,17 @@ void scGame::loadNewSequenceImage(int _newSequenceIdx){
 void scGame::draw(){
     
     // -----------------------------------------------------------------
+    ofPushStyle();
+    ofEnableAlphaBlending();
+    ofSetColor(255);
+    gare.draw(0.85 * ofGetWidth(), 0.715 * ofGetHeight());
+    ofPopStyle();
+    
     if(timerForceWin.getValuef() > 0.1f){
         float x = ofMap(timerForceWin.getValuef(), 0, 1, ofGetWidth() + 25, 0);
         petitTrain.draw(ofPoint(x, ofGetHeight() - 175));
     }
+    
     
     // -----------------------------------------------------------------
     // Draw title and consignes
