@@ -21,6 +21,7 @@ const string tagTitre = "titre";
 const string tagImage = "image-crop";
 const string tagURL = "url";
 const string tagLegende = "legende";
+const string tagAuteur = "auteur";
 
 class enigmaHint {
     
@@ -33,6 +34,7 @@ public:
         
         string _imagePath;
         string _titre = _content[tagTitre].asString();
+        string _auteur = _content[tagAuteur].asString();
         string _legende = _content[tagLegende].asString();
         
         _imagePath += _path;
@@ -48,6 +50,7 @@ public:
         }
         
         mTitre = _titre;
+        mAuteur = _auteur;
         mIsAvaiable = true;
     };
     
@@ -57,10 +60,12 @@ public:
     
     ofImage     getImage(){return mImage;};
     string      getTitre(){return mTitre;};
+    string      getAuteur(){return mAuteur;};
     
 private:
     ofImage mImage;
     string  mTitre;
+    string  mAuteur;
     
     bool mIsAvaiable;
     

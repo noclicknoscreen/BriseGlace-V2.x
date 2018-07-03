@@ -12,9 +12,11 @@ void scVictory::setup(){  //load your scene 1 assets here...
     scScene::setup();
     ofLogNotice() << "Victory : Setup !";
     
-    
     cubeSize = 300;
     mNumberGames = 0;
+    
+    // Draw author
+    mAuthorDraw.load(globalFontName, 16);
     
 };
 
@@ -66,6 +68,23 @@ void scVictory::draw(){ //draw scene 1 here
     winnerText.wrapTextX(0.4 * ofGetWidth());
     winnerText.draw(ofGetWidth()/2, 0.28 * ofGetHeight());
     
+    // ///////////////////////////////////////////////////////////////
+    // Draw author
+    ofPushStyle();
+    
+    ofEnableAlphaBlending();
+    ofSetColor(ofColor::black, 200);
+    
+    ofPushMatrix();
+    ofTranslate(0.23 * ofGetWidth(), 0.69 * ofGetHeight());
+    //    ofRotateZ(-90);
+    
+    mAuthorDraw.drawString(bigEnigmaManager().getCurrentEnigma()->getAuteur(bigEnigmaManager().pickHintIndex()), 0, 0);
+    
+    ofPopStyle();
+    ofPopMatrix();
+    // ///////////////////////////////////////////////////////////////
+    
 };
 
 //scene notifications
@@ -116,7 +135,10 @@ void scVictory::endScene(){
 // Speaking event
 void scVictory::someoneSpoke(player & _player){
     scScene::someoneSpoke(_player);
-    endScene();
+    
+    if(mTimerReading.isAnimating() == false){
+        endScene();
+    }
 }
 
 // If the time is ended, we go further ---------------------------------------

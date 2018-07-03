@@ -34,13 +34,17 @@ public:
     
     string      getTitleRecompense(){return mRecompense.getTitre();};
     ofImage     getImageRecompense(){return mRecompense.getImage();};
+    ofImage     getAuteurRecompense(){return mRecompense.getAuteur();};
+    
     string      getLegende(){return mLegende;};
     string      getTheme(){return mTheme;};
+    string      getAuteurMot(){return mAuteurMot;};
     
     int         getNbHints(){return mHints.size();};
     
     ofImage     getImage(enigmaType _type);
     string      getTitre(enigmaType _type);
+    string      getAuteur(enigmaType _type);
     
 private:
     vector<enigmaHint>     mHints;
@@ -49,6 +53,7 @@ private:
     
     string  mLegende;
     string  mTheme;
+    string  mAuteurMot;
     
     enigmaHint*  getHint(enigmaType _type);
     

@@ -173,7 +173,7 @@ void cubeManagerMemory::draw(){
 #endif
     
 //    spotLightCubes.disable();
-    ofDisableLighting();
+//    ofDisableLighting();
     
 
     

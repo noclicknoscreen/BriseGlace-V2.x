@@ -9,6 +9,7 @@
 #pragma once
 
 #include "scScene.h"
+#include "imageSequence.h"
 
 // This class is made to manage common behaviours between all games
 class scGame  : public scScene{
@@ -59,12 +60,18 @@ private:
     
     ofxTextBlock    mCartoucheTextTitle;
     ofxTextBlock    mCartoucheTextSubTi;
+    
     ofTrueTypeFont  mTitle;
     ofTrueTypeFont  mSubLine1;
     ofTrueTypeFont  mSubLine2;
 
+    
+
 protected:
     string  mGameName;
     string  mConsigne;
+    
+    // Tchou, tchou, le petit train
+    imageSequence petitTrain;
     
 };

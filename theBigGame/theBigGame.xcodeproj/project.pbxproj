@@ -38,6 +38,7 @@
 		1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 907C5B5E104864A2D3A25745 /* ofxToggle.cpp */; };
 		1CD83BDD20D7B88800C873FB /* scGame3Bis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CD83BDB20D7B88800C873FB /* scGame3Bis.cpp */; };
 		1CD83BE320D7BA5C00C873FB /* cubeRigidBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CD83BE120D7BA5C00C873FB /* cubeRigidBody.cpp */; };
+		1CF94DD520EBAD6A00C09821 /* imageSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CF94DD320EBAD6A00C09821 /* imageSequence.cpp */; };
 		1D209B4E4AAA703227570B0C /* btStridingMeshInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44DDA80A5BBA576BFF4A11F2 /* btStridingMeshInterface.cpp */; };
 		1E4F7ABB36EF16B9943F8C74 /* btGhostObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FBFB4287D7FF8E445329D71 /* btGhostObject.cpp */; };
 		1FF6CFD23D6FF9FA324587BB /* btMultiBodyConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872188BA268A37181F83319C /* btMultiBodyConstraint.cpp */; };
@@ -312,6 +313,9 @@
 		1CD83BDB20D7B88800C873FB /* scGame3Bis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scGame3Bis.cpp; sourceTree = "<group>"; };
 		1CD83BE120D7BA5C00C873FB /* cubeRigidBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = cubeRigidBody.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		1CD83BE220D7BA5C00C873FB /* cubeRigidBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeRigidBody.h; sourceTree = "<group>"; };
+		1CF94DD220EBAD5800C09821 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		1CF94DD320EBAD6A00C09821 /* imageSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imageSequence.cpp; sourceTree = "<group>"; };
+		1CF94DD420EBAD6A00C09821 /* imageSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageSequence.h; sourceTree = "<group>"; };
 		1D4DB7B7B88FCD73E5772307 /* btSoftBodyInternals.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btSoftBodyInternals.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletSoftBody/btSoftBodyInternals.h; sourceTree = SOURCE_ROOT; };
 		1D5626A71214B2AEA6F785CF /* btBox2dShape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btBox2dShape.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletCollision/CollisionShapes/btBox2dShape.h; sourceTree = SOURCE_ROOT; };
 		1E10F2126ECB1D86C2FB9E18 /* btDbvt.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btDbvt.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletCollision/BroadphaseCollision/btDbvt.h; sourceTree = SOURCE_ROOT; };
@@ -672,7 +676,6 @@
 		D2CF8C4420A9FBA70035B780 /* ofxTextSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTextSuite.h; sourceTree = "<group>"; };
 		D2CF8C4B20AA01380035B780 /* indice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = indice.cpp; sourceTree = "<group>"; };
 		D2CF8C4C20AA01380035B780 /* indice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = indice.h; sourceTree = "<group>"; };
-		D2CF8C5020AAEAAC0035B780 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = utils.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		D2CF8C5120AB141B0035B780 /* scGame3Bis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scGame3Bis.h; sourceTree = "<group>"; };
 		D2D1D47D5A2A1B5AC097B14F /* btDefaultMotionState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btDefaultMotionState.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/LinearMath/btDefaultMotionState.h; sourceTree = SOURCE_ROOT; };
 		D2F2DC31B30F78A69C7E766C /* btActionInterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = btActionInterface.h; path = ../../../addons/ofxBullet/libs/bullet2.8.2/include/BulletDynamics/Dynamics/btActionInterface.h; sourceTree = SOURCE_ROOT; };
@@ -831,6 +834,16 @@
 				47CC683F888777B4F96BDF49 /* shapes */,
 			);
 			name = src;
+			sourceTree = "<group>";
+		};
+		1CF94DD120EBAD5800C09821 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				1CF94DD220EBAD5800C09821 /* utils.h */,
+				1CF94DD320EBAD6A00C09821 /* imageSequence.cpp */,
+				1CF94DD420EBAD6A00C09821 /* imageSequence.h */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		220B8BBB133E2E7548BC9AD5 /* Character */ = {
@@ -1439,6 +1452,7 @@
 		D2CF8BF520A98E6F0035B780 /* OF-Common */ = {
 			isa = PBXGroup;
 			children = (
+				1CF94DD120EBAD5800C09821 /* utils */,
 				D2CF8C4A20AA01380035B780 /* indice */,
 				D2CF8BF620A98E700035B780 /* .gitignore */,
 				D2CF8BF720A98E700035B780 /* addons */,
@@ -1453,7 +1467,6 @@
 				D2CF8C1220A98E700035B780 /* playerManager.cpp */,
 				D2CF8C1320A98E700035B780 /* playerManager.h */,
 				D2CF8C1420A98E700035B780 /* scenes */,
-				D2CF8C5020AAEAAC0035B780 /* utils.h */,
 			);
 			name = "OF-Common";
 			path = "../OF-Common";
@@ -2000,6 +2013,7 @@
 				8E85002F011615370741EE0E /* btPoint2PointConstraint.cpp in Sources */,
 				02C0C81BC42C3CD331C8A298 /* btSequentialImpulseConstraintSolver.cpp in Sources */,
 				4541A7EB18BC3C0B4C97E2A4 /* btSliderConstraint.cpp in Sources */,
+				1CF94DD520EBAD6A00C09821 /* imageSequence.cpp in Sources */,
 				6554C0B470F9C107638055B5 /* btSolve2LinearConstraint.cpp in Sources */,
 				1155C65CA914A1578DAA6B1B /* btTypedConstraint.cpp in Sources */,
 				405931EF794C9F8704C3D026 /* btUniversalConstraint.cpp in Sources */,

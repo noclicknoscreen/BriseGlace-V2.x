@@ -160,8 +160,8 @@ void indice::draw()
     }
     
     material.end();
-    spotLight.disable();
-    ofDisableLighting();
+//    spotLight.disable();
+//    ofDisableLighting();
     //spotLight.draw();
    
 }

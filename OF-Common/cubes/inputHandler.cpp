@@ -107,6 +107,8 @@ void inputHandler::draw()
     for(int i = 0; i < splittedString.size(); i++)
     {
         ofPushStyle();
+        
+        ofDisableLighting();
         ofEnableAlphaBlending();
         
         ofPushMatrix();

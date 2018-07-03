@@ -15,7 +15,6 @@
 #include <locale>
 #include <codecvt>
 
-
 const string    globalFontName = "KGTenThousandReasons.ttf";
 const int       globalFontSizeSmall = 24;
 const int       globalFontSizeBig   = 48;
@@ -137,6 +136,7 @@ public:
     
     timer(){
         mTimer.reset(1.0f);
+        //mTimer.stopAutoUpdate();
     }
     
     // Timer Event

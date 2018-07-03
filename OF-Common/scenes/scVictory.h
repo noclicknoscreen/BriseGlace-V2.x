@@ -42,6 +42,7 @@ private:
     
     int    mNumberGames;
 
+    ofTrueTypeFont  mAuthorDraw;
     
 };
 

@@ -198,6 +198,7 @@ void scGame3::draw(){
     ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
 #endif
     
+    
     // Draw mother of draw
     scGame::draw();
     
@@ -325,15 +326,19 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
             rdnStartPosition.y = ofRandom(550, 600);
             rdnStartPosition.z = ofRandom(-50, 50);
             
-            box = new cubeRigidBody();
-            box->setup(texture, wantedWord.substr(i,1));
-            box->create(world.world, rdnStartPosition, .5, 80, 80, 80);
-//            box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
-            
-            box->add();
-            box->applyForce(START_FORCE_FACTOR*ofVec3f(ofRandom(-1, 1), ofRandom(-1, 1), ofRandom(-1, 1)), box->getPosition());
-            
-            myCubes.push_back(box);
+            if(wantedWord.substr(i,1) != L" "){
+                
+                box = new cubeRigidBody();
+                box->setup(texture, wantedWord.substr(i,1));
+                box->create(world.world, rdnStartPosition, .5, 80, 80, 80);
+                //            box->create(world.world, ofVec3f(0, 600, 0), .5, 80, 80, 80);
+                
+                box->add();
+                box->applyForce(START_FORCE_FACTOR*ofVec3f(ofRandom(-1, 1), ofRandom(-1, 1), ofRandom(-1, 1)), box->getPosition());
+                
+                myCubes.push_back(box);
+                
+            }
             
         }
         
@@ -355,7 +360,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
 void scGame3::sceneWillDisappear( ofxScene * toScreen ){
     
     scGame::sceneWillDisappear(toScreen);
-    spotLight.disable();
+    //spotLight.disable();
     
     // Disable timer events
     ofRemoveListener(timerSignWin.timerEnd,     this,&scGame3::timerSignWinEnd);

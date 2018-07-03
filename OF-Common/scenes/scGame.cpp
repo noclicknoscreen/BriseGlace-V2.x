@@ -40,6 +40,9 @@ void scGame::setup(){
     mSubLine1.load(globalFontName, globalFontSizeBig);
     mSubLine2.load(globalFontName, globalFontSizeMedium - 2);
     
+    // ---------------------------------------------------------------------------
+    petitTrain.load("Train-A01", 2.0, ofPoint(150, 150));
+    
 }
 
 void scGame::update(float dt){
@@ -51,6 +54,9 @@ void scGame::update(float dt){
     // We re-map the volume between the end and the start of a sequence
     loadNewSequenceImage((int)ofMap(timerForceWin.getValuef(), 0, 1, mSequenceLen - 1, 0, true));
 
+    // ---------------------------------------------------------------------------
+    petitTrain.update(dt);
+    
 }
 
 
@@ -76,21 +82,10 @@ void scGame::loadNewSequenceImage(int _newSequenceIdx){
 
 void scGame::draw(){
     
-    // Dessin du compteur ----------------------------------------------
-    if(mSequenceImg.isAllocated()){
-        ofPushStyle();
-        ofSetColor(255,255,255,255);
-        
-        ofDisableNormalizedTexCoords();
-//        mSequenceImg.draw(ofGetWidth() - 200, ofGetHeight() - 200, 100, 100);
-        ofPopStyle();
-        
-        ofPushStyle();
-        ofSetColor(0,0,0,255);
-        mSubLine2.drawString(timerForceWin.toString(), 0.9 * ofGetWidth(), 0.95 * ofGetHeight());
-        ofPopStyle();
-        
-        ofEnableNormalizedTexCoords();
+    // -----------------------------------------------------------------
+    if(timerForceWin.getValuef() > 0.1f){
+        float x = ofMap(timerForceWin.getValuef(), 0, 1, ofGetWidth() + 25, 0);
+        petitTrain.draw(ofPoint(x, ofGetHeight() - 175));
     }
     
     // -----------------------------------------------------------------
@@ -141,7 +136,6 @@ void scGame::draw(){
     mTitle.drawString("ICI ON CHERCHE :", posText.x, posText.y);
     mSubLine1.drawString(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getTheme()), posText.x, posText.y + 80);
     mSubLine2.drawString(mConsigne, posText.x, posText.y + 150);
-    
     
     ofPopStyle();
     // -----------------------------------------------------------------

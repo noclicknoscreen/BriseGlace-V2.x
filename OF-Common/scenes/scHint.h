@@ -59,5 +59,7 @@ private:
     void  timerBeforeRollEnd();
     
     int   currentCube;
+    
+    ofTrueTypeFont  mAuthorDraw;
 };
 

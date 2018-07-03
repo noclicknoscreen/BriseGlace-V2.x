@@ -22,6 +22,8 @@
 
 #include "enigmaManager.h"
 
+#include "imageSequence.h"
+
 class ofApp : public ofBaseApp{
     
     void setup();

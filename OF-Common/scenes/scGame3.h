@@ -83,10 +83,6 @@ public:
     ofColor materialColor;
     ofMaterial material;
     
-    //timer
-//    float timer;
-    
-    //winner color (for game3BIS ;)
 protected:
     bool colorizeCubes;
     

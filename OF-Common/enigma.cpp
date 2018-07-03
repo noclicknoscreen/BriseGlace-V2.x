@@ -69,6 +69,7 @@ bool enigma::load(string _path){
             // Basic enigma fields
             mLegende = utils::cleanString(content[tagRecompense][tagLegende].asString());
             mTheme   = content[tagTheme].asString();
+            mAuteurMot = content[tagMot][tagAuteur].asString();
             
             // Head of the enigma (Solution, legend) --
             ofLogNotice() << "Enigma : ";
@@ -87,6 +88,9 @@ ofImage enigma::getImage(enigmaType _type){
 }
 string enigma::getTitre(enigmaType _type){
     return getHint(_type)->getTitre();
+}
+string enigma::getAuteur(enigmaType _type){
+    return getHint(_type)->getAuteur();
 }
 bool enigma::getIsAvailable(enigmaType _type){
     return getHint(_type)->isAvailable();

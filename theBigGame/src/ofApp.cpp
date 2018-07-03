@@ -140,7 +140,7 @@ void ofApp::keyPressed(int key){
 }
 
 void ofApp::setFullScreen(){
-//    ofSetFullscreen(bFullScreen);
+    ofSetFullscreen(bFullScreen);
     if(bFullScreen==true){
         ofHideCursor();
     }else{

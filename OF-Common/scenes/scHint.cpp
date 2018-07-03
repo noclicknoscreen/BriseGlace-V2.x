@@ -32,6 +32,9 @@ void scHint::setup(){  //load your scene 1 assets here...
     
     gui.setup(group);
     gui.loadFromFile(settingsFileNameHint);
+    
+    // Draw author
+    mAuthorDraw.load(globalFontName, 16);
 
 };
 
@@ -56,8 +59,27 @@ void scHint::draw(){ //draw scene 1 here
     
     scScene::drawTitle("Voici l'indice.");
     
+    
+    // ///////////////////////////////////////////////////////////////
+    // Draw author
+    ofPushStyle();
+    
+    ofEnableAlphaBlending();
+    ofSetColor(ofColor::black, 200);
+    
+    ofPushMatrix();
+    ofTranslate(0.383 * ofGetWidth(), 0.795 * ofGetHeight());
+//    ofRotateZ(-90);
+    
+    mAuthorDraw.drawString(bigEnigmaManager().getCurrentEnigma()->getAuteur(bigEnigmaManager().pickHintIndex()), 0, 0);
+    
+    ofPopStyle();
+    ofPopMatrix();
+    // ///////////////////////////////////////////////////////////////
+    
     // Draw cubes
     myCubeManager.draw();
+    
     
     
 };

@@ -54,7 +54,8 @@ private:
     void timerAfterTextEnd();
     void readyForNewText();
     
-    //
+    ofTrueTypeFont  mAuthorDraw;
+    
     
 };
 

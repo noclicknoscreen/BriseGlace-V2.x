@@ -45,7 +45,7 @@ void scSelectGame::draw(){ //draw scene 1 here
         scScene::drawSubTitle(utils::cleanString("Aidez-les à retrouver leurs mots perdus..."), ofColor::black, ofPoint(0, 375));
     }
     if(mIndexSequence >= 5){
-        scScene::drawTitle(utils::cleanString("A vos marques,"), ofColor::black, ofPoint(0, 300));
+        scScene::drawTitle(utils::cleanString("À vos marques,"), ofColor::black, ofPoint(0, 300));
     }
     if(mIndexSequence >= 6){
         scScene::drawTitle(utils::cleanString("Prêts,"), ofColor::black, ofPoint(0, 390));
@@ -161,10 +161,8 @@ void scSelectGame::timerEraseWordEnd(){
 
 void scSelectGame::timerTextSequenceEnd(){
     
+    ofLogNotice() << "timerTextSequenceEnd, remaining time : " << ofToString(mTimerTextSequence.getValuef());
     nextStepSequence();
-    
-    ofLogNotice() << "timerTextSequenceEnd, remaining time : " << mTimerTextSequence.toString();
-    
     
 }
 

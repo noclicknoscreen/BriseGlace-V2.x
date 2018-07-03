@@ -42,6 +42,10 @@ void scGame2::setup(){
     mGameName = "MES MOTS RIENT";
     mConsigne = "UN MOT SE CACHE PARMI CES LETTRES. PARLEZ POUR VOIR !";
     
+    // Draw author
+    mAuthorDraw.load(globalFontName, 16);
+
+    
 };
 
 
@@ -71,6 +75,21 @@ void scGame2::draw(){ //draw scene 1 here
         ofDisableLighting();
         gui.draw();
     }
+    
+    // Draw author
+    ofPushStyle();
+    
+    ofEnableAlphaBlending();
+    ofSetColor(ofColor::black, 200);
+    
+    ofPushMatrix();
+    ofTranslate(150, 0.77 * ofGetHeight());
+    ofRotateZ(-90);
+    
+    mAuthorDraw.drawString(bigEnigmaManager().getCurrentEnigma()->getAuteurMot(), 0, 0);
+    
+    ofPopStyle();
+    ofPopMatrix();
     
     // Draw mother of draw
     scGame::draw();

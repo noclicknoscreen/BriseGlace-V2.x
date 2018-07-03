@@ -122,15 +122,16 @@ void player::loadNewSequenceImage(int _newSequenceIdx){
 
 void player::draw(ofPoint _bulleCorrection){
     
-    ofPushStyle();
-    ofSetColor(mColor);
-    ofFill();
+//    ofPushStyle();
+//    ofSetColor(mColor);
+//    ofFill();
     
     ofPushMatrix();
     ofTranslate(mPosition);
     
     // Draw the character
     ofPushStyle();
+    ofDisableLighting();
     
     // DRAW MOT ////////////////////////////////////////////////////////////////
     ofPushMatrix();
@@ -222,7 +223,7 @@ void player::draw(ofPoint _bulleCorrection){
     
     ofPopMatrix();
     
-    ofPopStyle();
+//    ofPopStyle();
     
 }
 
