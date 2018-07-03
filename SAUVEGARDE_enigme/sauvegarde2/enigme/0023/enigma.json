@@ -1,0 +1,48 @@
+{
+    "theme": "une héroïne",
+    "mot": {
+        "titre": "aubrac",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/06\/Lucie_aubrac.jpg\/800px-Lucie_aubrac.jpg",
+        "auteur": "Paulgypteau",
+        "date": "1 mai 2003"
+    },
+    "indice": [
+        {
+            "titre": "résistante",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/1\/883\/42071851044_e314fa044e_b.jpg",
+            "auteur": " Carl T. Bergstrom",
+            "date": "13 juin 2018 "
+        },
+        {
+            "titre": "Seconde Guerre mondiale",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/a5\/Into_the_Jaws_of_Death_23-0455M_edit.jpg\/1280px-Into_the_Jaws_of_Death_23-0455M_edit.jpg",
+            "auteur": "Robert F. Sargent,",
+            "date": "le 6 juin 1944"
+        },
+        {
+            "titre": "avenue berthelot",
+            "image": "image3.JPG",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/10\/Centre_Berthelot_Lyon7_fr.JPG\/1280px-Centre_Berthelot_Lyon7_fr.JPG",
+            "auteur": "Alorange",
+            "date": "23 mars 2008"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "lucie aubrac",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/06\/Lucie_aubrac.jpg\/800px-Lucie_aubrac.jpg",
+            "auteur": "Paulgypteau",
+            "date": "1 mai 2003"
+        },
+        "legende": "Résistante française pendant la Seconde Guerre mondiale, Lucie Aubrac organise en août 1940 l'évasion de son mari, alors prisonnier de guerre à Sarrebourg. Le couple se réfugie à Lyon mais son mari est de nouveau arrêté cette fois-ci par la Gestapo. Avec d'autres compagnons, elle organise et participe en septembre 43 à l'extraction de 14 résistants dont Raymond en attaquant le fourgon allemand sur l'avenue Berthelot."
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "theme": "un métier",
+    "mot": {
+        "titre": "ROMANCIER",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/ec\/Damasio.jpg",
+        "auteur": "Adrien Barbier",
+        "date": "25 avril 2014"
+    },
+    "indice": [
+        {
+            "titre": "Plume",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/6\/5504\/14217212802_2312f79456_b.jpg",
+            "auteur": "non renseigné",
+            "date": "non renseigné"
+        },
+        {
+            "titre": "Roman",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/4\/3934\/15425838066_d12c5b4410_b.jpg",
+            "auteur": "non renseigné",
+            "date": "non renseigné"
+        },
+        {
+            "titre": "Science-Fiction",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/8\/7456\/9716901804_97474a81a9_b.jpg",
+            "auteur": "non renseigné",
+            "date": "non renseigné"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "Alain Damasio",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/ec\/Damasio.jpg",
+            "auteur": "Adrien Barbier",
+            "date": "25 avril 2014"
+        },
+        "legende": "Né Alain Raymond le 1er août 1969 à Lyon, Alain DAMSIO est un écrivain de science-fiction.\r\nSon premier texte long vendu à plus de 50 000 exemplaires est “La Zone du dehors\", roman d’anticipation qui s’intéresse aux sociétés de contrôle sous le modèle démocratique."
+    }
+}

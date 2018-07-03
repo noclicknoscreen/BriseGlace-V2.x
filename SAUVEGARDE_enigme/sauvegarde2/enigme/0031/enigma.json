@@ -1,0 +1,48 @@
+{
+    "theme": "un dispositif ferroviaire",
+    "mot": {
+        "titre": "traverse",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/3\/3f\/Stahl-_Holz-_und_Betonschwelle.jpg\/1280px-Stahl-_Holz-_und_Betonschwelle.jpg",
+        "auteur": "Wikipedia",
+        "date": "8 mai 2008"
+    },
+    "indice": [
+        {
+            "titre": "voie férrée",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/5\/4266\/35446132371_d55a307272_b.jpg",
+            "auteur": "Rafaël Reverdy-Carrasco",
+            "date": "14 décembre 2014 "
+        },
+        {
+            "titre": "rail",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/8\/7629\/16794281688_90f4ba53ca_b.jpg",
+            "auteur": "Michel Espig",
+            "date": "30 mars 2015 "
+        },
+        {
+            "titre": "ballast",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/a\/a3\/Voie_de_chemin_de_fer_avec_traverses_en_b%C3%A9ton_de_type_monobloc.jpg",
+            "auteur": "ChrisJ",
+            "date": "21 juillet 2004"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "traverse",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/4\/3924\/15082540988_14f5d01e63_b.jpg",
+            "auteur": " brownpau",
+            "date": "14 septembre 2014 "
+        },
+        "legende": "Auparavant en chêne, puis en bois exotique, les TRAVERSES sont aujourd'hui en béton. Leur rôle consiste à maintenir les rails et à donner un écartement précis à la voie. Elle sont directement posées sur le ballast. Sur 1 km on peut en compter 1666."
+    }
+}

@@ -27,11 +27,11 @@
         },
         {
             "titre": "chaudière",
-            "image": "image3.",
+            "image": "image3.JPG",
             "image-crop": "image3-crop.jpg",
-            "url": "",
-            "auteur": "",
-            "date": ""
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/59\/CFBS_-_Nouvelle_chaudi%C3%A8re_de_la_130T_n%C2%B0101_Pinguely.JPG",
+            "auteur": "Claude villetaneuse",
+            "date": "15 septembre 2012"
         }
     ],
     "recompense": {
@@ -39,9 +39,9 @@
             "titre": "la première locomotive à vapeur",
             "image": "image4.",
             "image-crop": "image4-crop.jpg",
-            "url": "",
-            "auteur": "",
-            "date": ""
+            "url": "https:\/\/sites.ina.fr\/sncf\/media\/imagette\/512x384\/SNCF0101",
+            "auteur": "SNCF",
+            "date": "1829"
         },
         "legende": "Du 6 au 14 octobre 1829, un concours regroupant 4 locomotives à vapeur est organisé à Rainhill en Angleterre. La rocket de Stephenson gagne en atteignant 39 km\/h. La même année, le français Marc Seguin procède aux essais de sa locomotive à vapeur qui est la première au monde à chaudière tubulaire. "
     }

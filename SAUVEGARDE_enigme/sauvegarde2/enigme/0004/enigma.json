@@ -1,0 +1,48 @@
+{
+    "theme": "un moyen de transport",
+    "mot": {
+        "titre": "Funiculaire",
+        "image": "image0.JPG",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/0a\/Funiculaire_de_Lyon_%28France%29.JPG",
+        "auteur": "Tusco",
+        "date": "5 juillet 2013"
+    },
+    "indice": [
+        {
+            "titre": "Ficelle",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/b\/b7\/Bindfaden.jpg",
+            "auteur": "Daniel Schwen",
+            "date": "26 août 2005"
+        },
+        {
+            "titre": "Crémaillère",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/4d\/Cr%C3%A9maill%C3%A8re_-_Panoramique_des_D%C3%B4mes.jpg",
+            "auteur": "Matthieu Riegler",
+            "date": "14 août 2012"
+        },
+        {
+            "titre": "Coline",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/4\/3317\/3187917446_cfb9c23ff7_b.jpg",
+            "auteur": "Mighty Dutchman",
+            "date": "28 décembre 2008"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "Funiculaire de lyon",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/2a\/Funiculaire.jpg",
+            "auteur": "Magicludovic",
+            "date": "6 mai 2016 "
+        },
+        "legende": "Appelé « Ficelle » par les Lyonnais, le funiculaire sert à parcourir des reliefs pentus. Composé de deux rames et d'un système de poulies et crémaillère, les wagons s'auto-tractent par un câble. Leur poids respectif compensant tout ou partie la masse à déplacer du haut vers le bas et inversement. Jadis Lyon possédait 5 funiculaires."
+    }
+}
