@@ -39,12 +39,10 @@ while ($donnees = $reponse->fetch())
   if (file_exists("./enigme/" . $StrNum . $id . "/image") == false) {
       mkdir("./enigme/" . $StrNum . $id . "/image", 0777, true);
   }
-
   // Upload des images
   for ($j=0; $j <= 4; $j++) {
 
     $testImg = false;
-
     $url = $_POST['sqlimage' . $j . $i];
     $info = new SplFileInfo($url);
         if (file_exists("tmp/image" . $j . $i . "-crop.jpg"))
@@ -57,10 +55,22 @@ while ($donnees = $reponse->fetch())
           if ($donnees['image' . $j] != $_POST['sqlimage' . $j . $i] || file_exists("enigme/" . $StrNum . $id . '/image/image' . $j . '.' . $info->getExtension()) == false)
           {
             $data = @file_get_contents($url);
-            $new = "enigme/" . $StrNum . $id . '/image/image' . $j . '.' . $info->getExtension();
-            file_put_contents($new, $data);
+            if ($data != NULL)
+            {
+              if ($info->getExtension() == NULL)
+              {
+                $new = "enigme/" . $StrNum . $id . '/image/image' . $j . '.jpg';
+              }
+              else {
+                $new = "enigme/" . $StrNum . $id . '/image/image' . $j . '.' . $info->getExtension();
+              }
+              file_put_contents($new, $data);
+            }
           }
-
+    if (file_exists("enigme/" . $StrNum . $id . '/image/image' . $j))
+      {
+        unlink("enigme/" . $StrNum . $id . '/image/image' . $j);
+      }
     $imgName[$j] = 'image' . $j . '.' . $info->getExtension();
   }
 
