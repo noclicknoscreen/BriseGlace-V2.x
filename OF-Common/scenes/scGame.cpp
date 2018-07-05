@@ -92,16 +92,20 @@ void scGame::draw(){
     
     // -----------------------------------------------------------------
     ofPushStyle();
+    
     ofEnableAlphaBlending();
+    ofDisableDepthTest();
+    ofEnableNormalizedTexCoords();
+    
     ofSetColor(255);
     gare.draw(0.85 * ofGetWidth(), 0.715 * ofGetHeight());
-    ofPopStyle();
     
-    if(timerForceWin.getValuef() > 0.1f){
-        float x = ofMap(timerForceWin.getValuef(), 0, 1, ofGetWidth() + 25, 0);
+//    if(timerForceWin.getValuef() > 0.1f){
+        float x = ofMap(timerForceWin.getValuef(), 0.05, 1.0f, 0.85 * ofGetWidth(), 0, true);
         petitTrain.draw(ofPoint(x, ofGetHeight() - 175));
-    }
+//    }
     
+    ofPopStyle();
     
     // -----------------------------------------------------------------
     // Draw title and consignes

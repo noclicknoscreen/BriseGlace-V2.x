@@ -56,8 +56,8 @@ void cubeRigidBody::customDraw(ofColor _winnerColor)
     {
         ofPushMatrix();
         
-        materialForFaceColor.setAmbientColor(_winnerColor);
-        materialForFaceColor.setDiffuseColor(ofColor(_winnerColor, 200));
+        materialForFaceColor.setAmbientColor(ofColor(_winnerColor, 255));
+        materialForFaceColor.setDiffuseColor(ofColor(_winnerColor, 140));
         
         materialForFaceColor.begin();
         
