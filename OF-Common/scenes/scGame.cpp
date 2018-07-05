@@ -108,7 +108,7 @@ void scGame::draw(){
     ofPopStyle();
     
     if(mDrawPetitTrain){
-        float x = ofMap(timerForceWin.getValuef(), 0.05, 1.0f, 0.85 * ofGetWidth() + 0.5 * gare.getWidth(), 0, true);
+        float x = ofMap(timerForceWin.getValuef(), 0.025f, 0.99f, 0.85 * ofGetWidth() + 0.5 * gare.getWidth(), 0, true);
         petitTrain.draw(ofPoint(x, ofGetHeight() - 175));
     }
     

@@ -119,11 +119,16 @@ void indice::update()
     }
     
     //lumiere
+    spotLight.enable();
     spotLight.setPosition(ofGetWidth()*5/6, ofGetHeight()/2,150);
     spotLight.setOrientation( ofVec3f( 0, 45, 30) );
+    
     lightColor.setHue(0);
     spotLight.setDiffuseColor(lightColor);
     material.setSpecularColor(materialColor);
+    
+    spotLight.disable();
+    
 }
 
 void indice::draw()
@@ -160,7 +165,7 @@ void indice::draw()
     }
     
     material.end();
-//    spotLight.disable();
+    spotLight.disable();
 //    ofDisableLighting();
     //spotLight.draw();
    

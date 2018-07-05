@@ -138,7 +138,7 @@ void cubeManagerMemory::draw(){
             {
                 ofPushMatrix();
                 ofRotate(180,1,0,0);
-                ofDrawRectangle(-myCubes[i].size/2, -myCubes[i].size/2, (myCubes[i].size/2)+0.2, myCubes[i].size, myCubes[i].size);
+                ofDrawRectangle(-myCubes[i].size/2, -myCubes[i].size/2, (myCubes[i].size/2)+0.5, myCubes[i].size, myCubes[i].size);
                 ofPopMatrix();
             }
             material.end();

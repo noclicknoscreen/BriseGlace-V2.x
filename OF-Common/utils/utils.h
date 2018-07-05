@@ -201,5 +201,9 @@ public:
         return mTimer.getCurrentValue();
     }
     
+    float getValueSec(){
+        return mTimer.getCurrentValue() * mTimer.getDuration();
+    }
+    
 };
 
