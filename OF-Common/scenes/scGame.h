@@ -78,6 +78,8 @@ protected:
     
     // Tchou, tchou, le petit train
     imageSequence petitTrain;
+    bool          mDrawPetitTrain;
     ofImage       gare;
+    ofImage       depart;
     
 };
