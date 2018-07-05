@@ -119,7 +119,7 @@ while ($donnees = $reponse->fetch())
           <p class="text text-2"><strong><?php echo $year?>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $hour?></strong></p>
 
 
-          <input class="checkbox checkbox-2" onclick='alert_message_old("<?php echo $i?>")' type="checkbox" name="check<?php echo $i?>" id="check<?php echo $i?>" value="on" <?php if (!strcmp($donnees['actif'],"on")) {echo "checked";}?>>
+          <input class="checkbox checkbox-2" onclick='alert_message_old("<?php echo $i?>")' type="checkbox" name="check<?php echo $i?>" id="check<?php echo $i?>" value="<?php if (!strcmp($donnees['actif'],"on")) {echo "on";}?>" <?php if (!strcmp($donnees['actif'],"on")) {echo "checked";}?>>
 
           <input type="button" id="supp<?php echo $i?>" onclick='suppf("<?php echo $i?>")' name="supp<?php echo $i?>" class="_button _button-3 js-supp" value="-">
 
