@@ -192,11 +192,11 @@ void scGame::someoneSpoke(player & _player){
 
 void scGame::restartTimerSignHint(){
     ofLogNotice() << "Start timerSignHint, waiting..... ";
-    timerSignHint.startTimer(5);
+    timerSignHint.startTimer(cTimerSignHint);
 }
 void scGame::restartTimerBeforeHint(){
     ofLogNotice() << "Start timerBeforeHint, waiting..... ";
-    timerBeforeHint.startTimer(25);
+    timerBeforeHint.startTimer(cTimerBeforeHint);
 }
 void scGame::restartTimerSignWin(){
     ofLogNotice() << "Start timerSignWin, waiting..... ";
@@ -219,11 +219,16 @@ void scGame::timerBeforeHintEnd(){
     ofLogNotice() << "fin du timer beforeHint, 5 seconds and go to hint";
     
     // --------------------------------
-    hintUserId = bigPlayerManager().getRandomPlayer();
-    bigPlayerManager().startSign(hintUserId, "Veux-tu un indice ?");
-
-    timerBeforeHint.stop();
-    timerSignHint.startTimer(5);
+    if(mNbHints < 3){
+        
+        mNbHints++;
+        
+        hintUserId = bigPlayerManager().getRandomPlayer();
+        bigPlayerManager().startSign(hintUserId, "Veux-tu un indice ?");
+        
+        timerBeforeHint.stop();
+        restartTimerSignHint();
+    }
 }
 
 void scGame::timerSignWinEnd(){
@@ -284,6 +289,7 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
     if(fromScreen->getSceneID() != HINT){
         // Restart a timer that we win anytime
         restartTimerForceWin();
+        mNbHints = 0;
     }else{
         // unPause the timer
         timerForceWin.resume();
