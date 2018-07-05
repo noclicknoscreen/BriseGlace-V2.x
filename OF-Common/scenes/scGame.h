@@ -18,7 +18,11 @@ protected:
     timer timerSignWin;
 private:
     timer timerSignHint;
+    const float cTimerSignHint = 4.0f;
+    
     timer timerBeforeHint;
+    const float cTimerBeforeHint = 14.0f;
+    
     timer timerForceWin;
 private:
     void restartTimerBeforeHint();
@@ -65,6 +69,7 @@ private:
     ofTrueTypeFont  mSubLine1;
     ofTrueTypeFont  mSubLine2;
 
+    int mNbHints;
     
 
 protected:
