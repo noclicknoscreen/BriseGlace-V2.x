@@ -4,21 +4,9 @@
 	<lightPosZ>1980</lightPosZ>
 	<cutOff>24.3</cutOff>
 	<concentration>52.2</concentration>
-	<cubesRotationSpeed>5</cubesRotationSpeed>
+	<cubesRotationSpeed>7.065</cubesRotationSpeed>
 	<orientationX>14.4</orientationX>
 	<orientationY>14.4</orientationY>
 	<orientationZ>113.4</orientationZ>
-<Hint>
-		<lightPosX>960</lightPosX>
-		<lightPosY>320</lightPosY>
-		<lightPosZ>2000</lightPosZ>
-		<orientationX>0</orientationX>
-		<orientationY>0</orientationY>
-		<orientationZ>0</orientationZ>
-		<cutOff>30.6</cutOff>
-		<concentration>45</concentration>
-		<cubesRotationSpeed>9.851</cubesRotationSpeed>
-		<waitTimeBeforeRoll>0.793</waitTimeBeforeRoll>
-		<timeInBetweenRolls>0.157</timeInBetweenRolls>
-	</Hint>
+	<alphaDecay>0.0253</alphaDecay>
 </Game2>

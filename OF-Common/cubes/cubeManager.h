@@ -21,9 +21,10 @@ protected :
     void setup(ofPoint _cubesPos, int _espacementCubes, int _cubeSize);
     
 public:
-    void update(ofPoint _lightPos, ofPoint _lightAngle, float _cutOff, float concentration, float cubesRotationSpeed);
+    void update(ofPoint _lightPos, ofPoint _lightAngle, float _cutOff, float concentration, float _cubesRotationSpeed);
     void drawTexturedCube(ofImage *image, int i, float texCoordX_min, float texCoordX_max, float texCoordY_min, float texCoordY_max);
     void colorizeCube(int cubeId, ofColor _color);
+    void colorizeAllCubes(ofColor _color);
     
     //cubes
     void rotateToWhite(int i);

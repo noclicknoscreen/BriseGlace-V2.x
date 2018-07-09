@@ -33,6 +33,7 @@ void scGame2::setup(){
     group.add(concentration.set("concentration", 0, 0, 180));
     
     group.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
+    group.add(alphaDecay.set("alphaDecay", 0.01, 0.01, 0.03));
     
     gui.setup(group);
     gui.loadFromFile(settingsFileNameGame2);
@@ -60,11 +61,20 @@ void scGame2::update(float dt){
     
     if(bigPlayerManager().getWinnerUserId() == 0){
         // Input word (who wins)
-        myInputManager.update(&myCubeManager);
+        myInputManager.update(&myCubeManager, alphaDecay);
     }
 
     // update a timer for post animation
     mTimerAfterText.update(dt);
+    
+    if(myInputManager.isReadyForNewText()){
+        mTimerBeforeHint.resume();
+    }else{
+        mTimerBeforeHint.pause();
+        // Stop display Hint
+        stopHint();
+//        bigPlayerManager().stopSign(hintUserId);
+    }
     
 };
 
@@ -111,7 +121,7 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scGame::sceneWillAppear(fromScreen);
     // Player manager events
-    ofAddListener(timerSignWin.timerEnd,    this,&scGame2::timerSignWinEnd);
+    ofAddListener(mTimerSignWin.timerEnd,    this,&scGame2::timerSignWinEnd);
     
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke,  this,&scGame2::someoneSpoke);
@@ -150,7 +160,7 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
 void scGame2::sceneWillDisappear( ofxScene * toScreen ){
     scGame::sceneWillDisappear(toScreen);
     // Disable timer events
-    ofRemoveListener(timerSignWin.timerEnd,     this,&scGame2::timerSignWinEnd);
+    ofRemoveListener(mTimerSignWin.timerEnd,     this,&scGame2::timerSignWinEnd);
     
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,   this,&scGame2::someoneSpoke);

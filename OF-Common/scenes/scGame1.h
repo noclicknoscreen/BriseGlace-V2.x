@@ -43,7 +43,9 @@ public:
     ofParameter<float> cutOff;
     ofParameter<float> concentration;
     
-    ofParameter<int> cubesRotationSpeed;
+    ofParameter<float> cubesRotationSpeed;
+    ofParameter<float> alphaDecay;
+    
     bool bDrawGui;
     
     //cubeManager

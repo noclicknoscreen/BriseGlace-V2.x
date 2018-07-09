@@ -38,7 +38,7 @@ class inputHandler
 public:
     void    setup(ofPoint _inputTextPosition, float _maxWidth, float _lineHeight);
     void    getNewText(player _player);
-    int     update(cubeManager* cm);
+    int     update(cubeManager* cm, float alphaDecay);
     void    draw();
     void    clearDuplicatesLettersHistory();
     void    setRevealMode(){revealMode = true; currentRevealCube=0;}

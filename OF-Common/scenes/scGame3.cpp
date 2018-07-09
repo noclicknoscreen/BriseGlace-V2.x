@@ -138,7 +138,7 @@ void scGame3::update(float dt){
     
     // Timers
     mTimerStartForces.update(dt);
-    //    mTimerEndScene.update(dt);
+
     
 };
 
@@ -172,12 +172,16 @@ void scGame3::draw(){
     spotLight.draw();
 #endif
     
+    spotLight.enable();
+    
     material.begin();
     for(int i=0; i<myCubes.size(); i++)
     {
         myCubes[i]->customDraw();
     }
     material.end();
+    
+    spotLight.disable();
     ofDisableLighting();
     
 #if defined DRAW_DEBUG
@@ -205,6 +209,7 @@ void scGame3::draw(){
     // Draw players
     bigPlayerManager().draw();
     
+    ofDisableLighting();
     
 };
 
@@ -283,7 +288,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
     spotLight.enable();
     
     // Player manager events
-    ofAddListener(timerSignWin.timerEnd,    this,&scGame3::timerSignWinEnd);
+    ofAddListener(mTimerSignWin.timerEnd,    this,&scGame3::timerSignWinEnd);
     ofAddListener(mTimerStartForces.timerEnd,    this,&scGame3::timerStartForcesEnd);
     
     // Player manager events
@@ -363,7 +368,7 @@ void scGame3::sceneWillDisappear( ofxScene * toScreen ){
     //spotLight.disable();
     
     // Disable timer events
-    ofRemoveListener(timerSignWin.timerEnd,     this,&scGame3::timerSignWinEnd);
+    ofRemoveListener(mTimerSignWin.timerEnd,     this,&scGame3::timerSignWinEnd);
     ofRemoveListener(mTimerStartForces.timerEnd,    this,&scGame3::timerStartForcesEnd);
 
     

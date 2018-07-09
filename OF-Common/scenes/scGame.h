@@ -15,15 +15,23 @@
 class scGame  : public scScene{
     
 protected:
-    timer timerSignWin;
-private:
-    timer timerSignHint;
-    const float cTimerSignHint = 4.0f;
-    
-    timer timerBeforeHint;
+    timer mTimerSignWin;
+    const float cTimerSignWin = 5.0f;
+
+    timer mTimerBeforeHint;
     const float cTimerBeforeHint = 14.0f;
     
-    timer timerForceWin;
+private:
+    timer mTimerSignHint;
+    const float cTimerSignHint = 4.0f;
+    
+    timer mTimerForceWin;
+    const float cTimerForceWin = 90.0f;
+    
+    timer mTimerTrain;
+    // TimerTrain = forceWin + signWin
+    const float cTimerTrain = 100.0f;
+    
 private:
     void restartTimerBeforeHint();
     void restartTimerSignHint();

@@ -156,7 +156,7 @@ void scGame3Bis::draw(){
     //ofDrawBitmapString("volume amount : " + ofToString(amount) + "NumberOfPlayers" + ofToString(bigPlayerManager().getNumberOfPlayers()), 100, 100);
     
     // Draw title
-    scScene::drawTitle("Mot brassé");
+    scScene::drawTitle("Mot brassé", ofColor::black, ofPoint(0,50));
     //scScene::drawSubTitle("Parlez dans l'oreille pour retourner les cubes");
     
     // Draw players

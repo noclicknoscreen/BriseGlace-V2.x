@@ -257,11 +257,11 @@ void playerManager::draw(){
 }
 
 //--------------------------------------------------------------
-void playerManager::startSign(int _userId, string _textOnSign, float _width){
+void playerManager::startSign(int _userId, string _textOnSign, float _relativeWidth){
     std::map<int, player>::iterator onePlayer = mPlayers.find(_userId);
     if (onePlayer != mPlayers.end())
     {
-        onePlayer->second.startSign(_textOnSign, _width);
+        onePlayer->second.startSign(_textOnSign, _relativeWidth);
     }
 }
 

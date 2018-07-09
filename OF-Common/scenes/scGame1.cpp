@@ -31,6 +31,7 @@ void scGame1::setup(){  //load your scene 1 assets here...
     group.add(cutOff.set("cutOff", 0, 0, 360));
     group.add(concentration.set("concentration", 0, 0, 180));
     group.add(cubesRotationSpeed.set("cubesRotationSpeed", 5, 0.1, 20));
+    group.add(alphaDecay.set("alphaDecay", 0.01, 0.01, 0.03));
     
     gui.setup(group);
     gui.loadFromFile(settingsFileNameGame1);
@@ -48,19 +49,28 @@ void scGame1::update(float dt){ //update scene 1 here
     
     myCubeManager.update(ofPoint(lightPosX, lightPosY, lightPosZ), ofPoint(orientationX, orientationY, orientationZ), cutOff, concentration, cubesRotationSpeed);
     
-    int id = myInputManager.update(&myCubeManager);
+    int id = myInputManager.update(&myCubeManager, alphaDecay);
     if(id != 0)
     {
 //        drawWinnerSign = true;
         bigPlayerManager().setWinnerUserId(id);
-        bigPlayerManager().startSign(id, "C'est gagné !");
+        bigPlayerManager().startSign(id, "C'est gagné !", 0.4f);
         restartTimerSignWin();
         stopHint();
         ofRemoveListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
     }
 
     // Update timers
-    timerSignWin.update(dt);
+    mTimerSignWin.update(dt);
+    
+    if(myInputManager.isReadyForNewText() && bigPlayerManager().getWinnerUserId() == 0){
+        mTimerBeforeHint.resume();
+    }else{
+        mTimerBeforeHint.pause();
+        // Stop display Hint
+        stopHint();
+//        bigPlayerManager().stopSign(hintUserId);
+    }
     
 };
 
@@ -112,10 +122,13 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     // reset our scene when we appear
     scGame::sceneWillAppear(fromScreen);
     // Player manager events
-    ofAddListener(timerSignWin.timerEnd,    this,&scGame1::timerSignWinEnd);
+    ofAddListener(mTimerSignWin.timerEnd,    this,&scGame1::timerSignWinEnd);
     
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
+    
+    // Erase previous inputs
+    myInputManager.reset();
     
 //    // Erase all words of every one
 //    bigPlayerManager().freshRestart();
@@ -151,8 +164,9 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
 //scene notifications
 void scGame1::sceneWillDisappear( ofxScene * toScreen ){
     scGame::sceneWillDisappear(toScreen);
+    
     // Disable timer events
-    ofRemoveListener(timerSignWin.timerEnd,     this,&scGame1::timerSignWinEnd);
+    ofRemoveListener(mTimerSignWin.timerEnd,     this,&scGame1::timerSignWinEnd);
     
     // Player manager events
     ofRemoveListener(bigPlayerManager().someoneSpoke,   this,&scGame1::someoneSpoke);
@@ -167,6 +181,12 @@ void scGame1::someoneSpoke(player & _player){
     if(myInputManager.isReadyForNewText()){
         myInputManager.getNewText(_player);
     }
+    
+    if(bigPlayerManager().getWinnerUserId() > 0){
+        myCubeManager.colorizeAllCubes(_player.getColor());
+        myCubeManager.rotateAllToLetter();
+    }
+    
 }
 
 // VICTORY Event , go to scene you prefer

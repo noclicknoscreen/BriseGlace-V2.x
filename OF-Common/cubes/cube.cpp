@@ -19,7 +19,7 @@ void cube::setup(ofPoint _position, float _size)
     isRotating = false;
 };
 
-void cube::update(int rotationSpeed)
+void cube::update(float _rotationSpeed)
 {
     //apparition suivant Z
     if(position.z < -150)
@@ -31,16 +31,19 @@ void cube::update(int rotationSpeed)
     if(currentRot < desiredRot)
     {
         isRotating = true;
-        if(currentRot+rotationSpeed <= desiredRot)
+        if(currentRot + _rotationSpeed <= desiredRot)
         {
-            currentRot+=rotationSpeed;
+            currentRot += _rotationSpeed;
         }
-        else
-            currentRot +=  (currentRot - desiredRot);
+        else{
+//            currentRot += (currentRot - desiredRot);
+             currentRot = desiredRot;
+        }
+        
+    }else{
+        isRotating = false;
     }
     
-    else
-        isRotating = false;
 };
 
 void cube::rotateToWhite()

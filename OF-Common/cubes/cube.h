@@ -17,7 +17,7 @@ class cube
 {
 public:
     void setup(ofPoint pos, float size);
-    void update(int rotationSpeed);
+    void update(float _rotationSpeed);
     void rotateToWhite();
     void rotateToWood();
     void rotateToLetter();

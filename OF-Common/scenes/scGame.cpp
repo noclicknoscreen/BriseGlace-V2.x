@@ -59,13 +59,14 @@ void scGame::setup(){
 }
 
 void scGame::update(float dt){
-    timerBeforeHint.update(dt);
-    timerSignHint.update(dt);
-    timerSignWin.update(dt);
-    timerForceWin.update(dt);
+    mTimerBeforeHint.update(dt);
+    mTimerSignHint.update(dt);
+    mTimerSignWin.update(dt);
+    mTimerForceWin.update(dt);
+    mTimerTrain.update(dt);
     
     // We re-map the volume between the end and the start of a sequence
-    loadNewSequenceImage((int)ofMap(timerForceWin.getValuef(), 0, 1, mSequenceLen - 1, 0, true));
+    loadNewSequenceImage((int)ofMap(mTimerForceWin.getValuef(), 0, 1, mSequenceLen - 1, 0, true));
 
     // ---------------------------------------------------------------------------
     petitTrain.update(dt);
@@ -107,12 +108,15 @@ void scGame::draw(){
     depart.draw(0.02 * ofGetWidth(), 0.72 * ofGetHeight() -5);
     ofPopStyle();
     
-    if(mDrawPetitTrain){
-        float x = ofMap(timerForceWin.getValuef(), 0.025f, 0.99f, 0.85 * ofGetWidth() + 0.5 * gare.getWidth(), 0, true);
+    if(mTimerTrain.isAnimating()){
+        // This a map with the value in seconds
+        // 0            => start position (Left)
+        // end timer    => le train arrive en gare
+        float x = ofMap(mTimerTrain.getValuef(), 1, 0, 0.02 * ofGetWidth(), 0.85 * ofGetWidth() + 0.5 * gare.getWidth(), true);
         petitTrain.draw(ofPoint(x, ofGetHeight() - 175));
     }
     
-    ofPopStyle();
+//    ofPopStyle();
     
     // -----------------------------------------------------------------
     // Draw title and consignes
@@ -177,7 +181,7 @@ void scGame::someoneSpoke(player & _player){
     {
         ofLogNotice() << "We have a winner [" << _player.getLastMessage() << "] = [" << bigEnigmaManager().getCurrentEnigma()->getSolution() << "], compare = " << compare;
         bigPlayerManager().setWinnerUserId(_player.getNumber());
-        bigPlayerManager().startSign(_player.getNumber(), "C'est gagné !");
+        bigPlayerManager().startSign(_player.getNumber(), "C'est gagné !", 0.4f);
         restartTimerSignWin();
         stopHint();
         
@@ -203,25 +207,27 @@ void scGame::someoneSpoke(player & _player){
 
 void scGame::restartTimerSignHint(){
     ofLogNotice() << "Start timerSignHint, waiting..... ";
-    timerSignHint.startTimer(cTimerSignHint);
+    mTimerSignHint.startTimer(cTimerSignHint);
 }
 void scGame::restartTimerBeforeHint(){
     ofLogNotice() << "Start timerBeforeHint, waiting..... ";
-    timerBeforeHint.startTimer(cTimerBeforeHint);
+    mTimerBeforeHint.startTimer(cTimerBeforeHint);
 }
 void scGame::restartTimerSignWin(){
     ofLogNotice() << "Start timerSignWin, waiting..... ";
-    timerSignWin.startTimer(5);
+    mTimerSignWin.startTimer(cTimerSignWin);
 }
 void scGame::restartTimerForceWin(){
     ofLogNotice() << "Start Timer force win, waiting..... ";
-    timerForceWin.startTimer(90);
+    mTimerForceWin.startTimer(cTimerForceWin);
+    mTimerTrain.startTimer(cTimerTrain);
 }
 
 void scGame::stopHint(){
     // Stop display Hint
     bigPlayerManager().stopSign(hintUserId);
-    timerSignHint.stop();
+//    mTimerSignHint.stop();
+    mTimerSignHint.pause();
     hintUserId = 0;
 }
 
@@ -237,7 +243,7 @@ void scGame::timerBeforeHintEnd(){
         hintUserId = bigPlayerManager().getRandomPlayer();
         bigPlayerManager().startSign(hintUserId, "Veux-tu un indice ?");
         
-        timerBeforeHint.stop();
+        mTimerBeforeHint.stop();
         restartTimerSignHint();
     }
 }
@@ -246,7 +252,7 @@ void scGame::timerSignWinEnd(){
     ofLogNotice() << "fin du timer timerSignWin, go to scene 9 (WIN) ";
     // --------------------------------
     // Stop counting
-    timerSignWin.stop();
+    mTimerSignWin.stop();
     // Then go to child behaviour
 }
 
@@ -255,7 +261,7 @@ void scGame::timerSignHintEnd(){
     ofLogNotice() << "fin du timer timerSignHint, go to scene (HINT) ";
     // --------------------------------
     bigPlayerManager().stopSign(hintUserId);
-    timerSignHint.stop();
+    mTimerSignHint.stop();
     ofxSceneManager::instance()->goToScene(HINT);
 }
 
@@ -263,13 +269,11 @@ void scGame::timerForceWinEnd(){
     ofLogNotice() << "fin du timer timerForceWin, go to scene 9 (WIN) ";
     // --------------------------------
     // Stop counting
-    timerForceWin.stop();
-    // Stop Drawing Train
-    mDrawPetitTrain = false;
+    mTimerForceWin.stop();
     // --------------------------------
     hintUserId = bigPlayerManager().getRandomPlayer();
-    timerSignHint.stop();
-    bigPlayerManager().startSign(hintUserId, "C'est perdu !");
+    mTimerSignHint.stop();
+    bigPlayerManager().startSign(hintUserId, "C'est perdu !", 0.6f);
     
     restartTimerSignWin();
     
@@ -285,7 +289,7 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
     restartTimerBeforeHint();
 
     // Stop eventually sign timer
-    timerSignHint.stop();
+    mTimerSignHint.stop();
     
     // Reset all signs
     bigPlayerManager().stopSign(1);
@@ -294,19 +298,19 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
     bigPlayerManager().stopSign(4);
     
     // Player manager events
-    ofAddListener(timerBeforeHint.timerEnd, this,&scGame::timerBeforeHintEnd);
-    ofAddListener(timerSignHint.timerEnd,   this,&scGame::timerSignHintEnd);
-    ofAddListener(timerForceWin.timerEnd,   this,&scGame::timerForceWinEnd);
+    ofAddListener(mTimerBeforeHint.timerEnd, this,&scGame::timerBeforeHintEnd);
+    ofAddListener(mTimerSignHint.timerEnd,   this,&scGame::timerSignHintEnd);
+    ofAddListener(mTimerForceWin.timerEnd,   this,&scGame::timerForceWinEnd);
     
     // On ne refait pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
         // Restart a timer that we win anytime
         restartTimerForceWin();
         mNbHints = 0;
-        mDrawPetitTrain = true;
+//        mDrawPetitTrain = true;
     }else{
         // unPause the timer
-        timerForceWin.resume();
+        mTimerForceWin.resume();
     }
     
 }
@@ -318,12 +322,15 @@ void scGame::sceneWillDisappear( ofxScene * toScreen ){
     // On ne refait pas ca si on vient de l'indice
     if(toScreen->getSceneID() != HINT){
         // Restart a timer that we win anytime
-        timerForceWin.stop();
+        mTimerForceWin.stop();
+        // Stop Drawing Train
+//        mDrawPetitTrain = false;
+
     }else{
         // Pause the timer
-        timerForceWin.pause();
+        mTimerForceWin.pause();
     }
-    timerBeforeHint.stop();
+    mTimerBeforeHint.stop();
     
     // Reset all signs
     bigPlayerManager().stopSign(1);
@@ -332,8 +339,8 @@ void scGame::sceneWillDisappear( ofxScene * toScreen ){
     bigPlayerManager().stopSign(4);
     
     // Disable timer events
-    ofRemoveListener(timerBeforeHint.timerEnd,  this,&scGame::timerBeforeHintEnd);
-    ofRemoveListener(timerSignHint.timerEnd,    this,&scGame::timerSignHintEnd);
-    ofRemoveListener(timerForceWin.timerEnd,    this,&scGame::timerForceWinEnd);
+    ofRemoveListener(mTimerBeforeHint.timerEnd,  this,&scGame::timerBeforeHintEnd);
+    ofRemoveListener(mTimerSignHint.timerEnd,    this,&scGame::timerSignHintEnd);
+    ofRemoveListener(mTimerForceWin.timerEnd,    this,&scGame::timerForceWinEnd);
 
 }

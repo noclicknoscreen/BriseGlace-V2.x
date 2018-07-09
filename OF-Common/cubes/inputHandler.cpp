@@ -139,7 +139,7 @@ void inputHandler::revealTirrets(cubeManager* cm)
     
 }
 
-int inputHandler::update(cubeManager* cm)
+int inputHandler::update(cubeManager* cm, float _alphaDecay)
 {
     
     bool lettersAreFading = false;
@@ -157,7 +157,7 @@ int inputHandler::update(cubeManager* cm)
         if(splittedString[i].textColor.a > splittedString[i].alpha)
         {
             lettersAreFading = true;
-            splittedString[i].textColor.a -= 0.01;
+            splittedString[i].textColor.a -= _alphaDecay;
         }
         
     }

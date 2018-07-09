@@ -57,7 +57,7 @@ void scHint::draw(){ //draw scene 1 here
         gui.draw();
     }
     
-    scScene::drawTitle("Voici l'indice.");
+    scScene::drawTitle("Voici l'indice.", ofColor::black, ofPoint(0, 120));
     
     
     // ///////////////////////////////////////////////////////////////

@@ -39,13 +39,14 @@ private:
     ofDirectory dir;
     
     int         nbHint;
+    int         mIdxEnigma;
     
     // pseudo-random string (half enigma answer, half random)
 private:
     wstring    mPseudoString;
     
 public:
-    void      setPseudoString(int _length);
+    void       setPseudoString(int _length);
     wstring    pickPseudoLetter(int _idx);
     
 public:

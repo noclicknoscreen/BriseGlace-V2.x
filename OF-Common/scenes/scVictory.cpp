@@ -66,7 +66,8 @@ void scVictory::draw(){ //draw scene 1 here
     
     winnerText.setColor(0, 0, 0, 255);
     winnerText.wrapTextX(0.4 * ofGetWidth());
-    winnerText.draw(ofGetWidth()/2, 0.28 * ofGetHeight());
+//    winnerText.draw(ofGetWidth()/2, 0.28 * ofGetHeight());
+    winnerText.draw(ofGetWidth()/2, 0.5 * (ofGetHeight() - winnerText.getHeight()));
     
     // ///////////////////////////////////////////////////////////////
     // Draw author

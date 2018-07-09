@@ -114,17 +114,34 @@ void cubeManagerHiddenWord::getWord(wstring word)
     ofLogNotice() << "new word : " << utils::toByteString(word);
     
     //compute offset between letters
-    float wordWidth = (word.size()*cubeSize) + ((word.size()+1) * mEspacementCubes);
+    float spaceFactor = 0.3f;
+    
+    int   nbSpace = ofStringTimesInString(utils::toByteString(word), " ");
+    // Space is less wide than other letters
+    // + 1 espacement cube
+    float wordWidth = (word.size() - nbSpace + nbSpace*spaceFactor) * (cubeSize + mEspacementCubes) + mEspacementCubes;
     
     myCubes.clear();
     
+    ofPoint posCube(mCubesPosition.x - wordWidth/2 + cubeSize/2 + mEspacementCubes, mCubesPosition.y, mCubesPosition.z);
+    
     for(int i=0; i<word.size(); i++)
     {
+        
+        
         if(word.substr(i,1) != L" "){
             cube* tmpCube = new cube();
-            tmpCube->setup(ofPoint(mCubesPosition.x - wordWidth/2 + i*(mEspacementCubes + cubeSize) + cubeSize/2 + mEspacementCubes, mCubesPosition.y, mCubesPosition.z), cubeSize);
+            tmpCube->setup(posCube, cubeSize);
             tmpCube->setLetter(word.substr(i, 1));
             myCubes.push_back(*tmpCube);
+            
+            // Increment position
+            posCube.x += mEspacementCubes + cubeSize;
+            
+        }else{
+            // Space, increment position but little
+            posCube.x += spaceFactor * (mEspacementCubes + cubeSize);
+            
         }
     }
 }

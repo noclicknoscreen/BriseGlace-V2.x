@@ -4,8 +4,9 @@
 	<lightPosZ>2000</lightPosZ>
 	<cutOff>30.6</cutOff>
 	<concentration>45</concentration>
-	<cubesRotationSpeed>5</cubesRotationSpeed>
+	<cubesRotationSpeed>7.463</cubesRotationSpeed>
 	<orientationX>0</orientationX>
 	<orientationY>0</orientationY>
 	<orientationZ>0</orientationZ>
+	s<alphaDecay>0.017</alphaDecay>
 </Game1>

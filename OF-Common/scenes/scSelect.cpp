@@ -31,6 +31,9 @@ void scSelect::someoneSpoke(player & _player){
     if(ofStringTimesInString(mPlayerMessage, "masqu") > 0){
         ofxSceneManager::instance()->goToScene(GAME1);
     }
+    if(ofStringTimesInString(mPlayerMessage, "mosquée") > 0){
+        ofxSceneManager::instance()->goToScene(GAME1);
+    }
     if(ofStringTimesInString(mPlayerMessage, "cach") > 0){
         ofxSceneManager::instance()->goToScene(GAME1);
     }
@@ -58,6 +61,9 @@ void scSelect::someoneSpoke(player & _player){
         ofxSceneManager::instance()->goToScene(GAME2);
     }
     if(ofStringTimesInString(mPlayerMessage, "memories") > 0){
+        ofxSceneManager::instance()->goToScene(GAME2);
+    }
+    if(ofStringTimesInString(mPlayerMessage, "memoria") > 0){
         ofxSceneManager::instance()->goToScene(GAME2);
     }
     

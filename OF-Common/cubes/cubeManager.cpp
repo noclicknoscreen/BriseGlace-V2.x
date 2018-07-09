@@ -41,7 +41,7 @@ void cubeManager::setup(ofPoint _cubesPos, int _espacementCubes, int _cubeSize)
     cubeSize = _cubeSize;
 }
 
-void cubeManager::update(ofPoint _lightPos, ofPoint _lightAngle, float _cutOff, float _concentration, float cubesRotationSpeed)
+void cubeManager::update(ofPoint _lightPos, ofPoint _lightAngle, float _cutOff, float _concentration, float _cubesRotationSpeed)
 {
     spotLightCubes.setPosition(_lightPos.x, _lightPos.y, _lightPos.z);
     spotLightCubes.setOrientation(ofVec3f(_lightAngle.x, _lightAngle.y, _lightAngle.z));
@@ -53,7 +53,7 @@ void cubeManager::update(ofPoint _lightPos, ofPoint _lightAngle, float _cutOff, 
     
     for(int i=0; i<myCubes.size(); i++)
     {
-        myCubes[i].update(cubesRotationSpeed);
+        myCubes[i].update(_cubesRotationSpeed);
     }
     
     lightColor.setHue(0);
@@ -152,6 +152,13 @@ void cubeManager::colorizeCube(int cubeId, ofColor _color)
     }
     
 }
+
+void cubeManager::colorizeAllCubes(ofColor _color){
+    for(int idxCube = 0; idxCube < myCubes.size(); idxCube++){
+        colorizeCube(idxCube, _color);
+    }
+}
+
 void cubeManager::rotateToWhite(int _idxCube)
 {
     myCubes[_idxCube].rotateToWhite();
