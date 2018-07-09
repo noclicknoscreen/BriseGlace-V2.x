@@ -98,56 +98,167 @@ if (!strcmp($_POST['sqlcomplet' . $i], "vide"))
   $imgcrop4 = "";
 }
 
-  $req = $bdd->prepare('UPDATE enigme SET mot = :mot, theme = :theme, image0 = :image0, imgcrop0 = :imgcrop0, auteur0 = :auteur0, date0 = :date0,
-                        indice1 = :indice1, image1 = :image1, imgcrop1 = :imgcrop1, auteur1 = :auteur1, date1 = :date1,
-                        indice2 = :indice2, image2 = :image2, imgcrop2 = :imgcrop2, auteur2 = :auteur2, date2 = :date2,
-                        indice3 = :indice3, image3 = :image3, imgcrop3 = :imgcrop3, auteur3 = :auteur3, date3 = :date3,
-                        recompense = :recompense, image4 = :image4, imgcrop4 = :imgcrop4, auteur4 = :auteur4, date4 = :date4,
-                        legende = :legende, complet = :complet, actif = :actif WHERE id = :id');
-  $req->execute(array(
-    'mot' =>$_POST['sqlmot' . $i],
-    'theme' =>$_POST['sqltheme' . $i],
+// UPDATE ENIGME DANS LA BASE DE DONNEE
+if ($donnees['mot'] !=  $_POST['sqlmot' . $i])
+{
+  $req = $bdd->query('UPDATE enigme SET mot = "'.$_POST['sqlmot' . $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['theme'] != $_POST['sqltheme' . $i])
+{
+  $req = $bdd->query('UPDATE enigme SET theme = "'.$_POST['sqltheme' . $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['image0'] != $_POST['sqlimage0'. $i])
+{
+  $req = $bdd->query('UPDATE enigme SET image0 = "'.$_POST['sqlimage0'. $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['imgcrop0'] != $imgcrop0)
+{
+  $req = $bdd->query('UPDATE enigme SET imgcrop0 = "'.$imgcrop0.'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['auteur0'] != $_POST['sqlauteur0'. $i])
+{
+  $req = $bdd->query('UPDATE enigme SET auteur0 = "'.$_POST['sqlauteur0'. $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['date0'] != $_POST['sqldate0' . $i])
+{
+  $req = $bdd->query('UPDATE enigme SET date0 = "'.$_POST['sqldate0' . $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
 
-    'image0'=>$_POST['sqlimage0'. $i],
-    'imgcrop0'=> $imgcrop0,
-    'auteur0' => $_POST['sqlauteur0'. $i],
-    'date0' => $_POST['sqldate0' . $i],
+// UPDATE INDICE 2
 
-    'indice1'=>$_POST['sqlindice1' . $i],
-    'image1'=>$_POST['sqlimage1' . $i],
+if ($donnees['indice1'] != $_POST['sqlindice1' . $i])
+{
+  $req = $bdd->query('UPDATE enigme SET indice1 = "'.$_POST['sqlindice1' . $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['image1'] != $_POST['sqlimage1' . $i])
+{
+  $req = $bdd->query('UPDATE enigme SET image1 = "'.$_POST['sqlimage1' . $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['imgcrop1'] != $imgcrop1)
+{
+  $req = $bdd->query('UPDATE enigme SET imgcrop1 = "'.$imgcrop1.'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['auteur1'] != $_POST['sqlauteur1'. $i])
+{
+  $req = $bdd->query('UPDATE enigme SET auteur1 = "'.$_POST['sqlauteur1'. $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['date1'] != $_POST['sqldate1'. $i])
+{
+  $req = $bdd->query('UPDATE enigme SET date1 = "'.$_POST['sqldate1'. $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
 
-    'imgcrop1'=> $imgcrop1,
-    'auteur1' => $_POST['sqlauteur1'. $i],
-    'date1' => $_POST['sqldate1'. $i],
+// UPDATE INDICE 2
 
-    'indice2'=>$_POST['sqlindice2' . $i],
-    'image2'=>$_POST['sqlimage2' . $i],
+if ($donnees['indice2'] != $_POST['sqlindice2' . $i])
+{
+  $req = $bdd->query('UPDATE enigme SET indice2 = "'.$_POST['sqlindice2' . $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['image2'] != $_POST['sqlimage2' . $i])
+{
+  $req = $bdd->query('UPDATE enigme SET image2 = "'.$_POST['sqlimage2' . $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['imgcrop2'] != $imgcrop2)
+{
+  $req = $bdd->query('UPDATE enigme SET imgcrop2 = "'.$imgcrop2.'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['auteur2'] != $_POST['sqlauteur2'. $i])
+{
+  $req = $bdd->query('UPDATE enigme SET auteur2 = "'.$_POST['sqlauteur2'. $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['date2'] != $_POST['sqldate2'. $i])
+{
+  $req = $bdd->query('UPDATE enigme SET date2 = "'.$_POST['sqldate2'. $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
 
-    'imgcrop2'=> $imgcrop2,
-    'auteur2' => $_POST['sqlauteur2'. $i],
-    'date2' => $_POST['sqldate2'. $i],
+// UPDATE INDICE 3
 
-    'indice3'=>$_POST['sqlindice3' . $i],
-    'image3'=>$_POST['sqlimage3' . $i],
+if ($donnees['indice3'] != $_POST['sqlindice3' . $i])
+{
+  $req = $bdd->query('UPDATE enigme SET indice3 = "'.$_POST['sqlindice3' . $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['image3'] != $_POST['sqlimage3' . $i])
+{
+  $req = $bdd->query('UPDATE enigme SET image3 = "'.$_POST['sqlimage3' . $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['imgcrop3'] != $imgcrop3)
+{
+  $req = $bdd->query('UPDATE enigme SET imgcrop3 = "'.$imgcrop3.'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['auteur3'] != $_POST['sqlauteur3'. $i])
+{
+  $req = $bdd->query('UPDATE enigme SET auteur3 = "'.$_POST['sqlauteur3'. $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['date3'] != $_POST['sqldate3'. $i])
+{
+  $req = $bdd->query('UPDATE enigme SET date3 = "'.$_POST['sqldate3'. $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
 
-    'imgcrop3'=> $imgcrop3,
-    'auteur3' => $_POST['sqlauteur3'. $i],
-    'date3' => $_POST['sqldate3'. $i],
+// UPDATE RECOMPENSE
 
-    'recompense'=>$_POST['sqlrecompense' . $i],
-    'image4'=>$_POST['sqlimage4' . $i],
+if ($donnees['recompense'] != $_POST['sqlrecompense' . $i])
+{
+  $req = $bdd->query('UPDATE enigme SET recompense = "'.$_POST['sqlrecompense' . $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['image4'] != $_POST['sqlimage4' . $i])
+{
+  $req = $bdd->query('UPDATE enigme SET image4 = "'.$_POST['sqlimage4' . $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['imgcrop4'] != $imgcrop4)
+{
+  $req = $bdd->query('UPDATE enigme SET imgcrop4 = "'.$imgcrop4.'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['auteur4'] != $_POST['sqlauteur4'. $i])
+{
+  $req = $bdd->query('UPDATE enigme SET auteur4 = "'.$_POST['sqlauteur4'. $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['date4'] != $_POST['sqldate4'. $i])
+{
+  $req = $bdd->query('UPDATE enigme SET date4 = "'.$_POST['sqldate4'. $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['legende'] != $_POST['sqllegende' . $i])
+{
+  $req = $bdd->query('UPDATE enigme SET legende = "'.$_POST['sqllegende' . $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
 
-    'imgcrop4'=> $imgcrop4,
-    'auteur4' => $_POST['sqlauteur4'. $i],
-    'date4' => $_POST['sqldate4'. $i],
+// UPDATE STATUT
 
-    'legende'=>$_POST['sqllegende' . $i],
-    'complet' => $_POST['sqlcomplet' . $i],
-    'actif' => $actif,
-
-  	'id' => $id,
-  	));
-    $req->closeCursor();
+if ($donnees['complet'] != $_POST['sqlcomplet' . $i])
+{
+  $req = $bdd->query('UPDATE enigme SET complet = "'.$_POST['sqlcomplet' . $i].'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
+if ($donnees['actif'] != $actif)
+{
+  $req = $bdd->query('UPDATE enigme SET actif = "'.$actif.'" WHERE id = "' . $id . '"');
+  $req->closeCursor();
+}
 
     $jsonFormat = array(
         "theme"=>$_POST['sqltheme' . $i],
