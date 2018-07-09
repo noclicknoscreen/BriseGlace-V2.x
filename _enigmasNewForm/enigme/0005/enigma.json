@@ -5,7 +5,7 @@
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/44\/Vaporetto_Lyon_-02.jpg",
-        "auteur": "Tusco",
+        "auteur": "Auteur : Tusco",
         "date": "5 juillet 2013"
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/95\/Lyon_quaisaone_congres.jpg",
-            "auteur": "Inconnu",
+            "auteur": "Auteur : Inconnu",
             "date": "entre 1890 et 1905"
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/6\/6e\/Confluence_Lyon.jpg",
-            "auteur": "Prométhée",
+            "auteur": "Auteur : Prométhée",
             "date": "27 septembre 2015"
         },
         {
@@ -30,19 +30,19 @@
             "image": "image3.JPG",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/07\/ItVapporetto_Nuovo.JPG",
-            "auteur": "Enri82ve",
+            "auteur": "Auteur : Enri82ve",
             "date": "1 juin 2006"
         }
     ],
     "recompense": {
         "indice": {
-            "titre": "Vaporetto",
+            "titre": "le Vaporetto",
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/c1.staticflickr.com\/5\/4411\/36370007813_9f22d7f689_b.jpg",
-            "auteur": "Barry Marsh",
+            "auteur": "Auteur : Barry Marsh",
             "date": "5 septembre 2017 "
         },
-        "legende": "C'est en 1881 que le premier Vaporetto fut construit à Nantes et introduit sur la lagune de Venise. À Lyon, c'est sur la Saône que ce bateau-bus vous emmènera de Saint-Paul à confluence, vous permettant de découvrir la ville sous un autre angle."
+        "legende": "C'est en 1881 que le premier VAPORETTO fut construit à Nantes et introduit sur la lagune de Venise. À Lyon, c'est sur la SAÔNE que ce BATEAU-BUS vous emmènera de Saint-Paul à CONFLUENCE, vous permettant de découvrir la ville sous un autre angle."
     }
 }

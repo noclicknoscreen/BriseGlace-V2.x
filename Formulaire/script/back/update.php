@@ -77,8 +77,11 @@ while ($donnees = $reponse->fetch())
 $actif = "off";
 if (isset($_POST['check' . $i]))
 {
- if (!strcmp($_POST['check' . $i], "on"))  { $actif = "on"; }
- else { $actif = "off"; }
+  $actif = "on";
+}
+ else
+{
+  $actif = "off";
 }
 
 $imgcrop0 = "enigme/" . $StrNum . $id . '/image/image0-crop.jpg';
@@ -254,11 +257,13 @@ if ($donnees['complet'] != $_POST['sqlcomplet' . $i])
   $req = $bdd->query('UPDATE enigme SET complet = "'.$_POST['sqlcomplet' . $i].'" WHERE id = "' . $id . '"');
   $req->closeCursor();
 }
+
 if ($donnees['actif'] != $actif)
 {
   $req = $bdd->query('UPDATE enigme SET actif = "'.$actif.'" WHERE id = "' . $id . '"');
   $req->closeCursor();
 }
+
 
     $jsonFormat = array(
         "theme"=>$_POST['sqltheme' . $i],

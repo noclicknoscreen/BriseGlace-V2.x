@@ -1,0 +1,48 @@
+{
+    "theme": "une attitude",
+    "mot": {
+        "titre": "Sourire",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/c1.staticflickr.com\/1\/186\/406165187_d464d824c2_b.jpg",
+        "auteur": "Auteur :  Vincent Chaigneau",
+        "date": "14 janvier 2007 "
+    },
+    "indice": [
+        {
+            "titre": "Joie",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/8\/7428\/12662497905_1a2834ceb8_b.jpg",
+            "auteur": "Auteure : Marina del Castell",
+            "date": "15 février 2014"
+        },
+        {
+            "titre": "Bonne humeur",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/5\/4381\/35957459934_28b4ec3c33_b.jpg",
+            "auteur": "Auteur :  Loïc Pénet",
+            "date": "15 août 2017 "
+        },
+        {
+            "titre": "partage",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/5\/4326\/35296382473_fdd15250a5_b.jpg",
+            "auteur": "Auteur :  Melodie RGB",
+            "date": "8 juillet 2017"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "Sourire",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/1\/780\/23507490996_6181d58370_b.jpg",
+            "auteur": "Auteur : Gilles VIART",
+            "date": "4 décembre 2015"
+        },
+        "legende": "Le dictionnaire \"Larousse\" nous dit : \"- Sourire à son interlocuteur : lui témoigner de la sympathie, de l'affection, de la gentillesse, en lui adressant un sourire\". Lorsqu'on PARTAGE un SOURIRE, on transmet à l'autre sa JOIE, sa BONNE HUMEUR en laissant ses soucis à la maison ou au travail :)"
+    }
+}

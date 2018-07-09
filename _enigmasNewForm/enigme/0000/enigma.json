@@ -1,11 +1,11 @@
 {
     "theme": "un moyen de transport",
     "mot": {
-        "titre": "UNE micheline",
+        "titre": "micheline",
         "image": "image0.JPG",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/8c\/Lyon_St_Paul.JPG",
-        "auteur": "Oxyman",
+        "auteur": "Auteur : Oxyman",
         "date": "29 mars 2009"
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c0\/Bugatti_pr%C3%A9sidentiel%2C_Cit%C3%A9_du_train.jpg\/1280px-Bugatti_pr%C3%A9sidentiel%2C_Cit%C3%A9_du_train.jpg",
-            "auteur": "Hugh Llewelyn",
+            "auteur": "Auteur : Hugh Llewelyn",
             "date": "29 mars 2009"
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/88\/Michelin_Poster_1898.jpg",
-            "auteur": "Ragilnih",
+            "auteur": "Auteur : Ragilnih",
             "date": "23 novembre 2017 "
         },
         {
@@ -36,13 +36,13 @@
     ],
     "recompense": {
         "indice": {
-            "titre": "Micheline",
+            "titre": "la Micheline",
             "image": "image4.JPG",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/8c\/Lyon_St_Paul.JPG",
-            "auteur": "Smiley Toerist",
+            "auteur": "Auteur : Smiley Toerist",
             "date": "21 mars 2009"
         },
-        "legende": "Inventée par le fils de la marque au Bibendum (Marcel Michelin) et construite par la société éponyme dans les années 1931, la « Micheline » est un autorail rapide équipé de roues spéciales munies de pneus brevetés appelés  “pneurail”. Dès 1932, Bugatti produit des véhicules similaires en version luxe."
+        "legende": "Inventée par le fils de la marque au BIBENDUM (Marcel Michelin) et construite par la société éponyme dans les années 1931, la « MICHELINE » est une LOCOMOTIVE (autorail rapide) équipée de roues spéciales munies de pneus brevetés appelés  “pneurail”. Dès 1932, BUGATTI produit des véhicules similaires en version luxe."
     }
 }

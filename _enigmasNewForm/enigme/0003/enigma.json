@@ -5,7 +5,7 @@
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/upload.wikimedia.org\/wikipedia\/fr\/f\/f5\/La_tourette-_arq._Le_Corbusier.jpg",
-        "auteur": "fusion-of-horizons",
+        "auteur": "Auteur : fusion-of-horizons",
         "date": "24 octobre 2002"
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/99\/Anish_Kapoor_at_the_Deutsche_Guggenheim_-_Berlin.jpg",
-            "auteur": "Torsodog",
+            "auteur": "Auteur : Torsodog",
             "date": "10 juillet 2009"
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/31\/Iannis_Xenakis_1975.jpg",
-            "auteur": "Cyrus Sixguns",
+            "auteur": "Auteur : Cyrus Sixguns",
             "date": "7 June 2007"
         },
         {
@@ -30,7 +30,7 @@
             "image": "image3.JPG",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/23\/Le_Corbusier_1933.JPG",
-            "auteur": "Inconnu",
+            "auteur": "Auteur : Inconnu",
             "date": "1 janvier 1933"
         }
     ],
@@ -40,9 +40,9 @@
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/fr\/f\/f5\/La_tourette-_arq._Le_Corbusier.jpg",
-            "auteur": "Alexandre Norman",
+            "auteur": "Auteur : Alexandre Norman",
             "date": "2007-09-16"
         },
-        "legende": "Le couvent de La Tourette est une œuvre majeure de l'architecte Le Corbusier. Les vitrages se veulent l'adaptation de l'œuvre Metastasis composée par Iannis Xenakis. L'artiste plasticien Anish Kapoor fut l'invité de la dernière biennale d'art contemporain."
+        "legende": "Le COUVENT de La Tourette est une œuvre majeure de l'architecte Le CORBUSIER. Les vitrages se veulent l'adaptation de l'œuvre Metastasis composée par IANNIS XENAKIS. L'artiste plasticien ANISH KAPOOR fut l'invité de la dernière biennale d'art contemporain."
     }
 }

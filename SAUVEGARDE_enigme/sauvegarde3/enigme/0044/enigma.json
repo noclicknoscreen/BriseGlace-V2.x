@@ -1,0 +1,48 @@
+{
+    "theme": "un métier",
+    "mot": {
+        "titre": "designer",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/c2.staticflickr.com\/8\/7065\/6862045071_b360b59674_b.jpg",
+        "auteur": "auteur : Phil Richards",
+        "date": "3 septembre 1989 "
+    },
+    "indice": [
+        {
+            "titre": "nez cassé",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/9\/95\/Locomotive_CC-72084.jpg\/1280px-Locomotive_CC-72084.jpg",
+            "auteur": "Auteur : Didier Duforest ",
+            "date": "14 juin 2009"
+        },
+        {
+            "titre": "Boeing B-17",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/9\/8024\/7701247772_649c13849f_b.jpg",
+            "auteur": "Auteur : InSapphoWeTrust",
+            "date": "28 juillet 2012 "
+        },
+        {
+            "titre": "PLEXIGLASS",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/6\/5226\/5581235887_10d6de2a5f_b.jpg",
+            "auteur": "Auteur :  Espen Klem",
+            "date": "2 avril 2011"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "le designer Paul Arzens ",
+            "image": "image4.JPG",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/4\/40\/Paul_Arzens_La_Baleine.JPG\/1280px-Paul_Arzens_La_Baleine.JPG",
+            "auteur": "Claus Ableiter",
+            "date": "Inconnue"
+        },
+        "legende": "DESIGNER français du XXème siècle, il est reconnu pour ses réalisations ferroviaires ainsi que ses extraordinaires automobiles. Dès 1937, il réalise à la main des modèles aux formes révolutionnaires dont on retrouve les applications à partir de 1957, sur les locomotives de type BB 9200, BB 16000 et BB 25200. En 1944, il aménage un bombardier Boeing B-17 en commençant par retirer à l'avion 3 tonnes d'armement et de blindage. Il remplace le nez de l'appareil et la tourelle arrière par des profilés plus aérodynamiques en plexiglas."
+    }
+}
