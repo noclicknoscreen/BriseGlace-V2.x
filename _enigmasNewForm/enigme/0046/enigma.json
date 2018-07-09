@@ -1,0 +1,48 @@
+{
+    "theme": "un statut",
+    "mot": {
+        "titre": "citoyen",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/4\/4e\/Prise_de_la_Bastille.jpg\/1280px-Prise_de_la_Bastille.jpg",
+        "auteur": "Auteur : Jean-Pierre Houël",
+        "date": "Inconnue"
+    },
+    "indice": [
+        {
+            "titre": "liberté d'expression",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/89\/Libert%C3%A9.jpg",
+            "auteur": "Auteur : Eugène Delacroix",
+            "date": "1830"
+        },
+        {
+            "titre": "devoirs",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/6\/5337\/9511895516_89ecafef1c_b.jpg",
+            "auteur": "Auteur : Patrick Janicek",
+            "date": "11 août 2013"
+        },
+        {
+            "titre": "vivre ensemble",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/3\/2624\/4244631563_98c32448e2_o.jpg",
+            "auteur": "Auteur :  J. Miner",
+            "date": "13 juillet 2009"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "un citoyen",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/6\/5573\/14866693425_8a667c7bac_b.jpg",
+            "auteur": "Auteur : Blondinrikard Fröberg",
+            "date": "6 août 2014"
+        },
+        "legende": "Un CITOYEN a des droits garantis par la loi comme la LIBERTÉ D'EXPRESSION, le droit de vote et la protection sociale par exemple. Il a aussi des DEVOIRS envers la société comme respecter les lois afin de bien VIVRE ENSEMBLE. \r\nC'est l'assurance que sa liberté, ses droits et sa sécurité soient garantis pour lui comme pour les autres. \r\nEn plus du respect des lois, il a le devoir de faire preuve de civisme et de civilité."
+    }
+}

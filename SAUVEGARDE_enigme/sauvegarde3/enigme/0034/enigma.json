@@ -1,0 +1,48 @@
+{
+    "theme": "une commune",
+    "mot": {
+        "titre": "lentilly",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/1\/19\/1200pix-CM-vue-generale-1-11-2009_%289a%29.jpg",
+        "auteur": "Cadsic",
+        "date": "1 septembre 2010"
+    },
+    "indice": [
+        {
+            "titre": "jacques cœur",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/a\/ab\/015_Portrait_de_Jacques_Coeur.jpg",
+            "auteur": "Inconnu",
+            "date": "Inconnu"
+        },
+        {
+            "titre": "Jean Jacques de Boissieu",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/a\/ac\/Jjboissieu.jpg",
+            "auteur": "Autoportrait",
+            "date": "XVIIIe siècle"
+        },
+        {
+            "titre": "le Château de Cruzols",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/97\/Lentilly_-_Tours_de_Cruzol.jpg",
+            "auteur": "Inconnu",
+            "date": "Inconnu"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "lentilly",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/1\/19\/1200pix-CM-vue-generale-1-11-2009_%289a%29.jpg",
+            "auteur": "Cadsic",
+            "date": "1 septembre 2010"
+        },
+        "legende": "La commune de LENTILLY est située à 15km de Lyon. Son collège porte le nom de Jacques Cœur célèbre armateur du XVème siècle.\r\nOriginaire de Lentilly, le graveur Jean Jacques de Boissieu réalisa quelques planches pour l’Encyclopédie de Diderot.\r\nSur un léger monticule, est assise la vieille gentilhommerie de Cruzols. Sa construction remonterait au XIVème siècle."
+    }
+}

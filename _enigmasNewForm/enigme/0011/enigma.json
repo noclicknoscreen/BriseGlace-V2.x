@@ -14,29 +14,29 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/c2.staticflickr.com\/2\/1173\/1225274637_85fac883b1_b.jpg",
-            "auteur": "non renseigné",
-            "date": "non renseigné"
+            "auteur": "Evan Bench",
+            "date": "24 août 2007"
         },
         {
             "titre": "Commerçant",
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/c1.staticflickr.com\/9\/8122\/8867798514_4c84265c92_b.jpg",
-            "auteur": "non renseigné",
-            "date": "non renseigné"
+            "auteur": "Inconnu",
+            "date": "Inconnue"
         },
         {
             "titre": "Bibliothèque",
             "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/c1.staticflickr.com\/9\/8389\/8481050276_93f6892d8b_b.jpg",
-            "auteur": "non renseigné",
-            "date": "non renseigné"
+            "auteur": "Inconnu",
+            "date": "Inconnue"
         }
     ],
     "recompense": {
         "indice": {
-            "titre": "Gabriel Charavay",
+            "titre": "le libraire Gabriel Charavay",
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/9e\/Gabriel_Charavay.jpg",

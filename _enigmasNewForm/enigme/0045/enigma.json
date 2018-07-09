@@ -1,0 +1,48 @@
+{
+    "theme": "un moyen de transport",
+    "mot": {
+        "titre": "AeROTRAIN",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/0e\/Exposition_a%C3%A9rotrain_Saran_5.jpg\/1280px-Exposition_a%C3%A9rotrain_Saran_5.jpg",
+        "auteur": "Auteur : Croquant",
+        "date": "25 avril 2009"
+    },
+    "indice": [
+        {
+            "titre": "Jean Bertin",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/29\/Aerotrain.jpg",
+            "auteur": "Auteur : Stefan Kühn",
+            "date": "4 juillet 2004"
+        },
+        {
+            "titre": "coussin d’air",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/a9\/Aerotrain-schema-de-sustentation-legende.jpg\/1280px-Aerotrain-schema-de-sustentation-legende.jpg",
+            "auteur": "Auteur : Arnaud Pérat",
+            "date": "31 octobre 2014"
+        },
+        {
+            "titre": "turbomoteurs",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/d\/de\/A%C3%A9rotrain_i80_250.jpg\/1280px-A%C3%A9rotrain_i80_250.jpg",
+            "auteur": "Auteur : Philippe CHATRIOT",
+            "date": "2 septembre 1969"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "l'aérotrain",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/9f\/A%C3%A9rotrainI80HV.jpg",
+            "auteur": "Auteur : FlyAkwa",
+            "date": "1 janvier 1974"
+        },
+        "legende": "L’AÉROTRAIN a été inventé par l’ingénieur JEAN BERTIN. Ce véhicule sur COUSSIN D'AIR est guidé par une piste de béton en forme de « T » renversé et propulsé par deux TURBOMOTEURS entraînant une hélice. Concurrent du train, il stimule la même année le premier projet de train à grande vitesse. L’AÉROTRAIN a finalement été abandonné en 1977. "
+    }
+}

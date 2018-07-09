@@ -1,0 +1,48 @@
+{
+    "theme": "une attitude",
+    "mot": {
+        "titre": "bienveillance",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/c2.staticflickr.com\/6\/5257\/5453213786_428121c445_b.jpg",
+        "auteur": "Auteur :  zhouxuan12345678",
+        "date": "7 décembre 2009"
+    },
+    "indice": [
+        {
+            "titre": "l'autre",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/a\/a4\/Aristoteles_Louvre.jpg",
+            "auteur": "Auteur : inconnu",
+            "date": "inconnue - Aristote"
+        },
+        {
+            "titre": "respect",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/9\/8180\/8063975489_f419d55640_b.jpg",
+            "auteur": "Auteur : Pascal Walschots",
+            "date": "6 octobre 2012 "
+        },
+        {
+            "titre": "vivre ensemble",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/2\/1616\/25597022876_346f772db4_b.jpg",
+            "auteur": "Auteur : Björn Falkevik",
+            "date": "6 mars 2016"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "la bienveillance",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/9\/8352\/8304094076_0ba3e2318a_b.jpg",
+            "auteur": "Christian K.",
+            "date": "24 décembre 2012"
+        },
+        "legende": "La bienveillance selon la pédiatre Catherine Gueguen, consiste : « - à porter sur autrui un regard aimant, compréhensif, sans jugement, en souhaitant qu’il se sente bien, et en y veillant »."
+    }
+}

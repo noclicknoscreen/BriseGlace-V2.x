@@ -1,0 +1,48 @@
+{
+    "theme": "un dispositif ferroviaire",
+    "mot": {
+        "titre": "ligne",
+        "image": "image0.jpg",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/d\/d8\/Gare_cesson.jpg",
+        "auteur": "Auteur : inconnu",
+        "date": "7 septembre 2006"
+    },
+    "indice": [
+        {
+            "titre": "jaune",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/9\/8290\/28465461300_af47b69864_b.jpg",
+            "auteur": "Auteur : Carlos ZGZ",
+            "date": "10 août 2006"
+        },
+        {
+            "titre": "bulle d'air",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/9\/8035\/7993539261_2e26fa57cd_b.jpg",
+            "auteur": "Auteur : Daniil Ulanov",
+            "date": "14 août 2010"
+        },
+        {
+            "titre": "quai",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/9\/8020\/7446354884_111939dfd2_b.jpg",
+            "auteur": "Auteur :  Yves Jalabert",
+            "date": "12 octobre 2009"
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "la ligne de sécurité",
+            "image": "image4.jpg",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/d\/d8\/Gare_cesson.jpg",
+            "auteur": "Auteur : inconnu",
+            "date": "7 septembre 2006"
+        },
+        "legende": "Pourquoi : \"-s'éloigner de la bordure du quai\" ? Quelle soit JAUNE ou blanche, la LIGNE DE SÉCURITÉ est là pour nous indiquer l'endroit le plus sécure sur le QUAI. Car un train est un solide entouré d'une BULLE D'AIR qui se déplace avec lui. \r\nC'est le déplacement de cette bulle d'air qui aspire l'air qui est autour de lui. Par conséquent, si on se trouve trop près, nous sommes aspiré par cette bulle et entraîné avec elle à la vitesse du train. "
+    }
+}

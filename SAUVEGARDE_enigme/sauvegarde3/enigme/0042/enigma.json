@@ -1,0 +1,48 @@
+{
+    "theme": "un dispositif ferroviaire",
+    "mot": {
+        "titre": "chemin de fer",
+        "image": "image0.",
+        "image-crop": "image0-crop.jpg",
+        "url": "https:\/\/sites.ina.fr\/sncf\/media\/imagette\/512x384\/SNCF0100",
+        "auteur": "ina",
+        "date": "inconnue"
+    },
+    "indice": [
+        {
+            "titre": "chevaux",
+            "image": "image1.jpg",
+            "image-crop": "image1-crop.jpg",
+            "url": "https:\/\/c1.staticflickr.com\/5\/4009\/4569927747_413c2556d6_b.jpg",
+            "auteur": "Lexpophoto",
+            "date": "21 février 2010 "
+        },
+        {
+            "titre": "XIXème siècle",
+            "image": "image2.jpg",
+            "image-crop": "image2-crop.jpg",
+            "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/30\/Stephenson%27s_Rocket.jpg",
+            "auteur": "William M. Connolley",
+            "date": "1929"
+        },
+        {
+            "titre": "RAIL",
+            "image": "image3.jpg",
+            "image-crop": "image3-crop.jpg",
+            "url": "https:\/\/c2.staticflickr.com\/4\/3131\/2759936514_708f75ecbe_b.jpg",
+            "auteur": " OliBac",
+            "date": "22 juillet 2008 "
+        }
+    ],
+    "recompense": {
+        "indice": {
+            "titre": "la première ligne de chemin de fer",
+            "image": "image4.",
+            "image-crop": "image4-crop.jpg",
+            "url": "https:\/\/sites.ina.fr\/sncf\/media\/imagette\/512x384\/SNCF0100",
+            "auteur": "ina",
+            "date": "Inconnue"
+        },
+        "legende": "La première ligne de chemin de fer est mise en service en 1827. Longue de 21 km, elle transporte le charbon des mines de Saint-Étienne à la Loire. Composés de trois wagonnets, les trains descendent sur des rails par gravité et sont remontés par des chevaux."
+    }
+}

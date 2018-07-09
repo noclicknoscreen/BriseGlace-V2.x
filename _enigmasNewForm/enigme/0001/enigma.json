@@ -5,7 +5,7 @@
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/c2.staticflickr.com\/6\/5499\/9772695506_c3e1aa39e8_b.jpg",
-        "auteur": "patrick janicek",
+        "auteur": "Auteur : Patrick Janicek",
         "date": "14 septembre 2013 "
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/b\/bf\/Gare_Austerlitz_Orient_expres_2.jpg",
-            "auteur": "Smiley.toerist",
+            "auteur": "Auteur : Smiley.toerist",
             "date": "1 mai 1983"
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/b\/b1\/Georges_Nagelmackers_par_Nadar.jpg",
-            "auteur": "Nadar",
+            "auteur": "Auteur : Nadar",
             "date": "5 juillet 2011"
         },
         {
@@ -30,7 +30,7 @@
             "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/5f\/L%27Intercit%C3%A9s_de_nuit_Paris_-_Austerlitz_Brian%C3%A7on_entre_en_gare_de_Brian%C3%A7on.jpg",
-            "auteur": "Damd071",
+            "auteur": "Auteur : Damd071",
             "date": "15 mars 2016"
         }
     ],
@@ -40,9 +40,9 @@
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/4a\/CIWL-Logo-bleu.jpg",
-            "auteur": "Tamorlan",
+            "auteur": "Auteur : Tamorlan",
             "date": "18 février 2014"
         },
-        "legende": "La Compagnie internationale des Wagons-lits est une entreprise française d'origine belge, fondée par Georges Nagelmackers en 1872. Intercités de nuit désigne, depuis 2012, le service de trains de nuit réguliers, proposé par la SNCF, réalisé avec des voitures Corail."
+        "legende": "La Compagnie internationale des WAGONS-LITS est une entreprise française d'origine belge, fondée par GEORGES NAGELMAKERS en 1872. INTERCITÉS de nuit désigne, depuis 2012, le service de trains de nuit réguliers, proposé par la SNCF, réalisé avec des voitures Corail."
     }
 }

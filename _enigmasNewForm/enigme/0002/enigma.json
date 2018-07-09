@@ -5,7 +5,7 @@
         "image": "image0.JPG",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/96\/GareStPaulLyon.JPG",
-        "auteur": "Andrea Caldarelli",
+        "auteur": "Auteur : Andrea Caldarelli",
         "date": "Inconnue"
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.JPG",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/f4\/Lyon_Gorges_de_Loup_II.JPG",
-            "auteur": "Smiley.toerist",
+            "auteur": "Auteur : Smiley.toerist",
             "date": "21 mars 2009"
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.JPG",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/2e\/Tramtrain_in_l%27Arbresle_III.JPG",
-            "auteur": "Smiley.toerist",
+            "auteur": "Auteur : Smiley.toerist",
             "date": "18 octobre 2012"
         },
         {
@@ -30,7 +30,7 @@
             "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/c1.staticflickr.com\/3\/2853\/11139667303_c0cc36843a_b.jpg",
-            "auteur": "Serge Barès",
+            "auteur": "Auteur : Serge Barès",
             "date": "29 novembre 2013"
         }
     ],
@@ -40,9 +40,9 @@
             "image": "image4.JPG",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/96\/GareStPaulLyon.JPG",
-            "auteur": "Gotty",
+            "auteur": "Auteur : Gotty",
             "date": "28 septembre 2006"
         },
-        "legende": "Chaque jour, 5 500 voyageurs passent par la gare Saint-Paul située dans le vieux Lyon où fut tourné le film de Bertrand Tavernier  “L'horloger de Saint Paul” 1974. Le premier tram-train fut inauguré en septembre 2012."
+        "legende": "Chaque jour, 5 500 voyageurs passent par la gare SAINT-PAUL située dans le vieux Lyon où fut tourné le film de Bertrand Tavernier  “L'HORLOGER de Saint-Paul” 1974. Le premier TRAM-TRAIN fut inauguré en septembre 2012."
     }
 }
