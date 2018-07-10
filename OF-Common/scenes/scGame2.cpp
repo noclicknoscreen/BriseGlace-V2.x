@@ -93,7 +93,7 @@ void scGame2::draw(){ //draw scene 1 here
     ofSetColor(ofColor::black, 200);
     
     ofPushMatrix();
-    ofTranslate(150, 0.77 * ofGetHeight() - 38);
+    ofTranslate(160, 0.77 * ofGetHeight() - 50);
     ofRotateZ(-90);
     
     mAuthorDraw.drawString(bigEnigmaManager().getCurrentEnigma()->getAuteurMot(), 0, 0);
@@ -143,7 +143,7 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
         bigEnigmaManager().pickNewEnigma(IMAGE_GRID);
         
         //cubes
-        myCubeManager.setup(ofPoint(0.2*ofGetWidth(), 0.5*ofGetHeight() - 10, -300), 7, 130);
+        myCubeManager.setup(ofPoint(0.2*ofGetWidth(), 0.5*ofGetHeight() - 10, -300), cEspacementCube, 130);
         //inputs
         myInputManager.setup(ofPoint(0.67 * ofGetWidth(), 0.5 * ofGetHeight()), 0.4 * ofGetWidth(), 75);
         

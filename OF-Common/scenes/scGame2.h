@@ -27,7 +27,8 @@ public:
     void sceneWillDisappear( ofxScene * fromScreen );
   
     //cubeManager
-    cubeManagerMemory myCubeManager;
+    cubeManagerMemory   myCubeManager;
+    const float         cEspacementCube = 5.0f;
     //inputManager
     inputHandlerMemory myInputManager;
     

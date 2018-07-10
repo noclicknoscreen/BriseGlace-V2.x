@@ -19,15 +19,29 @@ void enigmaManager::setup(){
     
     string path = GLOBAL_PATH;
     
+    ofDirectory dir;
     // First, know all folder of one game type
     dir.listDir(path);
     dir.sort(); // in linux the file system doesn't return file lists ordered in alphabetical order
     
+    for(int idxDir = 0; idxDir < dir.size(); idxDir++){
+        
+        ofFile oneFile(dir[idxDir]);
+        
+        if(oneFile.isDirectory()){
+            mBunchOfEnigmas.push_back(oneFile.getAbsolutePath());
+        }
+        
+    }
+    
+    // Shuffle all list
+    std::random_shuffle ( mBunchOfEnigmas.begin(), mBunchOfEnigmas.end() );
+    
     //allocate the vector to have as many ofImages as files
-    if( dir.size() ){
+    if(mBunchOfEnigmas.size() > 0){
         // Ok, we have some folders
         // you can now iterate through the files and load them into the ofImage vector
-        mIdxEnigma = (int) ofRandom(dir.size());
+        mIdxEnigma = (int) ofRandom(mBunchOfEnigmas.size());
     }
 
 }
@@ -40,24 +54,24 @@ void enigmaManager::pickNewEnigma(gameType _gameType){
     
     string path = GLOBAL_PATH;
     
-    // First, know all folder of one game type
-    dir.listDir(path);
-    dir.sort(); // in linux the file system doesn't return file lists ordered in alphabetical order
+//    // First, know all folder of one game type
+//    dir.listDir(path);
+//    dir.sort(); // in linux the file system doesn't return file lists ordered in alphabetical order
     
     //allocate the vector to have as many ofImages as files
-    if( dir.size() ){
+    if(mBunchOfEnigmas.size() ){
         // Ok, we have some folders
         // you can now iterate through the files and load them into the ofImage vector
 //      mIdxEnigma = (int) ofRandom(dir.size());
         
         mIdxEnigma++;
-        if(mIdxEnigma >= dir.size()){
+        if(mIdxEnigma >= mBunchOfEnigmas.size()){
             mIdxEnigma = 0;
         }
         
-        ofFile oneFile = dir.getFile(mIdxEnigma);
+        ofFile oneFile(mBunchOfEnigmas[mIdxEnigma]);
         
-        if(oneFile.isDirectory()){
+//        if(oneFile.isDirectory()){
             enigma newEnigma;
             if(newEnigma.load(oneFile.getAbsolutePath())){
                 mCurrentEnigma = newEnigma;
@@ -66,7 +80,7 @@ void enigmaManager::pickNewEnigma(gameType _gameType){
                 nbHint = (int)ofRandom(mCurrentEnigma.getNbHints());
                 
             }
-        }
+//        }
         else
         {
             pickNewEnigma(_gameType);

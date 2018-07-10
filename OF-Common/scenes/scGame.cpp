@@ -113,7 +113,7 @@ void scGame::draw(){
         // 0            => start position (Left)
         // end timer    => le train arrive en gare
         float x = ofMap(mTimerTrain.getValuef(), 1, 0, 0.02 * ofGetWidth(), 0.85 * ofGetWidth() + 0.5 * gare.getWidth(), true);
-        petitTrain.draw(ofPoint(x, ofGetHeight() - 175));
+        petitTrain.draw(ofPoint(x, ofGetHeight() - 180));
     }
     
 //    ofPopStyle();
@@ -203,6 +203,16 @@ void scGame::someoneSpoke(player & _player){
             stopHint();
         }
     }
+    
+    int compareIndice = ofStringTimesInString(utils::toUpperCase(_player.getLastMessage()), utils::toUpperCase("indice"));
+    if(compareIndice > 0)
+    {
+        // Oui -> indice
+        ofxSceneManager::instance()->goToScene(HINT);
+    }
+    
+
+    
 }
 
 void scGame::restartTimerSignHint(){
@@ -273,7 +283,7 @@ void scGame::timerForceWinEnd(){
     // --------------------------------
     hintUserId = bigPlayerManager().getRandomPlayer();
     mTimerSignHint.stop();
-    bigPlayerManager().startSign(hintUserId, "Voici la réponse", 0.6f);
+    bigPlayerManager().startSign(hintUserId, "Dommage ! La réponse était...", 0.85f);
     
     restartTimerSignWin();
     
@@ -290,6 +300,7 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
 
     // Stop eventually sign timer
     mTimerSignHint.stop();
+    mTimerSignWin.stop();
     
     // Reset all signs
     bigPlayerManager().stopSign(1);
@@ -312,6 +323,10 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
     }else{
         // unPause the timer
         mTimerForceWin.resume();
+        
+        // reset indice nr
+        hintUserId = 0;
+        
     }
     
 }

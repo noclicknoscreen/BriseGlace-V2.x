@@ -49,7 +49,8 @@ public:
     bool bDrawGui;
     
     //cubeManager
-    cubeManagerHiddenWord myCubeManager;
+    cubeManagerHiddenWord   myCubeManager;
+    const float             cEspacementCube = 10.0f;
     
     //inputManager
     inputHandlerHiddenWord myInputManager;

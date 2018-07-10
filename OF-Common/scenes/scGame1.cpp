@@ -143,7 +143,7 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
         bigPlayerManager().setWinnerUserId(0);
 
         //cubes
-        myCubeManager.setup(ofPoint(0.5*ofGetWidth(), 0.4*ofGetHeight(), -300), 15, 150);
+        myCubeManager.setup(ofPoint(0.5*ofGetWidth(), 0.4*ofGetHeight(), -300), cEspacementCube, 150);
         
         //inputs
         myInputManager.setup(ofPoint(0.5*ofGetWidth(), 0.6*ofGetHeight()), 0.8 * ofGetWidth(), 75);

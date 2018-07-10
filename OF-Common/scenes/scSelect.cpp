@@ -89,7 +89,7 @@ void scSelect::someoneSpoke(player & _player){
         }
     }
     
-    if(ofStringTimesInString(mPlayerMessage, "partenaire") > 0){
+    if(ofStringTimesInString(mPlayerMessage, "crédit") > 0){
         ofxSceneManager::instance()->goToScene(PARTNERS);
     }
     

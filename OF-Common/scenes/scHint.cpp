@@ -111,7 +111,7 @@ void scHint::sceneWillAppear( ofxScene * fromScreen ){
     from = fromScreen;
     
     //cubes
-    myCubeManager.setup(ofPoint(0.5*ofGetWidth(), 0.5*ofGetHeight(), 0), 5, 100);
+    myCubeManager.setup(ofPoint(0.5*ofGetWidth(), 0.5*ofGetHeight(), 0), cEspacementCube, 100);
     currentCube = 0;
     
     // -- -- -- -- --

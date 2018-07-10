@@ -40,9 +40,9 @@ void inputHandler::getNewText(player _player)
 {
     mReadyForNewText = false;
     
-    ofLogNotice() << "got new input from user " << userId << " : " << _player.getLastMessageToCompare();
+    ofLogNotice() << "got new input from user " << userId << " : " << _player.getLastMessage();
     
-    text = utils::toUpperCase(_player.getLastMessageToCompare());
+    text = utils::toUpperCase(_player.getLastMessage());
     
     ofPoint source;
     ofColor textColor;

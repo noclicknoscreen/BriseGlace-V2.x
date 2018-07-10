@@ -34,7 +34,7 @@ public:
     
     string      getTitleRecompense(){return mRecompense.getTitre();};
     ofImage     getImageRecompense(){return mRecompense.getImage();};
-    ofImage     getAuteurRecompense(){return mRecompense.getAuteur();};
+    string      getAuteurRecompense(){return mRecompense.getAuteur();};
     
     string      getLegende(){return mLegende;};
     string      getTheme(){return mTheme;};

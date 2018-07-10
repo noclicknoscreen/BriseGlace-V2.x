@@ -34,9 +34,10 @@ private:
     enigmaType toEnigmaType(int _int);
     
 private:
-    enigma      mCurrentEnigma;
-    gameType    mCurrentGameType;
-    ofDirectory dir;
+    enigma          mCurrentEnigma;
+    gameType        mCurrentGameType;
+//    ofDirectory     dir;
+    vector<string>  mBunchOfEnigmas;
     
     int         nbHint;
     int         mIdxEnigma;

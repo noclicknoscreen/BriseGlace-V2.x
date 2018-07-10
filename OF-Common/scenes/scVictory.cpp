@@ -80,7 +80,7 @@ void scVictory::draw(){ //draw scene 1 here
     ofTranslate(0.23 * ofGetWidth(), 0.69 * ofGetHeight());
     //    ofRotateZ(-90);
     
-    mAuthorDraw.drawString(bigEnigmaManager().getCurrentEnigma()->getAuteur(bigEnigmaManager().pickHintIndex()), 0, 0);
+    mAuthorDraw.drawString(bigEnigmaManager().getCurrentEnigma()->getAuteurRecompense(), 0, 0);
     
     ofPopStyle();
     ofPopMatrix();

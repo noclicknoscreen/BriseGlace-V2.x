@@ -56,7 +56,7 @@ void scSelectGame::draw(){ //draw scene 1 here
         scScene::drawTitle(utils::cleanString("Parlez !"), ofColor::black, ofPoint(0, 480));
     }
     
-    scScene::drawSpokenWord(mPlayerMessage, mPlayerColor);
+    scScene::drawSpokenWord(mPlayerMessage, mPlayerColor, ofPoint(0, 30));
     
     bigPlayerManager().draw();
     
@@ -106,6 +106,9 @@ void scSelectGame::sceneWillDisappear( ofxScene * toScreen ){
 void scSelectGame::someoneSpoke(player & _player){
     scSelect::someoneSpoke(_player);
     nextStepSequence();
+    
+    mTimerEraseWord.startTimer(2);
+    
 }
 
 void scSelectGame::timerSignAnimationEnd(){
@@ -158,7 +161,6 @@ void scSelectGame::timerSignAnimationEnd(){
 
 void scSelectGame::timerEraseWordEnd(){
     mPlayerMessage = "";
-    mTimerEraseWord.startTimer(2);
 }
 
 void scSelectGame::timerTextSequenceEnd(){

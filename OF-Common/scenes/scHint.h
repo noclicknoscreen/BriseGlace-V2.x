@@ -29,6 +29,7 @@ public:
     
 //    indice myIndice;
     cubeManagerHint myCubeManager;
+    const float     cEspacementCube = 3.0f;
     
     //gui
     ofxPanel gui;
