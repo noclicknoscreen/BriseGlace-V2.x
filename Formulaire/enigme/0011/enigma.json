@@ -5,7 +5,7 @@
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/9e\/Gabriel_Charavay.jpg",
-        "auteur": "Jeanmichelparis",
+        "auteur": "Auteur : Jeanmichelparis",
         "date": "9 septembre 2011"
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/c2.staticflickr.com\/2\/1173\/1225274637_85fac883b1_b.jpg",
-            "auteur": "Evan Bench",
+            "auteur": "Auteur : Evan Bench",
             "date": "24 août 2007"
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/c1.staticflickr.com\/9\/8122\/8867798514_4c84265c92_b.jpg",
-            "auteur": "Inconnu",
+            "auteur": "Auteur : Inconnu",
             "date": "Inconnue"
         },
         {
@@ -30,7 +30,7 @@
             "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/c1.staticflickr.com\/9\/8389\/8481050276_93f6892d8b_b.jpg",
-            "auteur": "Inconnu",
+            "auteur": "Auteur : Inconnu",
             "date": "Inconnue"
         }
     ],
@@ -40,7 +40,7 @@
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/9e\/Gabriel_Charavay.jpg",
-            "auteur": "Jeanmichelparis",
+            "auteur": "Auteur : Jeanmichelparis",
             "date": "9 septembre 2011"
         },
         "legende": "Fils d'une famille de bonnetiers le Libraire Gabriel Charavay est un expert en autographes à Lyon entre 1843 et 1848, puis à Paris de 1857 à 1879. Il publia notamment une notice sur Sylvain Maréchal. Ce dernier, pamphlétaire français et passionné par l’égalité sociale, fut un précurseur de la grève générale et de l’anarchisme."

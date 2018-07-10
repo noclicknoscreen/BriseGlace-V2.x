@@ -5,7 +5,7 @@
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/c2.staticflickr.com\/6\/5475\/10727153514_8ce19529ff_b.jpg",
-        "auteur": "Rob Dammers",
+        "auteur": "Auteur : Rob Dammers",
         "date": "7 novembre 2013 "
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/c1.staticflickr.com\/5\/4087\/4843483678_4b26ae5ed9_b.jpg",
-            "auteur": "Tangi Bertin",
+            "auteur": "Auteur : Tangi Bertin",
             "date": "27 juillet 2010 "
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/c2.staticflickr.com\/4\/3029\/2902667829_24c6502795_b.jpg",
-            "auteur": "Corey Leopold",
+            "auteur": "Auteur : Corey Leopold",
             "date": "5 juillet 2008 "
         },
         {
@@ -30,7 +30,7 @@
             "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/3\/3f\/Stahl-_Holz-_und_Betonschwelle.jpg\/1280px-Stahl-_Holz-_und_Betonschwelle.jpg",
-            "auteur": "wikipedia",
+            "auteur": "Auteur : wikipedia",
             "date": "8 mai 2008"
         }
     ],
@@ -40,7 +40,7 @@
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/c2.staticflickr.com\/6\/5475\/10727153514_8ce19529ff_b.jpg",
-            "auteur": "Rob Dammers",
+            "auteur": "Auteur : Rob Dammers",
             "date": "7 novembre 2013 "
         },
         "legende": "Formé de cailloux très dur, le BALLAST constitue une couche de 30 à 35 cm qui maintien l'ensemble de la voie elle-même constituée de RAILS et de TRAVERSES. Sur la ligne TGV, après 15 ans de fonctionnement, des grands travaux de régénération ont eu lieu la nuit et se fut 2 à 3000 tonnes de BALLAST qui fût remplacé."

@@ -5,7 +5,7 @@
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8d\/Francois_Rabelais_-_Portrait.jpg\/800px-Francois_Rabelais_-_Portrait.jpg",
-        "auteur": "inconnu",
+        "auteur": "Auteur : inconnu",
         "date": "inconnue"
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/3a\/1543%2C_Andreas_Vesalius%27_Fabrica%2C_Base_Of_The_Brain.jpg",
-            "auteur": "inconnu",
+            "auteur": "Auteur : inconnu",
             "date": "inconnue"
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/22\/Da_Vinci_Vitruve_Luc_Viatour.jpg\/800px-Da_Vinci_Vitruve_Luc_Viatour.jpg",
-            "auteur": "inconnu",
+            "auteur": "Auteur : inconnu",
             "date": "inconnue"
         },
         {
@@ -30,7 +30,7 @@
             "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c1\/Salvator_Rosa_-_D%C3%A9mocrite_et_Protagoras.jpg\/800px-Salvator_Rosa_-_D%C3%A9mocrite_et_Protagoras.jpg",
-            "auteur": "inconnu",
+            "auteur": "Auteur : inconnu",
             "date": "inconnue"
         }
     ],
@@ -40,9 +40,9 @@
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8d\/Francois_Rabelais_-_Portrait.jpg\/800px-Francois_Rabelais_-_Portrait.jpg",
-            "auteur": "inconnu",
+            "auteur": "Auteur : inconnu",
             "date": "inconnue"
         },
-        "legende": "Médecin à l'hôtel-Dieu de Lyon cet humaniste et écrivain publia à Lyon : Pantagruel et Gargantua"
+        "legende": "Médecin à l'hôtel-Dieu de Lyon cet humaniste et écrivain publia à Lyon : Pantagruel et Gargantua."
     }
 }

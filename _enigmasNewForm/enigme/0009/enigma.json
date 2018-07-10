@@ -5,7 +5,7 @@
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/c2.staticflickr.com\/6\/5536\/10481577463_eb4a0e70b1_b.jpg",
-        "auteur": " Jean-Stéphane Laurent",
+        "auteur": "Auteur :  Jean-Stéphane Laurent",
         "date": "25 octobre 2013 "
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/c1.staticflickr.com\/5\/4353\/36251628291_2a27cee939_b.jpg",
-            "auteur": " Guilhem Vellut",
+            "auteur": "Auteur : Guilhem Vellut",
             "date": "4 août 2017 "
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.JPG",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/fb\/Cath._St_Jean_%283%29.JPG\/1280px-Cath._St_Jean_%283%29.JPG",
-            "auteur": "Gone de lyon",
+            "auteur": "Auteur : Gone de lyon",
             "date": "7 décembre 2008"
         },
         {
@@ -30,7 +30,7 @@
             "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/c1.staticflickr.com\/5\/4438\/35631299704_ccd707c083_b.jpg",
-            "auteur": " Jeannot Kant",
+            "auteur": "Auteur : Jeannot Kant",
             "date": "19 juin 2017 "
         }
     ],
@@ -40,7 +40,7 @@
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/c2.staticflickr.com\/6\/5536\/10481577463_eb4a0e70b1_b.jpg",
-            "auteur": " Jean-Stéphane Laurent",
+            "auteur": "Auteur : Jean-Stéphane Laurent",
             "date": "25 octobre 2013"
         },
         "legende": "La primatiale Saint-Jean-Baptiste et Saint-Étienne (dite aussi, plus simplement, cathédrale Saint-Jean) est le siège épiscopal de l'archidiocèse de Lyon. L'édifice actuel bâtit sous trois archevêques successifs au moment où l'architecture occidentale bascula du roman au gothique . Près du cœur, on peut découvrir une magnifique horloge astronomique."

@@ -5,7 +5,7 @@
         "image": "image0.",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/sites.ina.fr\/sncf\/media\/imagette\/512x384\/SNCF0101",
-        "auteur": "SNCF",
+        "auteur": "Auteur : SNCF",
         "date": "1829"
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/c2.staticflickr.com\/8\/7122\/7583851364_642661e13a_b.jpg",
-            "auteur": "stephane333",
+            "auteur": "Auteur : stephane333",
             "date": "12 juillet 2012"
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/44\/Autothermos.jpg",
-            "auteur": "Pierre gencey",
+            "auteur": "Auteur : Pierre gencey",
             "date": "1 mars 2008"
         },
         {
@@ -30,7 +30,7 @@
             "image": "image3.JPG",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/59\/CFBS_-_Nouvelle_chaudi%C3%A8re_de_la_130T_n%C2%B0101_Pinguely.JPG",
-            "auteur": "Claude villetaneuse",
+            "auteur": "Auteur : Claude villetaneuse",
             "date": "15 septembre 2012"
         }
     ],
@@ -40,7 +40,7 @@
             "image": "image4.",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/sites.ina.fr\/sncf\/media\/imagette\/512x384\/SNCF0101",
-            "auteur": "SNCF",
+            "auteur": "Auteur : SNCF",
             "date": "1829"
         },
         "legende": "Du 6 au 14 octobre 1829, un concours regroupant 4 locomotives à vapeur est organisé à Rainhill en Angleterre. La rocket de Stephenson gagne en atteignant 39 km\/h. La même année, le français Marc Seguin procède aux essais de sa locomotive à vapeur qui est la première au monde à chaudière tubulaire. "

@@ -5,7 +5,7 @@
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/c2.staticflickr.com\/8\/7569\/15939822990_c14d3f96f5_b.jpg",
-        "auteur": " Dennis Jarvis",
+        "auteur": "Auteur : Dennis Jarvis",
         "date": "3 juillet 2014"
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/1f\/Jules_Michelet.jpg\/800px-Jules_Michelet.jpg",
-            "auteur": "Thomas Couture",
+            "auteur": "Auteur : Thomas Couture",
             "date": "Inconnue"
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.JPG",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/83\/Pierre_Bossan.JPG\/800px-Pierre_Bossan.JPG",
-            "auteur": "Inconnu",
+            "auteur": "Auteur : Inconnu",
             "date": "inconnue"
         },
         {
@@ -30,7 +30,7 @@
             "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/c2.staticflickr.com\/8\/7322\/14166938371_3f1accd36d_b.jpg",
-            "auteur": "Luc Legay",
+            "auteur": "Auteur : Luc Legay",
             "date": "26 avril 2014 "
         }
     ],
@@ -40,7 +40,7 @@
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/c2.staticflickr.com\/8\/7569\/15939822990_c14d3f96f5_b.jpg",
-            "auteur": "librairie mollat",
+            "auteur": "Auteur : librairie mollat",
             "date": "30 mai 2015"
         },
         "legende": "C'est sur la colline de Fourvière surnomée la « montagne mystique » par Jules Michelet que la basilique Notre-Dame de Fourvière surplombe la ville de Lyon depuis la fin du XIXe siècle. \r\nSon architecture de style néo-byzantin ou romano-byzantin est l'œuvre de Pierre Bossan. \r\nC'est à la suite d'un vœu prononcé en 1642 pour éloigner une épidémie de peste de Lyon, qu'une statue de Marie fut érigée sur son clocher. "

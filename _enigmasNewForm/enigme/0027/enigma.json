@@ -5,7 +5,7 @@
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/6\/6b\/VHugo.jpg",
-        "auteur": "inconnu",
+        "auteur": "Auteur : inconnu",
         "date": "inconnu"
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/99\/Ebcosette.jpg",
-            "auteur": "Émile Bayard ",
+            "auteur": "Auteur : Émile Bayard ",
             "date": "1886"
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/eb\/Pantheon_charivarique.jpg",
-            "auteur": "Le Charivari",
+            "auteur": "Auteur : Le Charivari",
             "date": "9 décembre 1841"
         },
         {
@@ -30,7 +30,7 @@
             "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c0\/Notre_Dame_de_Paris_DSC_0846w.jpg\/800px-Notre_Dame_de_Paris_DSC_0846w.jpg",
-            "auteur": "Peter Haas",
+            "auteur": "Auteur : Peter Haas",
             "date": "24 juillet 2013"
         }
     ],
@@ -40,7 +40,7 @@
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/25\/Victor_Hugo_001.jpg\/800px-Victor_Hugo_001.jpg",
-            "auteur": "Nadar",
+            "auteur": "Auteur : Nadar",
             "date": "vers 1884"
         },
         "legende": "Comme les peuples lointains se touchent ! Comme les distances se rapprochent ! Et le rapprochement, c’est le commencent de la fraternité. Grâce aux chemins de fer, l’Europe bientôt ne sera pas plus grande que ne l’était la France au Moyen-Âge !"

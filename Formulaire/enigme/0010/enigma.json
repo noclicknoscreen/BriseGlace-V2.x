@@ -5,7 +5,7 @@
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/c1.staticflickr.com\/5\/4463\/37248725630_bcc63b4293_b.jpg",
-        "auteur": " Sandrine Néel",
+        "auteur": "Auteure : Sandrine Néel",
         "date": "13 août 2016"
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/c2.staticflickr.com\/4\/3213\/3002192025_6b52a8c252_o.jpg",
-            "auteur": " opethpainter",
+            "auteur": "Auteur : opethpainter",
             "date": "1 novembre 2008 "
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.JPG",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/fd\/Od%C3%A9on_antique_Lyon-Rue_boutiques.JPG\/1280px-Od%C3%A9on_antique_Lyon-Rue_boutiques.JPG",
-            "auteur": "Ursus",
+            "auteur": "Auteur : Ursus",
             "date": "8 mars 2016"
         },
         {
@@ -30,7 +30,7 @@
             "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/c2.staticflickr.com\/8\/7352\/9511937344_0ee4507150_b.jpg",
-            "auteur": " patrick janicek",
+            "auteur": "Auteur : Patrick Janicek",
             "date": "10 août 2013 "
         }
     ],
@@ -40,7 +40,7 @@
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/87\/Theatre_antique_Fourviere.jpg",
-            "auteur": "Flayas",
+            "auteur": "Auteur : Flayas",
             "date": "28 octobre 2005"
         },
         "legende": "Le théâtre antique de Lugdunum est un des principaux monuments romains visibles à Lyon. Il forme avec ses voisins l'Odéon antique, le pseudo-sanctuaire de Cybèle et le musée gallo-romain un site archéologique d'exception. \r\nDurant tout l'été, il accueille le festival des \"Nuits de Fourvière\" qui rassemble plus de 150 000 spectateurs chaque année."

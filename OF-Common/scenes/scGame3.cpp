@@ -365,7 +365,7 @@ void scGame3::sceneWillAppear( ofxScene * fromScreen ){
 void scGame3::sceneWillDisappear( ofxScene * toScreen ){
     
     scGame::sceneWillDisappear(toScreen);
-    //spotLight.disable();
+    spotLight.disable();
     
     // Disable timer events
     ofRemoveListener(mTimerSignWin.timerEnd,     this,&scGame3::timerSignWinEnd);

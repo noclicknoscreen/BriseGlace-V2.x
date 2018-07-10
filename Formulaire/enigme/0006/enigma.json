@@ -5,7 +5,7 @@
         "image": "image0.JPG",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/3c\/Aqueduc_du_Gier-Chaponost-Plat_de_l%27Air-Conduite_sur_arc.JPG",
-        "auteur": "Jmh2o",
+        "auteur": "Auteur : Jmh2o",
         "date": "23 août 2010"
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpeg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/50\/Lawrence_Alma-Tadema_05.jpeg",
-            "auteur": "Lawrence Alma-Tadema",
+            "auteur": "Auteur : Lawrence Alma-Tadema",
             "date": "1 janvier 1877"
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.JPG",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/6\/66\/Thermes_Romains_Lyon5_fr.JPG",
-            "auteur": "Alorange",
+            "auteur": "Auteur : Alorange",
             "date": "15 mars 2008"
         },
         {
@@ -30,7 +30,7 @@
             "image": "image3.JPG",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/86\/Chaponost_l%27%C3%A9glise.JPG",
-            "auteur": "Frachet",
+            "auteur": "Auteur : Frachet",
             "date": "1 novembre 2009"
         }
     ],
@@ -40,7 +40,7 @@
             "image": "image4.JPG",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/7\/70\/Aqueduc_du_Gier_-_Chaponost_-_Arches_apr%C3%A8s_r%C3%A9novation_2009-2010.JPG",
-            "auteur": "Arnaud Fafournoux",
+            "auteur": "Auteur : Arnaud Fafournoux",
             "date": "29 octobre 2010"
         },
         "legende": "Desservant la ville antique de Lugdunum, l'aqueduc du Gier pourrait remonter à l'époque d'Auguste. C'est le plus long des 4 aqueducs qui alimentaient la ville en eau. Il est classé monument historique. On retrouve ses traces de Saint-Chamond (42) à Saint-just (69) en passant par Chaponost et Oullins."

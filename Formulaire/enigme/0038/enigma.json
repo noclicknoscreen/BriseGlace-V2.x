@@ -1,11 +1,11 @@
 {
     "theme": "une commune",
     "mot": {
-        "titre": "sain bel",
+        "titre": "sain-bel",
         "image": "image0.png",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c0\/Blason_ville_fr_Sain-Bel_%28Rh%C3%B4ne%29.svg\/600px-Blason_ville_fr_Sain-Bel_%28Rh%C3%B4ne%29.svg.png",
-        "auteur": "Auteur Tretinville",
+        "auteur": "Auteur : Tretinville",
         "date": "5 février 2013"
     },
     "indice": [
@@ -36,13 +36,13 @@
     ],
     "recompense": {
         "indice": {
-            "titre": "la commune de sain bel",
+            "titre": "la commune de sain-bel",
             "image": "image4.JPG",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/d\/dd\/Sain-Bel-01.JPG\/1920px-Sain-Bel-01.JPG",
             "auteur": "Auteur : Wayne77 ",
             "date": "20 décembre 2013"
         },
-        "legende": "Située près de l’Arbresle et aux portes de l’agglomération lyonnaise, SAIN BEL, traversée par la BREVENNE, est proche du parc naturel régional du Pilat. À l’Antiquité, Les Gaulois retiraient déjà le plomb et le cuivre du sous-sol. De 1840 jusqu'à 1972, on exploite surtout le gisement constituée de PYRITE riche en soufre."
+        "legende": "Située près de l’Arbresle et aux portes de l’agglomération lyonnaise, SAIN-BEL, traversée par la BREVENNE, est proche du parc naturel régional du Pilat. À l’Antiquité, Les Gaulois retiraient déjà le plomb et le cuivre du sous-sol. De 1840 jusqu'à 1972, on exploite surtout le gisement constituée de PYRITE riche en soufre."
     }
 }

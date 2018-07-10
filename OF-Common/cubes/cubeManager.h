@@ -59,6 +59,7 @@ public:
 public:
     vector<cube>                myCubes;
     
+    void disableLight(){spotLightCubes.disable();};
     
 };
 

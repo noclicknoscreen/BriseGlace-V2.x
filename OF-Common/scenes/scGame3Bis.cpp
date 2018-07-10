@@ -63,6 +63,8 @@ void scGame3Bis::sceneWillDisappear( ofxScene * toScreen ){
     // EVENTS
     ofRemoveListener(mTimerEndScene.timerEnd, this, &scGame3Bis::timerEndSceneEnd);
     
+    spotLight.disable();
+    
 }
 
 

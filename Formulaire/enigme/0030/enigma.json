@@ -5,7 +5,7 @@
         "image": "image0.jpg",
         "image-crop": "image0-crop.jpg",
         "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/7\/73\/TGV_Sud-Est_rame_16_-_Plaque_record_mondial_vitesse.jpg\/1280px-TGV_Sud-Est_rame_16_-_Plaque_record_mondial_vitesse.jpg",
-        "auteur": "Inconnu",
+        "auteur": "Auteur : Inconnu",
         "date": "Inconnue"
     },
     "indice": [
@@ -14,7 +14,7 @@
             "image": "image1.jpg",
             "image-crop": "image1-crop.jpg",
             "url": "https:\/\/c1.staticflickr.com\/1\/620\/23062762969_c28d7737b9_b.jpg",
-            "auteur": "Julien Lozelli",
+            "auteur": "Auteur : Julien Lozelli",
             "date": "24 novembre 2015 "
         },
         {
@@ -22,7 +22,7 @@
             "image": "image2.jpg",
             "image-crop": "image2-crop.jpg",
             "url": "https:\/\/c1.staticflickr.com\/5\/4143\/4856929949_d334e20856_b.jpg",
-            "auteur": "elkhiki",
+            "auteur": "Auteur : elkhiki",
             "date": "16 mars 2010 "
         },
         {
@@ -30,7 +30,7 @@
             "image": "image3.jpg",
             "image-crop": "image3-crop.jpg",
             "url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/d\/dd\/M%C3%A9lusine19-Vigie1500V1.jpg\/1280px-M%C3%A9lusine19-Vigie1500V1.jpg",
-            "auteur": "Sovxx",
+            "auteur": "Auteur : Sovxx",
             "date": "23 juin 2004"
         }
     ],
@@ -40,7 +40,7 @@
             "image": "image4.jpg",
             "image-crop": "image4-crop.jpg",
             "url": "https:\/\/c1.staticflickr.com\/3\/2675\/4531756072_360983dbee_o.jpg",
-            "auteur": "Victor Brito",
+            "auteur": "Auteur : Victor Brito",
             "date": "17 avril 2010 "
         },
         "legende": "Même si la vitesse de croisière d'un TGV est de 250 km\/h, cette invention française a battu plusieurs records de vitesse durant les 40 dernières années :\r\n1981   : 380,0 km\/h lors de l'opération TGV 100\r\n1990  : 515,3 km\/h lors de l'opération TGV 140\r\n2007 : 574,8 km\/h lors de l'opération TGV 150"
