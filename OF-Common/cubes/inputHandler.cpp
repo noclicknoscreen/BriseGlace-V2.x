@@ -26,9 +26,14 @@ void inputHandler::setup(ofPoint _inputTextPosition, float _maxWidth, float _lin
     
 }
 
-void inputHandler::reset(){
-    duplicatesLetters.clear();
+void inputHandler::resetInputs(){
+//    duplicatesLetters.clear();
     splittedString.clear();
+}
+
+void inputHandler::resetDuplicates(){
+    duplicatesLetters.clear();
+//    splittedString.clear();
 }
 
 void inputHandler::getNewText(player _player)
@@ -130,8 +135,15 @@ void inputHandler::draw()
 
 void inputHandler::revealTirrets(cubeManager* cm)
 {
-    size_t found = wordToFind.find("-", 0);
+    size_t found;
     
+    found = wordToFind.find("-", 0);
+    if(found!=string::npos)
+    {
+        cm->myCubes[found].rotateToLetter();
+    }
+
+    found = wordToFind.find("'", 0);
     if(found!=string::npos)
     {
         cm->myCubes[found].rotateToLetter();
@@ -204,6 +216,11 @@ int inputHandler::update(cubeManager* cm, float _alphaDecay)
                 //                cm->myCubes[index].rotateToLetter(); //rotate the corresponding cube
                 nbCubesRotated ++;                   //count one letter found more
                 splittedString[currentRevealCube].alpha = 0;
+                
+                ofLogNotice() << "Rotating a new cube, pos:" << ofToString(currentRevealCube) << " ,letter:" << splittedString[currentRevealCube].letter;
+                ofLogNotice() << "nb cubes rotated :" << ofToString(nbCubesRotated) << " ,wordToFind size:" << ofToString(wordToFind.size());
+                
+                
             }
         }
         if(next)
@@ -228,24 +245,23 @@ int inputHandler::update(cubeManager* cm, float _alphaDecay)
                 // On écarte les lettres/caractères introuvables (esapces, tirets) pour ne pas bloquer le jeu
                 string easyWordToFind = wordToFind;
                 easyWordToFind.erase (std::remove (easyWordToFind.begin(), easyWordToFind.end(), ' '), easyWordToFind.end());
+                ofLogNotice() << "word to find is : " << easyWordToFind;
+                
                 easyWordToFind.erase (std::remove (easyWordToFind.begin(), easyWordToFind.end(), '-'), easyWordToFind.end());
+                ofLogNotice() << "word to find is : " << easyWordToFind;
                 
                 if(nbCubesRotated >= easyWordToFind.size())
                 {
                     //WIN !
-                    ofLogNotice() << "WIN = > return true, userId =  " << userId;
+                    ofLogNotice() << "WIN ( " << ofToString(nbCubesRotated) << ">= " << ofToString(easyWordToFind.size()) << ") ====> return userId =  " << userId;
                     return userId;
+                }else{
+                    ofLogNotice() << "NOT WIN ( " << ofToString(nbCubesRotated) << "< " << ofToString(easyWordToFind.size()) << ")";
                 }
+                
             }
         }
     }
     return 0;
-}
-
-
-
-void inputHandler::clearDuplicatesLettersHistory()
-{
-    duplicatesLetters.clear();
 }
 

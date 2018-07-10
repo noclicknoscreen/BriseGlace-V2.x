@@ -128,7 +128,7 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
     ofAddListener(bigPlayerManager().someoneSpoke,this,&scGame1::someoneSpoke);
     
     // Erase previous inputs
-    myInputManager.reset();
+    myInputManager.resetInputs();
     
 //    // Erase all words of every one
 //    bigPlayerManager().freshRestart();
@@ -151,7 +151,7 @@ void scGame1::sceneWillAppear( ofxScene * fromScreen ){
         //
         string solution = bigEnigmaManager().getCurrentEnigma()->getSolution();
         myCubeManager.getWord(utils::toWString(solution));
-        myInputManager.clearDuplicatesLettersHistory();
+        myInputManager.resetDuplicates();
         myInputManager.setReadyForNewText();
         myInputManager.setWordToFind(utils::toUpperCase(solution));
         myInputManager.revealTirrets(&myCubeManager);
@@ -192,6 +192,6 @@ void scGame1::someoneSpoke(player & _player){
 // VICTORY Event , go to scene you prefer
 void scGame1::timerSignWinEnd(){
     scGame::timerSignWinEnd();
-    ofxSceneManager::instance()->goToScene(VICTORY);
+    ofxSceneManager::instance()->goToScene(VICTORY, true);
 }
 

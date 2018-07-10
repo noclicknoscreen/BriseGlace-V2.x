@@ -40,7 +40,7 @@ public:
     void    getNewText(player _player);
     int     update(cubeManager* cm, float alphaDecay);
     void    draw();
-    void    clearDuplicatesLettersHistory();
+    
     void    setRevealMode(){revealMode = true; currentRevealCube=0;}
     bool    isReadyForNewText(){return mReadyForNewText;}
     void    setReadyForNewText(){mReadyForNewText = true;}
@@ -49,7 +49,8 @@ public:
     // no root implementation
     virtual void    compareInput(string wantedWord) = 0;
     
-    void reset();
+    void resetInputs();
+    void resetDuplicates();
     
     ofEvent<void> readyForNewText;
     

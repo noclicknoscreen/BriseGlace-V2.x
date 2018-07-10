@@ -31,16 +31,17 @@ void cube::update(float _rotationSpeed)
     if(currentRot < desiredRot)
     {
         isRotating = true;
-        if(currentRot + _rotationSpeed <= desiredRot)
-        {
+//        if(currentRot + _rotationSpeed <= desiredRot)
+//        {
             currentRot += _rotationSpeed;
-        }
-        else{
+//        }
+//        else{
 //            currentRot += (currentRot - desiredRot);
-             currentRot = desiredRot;
-        }
+////             currentRot = desiredRot;
+//        }
         
     }else{
+        currentRot = desiredRot;
         isRotating = false;
     }
     

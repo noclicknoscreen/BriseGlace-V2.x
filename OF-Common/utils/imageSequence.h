@@ -30,6 +30,7 @@ private:
 public:
     
     void update(float dt);
+    void restart();
     void load(string _directoryPath, float _period, ofPoint _size = ofPoint::zero());
     void draw(ofPoint _pos);
     

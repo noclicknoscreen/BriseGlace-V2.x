@@ -58,7 +58,7 @@ void inputHandlerHiddenWord::compareInput(string wantedWord)
             {
                 splittedString[i].alpha = 1.0;
                 splittedString[i].correspondingCubes.push_back((int)found);
-                ofLogNotice() << "found correspondance => alpha=1.0";
+                ofLogNotice() << "found correspondance => alpha=1.0, adding cube num:" << ofToString(found);
                 
             }
             found = wantedWord.find(splittedString[i].letter, found+1);

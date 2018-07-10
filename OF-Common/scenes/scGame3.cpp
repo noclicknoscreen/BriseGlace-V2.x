@@ -274,7 +274,7 @@ void scGame3::someoneSpoke(player & _player){
 // VICTORY Event , go to scene you prefer
 void scGame3::timerSignWinEnd(){
     scGame::timerSignWinEnd();
-    ofxSceneManager::instance()->goToScene(GAME3_BIS);
+    ofxSceneManager::instance()->goToScene(GAME3_BIS, true);
 }
 // Wait for some seocnds before applying forces
 void scGame3::timerStartForcesEnd(){

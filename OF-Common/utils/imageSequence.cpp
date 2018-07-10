@@ -41,6 +41,9 @@ void imageSequence::load(string _directoryPath, float _period, ofPoint _size){
     
 }
 
+void imageSequence::restart(){
+    mTime = 0.0f;
+}
 
 void imageSequence::update(float dt){
     

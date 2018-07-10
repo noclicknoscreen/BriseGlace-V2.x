@@ -266,14 +266,14 @@ void scGame::timerSignHintEnd(){
 }
 
 void scGame::timerForceWinEnd(){
-    ofLogNotice() << "fin du timer timerForceWin, go to scene 9 (WIN) ";
+    ofLogNotice() << "fin du timer timerForceWin, launch sign timer ";
     // --------------------------------
     // Stop counting
     mTimerForceWin.stop();
     // --------------------------------
     hintUserId = bigPlayerManager().getRandomPlayer();
     mTimerSignHint.stop();
-    bigPlayerManager().startSign(hintUserId, "C'est perdu !", 0.6f);
+    bigPlayerManager().startSign(hintUserId, "Voici la réponse", 0.6f);
     
     restartTimerSignWin();
     
@@ -307,6 +307,7 @@ void scGame::sceneWillAppear( ofxScene * fromScreen ){
         // Restart a timer that we win anytime
         restartTimerForceWin();
         mNbHints = 0;
+        petitTrain.restart();
 //        mDrawPetitTrain = true;
     }else{
         // unPause the timer

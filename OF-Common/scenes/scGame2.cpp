@@ -131,7 +131,7 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
 //    // Erase all words of every one
 //    bigPlayerManager().freshRestart();
     
-    myInputManager.reset();
+    myInputManager.resetInputs();
     
     // On ne refait pas ca si on vient de l'indice
     if(fromScreen->getSceneID() != HINT){
@@ -147,7 +147,7 @@ void scGame2::sceneWillAppear( ofxScene * fromScreen ){
         //inputs
         myInputManager.setup(ofPoint(0.67 * ofGetWidth(), 0.5 * ofGetHeight()), 0.4 * ofGetWidth(), 75);
         
-        myInputManager.clearDuplicatesLettersHistory();
+        myInputManager.resetDuplicates();
         myInputManager.setReadyForNewText();
         myInputManager.setMysteryString(myCubeManager.getContent());
         myInputManager.revealTirrets(&myCubeManager);
@@ -205,7 +205,7 @@ void scGame2::someoneSpoke(player & _player){
 // VICTORY Event , go to scene you prefer
 void scGame2::timerSignWinEnd(){
     scGame::timerSignWinEnd();
-    ofxSceneManager::instance()->goToScene(VICTORY);
+    ofxSceneManager::instance()->goToScene(VICTORY, true);
 }
 
 void scGame2::timerAfterTextEnd(){
