@@ -246,7 +246,8 @@ if ($donnees['date4'] != $_POST['sqldate4'. $i])
 }
 if ($donnees['legende'] != $_POST['sqllegende' . $i])
 {
-  $req = $bdd->query('UPDATE enigme SET legende = "'.$_POST['sqllegende' . $i].'" WHERE id = "' . $id . '"');
+  $legende = str_replace('"', '\"', $_POST['sqllegende' . $i] );
+  $req = $bdd->query('UPDATE enigme SET legende = "'.$legende.'" WHERE id = "' . $id . '"');
   $req->closeCursor();
 }
 
