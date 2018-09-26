@@ -29,21 +29,21 @@ void scSelectGame::draw(){ //draw scene 1 here
     // Draw title
     scScene::drawTitle("Jouons avec les \"mô\"", ofColor::black, ofPoint(0, 150));
     
-    if(mIndexSequence == 1){
+    if(mIndexSequence == 0){
         scScene::drawSubTitle(utils::cleanString("Les mô, sont des petits êtres carrés"), ofColor::black, ofPoint(0, 300));
-        scScene::drawSubTitle(utils::cleanString("qui parlent quant tu leur dis un truc à l'oreille."), ofColor::black, ofPoint(0, 350));
-        scScene::drawSubTitle(utils::cleanString("Parle et tu verras !"), ofColor::black, ofPoint(0, 460));
+        scScene::drawSubTitle(utils::cleanString("qui parlent quand tu leur dis un truc à l'oreille."), ofColor::black, ofPoint(0, 365));
+        scScene::drawSubTitle(utils::cleanString("Parle et tu verras !"), ofColor::black, ofPoint(0, 480));
     }
     
-    if(mIndexSequence == 2){
-        scScene::drawSubTitle(utils::cleanString("Plus tu parles à l'oreille de \"mô\","), ofColor::black, ofPoint(0, 300));
-        scScene::drawSubTitle(utils::cleanString("Plus ils t'aident en te donnant des lettres."), ofColor::black, ofPoint(0, 350));
+    if(mIndexSequence == 1){
+        scScene::drawSubTitle(utils::cleanString("Plus tu parles à l'oreille des \"mô\","), ofColor::black, ofPoint(0, 300));
+        scScene::drawSubTitle(utils::cleanString("Plus ils t'aident en te donnant des lettres."), ofColor::black, ofPoint(0, 365));
         
-        scScene::drawSubTitle(utils::cleanString("Pour commencer,"), ofColor::black, ofPoint(0, 460));
-        scScene::drawTitle("Dis le nom de ton jeu préféré...", ofColor::black, ofPoint(0, 500));
+        scScene::drawSubTitle(utils::cleanString("Pour commencer,"), ofColor::black, ofPoint(0, 480));
+        scScene::drawTitle("Dis le nom d'un de ces trois jeux:", ofColor::black, ofPoint(0, 535));
     }
     
-    scScene::drawSpokenWord(mPlayerMessage, mPlayerColor, ofPoint(0, 30));
+    //scScene::drawSpokenWord(mPlayerMessage, mPlayerColor, ofPoint(0, 30));
     
     bigPlayerManager().draw();
     
@@ -158,14 +158,20 @@ void scSelectGame::timerTextSequenceEnd(){
 }
 
 void scSelectGame::nextStepSequence(){
-    if(mIndexSequence == 0){
-        mTimerTextSequence.startTimer(cTimerTextSequence1);
-        mIndexSequence++;
-        
-    }else if(mIndexSequence == 1){
-        mTimerTextSequence.startTimer(cTimerTextSequence1);
-        mIndexSequence++;
-        
+    mTimerTextSequence.startTimer(cTimerTextSequence1);
+        if(mIndexSequence == 0){
+            mIndexSequence = 1;
+        }else if(mIndexSequence == 1){
+            mIndexSequence = 0;
+        }
+//    if(mIndexSequence == 0){
+//        mTimerTextSequence.startTimer(cTimerTextSequence1);
+//        mIndexSequence++;
+//
+//    }else if(mIndexSequence == 1){
+//        mTimerTextSequence.startTimer(cTimerTextSequence1);
+//        mIndexSequence++;
+//
 //    }else if(mIndexSequence == 2){
 //        mTimerTextSequence.startTimer(cTimerTextSequence1);
 //        mIndexSequence++;
@@ -194,8 +200,8 @@ void scSelectGame::nextStepSequence(){
 //        mTimerTextSequence.startTimer(cTimerTextSequence3);
 //        mIndexSequence++;
 //        
-    }else{
-        mTimerTextSequence.stop();
-    }
+//    }else{
+//        mTimerTextSequence.stop();
+//    }
     
 }

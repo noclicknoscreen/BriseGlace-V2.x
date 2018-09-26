@@ -94,7 +94,7 @@ void scGame2::draw(){ //draw scene 1 here
     ofSetColor(ofColor::black, 200);
     
     ofPushMatrix();
-    ofTranslate(175, 0.77 * ofGetHeight() - 50);
+    ofTranslate(175, 0.77 * ofGetHeight());
     //ofRotateZ(-90);
     
     mAuthorDraw.drawString(bigEnigmaManager().getCurrentEnigma()->getAuteurMot(), 0, 0);
@@ -106,7 +106,10 @@ void scGame2::draw(){ //draw scene 1 here
     scGame::draw();
 
     // Draw cubes
+    ofPushMatrix();
+    ofTranslate(0,25);
     myCubeManager.draw();
+    ofPopMatrix();
     
     // Draw floating words
     myInputManager.draw();

@@ -166,8 +166,8 @@ void scGame::draw(){
     ofSetColor(ofColor::black);
     mTitle.drawString("ICI ON CHERCHE :", posText.x, posText.y);
     mSubLine1.drawString(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getTheme()), posText.x, posText.y + 80);
-    mSubLine2.drawString(mConsigne1, posText.x, posText.y + 150);
-    mSubLine3.drawString(mConsigne2, posText.x, posText.y + 200);
+    mSubLine2.drawString(mConsigne1, posText.x, posText.y + 140);
+    mSubLine3.drawString(mConsigne2, posText.x, posText.y + 190);
     
     ofPopStyle();
     // -----------------------------------------------------------------

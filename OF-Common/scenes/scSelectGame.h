@@ -32,7 +32,7 @@ private:
     void    nextStepSequence();
     int     mIndexSequence;
     
-    const float cTimerTextSequence1 = 5.0f;
+    const float cTimerTextSequence1 = 10.0f;
     const float cTimerTextSequence2 = 5.0f;
     const float cTimerTextSequence3 = 5.0f;
     
