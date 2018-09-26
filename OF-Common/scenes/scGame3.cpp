@@ -53,7 +53,8 @@ void scGame3::setup(){
     colorizeCubes=false;
     
     mGameName = "MOT BRASSÉ";
-    mConsigne = "SI VOUS NOUS PARLEZ, ON FERA TOURNER LES CUBES !";
+    mConsigne1 = "LES CUBES SE RETOURNENT SI TU NOUS PARLES À L'OREILLE !";
+    mConsigne2 = "";
     
 };
 

@@ -16,9 +16,9 @@
 #include <codecvt>
 
 const string    globalFontName = "KGTenThousandReasons.ttf";
-const int       globalFontSizeSmall = 24;
-const int       globalFontSizeBig   = 48;
-const int       globalFontSizeMedium   = 36;
+const int       globalFontSizeSmall     = 24;
+const int       globalFontSizeBig       = 48;
+const int       globalFontSizeMedium    = 36;
 
 const string settingsFileNameGame1 = "settingsGame1.xml";
 const string settingsFileNameGame2 = "settingsGame2.xml";

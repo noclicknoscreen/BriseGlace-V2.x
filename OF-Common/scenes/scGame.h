@@ -76,13 +76,15 @@ private:
     ofTrueTypeFont  mTitle;
     ofTrueTypeFont  mSubLine1;
     ofTrueTypeFont  mSubLine2;
+    ofTrueTypeFont  mSubLine3;
 
     int mNbHints;
     
 
 protected:
     string  mGameName;
-    string  mConsigne;
+    string  mConsigne1;
+    string  mConsigne2;
     
     // Tchou, tchou, le petit train
     imageSequence petitTrain;

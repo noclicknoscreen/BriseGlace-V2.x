@@ -39,7 +39,8 @@ void scGame1::setup(){  //load your scene 1 assets here...
     bDrawGui=false;
     
     mGameName = "MOT MASQUÉ";
-    mConsigne = "SI VOUS NOUS PARLEZ, ON RÉPÉTERA TOUT !";
+    mConsigne1 = "ON TE DONNE DES LETTRES SI TU NOUS PARLES À L'OREILLE !";
+    mConsigne2 = "";
     
 };
 

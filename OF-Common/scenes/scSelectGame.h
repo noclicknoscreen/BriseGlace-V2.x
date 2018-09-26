@@ -32,9 +32,9 @@ private:
     void    nextStepSequence();
     int     mIndexSequence;
     
-    const float cTimerTextSequence1 = 1.0f;
-    const float cTimerTextSequence2 = 9.0f;
-    const float cTimerTextSequence3 = 1.5f;
+    const float cTimerTextSequence1 = 5.0f;
+    const float cTimerTextSequence2 = 5.0f;
+    const float cTimerTextSequence3 = 5.0f;
     
     timer   mTimerEraseWord;
     void    timerEraseWordEnd();

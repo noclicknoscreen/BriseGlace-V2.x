@@ -38,7 +38,8 @@ void scGame::setup(){
     mCartoucheTextSubTi.init(globalFontName, globalFontSizeMedium);
     mTitle.load(globalFontName, globalFontSizeMedium);
     mSubLine1.load(globalFontName, globalFontSizeBig);
-    mSubLine2.load(globalFontName, globalFontSizeMedium - 2);
+    mSubLine2.load(globalFontName, globalFontSizeMedium - 5);
+    mSubLine3.load(globalFontName, globalFontSizeMedium - 5);
     
     // ---------------------------------------------------------------------------
     petitTrain.load("Train-A01", 2.0, ofPoint(150, 150));
@@ -165,7 +166,8 @@ void scGame::draw(){
     ofSetColor(ofColor::black);
     mTitle.drawString("ICI ON CHERCHE :", posText.x, posText.y);
     mSubLine1.drawString(utils::toUpperCase(bigEnigmaManager().getCurrentEnigma()->getTheme()), posText.x, posText.y + 80);
-    mSubLine2.drawString(mConsigne, posText.x, posText.y + 150);
+    mSubLine2.drawString(mConsigne1, posText.x, posText.y + 150);
+    mSubLine3.drawString(mConsigne2, posText.x, posText.y + 200);
     
     ofPopStyle();
     // -----------------------------------------------------------------
