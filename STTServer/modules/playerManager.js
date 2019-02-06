@@ -2,9 +2,15 @@
 
 var socketHelper = require('./socketHelper');
 
+const fs = require('fs');
+const os = require('os');
+const path = require("path");
+
 var players = [];
 var lastMessage = {time:new Date().toLocaleString(), text:"", textToCompare:""};
 var lastNumber = 0;
+
+var logFolderPath = new Date().getFullYear() + "." + ("0" + (new Date().getMonth() + 1)).slice(-2) + "." + ("0" + new Date().getDate()).slice(-2);
 
 module.exports = {
   // Reset all players, empty datas
@@ -77,6 +83,9 @@ module.exports = {
         console.log("Old player found, Id:" + socket.id + " IP:" + myIpAddr);
 
         lastMessage = {time:new Date().toLocaleString(), text:message, textToCompare:suppressAccents(message)};
+
+        logNewMessage(myIpAddr, new Date().toLocaleString() + ":" + message);
+
         lastNumber = foundPlayer.nr;
         // Add message to the list (nope, we don't send all message any more
         //foundPlayer.messages.push(lastMessage);
@@ -166,5 +175,35 @@ function suppressAccents(word){
   word=word.toLowerCase();
 
   return word;
+
+}
+
+////////////////////////////////////////////////////
+/**
+* writeTextFile write data to file on hard drive
+* @param  string  filepath   Path to file on hard drive
+* @param  sring   output     Data to be written
+*/
+function logNewMessage (ipAdress, output) {
+
+  var logFolder   = path.join(__dirname,"..","logs",logFolderPath);
+  var logFilePath = logFolder + "/" + ipAdress + ".txt";
+
+  fs.mkdirSync(logFolder, { recursive: true }, function(err) {
+    if(err) {
+      if (err.code !== "EEXIST") {
+        return console.log(err);
+      }else{
+        // console.log(logFolder + " already exists.");
+      }
+    }
+  });
+
+  fs.appendFile(logFilePath, output + os.EOL, function(err) {
+    if(err) {
+      return console.log(err);
+    }
+    // console.log("log this message : " + output + " in : "+ logFilePath);
+  });
 
 }

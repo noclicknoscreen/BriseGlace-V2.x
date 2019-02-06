@@ -70,6 +70,15 @@ void playerManager::freshRestart(){
 }
 
 //--------------------------------------------------------------
+void playerManager::resetChromiumPages(){
+    if(bResetPages == false){
+        string url = "https://" + ipAdress.get() + ":8443/resetPages";
+        ofLoadURLAsync(url,"resetPages");
+        bResetPages = true;
+    }
+}
+
+//--------------------------------------------------------------
 void playerManager::update(){
     if(bLoadingPlayers == false){
         string url = "https://" + ipAdress.get() + ":8443/players";
@@ -302,6 +311,9 @@ void playerManager::urlResponse(ofHttpResponse & response){
         if(response.request.name == "resetPlayers"){
             loadPlayers(response.data);
             bResetPlayers = false;
+        }
+        if(response.request.name == "resetPages"){
+            bResetPages = false;
         }
     }else{
         ofLogError() << response.status << " " << response.error;

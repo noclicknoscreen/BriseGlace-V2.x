@@ -48,6 +48,7 @@ function updateList(message) {
   ul.innerHTML = "";
 
   messages.push((new Date).toLocaleString() + " : " + message);
+  messages = messages.slice(-10);
 
   for( var i = messages.length - 1; i >=0; i--) {
     var li=document.createElement('li');

@@ -3,4 +3,4 @@ sleep 1
 
 # Restart raspberries
 echo 'Restart ' $1
-ssh pi@$1 'echo | sudo shutdown -r now'
+ssh -o ConnectTimeout=5 pi@$1 'sudo shutdown -r now &'

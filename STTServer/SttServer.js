@@ -73,11 +73,28 @@ app.get('/resetPlayers', function(req, res) {
   res.setHeader('Content-Type', 'application/json');
   res.send(JSON.stringify(playerManager.strPlayers()));
 });
+app.get('/resetPages', function(req, res) {
+  console.log("reset chromium pages");
+  // Reset the pages
+  resetPage('192.168.2.21');
+  resetPage('192.168.2.22');
+  resetPage('192.168.2.23');
+  // Test restart
+  resetPage('192.168.1.146');
+
+  // Then send
+  res.setHeader('Content-Type', 'application/json');
+  res.send(JSON.stringify(playerManager.strPlayers()));
+  
+});
+
 
 // Start clients
 restartRaspClient('192.168.2.21');
 restartRaspClient('192.168.2.22');
 restartRaspClient('192.168.2.23');
+// Test restart
+restartRaspClient('192.168.1.146');
 
 
 // --------------------------------------------
@@ -87,7 +104,7 @@ var socketServer = io.on('connection', (socket) => {
 
   socket.on('disconnect', function() {
       console.log('recognition disconnected : ' + socket.id);
-      restartRaspClient(socketHelper.decodeIp(socket));
+      //restartRaspClient(socketHelper.decodeIp(socket));
   });
 
   console.log('recognition connected : ' + socket.id);
@@ -143,7 +160,14 @@ function sendPlayerToRecognition(socket, player){
 
 function restartRaspClient(myIpAddr){
   console.log('Restart Raspberry : ' + myIpAddr);
-  shell.exec('/Users/medenagan-id-001/BriseGlace/OF_0.9.8/apps/BriseGlace-V2.x/Scripts/startOneRaspberry.sh ' + myIpAddr);
+  //shell.exec('/Users/medenagan-id-001/BriseGlace/OF_0.9.8/apps/BriseGlace-V2.x/Scripts/startOneRaspberry.sh ' + myIpAddr);
+  shell.exec('../Scripts/startOneRaspberry.sh ' + myIpAddr);
+}
+
+function resetPage(myIpAddr){
+  console.log('Restart chromium : ' + myIpAddr);
+  //shell.exec('/Users/medenagan-id-001/BriseGlace/OF_0.9.8/apps/BriseGlace-V2.x/Scripts/startOneRaspberry.sh ' + myIpAddr);
+  shell.exec('../Scripts/restartChromiumOnRaspberry.sh ' + myIpAddr);
 }
 // mySocket.on('connection', (socket) => {
 //
