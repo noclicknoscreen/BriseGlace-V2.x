@@ -28,6 +28,9 @@ https://askubuntu.com/questions/762541/ubuntu-16-04-ssh-sign-and-send-pubkey-sig
 - How to auto-sign and having ssh server
 http://www.linuxproblem.org/art_9.html
 
+- Good article in case of not connecting on rasp pi (For example : this message can happen **WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!**)
+http://www.tux-planet.fr/warning-remote-host-identification-has-changed/
+
 ## Expected behavior
 ### Raspberry Client
 - the raspberry automatically starts, and opens a chromium page and connect to https://192.168.1.104:8443/recognition
