@@ -87,7 +87,7 @@ var socketServer = io.on('connection', (socket) => {
 
   socket.on('disconnect', function() {
       console.log('recognition disconnected : ' + socket.id);
-      restartRaspClient(socketHelper.decodeIp(socket));
+      //restartRaspClient(socketHelper.decodeIp(socket));
   });
 
   console.log('recognition connected : ' + socket.id);
