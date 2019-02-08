@@ -1,0 +1,222 @@
+==================================================
+
+Server starting at : 2/8/2019, 11:46:51 AM
+
+Server Notes :
+Recognition page : /recognition
+Display page : /display
+--
+Restart Raspberry : 192.168.2.21
+Restart  192.168.2.21
+Connection to 192.168.2.21 closed by remote host.
+Restart Raspberry : 192.168.2.22
+Restart  192.168.2.22
+Connection to 192.168.2.22 closed by remote host.
+Restart Raspberry : 192.168.2.23
+Restart  192.168.2.23
+Connection to 192.168.2.23 closed by remote host.
+listening http STT Server on port 8080
+--
+listening https STT Server on port 8443
+--
+recognition connected : NmuBgFbHo4I4Bn7bAAAA
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : IHx0iJLkoVcft3iMAAAB
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : KxZyBtt8IDPXpUWrAAAC
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:NmuBgFbHo4I4Bn7bAAAA IP:192.168.2.21
+New message from 1:192.168.2.21
+18yo5o40jrs0r1egrvgz1z
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+==================================================
+
+Server starting at : 2/8/2019, 11:54:05 AM
+
+Server Notes :
+Recognition page : /recognition
+Display page : /display
+--
+Restart Raspberry : 192.168.2.21
+Restart  192.168.2.21
+Connection to 192.168.2.21 closed by remote host.
+Restart Raspberry : 192.168.2.22
+Restart  192.168.2.22
+Connection to 192.168.2.22 closed by remote host.
+Restart Raspberry : 192.168.2.23
+Restart  192.168.2.23
+Connection to 192.168.2.23 closed by remote host.
+listening http STT Server on port 8080
+--
+listening https STT Server on port 8443
+--
+resetPlayers
+recognition connected : D5QmlBI6XgzU7DejAAAA
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : mMlF4QbV8DunmCpSAAAB
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 8bzYFKuDMxvWPTqjAAAC
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:D5QmlBI6XgzU7DejAAAA IP:192.168.2.22
+New message from 2:192.168.2.22
+Arthur et le Graal
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:8bzYFKuDMxvWPTqjAAAC IP:192.168.2.23
+New message from 3:192.168.2.23
+cahier de temps
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:8bzYFKuDMxvWPTqjAAAC IP:192.168.2.23
+New message from 3:192.168.2.23
+petite oreille m'entends-tu
+Players sent to display : 
+Old player found, Id:8bzYFKuDMxvWPTqjAAAC IP:192.168.2.23
+New message from 3:192.168.2.23
+ riz au lait
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:8bzYFKuDMxvWPTqjAAAC IP:192.168.2.23
+New message from 3:192.168.2.23
+Jeux Olympiques
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:8bzYFKuDMxvWPTqjAAAC IP:192.168.2.23
+New message from 3:192.168.2.23
+l'Arbresle
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : mMlF4QbV8DunmCpSAAAB
+recognition disconnected : D5QmlBI6XgzU7DejAAAA
+recognition disconnected : 8bzYFKuDMxvWPTqjAAAC
+recognition connected : Gigbu5Mv81cvAYo2AAAD
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : l_O1Y3Zv_uol0as5AAAE
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : IC-AoaRFHN7S3dHPAAAF
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:IC-AoaRFHN7S3dHPAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:IC-AoaRFHN7S3dHPAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+funiculaire
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IC-AoaRFHN7S3dHPAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+TGV
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : Gigbu5Mv81cvAYo2AAAD
+recognition disconnected : l_O1Y3Zv_uol0as5AAAE
+recognition disconnected : IC-AoaRFHN7S3dHPAAAF
+recognition connected : h6lU_nwMElhYpUzZAAAG
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : P3lco7dTL7vBWvedAAAH
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : CReiEp_ZYh_s43aWAAAI
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+==================================================
+
+Server starting at : 2/8/2019, 12:01:33 PM
+
+Server Notes :
+Recognition page : /recognition
+Display page : /display
+--
+Restart Raspberry : 192.168.2.21
+Restart  192.168.2.21
+Connection to 192.168.2.21 closed by remote host.
+Restart Raspberry : 192.168.2.22
+Restart  192.168.2.22
+Connection to 192.168.2.22 closed by remote host.
+Restart Raspberry : 192.168.2.23
+Restart  192.168.2.23
+Connection to 192.168.2.23 closed by remote host.
+listening http STT Server on port 8080
+--
+listening https STT Server on port 8443
+--
+resetPlayers
+recognition connected : 1WtlUOp8iVZjCkjrAAAA
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : Won7FQj4EpCNeusaAAAB
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : LdfUnttLSG1rIHKRAAAC
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 

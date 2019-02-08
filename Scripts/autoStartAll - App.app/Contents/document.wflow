@@ -169,12 +169,10 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>589.500000:253.000000</string>
+				<string>564.000000:253.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/French.lproj/main.nib</string>
 			</dict>
@@ -340,12 +338,10 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>589.500000:436.000000</string>
+				<string>564.000000:436.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/French.lproj/main.nib</string>
 			</dict>
@@ -355,7 +351,7 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>B6072ED2-892A-4100-B2A6-8607289601AB</key>
+		<key>467F0FCD-819C-4681-A58A-F2B0B901755C</key>
 		<dict>
 			<key>from</key>
 			<string>8DC1C988-D656-4CAA-AC80-8FB3332756F2 - 8DC1C988-D656-4CAA-AC80-8FB3332756F2</string>
