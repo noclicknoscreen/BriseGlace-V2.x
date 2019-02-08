@@ -96,6 +96,9 @@ void scVictory::sceneWillAppear( ofxScene * fromScreen ){
     // --
     mTimerScene.stop();
     mTimerReading.startTimer(cTimerReadingTimeout);
+    
+    bigPlayerManager().resetChromiumPages();
+    
     // Player manager events
     ofAddListener(bigPlayerManager().someoneSpoke   ,this   ,&scVictory::someoneSpoke);
     ofAddListener(mTimerScene.timerEnd              ,this   ,&scVictory::timerSceneEnd);
