@@ -13479,3 +13479,35 @@ recognition connected : Ye2AS8B_tE7LWfO1AAAD
 Old player found =============
 Player sent to recognition : 
 Players sent to display : 
+==================================================
+
+Server starting at : 2/11/2019, 11:39:20 AM
+
+Server Notes :
+Recognition page : /recognition
+Display page : /display
+--
+Restart Raspberry : 192.168.2.21
+Restart  192.168.2.21
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart Raspberry : 192.168.2.22
+Restart  192.168.2.22
+Connection to 192.168.2.22 closed by remote host.
+Restart Raspberry : 192.168.2.23
+Restart  192.168.2.23
+Connection to 192.168.2.23 closed by remote host.
+listening http STT Server on port 8080
+--
+listening https STT Server on port 8443
+--
+resetPlayers
+recognition connected : WmrdDtlopfCl7McgAAAA
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : jb9Q8E3BjBHmHgkJAAAB
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
