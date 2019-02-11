@@ -53,13 +53,13 @@ void ofApp::setup(){
     
 #else
     // release only code
-    ofFile fileLog("../../../Scripts/appLog.txt");
+    ofFile fileLog("../../../STTServer/logs/appLog.txt");
     if(fileLog.exists()){
         fileLog.remove();
     }
     
     ofSetLogLevel(OF_LOG_WARNING);
-    ofLogToFile("../../../Scripts/appLog.txt", true); //set channel to log file. log file resides in the /bin/data folder
+    ofLogToFile("../../../STTServer/Logs/appLog.txt", true); //set channel to log file. log file resides in the /bin/data folder
 #endif
     
     
