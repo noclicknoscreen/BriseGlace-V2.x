@@ -1,3 +1,259 @@
 
 
---------------------------------------- 2019-02-11-11-39-34-600
+--------------------------------------- 2019-02-11-11-42-09-736
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
