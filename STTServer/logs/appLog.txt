@@ -1,16 +1,6 @@
 
 
---------------------------------------- 2019-02-11-11-42-09-736
-[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
-[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
-[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
-[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
-[warning] The world is not set, trying calling the init function first.
-[warning] The world is not set, trying calling the init function first.
-[warning] The world is not set, trying calling the init function first.
-[warning] The world is not set, trying calling the init function first.
-[warning] The world is not set, trying calling the init function first.
-[warning] The world is not set, trying calling the init function first.
+--------------------------------------- 2019-02-12-05-31-22-741
 [warning] The world is not set, trying calling the init function first.
 [warning] The world is not set, trying calling the init function first.
 [warning] The world is not set, trying calling the init function first.
@@ -215,6 +205,52 @@
 [warning] The world is not set, trying calling the init function first.
 [warning] The world is not set, trying calling the init function first.
 [warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
 [ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
 [ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
 [ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
