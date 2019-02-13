@@ -20837,3 +20837,5901 @@ Old player found =============
 Player sent to recognition : 
 Players sent to display : 
 resetPlayers
+==================================================
+
+Server starting at : 2/13/2019, 5:31:03 AM
+
+Server Notes :
+Recognition page : /recognition
+Display page : /display
+--
+Restart Raspberry : 192.168.2.21
+Restart  192.168.2.21
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart Raspberry : 192.168.2.22
+Restart  192.168.2.22
+Connection to 192.168.2.22 closed by remote host.
+Restart Raspberry : 192.168.2.23
+Restart  192.168.2.23
+Connection to 192.168.2.23 closed by remote host.
+listening http STT Server on port 8080
+--
+listening https STT Server on port 8443
+--
+resetPlayers
+recognition connected : lG21qSjCLtIsJk8FAAAA
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : kwBKqrLH0aKX63y9AAAB
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:lG21qSjCLtIsJk8FAAAA IP:192.168.2.22
+New message from 2:192.168.2.22
+Mobilis
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:kwBKqrLH0aKX63y9AAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+mots mêlés
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:lG21qSjCLtIsJk8FAAAA IP:192.168.2.22
+New message from 2:192.168.2.22
+animaux masqué
+Players sent to display : 
+resetPlayers
+Old player found, Id:kwBKqrLH0aKX63y9AAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+est-ce qu'on te coiffe comme une merde
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:lG21qSjCLtIsJk8FAAAA IP:192.168.2.22
+New message from 2:192.168.2.22
+H&M
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:kwBKqrLH0aKX63y9AAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+TA
+Players sent to display : 
+Old player found, Id:kwBKqrLH0aKX63y9AAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ OU
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:lG21qSjCLtIsJk8FAAAA IP:192.168.2.22
+New message from 2:192.168.2.22
+ caca
+Players sent to display : 
+Old player found, Id:kwBKqrLH0aKX63y9AAAB IP:192.168.2.23
+New message from 3:192.168.2.23
+ locomotive
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:lG21qSjCLtIsJk8FAAAA IP:192.168.2.22
+New message from 2:192.168.2.22
+chien de prairie
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : lG21qSjCLtIsJk8FAAAA
+recognition disconnected : kwBKqrLH0aKX63y9AAAB
+recognition connected : -XqXJ12QbEdDeaJvAAAC
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : O--oox4gsPEXRKiOAAAD
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+le cheval c'est trop génial
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+un cheval de prairie
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+ memory
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O--oox4gsPEXRKiOAAAD IP:192.168.2.23
+New message from 3:192.168.2.23
+éteins tu te coiffe
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+tu créa à LED BMS user NTW
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+tu crées à l'aide d'un homme
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+ Automotive
+Players sent to display : 
+Old player found, Id:O--oox4gsPEXRKiOAAAD IP:192.168.2.23
+New message from 3:192.168.2.23
+et bien je te coiffe comme une merde
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O--oox4gsPEXRKiOAAAD IP:192.168.2.23
+New message from 3:192.168.2.23
+C'était quoi comme une merde
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+ent u us npvb
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+bébé
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+ je veux un homme
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+ je veux en grosse
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+j'ai une grosse B je m'appelle Valentin 14 ans j'habite à Lyon donc son numéro de téléphone
+Players sent to display : 
+Old player found, Id:O--oox4gsPEXRKiOAAAD IP:192.168.2.23
+New message from 3:192.168.2.23
+Étienne tu te coiffes
+Players sent to display : 
+Old player found, Id:O--oox4gsPEXRKiOAAAD IP:192.168.2.23
+New message from 3:192.168.2.23
+merde
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+89 09 71
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+Eugénie grosse s*****
+Players sent to display : 
+Old player found, Id:O--oox4gsPEXRKiOAAAD IP:192.168.2.23
+New message from 3:192.168.2.23
+Valentin la 14 suce des grosses b**** toute la journée
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+QW
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+ W
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:-XqXJ12QbEdDeaJvAAAC IP:192.168.2.22
+New message from 2:192.168.2.22
+QW
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : O--oox4gsPEXRKiOAAAD
+recognition disconnected : -XqXJ12QbEdDeaJvAAAC
+recognition connected : ePRUzt8OXZ3-V3BrAAAE
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 8yWNBSlwW5ifNa7EAAAF
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:ePRUzt8OXZ3-V3BrAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+Robin
+Players sent to display : 
+resetPlayers
+Old player found, Id:ePRUzt8OXZ3-V3BrAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+ valise
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:8yWNBSlwW5ifNa7EAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+Amityville Alizée Papaji
+Players sent to display : 
+Old player found, Id:ePRUzt8OXZ3-V3BrAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+à la rentrée
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ePRUzt8OXZ3-V3BrAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+ braser
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:8yWNBSlwW5ifNa7EAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+Eugénie la s*****
+Players sent to display : 
+Old player found, Id:ePRUzt8OXZ3-V3BrAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+bande de grosse p***
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ePRUzt8OXZ3-V3BrAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+bande de grosses
+Players sent to display : 
+Old player found, Id:8yWNBSlwW5ifNa7EAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+vous êtes tous des put
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:8yWNBSlwW5ifNa7EAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+ j'ai une grosse b***
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ePRUzt8OXZ3-V3BrAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+grosse b*** de César
+Players sent to display : 
+Old player found, Id:8yWNBSlwW5ifNa7EAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+tu veux sucer ma queue
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ePRUzt8OXZ3-V3BrAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+Salut tout le monde
+Players sent to display : 
+Old player found, Id:8yWNBSlwW5ifNa7EAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+bonne grosse p***
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ePRUzt8OXZ3-V3BrAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+ connard
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:8yWNBSlwW5ifNa7EAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+ Étienne la s*****
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ePRUzt8OXZ3-V3BrAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+joue avec les mots les mots sont des petites être carré
+Players sent to display : 
+Old player found, Id:8yWNBSlwW5ifNa7EAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+mot brasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:8yWNBSlwW5ifNa7EAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+retrouver le moral à une méditation yoga
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ePRUzt8OXZ3-V3BrAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+Pépito
+Players sent to display : 
+Old player found, Id:8yWNBSlwW5ifNa7EAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+dodo
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:8yWNBSlwW5ifNa7EAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+big dodo
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ePRUzt8OXZ3-V3BrAAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+Lannick Gautry
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:8yWNBSlwW5ifNa7EAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+dodo
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : ePRUzt8OXZ3-V3BrAAAE
+recognition disconnected : 8yWNBSlwW5ifNa7EAAAF
+recognition connected : PqMna7LVAnw8heFmAAAG
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : nERT9Gzb6rrizQiSAAAH
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:PqMna7LVAnw8heFmAAAG IP:192.168.2.22
+New message from 2:192.168.2.22
+Gilles de la Tourette est-ce que tu dis p*** p*** s*****
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:PqMna7LVAnw8heFmAAAG IP:192.168.2.22
+New message from 2:192.168.2.22
+mot masqué
+Players sent to display : 
+Old player found, Id:nERT9Gzb6rrizQiSAAAH IP:192.168.2.23
+New message from 3:192.168.2.23
+mots cachés
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:nERT9Gzb6rrizQiSAAAH IP:192.168.2.23
+New message from 3:192.168.2.23
+un humaniste célèbre anticonstitutionnellement
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:nERT9Gzb6rrizQiSAAAH IP:192.168.2.23
+New message from 3:192.168.2.23
+Rabelais
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : PqMna7LVAnw8heFmAAAG
+recognition disconnected : nERT9Gzb6rrizQiSAAAH
+recognition connected : S5yOO5f7I-JwfwuhAAAI
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : lEDbsmUEzA-wJjjCAAAJ
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:lEDbsmUEzA-wJjjCAAAJ IP:192.168.2.22
+New message from 2:192.168.2.22
+tu commences où je commence
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:lEDbsmUEzA-wJjjCAAAJ IP:192.168.2.22
+New message from 2:192.168.2.22
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:S5yOO5f7I-JwfwuhAAAI IP:192.168.2.23
+New message from 3:192.168.2.23
+un rail
+Players sent to display : 
+Old player found, Id:lEDbsmUEzA-wJjjCAAAJ IP:192.168.2.22
+New message from 2:192.168.2.22
+ la gare
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : lEDbsmUEzA-wJjjCAAAJ
+recognition disconnected : S5yOO5f7I-JwfwuhAAAI
+recognition connected : m-pGOIOawksJUNeCAAAK
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : DWF5Oxf3ekpPzzBeAAAL
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:DWF5Oxf3ekpPzzBeAAAL IP:192.168.2.23
+New message from 3:192.168.2.23
+salut toi
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:m-pGOIOawksJUNeCAAAK IP:192.168.2.22
+New message from 2:192.168.2.22
+balai
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:DWF5Oxf3ekpPzzBeAAAL IP:192.168.2.23
+New message from 3:192.168.2.23
+ma maman
+Players sent to display : 
+Old player found, Id:m-pGOIOawksJUNeCAAAK IP:192.168.2.22
+New message from 2:192.168.2.22
+balek
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:DWF5Oxf3ekpPzzBeAAAL IP:192.168.2.23
+New message from 3:192.168.2.23
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:DWF5Oxf3ekpPzzBeAAAL IP:192.168.2.23
+New message from 3:192.168.2.23
+anticonstitutionnellement
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:DWF5Oxf3ekpPzzBeAAAL IP:192.168.2.23
+New message from 3:192.168.2.23
+anticonstitutionnellement
+Players sent to display : 
+Old player found, Id:m-pGOIOawksJUNeCAAAK IP:192.168.2.22
+New message from 2:192.168.2.22
+cordelette
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:DWF5Oxf3ekpPzzBeAAAL IP:192.168.2.23
+New message from 3:192.168.2.23
+funiculaire
+Players sent to display : 
+Old player found, Id:m-pGOIOawksJUNeCAAAK IP:192.168.2.22
+New message from 2:192.168.2.22
+circulaire
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : m-pGOIOawksJUNeCAAAK
+recognition disconnected : DWF5Oxf3ekpPzzBeAAAL
+recognition connected : OGaCNgI5epRTmO35AAAM
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 5Ws8HvVfhIXbBpjHAAAN
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:5Ws8HvVfhIXbBpjHAAAN IP:192.168.2.23
+New message from 3:192.168.2.23
+un mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:5Ws8HvVfhIXbBpjHAAAN IP:192.168.2.23
+New message from 3:192.168.2.23
+un train
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:5Ws8HvVfhIXbBpjHAAAN IP:192.168.2.23
+New message from 3:192.168.2.23
+finalement
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:5Ws8HvVfhIXbBpjHAAAN IP:192.168.2.23
+New message from 3:192.168.2.23
+ les mains
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:5Ws8HvVfhIXbBpjHAAAN IP:192.168.2.23
+New message from 3:192.168.2.23
+anticonstitutionnellement
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:5Ws8HvVfhIXbBpjHAAAN IP:192.168.2.23
+New message from 3:192.168.2.23
+DAC ma DAC ma Fatma sac ma
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:5Ws8HvVfhIXbBpjHAAAN IP:192.168.2.23
+New message from 3:192.168.2.23
+bague bague bague fatma
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:OGaCNgI5epRTmO35AAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+ABCD EFGH IJKL
+Players sent to display : 
+Old player found, Id:5Ws8HvVfhIXbBpjHAAAN IP:192.168.2.23
+New message from 3:192.168.2.23
+cavité de la vieille JKL mn au PQ RST UVW XYZ
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : OGaCNgI5epRTmO35AAAM
+recognition disconnected : 5Ws8HvVfhIXbBpjHAAAN
+recognition connected : WZgXg-WJ1dGCcWA6AAAO
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : xk9iNQKBW_g9FdATAAAP
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:WZgXg-WJ1dGCcWA6AAAO IP:192.168.2.22
+New message from 2:192.168.2.22
+b*** de l'oreille
+Players sent to display : 
+Old player found, Id:xk9iNQKBW_g9FdATAAAP IP:192.168.2.23
+New message from 3:192.168.2.23
+Mohamed
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:WZgXg-WJ1dGCcWA6AAAO IP:192.168.2.22
+New message from 2:192.168.2.22
+ mon masque
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:WZgXg-WJ1dGCcWA6AAAO IP:192.168.2.22
+New message from 2:192.168.2.22
+mon masque
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:xk9iNQKBW_g9FdATAAAP IP:192.168.2.23
+New message from 3:192.168.2.23
+vaguement
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:xk9iNQKBW_g9FdATAAAP IP:192.168.2.23
+New message from 3:192.168.2.23
+wagen
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:xk9iNQKBW_g9FdATAAAP IP:192.168.2.23
+New message from 3:192.168.2.23
+Skagen
+Players sent to display : 
+Old player found, Id:WZgXg-WJ1dGCcWA6AAAO IP:192.168.2.22
+New message from 2:192.168.2.22
+SA
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:xk9iNQKBW_g9FdATAAAP IP:192.168.2.23
+New message from 3:192.168.2.23
+sodomi
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:WZgXg-WJ1dGCcWA6AAAO IP:192.168.2.22
+New message from 2:192.168.2.22
+la digue
+Players sent to display : 
+Old player found, Id:xk9iNQKBW_g9FdATAAAP IP:192.168.2.23
+New message from 3:192.168.2.23
+dès
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : WZgXg-WJ1dGCcWA6AAAO
+recognition disconnected : xk9iNQKBW_g9FdATAAAP
+recognition connected : fm6NWZYiVQnW1BvVAAAQ
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : CKFmjeGFrI5gMoWkAAAR
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:CKFmjeGFrI5gMoWkAAAR IP:192.168.2.23
+New message from 3:192.168.2.23
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:CKFmjeGFrI5gMoWkAAAR IP:192.168.2.23
+New message from 3:192.168.2.23
+à bcdefghijklmnopqrstuvwxyz
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : fm6NWZYiVQnW1BvVAAAQ
+recognition disconnected : CKFmjeGFrI5gMoWkAAAR
+recognition connected : W0j0h39sy3mO8bQ1AAAS
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : n934Ox2WnC8WgU6cAAAT
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:n934Ox2WnC8WgU6cAAAT IP:192.168.2.23
+New message from 3:192.168.2.23
+bowmaster
+Players sent to display : 
+Old player found, Id:W0j0h39sy3mO8bQ1AAAS IP:192.168.2.22
+New message from 2:192.168.2.22
+mot masqué
+Players sent to display : 
+resetPlayers
+Old player found, Id:n934Ox2WnC8WgU6cAAAT IP:192.168.2.23
+New message from 3:192.168.2.23
+bowmaster
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:n934Ox2WnC8WgU6cAAAT IP:192.168.2.23
+New message from 3:192.168.2.23
+ deltaplane
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:W0j0h39sy3mO8bQ1AAAS IP:192.168.2.22
+New message from 2:192.168.2.22
+lentilles
+Players sent to display : 
+Old player found, Id:n934Ox2WnC8WgU6cAAAT IP:192.168.2.23
+New message from 3:192.168.2.23
+Lentilly
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : n934Ox2WnC8WgU6cAAAT
+recognition disconnected : W0j0h39sy3mO8bQ1AAAS
+recognition connected : O1noFTEkEX5Z65muAAAU
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : hgDmoQMNgMoD9EWTAAAV
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:hgDmoQMNgMoD9EWTAAAV IP:192.168.2.23
+New message from 3:192.168.2.23
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:hgDmoQMNgMoD9EWTAAAV IP:192.168.2.23
+New message from 3:192.168.2.23
+radio de cul
+Players sent to display : 
+Old player found, Id:hgDmoQMNgMoD9EWTAAAV IP:192.168.2.23
+New message from 3:192.168.2.23
+ un temple
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:hgDmoQMNgMoD9EWTAAAV IP:192.168.2.23
+New message from 3:192.168.2.23
+cathédrale
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : O1noFTEkEX5Z65muAAAU
+recognition disconnected : hgDmoQMNgMoD9EWTAAAV
+recognition connected : XFaJXV11Nc0L-FW8AAAW
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : mGQxs1WJJ1Ah5ETDAAAX
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:XFaJXV11Nc0L-FW8AAAW IP:192.168.2.23
+New message from 3:192.168.2.23
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:XFaJXV11Nc0L-FW8AAAW IP:192.168.2.23
+New message from 3:192.168.2.23
+caca
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:XFaJXV11Nc0L-FW8AAAW IP:192.168.2.23
+New message from 3:192.168.2.23
+mais non au Parc du Pilat
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:XFaJXV11Nc0L-FW8AAAW IP:192.168.2.23
+New message from 3:192.168.2.23
+épée
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:XFaJXV11Nc0L-FW8AAAW IP:192.168.2.23
+New message from 3:192.168.2.23
+ popo
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:XFaJXV11Nc0L-FW8AAAW IP:192.168.2.23
+New message from 3:192.168.2.23
+pépé
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:XFaJXV11Nc0L-FW8AAAW IP:192.168.2.23
+New message from 3:192.168.2.23
+castor
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:XFaJXV11Nc0L-FW8AAAW IP:192.168.2.23
+New message from 3:192.168.2.23
+ ornithorynque
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:mGQxs1WJJ1Ah5ETDAAAX IP:192.168.2.22
+New message from 2:192.168.2.22
+pareil
+Players sent to display : 
+Old player found, Id:XFaJXV11Nc0L-FW8AAAW IP:192.168.2.23
+New message from 3:192.168.2.23
+sans belle
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Old player found, Id:mGQxs1WJJ1Ah5ETDAAAX IP:192.168.2.22
+New message from 2:192.168.2.22
+Asie prochain Brignais
+Players sent to display : 
+recognition disconnected : XFaJXV11Nc0L-FW8AAAW
+recognition disconnected : mGQxs1WJJ1Ah5ETDAAAX
+recognition connected : VnKdT_XVM1Zr5imjAAAY
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : DzZJpkarGkTT0wmzAAAZ
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:DzZJpkarGkTT0wmzAAAZ IP:192.168.2.23
+New message from 3:192.168.2.23
+mon métier
+Players sent to display : 
+Old player found, Id:DzZJpkarGkTT0wmzAAAZ IP:192.168.2.23
+New message from 3:192.168.2.23
+la météo à la mosquée
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:VnKdT_XVM1Zr5imjAAAY IP:192.168.2.22
+New message from 2:192.168.2.22
+tu pourras pas voir certains mots masqués
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:VnKdT_XVM1Zr5imjAAAY IP:192.168.2.22
+New message from 2:192.168.2.22
+une attitude content
+Players sent to display : 
+Old player found, Id:DzZJpkarGkTT0wmzAAAZ IP:192.168.2.23
+New message from 3:192.168.2.23
+heureux
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:VnKdT_XVM1Zr5imjAAAY IP:192.168.2.22
+New message from 2:192.168.2.22
+souriante
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : DzZJpkarGkTT0wmzAAAZ
+recognition disconnected : VnKdT_XVM1Zr5imjAAAY
+recognition connected : jN_T3ebt_0ubHEEvAAAa
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : gICKAacQYyjAOVmQAAAb
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:jN_T3ebt_0ubHEEvAAAa IP:192.168.2.23
+New message from 3:192.168.2.23
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:jN_T3ebt_0ubHEEvAAAa IP:192.168.2.23
+New message from 3:192.168.2.23
+ligne de vie
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:jN_T3ebt_0ubHEEvAAAa IP:192.168.2.23
+New message from 3:192.168.2.23
+dis-donc dis-donc
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:jN_T3ebt_0ubHEEvAAAa IP:192.168.2.23
+New message from 3:192.168.2.23
+karatéka
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : gICKAacQYyjAOVmQAAAb
+recognition disconnected : jN_T3ebt_0ubHEEvAAAa
+recognition connected : Js9RZmrLwCSGXXaXAAAc
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 6_1oV0kuszI2IWjTAAAd
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+allô
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+c'est parti m'embrasser
+Players sent to display : 
+resetPlayers
+Old player found, Id:6_1oV0kuszI2IWjTAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+mon masque et mon masque et
+Players sent to display : 
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+ mon masque est allé en masqué
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:6_1oV0kuszI2IWjTAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+un moyen de transport
+Players sent to display : 
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+tramway
+Players sent to display : 
+Old player found, Id:6_1oV0kuszI2IWjTAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+ tramway
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:6_1oV0kuszI2IWjTAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+oui
+Players sent to display : 
+resetPlayers
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+ah bah celui-là il m'a pourri la vie
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:6_1oV0kuszI2IWjTAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+avion
+Players sent to display : 
+Old player found, Id:6_1oV0kuszI2IWjTAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+ hélicoptère hélicoptère
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+machin bizarre
+Players sent to display : 
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+ machin bizarre
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:6_1oV0kuszI2IWjTAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+hélicoptère
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+chat qui pue
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:6_1oV0kuszI2IWjTAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+c'est pas moi fusée
+Players sent to display : 
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+mais c'est bizarre qui pue des fesses
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+petit tramway
+Players sent to display : 
+Old player found, Id:6_1oV0kuszI2IWjTAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+je trouve pas c'est compliqué car
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+bizarre qui sent pas bon des fesses
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:6_1oV0kuszI2IWjTAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+c'est trop compliqué j'arrive pas à mon jour je m'appelle clémentine et je suis en 6e minutes avec églantine Châtelet et aiglon
+Players sent to display : 
+Old player found, Id:6_1oV0kuszI2IWjTAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+Eurovia
+Players sent to display : 
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+Bonjour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+ mais pourquoi
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+mais pourquoi elle revient
+Players sent to display : 
+Old player found, Id:6_1oV0kuszI2IWjTAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+trop compliqué j'arrive pas à
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:6_1oV0kuszI2IWjTAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+Aero va
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:Js9RZmrLwCSGXXaXAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+aerokart aérogare
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : 6_1oV0kuszI2IWjTAAAd
+recognition disconnected : Js9RZmrLwCSGXXaXAAAc
+recognition connected : -Z3IxyN8o8A6Z1SKAAAe
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : LAw9nKixukEoTSEVAAAf
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:-Z3IxyN8o8A6Z1SKAAAe IP:192.168.2.22
+New message from 2:192.168.2.22
+on te déposera les trois renards et après au moins quand même
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:LAw9nKixukEoTSEVAAAf IP:192.168.2.23
+New message from 3:192.168.2.23
+mot masqué
+Players sent to display : 
+resetPlayers
+Old player found, Id:-Z3IxyN8o8A6Z1SKAAAe IP:192.168.2.22
+New message from 2:192.168.2.22
+mot masqué mot masqué mot masqué
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LAw9nKixukEoTSEVAAAf IP:192.168.2.23
+New message from 3:192.168.2.23
+papillote
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:-Z3IxyN8o8A6Z1SKAAAe IP:192.168.2.22
+New message from 2:192.168.2.22
+ papillote papillote
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LAw9nKixukEoTSEVAAAf IP:192.168.2.23
+New message from 3:192.168.2.23
+poussin poussin
+Players sent to display : 
+Old player found, Id:-Z3IxyN8o8A6Z1SKAAAe IP:192.168.2.22
+New message from 2:192.168.2.22
+coussin coussin coussin coussin coussin coussin coussin coussin coussin
+Players sent to display : 
+Old player found, Id:LAw9nKixukEoTSEVAAAf IP:192.168.2.23
+New message from 3:192.168.2.23
+ poussin poussin poussin poussin
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:-Z3IxyN8o8A6Z1SKAAAe IP:192.168.2.22
+New message from 2:192.168.2.22
+un coussin coussin coussin
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : LAw9nKixukEoTSEVAAAf
+recognition disconnected : -Z3IxyN8o8A6Z1SKAAAe
+recognition connected : kEhUz9Wom4ltaKN2AAAg
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : _sqQGYaj19Tl-vu7AAAh
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:kEhUz9Wom4ltaKN2AAAg IP:192.168.2.23
+New message from 3:192.168.2.23
+nom masqué balancelle masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:_sqQGYaj19Tl-vu7AAAh IP:192.168.2.22
+New message from 2:192.168.2.22
+dessin
+Players sent to display : 
+Old player found, Id:kEhUz9Wom4ltaKN2AAAg IP:192.168.2.23
+New message from 3:192.168.2.23
+Tassin-la-Demi-Lune
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:_sqQGYaj19Tl-vu7AAAh IP:192.168.2.22
+New message from 2:192.168.2.22
+ français
+Players sent to display : 
+Old player found, Id:_sqQGYaj19Tl-vu7AAAh IP:192.168.2.22
+New message from 2:192.168.2.22
+ Francheville
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:kEhUz9Wom4ltaKN2AAAg IP:192.168.2.23
+New message from 3:192.168.2.23
+prends
+Players sent to display : 
+Old player found, Id:kEhUz9Wom4ltaKN2AAAg IP:192.168.2.23
+New message from 3:192.168.2.23
+ Lyon Écully
+Players sent to display : 
+Old player found, Id:_sqQGYaj19Tl-vu7AAAh IP:192.168.2.22
+New message from 2:192.168.2.22
+un caca qui pue des fesses
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:kEhUz9Wom4ltaKN2AAAg IP:192.168.2.23
+New message from 3:192.168.2.23
+la rançon Briançon
+Players sent to display : 
+Old player found, Id:_sqQGYaj19Tl-vu7AAAh IP:192.168.2.22
+New message from 2:192.168.2.22
+beaucoup
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:kEhUz9Wom4ltaKN2AAAg IP:192.168.2.23
+New message from 3:192.168.2.23
+Notre-Dame d'Espérance
+Players sent to display : 
+Old player found, Id:_sqQGYaj19Tl-vu7AAAh IP:192.168.2.22
+New message from 2:192.168.2.22
+ Notre-Dame de l'espérance Notre-Dame de l'espérance
+Players sent to display : 
+Old player found, Id:kEhUz9Wom4ltaKN2AAAg IP:192.168.2.23
+New message from 3:192.168.2.23
+ Notre-Dame d'Espérance
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:kEhUz9Wom4ltaKN2AAAg IP:192.168.2.23
+New message from 3:192.168.2.23
+montrer son montrer son mon pari son intéressant en caressant mon télé
+Players sent to display : 
+Old player found, Id:_sqQGYaj19Tl-vu7AAAh IP:192.168.2.22
+New message from 2:192.168.2.22
+montrer son modélisme Google sur mon téléphone quoi
+Players sent to display : 
+Old player found, Id:kEhUz9Wom4ltaKN2AAAg IP:192.168.2.23
+New message from 3:192.168.2.23
+hérisson
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:kEhUz9Wom4ltaKN2AAAg IP:192.168.2.23
+New message from 3:192.168.2.23
+ Paris sinon Paris son RSA vous parler sans montrer mon hérisson
+Players sent to display : 
+Old player found, Id:_sqQGYaj19Tl-vu7AAAh IP:192.168.2.22
+New message from 2:192.168.2.22
+monter Verizon ABCD EFGH IJKL mn au PQ RST UVW
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:kEhUz9Wom4ltaKN2AAAg IP:192.168.2.23
+New message from 3:192.168.2.23
+capitale du Forez
+Players sent to display : 
+resetPlayers
+Old player found, Id:_sqQGYaj19Tl-vu7AAAh IP:192.168.2.22
+New message from 2:192.168.2.22
+ABCD EFGH IJ
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:_sqQGYaj19Tl-vu7AAAh IP:192.168.2.22
+New message from 2:192.168.2.22
+le PQ RST UVW XYZ
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:kEhUz9Wom4ltaKN2AAAg IP:192.168.2.23
+New message from 3:192.168.2.23
+Montbrison
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : _sqQGYaj19Tl-vu7AAAh
+recognition disconnected : kEhUz9Wom4ltaKN2AAAg
+recognition connected : 267SqPC15Bvbub8KAAAi
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : RIZtSA8-qd7MZGL0AAAj
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:267SqPC15Bvbub8KAAAi IP:192.168.2.22
+New message from 2:192.168.2.22
+c'est quoi déjà le faisais téléphonique
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:RIZtSA8-qd7MZGL0AAAj IP:192.168.2.23
+New message from 3:192.168.2.23
+Mohammed quemo me quemo me quemo me quemo me quemo mastic
+Players sent to display : 
+Old player found, Id:267SqPC15Bvbub8KAAAi IP:192.168.2.22
+New message from 2:192.168.2.22
+mon masque et mon masque masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:267SqPC15Bvbub8KAAAi IP:192.168.2.22
+New message from 2:192.168.2.22
+église cathédrale
+Players sent to display : 
+Old player found, Id:RIZtSA8-qd7MZGL0AAAj IP:192.168.2.23
+New message from 3:192.168.2.23
+cathédrale cathédrale cathédrale cathédrale
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:267SqPC15Bvbub8KAAAi IP:192.168.2.22
+New message from 2:192.168.2.22
+basilique basilique basilique basilique basilique
+Players sent to display : 
+Old player found, Id:RIZtSA8-qd7MZGL0AAAj IP:192.168.2.23
+New message from 3:192.168.2.23
+basilique basilique basilique basilique basilique basilique basilique basilique basilique basilique basilique
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: No route to host
+start page
+ssh: connect to host 192.168.2.21 port 22: Host is down
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Host is down
+exec: ssh: connect to host 192.168.2.21 port 22: No route to host
+ssh: connect to host 192.168.2.21 port 22: Host is down
+ssh: connect to host 192.168.2.21 port 22: Host is down
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : RIZtSA8-qd7MZGL0AAAj
+recognition disconnected : 267SqPC15Bvbub8KAAAi
+recognition connected : nfqvP6bL_5ky6KZxAAAk
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : FKNnOrzbDBhftxVBAAAl
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:nfqvP6bL_5ky6KZxAAAk IP:192.168.2.22
+New message from 2:192.168.2.22
+vous êtes de téléviseur de 2 secondes
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:FKNnOrzbDBhftxVBAAAl IP:192.168.2.23
+New message from 3:192.168.2.23
+mon masque et mon masque et
+Players sent to display : 
+Old player found, Id:nfqvP6bL_5ky6KZxAAAk IP:192.168.2.22
+New message from 2:192.168.2.22
+mon masque masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:FKNnOrzbDBhftxVBAAAl IP:192.168.2.23
+New message from 3:192.168.2.23
+ aerotrain Aero
+Players sent to display : 
+Old player found, Id:nfqvP6bL_5ky6KZxAAAk IP:192.168.2.22
+New message from 2:192.168.2.22
+tramway
+Players sent to display : 
+Old player found, Id:FKNnOrzbDBhftxVBAAAl IP:192.168.2.23
+New message from 3:192.168.2.23
+aerotrain
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:nfqvP6bL_5ky6KZxAAAk IP:192.168.2.22
+New message from 2:192.168.2.22
+ ABCD EFGH IJKL mn
+Players sent to display : 
+Old player found, Id:FKNnOrzbDBhftxVBAAAl IP:192.168.2.23
+New message from 3:192.168.2.23
+ aérienne millièmes
+Players sent to display : 
+Old player found, Id:nfqvP6bL_5ky6KZxAAAk IP:192.168.2.22
+New message from 2:192.168.2.22
+QRST UVW XYZ
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Old player found, Id:FKNnOrzbDBhftxVBAAAl IP:192.168.2.23
+New message from 3:192.168.2.23
+Michelin
+Players sent to display : 
+recognition disconnected : nfqvP6bL_5ky6KZxAAAk
+recognition disconnected : FKNnOrzbDBhftxVBAAAl
+recognition connected : h73byn7o1VDk9y2WAAAm
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Players sent to display : 
+recognition connected : pa_pJ_ANz6lICZI4AAAn
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:pa_pJ_ANz6lICZI4AAAn IP:192.168.2.23
+New message from 3:192.168.2.23
+ok d'accord
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:h73byn7o1VDk9y2WAAAm IP:192.168.2.22
+New message from 2:192.168.2.22
+mon basket quemo me quemo me quemo
+Players sent to display : 
+Old player found, Id:pa_pJ_ANz6lICZI4AAAn IP:192.168.2.23
+New message from 3:192.168.2.23
+ Thomas Thomas masqué
+Players sent to display : 
+resetPlayers
+Old player found, Id:h73byn7o1VDk9y2WAAAm IP:192.168.2.22
+New message from 2:192.168.2.22
+basket basket
+Players sent to display : 
+Old player found, Id:pa_pJ_ANz6lICZI4AAAn IP:192.168.2.23
+New message from 3:192.168.2.23
+kilomètres
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:pa_pJ_ANz6lICZI4AAAn IP:192.168.2.23
+New message from 3:192.168.2.23
+ à bcdefghijklmnopqrstuvwxyz
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:h73byn7o1VDk9y2WAAAm IP:192.168.2.22
+New message from 2:192.168.2.22
+aqueduc aqueduc
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : pa_pJ_ANz6lICZI4AAAn
+recognition disconnected : h73byn7o1VDk9y2WAAAm
+recognition connected : ae_53AYjQqa42B8WAAAo
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : gjv6Og4SorX876iMAAAp
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:gjv6Og4SorX876iMAAAp IP:192.168.2.23
+New message from 3:192.168.2.23
+l'alphabet en fait
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gjv6Og4SorX876iMAAAp IP:192.168.2.23
+New message from 3:192.168.2.23
+ masques et masques et masques et masques et masques et masques et masqué
+Players sent to display : 
+Old player found, Id:gjv6Og4SorX876iMAAAp IP:192.168.2.23
+New message from 3:192.168.2.23
+basket
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:ae_53AYjQqa42B8WAAAo IP:192.168.2.22
+New message from 2:192.168.2.22
+mon masque et mon masque et
+Players sent to display : 
+resetPlayers
+Old player found, Id:gjv6Og4SorX876iMAAAp IP:192.168.2.23
+New message from 3:192.168.2.23
+tomate et me mettre en masqué mon masque et mon masque masqué
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ae_53AYjQqa42B8WAAAo IP:192.168.2.22
+New message from 2:192.168.2.22
+one one
+Players sent to display : 
+Old player found, Id:gjv6Og4SorX876iMAAAp IP:192.168.2.23
+New message from 3:192.168.2.23
+Roanne Roanne Roanne Roanne Roanne Roanne Roanne Roanne
+Players sent to display : 
+Old player found, Id:gjv6Og4SorX876iMAAAp IP:192.168.2.23
+New message from 3:192.168.2.23
+Anne Roanne
+Players sent to display : 
+Old player found, Id:ae_53AYjQqa42B8WAAAo IP:192.168.2.22
+New message from 2:192.168.2.22
+Roanne Roanne
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gjv6Og4SorX876iMAAAp IP:192.168.2.23
+New message from 3:192.168.2.23
+ ah oui c'est pas possible
+Players sent to display : 
+Old player found, Id:ae_53AYjQqa42B8WAAAo IP:192.168.2.22
+New message from 2:192.168.2.22
+Lorraine Lorraine
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gjv6Og4SorX876iMAAAp IP:192.168.2.23
+New message from 3:192.168.2.23
+Lorraine Lorraine Lorraine Lorraine
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gjv6Og4SorX876iMAAAp IP:192.168.2.23
+New message from 3:192.168.2.23
+Lausanne Lausanne Lausanne Lausanne Lausanne Lausanne
+Players sent to display : 
+Old player found, Id:ae_53AYjQqa42B8WAAAo IP:192.168.2.22
+New message from 2:192.168.2.22
+Lausanne Lausanne Lausanne Lausanne Lausanne Lausanne Lausanne Lausanne Lausanne Lausanne Lausanne
+Players sent to display : 
+Old player found, Id:gjv6Og4SorX876iMAAAp IP:192.168.2.23
+New message from 3:192.168.2.23
+ Lausanne Lausanne Lausanne Lausanne
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gjv6Og4SorX876iMAAAp IP:192.168.2.23
+New message from 3:192.168.2.23
+ZZZ
+Players sent to display : 
+Old player found, Id:gjv6Og4SorX876iMAAAp IP:192.168.2.23
+New message from 3:192.168.2.23
+z
+Players sent to display : 
+Old player found, Id:ae_53AYjQqa42B8WAAAo IP:192.168.2.22
+New message from 2:192.168.2.22
+zzzz zzzz Z
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : ae_53AYjQqa42B8WAAAo
+recognition disconnected : gjv6Og4SorX876iMAAAp
+recognition connected : stM-9KhMNf_BZ8WnAAAq
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : tYqMsf_b_wnV4KB4AAAr
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:stM-9KhMNf_BZ8WnAAAq IP:192.168.2.22
+New message from 2:192.168.2.22
+alors qui fait le
+Players sent to display : 
+Old player found, Id:tYqMsf_b_wnV4KB4AAAr IP:192.168.2.23
+New message from 3:192.168.2.23
+mon masque et mon masque
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:stM-9KhMNf_BZ8WnAAAq IP:192.168.2.22
+New message from 2:192.168.2.22
+Bonjour je m'appelle Yassine reviens je suis avec des amis qui s'appelle clémentine et c'est ici
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:stM-9KhMNf_BZ8WnAAAq IP:192.168.2.22
+New message from 2:192.168.2.22
+très gentil mais franchement c'est le pouvait être un peu plus sympa sérieux
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:tYqMsf_b_wnV4KB4AAAr IP:192.168.2.23
+New message from 3:192.168.2.23
+non mais elle est vraiment pas sympa cette fille parce qu'elle est vraiment insupportable franchement non mais là j'en ai réellement marre mais qu'elle se taise
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Old player found, Id:tYqMsf_b_wnV4KB4AAAr IP:192.168.2.23
+New message from 3:192.168.2.23
+ah ouais
+Players sent to display : 
+recognition disconnected : stM-9KhMNf_BZ8WnAAAq
+recognition disconnected : tYqMsf_b_wnV4KB4AAAr
+recognition connected : 8OoGZ-QyDIGJlj_6AAAs
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Players sent to display : 
+recognition connected : JHaWvPNCOvx383HrAAAt
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:8OoGZ-QyDIGJlj_6AAAs IP:192.168.2.22
+New message from 2:192.168.2.22
+j'ai dit à Nathalie
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:JHaWvPNCOvx383HrAAAt IP:192.168.2.23
+New message from 3:192.168.2.23
+mon masque et mon masque et mot masqué
+Players sent to display : 
+resetPlayers
+Old player found, Id:8OoGZ-QyDIGJlj_6AAAs IP:192.168.2.22
+New message from 2:192.168.2.22
+ok mon masque
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:JHaWvPNCOvx383HrAAAt IP:192.168.2.23
+New message from 3:192.168.2.23
+l'arbre l'arbre est l'arbre est
+Players sent to display : 
+Old player found, Id:8OoGZ-QyDIGJlj_6AAAs IP:192.168.2.22
+New message from 2:192.168.2.22
+Montélimar
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:JHaWvPNCOvx383HrAAAt IP:192.168.2.23
+New message from 3:192.168.2.23
+balastre ballast ballast
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:8OoGZ-QyDIGJlj_6AAAs IP:192.168.2.22
+New message from 2:192.168.2.22
+Bonjour je m'appelle Élodie Robert je suis avec des amis qui qui sont
+Players sent to display : 
+Old player found, Id:JHaWvPNCOvx383HrAAAt IP:192.168.2.23
+New message from 3:192.168.2.23
+Bonjour je m'appelle Clémentine meunier je suis à la gare Saint-Paul avec mes amis églantine et félicité m'a jamais
+Players sent to display : 
+Old player found, Id:JHaWvPNCOvx383HrAAAt IP:192.168.2.23
+New message from 3:192.168.2.23
+mettre un peu plus gentil et moi orgueilleuse
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:8OoGZ-QyDIGJlj_6AAAs IP:192.168.2.22
+New message from 2:192.168.2.22
+Chaponost chat chat chat petit chat miaou miaou chat
+Players sent to display : 
+Old player found, Id:JHaWvPNCOvx383HrAAAt IP:192.168.2.23
+New message from 3:192.168.2.23
+ Chaponost Chaponost Chaponost Chaponost Chaponost
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : 8OoGZ-QyDIGJlj_6AAAs
+recognition disconnected : JHaWvPNCOvx383HrAAAt
+recognition connected : VWF7yurho-A4wPxUAAAu
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : vi9Y6hwxK1-J1y9HAAAv
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:VWF7yurho-A4wPxUAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+ouais il faut parler
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:vi9Y6hwxK1-J1y9HAAAv IP:192.168.2.23
+New message from 3:192.168.2.23
+comment savoir serai
+Players sent to display : 
+resetPlayers
+Old player found, Id:VWF7yurho-A4wPxUAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+ vous êtes
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:vi9Y6hwxK1-J1y9HAAAv IP:192.168.2.23
+New message from 3:192.168.2.23
+basket basket
+Players sent to display : 
+Old player found, Id:VWF7yurho-A4wPxUAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+comment masquer mon masque et mon masque et vous masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:VWF7yurho-A4wPxUAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+maître corbeau sur un arbre perché tenait dans son bec un fromage maître Renard par l'odeur alléché lui tint tattoo
+Players sent to display : 
+Old player found, Id:vi9Y6hwxK1-J1y9HAAAv IP:192.168.2.23
+New message from 3:192.168.2.23
+une commune
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:vi9Y6hwxK1-J1y9HAAAv IP:192.168.2.23
+New message from 3:192.168.2.23
+Maître Corbeau ABC ABC
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:VWF7yurho-A4wPxUAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+c'est quoi une commune
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:VWF7yurho-A4wPxUAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+Bonjour je m'appelle églantine avec des amis qui sont pas bon des fesses
+Players sent to display : 
+Old player found, Id:vi9Y6hwxK1-J1y9HAAAv IP:192.168.2.23
+New message from 3:192.168.2.23
+maître corbeau sur un arbre perché tenait dans son bec un fromage maître Renard par l'odeur alléché lui tint à peu près
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:vi9Y6hwxK1-J1y9HAAAv IP:192.168.2.23
+New message from 3:192.168.2.23
+et Bonjour Monsieur du corbeau que vous êtes jolie que vous me semblez beau sur mentir si votre ramage
+Players sent to display : 
+Old player found, Id:VWF7yurho-A4wPxUAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+prier prier Brignais Brignais
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : VWF7yurho-A4wPxUAAAu
+recognition disconnected : vi9Y6hwxK1-J1y9HAAAv
+recognition connected : jFl-XycSxjPY3RoTAAAw
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 396gD59yxGG_-dOuAAAx
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:jFl-XycSxjPY3RoTAAAw IP:192.168.2.22
+New message from 2:192.168.2.22
+éteins 18
+Players sent to display : 
+resetPlayers
+Old player found, Id:396gD59yxGG_-dOuAAAx IP:192.168.2.23
+New message from 3:192.168.2.23
+météo
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:396gD59yxGG_-dOuAAAx IP:192.168.2.23
+New message from 3:192.168.2.23
+ mets le 37 cité qui
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:396gD59yxGG_-dOuAAAx IP:192.168.2.23
+New message from 3:192.168.2.23
+nova skin
+Players sent to display : 
+Old player found, Id:jFl-XycSxjPY3RoTAAAw IP:192.168.2.22
+New message from 2:192.168.2.22
+mot masqué
+Players sent to display : 
+Old player found, Id:396gD59yxGG_-dOuAAAx IP:192.168.2.23
+New message from 3:192.168.2.23
+esquimau masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:jFl-XycSxjPY3RoTAAAw IP:192.168.2.22
+New message from 2:192.168.2.22
+ Bonjour je m'appelle everdyn reviens
+Players sent to display : 
+Old player found, Id:396gD59yxGG_-dOuAAAx IP:192.168.2.23
+New message from 3:192.168.2.23
+ conducteur de train
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:jFl-XycSxjPY3RoTAAAw IP:192.168.2.22
+New message from 2:192.168.2.22
+corbeau sur un arbre perché tenait en son bec un fromage et maître Renard par l'odeur alléché lui tint à peu près ce langage
+Players sent to display : 
+Old player found, Id:396gD59yxGG_-dOuAAAx IP:192.168.2.23
+New message from 3:192.168.2.23
+je voudrais librairie libraire libraire
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : 396gD59yxGG_-dOuAAAx
+recognition disconnected : jFl-XycSxjPY3RoTAAAw
+recognition connected : MkJ8gmGQmDjtdccRAAAy
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : LZN_I0aaKXLKXMuxAAAz
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:MkJ8gmGQmDjtdccRAAAy IP:192.168.2.22
+New message from 2:192.168.2.22
+alors si tu es déjà arrivé déjà
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:MkJ8gmGQmDjtdccRAAAy IP:192.168.2.22
+New message from 2:192.168.2.22
+la table de 13 mots masqués mot masqué
+Players sent to display : 
+resetPlayers
+Old player found, Id:LZN_I0aaKXLKXMuxAAAz IP:192.168.2.23
+New message from 3:192.168.2.23
+ma masquer mon masquer mon masque et me mettre quelques mots masqués masqué
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:MkJ8gmGQmDjtdccRAAAy IP:192.168.2.22
+New message from 2:192.168.2.22
+est-ce que médecin
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:MkJ8gmGQmDjtdccRAAAy IP:192.168.2.22
+New message from 2:192.168.2.22
+je ne sais pas ce que c'est
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LZN_I0aaKXLKXMuxAAAz IP:192.168.2.23
+New message from 3:192.168.2.23
+what time is it over you
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LZN_I0aaKXLKXMuxAAAz IP:192.168.2.23
+New message from 3:192.168.2.23
+Pharma testigué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:MkJ8gmGQmDjtdccRAAAy IP:192.168.2.22
+New message from 2:192.168.2.22
+d'accord ça nous avons beaucoup dans la vie
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:MkJ8gmGQmDjtdccRAAAy IP:192.168.2.22
+New message from 2:192.168.2.22
+bientôt arrivé à la gare
+Players sent to display : 
+Old player found, Id:MkJ8gmGQmDjtdccRAAAy IP:192.168.2.22
+New message from 2:192.168.2.22
+ menuisier
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:MkJ8gmGQmDjtdccRAAAy IP:192.168.2.22
+New message from 2:192.168.2.22
+ résigner
+Players sent to display : 
+Old player found, Id:LZN_I0aaKXLKXMuxAAAz IP:192.168.2.23
+New message from 3:192.168.2.23
+c'est gentil j'avais aussi portable et je l'aime pas il est trop méchante oh là là là là là là il fait que pleurer
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:MkJ8gmGQmDjtdccRAAAy IP:192.168.2.22
+New message from 2:192.168.2.22
+des billets des billets
+Players sent to display : 
+Old player found, Id:LZN_I0aaKXLKXMuxAAAz IP:192.168.2.23
+New message from 3:192.168.2.23
+qu'est-ce que tu as
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : MkJ8gmGQmDjtdccRAAAy
+recognition disconnected : LZN_I0aaKXLKXMuxAAAz
+recognition connected : 8KZTScEmrle12guPAAA0
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : TIr2Tm5LovwzHAG9AAA1
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:8KZTScEmrle12guPAAA0 IP:192.168.2.22
+New message from 2:192.168.2.22
+c'est quoi ça
+Players sent to display : 
+resetPlayers
+Old player found, Id:TIr2Tm5LovwzHAG9AAA1 IP:192.168.2.23
+New message from 3:192.168.2.23
+loup masqué
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:TIr2Tm5LovwzHAG9AAA1 IP:192.168.2.23
+New message from 3:192.168.2.23
+quemo me quemo masqué
+Players sent to display : 
+Old player found, Id:8KZTScEmrle12guPAAA0 IP:192.168.2.22
+New message from 2:192.168.2.22
+mon masque et mon Mac et MAC
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:8KZTScEmrle12guPAAA0 IP:192.168.2.22
+New message from 2:192.168.2.22
+la météo
+Players sent to display : 
+Old player found, Id:8KZTScEmrle12guPAAA0 IP:192.168.2.22
+New message from 2:192.168.2.22
+ blues heure
+Players sent to display : 
+Old player found, Id:TIr2Tm5LovwzHAG9AAA1 IP:192.168.2.23
+New message from 3:192.168.2.23
+Louise Louise Louise Louise
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:8KZTScEmrle12guPAAA0 IP:192.168.2.22
+New message from 2:192.168.2.22
+ loser
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:8KZTScEmrle12guPAAA0 IP:192.168.2.22
+New message from 2:192.168.2.22
+Blue Jays
+Players sent to display : 
+Old player found, Id:8KZTScEmrle12guPAAA0 IP:192.168.2.22
+New message from 2:192.168.2.22
+ z
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:TIr2Tm5LovwzHAG9AAA1 IP:192.168.2.23
+New message from 3:192.168.2.23
+WS bloquer bloquer bloquer bloquer bloquer bloquer bloquer bloquer bloquer CC
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:8KZTScEmrle12guPAAA0 IP:192.168.2.22
+New message from 2:192.168.2.22
+bonjour je vais aller là ce regard je ne sais pas ce que c'est
+Players sent to display : 
+Old player found, Id:TIr2Tm5LovwzHAG9AAA1 IP:192.168.2.23
+New message from 3:192.168.2.23
+blogueuse jjjjjjj
+Players sent to display : 
+Old player found, Id:TIr2Tm5LovwzHAG9AAA1 IP:192.168.2.23
+New message from 3:192.168.2.23
+GGG
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : 8KZTScEmrle12guPAAA0
+recognition disconnected : TIr2Tm5LovwzHAG9AAA1
+recognition connected : 3wS2qQ2_Uv5v7wk1AAA2
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:3wS2qQ2_Uv5v7wk1AAA2 IP:192.168.2.22
+New message from 2:192.168.2.22
+Pépi
+Players sent to display : 
+recognition connected : qe33ozASSsb87oe5AAA3
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:qe33ozASSsb87oe5AAA3 IP:192.168.2.23
+New message from 3:192.168.2.23
+boulevard quemo me quemo me quemo me quemo me quemo me quemo masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:3wS2qQ2_Uv5v7wk1AAA2 IP:192.168.2.22
+New message from 2:192.168.2.22
+turbo
+Players sent to display : 
+Old player found, Id:qe33ozASSsb87oe5AAA3 IP:192.168.2.23
+New message from 3:192.168.2.23
+locomotive locomotive locomotive locomotive
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:3wS2qQ2_Uv5v7wk1AAA2 IP:192.168.2.22
+New message from 2:192.168.2.22
+églantine tu peux venir ici parce que ça devient insupportable s'il te plaît il arrête pas féliciter allez allez allez allez allez allez bises bises bises
+Players sent to display : 
+Old player found, Id:qe33ozASSsb87oe5AAA3 IP:192.168.2.23
+New message from 3:192.168.2.23
+départ gare élément de train
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:3wS2qQ2_Uv5v7wk1AAA2 IP:192.168.2.22
+New message from 2:192.168.2.22
+crabe fantôme
+Players sent to display : 
+Old player found, Id:qe33ozASSsb87oe5AAA3 IP:192.168.2.23
+New message from 3:192.168.2.23
+orthographe pantographe pantographe pornographe pornographe phbh
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:3wS2qQ2_Uv5v7wk1AAA2 IP:192.168.2.22
+New message from 2:192.168.2.22
+pantographe pantographe au pantografo ABCD
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : qe33ozASSsb87oe5AAA3
+recognition disconnected : 3wS2qQ2_Uv5v7wk1AAA2
+recognition connected : b9W4cI8M8xU9-VgvAAA4
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 9QmbQgEBNWDLmd0yAAA5
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:9QmbQgEBNWDLmd0yAAA5 IP:192.168.2.22
+New message from 2:192.168.2.22
+Bonjour bonjour je m'appelle d'écouter complet
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:9QmbQgEBNWDLmd0yAAA5 IP:192.168.2.22
+New message from 2:192.168.2.22
+un mot masqué
+Players sent to display : 
+resetPlayers
+Old player found, Id:b9W4cI8M8xU9-VgvAAA4 IP:192.168.2.23
+New message from 3:192.168.2.23
+mon mec qui me quemo me quemo me quemo me quemo masqué
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:b9W4cI8M8xU9-VgvAAA4 IP:192.168.2.23
+New message from 3:192.168.2.23
+papillote papillote papillote
+Players sent to display : 
+Old player found, Id:9QmbQgEBNWDLmd0yAAA5 IP:192.168.2.22
+New message from 2:192.168.2.22
+papillote papillote papillote coussin
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : 9QmbQgEBNWDLmd0yAAA5
+recognition disconnected : b9W4cI8M8xU9-VgvAAA4
+recognition connected : J8fh9-CD4XoVF_8LAAA6
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 56CVK5V_i6eh-s6_AAA7
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:J8fh9-CD4XoVF_8LAAA6 IP:192.168.2.22
+New message from 2:192.168.2.22
+Stromae
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:56CVK5V_i6eh-s6_AAA7 IP:192.168.2.23
+New message from 3:192.168.2.23
+mon mec et mon mec et mon masque et moi masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:J8fh9-CD4XoVF_8LAAA6 IP:192.168.2.22
+New message from 2:192.168.2.22
+une commune l'arbre est l'arbre de l'arbre
+Players sent to display : 
+Old player found, Id:56CVK5V_i6eh-s6_AAA7 IP:192.168.2.23
+New message from 3:192.168.2.23
+descends descends descends descends descends descends descends descends
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:56CVK5V_i6eh-s6_AAA7 IP:192.168.2.23
+New message from 3:192.168.2.23
+la Santa Santa Santa San
+Players sent to display : 
+Old player found, Id:J8fh9-CD4XoVF_8LAAA6 IP:192.168.2.22
+New message from 2:192.168.2.22
+ta santé santé santé santé santé santé santé santé santé
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:56CVK5V_i6eh-s6_AAA7 IP:192.168.2.23
+New message from 3:192.168.2.23
+SS III
+Players sent to display : 
+Old player found, Id:J8fh9-CD4XoVF_8LAAA6 IP:192.168.2.22
+New message from 2:192.168.2.22
+ta santé santé santé santé santé santé santé santé santé santé
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : 56CVK5V_i6eh-s6_AAA7
+recognition disconnected : J8fh9-CD4XoVF_8LAAA6
+recognition connected : R-sOrRyJw1xQfSb9AAA8
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : MAAUEAMP2LZDiseCAAA9
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:R-sOrRyJw1xQfSb9AAA8 IP:192.168.2.22
+New message from 2:192.168.2.22
+bah oui mais toi tu es quoi
+Players sent to display : 
+resetPlayers
+Old player found, Id:R-sOrRyJw1xQfSb9AAA8 IP:192.168.2.22
+New message from 2:192.168.2.22
+ pas mal ah ouais
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:MAAUEAMP2LZDiseCAAA9 IP:192.168.2.23
+New message from 3:192.168.2.23
+jamais sorti
+Players sent to display : 
+Old player found, Id:R-sOrRyJw1xQfSb9AAA8 IP:192.168.2.22
+New message from 2:192.168.2.22
+allez voilà quoi
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:MAAUEAMP2LZDiseCAAA9 IP:192.168.2.23
+New message from 3:192.168.2.23
+les Américains par camion
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:R-sOrRyJw1xQfSb9AAA8 IP:192.168.2.22
+New message from 2:192.168.2.22
+tu restes là ok ok
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:MAAUEAMP2LZDiseCAAA9 IP:192.168.2.23
+New message from 3:192.168.2.23
+memories memories memories
+Players sent to display : 
+resetPlayers
+Old player found, Id:R-sOrRyJw1xQfSb9AAA8 IP:192.168.2.22
+New message from 2:192.168.2.22
+mots masqués en masqué
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:MAAUEAMP2LZDiseCAAA9 IP:192.168.2.23
+New message from 3:192.168.2.23
+vaporetto vaporetto vaporetto
+Players sent to display : 
+Old player found, Id:R-sOrRyJw1xQfSb9AAA8 IP:192.168.2.22
+New message from 2:192.168.2.22
+Saint-Paul Saint-Paul Saint-Paul Saint-Paul Saint-Paul
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : R-sOrRyJw1xQfSb9AAA8
+recognition disconnected : MAAUEAMP2LZDiseCAAA9
+recognition connected : _fQdZKQBK0X_IDBpAAA-
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : ABCHcc6911uf4GZzAAA_
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:ABCHcc6911uf4GZzAAA_ IP:192.168.2.23
+New message from 3:192.168.2.23
+memories memories memories memories memories memories memories
+Players sent to display : 
+resetPlayers
+Old player found, Id:_fQdZKQBK0X_IDBpAAA- IP:192.168.2.22
+New message from 2:192.168.2.22
+tu es mon maître
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:_fQdZKQBK0X_IDBpAAA- IP:192.168.2.22
+New message from 2:192.168.2.22
+ masque masque masque masque masqué
+Players sent to display : 
+Old player found, Id:ABCHcc6911uf4GZzAAA_ IP:192.168.2.23
+New message from 3:192.168.2.23
+Bala Bala Bala Bala
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ABCHcc6911uf4GZzAAA_ IP:192.168.2.23
+New message from 3:192.168.2.23
+rail Bonjour je m'appelle clémentine et je suis envahi
+Players sent to display : 
+Old player found, Id:_fQdZKQBK0X_IDBpAAA- IP:192.168.2.22
+New message from 2:192.168.2.22
+organe organe organe organe
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:_fQdZKQBK0X_IDBpAAA- IP:192.168.2.22
+New message from 2:192.168.2.22
+Morgane en photo
+Players sent to display : 
+Old player found, Id:_fQdZKQBK0X_IDBpAAA- IP:192.168.2.22
+New message from 2:192.168.2.22
+ Rai Rai Rai
+Players sent to display : 
+Old player found, Id:ABCHcc6911uf4GZzAAA_ IP:192.168.2.23
+New message from 3:192.168.2.23
+anticonstitutionnellement
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ABCHcc6911uf4GZzAAA_ IP:192.168.2.23
+New message from 3:192.168.2.23
+ Rai Rai Rai Rai
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ABCHcc6911uf4GZzAAA_ IP:192.168.2.23
+New message from 3:192.168.2.23
+raï
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ABCHcc6911uf4GZzAAA_ IP:192.168.2.23
+New message from 3:192.168.2.23
+ RAL RAIL
+Players sent to display : 
+Old player found, Id:_fQdZKQBK0X_IDBpAAA- IP:192.168.2.22
+New message from 2:192.168.2.22
+RAIL LE
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ABCHcc6911uf4GZzAAA_ IP:192.168.2.23
+New message from 3:192.168.2.23
+ballast
+Players sent to display : 
+Old player found, Id:ABCHcc6911uf4GZzAAA_ IP:192.168.2.23
+New message from 3:192.168.2.23
+pantographe pantographe pantographe pantographe
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ABCHcc6911uf4GZzAAA_ IP:192.168.2.23
+New message from 3:192.168.2.23
+est-ce que c'est
+Players sent to display : 
+Old player found, Id:_fQdZKQBK0X_IDBpAAA- IP:192.168.2.22
+New message from 2:192.168.2.22
+je sais pas je sais pas
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ABCHcc6911uf4GZzAAA_ IP:192.168.2.23
+New message from 3:192.168.2.23
+est-ce que une lentille convexe
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:_fQdZKQBK0X_IDBpAAA- IP:192.168.2.22
+New message from 2:192.168.2.22
+XY XY XY
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ABCHcc6911uf4GZzAAA_ IP:192.168.2.23
+New message from 3:192.168.2.23
+GMF
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : _fQdZKQBK0X_IDBpAAA-
+Old player found, Id:ABCHcc6911uf4GZzAAA_ IP:192.168.2.23
+New message from 3:192.168.2.23
+JSST XY JMF dtio
+Players sent to display : 
+recognition disconnected : ABCHcc6911uf4GZzAAA_
+recognition connected : J0JDs-fE7PddeEouAABA
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:J0JDs-fE7PddeEouAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+fermer kilomètres
+Players sent to display : 
+recognition connected : 7hCNGgn_qH2y1TevAABB
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:J0JDs-fE7PddeEouAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+parce que ma mère quemo me quemo me quemo me quemo me quemo me quemo me quemo me quemo me quemo me quemo
+Players sent to display : 
+Old player found, Id:7hCNGgn_qH2y1TevAABB IP:192.168.2.23
+New message from 3:192.168.2.23
+memories memories memories memories memories memories memories memories memories
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:J0JDs-fE7PddeEouAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+Maximo Maximo Maximo Maximo masqué
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:J0JDs-fE7PddeEouAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+écrivain écrivain
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:7hCNGgn_qH2y1TevAABB IP:192.168.2.23
+New message from 3:192.168.2.23
+blogueuse blogueuse blogueuse blogueuse
+Players sent to display : 
+Old player found, Id:J0JDs-fE7PddeEouAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+ laboureur laboureur laboureur
+Players sent to display : 
+Old player found, Id:7hCNGgn_qH2y1TevAABB IP:192.168.2.23
+New message from 3:192.168.2.23
+ laboureur laboureur
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:7hCNGgn_qH2y1TevAABB IP:192.168.2.23
+New message from 3:192.168.2.23
+laboureur
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:J0JDs-fE7PddeEouAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+paysan paysan paysan paysan
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:7hCNGgn_qH2y1TevAABB IP:192.168.2.23
+New message from 3:192.168.2.23
+hirondelle horse2me BH
+Players sent to display : 
+Old player found, Id:7hCNGgn_qH2y1TevAABB IP:192.168.2.23
+New message from 3:192.168.2.23
+Gaëlle
+Players sent to display : 
+Old player found, Id:J0JDs-fE7PddeEouAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+ABCD important
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:7hCNGgn_qH2y1TevAABB IP:192.168.2.23
+New message from 3:192.168.2.23
+clown clown clown clown clown clown
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:J0JDs-fE7PddeEouAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+explorateur explorateur
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:J0JDs-fE7PddeEouAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+sac hauteur 5 hauteur 5 hauteur 5 hauteur 5 hauteur
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:J0JDs-fE7PddeEouAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+fagotter fagotter fagotter
+Players sent to display : 
+Old player found, Id:7hCNGgn_qH2y1TevAABB IP:192.168.2.23
+New message from 3:192.168.2.23
+bûcheron bûcheron bûcheron bûcheron
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:J0JDs-fE7PddeEouAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+bye bye bye
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : 7hCNGgn_qH2y1TevAABB
+recognition disconnected : J0JDs-fE7PddeEouAABA
+recognition connected : qmNbPKJi1stAta7tAABC
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : EfyI6AAIOPCm3q2mAABD
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:qmNbPKJi1stAta7tAABC IP:192.168.2.22
+New message from 2:192.168.2.22
+Mohammed quemo me quemo me quemo me quemo masqué
+Players sent to display : 
+resetPlayers
+Old player found, Id:EfyI6AAIOPCm3q2mAABD IP:192.168.2.23
+New message from 3:192.168.2.23
+m'embrasser m'embrasser m'embrasser mot gratuit
+Players sent to display : 
+Old player found, Id:qmNbPKJi1stAta7tAABC IP:192.168.2.22
+New message from 2:192.168.2.22
+comment masquer mon masque et mon masque et mon masque et masqué
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:qmNbPKJi1stAta7tAABC IP:192.168.2.22
+New message from 2:192.168.2.22
+ Cobra Cobra
+Players sent to display : 
+Old player found, Id:EfyI6AAIOPCm3q2mAABD IP:192.168.2.23
+New message from 3:192.168.2.23
+Aubrac Aubrac Aubrac Aubrac Aubrac eu assez
+Players sent to display : 
+Old player found, Id:qmNbPKJi1stAta7tAABC IP:192.168.2.22
+New message from 2:192.168.2.22
+braque Aubrac
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : qmNbPKJi1stAta7tAABC
+recognition disconnected : EfyI6AAIOPCm3q2mAABD
+recognition connected : nNYvCYaL_LMD4FOUAABE
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : XHOivjYqNKHVzb-5AABF
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:nNYvCYaL_LMD4FOUAABE IP:192.168.2.22
+New message from 2:192.168.2.22
+une dernière partie
+Players sent to display : 
+Old player found, Id:XHOivjYqNKHVzb-5AABF IP:192.168.2.23
+New message from 3:192.168.2.23
+camping dernière version
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:XHOivjYqNKHVzb-5AABF IP:192.168.2.23
+New message from 3:192.168.2.23
+mosquée Meaux
+Players sent to display : 
+resetPlayers
+Old player found, Id:nNYvCYaL_LMD4FOUAABE IP:192.168.2.22
+New message from 2:192.168.2.22
+c'est quoi mon masque et la lime et moi quoi
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:XHOivjYqNKHVzb-5AABF IP:192.168.2.23
+New message from 3:192.168.2.23
+Aubrac Aubrac Paul Paul Paul
+Players sent to display : 
+Old player found, Id:nNYvCYaL_LMD4FOUAABE IP:192.168.2.22
+New message from 2:192.168.2.22
+je sais pas oiseau oiseau
+Players sent to display : 
+Old player found, Id:XHOivjYqNKHVzb-5AABF IP:192.168.2.23
+New message from 3:192.168.2.23
+troll troll
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : nNYvCYaL_LMD4FOUAABE
+recognition disconnected : XHOivjYqNKHVzb-5AABF
+recognition connected : Mka9g8wGr-AD3hwMAABG
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : imFQWHcVQhfSFtaCAABH
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+Berthier
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+je suis une p***
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+j'aime les beats
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+le test
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+ je t'ai perdu
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+grosse b***
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+b*** de n****
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+Agadir
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+Alex adore la chatte philo
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+nique ta grand-mère
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+chatte poilue
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+je la baise
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+tu es belle
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+ Pacôme
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+bague homme marin
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+au moins chez Camille
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+maman est gênant
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+marin et gênant
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+à plus.
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+ One of us
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+marin est une victime
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+avec une petite b***
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+prix octogone quand tu veux
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+j'attends l'heure le jour la date
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+je vais te niker ta grand-mère
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+octogone sans règle
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+nique ta grand-mère
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+et ton grand-père
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+ ce sont mes mails dirait que je t'encule
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+ta grande tante
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+ton grand-oncle
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+ton frère
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+je m'appelle ma
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+je suis moche
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+commune
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+ babouin
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+anti tu constitutionnellement
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+kamasutra
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:imFQWHcVQhfSFtaCAABH IP:192.168.2.23
+New message from 3:192.168.2.23
+Damville
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+ABCD EFGH IJKL mn au PQ RST
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+UVW XYZ
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Mka9g8wGr-AD3hwMAABG IP:192.168.2.22
+New message from 2:192.168.2.22
+Francheville
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : imFQWHcVQhfSFtaCAABH
+recognition disconnected : Mka9g8wGr-AD3hwMAABG
+recognition connected : bDLLk5prhnkHOS_qAABI
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 8NDgirfkax_XsNOcAABJ
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:bDLLk5prhnkHOS_qAABI IP:192.168.2.23
+New message from 3:192.168.2.23
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:8NDgirfkax_XsNOcAABJ IP:192.168.2.22
+New message from 2:192.168.2.22
+fondue
+Players sent to display : 
+Old player found, Id:bDLLk5prhnkHOS_qAABI IP:192.168.2.23
+New message from 3:192.168.2.23
+raclette
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:bDLLk5prhnkHOS_qAABI IP:192.168.2.23
+New message from 3:192.168.2.23
+truc
+Players sent to display : 
+Old player found, Id:8NDgirfkax_XsNOcAABJ IP:192.168.2.22
+New message from 2:192.168.2.22
+truc
+Players sent to display : 
+Old player found, Id:bDLLk5prhnkHOS_qAABI IP:192.168.2.23
+New message from 3:192.168.2.23
+ truffe
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : 8NDgirfkax_XsNOcAABJ
+recognition disconnected : bDLLk5prhnkHOS_qAABI
+recognition connected : PqXFhvnKYF3RkH9tAABK
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : VgwEHJjuNfOEUrppAABL
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:VgwEHJjuNfOEUrppAABL IP:192.168.2.23
+New message from 3:192.168.2.23
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:VgwEHJjuNfOEUrppAABL IP:192.168.2.23
+New message from 3:192.168.2.23
+la douane
+Players sent to display : 
+Old player found, Id:PqXFhvnKYF3RkH9tAABK IP:192.168.2.22
+New message from 2:192.168.2.22
+l'intestin
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:VgwEHJjuNfOEUrppAABL IP:192.168.2.23
+New message from 3:192.168.2.23
+Saint-Paul
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : PqXFhvnKYF3RkH9tAABK
+recognition disconnected : VgwEHJjuNfOEUrppAABL
+recognition connected : 3S9Pzo848YvSyktwAABM
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : kD2OA06f111-K6cdAABN
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:kD2OA06f111-K6cdAABN IP:192.168.2.23
+New message from 3:192.168.2.23
+loup masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : 3S9Pzo848YvSyktwAABM
+Old player found, Id:kD2OA06f111-K6cdAABN IP:192.168.2.23
+New message from 3:192.168.2.23
+battle of Z
+Players sent to display : 
+recognition disconnected : kD2OA06f111-K6cdAABN
+Players sent to display : 
+recognition connected : KXJ8PDQFCQSBAGpJAABO
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : Y5qpXHWoOj4h5Z_oAABP
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:Y5qpXHWoOj4h5Z_oAABP IP:192.168.2.22
+New message from 2:192.168.2.22
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:Y5qpXHWoOj4h5Z_oAABP IP:192.168.2.22
+New message from 2:192.168.2.22
+Superman
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:KXJ8PDQFCQSBAGpJAABO IP:192.168.2.23
+New message from 3:192.168.2.23
+Harry Potter
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Y5qpXHWoOj4h5Z_oAABP IP:192.168.2.22
+New message from 2:192.168.2.22
+vagina
+Players sent to display : 
+Old player found, Id:KXJ8PDQFCQSBAGpJAABO IP:192.168.2.23
+New message from 3:192.168.2.23
+Burberry à repousser
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Y5qpXHWoOj4h5Z_oAABP IP:192.168.2.22
+New message from 2:192.168.2.22
+l'Abbé Pierre pierre Abbé Pierre
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : KXJ8PDQFCQSBAGpJAABO
+recognition disconnected : Y5qpXHWoOj4h5Z_oAABP
+recognition connected : PqSbZWNn6xNewDCdAABQ
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : uoXx1gAEYstjsif0AABR
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:PqSbZWNn6xNewDCdAABQ IP:192.168.2.22
+New message from 2:192.168.2.22
+Bugatti
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:PqSbZWNn6xNewDCdAABQ IP:192.168.2.22
+New message from 2:192.168.2.22
+mot masqué
+Players sent to display : 
+Old player found, Id:uoXx1gAEYstjsif0AABR IP:192.168.2.23
+New message from 3:192.168.2.23
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:uoXx1gAEYstjsif0AABR IP:192.168.2.23
+New message from 3:192.168.2.23
+balistique
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:uoXx1gAEYstjsif0AABR IP:192.168.2.23
+New message from 3:192.168.2.23
+terrasse
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:uoXx1gAEYstjsif0AABR IP:192.168.2.23
+New message from 3:192.168.2.23
+traverser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : PqSbZWNn6xNewDCdAABQ
+recognition disconnected : uoXx1gAEYstjsif0AABR
+recognition connected : 7vJh-QRW0NzH-T-SAABS
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : yDDNRqOyV6n_GmbAAABT
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:yDDNRqOyV6n_GmbAAABT IP:192.168.2.23
+New message from 3:192.168.2.23
+masquer
+Players sent to display : 
+Old player found, Id:7vJh-QRW0NzH-T-SAABS IP:192.168.2.22
+New message from 2:192.168.2.22
+homme masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:7vJh-QRW0NzH-T-SAABS IP:192.168.2.22
+New message from 2:192.168.2.22
+l'Auvergne
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:yDDNRqOyV6n_GmbAAABT IP:192.168.2.23
+New message from 3:192.168.2.23
+l'Arbresle
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : 7vJh-QRW0NzH-T-SAABS
+recognition disconnected : yDDNRqOyV6n_GmbAAABT
+recognition connected : 68WvfAn5l6uVi5YyAABU
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : rKh78qvyDt3zBe-7AABV
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:rKh78qvyDt3zBe-7AABV IP:192.168.2.23
+New message from 3:192.168.2.23
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:68WvfAn5l6uVi5YyAABU IP:192.168.2.22
+New message from 2:192.168.2.22
+voix
+Players sent to display : 
+Old player found, Id:rKh78qvyDt3zBe-7AABV IP:192.168.2.23
+New message from 3:192.168.2.23
+TER
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:68WvfAn5l6uVi5YyAABU IP:192.168.2.22
+New message from 2:192.168.2.22
+TGV
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : rKh78qvyDt3zBe-7AABV
+recognition disconnected : 68WvfAn5l6uVi5YyAABU
+recognition connected : 1QtRfP2YNt5y2ThgAABW
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : sIAQbp7_ORdSR6cDAABX
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:1QtRfP2YNt5y2ThgAABW IP:192.168.2.22
+New message from 2:192.168.2.22
+coucou
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:sIAQbp7_ORdSR6cDAABX IP:192.168.2.23
+New message from 3:192.168.2.23
+nul
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1QtRfP2YNt5y2ThgAABW IP:192.168.2.22
+New message from 2:192.168.2.22
+bonbon il est il est pas fort beau
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1QtRfP2YNt5y2ThgAABW IP:192.168.2.22
+New message from 2:192.168.2.22
+ah ouais bah pareil
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1QtRfP2YNt5y2ThgAABW IP:192.168.2.22
+New message from 2:192.168.2.22
+peux-tu mettre
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1QtRfP2YNt5y2ThgAABW IP:192.168.2.22
+New message from 2:192.168.2.22
+à demain
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1QtRfP2YNt5y2ThgAABW IP:192.168.2.22
+New message from 2:192.168.2.22
+m'embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:1QtRfP2YNt5y2ThgAABW IP:192.168.2.22
+New message from 2:192.168.2.22
+reconnaître à jour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1QtRfP2YNt5y2ThgAABW IP:192.168.2.22
+New message from 2:192.168.2.22
+antonin est un rageux
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : 1QtRfP2YNt5y2ThgAABW
+recognition disconnected : sIAQbp7_ORdSR6cDAABX
+recognition connected : zRUYsThqLvb0gSo3AABY
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : sZjz_etEeLVW7UowAABZ
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:sZjz_etEeLVW7UowAABZ IP:192.168.2.23
+New message from 3:192.168.2.23
+Mori Mori
+Players sent to display : 
+Old player found, Id:sZjz_etEeLVW7UowAABZ IP:192.168.2.23
+New message from 3:192.168.2.23
+ mémo
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:sZjz_etEeLVW7UowAABZ IP:192.168.2.23
+New message from 3:192.168.2.23
+memories
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:sZjz_etEeLVW7UowAABZ IP:192.168.2.23
+New message from 3:192.168.2.23
+MYM snbd
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:sZjz_etEeLVW7UowAABZ IP:192.168.2.23
+New message from 3:192.168.2.23
+je veux parler à l'oreille rouge
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:sZjz_etEeLVW7UowAABZ IP:192.168.2.23
+New message from 3:192.168.2.23
+boule de Noël
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:zRUYsThqLvb0gSo3AABY IP:192.168.2.22
+New message from 2:192.168.2.22
+les filles nous attaquent Bocuse
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Old player found, Id:zRUYsThqLvb0gSo3AABY IP:192.168.2.22
+New message from 2:192.168.2.22
+j'écris le nom machine
+Players sent to display : 
+recognition disconnected : sZjz_etEeLVW7UowAABZ
+recognition disconnected : zRUYsThqLvb0gSo3AABY
+recognition connected : fx9M_xiB4rXqRq9_AABa
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Players sent to display : 
+recognition connected : I7K95Qkdq9mHKQVsAABb
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:fx9M_xiB4rXqRq9_AABa IP:192.168.2.22
+New message from 2:192.168.2.22
+mémo
+Players sent to display : 
+Old player found, Id:I7K95Qkdq9mHKQVsAABb IP:192.168.2.23
+New message from 3:192.168.2.23
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:I7K95Qkdq9mHKQVsAABb IP:192.168.2.23
+New message from 3:192.168.2.23
+ux CMA lqc
+Players sent to display : 
+Old player found, Id:I7K95Qkdq9mHKQVsAABb IP:192.168.2.23
+New message from 3:192.168.2.23
+tu y es
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:fx9M_xiB4rXqRq9_AABa IP:192.168.2.22
+New message from 2:192.168.2.22
+Écully
+Players sent to display : 
+Old player found, Id:fx9M_xiB4rXqRq9_AABa IP:192.168.2.22
+New message from 2:192.168.2.22
+ Écully
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:fx9M_xiB4rXqRq9_AABa IP:192.168.2.22
+New message from 2:192.168.2.22
+église
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:fx9M_xiB4rXqRq9_AABa IP:192.168.2.22
+New message from 2:192.168.2.22
+Écully
+Players sent to display : 
+Old player found, Id:I7K95Qkdq9mHKQVsAABb IP:192.168.2.23
+New message from 3:192.168.2.23
+drapeau
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:I7K95Qkdq9mHKQVsAABb IP:192.168.2.23
+New message from 3:192.168.2.23
+je sais pas moi
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:fx9M_xiB4rXqRq9_AABa IP:192.168.2.22
+New message from 2:192.168.2.22
+oui
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:I7K95Qkdq9mHKQVsAABb IP:192.168.2.23
+New message from 3:192.168.2.23
+Isola 2000
+Players sent to display : 
+Old player found, Id:fx9M_xiB4rXqRq9_AABa IP:192.168.2.22
+New message from 2:192.168.2.22
+Écully
+Players sent to display : 
+Old player found, Id:I7K95Qkdq9mHKQVsAABb IP:192.168.2.23
+New message from 3:192.168.2.23
+Écully la demi-lune
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:I7K95Qkdq9mHKQVsAABb IP:192.168.2.23
+New message from 3:192.168.2.23
+ ecully-la-demi-lune
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : fx9M_xiB4rXqRq9_AABa
+recognition disconnected : I7K95Qkdq9mHKQVsAABb
+recognition connected : GLeT76bepTd-2nveAABc
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : j0ejhNCQnsY0NGsYAABd
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:GLeT76bepTd-2nveAABc IP:192.168.2.22
+New message from 2:192.168.2.22
+joue avec les mots
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:GLeT76bepTd-2nveAABc IP:192.168.2.22
+New message from 2:192.168.2.22
+Salut poulet
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:j0ejhNCQnsY0NGsYAABd IP:192.168.2.23
+New message from 3:192.168.2.23
+coucou
+Players sent to display : 
+Old player found, Id:GLeT76bepTd-2nveAABc IP:192.168.2.22
+New message from 2:192.168.2.22
+ça va Louis et Tom
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:j0ejhNCQnsY0NGsYAABd IP:192.168.2.23
+New message from 3:192.168.2.23
+y a quelqu'un
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:GLeT76bepTd-2nveAABc IP:192.168.2.22
+New message from 2:192.168.2.22
+oui
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:GLeT76bepTd-2nveAABc IP:192.168.2.22
+New message from 2:192.168.2.22
+comment ça va Tom
+Players sent to display : 
+Old player found, Id:j0ejhNCQnsY0NGsYAABd IP:192.168.2.23
+New message from 3:192.168.2.23
+comment ça va Jacky
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:GLeT76bepTd-2nveAABc IP:192.168.2.22
+New message from 2:192.168.2.22
+ j'ai envie de pisser
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:GLeT76bepTd-2nveAABc IP:192.168.2.22
+New message from 2:192.168.2.22
+que tu parles à l'oreille de mots puis tu es dans le nom des lettres pour commencer le nom d'un de ces trois jeux
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:GLeT76bepTd-2nveAABc IP:192.168.2.22
+New message from 2:192.168.2.22
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:GLeT76bepTd-2nveAABc IP:192.168.2.22
+New message from 2:192.168.2.22
+a lieu de spectacle en te donne des lettres si tu me parle à l'oreille
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:GLeT76bepTd-2nveAABc IP:192.168.2.22
+New message from 2:192.168.2.22
+un théâtre
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : j0ejhNCQnsY0NGsYAABd
+Old player found, Id:GLeT76bepTd-2nveAABc IP:192.168.2.22
+New message from 2:192.168.2.22
+j'ai trouvé
+Players sent to display : 
+recognition disconnected : GLeT76bepTd-2nveAABc
+recognition connected : nT253DBJtvvaJV6BAABe
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Players sent to display : 
+recognition connected : HgSlUk07sLUvR6uFAABf
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:nT253DBJtvvaJV6BAABe IP:192.168.2.22
+New message from 2:192.168.2.22
+les mots
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:nT253DBJtvvaJV6BAABe IP:192.168.2.22
+New message from 2:192.168.2.22
+memories memories ah ah ah
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:nT253DBJtvvaJV6BAABe IP:192.168.2.22
+New message from 2:192.168.2.22
+dans l'oreille pour la voir vas-y
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:nT253DBJtvvaJV6BAABe IP:192.168.2.22
+New message from 2:192.168.2.22
+comment ça va Jacky ça pousse ou pas
+Players sent to display : 
+Old player found, Id:nT253DBJtvvaJV6BAABe IP:192.168.2.22
+New message from 2:192.168.2.22
+les Pays-Bas
+Players sent to display : 
+Old player found, Id:nT253DBJtvvaJV6BAABe IP:192.168.2.22
+New message from 2:192.168.2.22
+ je veux voir les bas
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : nT253DBJtvvaJV6BAABe
+recognition disconnected : HgSlUk07sLUvR6uFAABf
+recognition connected : YJhHQjOUhDlRgWyiAABg
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 1My_xpqVVLVK2EevAABh
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:YJhHQjOUhDlRgWyiAABg IP:192.168.2.22
+New message from 2:192.168.2.22
+embrasser mon mari
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : YJhHQjOUhDlRgWyiAABg
+recognition disconnected : 1My_xpqVVLVK2EevAABh
+recognition connected : lkTc1l6F2ckGa1J8AABi
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : eSEui11J1qE415zOAABj
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:lkTc1l6F2ckGa1J8AABi IP:192.168.2.22
+New message from 2:192.168.2.22
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:lkTc1l6F2ckGa1J8AABi IP:192.168.2.22
+New message from 2:192.168.2.22
+Victor Hugo
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : lkTc1l6F2ckGa1J8AABi
+recognition disconnected : eSEui11J1qE415zOAABj
+recognition connected : PxlcSRYVqYkmJbRrAABk
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : _HqIh2o6h9m6Yf7gAABl
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:PxlcSRYVqYkmJbRrAABk IP:192.168.2.22
+New message from 2:192.168.2.22
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:PxlcSRYVqYkmJbRrAABk IP:192.168.2.22
+New message from 2:192.168.2.22
+furet
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:PxlcSRYVqYkmJbRrAABk IP:192.168.2.22
+New message from 2:192.168.2.22
+Jean Giono
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:PxlcSRYVqYkmJbRrAABk IP:192.168.2.22
+New message from 2:192.168.2.22
+je veux Alice oui oui
+Players sent to display : 
+Old player found, Id:PxlcSRYVqYkmJbRrAABk IP:192.168.2.22
+New message from 2:192.168.2.22
+ charbon
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:PxlcSRYVqYkmJbRrAABk IP:192.168.2.22
+New message from 2:192.168.2.22
+a dit ça
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:PxlcSRYVqYkmJbRrAABk IP:192.168.2.22
+New message from 2:192.168.2.22
+cocotte vapeur
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : PxlcSRYVqYkmJbRrAABk
+recognition disconnected : _HqIh2o6h9m6Yf7gAABl
+recognition connected : -3WeOBV-v2fR0m3xAABm
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 7GzOfqEeDbEMEuVdAABn
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:7GzOfqEeDbEMEuVdAABn IP:192.168.2.22
+New message from 2:192.168.2.22
+m'embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:7GzOfqEeDbEMEuVdAABn IP:192.168.2.22
+New message from 2:192.168.2.22
+coucou oui
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : 7GzOfqEeDbEMEuVdAABn
+recognition disconnected : -3WeOBV-v2fR0m3xAABm
+recognition connected : SvUtvaGfsUDrs0eeAABo
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : O_vc-KGfwcmk7qXWAABp
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:SvUtvaGfsUDrs0eeAABo IP:192.168.2.22
+New message from 2:192.168.2.22
+à la forme d'une oreille touche
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:SvUtvaGfsUDrs0eeAABo IP:192.168.2.22
+New message from 2:192.168.2.22
+Bonjour
+Players sent to display : 
+Old player found, Id:SvUtvaGfsUDrs0eeAABo IP:192.168.2.22
+New message from 2:192.168.2.22
+oh maman
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:SvUtvaGfsUDrs0eeAABo IP:192.168.2.22
+New message from 2:192.168.2.22
+ mets
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:SvUtvaGfsUDrs0eeAABo IP:192.168.2.22
+New message from 2:192.168.2.22
+Méribel
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:SvUtvaGfsUDrs0eeAABo IP:192.168.2.22
+New message from 2:192.168.2.22
+je m'appelle Éva
+Players sent to display : 
+Old player found, Id:SvUtvaGfsUDrs0eeAABo IP:192.168.2.22
+New message from 2:192.168.2.22
+ il a marqué
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:SvUtvaGfsUDrs0eeAABo IP:192.168.2.22
+New message from 2:192.168.2.22
+coucou
+Players sent to display : 
+Old player found, Id:SvUtvaGfsUDrs0eeAABo IP:192.168.2.22
+New message from 2:192.168.2.22
+ c'est moi Eva
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:O_vc-KGfwcmk7qXWAABp IP:192.168.2.23
+New message from 3:192.168.2.23
+réponds
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:SvUtvaGfsUDrs0eeAABo IP:192.168.2.22
+New message from 2:192.168.2.22
+je brasse
+Players sent to display : 
+resetPlayers
+Old player found, Id:SvUtvaGfsUDrs0eeAABo IP:192.168.2.22
+New message from 2:192.168.2.22
+ j'habite à Lautenbach
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:SvUtvaGfsUDrs0eeAABo IP:192.168.2.22
+New message from 2:192.168.2.22
+capitale altenbach
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:SvUtvaGfsUDrs0eeAABo IP:192.168.2.22
+New message from 2:192.168.2.22
+un bar
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : SvUtvaGfsUDrs0eeAABo
+recognition disconnected : O_vc-KGfwcmk7qXWAABp
+recognition connected : kcc-zuxE2E7uqoyCAABq
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : VIyYQW6BoNWdnVAuAABr
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:kcc-zuxE2E7uqoyCAABq IP:192.168.2.22
+New message from 2:192.168.2.22
+embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:kcc-zuxE2E7uqoyCAABq IP:192.168.2.22
+New message from 2:192.168.2.22
+Allah
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:kcc-zuxE2E7uqoyCAABq IP:192.168.2.22
+New message from 2:192.168.2.22
+si tu parles alors je parle
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:kcc-zuxE2E7uqoyCAABq IP:192.168.2.22
+New message from 2:192.168.2.22
+Rabelais
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:kcc-zuxE2E7uqoyCAABq IP:192.168.2.22
+New message from 2:192.168.2.22
+non merci
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : VIyYQW6BoNWdnVAuAABr
+recognition disconnected : kcc-zuxE2E7uqoyCAABq
+recognition connected : LLilqeR-mOisFMxtAABs
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : Xn2KoDUH3fALdZGPAABt
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:LLilqeR-mOisFMxtAABs IP:192.168.2.22
+New message from 2:192.168.2.22
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:LLilqeR-mOisFMxtAABs IP:192.168.2.22
+New message from 2:192.168.2.22
+Vladimir Poutine
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LLilqeR-mOisFMxtAABs IP:192.168.2.22
+New message from 2:192.168.2.22
+ok j'ai eu VI ZEE abc UK ligne de chemin de fer
+Players sent to display : 
+Old player found, Id:LLilqeR-mOisFMxtAABs IP:192.168.2.22
+New message from 2:192.168.2.22
+CCF train
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LLilqeR-mOisFMxtAABs IP:192.168.2.22
+New message from 2:192.168.2.22
+z
+Players sent to display : 
+Old player found, Id:LLilqeR-mOisFMxtAABs IP:192.168.2.22
+New message from 2:192.168.2.22
+ oui
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LLilqeR-mOisFMxtAABs IP:192.168.2.22
+New message from 2:192.168.2.22
+je veux un indice
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:LLilqeR-mOisFMxtAABs IP:192.168.2.22
+New message from 2:192.168.2.22
+chemin de fer
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LLilqeR-mOisFMxtAABs IP:192.168.2.22
+New message from 2:192.168.2.22
+route de chemin de fer
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:LLilqeR-mOisFMxtAABs IP:192.168.2.22
+New message from 2:192.168.2.22
+raï
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : LLilqeR-mOisFMxtAABs
+recognition disconnected : Xn2KoDUH3fALdZGPAABt
+recognition connected : RimjJly-wpk6VhRrAABu
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : KDZgzyMU-qIZFeQxAABv
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:KDZgzyMU-qIZFeQxAABv IP:192.168.2.22
+New message from 2:192.168.2.22
+joue masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:KDZgzyMU-qIZFeQxAABv IP:192.168.2.22
+New message from 2:192.168.2.22
+Fourvière
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:KDZgzyMU-qIZFeQxAABv IP:192.168.2.22
+New message from 2:192.168.2.22
+funiculaire
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : RimjJly-wpk6VhRrAABu
+recognition disconnected : KDZgzyMU-qIZFeQxAABv
+recognition connected : E_Gv8-EpdoGBhXX3AABw
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : ujyhPHWtSEPjN8utAABx
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:E_Gv8-EpdoGBhXX3AABw IP:192.168.2.22
+New message from 2:192.168.2.22
+Amaury
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:E_Gv8-EpdoGBhXX3AABw IP:192.168.2.22
+New message from 2:192.168.2.22
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:E_Gv8-EpdoGBhXX3AABw IP:192.168.2.22
+New message from 2:192.168.2.22
+ab
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:E_Gv8-EpdoGBhXX3AABw IP:192.168.2.22
+New message from 2:192.168.2.22
+tu es
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:E_Gv8-EpdoGBhXX3AABw IP:192.168.2.22
+New message from 2:192.168.2.22
+ d'accord donc anéanti
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:E_Gv8-EpdoGBhXX3AABw IP:192.168.2.22
+New message from 2:192.168.2.22
+salut comment ça va
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Old player found, Id:E_Gv8-EpdoGBhXX3AABw IP:192.168.2.22
+New message from 2:192.168.2.22
+vachement
+Players sent to display : 
+recognition disconnected : ujyhPHWtSEPjN8utAABx
+recognition disconnected : E_Gv8-EpdoGBhXX3AABw
+recognition connected : _Jqb5MbhEz6v5zO1AABy
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Players sent to display : 
+recognition connected : nTWPfLvBFz6Z3sc6AABz
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:_Jqb5MbhEz6v5zO1AABy IP:192.168.2.22
+New message from 2:192.168.2.22
+Monaco
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:_Jqb5MbhEz6v5zO1AABy IP:192.168.2.22
+New message from 2:192.168.2.22
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:_Jqb5MbhEz6v5zO1AABy IP:192.168.2.22
+New message from 2:192.168.2.22
+train
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:_Jqb5MbhEz6v5zO1AABy IP:192.168.2.22
+New message from 2:192.168.2.22
+je veux une lettre
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:_Jqb5MbhEz6v5zO1AABy IP:192.168.2.22
+New message from 2:192.168.2.22
+ligne
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : nTWPfLvBFz6Z3sc6AABz
+recognition disconnected : _Jqb5MbhEz6v5zO1AABy
+recognition connected : GrSZyfaP0y0OIhQzAAB0
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : DMcifr6q_oVuaTvrAAB1
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:GrSZyfaP0y0OIhQzAAB0 IP:192.168.2.22
+New message from 2:192.168.2.22
+salut ça va
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:GrSZyfaP0y0OIhQzAAB0 IP:192.168.2.22
+New message from 2:192.168.2.22
+comment tu t'appelles
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:DMcifr6q_oVuaTvrAAB1 IP:192.168.2.23
+New message from 3:192.168.2.23
+je m'appelle Lenny
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:GrSZyfaP0y0OIhQzAAB0 IP:192.168.2.22
+New message from 2:192.168.2.22
+mot brasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+Old player found, Id:DMcifr6q_oVuaTvrAAB1 IP:192.168.2.23
+New message from 3:192.168.2.23
+Go logo
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:DMcifr6q_oVuaTvrAAB1 IP:192.168.2.23
+New message from 3:192.168.2.23
+gros caca
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:GrSZyfaP0y0OIhQzAAB0 IP:192.168.2.22
+New message from 2:192.168.2.22
+Siena
+Players sent to display : 
+Old player found, Id:DMcifr6q_oVuaTvrAAB1 IP:192.168.2.23
+New message from 3:192.168.2.23
+China
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:DMcifr6q_oVuaTvrAAB1 IP:192.168.2.23
+New message from 3:192.168.2.23
+China
+Players sent to display : 
+Old player found, Id:DMcifr6q_oVuaTvrAAB1 IP:192.168.2.23
+New message from 3:192.168.2.23
+citoyen
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:DMcifr6q_oVuaTvrAAB1 IP:192.168.2.23
+New message from 3:192.168.2.23
+ citoyen
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : GrSZyfaP0y0OIhQzAAB0
+recognition disconnected : DMcifr6q_oVuaTvrAAB1
+recognition connected : 431IeazFZD0yJFG0AAB2
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : I_Q_C-T4rs8KIJGZAAB3
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:I_Q_C-T4rs8KIJGZAAB3 IP:192.168.2.23
+New message from 3:192.168.2.23
+je veux prendre le train s'il te plaît maman
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:I_Q_C-T4rs8KIJGZAAB3 IP:192.168.2.23
+New message from 3:192.168.2.23
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:I_Q_C-T4rs8KIJGZAAB3 IP:192.168.2.23
+New message from 3:192.168.2.23
+Salut Bonjour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:431IeazFZD0yJFG0AAB2 IP:192.168.2.22
+New message from 2:192.168.2.22
+ami
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:431IeazFZD0yJFG0AAB2 IP:192.168.2.22
+New message from 2:192.168.2.22
+ zoo
+Players sent to display : 
+Old player found, Id:I_Q_C-T4rs8KIJGZAAB3 IP:192.168.2.23
+New message from 3:192.168.2.23
+Jean-pierre
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:431IeazFZD0yJFG0AAB2 IP:192.168.2.22
+New message from 2:192.168.2.22
+bruyère
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:I_Q_C-T4rs8KIJGZAAB3 IP:192.168.2.23
+New message from 3:192.168.2.23
+ok
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:431IeazFZD0yJFG0AAB2 IP:192.168.2.22
+New message from 2:192.168.2.22
+le petit train
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:I_Q_C-T4rs8KIJGZAAB3 IP:192.168.2.23
+New message from 3:192.168.2.23
+je veux le petit train
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : I_Q_C-T4rs8KIJGZAAB3
+recognition disconnected : 431IeazFZD0yJFG0AAB2
+recognition connected : Xr_svZI6-KqkOWT2AAB4
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : e3apD2un18PlcxnYAAB5
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:Xr_svZI6-KqkOWT2AAB4 IP:192.168.2.22
+New message from 2:192.168.2.22
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:Xr_svZI6-KqkOWT2AAB4 IP:192.168.2.22
+New message from 2:192.168.2.22
+basilique
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Xr_svZI6-KqkOWT2AAB4 IP:192.168.2.22
+New message from 2:192.168.2.22
+Fourvière
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:e3apD2un18PlcxnYAAB5 IP:192.168.2.23
+New message from 3:192.168.2.23
+cathédrale
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : Xr_svZI6-KqkOWT2AAB4
+recognition disconnected : e3apD2un18PlcxnYAAB5
+recognition connected : Hs1_wc5Y2tdhhoRjAAB6
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : c3qu9kjhMB5RImsxAAB7
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:Hs1_wc5Y2tdhhoRjAAB6 IP:192.168.2.23
+New message from 3:192.168.2.23
+compiler
+Players sent to display : 
+Old player found, Id:Hs1_wc5Y2tdhhoRjAAB6 IP:192.168.2.23
+New message from 3:192.168.2.23
+embrasser
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:Hs1_wc5Y2tdhhoRjAAB6 IP:192.168.2.23
+New message from 3:192.168.2.23
+oui
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : Hs1_wc5Y2tdhhoRjAAB6
+recognition disconnected : c3qu9kjhMB5RImsxAAB7
+recognition connected : 4RO_TqcwujXwAJAJAAB8
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : mLjFc_-3iQPd6ZTqAAB9
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:4RO_TqcwujXwAJAJAAB8 IP:192.168.2.22
+New message from 2:192.168.2.22
+mot magique
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:4RO_TqcwujXwAJAJAAB8 IP:192.168.2.22
+New message from 2:192.168.2.22
+c'est quand même
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:4RO_TqcwujXwAJAJAAB8 IP:192.168.2.22
+New message from 2:192.168.2.22
+mot magique
+Players sent to display : 
+Old player found, Id:4RO_TqcwujXwAJAJAAB8 IP:192.168.2.22
+New message from 2:192.168.2.22
+ je voudrais jouer au magique
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:4RO_TqcwujXwAJAJAAB8 IP:192.168.2.22
+New message from 2:192.168.2.22
+ donne-moi les lettres
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:4RO_TqcwujXwAJAJAAB8 IP:192.168.2.22
+New message from 2:192.168.2.22
+où sont les lettres
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:4RO_TqcwujXwAJAJAAB8 IP:192.168.2.22
+New message from 2:192.168.2.22
+je ne comprends pas le jeu
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:4RO_TqcwujXwAJAJAAB8 IP:192.168.2.22
+New message from 2:192.168.2.22
+mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:4RO_TqcwujXwAJAJAAB8 IP:192.168.2.22
+New message from 2:192.168.2.22
+rapporter un peu de monnaie
+Players sent to display : 
+Old player found, Id:4RO_TqcwujXwAJAJAAB8 IP:192.168.2.22
+New message from 2:192.168.2.22
+ ah oui
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:4RO_TqcwujXwAJAJAAB8 IP:192.168.2.22
+New message from 2:192.168.2.22
+la souriante
+Players sent to display : 
+Old player found, Id:4RO_TqcwujXwAJAJAAB8 IP:192.168.2.22
+New message from 2:192.168.2.22
+ c'est ça oui c'est gagné
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : mLjFc_-3iQPd6ZTqAAB9
+Old player found, Id:4RO_TqcwujXwAJAJAAB8 IP:192.168.2.22
+New message from 2:192.168.2.22
+on continue
+Players sent to display : 
+recognition disconnected : 4RO_TqcwujXwAJAJAAB8
+Players sent to display : 
+recognition connected : TLjGJcGG_c6uOJIgAAB-
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : UPYrGLDAxnC8j6xaAAB_
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:UPYrGLDAxnC8j6xaAAB_ IP:192.168.2.23
+New message from 3:192.168.2.23
+Zab Zab Zab
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+ZZZ
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+Bratz
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+bière
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+ hier
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+bière
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+embrasser
+Players sent to display : 
+resetPlayers
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+ mot brasser
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+be happy
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+oui
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+oui
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+riz amer
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+oui
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+ ouais ça va on peut rentrer ça va
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+j'aimerais vraiment 10 minutes pour rentrer à pierre
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+d'accord mais en même temps c'est qui a la garde il y a des super travaux là sur le parking
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+ alors il vaut
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+très vraiment
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+ Ouais ouais
+Players sent to display : 
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+sortir dans le sens que tu veux plus faire le tour maintenant
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+ok vas-y je t'appelle comment
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : UPYrGLDAxnC8j6xaAAB_
+Old player found, Id:TLjGJcGG_c6uOJIgAAB- IP:192.168.2.22
+New message from 2:192.168.2.22
+Ouais du coup j'aurais vers 20h37
+Players sent to display : 
+recognition disconnected : TLjGJcGG_c6uOJIgAAB-
+recognition connected : dq4sxgsPnmZTdWgSAACA
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Players sent to display : 
+recognition connected : 1fV_aQ3-40xr4kiEAACB
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:dq4sxgsPnmZTdWgSAACA IP:192.168.2.22
+New message from 2:192.168.2.22
+un doute
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:dq4sxgsPnmZTdWgSAACA IP:192.168.2.22
+New message from 2:192.168.2.22
+m'embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:dq4sxgsPnmZTdWgSAACA IP:192.168.2.22
+New message from 2:192.168.2.22
+rare
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:dq4sxgsPnmZTdWgSAACA IP:192.168.2.22
+New message from 2:192.168.2.22
+aérer
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:dq4sxgsPnmZTdWgSAACA IP:192.168.2.22
+New message from 2:192.168.2.22
+aéra
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:dq4sxgsPnmZTdWgSAACA IP:192.168.2.22
+New message from 2:192.168.2.22
+oui
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:dq4sxgsPnmZTdWgSAACA IP:192.168.2.22
+New message from 2:192.168.2.22
+era
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:dq4sxgsPnmZTdWgSAACA IP:192.168.2.22
+New message from 2:192.168.2.22
+Tayara
+Players sent to display : 
+Old player found, Id:dq4sxgsPnmZTdWgSAACA IP:192.168.2.22
+New message from 2:192.168.2.22
+faire à ta mère
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dq4sxgsPnmZTdWgSAACA IP:192.168.2.22
+New message from 2:192.168.2.22
+traître
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : dq4sxgsPnmZTdWgSAACA
+recognition disconnected : 1fV_aQ3-40xr4kiEAACB
+recognition connected : yfG8HJ9OL5TwfjRxAACC
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : AjNSIl3S-0DfU4wrAACD
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:yfG8HJ9OL5TwfjRxAACC IP:192.168.2.22
+New message from 2:192.168.2.22
+embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:yfG8HJ9OL5TwfjRxAACC IP:192.168.2.22
+New message from 2:192.168.2.22
+faisons
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:yfG8HJ9OL5TwfjRxAACC IP:192.168.2.22
+New message from 2:192.168.2.22
+non
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:yfG8HJ9OL5TwfjRxAACC IP:192.168.2.22
+New message from 2:192.168.2.22
+coussin
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : yfG8HJ9OL5TwfjRxAACC
+recognition disconnected : AjNSIl3S-0DfU4wrAACD
+recognition connected : PiA-2jLBh8a45LlrAACE
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : Hovriwlktc-R9Q7AAACF
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:PiA-2jLBh8a45LlrAACE IP:192.168.2.22
+New message from 2:192.168.2.22
+mon voisin
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:PiA-2jLBh8a45LlrAACE IP:192.168.2.22
+New message from 2:192.168.2.22
+m'embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:PiA-2jLBh8a45LlrAACE IP:192.168.2.22
+New message from 2:192.168.2.22
+Montbrison
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : PiA-2jLBh8a45LlrAACE
+recognition disconnected : Hovriwlktc-R9Q7AAACF
+recognition connected : TdlDa3gsBYRV7ZhAAACG
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : Jtwm9xK-yWgUr2vyAACH
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:TdlDa3gsBYRV7ZhAAACG IP:192.168.2.22
+New message from 2:192.168.2.22
+m'embrasser
+Players sent to display : 
+resetPlayers
+Old player found, Id:TdlDa3gsBYRV7ZhAAACG IP:192.168.2.22
+New message from 2:192.168.2.22
+ mauve rosé
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:TdlDa3gsBYRV7ZhAAACG IP:192.168.2.22
+New message from 2:192.168.2.22
+oui
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:TdlDa3gsBYRV7ZhAAACG IP:192.168.2.22
+New message from 2:192.168.2.22
+oui
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:TdlDa3gsBYRV7ZhAAACG IP:192.168.2.22
+New message from 2:192.168.2.22
+oui
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+start page
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+exit from ssh
+ssh: connect to host 192.168.2.21 port 22: No route to host
+exec: ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: Operation timed out
+ssh: connect to host 192.168.2.21 port 22: No route to host
+
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : TdlDa3gsBYRV7ZhAAACG
+recognition disconnected : Jtwm9xK-yWgUr2vyAACH
+recognition connected : F4watOGAQUwXriSrAACI
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : ZYSZ3udLy87DiG4DAACJ
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:F4watOGAQUwXriSrAACI IP:192.168.2.22
+New message from 2:192.168.2.22
+ta mère
+Players sent to display : 
+Players sent to display : 
