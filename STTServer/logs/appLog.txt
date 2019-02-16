@@ -1,6 +1,18 @@
 
 
---------------------------------------- 2019-02-15-12-43-17-949
+--------------------------------------- 2019-02-16-05-31-11-209
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
 [warning] The world is not set, trying calling the init function first.
 [warning] The world is not set, trying calling the init function first.
 [warning] The world is not set, trying calling the init function first.
@@ -203,6 +215,22 @@
 [warning] The world is not set, trying calling the init function first.
 [warning] The world is not set, trying calling the init function first.
 [warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[warning] The world is not set, trying calling the init function first.
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
+[ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
 [ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
 [ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
 [ error ] ofImage: loadImage(): couldn't load image from "void.jpg)"
