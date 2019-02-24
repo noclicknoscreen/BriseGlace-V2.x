@@ -68519,3 +68519,2443 @@ New message from 2:192.168.2.22
 Gabriel a un gros sexe
 Players sent to display : 
 Players sent to display : 
+==================================================
+
+Server starting at : 2/24/2019, 5:30:58 AM
+
+Server Notes :
+Recognition page : /recognition
+Display page : /display
+--
+Restart Raspberry : 192.168.2.21
+Restart  192.168.2.21
+Connection to 192.168.2.21 closed by remote host.
+Restart Raspberry : 192.168.2.22
+Restart  192.168.2.22
+Connection to 192.168.2.22 closed by remote host.
+Restart Raspberry : 192.168.2.23
+Restart  192.168.2.23
+Connection to 192.168.2.23 closed by remote host.
+listening http STT Server on port 8080
+--
+listening https STT Server on port 8443
+--
+resetPlayers
+recognition connected : CRaboClMJIgW6kXIAAAA
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 1eEeDb-5wjPniBWiAAAB
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 7d38JjxZBLARCcF1AAAC
+New player +++++++++++++++++++
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+salam aleykoum
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+big up
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+ vidéo cousine en Thaïlande
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+dédicace à la famille
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+ gros bisous aux cousines en Thaïlande
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+c'est le sang
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+big up
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+ Elia
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+eBay
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+ Havaianas
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+Myriam je t'aime
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+aïe aïe aïe
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+coucou
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+mots masqués
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+donne-moi une lettre
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+encore une lettre
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+boulot
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+boulon
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1eEeDb-5wjPniBWiAAAB IP:192.168.2.22
+New message from 2:192.168.2.22
+Chelon
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : 7d38JjxZBLARCcF1AAAC
+recognition disconnected : CRaboClMJIgW6kXIAAAA
+recognition disconnected : 1eEeDb-5wjPniBWiAAAB
+recognition connected : aZloEcYZgAp8Fi1zAAAD
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : bxTFDQciU-7-VD_7AAAE
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : lnsel-pO9kqauZCvAAAF
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:lnsel-pO9kqauZCvAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+memoria
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:bxTFDQciU-7-VD_7AAAE IP:192.168.2.22
+New message from 2:192.168.2.22
+Bocuse
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:lnsel-pO9kqauZCvAAAF IP:192.168.2.23
+New message from 3:192.168.2.23
+Bocuse
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : lnsel-pO9kqauZCvAAAF
+recognition disconnected : aZloEcYZgAp8Fi1zAAAD
+recognition disconnected : bxTFDQciU-7-VD_7AAAE
+recognition connected : mGH0OjNIhKiLkUSjAAAG
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 2nTivZ_Ryzt-I-QHAAAH
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : xRcT2umzYdKhovGHAAAI
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:mGH0OjNIhKiLkUSjAAAG IP:192.168.2.21
+New message from 1:192.168.2.21
+1 2 3 je Maubras et
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:mGH0OjNIhKiLkUSjAAAG IP:192.168.2.21
+New message from 1:192.168.2.21
+dire un deux trois jours sous qui a indiqué mot masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:mGH0OjNIhKiLkUSjAAAG IP:192.168.2.21
+New message from 1:192.168.2.21
+comment on te donne des lettres
+Players sent to display : 
+Old player found, Id:mGH0OjNIhKiLkUSjAAAG IP:192.168.2.21
+New message from 1:192.168.2.21
+ la Lorraine
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:mGH0OjNIhKiLkUSjAAAG IP:192.168.2.21
+New message from 1:192.168.2.21
+Écully
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : mGH0OjNIhKiLkUSjAAAG
+recognition disconnected : 2nTivZ_Ryzt-I-QHAAAH
+recognition disconnected : xRcT2umzYdKhovGHAAAI
+recognition connected : lhQnteEVdWME2S3qAAAJ
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : c6r5kTqG1dhHq0uIAAAK
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : r86lB2Lea91KEKjcAAAL
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:c6r5kTqG1dhHq0uIAAAK IP:192.168.2.22
+New message from 2:192.168.2.22
+train
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:lhQnteEVdWME2S3qAAAJ IP:192.168.2.21
+New message from 1:192.168.2.21
+RER
+Players sent to display : 
+Old player found, Id:c6r5kTqG1dhHq0uIAAAK IP:192.168.2.22
+New message from 2:192.168.2.22
+train
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:c6r5kTqG1dhHq0uIAAAK IP:192.168.2.22
+New message from 2:192.168.2.22
+m'embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:c6r5kTqG1dhHq0uIAAAK IP:192.168.2.22
+New message from 2:192.168.2.22
+oh oh
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:c6r5kTqG1dhHq0uIAAAK IP:192.168.2.22
+New message from 2:192.168.2.22
+théâtre
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:c6r5kTqG1dhHq0uIAAAK IP:192.168.2.22
+New message from 2:192.168.2.22
+oui
+Players sent to display : 
+resetPlayers
+Old player found, Id:r86lB2Lea91KEKjcAAAL IP:192.168.2.23
+New message from 3:192.168.2.23
+oui
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:c6r5kTqG1dhHq0uIAAAK IP:192.168.2.22
+New message from 2:192.168.2.22
+théâtre
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : lhQnteEVdWME2S3qAAAJ
+recognition disconnected : c6r5kTqG1dhHq0uIAAAK
+recognition disconnected : r86lB2Lea91KEKjcAAAL
+recognition connected : 9NI-hd7TdtV4pfwCAAAM
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : gq1hHLu9UVL8v-RmAAAN
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : SqVHMROEnDEfWtW-AAAO
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+allô
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+ Bonjour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+Bonjour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+Bonjour
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+salut ça va
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+ouais bien et toi
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:SqVHMROEnDEfWtW-AAAO IP:192.168.2.23
+New message from 3:192.168.2.23
+Bonjour je m'appelle Mathieu
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+Pokémon attrapez-les tous
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+human
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:SqVHMROEnDEfWtW-AAAO IP:192.168.2.23
+New message from 3:192.168.2.23
+nous allons au bal
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+yo man
+Players sent to display : 
+Old player found, Id:SqVHMROEnDEfWtW-AAAO IP:192.168.2.23
+New message from 3:192.168.2.23
+au parc de Lacroix-Laval et c'est génial
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+Théodore
+Players sent to display : 
+Old player found, Id:SqVHMROEnDEfWtW-AAAO IP:192.168.2.23
+New message from 3:192.168.2.23
+ j'aime les dinosaures
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+manger un petit pique-nique au calme
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+ j'ai vu les trois Jurassic Park
+Players sent to display : 
+Old player found, Id:SqVHMROEnDEfWtW-AAAO IP:192.168.2.23
+New message from 3:192.168.2.23
+Emmanuel Auger donne-moi tout ton argent
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+j'ai vu les trois Jurassic pas
+Players sent to display : 
+Old player found, Id:SqVHMROEnDEfWtW-AAAO IP:192.168.2.23
+New message from 3:192.168.2.23
+et en anglais ça marche
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+Oh le michto
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:SqVHMROEnDEfWtW-AAAO IP:192.168.2.23
+New message from 3:192.168.2.23
+Matthew
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+allô
+Players sent to display : 
+Old player found, Id:SqVHMROEnDEfWtW-AAAO IP:192.168.2.23
+New message from 3:192.168.2.23
+ Emmanuel Auger donne-moi ton argent vite
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+non
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+j'ai un couteau suisse
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+tu parles
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+couteau suisse français
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+dis le nom d'un de ces trois jours
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+ caca boudin
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:SqVHMROEnDEfWtW-AAAO IP:192.168.2.23
+New message from 3:192.168.2.23
+j'adore les crêpes à la crème de marron
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+Mathieu ce soir je vais essayer de vous lire
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+non j'ai pas envie
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+comment ça va
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+je dois repartir
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+mon passé
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+je vais à la croix Laval pour picniquer
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+l'autre monde
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+moi j'ai la couleur bleu doré
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+Roger Mathieu la violette
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+non franchement c'est abusé comment vas-y les mange un truc de ouf
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+Roquebrune vendredi
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+non franchement c'est abusé comment Amboise et
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+mais tu as vu comment on voit c'est moche
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+comment on voit qu'il est moche
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+hoverboard
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+non je partirai pas
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+j'ai rien dit
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+2 x 6
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+je vais te tuer
+Players sent to display : 
+Old player found, Id:SqVHMROEnDEfWtW-AAAO IP:192.168.2.23
+New message from 3:192.168.2.23
+obéissez à votre père
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+non j'ai rien dit j'ai rien dit j'ai rien
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+obéissez à Théodore notre Sauveur à tous
+Players sent to display : 
+Old player found, Id:SqVHMROEnDEfWtW-AAAO IP:192.168.2.23
+New message from 3:192.168.2.23
+nous devons y aller sinon nous allons rater le train
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+bon allez au revoir
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9NI-hd7TdtV4pfwCAAAM IP:192.168.2.22
+New message from 2:192.168.2.22
+eh oh eh oh
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:gq1hHLu9UVL8v-RmAAAN IP:192.168.2.21
+New message from 1:192.168.2.21
+alors
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : gq1hHLu9UVL8v-RmAAAN
+recognition disconnected : 9NI-hd7TdtV4pfwCAAAM
+recognition disconnected : SqVHMROEnDEfWtW-AAAO
+recognition connected : 3u1UdXA3Cqc9ZwakAAAP
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 1NWl1WJ7nxX7PcSfAAAQ
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 2rDBdeeMiJhjqtVkAAAR
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:3u1UdXA3Cqc9ZwakAAAP IP:192.168.2.21
+New message from 1:192.168.2.21
+mon mari
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:1NWl1WJ7nxX7PcSfAAAQ IP:192.168.2.22
+New message from 2:192.168.2.22
+m'embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : 3u1UdXA3Cqc9ZwakAAAP
+recognition disconnected : 2rDBdeeMiJhjqtVkAAAR
+recognition disconnected : 1NWl1WJ7nxX7PcSfAAAQ
+recognition connected : S-uJDz4xUpavVDNbAAAS
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : WZsQZXxLpuemEdDIAAAT
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : Lscxxwn-ZPP9navMAAAU
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:Lscxxwn-ZPP9navMAAAU IP:192.168.2.23
+New message from 3:192.168.2.23
+m'embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:Lscxxwn-ZPP9navMAAAU IP:192.168.2.23
+New message from 3:192.168.2.23
+allô
+Players sent to display : 
+Old player found, Id:Lscxxwn-ZPP9navMAAAU IP:192.168.2.23
+New message from 3:192.168.2.23
+ Bonjour
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:Lscxxwn-ZPP9navMAAAU IP:192.168.2.23
+New message from 3:192.168.2.23
+oui
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Lscxxwn-ZPP9navMAAAU IP:192.168.2.23
+New message from 3:192.168.2.23
+ Les Misérables
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Lscxxwn-ZPP9navMAAAU IP:192.168.2.23
+New message from 3:192.168.2.23
+Victor Hugo
+Players sent to display : 
+Old player found, Id:S-uJDz4xUpavVDNbAAAS IP:192.168.2.21
+New message from 1:192.168.2.21
+Bonjour
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Old player found, Id:S-uJDz4xUpavVDNbAAAS IP:192.168.2.21
+New message from 1:192.168.2.21
+ on peut jouer
+Players sent to display : 
+recognition disconnected : WZsQZXxLpuemEdDIAAAT
+recognition disconnected : Lscxxwn-ZPP9navMAAAU
+recognition disconnected : S-uJDz4xUpavVDNbAAAS
+recognition connected : Hq_3cn8N13HWwPyCAAAV
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : dBxp7GIRil1ah1UsAAAW
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Players sent to display : 
+recognition connected : dUh5KK-pTOaPkc-mAAAX
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:dUh5KK-pTOaPkc-mAAAX IP:192.168.2.23
+New message from 3:192.168.2.23
+vrai que la distance incroyable
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:dUh5KK-pTOaPkc-mAAAX IP:192.168.2.23
+New message from 3:192.168.2.23
+memory
+Players sent to display : 
+resetPlayers
+Old player found, Id:dBxp7GIRil1ah1UsAAAW IP:192.168.2.22
+New message from 2:192.168.2.22
+émincer
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dUh5KK-pTOaPkc-mAAAX IP:192.168.2.23
+New message from 3:192.168.2.23
+oui
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:dBxp7GIRil1ah1UsAAAW IP:192.168.2.22
+New message from 2:192.168.2.22
+ABC train
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:dBxp7GIRil1ah1UsAAAW IP:192.168.2.22
+New message from 2:192.168.2.22
+oui
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:dBxp7GIRil1ah1UsAAAW IP:192.168.2.22
+New message from 2:192.168.2.22
+train à vapeur
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:dUh5KK-pTOaPkc-mAAAX IP:192.168.2.23
+New message from 3:192.168.2.23
+un train à charbon
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:dBxp7GIRil1ah1UsAAAW IP:192.168.2.22
+New message from 2:192.168.2.22
+locomotive à vapeur
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : Hq_3cn8N13HWwPyCAAAV
+recognition disconnected : dBxp7GIRil1ah1UsAAAW
+recognition disconnected : dUh5KK-pTOaPkc-mAAAX
+recognition connected : CKnHhpqjoF_I_V00AAAY
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : IL3t285yar04l3UQAAAZ
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : YjFZMfYTDmAfABlAAAAa
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:IL3t285yar04l3UQAAAZ IP:192.168.2.22
+New message from 2:192.168.2.22
+Bonjour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IL3t285yar04l3UQAAAZ IP:192.168.2.22
+New message from 2:192.168.2.22
+Bonjour bonjour je vais mourir
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IL3t285yar04l3UQAAAZ IP:192.168.2.22
+New message from 2:192.168.2.22
+bonjour je vais mourir
+Players sent to display : 
+Old player found, Id:IL3t285yar04l3UQAAAZ IP:192.168.2.22
+New message from 2:192.168.2.22
+ je m'appelle Tom
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IL3t285yar04l3UQAAAZ IP:192.168.2.22
+New message from 2:192.168.2.22
+mots masqués
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:IL3t285yar04l3UQAAAZ IP:192.168.2.22
+New message from 2:192.168.2.22
+donne-moi des lettres
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IL3t285yar04l3UQAAAZ IP:192.168.2.22
+New message from 2:192.168.2.22
+donne-moi des lettres
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IL3t285yar04l3UQAAAZ IP:192.168.2.22
+New message from 2:192.168.2.22
+donne-moi la
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IL3t285yar04l3UQAAAZ IP:192.168.2.22
+New message from 2:192.168.2.22
+donne-moi un
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IL3t285yar04l3UQAAAZ IP:192.168.2.22
+New message from 2:192.168.2.22
+donne-moi le thé
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : CKnHhpqjoF_I_V00AAAY
+recognition disconnected : IL3t285yar04l3UQAAAZ
+recognition disconnected : YjFZMfYTDmAfABlAAAAa
+recognition connected : ptTj3sDLbmHhV_qEAAAb
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : Lu0u2jWUurL6YAPVAAAc
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : uc-Cedw2aMnMGoWlAAAd
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+d'accord
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+mot brasser brasser m'embrasser
+Players sent to display : 
+resetPlayers
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+ m'embrasser
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+m'embrasser
+Players sent to display : 
+Old player found, Id:ptTj3sDLbmHhV_qEAAAb IP:192.168.2.21
+New message from 1:192.168.2.21
+embrasser
+Players sent to display : 
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+ m'embrasser m'embrasser
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+on va se m'embrasse il m'embrasse il m'embrasse il m'embrasse il m'embrasse
+Players sent to display : 
+resetPlayers
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+ m'embrasser love non
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+on fait des trucs ça a été
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+c'est quoi le mot
+Players sent to display : 
+Old player found, Id:ptTj3sDLbmHhV_qEAAAb IP:192.168.2.21
+New message from 1:192.168.2.21
+voiture pour petit
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+tout
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+route route route
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+ trop trop trop trop trop trop trop trop trop trop trop trop trop
+Players sent to display : 
+Old player found, Id:uc-Cedw2aMnMGoWlAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+Trotro
+Players sent to display : 
+resetPlayers
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+Trotro Trotro Trotro Trotro Trotro
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+lecture
+Players sent to display : 
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+ lecture
+Players sent to display : 
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+ vecteur
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+Vans
+Players sent to display : 
+Old player found, Id:ptTj3sDLbmHhV_qEAAAb IP:192.168.2.21
+New message from 1:192.168.2.21
+couvent
+Players sent to display : 
+Old player found, Id:Lu0u2jWUurL6YAPVAAAc IP:192.168.2.22
+New message from 2:192.168.2.22
+ couvent
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:uc-Cedw2aMnMGoWlAAAd IP:192.168.2.23
+New message from 3:192.168.2.23
+couvent
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : ptTj3sDLbmHhV_qEAAAb
+recognition disconnected : Lu0u2jWUurL6YAPVAAAc
+recognition disconnected : uc-Cedw2aMnMGoWlAAAd
+recognition connected : sMier6I6UMeX6XibAAAe
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 04xLmRv_WO62bFzdAAAf
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : Qe3x11Omr9IP9VaoAAAg
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:04xLmRv_WO62bFzdAAAf IP:192.168.2.22
+New message from 2:192.168.2.22
+encore un autre
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:04xLmRv_WO62bFzdAAAf IP:192.168.2.22
+New message from 2:192.168.2.22
+allez allez on joue au jeu
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:04xLmRv_WO62bFzdAAAf IP:192.168.2.22
+New message from 2:192.168.2.22
+tu es encore
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:04xLmRv_WO62bFzdAAAf IP:192.168.2.22
+New message from 2:192.168.2.22
+ tu es encore embrassé
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:04xLmRv_WO62bFzdAAAf IP:192.168.2.22
+New message from 2:192.168.2.22
+un truc parce qu'il reste blablabla blablabla blablabla blablabla blablabla
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:04xLmRv_WO62bFzdAAAf IP:192.168.2.22
+New message from 2:192.168.2.22
+Rabelais
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:04xLmRv_WO62bFzdAAAf IP:192.168.2.22
+New message from 2:192.168.2.22
+ah si c'est ça
+Players sent to display : 
+Old player found, Id:04xLmRv_WO62bFzdAAAf IP:192.168.2.22
+New message from 2:192.168.2.22
+ voilà
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+Players sent to display : 
+recognition disconnected : sMier6I6UMeX6XibAAAe
+recognition disconnected : Qe3x11Omr9IP9VaoAAAg
+recognition disconnected : 04xLmRv_WO62bFzdAAAf
+recognition connected : 5AOzZdpxaXmGNzxoAAAh
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : iBLgoGQtEU0fT141AAAi
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 5Z9fn9WhCQVyIDNzAAAj
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:iBLgoGQtEU0fT141AAAi IP:192.168.2.22
+New message from 2:192.168.2.22
+embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:5Z9fn9WhCQVyIDNzAAAj IP:192.168.2.23
+New message from 3:192.168.2.23
+pas mal oreille bleu bleu bleu bleu bleu
+Players sent to display : 
+Old player found, Id:iBLgoGQtEU0fT141AAAi IP:192.168.2.22
+New message from 2:192.168.2.22
+parle à l'oreille
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:iBLgoGQtEU0fT141AAAi IP:192.168.2.22
+New message from 2:192.168.2.22
+ naturel
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:iBLgoGQtEU0fT141AAAi IP:192.168.2.22
+New message from 2:192.168.2.22
+merci
+Players sent to display : 
+Old player found, Id:iBLgoGQtEU0fT141AAAi IP:192.168.2.22
+New message from 2:192.168.2.22
+ acier
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:5Z9fn9WhCQVyIDNzAAAj IP:192.168.2.23
+New message from 3:192.168.2.23
+apprends-moi à quelle heure ça marche pas
+Players sent to display : 
+Old player found, Id:5Z9fn9WhCQVyIDNzAAAj IP:192.168.2.23
+New message from 3:192.168.2.23
+envoie à quelle heure ça marche
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:iBLgoGQtEU0fT141AAAi IP:192.168.2.22
+New message from 2:192.168.2.22
+traverse
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : 5AOzZdpxaXmGNzxoAAAh
+recognition disconnected : iBLgoGQtEU0fT141AAAi
+recognition disconnected : 5Z9fn9WhCQVyIDNzAAAj
+recognition connected : xltFAr76MKTTmiQvAAAk
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : HaZdFBiijHb0evdwAAAl
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : AZ-aLaOdc4Xh1Fy7AAAm
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+parler tu verras
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+Anaya
+Players sent to display : 
+Old player found, Id:AZ-aLaOdc4Xh1Fy7AAAm IP:192.168.2.23
+New message from 3:192.168.2.23
+à Rome
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+Aaron
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+ Anaya
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+Aaron
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+ Aaron
+Players sent to display : 
+Old player found, Id:AZ-aLaOdc4Xh1Fy7AAAm IP:192.168.2.23
+New message from 3:192.168.2.23
+Anaya
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+taliyah
+Players sent to display : 
+Old player found, Id:AZ-aLaOdc4Xh1Fy7AAAm IP:192.168.2.23
+New message from 3:192.168.2.23
+Maty
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+Salia
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:AZ-aLaOdc4Xh1Fy7AAAm IP:192.168.2.23
+New message from 3:192.168.2.23
+aida
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+David
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+Mathéo
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+Anthony
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+romain
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+Gazouz
+Players sent to display : 
+Old player found, Id:AZ-aLaOdc4Xh1Fy7AAAm IP:192.168.2.23
+New message from 3:192.168.2.23
+qu'est-ce que c'est quoi le but Matic
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+inch'Allah
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:AZ-aLaOdc4Xh1Fy7AAAm IP:192.168.2.23
+New message from 3:192.168.2.23
+le cœur et le passeport de l'âme
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:AZ-aLaOdc4Xh1Fy7AAAm IP:192.168.2.23
+New message from 3:192.168.2.23
+le cœur et le passeport de l'amitié
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+le cœur et le passeport de l'amitié
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:AZ-aLaOdc4Xh1Fy7AAAm IP:192.168.2.23
+New message from 3:192.168.2.23
+le sourire et le passeport de l'amitié
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+pas être ça
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:AZ-aLaOdc4Xh1Fy7AAAm IP:192.168.2.23
+New message from 3:192.168.2.23
+le sourire et le passeport du cœur
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+mais où est donc
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:HaZdFBiijHb0evdwAAAl IP:192.168.2.22
+New message from 2:192.168.2.22
+mon masque et mon tracé
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:xltFAr76MKTTmiQvAAAk IP:192.168.2.21
+New message from 1:192.168.2.21
+où ça fait autre chose départ
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:xltFAr76MKTTmiQvAAAk IP:192.168.2.21
+New message from 1:192.168.2.21
+funiculaire
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : HaZdFBiijHb0evdwAAAl
+recognition disconnected : AZ-aLaOdc4Xh1Fy7AAAm
+recognition disconnected : xltFAr76MKTTmiQvAAAk
+recognition connected : fJuC10_erMAGxXO-AAAn
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 29bfvxYBZgQaHMUUAAAo
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 6Cos3ytVUNb1ztp8AAAp
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:29bfvxYBZgQaHMUUAAAo IP:192.168.2.22
+New message from 2:192.168.2.22
+joue avec moi
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:29bfvxYBZgQaHMUUAAAo IP:192.168.2.22
+New message from 2:192.168.2.22
+mon bracelet
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:29bfvxYBZgQaHMUUAAAo IP:192.168.2.22
+New message from 2:192.168.2.22
+bien joué maman
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:fJuC10_erMAGxXO-AAAn IP:192.168.2.21
+New message from 1:192.168.2.21
+retourne-toi retourne-toi
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:fJuC10_erMAGxXO-AAAn IP:192.168.2.21
+New message from 1:192.168.2.21
+Amar
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:fJuC10_erMAGxXO-AAAn IP:192.168.2.21
+New message from 1:192.168.2.21
+Mac
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:fJuC10_erMAGxXO-AAAn IP:192.168.2.21
+New message from 1:192.168.2.21
+faut parler comme ça ça bouge regarde parler dedans ça fait bouger les cubes
+Players sent to display : 
+Old player found, Id:29bfvxYBZgQaHMUUAAAo IP:192.168.2.22
+New message from 2:192.168.2.22
+tonton tonton
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:fJuC10_erMAGxXO-AAAn IP:192.168.2.21
+New message from 1:192.168.2.21
+v
+Players sent to display : 
+Old player found, Id:29bfvxYBZgQaHMUUAAAo IP:192.168.2.22
+New message from 2:192.168.2.22
+oui un indice
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:29bfvxYBZgQaHMUUAAAo IP:192.168.2.22
+New message from 2:192.168.2.22
+la vie silence
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:29bfvxYBZgQaHMUUAAAo IP:192.168.2.22
+New message from 2:192.168.2.22
+ma bague hamac hamac
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : fJuC10_erMAGxXO-AAAn
+recognition disconnected : 29bfvxYBZgQaHMUUAAAo
+recognition disconnected : 6Cos3ytVUNb1ztp8AAAp
+recognition connected : n7F0_Hld8m9fB-SiAAAq
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : -Pbc2dXqwxEGqvXtAAAr
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : IpH2IQ5TBLh53-1kAAAs
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:IpH2IQ5TBLh53-1kAAAs IP:192.168.2.22
+New message from 2:192.168.2.22
+jouer
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:n7F0_Hld8m9fB-SiAAAq IP:192.168.2.21
+New message from 1:192.168.2.21
+mon masqué
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:n7F0_Hld8m9fB-SiAAAq IP:192.168.2.21
+New message from 1:192.168.2.21
+raï
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:n7F0_Hld8m9fB-SiAAAq IP:192.168.2.21
+New message from 1:192.168.2.21
+train
+Players sent to display : 
+Old player found, Id:IpH2IQ5TBLh53-1kAAAs IP:192.168.2.22
+New message from 2:192.168.2.22
+lance
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:IpH2IQ5TBLh53-1kAAAs IP:192.168.2.22
+New message from 2:192.168.2.22
+école
+Players sent to display : 
+Old player found, Id:n7F0_Hld8m9fB-SiAAAq IP:192.168.2.21
+New message from 1:192.168.2.21
+je veux as
+Players sent to display : 
+Old player found, Id:-Pbc2dXqwxEGqvXtAAAr IP:192.168.2.23
+New message from 3:192.168.2.23
+une ligne
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:n7F0_Hld8m9fB-SiAAAq IP:192.168.2.21
+New message from 1:192.168.2.21
+ligne
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : n7F0_Hld8m9fB-SiAAAq
+recognition disconnected : IpH2IQ5TBLh53-1kAAAs
+recognition disconnected : -Pbc2dXqwxEGqvXtAAAr
+recognition connected : uy2A2qI8p883KTSDAAAt
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : 9zmvqYZCKTKPG6JjAAAu
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Old player found, Id:9zmvqYZCKTKPG6JjAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+mais je crois qu'il faut
+Players sent to display : 
+recognition connected : 2fRQa7Te5N0rwtRWAAAv
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:uy2A2qI8p883KTSDAAAt IP:192.168.2.21
+New message from 1:192.168.2.21
+allez une dernière
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:9zmvqYZCKTKPG6JjAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+rejouer jouer
+Players sent to display : 
+resetPlayers
+Old player found, Id:9zmvqYZCKTKPG6JjAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+jouer
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9zmvqYZCKTKPG6JjAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+ memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:9zmvqYZCKTKPG6JjAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+coucou coucou
+Players sent to display : 
+Old player found, Id:uy2A2qI8p883KTSDAAAt IP:192.168.2.21
+New message from 1:192.168.2.21
+wagon
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9zmvqYZCKTKPG6JjAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+ Fourvière cathédrale de Fourvière
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:uy2A2qI8p883KTSDAAAt IP:192.168.2.21
+New message from 1:192.168.2.21
+révolution
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9zmvqYZCKTKPG6JjAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+prise de la Bastille
+Players sent to display : 
+Old player found, Id:uy2A2qI8p883KTSDAAAt IP:192.168.2.21
+New message from 1:192.168.2.21
+il y a pas de souci
+Players sent to display : 
+Old player found, Id:9zmvqYZCKTKPG6JjAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+ Bastille
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:uy2A2qI8p883KTSDAAAt IP:192.168.2.21
+New message from 1:192.168.2.21
+contrôleur agent
+Players sent to display : 
+Old player found, Id:uy2A2qI8p883KTSDAAAt IP:192.168.2.21
+New message from 1:192.168.2.21
+chef de train
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:uy2A2qI8p883KTSDAAAt IP:192.168.2.21
+New message from 1:192.168.2.21
+ fonctionnaire
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:9zmvqYZCKTKPG6JjAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+raï
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Old player found, Id:9zmvqYZCKTKPG6JjAAAu IP:192.168.2.22
+New message from 2:192.168.2.22
+dommage la réponse était
+Players sent to display : 
+recognition disconnected : uy2A2qI8p883KTSDAAAt
+recognition disconnected : 2fRQa7Te5N0rwtRWAAAv
+recognition disconnected : 9zmvqYZCKTKPG6JjAAAu
+recognition connected : iDelw095Lrm3TqWmAAAw
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : FCNaqN1V5O-fQJyWAAAx
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : Q17dnCvOI-G9SGB5AAAy
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:Q17dnCvOI-G9SGB5AAAy IP:192.168.2.23
+New message from 3:192.168.2.23
+allô
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:FCNaqN1V5O-fQJyWAAAx IP:192.168.2.22
+New message from 2:192.168.2.22
+Bonjour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:FCNaqN1V5O-fQJyWAAAx IP:192.168.2.22
+New message from 2:192.168.2.22
+les mots qui ont des memory
+Players sent to display : 
+resetPlayers
+Old player found, Id:Q17dnCvOI-G9SGB5AAAy IP:192.168.2.23
+New message from 3:192.168.2.23
+mode memory
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:Q17dnCvOI-G9SGB5AAAy IP:192.168.2.23
+New message from 3:192.168.2.23
+y
+Players sent to display : 
+Old player found, Id:FCNaqN1V5O-fQJyWAAAx IP:192.168.2.22
+New message from 2:192.168.2.22
+Écully
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:FCNaqN1V5O-fQJyWAAAx IP:192.168.2.22
+New message from 2:192.168.2.22
+veux-tu
+Players sent to display : 
+Old player found, Id:FCNaqN1V5O-fQJyWAAAx IP:192.168.2.22
+New message from 2:192.168.2.22
+ Écully
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:FCNaqN1V5O-fQJyWAAAx IP:192.168.2.22
+New message from 2:192.168.2.22
+je veux un indice
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:FCNaqN1V5O-fQJyWAAAx IP:192.168.2.22
+New message from 2:192.168.2.22
+château de Crussol
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:FCNaqN1V5O-fQJyWAAAx IP:192.168.2.22
+New message from 2:192.168.2.22
+mais non c'est bon attends mon cœur je cherche Châtillon
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:FCNaqN1V5O-fQJyWAAAx IP:192.168.2.22
+New message from 2:192.168.2.22
+qu'est-ce qu'elle a dit oui un indice
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:FCNaqN1V5O-fQJyWAAAx IP:192.168.2.22
+New message from 2:192.168.2.22
+Lentilly
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : iDelw095Lrm3TqWmAAAw
+recognition disconnected : FCNaqN1V5O-fQJyWAAAx
+recognition disconnected : Q17dnCvOI-G9SGB5AAAy
+recognition connected : v9_LXkKFSYQBsQrfAAAz
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : l3iRlMQHG4WtYH6rAAA0
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : JcTHwBBP64A5e9JhAAA1
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:l3iRlMQHG4WtYH6rAAA0 IP:192.168.2.22
+New message from 2:192.168.2.22
+Bonjour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:l3iRlMQHG4WtYH6rAAA0 IP:192.168.2.22
+New message from 2:192.168.2.22
+oui
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:l3iRlMQHG4WtYH6rAAA0 IP:192.168.2.22
+New message from 2:192.168.2.22
+ mots masqués
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:l3iRlMQHG4WtYH6rAAA0 IP:192.168.2.22
+New message from 2:192.168.2.22
+église
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:l3iRlMQHG4WtYH6rAAA0 IP:192.168.2.22
+New message from 2:192.168.2.22
+cathédrale
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : v9_LXkKFSYQBsQrfAAAz
+recognition disconnected : JcTHwBBP64A5e9JhAAA1
+recognition disconnected : l3iRlMQHG4WtYH6rAAA0
+recognition connected : gLotd01p3wJh7alvAAA2
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : -3xVlePINwUTSAYYAAA3
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : Lc_9Aax7we-SUocQAAA4
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:-3xVlePINwUTSAYYAAA3 IP:192.168.2.22
+New message from 2:192.168.2.22
+nom masculin
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:-3xVlePINwUTSAYYAAA3 IP:192.168.2.22
+New message from 2:192.168.2.22
+homme
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:gLotd01p3wJh7alvAAA2 IP:192.168.2.21
+New message from 1:192.168.2.21
+mots masqués
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:gLotd01p3wJh7alvAAA2 IP:192.168.2.21
+New message from 1:192.168.2.21
+oui
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:gLotd01p3wJh7alvAAA2 IP:192.168.2.21
+New message from 1:192.168.2.21
+Sain-Bel
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+Players sent to display : 
+recognition disconnected : Lc_9Aax7we-SUocQAAA4
+recognition disconnected : -3xVlePINwUTSAYYAAA3
+recognition disconnected : gLotd01p3wJh7alvAAA2
+recognition connected : sACsXW6QwBFW01LgAAA5
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : pTwZ_bSrkrG_kceNAAA6
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : alocFOcufX1_E8J8AAA7
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:sACsXW6QwBFW01LgAAA5 IP:192.168.2.21
+New message from 1:192.168.2.21
+m'embrasser
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:sACsXW6QwBFW01LgAAA5 IP:192.168.2.21
+New message from 1:192.168.2.21
+content
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:sACsXW6QwBFW01LgAAA5 IP:192.168.2.21
+New message from 1:192.168.2.21
+joyeux
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+resetPlayers
+Old player found, Id:sACsXW6QwBFW01LgAAA5 IP:192.168.2.21
+New message from 1:192.168.2.21
+silence
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:sACsXW6QwBFW01LgAAA5 IP:192.168.2.21
+New message from 1:192.168.2.21
+je ne sais pas
+Players sent to display : 
+Old player found, Id:sACsXW6QwBFW01LgAAA5 IP:192.168.2.21
+New message from 1:192.168.2.21
+ oui
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : sACsXW6QwBFW01LgAAA5
+recognition disconnected : pTwZ_bSrkrG_kceNAAA6
+recognition disconnected : alocFOcufX1_E8J8AAA7
+recognition connected : bTqHafQlx8sQLnC1AAA8
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : FhLbCkl6uvveCqJRAAA9
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : m0Vb6gDzvEed6SXYAAA-
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+resetPlayers
+Old player found, Id:FhLbCkl6uvveCqJRAAA9 IP:192.168.2.22
+New message from 2:192.168.2.22
+jour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:bTqHafQlx8sQLnC1AAA8 IP:192.168.2.21
+New message from 1:192.168.2.21
+violet mais comment ça va
+Players sent to display : 
+Old player found, Id:FhLbCkl6uvveCqJRAAA9 IP:192.168.2.22
+New message from 2:192.168.2.22
+mon basket
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:FhLbCkl6uvveCqJRAAA9 IP:192.168.2.22
+New message from 2:192.168.2.22
+mots masqués
+Players sent to display : 
+resetPlayers
+Old player found, Id:bTqHafQlx8sQLnC1AAA8 IP:192.168.2.21
+New message from 1:192.168.2.21
+violet mais comment ça comment ça va s'il vous plaît dès que j'ai rien dit
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:bTqHafQlx8sQLnC1AAA8 IP:192.168.2.21
+New message from 1:192.168.2.21
+H
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:FhLbCkl6uvveCqJRAAA9 IP:192.168.2.22
+New message from 2:192.168.2.22
+TB
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:FhLbCkl6uvveCqJRAAA9 IP:192.168.2.22
+New message from 2:192.168.2.22
+de faire
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : bTqHafQlx8sQLnC1AAA8
+recognition disconnected : FhLbCkl6uvveCqJRAAA9
+recognition disconnected : m0Vb6gDzvEed6SXYAAA-
+recognition connected : ZngsKOY0jpTU-_yfAAA_
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : dLQms9hXPxYlxdtWAABA
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : ZC2U_K41bnCmS1y9AABB
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+Bonjour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+oreille
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+Bonjour
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+comment tu t'appelles
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+tais-toi
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+bah pourquoi
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+papa
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+il a pas compris
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+tu te tais
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+ça c'est vrai
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+le cul
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+c'est quoi
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+alors j'ai dit oui aussi loup y es-tu
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+alors j'ai dit si le loup y es-tu
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+ma mère a dit loup es-tu
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+ dans la Forêt Blanche d'Ukraine
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+dans la Forêt Blanche d'Ukraine
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+il y a des loups noirs
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+d'Ukraine
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+d'Ukraine
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+ oreille
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+du Nutella
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+j'appelle madame oreille
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+ comment tu t'appelles madame oreille
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+avec une bonne crêpe
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+et des bonbons
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+aujourd'hui j'ai mangé de la glace
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+comme parfum il y a un verre de la framboise et de la pâte à tartiner
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+et toi Amélie
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+un verbe à l'âge de la famille
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+moi j'ai mangé pareil une glace
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+quel parfum tu avais
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+j'avais pas comme hier c'était citron et mangue
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+c'était pas ça
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+bon bonne soirée à bientôt
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+à bientôt bonne soirée à la gare
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+au revoir
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+bon voyage Arthur
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+mariage Arthur
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+mariage enfant
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+est-ce que tu rentreras bien Arthur
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+oui moi aussi
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+au revoir
+Players sent to display : 
+Old player found, Id:ZC2U_K41bnCmS1y9AABB IP:192.168.2.23
+New message from 3:192.168.2.23
+au revoir
+Players sent to display : 
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:ZngsKOY0jpTU-_yfAAA_ IP:192.168.2.21
+New message from 1:192.168.2.21
+allô
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+memory
+Players sent to display : 
+resetPlayers
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+images
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+avion
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+Trappes
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+autocar
+Players sent to display : 
+Players sent to display : 
+Old player found, Id:dLQms9hXPxYlxdtWAABA IP:192.168.2.22
+New message from 2:192.168.2.22
+la réponse s'il vous plaît
+Players sent to display : 
+Players sent to display : 
+resetPlayers
+reset chromium pages
+Restart chromium : 192.168.2.21
+Restart chromium page 192.168.2.21
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.22
+Restart chromium page 192.168.2.22
+kill chromium
+start page
+exit from ssh
+Restart chromium : 192.168.2.23
+Restart chromium page 192.168.2.23
+kill chromium
+start page
+exit from ssh
+recognition disconnected : ZngsKOY0jpTU-_yfAAA_
+recognition disconnected : dLQms9hXPxYlxdtWAABA
+recognition disconnected : ZC2U_K41bnCmS1y9AABB
+recognition connected : VtOm6OTEjcsHnoXlAABC
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : k8DGglIfeiL9O3NaAABD
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+recognition connected : Uyj66JnUsfyHz4vMAABE
+Old player found =============
+Player sent to recognition : 
+Players sent to display : 
+resetPlayers
